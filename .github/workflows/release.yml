@@ -5,7 +5,7 @@ on:
     types: [ published ]
 
 env:
-  ZIP_FILENAME: "pf2_cn"
+  ZIP_FILENAME: "pf2e_cn"
   PACKAGE_CONTENT: "module.json cn.json re-cn.json"
   PACKAGE_ID: 827
 
@@ -49,12 +49,3 @@ jobs:
           tag: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
 
-      - name: Publish to Foundry VTT Repo
-        id: publish_foundry_repo
-        if: ${{ env.PACKAGE_ID }}
-        run: npx @ghost-fvtt/foundry-publish
-        env:
-          FVTT_MANIFEST_PATH: 'module.json'
-          FVTT_PACKAGE_ID: ${{ env.PACKAGE_ID }}
-          FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
-          FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}
