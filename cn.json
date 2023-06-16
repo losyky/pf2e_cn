@@ -5929,7 +5929,8 @@
             "SplitCoinsPopupHeader": "选择角色分发货币",
             "Stack": "创建新的战利品堆？",
             "PurchaseLootMessage": "你希望购买多少道具？",
-            "PurchaseLoot": "购买道具"
+            "PurchaseLoot": "购买道具",
+            "PartyStash": "队伍藏匿处"
         },
         "vehicle": {
             "VehicleString": "载具",
