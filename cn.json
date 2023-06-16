@@ -1646,7 +1646,8 @@
                         "Scent": "灵敏嗅觉",
                         "Motionsense": "运动感知",
                         "Spiritsense": "灵魂感知",
-                        "Thoughtsense": "思维感知"
+                        "Thoughtsense": "思维感知",
+                        "Heatsight": "热能视觉"
                     },
                     "Label": "感官",
                     "RangeLabel": "距离",
@@ -1721,7 +1722,10 @@
                 "Total": "队伍合计",
                 "Wealth": "财富",
                 "InvalidCampaign": {
-                    "Message": "此队伍具有类型为 {current}的战役数据，但目前配置的类型是{configured}。是否要删除现有的战役数据？",
+                    "Message": {
+                        "mismatch": "此队伍具有类型为 {current}的战役数据，但目前配置的类型是{campaignType}。是否要删除现有的战役数据？",
+                        "error": "此队伍的战役数据({current})已损坏，数据预载失败。是否要删除现有的战役数据？"
+                    },
                     "Title": "无效的战役({party})",
                     "Hint": "战役数据无效"
                 }
@@ -2708,7 +2712,9 @@
             "BasicWithSave": "基础{save}",
             "DCWithName": "{name} DC",
             "Errors": {
-                "TypeMissing": "Error in @Check: 必须有类型参数"
+                "TypeMissing": "Error in @Check: 必须有类型参数",
+                "AdjustmentLengthMismatch": "Error in @Check: 类型:与调整:参数的数目不匹配",
+                "NonIntegerAdjustment": "Error in @Check:调整值必须是整数"
             }
         },
         "InlineTemplateErrors": {
