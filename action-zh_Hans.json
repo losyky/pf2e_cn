@@ -1,1 +1,13 @@
-{}
+{
+    "PF2E": {
+        "Actions": {
+            "AdministerFirstAid": {
+                "Stabilize": {
+                    "DifficultyClass": {
+                        "Label": "进行急救DC"
+                    }
+                }
+            }
+        }
+    }
+}
