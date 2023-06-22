@@ -1,13 +1,659 @@
 {
-    "PF2E": {
-        "Actions": {
-            "AdministerFirstAid": {
-                "Stabilize": {
-                    "DifficultyClass": {
-                        "Label": "进行急救DC"
-                    }
-                }
-            }
+"PF2E": {
+"Actions": {
+    "ArcaneSlam": {
+        "Modifier": {
+            "SizeDifference": "体型差异"
+        },
+        "Notes": {
+            "NoTarget": "<strong>体型差异</strong>如果目标体型比你大一级，你将在检定中受到-2环境减值，如果体型更大，将受到-4环境减值。如果目标体型比你小一级，你将在检定中受到+2环境加值，如果体型更小，将受到+4环境加值。",
+            "criticalSuccess": "<strong>大成功</strong> 你摔倒敌人并且魔法能量压制住它。生物被@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{击倒}，@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩}一轮，并且受到数值等于[[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]]{2d6 加上你力量调整值} 的伤害。敌人不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱} 或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}。",
+            "success": "<strong>成功</strong> 你摔倒敌人。生物被 @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{击倒}并且受到数值等于你 [[/r @abilities.str.mod # Damage: Arcane Slam]]{力量调整值}的伤害。敌人不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}.",
+            "failure": "<strong>失败</strong> 你无法摔倒敌人，但是你依然抓住它。",
+            "criticalFailure": "<strong>大失败</strong> 敌人逃脱，不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱} 或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}。"
+        },
+        "Title": "奥术摔砸"
+    },
+    "AvoidNotice": {
+        "Notes": {
+            "success": "<strong>成功</strong> 对于这些生物，你在移动过程中保持@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 状态，且移动结束后仍不会被发现。<br/><br/>有关详细信息参见 @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 动作。",
+            "criticalSuccess": "<strong>大成功</strong> 对于这些生物，你在移动过程中保持@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 状态，且移动结束后仍不会被发现。<br/><br/>有关详细信息参见 @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 动作。"
+        },
+        "Title": "避人耳目"
+    },
+    "Balance": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你以你的正常速度前进。",
+            "success": "<strong>成功</strong> 你以你的正常速度前进，但会将其视为困难地形（每5尺移动算为10尺）。",
+            "failure": "<strong>失败</strong> 你必须保持静止以保持平衡（会浪费这次动作），否则你将会摔倒。如果你摔倒，你的回合会结束。",
+            "criticalFailure": "<strong>大失败</strong> 你将会摔倒，你的回合结束。"
+        },
+        "Title": "平衡"
+    },
+    "BonMot": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 目标受到影响，察觉和意志豁免都受到-3状态减值，持续1分钟。目标可以通过反驳你的当头棒喝来尝试提前终止该效果。反驳需要一个拥有专注特征的单动作或合适的技能动作来驳斥你的观点。GM决定什么技能动作可用，且必须消耗至少一个动作。通常反驳需要使用基于语言和魅力的技能动作。@UUID[Compendium.pf2e.feat-effects.CtrZFI3RV0yPNzTv]{效果：当头棒喝 Bon Mot（大成功）}",
+            "success": "<strong>成功</strong> 目标受到影响，察觉和意志豁免都受到-2状态减值，持续1分钟。目标可以通过反驳你的当头棒喝来尝试提前终止该效果。反驳需要一个拥有专注特征的单动作或合适的技能动作来驳斥你的观点。GM决定什么技能动作可用，且必须消耗至少一个动作。通常反驳需要使用基于语言和魅力的技能动作。@UUID[Compendium.pf2e.feat-effects.GoSls6SKCFmSoDxT]{效果：当头棒喝 Bon Mot}",
+            "criticalFailure": "<strong>大失败</strong> 棒喝反而使你自取其辱。你自己会承受成功时敌人应承受的效果。你身上的效果也持续1分钟或直到你下一次当头棒喝成功。@UUID[Compendium.pf2e.feat-effects.GoSls6SKCFmSoDxT]{效果：当头棒喝 Bon Mot}"
+        },
+        "Title": "当头棒喝"
+    },
+    "Climb": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你攀爬、穿越或安全下落5尺，每20尺的陆行速度会再加上5尺（大多数玩家总计会是10尺）。",
+            "success": "<strong>成功</strong> 你攀爬、穿越或安全下落，每20尺的陆行速度下落5尺（对于大多数玩家角色一共为5尺，如果你的速度低于20尺，则至少为5尺）。",
+            "criticalFailure": "<strong>大失败</strong> 你摔落了。如果你是在稳定地面上攀爬，你就会摔倒并@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}."
+        },
+        "Title": "攀爬"
+    },
+    "Coerce": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 对方吐露了你希望知道的信息，或是按照你的指示去进行一些行动——底线是它们不太可能因此而去伤害其他任何生物。目标会被你胁迫而行动的时间长度由GM决定，但通常不超过1天时间。在此之后，对方对你的态度转为不友善（如果还没有已经处于不友善或是敌对态度）。不过，它们被你完全吓住了，以至于不会（在短期内，至少）想要报复你。",
+            "success": "<strong>成功</strong> 同大成功结果，但当目标对你的态度转为不友善以后，它们会积极地想要报复你——比如报告官方机构你的恶质行为，或是和你的敌人结盟。",
+            "failure": "<strong>失败</strong> 对方没有被你吓住，并且对你的态度转为不友善（如果还没有已经处于不友善或是敌对态度）。",
+            "criticalFailure": "<strong>大失败</strong> 对方没有被你吓住，并且对你的态度转为敌对——如果还没有已经处于敌对态度，并在接下来一周时间内免疫你的胁迫。"
+        },
+        "Title": "胁迫"
+    },
+    "Craft": {
+        "SelectItemDialog": {
+            "CancelButtonLabel": "取消",
+            "CraftButtonLabel": "制造",
+            "DropItemZoneLabel": "将物品拖放至此...",
+            "Title": "选择要制作的物品"
+        },
+        "SelectSpellDialog": {
+            "CraftButtonLabel": "制作",
+            "Title": "选择法术"
+        },
+        "Error": {
+            "ItemReferenceMismatch": "仅允许合集包或世界物品目录中的实体物品制作。"
+        },
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你成功的制作了你想要的物品，并且如果你花费额外的工作天数以节省材料，在计算你每天节约的材料价格时，使用你的角色等级+1和你在手艺技能上的熟练等级计算。",
+            "success": "<strong>成功</strong> 你成功的制作了你想要的物品，并且如果你花费额外的工作天数以节省材料，在计算你每天节约的材料价格时，使用你的角色等级和你在手艺技能上的熟练等级计算。",
+            "failure": "<strong>失败</strong> 你没有做成物品，但你也没有浪费任何准备的原材料。如果你想要重试制作这件物品，你必须从头开始整个过程。",
+            "criticalFailure": "<strong>大失败</strong> 你没有做成物品，而且你浪费了你准备的原材料总价格的10%。如果你想要重试制作这件物品，你必须从头开始整个过程。"
+        },
+        "Title": "制作",
+        "Warning": {
+            "NotPhysicalItem": "指定的物品 {item} 不是实体物品。",
+            "MissingItem": "无法创建ID为{uuid}的未知物品。",
+            "CantAddItem": "无法添加物品",
+            "InsufficientCoins": "硬币不足"
+        },
+        "Details": {
+            "Discount": "每日折扣:",
+            "DaysForNoCost": "可减免额外花销的天数：",
+            "PayMaterials": "支付 {cost} 材料成本和手艺",
+            "PayFull": "支付{cost}全部成本和手艺",
+            "LostMaterials": "损失{成本} 材料",
+            "ReceiveItem": "获得物品"
+        },
+        "Information": {
+            "PayAndReceive": "{actorName}支付{cost}的制作成本，并获得了{quantity}x{itemName}。",
+            "ReceiveItem": "{actorName} 收到了 {quantity}x {itemName}.",
+            "LoseMaterials": "{actorName} 失去 {cost} 的材料."
         }
+    },
+    "CommandAnAnimal": {
+        "Notes": {
+            "success": "<strong>成功</strong> 动物会按照你指令的内容在它的下回合行动。",
+            "failure": "<strong>失败</strong> 动物对你没有兴趣或是抵抗，什么都不做。",
+            "criticalFailure": "<strong>大失败</strong>动物误解了你的指令。GM决定它会做什么怪事。.",
+            "criticalSuccess": "<strong>大成功</strong> 动物将会在下一个回合听命于你。"
+        },
+        "Title": "指挥动物"
+    },
+    "CreateADiversion": {
+        "DistractingWords": {
+            "Title": "让敌人分神 - 言语干扰"
+        },
+        "Gesture": {
+            "Title": "让敌人分神 - 姿势干扰"
+        },
+        "Notes": {
+            "success": "<strong>成功</strong>对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，并可以开始尝试@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 。这个效果持续到你的回合结束或是进行任何除了@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide} ，@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，然后你立刻对其变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。如果你进行的是其他动作，那么则是你在行动之前立刻变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}，除非GM有其他的看法。",
+            "failure": "<strong>失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。",
+            "criticalSuccess": "<strong>大成功</strong>对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，并可以开始尝试@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 。这个效果持续到你的回合结束或是进行任何除了@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide} ，@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，然后你立刻对其变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。如果你进行的是其他动作，那么则是你在行动之前立刻变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}，除非GM有其他的看法。",
+            "criticalFailure": "<strong>大失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。"
+        },
+        "Trick": {
+            "Title": "让敌人分神 - 唬骗"
+        },
+        "Warning": {
+            "UnknownVariant": "让敌人分神所使用的变体{variant}未知，请使用{variants}之一。"
+        },
+        "Title": "分神"
+    },
+    "Demoralize": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong>目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。",
+            "success": "<strong>成功</strong>目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
+        },
+        "Title": "挫败士气"
+    },
+    "Disarm": {
+        "EffectLabel": "使用握不稳的武器",
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你将对手手中的物品打掉在了地上。这件物品掉落在这个对手占据的空间中。",
+            "success": "<strong>成功</strong> 你震得对手虎口发麻。直到这个生物的回合开始前，你在接下来对同一个生物的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定时承受-2环境减值。 @UUID[Compendium.pf2e.equipment-effects.z3ATL8DcRVrT0Uzt]{效果：卸武（成功）}",
+            "criticalFailure": "<strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态 。"
+        },
+        "Title": "卸武"
+    },
+    "EncouragingWords": {
+        "Title": "激励言语",
+        "ContentMain": "设定目标DC。记住，你不能尝试超过你熟练等级的医疗。尝试这样做将会使DC和治疗量降低到你的最高水平。",
+        "ContentLabel1": "交涉DC：",
+        "ContentLabel2": "DC调整值：",
+        "ContentOption1": "受训 DC 15",
+        "ContentOption2": "专家 DC 20, +5 耐力",
+        "ContentOption3": "大师 DC 30, +15 耐力",
+        "ContentOption4": "传奇 DC 40, +25 耐力",
+        "BadArgs": "此操作只能用一个玩家角色或NPC执行。",
+        "NotTrained": "{name} 在交涉上的未受训，也不知道如何使用激励言语。",
+        "StaminaNotEnabled": "耐力变体未启用。",
+        "CritSuccess": "大成功",
+        "Success": "成功",
+        "Failure": "失败",
+        "CritFailure": "大失败",
+        "Recovery": "耐力恢复",
+        "Damage": "伤害",
+        "Cancel": "取消"
+    },
+    "Feint": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 对手被你完全搞糊涂了，并且一时都来不及反应。直到你的下一个回合结束，这个对手对你的近战攻击都视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。",
+            "success": "<strong>成功</strong> 对手对你露了个破绽，但及时回护了。直到你目前的这个回合结束，这个对手对你的近战攻击视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。",
+            "criticalFailure": "<strong>大失败</strong> 哈哈哈你看看你。直到你的下一个回合结束，你自己都对这个对手的近战攻击视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。"
+        },
+        "Title": "虚招"
+    },
+    "ForceOpen": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong>你强行弄开了门，窗或是容器，并且可以选择不损坏它们。",
+            "success": "<strong>成功</strong> 你强行弄开了门，窗或是容器，但对象狭窄处于@UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken} 状态。如果GM认为对象的制作和材质异常的坚固，可能这些物品只会受到一定的伤害，而非直接陷入破损状态。",
+            "criticalFailure": "<strong>大失败</strong> 你把门，窗或锁弄卡住了。在之后的破拆检定上承受-2环境减值。"
+        },
+        "Title": "破拆",
+        "NoCrowbarPenalty": "没有撬棍"
+    },
+    "GatherInformation": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你搜集到了关于你需要的某人或某事的信息，具体内容由GM设计。",
+            "criticalFailure": "<strong>大失败</strong>你收集的有关个体或话题的信息不正确。",
+            "criticalSuccess": "<strong>大成功</strong> 你搜集到了关于你需要的某人或某事的信息，具体内容由GM设计。"
+        },
+        "Title": "收集信息"
+    },
+    "Grapple": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 直到你的下一个回合，你的对手陷入@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态，除非在此期间你进行移动或是对手成功进行@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escapes}动作。",
+            "success": "<strong>成功</strong> 直到你的下一个回合，你的对手@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{被擒抱 Grabbed} ，除非在此期间你进行移动或是对手成功进行@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escapes}动作。",
+            "failure": "<strong>失败</strong> 你没有擒住你的对手。如果你的对手因为你的擒拿而已经陷入@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}或@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，它不再承受这些状态。",
+            "criticalFailure": "<strong>大失败</strong> 如果你的对手因为你的擒拿而陷入@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态，它立刻挣脱。这个生物可以立刻擒抱你，如同成功对你发动了@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}，或是将你击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
+        },
+        "Title": "擒抱"
+    },
+    "Hide": {
+        "Notes": {
+            "success": "<strong>成功</strong> 对其他原本可以看到你的生物，现在你获得@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态而非可见状态。如果你在原本就对某生物来说处于@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}或@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}状态下再次尝试藏匿，你保持原状态不变。",
+            "criticalSuccess": "<strong>大成功</strong> 对其他原本可以看到你的生物，现在你获得@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}而非可见状态。如果你在原本就对某生物来说处于@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}或@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}状态下再次尝试藏匿，你保持原状态不变。"
+        },
+        "Title": "躲藏"
+    },
+    "HighJump": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你最高可以跳到8尺高，或是跳最高到5尺高，同时10尺远。",
+            "success": "<strong>成功</strong>你最高可以跳到5尺高。",
+            "failure": "<strong>失败</strong> 你如常@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap} 。",
+            "criticalFailure": "<strong>大失败</strong> 你不但没能@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap} ，还摔了个大马趴，在你占据的空间中陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
+        },
+        "Title": "跳高"
+    },
+    "Interact": {
+        "Title": "交互",
+        "Parenthetical": "交互 {purpose}",
+        "Draw1H": {
+            "Title": "拔出(1H)",
+            "Description": "{actor} 拔出他们的 {weapon}。"
+        },
+        "Draw2H": {
+            "Title": "拔出 (2H)",
+            "Description": "{actor} 拔出他们的 {weapon}。"
+        },
+        "PickUp1H": {
+            "Title": "拾起(1H)",
+            "Description": "{actor} 从地上拾起了 {weapon} 。"
+        },
+        "PickUp2H": {
+            "Title": "拾起(2H)",
+            "Description": "{actor} 从地上拾起了 {weapon} 。"
+        },
+        "Grip": {
+            "Title": "改变持握 (2H)",
+            "Description": "{actor} 将 {weapon} 的持握方式变为双手。"
+        },
+        "Retrieve1H": {
+            "Title": "取回(1H)",
+            "Description": "{actor} 取回了他们的 {weapon}。"
+        },
+        "Retrieve2H": {
+            "Title": "取回 (2H)",
+            "Description": "{actor} 取回了他们的 {weapon}。"
+        },
+        "Sheathe": {
+            "Title": "收起",
+            "Description": "{actor} 收起了他们的 {weapon}。"
+        }
+    },
+    "Impersonate": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你成功蒙骗了对方，让他误以为你是你乔装的那个人。如果你的行为在之后产生显著的变化，你可能会需要进行新的欺骗检定。",
+            "failure": "<strong>失败</strong> 对方不相信你伪装的身份。",
+            "criticalFailure": "<strong>大失败</strong> 对方不相信你伪装的身份。如果他认识你，他立刻知道是你在冒充他人。",
+            "criticalSuccess": "<strong>大成功</strong> 你成功蒙骗了对方，让他误以为你是你乔装的那个人。如果你的行为在之后产生显著的变化，你可能会需要进行新的欺骗检定。"
+        },
+        "Title": "模仿"
+    },
+    "Lie": {
+        "Notes": {
+            "success": "<strong>成功</strong>目标相信你了的谎言。",
+            "failure": "<strong>失败</strong> 对方不相信你的说辞，并且在接下来的整个对话中都在对抗你的说谎尝试时获得+4环境加值。在此之后，这个生物也会更怀疑你。",
+            "criticalFailure": "<strong>大失败</strong> 对方不相信你的说辞，并且在接下来的整个对话中都在对抗你的说谎尝试时获得+4环境加值。在此之后，这个生物也会更怀疑你。",
+            "criticalSuccess": "<strong>大成功</strong>目标相信你了的谎言。"
+        },
+        "Title": "说谎"
+    },
+    "LongJump": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你可以@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}的最远距离提升到你自己希望的距离，而非普通情况的距离。",
+            "failure": "<strong>失败</strong> 你如常@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}。",
+            "criticalFailure": "<strong>大失败</strong> 你正常地@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}了普通距离，但摔了个屁股墩，在你落地时陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。",
+            "criticalSuccess": "<strong>大成功</strong> 你可以@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap} 的最远距离提升到你自己希望的距离，而非普通情况的距离。"
+        },
+        "Title": "跳远"
+    },
+    "MakeAnImpression": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong>目标对你的态度提高了两级。",
+            "success": "<strong>成功</strong>目标对你的态度提高了一级。",
+            "criticalFailure": "<strong>大失败</strong>目标对你的态度降低一级。"
+        },
+        "Title": "建立印象"
+    },
+    "ManeuverInFlight": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你的战技成功了。",
+            "failure": "<strong>失败</strong> 你未能成功机动。GM会根据你原本希望使用的机动动作来决定失败造成的后果（比如，尝试顶着强风飞行如果失败，会让你被吹飞到别的地方）。",
+            "criticalFailure": "<strong>大失败</strong>如同失败，但后果更加恐怖。",
+            "criticalSuccess": "<strong>大成功</strong> 你的战技成功了。"
+        },
+        "Title": "空中机动"
+    },
+    "PickALock": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你直接解打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了两次成功结果。你不会留下你曾经撬过过这把锁的痕迹。",
+            "success": "<strong>成功</strong> 你直接解打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了一次成功结果。",
+            "criticalFailure": "<strong>大失败</strong> 你把你的工具玩坏了。你需要通过一个成功的手艺技能检定来@UUID[Compendium.pf2e.actionspf2e.bT3skovyLUtP22ME]{修理 Repair}它，或是替换一副备用的工具组件（价值3SP，如果是高级开锁工具的话则价值3GP）。"
+        },
+        "Title": "撬锁"
+    },
+    "RaiseAShield": {
+        "SingleActionTitle": "举起盾牌",
+        "ReactionTitle": "反射持盾",
+        "Content": "{actor} 举起盾牌.",
+        "BadArgs": "此操作只能用一个玩家角色或NPC执行。",
+        "NoShieldEquipped": "{actor} 必须装备盾牌。",
+        "ShieldIsBroken": "{actor}的 {shield} 已损坏.",
+        "ShieldIsDestroyed": "{actor}的 {shield} 已损毁。"
+    },
+    "Release": {
+        "Title": "放开",
+        "Drop": {
+            "Title": "放下",
+            "Description": "{actor} 将他们的 {weapon} 放在了地上。"
+        },
+        "Grip": {
+            "Title": "改变持握(1H)",
+            "Description": "{actor} 从他们的 {weapon} 上松开了一只手。"
+        }
+    },
+    "Repair": {
+        "Chat": {
+            "ItemRepaired": "{itemName}被修复了 {repairedDamage} 点伤害，目前生命值为{afterRepairHitPoints}/ {maximumHitPoints} 。",
+            "ItemDamaged": "{itemName}被给予了 {damageDealt} 点伤害，目前生命值为{afterRepairHitPoints}/ {maximumHitPoints} 。"
+        },
+        "Error": {
+            "ItemReferenceMismatch": "只允许角色对实体物品进行修复。"
+        },
+        "Labels": {
+            "DamageMitigatedByHardness": "大失败的修理检定因硬度而没有对物品造成伤害。",
+            "DealItemDamage": "对物品造成{value}点伤害",
+            "Hardness": "硬度",
+            "ItemLevelRepairDC": "物品等级{level}修理DC",
+            "RestoreItemHitPoints": "恢复物品{value}点生命值",
+            "RollItemDamage": "掷骰{value}伤害"
+        },
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong>你为一件物品恢复了10+（10x你的每个手艺技能的熟练等级）的生命值（如果你是受训等级，总值为20；如果你是专家等级，总值为30；如果你是大师等级，总值为40；如果你是传奇等级，总值为50）。",
+            "success": "<strong>成功</strong> 你为一件物品恢复了5+（5x你的每个手艺技能的熟练等级）的生命值（如果你是受训等级，总值为10；如果你是专家等级，总值为15；如果你是大师等级，总值为20；如果你是传奇等级，总值为25）。",
+            "criticalFailure": "<strong>大成功</strong> 你对物品造成了2d6点伤害，但物品的硬度仍然可以用于抵抗这个伤害。"
+        },
+        "SelectItemDialog": {
+            "CancelButtonLabel": "取消",
+            "RepairButtonLabel": "修理",
+            "DropItemZoneLabel": "将物品拖到此处...",
+            "Title": "选择要修复的物品"
+        },
+        "Title": "修理",
+        "Warning": {
+            "NotPhysicalItem": "选定的物品{item}不是实体物品。"
+        }
+    },
+    "Request": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong>目标可以无条件同意您的请求。",
+            "success": "<strong>成功</strong> 目标同意您的请求，但他们可能要求添加条款或更改请求。",
+            "failure": "<strong>失败</strong> 目标拒绝了这个请求，不过他们也许会提出一个不那么极端的方案。",
+            "criticalFailure": "<strong>大失败</strong> 对方不仅会拒绝你的请求，而且他们对你的态度也会因为这个请求的冒失而降低一个等级。"
+        },
+        "Title": "提出请求"
+    },
+    "Seek": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 若你搜索生物，所有你对其大成功的@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}或@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的生物对你变为@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。若你搜索物体，你得知其位置。",
+            "success": "<strong>成功</strong> 若你搜索生物，所有对你@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪}的生物变为对你@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}而非@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪}，所有对你@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的生物变为对你@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。若你搜索物体，你得知其位置或获得一些线索，具体由GM判断。"
+        },
+        "Title": "搜索"
+    },
+    "SenseDirection": {
+        "Modifier": {
+            "NoCompass": "没有指南针"
+        },
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你清楚无疑地了解自己身处的位置。如果你所处的地理区域拥有东南西北四极，你很清楚东南西北的具体方向。",
+            "success": "<strong>成功</strong> 你还算清楚自己的位置，至少不会迷失方向。如果你所处的地理区域拥有东南西北四极，你大致知道东南西北的方向。"
+        },
+        "Title": "辨别方向 Sense Direction"
+    },
+    "SenseMotive": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你得知目标真实的意图，能确定是否有心智魔法正影响着目标。",
+            "success": "<strong>成功</strong> 你能辨明目标行为是否反常，但你无法得知其真实意图，也无法确定目标是否受魔法影响。",
+            "failure": "<strong>失败</strong> 你判断到了目标想让你相信的事。若目标没有进行欺骗，你会相信目标的行为是正常的。",
+            "criticalFailure": "<strong>大失败</strong>你完全错判了目标的意图。"
+        },
+        "Title": "察言观色"
+    },
+    "ShieldBlock": {
+        "SelectAShield": "选择一个盾牌"
+    },
+    "Shove": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong>你可以将敌人打退10尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。",
+            "success": "<strong>成功</strong> 你可以将敌人打退5尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。",
+            "criticalFailure": "<strong>大失败</strong> 你自己失去平衡摔倒了，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态 。"
+        },
+        "Title": "猛推"
+    },
+    "Sneak": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你在移动过程中不会被生物发现，在移动结束时也不会。",
+            "failure": "<strong>失败</strong> 你发出声音或是留下蛛丝马迹，让观察者注意到有人在他们鼻子下面猫猫祟祟地行动——但他们还看不到你。在你的移动期间和结束移动后你都对对方视为藏匿状态",
+            "criticalFailure": "<strong>大失败</strong> 你被发现了！在你的移动期间和结束移动后你都对对方视为可见状态。如果你处于隐形状态且对观察你的生物视为拥有隐匿，那么在你的移动期间和结束移动后你都对对方视为藏匿而非可见状态。",
+            "criticalSuccess": "<strong>大成功</strong> 你在移动过程中不会被生物发现，在移动结束时也不会。"
+        },
+        "Title": "潜行"
+    },
+    "Squeeze": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你可以以每分钟10尺的速度挤过去。",
+            "success": "<strong> 成功</strong> 你可以以每分钟5尺的速度挤过去。",
+            "criticalFailure": "<strong> 大失败</strong> 你被卡住了。如果是这样，你可以花费1分钟时间尝试另一次特技技能检定（DC不变）。只要你不继续骰出大失败，你就不再被卡在原地。"
+        },
+        "Title": "挤入空间"
+    },
+    "SteelYourResolve": {
+        "Title": "坚定你的决心",
+        "Content": "消耗决心点数来恢复耐力？",
+        "BadArgs": "此操作只能用一个玩家角色或NPC执行。",
+        "StaminaNotEnabled": "耐力变体未启用。",
+        "NoStamina": "{name} 累了，需要睡觉！没有剩余的决心点数。",
+        "RecoverStamina": "{name} 拥有{ratio} SP并消耗一个决心点数，恢复其最大耐力的一半。"
+    },
+    "Swim": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你可以在水中游动10尺，再加上5尺/你每拥有20尺陆地移动速度（对大多数PC来说，15尺）。",
+            "success": "<strong>成功</strong>你可以在水中游动5尺，再加上5尺/你每拥有20尺陆地移动速度（对大多数PC来说，15尺）。",
+            "criticalFailure": "<strong>大失败</strong> 你是一条咸鱼，没有游动。如果你在屏息，你还会失去1轮憋气。"
+        },
+        "Title": "游泳"
+    },
+    "Tamper": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你的篡改非常有效。如果你篡改了武器，敌人在使用该武器进行的攻击骰和伤害骰上承受-2环境罚值。如果你篡改了护甲，护甲会妨碍敌人的移动，令敌人陷入措手不及且在速度上承受-10罚值。该效果持续到敌人交互以移除，无论你选择进行何种篡改。 @UUID[Compendium.pf2e.feat-effects.rzcpTJU9MvW1x1gz]{效果: Armor Tampered With (大成功)} @UUID[Compendium.pf2e.feat-effects.o7qm13OmaYOMwgib]{效果: Weapon Tampered With (大成功)}",
+            "success": "<strong>成功</strong> 你的篡改暂时有效。如大成功，但效果持续到你的下回合开始，即使敌人没有进行交互以移除。 @UUID[Compendium.pf2e.feat-effects.IfRkgjyh0JzGalIy]{效果：篡改护甲（成功）} @UUID[Compendium.pf2e.feat-effects.4QWayYR3JSL9bk2T]{效果：篡改武器（成功）}",
+            "criticalFailure": "<strong>大失败</strong> 你的篡改引起了华丽的麻烦，你的工具或器械发生了小规模的爆炸。你承受等于[[/r (@actor.level)[fire] #Tamper Backfire]]{你等级的火焰伤害}。"
+        },
+        "Title": "篡改"
+    },
+    "Track": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹。",
+            "failure": "<strong>失败</strong> 你搞丢了目标留下的行踪，必须等1小时后才能再次尝试追踪。",
+            "criticalFailure": "<strong>大失败</strong>你完全搞丢了目标，必须等24小时后才能再次尝试追踪。",
+            "criticalSuccess": "<strong>大成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹。"
+        },
+        "Title": "追踪"
+    },
+    "TreatDisease": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 在该生物下一次对抗该疾病的豁免检定上你为他提供+4环境加值。<br/>@UUID[Compendium.pf2e.equipment-effects.id20P4pj7zDKeLmy]{效果：治疗疾病（大成功）}",
+            "success": "<strong>成功</strong> 在该生物下一次对抗该疾病的豁免检定上你为他提供+2环境加值。<br/>@UUID[Compendium.pf2e.equipment-effects.Ee2xfKX1yyqGIDZj]{效果：治疗疾病（成功）}",
+            "criticalFailure": "<strong>大失败</strong> 在该生物下一次对抗该疾病的豁免检定上你为他造成-2环境减值。<br/>@UUID[Compendium.pf2e.equipment-effects.5oYKYXAexr0vhx84]{效果：治疗疾病（大失败）}"
+        },
+        "Title": "治疗疾病"
+    },
+    "TreatPoison": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 在该生物下一次对抗该毒素的豁免检定上你为他提供+4环境加值。<br/>@UUID[Compendium.pf2e.equipment-effects.XwCBalKJf3CiEiFa]{效果：治疗中毒（大成功）}",
+            "success": "<strong>成功</strong> 在该生物下一次对抗该毒素的豁免检定上你为他提供+2环境加值。<br/>@UUID[Compendium.pf2e.equipment-effects.XWenziR7J3mwKV4W]{效果：治疗中毒（成功）}",
+            "criticalFailure": "<strong>大失败</strong> 在该生物下一次对抗该毒素的豁免检定上你为他造成-2环境减值。<br/>@UUID[Compendium.pf2e.equipment-effects.ESuBosh3t1pXEcBj]{效果：治疗中毒（大失败）}"
+        },
+        "Title": "治疗中毒"
+    },
+    "Trip": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你的目标立刻被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态，并承受[[/r 1d6[bludgeoning] # Bludgeoning damage]]{1d6}点钝击伤害。",
+            "success": "<strong>成功</strong> 目标被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。",
+            "criticalFailure": "<strong>大失败</strong>你自己失去平衡摔倒了，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
+        },
+        "Title": "摔拌"
+    },
+    "TumbleThrough": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你通过敌人占据的空间，这个空间中的方格被视为困难地形(每5尺需要10尺的移动)。如果你没有足够的速度在空间中移动，你会得到和失败一样的结果。",
+            "failure": "<strong>失败</strong> 你的移动结束，你将触发反应动作就好像你已经离开了你的起始方格。",
+            "criticalSuccess": "<strong>大成功</strong> 你通过敌人占据的空间，这个空间中的方格被视为困难地形(每5尺需要10尺的移动)。如果你没有足够的速度在空间中移动，你会得到和失败一样的结果。",
+            "criticalFailure": "<strong>大失败</strong> 你的移动结束，你将触发反应动作就好像你已经离开了你的起始方格。"
+        },
+        "Title": "翻滚"
+    },
+    "WhirlingThrow": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你将生物扔至所需距离并使其@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。",
+            "success": "<strong>成功</strong>你将生物扔至所需距离。",
+            "failure": "<strong>失败</strong> 你没能投掷生物。",
+            "criticalFailure": "<strong>大失败</strong> 你没能投掷生物， 并且对方不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} 或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。"
+        },
+        "Title": "回旋抛投"
+    },
+    "TreatWounds": {
+        "Rolls": {
+            "RiskySurgery": "伤害骰: 激进手术",
+            "TreatWounds": "治疗骰: 治疗伤害",
+            "TreatWoundsCriticalFailure": "伤害骰: 治疗伤害"
+        },
+        "Content": "选择目标DC。注意你不能尝试超过你熟练度等级的治疗行动。若你这样做，DC和治疗量会降级到你的最高熟练度等级。",
+        "DC": {
+            "Mod": "DC 调整值:",
+            "Trained": "受训 DC 15",
+            "Expert": "专家 DC 20, +10 治疗",
+            "Master": "大师 DC 30, +30 治疗",
+            "Legendary": "传奇 DC 40, +50 治疗"
+        },
+        "Error": "角色 {name} 不具有医疗技能",
+        "Feats": {
+            "RiskySurgery": "激进手术",
+            "MortalHealing": "致命治疗"
+        },
+        "Label": "治疗伤害",
+        "SkillSelect": "治疗伤害技能:"
+    },
+    "DisableDevice": {
+        "Notes": {
+            "criticalFailure": "<strong>大失败</strong>装置被你触发了。",
+            "criticalSuccess": "<strong>大成功</strong> 你直接解除了面前的装置，或是在解除复杂结构的装置时视为获得了两次成功结果。你不会留下你曾经捣鼓过这件装置的痕迹，并且如果这件装置可以重置的话，你可以选择重置它。",
+            "success": "<strong>成功</strong> 你直接解除了面前的装置，或是在解除复杂结构的装置时获得了一次成功结果。"
+        },
+        "Title": "解除装置"
+    },
+    "DecipherWriting": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你理解了文本的正确含义。但如果你是在解读加密的文本，那么你知道的是文本的大意，而非百分之百逐字逐句意义的翻译。",
+            "criticalSuccess": "<strong>大成功</strong> 你理解了文本的确切含义。",
+            "failure": "<strong>失败</strong> 你看不懂文本的意思，并且在接下来对该文本的解译文书尝试中承受-2环境减值。",
+            "criticalFailure": "<strong>大失败</strong> 你认为你理解了文本的正确含义，但事实上你读错了其中的信息。"
+        },
+        "Title": "解译文书",
+        "Warning": {
+            "NoSkill": "解译文书时会使用到不同的技能，但没有明确指定。可以用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用社交技能解译密码或是古代书写等。"
+        }
+    },
+    "Perform": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你的表演震撼人心，观众可能在之后四处表扬你的才能。",
+            "success": "<strong>成功</strong> 你完全地展现了自己的才华，观众们感谢你的演技。",
+            "failure": "<strong>失败</strong>你的表演什么效果都没有。",
+            "criticalFailure": "<strong>大失败</strong>成功的展现了自己有多废。"
+        },
+        "Title": "表演",
+        "Warning": {
+            "UnknownVariant": "用于表演的变体“{variant}”未知，请使用戏剧、喜剧、舞蹈、键盘、演讲、打击乐、歌唱、弦乐或管乐。"
+        },
+        "Acting": {
+            "Title": "表演-戏剧"
+        },
+        "Comedy": {
+            "Title": "表演-喜剧"
+        },
+        "Dance": {
+            "Title": "表演-舞蹈"
+        },
+        "Keyboards": {
+            "Title": "表演-演奏键盘乐器"
+        },
+        "Oratory": {
+            "Title": "表演-演说"
+        },
+        "Percussion": {
+            "Title": "表演-演奏打击乐器"
+        },
+        "Singing": {
+            "Title": "表演-歌唱"
+        },
+        "Strings": {
+            "Title": "表演-演奏弦乐乐器"
+        },
+        "Winds": {
+            "Title": "表演-演奏管乐器"
+        }
+    },
+    "Subsist": {
+        "AfterExplorationPenalty": "探索后",
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong> 你可以为自己加上另一个生物提供足以维生程度的饮食和住所，或是为自己一个人提供舒适生活标准程度的食物和住所。",
+            "success": "<strong>成功</strong> 你为自己找到了足以保证基本生活和遮风避雨的食物及住所。",
+            "failure": "<strong>失败</strong> 你被风吹雨淋而且没有吃饱，直到你下一次成功获得足够好的饮食和住所前你陷入疲乏状态。",
+            "criticalFailure": "<strong>Critical Failure</strong>你给自己招来麻烦，吃错了东西，或是造成了其他会让你变得更惨的结果。你在接下来一周中所有的求生检定上承受-2环境减值，并且你没有获得任何食物。如果你没有储备的话，可能你很快就会死于冻饿饥渴。@UUID[Compendium.pf2e.other-effects.wHWWHkjDXmJl4Ia6]{Effect: Adverse Subsist Situation}"
+        },
+        "Title": "求生",
+        "Warning": {
+            "NoSkill": "求生行动可使用不同的技能，但目前未指定任何技能。如果你在定居点，这通常使用社群，如果你在野外，则使用生存。"
+        }
+    },
+    "ConcealAnObject": {
+        "Notes": {
+            "success": "<strong>成功</strong> 你隐秘地随身藏着这件物品。",
+            "failure": "<strong>失败</strong> 搜查者发现了你带着的物品。"
+        },
+        "Title": "隐藏物件"
+    },
+    "PalmAnObject": {
+        "Notes": {
+            "success": "<strong>成功</strong> 其他生物没有注意到你在手心藏有物品。",
+            "failure": "<strong>失败</strong> 其他生物注意到你在掌中藏有物品，GM会决定它们将因此而做出何种反应。"
+        },
+        "Title": "手上功夫"
+    },
+    "Steal": {
+        "Pocketed": "物品被随身携带或被严密保护",
+        "Title": "盗窃",
+        "Notes": {
+            "success": "<strong>成功</strong> 你成功偷走了物品而未被发觉，或是旁观者没有注意到你的偷窃行为。",
+            "failure": "<strong>失败</strong> 受害者注意到你的偷窃或是旁观者发现你在偷东西，GM会决定它们将因此而做出何种反应。"
+        }
+    },
+    "AdministerFirstAid": {
+        "Stabilize": {
+            "Notes": {
+                "success": "<strong>成功</strong> 你急救的生物不再处于濒死状态（但仍然昏迷）。",
+                "criticalFailure": "<strong>大失败</strong>生物濒死等级+1。"
+            },
+            "Title": "进行急救- 稳定伤势",
+            "DifficultyClass": {
+                "Label": "进行急救DC"
+            }
+        },
+        "StopBleeding": {
+            "Notes": {
+                "criticalFailure": "<strong>大失败</strong>生物立刻承受一次等于他承受的持续流血伤害数值的伤害。",
+                "success": "<strong>成功</strong> 那么生物可以再进行一次无修正测试来尝试移除流血。"
+            },
+            "Title": "进行急救-止血"
+        },
+        "Warning": {
+            "TargetNotDying": "目标生物没有陷入濒死。",
+            "UnknownVariant": "进行急救所使用的变体{variant}未知，请使用{variants}之一。"
+        }
+    },
+    "CreateForgery": {
+        "ForgedDocument": {
+            "Description": "<p>一个粗略看过伪造的文书并被骗过的读者可能之后再次仔细地阅读这份文件，使用更加严格和深刻的方式尝试从你成功伪造的文本中发现问题。这时，他们可以尝试一个@Check[type:perception|dc:{societyDC}] 或是@Check[type:society|dc:{societyDC}]对抗你的社群技能DC（成功则发现你的文本是假的）。</p>",
+            "Name": "伪造文书",
+            "FailureGmNote": "<p>这些文书存在一些明显的问题，GM会允许任何读者在阅读它时被动进行一个察觉检定或是社群技能检定（取其高者）与结果{total}对抗，从而看出它的漏洞，成功或失败情况见下。一旦GM为伪造的文书进行了一次检定，无论多少读者观察了这份文件和他们的察觉DC，他们都会对抗这单次检定的结果。</p>\n<p>{success}</p>\n<p>{failure}</p>",
+            "SuccessGmNote": "<p>文书伪造得足够好，通常的读者不会直接发现问题。只有那些非常仔细的审查文件的人才可以尝试一个@Check[type:perception|dc:{societyDC}|showDC:gm]或是@Check[type:society|dc:{societyDC}|showDC:gm]检定对抗你的社群技能DC，尝试找出这份伪物的破绽。</p>"
+        },
+        "ForgedDocumentCreatedNotification": "伪造的文书已经添加至{name}的仓库。",
+        "Notes": {
+            "failure": "<strong>失败</strong> 读者发现你的文书是伪造的。",
+            "success": "<strong>成功</strong> 读者看不出你的文书是伪造的。",
+            "criticalSuccess": "<strong>成功</strong> 读者看不出你的文书是伪造的。",
+            "criticalFailure": "<strong>失败</strong> 读者发现你的文书是伪造的。"
+        },
+        "Title": "进行伪造",
+        "UnspecificHandwriting": "非特定手写"
+    },
+    "Escape": {
+        "Notes": {
+            "criticalSuccess": "<strong>大成功</strong>你获得自由，移除目标对你施加的擒抱、禁足或束缚状态。你还能立刻行走至多5尺。",
+            "success": "<strong>成功</strong>你获得自由，移除目标对你施法的擒抱、禁足或束缚状态。",
+            "criticalFailure": "<strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。"
+        },
+        "Title": "逃脱"
     }
+}
+}
 }
