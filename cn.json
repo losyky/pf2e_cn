@@ -2967,7 +2967,8 @@
                     "Hint": "在这里，你可以进行重新迁移，这会尝试自动修复角色和物品的问题。"
                 }
             },
-            "Troubleshooting": "疑难解答"
+            "Troubleshooting": "疑难解答",
+            "Running": "正在系统迁移中..."
         },
         "ModifierTitle": "调整值",
         "ModifiersTitle": "调整值",
@@ -6417,7 +6418,8 @@
         "BrowserSettingsSaved": "设定已保存",
         "TraitEtchedOntoABludgeoningWeapon": "蚀刻到钝击武器上",
         "TraitEtchedOntoAPiercingOrSlashingWeapon": "蚀刻到穿刺或挥砍武器上",
-        "TraitHarrowCourt": "哈罗庭院"
+        "TraitHarrowCourt": "哈罗庭院",
+        "TraitSubjectiveGravity": "主观重力"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
