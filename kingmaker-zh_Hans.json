@@ -1,1 +1,9 @@
-{}
+{
+    "PF2E.Kingmaker": {
+        "Abilities": {
+            "economy": "经济",
+            "loyalty": "忠诚",
+            "culture": "文化"
+        }
+    }
+}
