@@ -135,7 +135,9 @@
                     "criticalSuccess": "<strong>大成功</strong>目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。",
                     "success": "<strong>成功</strong>目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
                 },
-                "Title": "挫败士气"
+                "Title": "挫败士气",
+                "Unintelligible": "无法沟通",
+                "Description": "<p>你发出一声巨吼，在恰当的时机朝对方抛出一句精心包装的挑战，或是将剑刃上的血滴冷酷地振落，让敌人的神经在你的威势下颤动。选择一个处于你30尺内且你可以注意到的生物。进行一个 <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"A\">威吓</span> 技能检定对抗目标的意志DC。如果对方听不懂你使用的语言，你不使用任何话语进行威吓，或是它们听不见你，这会在你的检定上造成-4环境减值。无论你的挫败士气尝试是否成功，同一个目标会免疫你的挫败士气尝试10分钟时间。</p><p><strong>大成功</strong> 对方陷入惊惧 2。<br><strong>成功</strong> 对方陷入惊惧 1。</p>"
             },
             "Disarm": {
                 "EffectLabel": "使用握不稳的武器",
@@ -205,7 +207,8 @@
                     "success": "<strong>成功</strong> 对其他原本可以看到你的生物，现在你获得@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态而非可见状态。如果你在原本就对某生物来说处于@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}或@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}状态下再次尝试藏匿，你保持原状态不变。",
                     "criticalSuccess": "<strong>大成功</strong> 对其他原本可以看到你的生物，现在你获得@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}而非可见状态。如果你在原本就对某生物来说处于@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}或@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}状态下再次尝试藏匿，你保持原状态不变。"
                 },
-                "Title": "躲藏"
+                "Title": "躲藏",
+                "Description": "<p>你躲藏一处掩蔽，高级掩蔽或是隐身在隐蔽物中，避开观察者的视线变得不可见。GM会给你暗骰一次隐秘检定，用本次检定的结果来分别对抗所有可以看得到你，但你对他们拥有掩蔽，高级掩蔽，或是隐蔽的观察者的察觉DC。如果你使用掩蔽或是高级掩蔽来藏匿，你可以从它们上获得加值。</p><p><strong>成功</strong> 对其他原本可以看到你的生物，现在你获得藏匿状态而非可见状态。如果你在原本就对某生物来说处于藏匿或 @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪}状态下再次尝试藏匿，你保持原状态不变。</p><p>如果你成功地获得对某生物的藏匿状态，但在此之后失去了对其拥有的掩蔽，高级掩蔽或隐蔽，你会重新对其回到可见状态。进行任何除了躲藏，潜行或是快步以外的动作也会使你不再处于藏匿状态。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为措手不及 ，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意。</p><p>如果其他生物成功地通过搜索动作发现了你而使你对其可见，那么你必须重新尝试躲藏行动来对其获得藏匿状态。</p>"
             },
             "HighJump": {
                 "Notes": {
@@ -250,6 +253,11 @@
                 "Sheathe": {
                     "Title": "收起",
                     "Description": "{actor} 收起了他们的 {weapon}。"
+                },
+                "Description": "<p>你用单手或更多手操作物体或影响环境。你可以抓起未固定或装好的物体、开门、进行类似的行动。有时你需要进行技能检定来决定交互是否能成功。</p>",
+                "Modular": {
+                    "Title": "模块化",
+                    "Description": "{actor}调整他的{weapon}以造成{damageType}伤害。"
                 }
             },
             "Impersonate": {
@@ -294,7 +302,8 @@
                     "criticalFailure": "<strong>大失败</strong>如同失败，但后果更加恐怖。",
                     "criticalSuccess": "<strong>大成功</strong> 你的战技成功了。"
                 },
-                "Title": "空中机动"
+                "Title": "空中机动",
+                "Description": "<p>你可以在飞行中尝试通过特技检定来执行特殊的机动动作。GM会判断你可以被允许进行何种类型的机动，但通常这些行动不会让你能够移动超过你的飞行速度的距离。</p><p><strong>成功</strong> 你成功执行机动。<br><strong>失败</strong> 你未能成功机动。GM会根据你原本希望使用的机动动作来决定失败造成的后果（比如，尝试顶着强风飞行如果失败，会让你被吹飞到别的地方）。<br><strong>大失败</strong> 如同失败，但后果更加恐怖。</p><section class=\"sample-tasks\"><h2>范例空中机动情景</h2><p><strong>受训</strong> 高角度起飞或降落</p><p><strong>专家</strong> 顶风飞行，凌空盘旋</p><p><strong>大师</strong> 空中高速调头</p><p><strong>传奇</strong> 在风暴中飞行</p></section>"
             },
             "PickALock": {
                 "Notes": {
@@ -302,7 +311,8 @@
                     "success": "<strong>成功</strong> 你直接解打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了一次成功结果。",
                     "criticalFailure": "<strong>大失败</strong> 你把你的工具玩坏了。你需要通过一个成功的手艺技能检定来@UUID[Compendium.pf2e.actionspf2e.bT3skovyLUtP22ME]{修理 Repair}它，或是替换一副备用的工具组件（价值3SP，如果是高级开锁工具的话则价值3GP）。"
                 },
-                "Title": "撬锁"
+                "Title": "撬锁",
+                "Description": "<p>使用钥匙以外的方法开锁和解除装置的方式相似，但贼活 的DC取决于锁的做工和复杂程度。做工精良的锁可能会需要多个累计的成功检定结果才能被成功打开——否则即使是没有什么经验的笨贼只要反复尝试仍然有可能一发入魂。如果你并未准备合适的盗贼工具，GM也可能允许你用随便什么手边能找到的东西尝试开锁，当然具体的可能性取决于你面对的锁的结构。</p><p><strong>大成功</strong>你直接打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了两次成功结果。你不会留下你曾经撬过过这把锁的痕迹<br><strong>成功</strong>你直接打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了一次成功结果<br><strong>大失败</strong> 你把你的工具玩坏了。你需要通过一个成功的手艺技能检定去修理它，或是替换一副备用的工具组件（价值3SP，如果是高级开锁工具的话则价值3GP）</p>"
             },
             "RaiseAShield": {
                 "SingleActionTitle": "举起盾牌",
@@ -322,7 +332,8 @@
                 "Grip": {
                     "Title": "改变持握(1H)",
                     "Description": "{actor} 从他们的 {weapon} 上松开了一只手。"
-                }
+                },
+                "Description": "<p>你放开你正用手握着的某些事物。这可以是丢下某物品、双手持握时松开一只手而另一只手依然握住、攀爬中松开抓住的绳索、等等类似动作。和大多数操作特征的动作不同，放开不会触发那些会因操作特征而被触发的反应动作（例如借机攻击）。</p><p>若你想要在回合外使用放开这个动作，请使用准备动作。</p>"
             },
             "Repair": {
                 "Chat": {
@@ -370,7 +381,8 @@
                     "criticalSuccess": "<strong>大成功</strong> 若你搜索生物，所有你对其大成功的@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}或@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的生物对你变为@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。若你搜索物体，你得知其位置。",
                     "success": "<strong>成功</strong> 若你搜索生物，所有对你@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪}的生物变为对你@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}而非@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪}，所有对你@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的生物变为对你@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。若你搜索物体，你得知其位置或获得一些线索，具体由GM判断。"
                 },
-                "Title": "搜索"
+                "Title": "搜索",
+                "Description": "<p>你搜索一块区域中的生物或物体。若你搜索的是生物，选择一块区域。若精确感官允许，GM可以允许你搜索视觉线内30尺锥形或15尺爆发范围。若所选区域过远，你可能会承受减值。</p><p>若你使用搜索动作寻找物体（例如密门或危害），你最多能搜索临近你的一个10尺见方的区域。若你搜索的是特别杂乱的区域，GM可以让你的搜索是一个行动，需要花费更多动作甚至数分钟乃至小时来进行。</p><p>GM为你进行一次秘密察觉检定，将检定结果和区域内所有无踪和藏匿生物的隐秘DC、区域内所有可被搜索出物体的察觉DC（由GM自定或由隐藏物件). 若你使用的是模糊感官或某效果阻止目标变为可见（例如隐形术），搜索到的生物就依然保持藏匿状态而不会变为可见。</p><p><strong>大成功</strong> 若你搜索生物，所有你对其大成功的无踪或藏匿的生物对你变为可见。若你搜索物体，你得知其位置。<br><strong>成功</strong> 若你搜索生物，所有你对其成功的无踪生物对你变为藏匿，所有你对其成功的藏匿生物对你变为可见。若你搜索物体，你得知其位置或获得一些线索，具体由GM判断。</p>"
             },
             "SenseDirection": {
                 "Modifier": {
@@ -522,7 +534,8 @@
                     "criticalSuccess": "<strong>大成功</strong> 你直接解除了面前的装置，或是在解除复杂结构的装置时视为获得了两次成功结果。你不会留下你曾经捣鼓过这件装置的痕迹，并且如果这件装置可以重置的话，你可以选择重置它。",
                     "success": "<strong>成功</strong> 你直接解除了面前的装置，或是在解除复杂结构的装置时获得了一次成功结果。"
                 },
-                "Title": "解除装置"
+                "Title": "解除装置",
+                "Description": "<p>你可以使用这个动作去尝试解除一个陷阱或是其他结构复杂的装置。通常来说，一件装置会需要多个累计的成功检定结果才能被成功解除——取决于它们的设计结构和复杂程度。一副盗贼工具是有用的 - 有时候，是必须的（GM判断） - 解除装置帮手，除此之外，某些高度复杂的装置可能需要你拥有较高的贼活技能熟练等级才能尝试解除。</p><p>你的贼活技能检定结果决定了你在解除装置时取得的进展程度。</p><p><strong>大成功</strong>你直接解除了面前的装置，或是在解除复杂结构的装置时视为获得了两次成功结果。你不会留下你曾经捣鼓过这件装置的痕迹，并且如果这件装置可以重置的话，你可以选择重置它<br><strong>成功</strong>你直接解除了面前的装置，或是在解除复杂结构的装置时获得了一次成功结果。<br><strong>大失败</strong>装置被你触发了</p>"
             },
             "DecipherWriting": {
                 "Notes": {
@@ -602,7 +615,8 @@
                     "success": "<strong>成功</strong> 其他生物没有注意到你在手心藏有物品。",
                     "failure": "<strong>失败</strong> 其他生物注意到你在掌中藏有物品，GM会决定它们将因此而做出何种反应。"
                 },
-                "Title": "手上功夫"
+                "Title": "手上功夫",
+                "Description": "<p>你可以将一件微小的，无人占有的物品藏在手心。进行一次贼活检定来对抗所有可以观察到你的生物的察觉DC。无论你是否成功，你需要持有这件物品。通常来说，你只能用手上功夫藏起一件重量可以忽略不计的物品，但GM可以根据具体情况调整这个规定。</p><p><strong>成功</strong>其他生物没有注意到你在手心藏有物品<br><strong>失败</strong>其他生物注意到你在掌中藏有物品，GM会决定它们将因此而做出何种反应</p>"
             },
             "Steal": {
                 "Pocketed": "物品被随身携带或被严密保护",
@@ -663,7 +677,8 @@
                     "success": "<strong>成功</strong>你获得自由，移除目标对你施法的擒抱、禁足或束缚状态。",
                     "criticalFailure": "<strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。"
                 },
-                "Title": "逃脱"
+                "Title": "逃脱",
+                "Description": "<p>你尝试从擒抱, 禁足, 或束缚状态中逃脱出来。选择一个生物、物体、法术效果、危害或其他对你施加上述状态的事物。进行一次检定，使用你的无武装攻击调整值对抗效果DC。该DC通常是擒抱你的生物的运动DC，捆绑你的生物的贼活DC，法术效果的法术DC，物体、危害或事物列出的逃脱DC等等。你可以选择进行特技或运动检定代替无武装攻击调整值（该动作依然保有攻击特征）。</p><p><strong>大成功</strong> 你获得自由，移除目标对你施加的擒抱、禁足或束缚状态。你还能立刻行走至多5尺。<br><strong>成功</strong> 你获得自由，移除目标对你施法的擒抱、禁足或束缚状态。<br><strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。</p>"
             },
             "Aid": {
                 "Notes": {
@@ -684,6 +699,18 @@
             "Delay": {
                 "Description": "<p>你等待更好的行动时机。你的回合剩下的部分不再进行。同时，你会从先攻条中移出。你可以用一个自由动作使自己返回先攻条中，触发为任一生物的回合结束。这会永久性地将你的先攻改变至新的位置。在你返回先攻条前，你无法使用反应动作。若你延迟了一整轮而没有返回先攻条，延迟回合保留的动作会全部失去，先攻不会改变，按照你在先攻条中的位置开始新的回合。</p><p>延迟时，所有持续伤害和负面效果正常在你原本使用延迟的回合的开始和结束时发生。任何会在你的回合中终止的正面效果也会正常终止。GM能裁决什么效果会在你延迟时正常终止。总而言之，你无法依靠延迟来延迟负面效果发生的时点，也无法延续正面效果在你回合结束后依然存在。</p>",
                 "Title": "延迟"
+            },
+            "DropProne": {
+                "Title": "趴下",
+                "Description": "<p>你趴倒在地。</p>"
+            },
+            "Leap": {
+                "Title": "跳跃",
+                "Description": "<p>你进行一次稳定的短程跳跃。若你的速度至少有15尺你可以水平跳跃10尺，若你的速度至少有30尺你可以水平跳跃15尺。你会落地在跳跃结束的格子中（意味着你可以跳过5尺的裂缝，若速度为30尺或更多时可以跳过10尺的裂缝）。</p><p>若进行垂直跳跃，你可以垂直跳起至多3尺同时水平跳跃5尺到较高的平面上。</p><p>跳得更高或更远需要使用运动技能。</p>"
+            },
+            "Ready": {
+                "Title": "准备",
+                "Description": "<p>你准备在自己回合外进行一个动作。选择一个你能使用的单动作或自由动作，并设置一个触发条件。你的回合立刻结束。若你设置的触发条件在你的下一回合开始前发生，你可用一个反应动作使用选定的动作（被选定的动作此时已然必须满足所有需求）。你无法准备一个已有触发条件的自由动作。</p><p>若你已有多次攻击减值且被准备的动作是一个攻击动作，你所准备的攻击会受到你使用准备时的多次攻击减值的影响。这是少数几个多次攻击减值会影响到你回合外的状况之一。</p>"
             }
         }
     }
