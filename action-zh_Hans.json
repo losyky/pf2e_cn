@@ -466,7 +466,8 @@
                     "criticalFailure": "<strong>大失败</strong>你完全搞丢了目标，必须等24小时后才能再次尝试追踪。",
                     "criticalSuccess": "<strong>大成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹。"
                 },
-                "Title": "追踪"
+                "Title": "追踪",
+                "Description": "<p>你可以在使用陆地旅行速度半速移动的情况下，同时追踪目标的行踪。如果你成功的通过了一次追踪检定，那么你可以保持半速移动并同时追踪1小时。如果在某些情况下你必须在战斗遭遇中进行追踪，那么这个行动需要一个动作且失去探索关键字。如果情景较为紧急复杂，追踪检定的频率可能也会需要的更加频繁。具体的检定频率由GM决定。</p><p>你需要在追踪开始，追踪持续进行的每一个小时，以及追踪路径上出现某些特别重要的变数时进行一次生存技能检定。GM会根据踪迹的新鲜程度，天气状况以及地面的状况来设定合适的检定DC。</p><p><strong>成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹<br><strong>失败</strong> 你搞丢了目标留下的行踪，必须等1小时后才能再次尝试追踪。<br><strong>大失败</strong>你完全搞丢了目标，必须等24小时后才能再次尝试追踪。</p><section class=\"sample-tasks\"><h2>范例追踪情景</h2><p><strong>未受训</strong> 一支军队沿着大路开过的痕迹</p><p><strong>受训</strong>比较新鲜的，一群熊在平原上袭击其他生物的痕迹</p><p><strong>专家</strong>被雨水冲刷过后的，一只矫健的豹子穿越雨林留下的踪迹</p><p><strong>大师</strong> 被大雪覆盖的踪迹、微小的（如布布或更小的）生物留下的痕迹，或是像硬石板这样难以留下痕迹的表面上的生物踪迹</p><p><strong>传奇</strong>变化不定，风暴肆虐的沙漠中一条古老通路，或是在暴风或暴雪中尝试追踪</p></section>"
             },
             "TreatDisease": {
                 "Notes": {
@@ -474,7 +475,8 @@
                     "success": "<strong>成功</strong> 在该生物下一次对抗该疾病的豁免检定上你为他提供+2环境加值。<br/>@UUID[Compendium.pf2e.equipment-effects.Ee2xfKX1yyqGIDZj]{效果：治疗疾病（成功）}",
                     "criticalFailure": "<strong>大失败</strong> 在该生物下一次对抗该疾病的豁免检定上你为他造成-2环境减值。<br/>@UUID[Compendium.pf2e.equipment-effects.5oYKYXAexr0vhx84]{效果：治疗疾病（大失败）}"
                 },
-                "Title": "治疗疾病"
+                "Title": "治疗疾病",
+                "Description": "<p>你花费最少8小时时间来照料一个生病的生物，进行一个医疗技能检定来对抗该疾病的DC。当你对一个生物尝试一次治疗疾病检定后，你必须等到该生物下一次对疾病的豁免检定进行以后才能再次对它尝试治疗疾病。</p><p><strong>大成功</strong> 在该生物下一次对抗该疾病的豁免检定上你为他提供+4环境加值。<br><strong>成功</strong> 在该生物下一次对抗该疾病的豁免检定上你为他提供+2环境加值。<br><strong>大失败</strong> 在该生物下一次对抗该疾病的豁免检定上你为他造成-2环境减值。</p>"
             },
             "TreatPoison": {
                 "Notes": {
@@ -482,7 +484,8 @@
                     "success": "<strong>成功</strong> 在该生物下一次对抗该毒素的豁免检定上你为他提供+2环境加值。<br/>@UUID[Compendium.pf2e.equipment-effects.XWenziR7J3mwKV4W]{效果：治疗中毒（成功）}",
                     "criticalFailure": "<strong>大失败</strong> 在该生物下一次对抗该毒素的豁免检定上你为他造成-2环境减值。<br/>@UUID[Compendium.pf2e.equipment-effects.ESuBosh3t1pXEcBj]{效果：治疗中毒（大失败）}"
                 },
-                "Title": "治疗中毒"
+                "Title": "治疗中毒",
+                "Description": "<p>你尝试阻止中毒者体内的毒素扩散，进行一个医疗技能检定来对抗该毒素的DC。当你对一个生物尝试一次治疗中毒检定后，你必须等到该生物下一次对毒素的豁免检定进行以后才能再次对它尝试治疗中毒。</p><p><strong>大成功</strong> 在该生物下一次对抗该毒素的豁免检定上你为他提供+4环境加值。<br><strong>成功</strong> 在该生物下一次对抗该毒素的豁免检定上你为他提供+2环境加值。<br><strong>大失败</strong> 在该生物下一次对抗该毒素的豁免检定上你为他造成-2环境减值。</p>"
             },
             "Trip": {
                 "Notes": {
@@ -490,7 +493,8 @@
                     "success": "<strong>成功</strong> 目标被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。",
                     "criticalFailure": "<strong>大失败</strong>你自己失去平衡摔倒了，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
                 },
-                "Title": "摔拌"
+                "Title": "摔拌",
+                "Description": "<p>你尝试将敌人摔倒在地上。尝试一个运动技能检定来对抗目标的反射DC。</p><p><strong>大成功</strong> 你的目标立刻被击倒至倒地状态，并承受1d6钝击伤害。<br><strong>成功</strong> 你的目标被击倒至倒地状态。<br><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
             },
             "TumbleThrough": {
                 "Notes": {
@@ -499,7 +503,8 @@
                     "criticalSuccess": "<strong>大成功</strong> 你通过敌人占据的空间，这个空间中的方格被视为困难地形(每5尺需要10尺的移动)。如果你没有足够的速度在空间中移动，你会得到和失败一样的结果。",
                     "criticalFailure": "<strong>大失败</strong> 你的移动结束，你将触发反应动作就好像你已经离开了你的起始方格。"
                 },
-                "Title": "翻滚"
+                "Title": "翻滚",
+                "Description": "<p>你可以以最快不超过你的移动速度的速度行走。在此次移动中，你可以尝试穿越被一个敌人占据的空间。当你尝试进入该敌人占据的空间时，进行一次特技检定，对抗该敌人的反射DC。根据进行尝试的具体环境，你可以使用攀爬, 飞行, 游泳或是其他合适的行动代替行走行动来发动翻滚尝试。</p><p><strong>成功</strong> 你穿过敌人，它占据的方格对你视为困难地形（每移动5尺需要消耗10尺移动速度）。如果你的速度不足以完整地穿过敌人占据的空间，视为失败结果。<br><strong>失败</strong> 你立刻结束移动，并且你可能触发敌人的反应动作，如同你从开始尝试翻滚的方格移动离开一样。</p>"
             },
             "WhirlingThrow": {
                 "Notes": {
@@ -604,7 +609,8 @@
                 "Title": "求生",
                 "Warning": {
                     "NoSkill": "求生行动可使用不同的技能，但目前未指定任何技能。如果你在定居点，这通常使用社群，如果你在野外，则使用生存。"
-                }
+                },
+                "Description": "<p>你尝试给自己寻找食水和可以遮风避雨的地方，足够成功的话，也可以给他人提供帮助。一般来说如果你在一个定居点内时倾向使用社群，而在野外的时候则一般使用生存技能。GM会根据你尝试求生的具体环境状况决定检定DC。在非常陌生的环境中，你可能需要达到特定的技能熟练度才能尝试进行求生。和大多数休整期行动不同，你可以在最多8小时的探索行动后仍然进行求生行动，但这样做会使你在求生检定上承受-5减值。</p><p><strong>大成功</strong> 你可以为自己加上另一个生物提供足以维生程度的饮食和住所，或是为自己一个人提供舒适生活标准程度的食物和住所。<br><strong>成功</strong> 你为自己找到了足以保证基本生活和遮风避雨的食物及住所。<br><strong>失败</strong> 你被风吹雨淋而且没有吃饱，直到你下一次成功获得足够好的饮食和住所前你陷入疲乏状态。<br><strong>大失败</strong> 你给自己招来麻烦，吃错了东西，或是造成了其他会让你变得更惨的结果。你在接下来一周中所有的求生检定上承受-2环境减值，并且你没有获得任何食物。如果你没有储备的话，可能你很快就会死于冻饿饥渴。</p><section class=\"sample-tasks\"><h2>范例求生情景</h2><p><strong>未受训</strong> 郁郁葱葱，天气温和的森林或是车水马龙的都市。</p><p><strong>受训</strong> 常见的温带丘陵或村镇</p><p><strong>专家</strong> 通常的山地或闭塞的小村庄</p><p><strong>大师</strong> 通常的沙漠或是被大军围困的城市</p><p><strong>传奇</strong> 废土或是不死生物城市</p></section>"
             },
             "ConcealAnObject": {
                 "Notes": {
@@ -720,6 +726,47 @@
             "Stand": {
                 "Description": "<p>你从倒地中站起</p>",
                 "Title": "站立"
+            },
+            "Step": {
+                "Description": "<p>你小心移动5尺。和大多数移动类型不同，快步不会触发那些因移动动作或进出格子而触发的反应动作，例如借机攻击。</p><p>你无法快步进入困难地形，也无法使用陆地速度之外的速度进行快步。</p>",
+                "Title": "快步"
+            },
+            "Stride": {
+                "Description": "<p>你移动至多等于速度的距离。</p>",
+                "Title": "行走"
+            },
+            "TakeCover": {
+                "Description": "<p>你自身靠近墙壁或矮墙之类的阻挡物，以期从掩蔽中获得优势（见477页）。若你已有标准掩蔽，你改为获得强效掩蔽，这会给AC提供+4环境加值、给对抗区域效果的反射豁免+4环境加值、给躲藏、潜行和其它避开侦查的隐秘简单提供+4环境加值。其它状况下，你获得标准掩蔽（上述条件中获得的环境加值为+2）。这持续到你从当前位置移走、使用攻击动作、变为失去意识、以自由动作解除掩蔽状态。</p>",
+                "Title": "寻找掩蔽"
+            }
+        },
+        "ActionsCheck": {
+            "acrobatics": "行动检定",
+            "arcana": "奥法检定",
+            "athletics": "运动检定",
+            "crafting": "手艺检定",
+            "deception": "欺骗检定",
+            "diplomacy": "交涉检定",
+            "intimidation": "威吓检定",
+            "medicine": "医疗检定",
+            "nature": "自然检定",
+            "occultism": "神秘检定",
+            "perception": "察觉检定",
+            "performance": "表演检定",
+            "religion": "宗教检定",
+            "society": "社群检定",
+            "stealth": "隐秘检定",
+            "survival": "生存检定",
+            "thievery": "贼活检定",
+            "unarmed": "无武装攻击骰"
+        },
+        "ActionsWarning": {
+            "NoActor": "掷骰前至少选择一个角色，或指定一个默认角色。",
+            "NoStatistic": "角色{name} ({id})没有{statistic}的数据。",
+            "Variants": {
+                "None": "行动“{action}”没有变体，但需要变体“{variant}”。",
+                "Multiple": "行动“{action}”有多个变体，但未需求任何变体。",
+                "Nonexisting": "为行动“{action}”指定的变体“{variant}”不存在"
             }
         }
     }
