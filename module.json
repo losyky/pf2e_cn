@@ -4,13 +4,13 @@
   "description": "本模组为 FVTT 的 PF2e 系统提供了中文翻译。",
   "authors": [
     {
-      "name": "FVTT-CN",
-      "email": "fvtt-cn@dickytwister.org"
+      "name": "Losy",
+      "email": "3119752307@qq.com"
     }
   ],
   "compatibility": {
     "minimum": "10",
-    "verified": "11.299"
+    "verified": "11.304"
   },
   "systems": [ "pf2e" ],
   "languages": [
@@ -18,6 +18,16 @@
       "lang": "cn",
       "name": "系统主体（中文）",
       "path": "cn.json"
+    },
+    {
+      "lang": "cn",
+      "name": "动作元素（中文）",
+      "path": "action-zh_Hans.json"
+    },
+    {
+      "lang": "cn",
+      "name": "拥王者元素（中文）",
+      "path": "kingmaker-zh_Hans.json"
     },
     {
       "lang": "cn",
