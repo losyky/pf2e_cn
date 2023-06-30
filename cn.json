@@ -1340,6 +1340,12 @@
                     "Scroll": "{name} 卷轴 ({level}环)",
                     "Wand": "{name} 魔杖 ({level}环)",
                     "CantripDeck5": "{name}戏法套牌（5卡包）"
+                },
+                "Bulk": {
+                    "Light": "L",
+                    "Negligible": "—",
+                    "NLight": "{light}L",
+                    "WithLight": "{bulk}, {light}L"
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1728,6 +1734,10 @@
                     },
                     "Title": "无效的战役({party})",
                     "Hint": "战役数据无效"
+                },
+                "RemoveMember": {
+                    "Title": "移除成员",
+                    "Content": "从队伍中移除成员？"
                 }
             },
             "Familiar": {
@@ -3429,6 +3439,10 @@
                     "Gm": "GM",
                     "Owner": "持有者",
                     "All": "所有"
+                },
+                "ShowPartyStats": {
+                    "Name": "显示队伍成员信息",
+                    "Hint": "如果启用，玩家将在队伍角色表中看到其他队伍成员的数据"
                 }
             },
             "Tokens": {
