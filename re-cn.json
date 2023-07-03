@@ -1163,6 +1163,9 @@
                 },
                 "TombWatchersGlare": {
                     "Note": "当你重击一个亡灵生物，亡灵@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1回合"
+                },
+                "DwarvenClan": {
+                    "Prompt": "选择一个矮人氏族"
                 }
             },
             "Fleshwarp": {
@@ -1794,6 +1797,20 @@
                 "LitLabel": "玛扎利黄金之刃正在发光",
                 "ElementalFormLabel": "你已通过玛扎利黄金之刃施放元素形态",
                 "PersistentDamageNote": "与通常情况不同的是，一名生物只需要成功通过一次纯骰检定，便能摆脱上述效果所带来的两种持续伤害。"
+            },
+            "Conditions": {
+                "Sickened": {
+                    "Reduce": {
+                        "criticalSuccess": "当你以大成功通过强韧豁免检定来减少你的@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心}值时，你将其减少3点。",
+                        "success": "当你以成功通过强韧豁免检定来减少你的@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心}值时，你将其减少2点。"
+                    }
+                }
+            },
+            "Label": {
+                "SecondAttempt": "第二次尝试",
+                "ResistanceType": "抗力类型",
+                "ThirdAttempt": "第三次尝试",
+                "DamageType": "伤害类型"
             }
         },
         "RuleElement": {
@@ -2193,6 +2210,21 @@
             },
             "Necrohulk": {
                 "AlchemicalCartridgeRuptured": "炼金定装弹破裂"
+            },
+            "DisplacedRobot": {
+                "Fists": "拳头",
+                "DivertPower": {
+                    "LaserBeam": "将能量转移到激光射线上",
+                    "Fists": "将能量转移到拳头上"
+                },
+                "LaserBeam": "激光射线"
+            },
+            "Marut": {
+                "Lightning": "雷电",
+                "Thunder": "雷霆"
+            },
+            "Bunyip": {
+                "SnakeTail": "蛇尾"
             }
         },
         "UI": {
