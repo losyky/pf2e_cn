@@ -4868,7 +4868,8 @@
             "errorTargetToken": "需要选中一个目标。",
             "noDamageInfoForOutcome": "没有关于 {outcome}的伤害信息。",
             "shiftModifyDamageLabel": "调整伤害/治疗",
-            "shiftModifyDamageTitle": "修改骰出的伤害/治疗"
+            "shiftModifyDamageTitle": "修改骰出的伤害/治疗",
+            "warnNoActor": "这个垂直列表需要一个角色。"
         },
         "UnitPriceLabel": "单价",
         "UnprepareItemTitle": "不适合的物品",
@@ -5145,7 +5146,13 @@
                 "chain-sword": "链剑",
                 "khakkhara": "禅杖",
                 "shield-pistol": "护盾手枪",
-                "wrist-launcher": "腕部发射器"
+                "wrist-launcher": "腕部发射器",
+                "dandpatta": "护手直刃",
+                "donchak": "绳轮杖",
+                "gada": "金刚杵",
+                "kalis": "蛇形剑",
+                "visap": "双头曲刃",
+                "zulfikar": "斩脊刀"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -5372,20 +5379,20 @@
             "grievous": {
                 "Name": "深化符文",
                 "Note": {
-                    "Axe": "<strong>深化符文</strong> 你可以攻击第三个生物，使用和常规重击专精特效相同的限制。",
-                    "Bow": "<strong>深化符文</strong> 拔出弹头的运动DC为20。",
-                    "Brawling": "<strong>深化符文</strong> 目标的豁免获得-4环境减值。",
-                    "Club": "<strong>深化符文</strong> 你可以击退目标最多15尺远。",
-                    "Dart": "<strong>深化符文</strong> 基础持续流血伤害提升为[[/r 2d6[bleed]]]。",
-                    "Flail": "<strong>深化符文</strong> 你移动目标5尺。你无法将其移动远离你，但可以按你所想将其移动到你的另一个方位上。",
-                    "Hammer": "<strong>深化符文</strong> 你还可以将其击退离你5尺远。",
-                    "Knife": "<strong>深化符文</strong> 只要目标还受到该@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}，其速度获得-5尺状态减值。",
-                    "Pick": "<strong>深化符文</strong>重击专精效果的额外伤害增加为每颗武器伤害骰4点。",
-                    "Polearm": "<strong>深化符文</strong> 你可以移动目标最多10尺。",
-                    "Shield": "<strong>深化符文</strong> 你可以击退目标最多10尺远。",
-                    "Sling": "<strong>深化符文</strong> 若目标豁免失败，其移动速度1轮内获得-10尺的减值。",
-                    "Spear": "<strong>深化符文</strong> 力竭状态持续2轮。",
-                    "Sword": "<strong>深化符文</strong> 目标直到你的下一回合结束时措手不及。"
+                    "Axe": "你可以攻击第三个生物，使用和常规重击专精特效相同的限制。",
+                    "Bow": "拔出弹头的运动DC为20。",
+                    "Brawling": "目标的豁免获得-4环境减值。",
+                    "Club": "你可以击退目标最多15尺远。",
+                    "Dart": "基础持续流血伤害提升为[[/r 2d6[bleed]]]。",
+                    "Flail": "你移动目标5尺。你无法将其移动远离你，但可以按你所想将其移动到你的另一个方位上。",
+                    "Hammer": "你还可以将其击退离你5尺远。",
+                    "Knife": "只要目标还受到该@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}，其速度获得-5尺状态减值。",
+                    "Pick": "重击专精效果的额外伤害增加为每颗武器伤害骰4点。",
+                    "Polearm": "你可以移动目标最多10尺。",
+                    "Shield": "你可以击退目标最多10尺远。",
+                    "Sling": "若目标豁免失败，其移动速度1轮内获得-10尺的减值。",
+                    "Spear": "力竭状态持续2轮。",
+                    "Sword": "目标直到你的下一回合结束时措手不及。"
                 }
             },
             "hauling": {
@@ -5877,8 +5884,8 @@
         },
         "UnitedPaizoWorkers": {
             "Title": "公告: United Paizo Workers",
-            "PFSNote": "",
-            "ReleaseIntro": ""
+            "PFSNote": "给探索者协会玩家的提示：为了支持UPW，从工会商店购买的商品将在Online PFS区域内计算为<span class=\"hover\" title=\"当你使用一个英雄点重新进行检定时，加上一个+1的环境加值\">推广服饰</a>的恩惠。",
+            "ReleaseIntro": "雷德蒙德，华盛顿州（2021年10月14日）— 今天，Paizo, Inc的员工们 - 发布者为Pathfinder和Starfinder角色扮演游戏 - 宣布他们组建了Paizo工作者联合工会（UPW），该联合工会隶属于美国通信行业工会的CODE-CWA项目。这个联合工会是桌面角色扮演游戏行业中的首个该类组织。"
         },
         "identification": {
             "Identify": "鉴定物品",
@@ -6227,14 +6234,14 @@
         "TraitSkelm": "癫佬",
         "PreciousMaterialSisterstoneDescription": "姐妹石是一种术语，用于指代产出于在少女之原的被精魂注入的两种密切相关矿石——黄昏姐妹石和绯红姐妹石。黄昏姐妹石是淡橙色，而猩红色姐妹石是淡红色，除了颜色不同外，它们具有相同的物理特性。当靠近另一种姐妹石制成的物品时，它们都会开始散发出排斥不死生物的精神能量。",
         "LanguageOcotan": "",
-        "LanguageRazatlani": "",
+        "LanguageRazatlani": "拉扎特兰语",
         "LanguageKibwani": "",
         "TraitDescriptionGoloma": "长着无数眼睛的孤僻类人种族。",
         "LanguageOkaiyan": "",
         "LanguageDrooni": "",
         "TraitDescriptionGhul": "贪婪而暴食的不死鬼巨灵，它们起源自巨灵。",
         "TraitDescriptionShisk": "神秘的类人生物生物，全身覆盖着脱毛羽管，居住在地下。",
-        "TraitStheno": "",
+        "TraitStheno": "斯忒诺",
         "TraitKovintus": "",
         "TraitDescriptionSubjectiveGravity": "在具有主观重力特征的位面上，所有具有质量的物体都拥有相同重力的重力中心，但只在一个非无心智的生物希望时才会如此。",
         "PreciousMaterialWarpglassDescription": "",
@@ -6451,7 +6458,12 @@
         "TraitEtchedOntoABludgeoningWeapon": "蚀刻到钝击武器上",
         "TraitEtchedOntoAPiercingOrSlashingWeapon": "蚀刻到穿刺或挥砍武器上",
         "TraitHarrowCourt": "哈罗庭院",
-        "TraitSubjectiveGravity": "主观重力"
+        "TraitSubjectiveGravity": "主观重力",
+        "ProgressBar": {
+            "LoadingComplete": "加载完毕",
+            "LoadingPack": "正在加载{pack}"
+        },
+        "TraitScatter20": "散射 20"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
