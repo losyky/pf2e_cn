@@ -5477,6 +5477,24 @@
             },
             "authorized": {
                 "Name": "授权"
+            },
+            "called": {
+                "Name": "召来"
+            },
+            "swarming": {
+                "Name": "集群"
+            },
+            "merciful": {
+                "Name": "仁慈"
+            },
+            "impossible": {
+                "Name": "奇迹"
+            },
+            "flurrying": {
+                "Name": "连击"
+            },
+            "coating": {
+                "Name": "涂层"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
