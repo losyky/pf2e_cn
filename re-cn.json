@@ -966,6 +966,9 @@
                 },
                 "ScapularOfShields": {
                     "ResistAllLabel": "激活盾肩披风，获得对所有伤害的抗力。"
+                },
+                "DeckOfDestiny": {
+                    "WealOrWoePrompt": "选择吉或凶"
                 }
             },
             "FighterWeaponMasteryLegend": {
