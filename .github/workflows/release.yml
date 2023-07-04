@@ -5,7 +5,7 @@ on:
     types: [ published ]
 
 env:
-  ZIP_FILENAME: "pf2e_cn"
+  ZIP_FILENAME: "pf2_cn"
   PACKAGE_CONTENT: "module.json cn.json re-cn.json kingmaker-zh_Hans.json action-zh_Hans.json"
   PACKAGE_ID: 827
 
