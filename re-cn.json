@@ -963,6 +963,9 @@
                     "MisfireNote": "使用被侮辱的<em>吹嘘猎手</em>的所有攻击承受@Check[type:flat|dc:5]失火风险直到这把武器被安抚。",
                     "InsultedLabel": "吹嘘猎手被侮辱",
                     "BoredLabel": "吹嘘猎手感到无聊"
+                },
+                "ScapularOfShields": {
+                    "ResistAllLabel": "激活盾肩披风，获得对所有伤害的抗力。"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1041,7 +1044,8 @@
                 "ClassDCAbilityScore": "选择职业DC的属性值。",
                 "VersatileTrait": "选择一种多用伤害类型。",
                 "DegreeOfSuccess": "选择成功等级",
-                "Alignment": "选择一个阵营"
+                "Alignment": "选择一个阵营",
+                "Rune": "选择一个符文。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1580,7 +1584,10 @@
                 "DivineSmite": {
                     "Label": "神圣制裁"
                 },
-                "BladeAllyRune": "为利刃盟友选择一个性能符文"
+                "BladeAllyRune": "为利刃盟友选择一个性能符文",
+                "TargetReaction": "目标触发了你的神卫反应",
+                "EvilDamage": "邪恶伤害",
+                "NegativeDamage": "负能量伤害"
             },
             "DeviantAbilities": {
                 "AwakenedPower": {
@@ -1810,7 +1817,30 @@
                 "SecondAttempt": "第二次尝试",
                 "ResistanceType": "抗力类型",
                 "ThirdAttempt": "第三次尝试",
-                "DamageType": "伤害类型"
+                "DamageType": "伤害类型",
+                "Exit": "退出",
+                "Enter": "输入"
+            },
+            "Obcisidaemon": {
+                "ConsumeSoul": {
+                    "EmpowerSpell": "增幅法术",
+                    "Prompt": "增幅一个法术或武器？",
+                    "EmpowerWeapon": "增幅武器"
+                }
+            },
+            "ExemplaryFinisher": {
+                "Wit": "敌人在对你进行攻击骰时会受到-2的环境减值，直到你下一个回合开始。",
+                "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气}具有暂时免疫能力，则他们的暂时免疫效果结束。",
+                "Battledancer": "你可以在完成终结后立即以一个自由动作进行一次快步。",
+                "Name": "惩戒终结",
+                "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及}，直到你下一回合。"
+            },
+            "HarrowChosen": {
+                "Unmatched": "不匹配",
+                "TrueMatch": "完全匹配",
+                "Prompt": "你的牌和你的阵营一致吗？",
+                "PartialMatch": "部分匹配",
+                "Misaligned": "错位"
             }
         },
         "RuleElement": {
@@ -2129,7 +2159,9 @@
             "PoltergeistTelekineticStorm": {
                 "SingleAttackLabel": "心灵风暴-单个目标",
                 "MultiAttackLabel": "心灵风暴-多个目标",
-                "SingleAttackEffect": "攻击失手时造成[[/r (1d12}]]{1d12点伤害}。"
+                "SingleAttackEffect": "攻击失手时造成[[/r (1d12}]]{1d12点伤害}。",
+                "SingleTarget": "单目标",
+                "MultipleTargets": "多目标"
             },
             "SovereignDragon": {
                 "InspireEnvoyDragonChoice": "龙赐予的效果",
@@ -2224,7 +2256,8 @@
                 "Thunder": "雷霆"
             },
             "Bunyip": {
-                "SnakeTail": "蛇尾"
+                "SnakeTail": "蛇尾",
+                "CrocodileLegs": "鳄鱼腿"
             }
         },
         "UI": {
