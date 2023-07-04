@@ -1723,7 +1723,8 @@
                 "Tabs": {
                     "Overview": "总览",
                     "Inventory": "物品",
-                    "Orphaned": "孤立物品"
+                    "Orphaned": "孤立物品",
+                    "Exploration": "探索"
                 },
                 "Total": "队伍合计",
                 "Wealth": "财富",
@@ -3098,7 +3099,7 @@
         "PreciousMaterialDragonhide": "龙革",
         "PreciousMaterialDragonhideDescription": "龙的鳞片和皮革只能用来制作任何本来就用毛皮或皮革制作的物品。龙革种类繁多从蓝色到闪金都有，取决于龙革取自哪里。鉴于龙鳞的韧性，除此之外它还能用来制作金属板甲（比如胸甲、半身甲或全身甲），让这些护甲不使用金属制作。龙革物品免疫一种伤害类型，取决于龙的类型。",
         "PreciousMaterialGradeLabel": "珍贵材料纯度",
-        "PreciousMaterialGrisantianPelt": "格里桑特毛皮",
+        "PreciousMaterialGrisantianPelt": "",
         "PreciousMaterialHighGrade": "高纯度",
         "PreciousMaterialInubrix": "虚铅",
         "PreciousMaterialInubrixDescription": "这种苍白，易锻的金属有着不同寻常的分子结构，能在不接触钢铁的情况下部分穿透过去。虽然这种性质在制作可穿透金属护甲的武器时十分有用，但虚铅仅仅比铅要结实那么一点。即使处于合金态中，这种天金也过于脆弱，以至于难以用来制作可靠的盾牌，也不适合用来制作护甲。",
