@@ -1,5 +1,5 @@
 # Foundry VTT PF2e 系统中文化
-![downloads](https://img.shields.io/github/losyky/pf2e_cn/total)
+![downloads](https://img.shields.io/github/downloads/fvtt-cn/pf2_cn/total)
 
 本模组为 FVTT 的 [PF2e 系统](https://gitlab.com/hooking/foundry-vtt---pathfinder-2e)提供了中文翻译。
 **建议配合 [Foundry VTT PF2e 合集包中文化](https://github.com/AlphaStarguide/pf2e_compendium_chn)一同使用**。
