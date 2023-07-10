@@ -1582,7 +1582,8 @@
                     "ClassMissingHelp": "选择职业以选择提升。",
                     "NotSelected": "未选定",
                     "Complete": "完成",
-                    "AlternateBoostsLabel": "替换提升"
+                    "AlternateBoostsLabel": "替换提升",
+                    "LegacyFlaws": "遗留缺陷"
                 },
                 "AncestryClass": "{ancestry} {class}",
                 "Rest": {
@@ -1599,7 +1600,10 @@
                     "Label": "职业DC",
                     "Plural": "职业DC",
                     "LabelSpecific": "职业DC ({class})"
-                }
+                },
+                "Clear": "清除",
+                "ActiveHeader": "激活动作",
+                "Active": "激活"
             },
             "Creature": {
                 "Alliance": {
@@ -1739,6 +1743,12 @@
                 "RemoveMember": {
                     "Title": "移除成员",
                     "Content": "从队伍中移除成员？"
+                },
+                "Rest": "休息",
+                "SlotAvailable": "可用槽位",
+                "ClearActivities": {
+                    "Label": "清除",
+                    "Complete": "队伍的探索期动作已被清除"
                 }
             },
             "Familiar": {
@@ -4851,7 +4861,8 @@
                 "Track": "追踪",
                 "None": "无 (全速)",
                 "HalfSpeed": "其他 (半速)"
-            }
+            },
+            "ActivitiesPerDay": "每日动作"
         },
         "TrickMagicItemPopup": {
             "Label": "选择一个技能用于巧取魔法物品。",
@@ -5503,6 +5514,9 @@
             },
             "coating": {
                 "Name": "涂层"
+            },
+            "deathdrinking": {
+                "Name": "亡饮"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -6152,7 +6166,8 @@
                 "NameLabel": "技能名称",
                 "SpecialCaseLabel": "特殊情况",
                 "TitleLabel": "NPC技能编辑"
-            }
+            },
+            "AddPassive": "添加被动"
         },
         "AreaTypeCube": "立方形",
         "AreaTypeSquare": "平方形",
@@ -6464,7 +6479,16 @@
             "LoadingComplete": "加载完毕",
             "LoadingPack": "正在加载{pack}"
         },
-        "TraitScatter20": "散射 20"
+        "TraitScatter20": "散射 20",
+        "TraitArmy": "军队",
+        "TraitCavalry": "骑兵",
+        "TraitCivic": "公民",
+        "TraitCommerce": "商业",
+        "TraitInfantry": "步兵",
+        "TraitKingdom": "王国",
+        "TraitLeadership": "领导力",
+        "TraitUpkeep": "保养",
+        "TraitRegion": "区域"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
