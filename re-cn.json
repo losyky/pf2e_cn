@@ -601,7 +601,7 @@
                     "Desert": "沙漠",
                     "Mountain": "山脉",
                     "Swamp": "沼泽",
-                    "Prompt": "选择你的束缚地"
+                    "Prompt": "选择一个束缚地。"
                 },
                 "AccursedTouch": {
                     "Note": {
@@ -633,7 +633,7 @@
                     "Crowns": "冠之牌组",
                     "Books": "书之牌组"
                 },
-                "Prompt": "选择哈罗牌组"
+                "Prompt": "选择哈罗牌组。"
             },
             "SubstituteRoll": {
                 "Assurance": "驾轻就熟",
@@ -861,8 +861,8 @@
                     "ArcaneLocomotionSwimSpeed": "获得游泳速度",
                     "MagicalResistanceAll": "获得额外抗力",
                     "MagicalResistanceIncrease": "增强已有抗力",
-                    "EnhancementPrompt": "选择一种增强",
-                    "AugmentationPrompt": "选择一种增强感官"
+                    "EnhancementPrompt": "选择一种增强。",
+                    "AugmentationPrompt": "选择一种增强感官。"
                 }
             },
             "AftermathFeats": {
@@ -886,7 +886,7 @@
             },
             "DeityAndCause": {
                 "AllowedDrops": "1级神卫职业特性",
-                "Prompt": "选择神卫事业"
+                "Prompt": "选择一种神卫事业。"
             },
             "Dhampir": {
                 "Adhyabhau": {
@@ -924,7 +924,7 @@
                     "BracersOfArmor": "龙之鳞w/盔甲护腕",
                     "ExplorersClothing": "龙之鳞w/探险者服装"
                 },
-                "Prompt": "选择一种龙"
+                "Prompt": "选择一种龙。"
             },
             "Equipment": {
                 "EagleEyeElixir": {
@@ -968,7 +968,7 @@
                     "ResistAllLabel": "激活盾肩披风，获得对所有伤害的抗力。"
                 },
                 "DeckOfDestiny": {
-                    "WealOrWoePrompt": "选择吉或凶"
+                    "WealOrWoePrompt": "选择吉或凶。"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1019,22 +1019,22 @@
                 "Material": "选择一种材质",
                 "EnergyType": "选择一种能量类型",
                 "CantripOrNonCantrip": "选择戏法或非戏法法术",
-                "ConsciousMind": "选择显意识",
+                "ConsciousMind": "选择显意识。",
                 "CreatureSize": "选择生物体型",
                 "Deity": "选择一个神祇",
                 "DamageType": "选择一种伤害类型",
                 "Element": "选择一种元素",
                 "Feat": "选择一个专长",
-                "FirstImplement": "选择你的第一奇具",
+                "FirstImplement": "选择一个第一奇具。",
                 "Lesson": "选择教诲",
-                "SecondImplement": "选择你的第二奇具",
+                "SecondImplement": "选择一个第二奇具。",
                 "DeitysDomain": "选择神祇的一个领域",
-                "EvolutionFeat": "选择你的第一个进化专长",
+                "EvolutionFeat": "选择第一个进化专长。",
                 "Shillelagh": "选择一根棍棒或木杖",
                 "Skill": "选择一个技能",
-                "SubconsciousMind": "选择潜意识",
+                "SubconsciousMind": "选择潜意识。",
                 "SkillFeat": "选择一个技能专长",
-                "ThirdImplement": "选择你的第三奇具",
+                "ThirdImplement": "选择一个第三奇具。",
                 "Weapon": "选择一个武器",
                 "WildShape": "选择变化形态",
                 "UnarmedAttack": "选择一种无武装打击",
@@ -1046,8 +1046,8 @@
                 "WeaponOrUnarmed": "选择一把武器或无武装打击。",
                 "ClassDCAbilityScore": "选择职业DC的属性值。",
                 "VersatileTrait": "选择一种多用伤害类型。",
-                "DegreeOfSuccess": "选择成功等级",
-                "Alignment": "选择一个阵营",
+                "DegreeOfSuccess": "选择成功等级。",
+                "Alignment": "选择一个阵营。",
                 "Rune": "选择一个符文。"
             },
             "SterlingDynamo": {
@@ -1172,7 +1172,7 @@
                     "Note": "当你重击一个亡灵生物，亡灵@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1回合"
                 },
                 "DwarvenClan": {
-                    "Prompt": "选择一个矮人氏族"
+                    "Prompt": "选择一个矮人氏族。"
                 }
             },
             "Fleshwarp": {
@@ -1183,7 +1183,7 @@
                     "Prompt": "选择用作武器的身体部位"
                 },
                 "MutateWeapon": {
-                    "Bonus": "选择加值",
+                    "Bonus": "选择加值。",
                     "Target": "选择一个你的肢体武器",
                     "Reach": "获得长触及10",
                     "Accuracy": "获得攻击检定+1加值"
@@ -1365,7 +1365,7 @@
                 }
             },
             "BrevicNoble": {
-                "Prompt": "选择你所属的布雷斡家族",
+                "Prompt": "选择一个布雷斡家族。",
                 "Medvyed": "梅德伟耶德 Medvyed",
                 "Orlovsky": "奥尔洛夫斯基 Orlovsky",
                 "Surtova": "索托瓦 Surtova",
@@ -1374,10 +1374,10 @@
                 "Lodovka": "洛多夫卡 Lodovka"
             },
             "TerrainExpertise": {
-                "Prompt": "选择一种地形"
+                "Prompt": "选择一种地形。"
             },
             "WardingRune": {
-                "Prompt": "选择一个预言系以外的魔法学派"
+                "Prompt": "选择一个预言系以外的魔法学派。"
             },
             "Witch": {
                 "Patron": {
@@ -1460,7 +1460,7 @@
                 }
             },
             "VirtuosicPerformer": {
-                "Prompt": "选择表演类型",
+                "Prompt": "选择一种表演类型。",
                 "Acting": "戏剧",
                 "Comedy": "喜剧",
                 "Dance": "舞蹈",
@@ -1633,7 +1633,7 @@
                     "StrikeLabel": "骨刺 Bone Spike"
                 },
                 "Dragon": {
-                    "EnergyPrompt": "选择你的龙类能力对应的能量"
+                    "EnergyPrompt": "选择你的龙类能力对应的能量。"
                 }
             },
             "TrapFinder": {
@@ -1661,7 +1661,7 @@
             },
             "CatharticMage": {
                 "EmotionalState": {
-                    "Prompt": "选择宣洩情绪"
+                    "Prompt": "选择一种宣洩情绪。"
                 },
                 "Love": {
                     "Toggle": "施展一个法术让你的情绪焦点获得好处"
@@ -1784,7 +1784,7 @@
                 "Speed": "速度+20尺状态加值",
                 "Amphibious": "游泳速度",
                 "Sight": "昏暗视觉和黑暗视觉",
-                "Prompt": "选择一种进化浪潮"
+                "Prompt": "选择一种进化浪潮。"
             },
             "Anadi": {
                 "SpiderOrHybridForm": "在真实形态或蜘蛛形态下"
