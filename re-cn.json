@@ -1180,7 +1180,7 @@
                     "CriticalHit": "重击时，目标承受[[/r 1d4[persistent,acid]]]。"
                 },
                 "LivingWeapon": {
-                    "Prompt": "选择用作武器的身体部位"
+                    "Prompt": "选择用作武器的身体部位。"
                 },
                 "MutateWeapon": {
                     "Bonus": "选择加值。",
@@ -1534,6 +1534,9 @@
                 },
                 "ScaldingSpit": {
                     "BoilingSpit": "沸腾喷吐"
+                },
+                "CityScavenger": {
+                    "EarnIncome": "城镇拾荒者 - 赚取收入"
                 }
             },
             "HalfElf": {
@@ -1888,7 +1891,8 @@
             "CraftingFormula": "制作配方",
             "FlatModifier": "固定调整值",
             "MarkToken": "标记指示物",
-            "EphemeralEffect": "临时效果"
+            "EphemeralEffect": "临时效果",
+            "ItemAlteration": "物品变化"
         },
         "SkillVariant": {
             "Buried": "活埋",
@@ -2043,7 +2047,8 @@
             "ImpersonateClothing": "乔装衣物",
             "ImitateVoice": "模仿声音",
             "SewersScrapyards": "在下水道和废料场",
-            "RecallKnowledge": "回忆知识"
+            "RecallKnowledge": "回忆知识",
+            "FullMoon": "满月"
         },
         "OracleCurses": {
             "Label": {
