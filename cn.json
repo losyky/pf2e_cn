@@ -1772,6 +1772,9 @@
                         "ControlClick": "[Crtl+点击]减少10个"
                     }
                 }
+            },
+            "HitPoints": {
+                "Unrecoverable": "当前无法恢复{value} 点生命值。"
             }
         },
         "ActorSizeGargantuan": "巨型",
@@ -6488,7 +6491,8 @@
         "TraitKingdom": "王国",
         "TraitLeadership": "领导力",
         "TraitUpkeep": "保养",
-        "TraitRegion": "区域"
+        "TraitRegion": "区域",
+        "TraitReach120": "长触及 120 ft"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
