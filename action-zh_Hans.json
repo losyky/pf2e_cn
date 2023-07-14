@@ -200,7 +200,7 @@
                     "failure": "<strong>失败</strong> 你没有擒住你的对手。如果你的对手因为你的擒拿而已经陷入@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}或@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，它不再承受这些状态。",
                     "criticalFailure": "<strong>大失败</strong> 如果你的对手因为你的擒拿而陷入@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态，它立刻挣脱。这个生物可以立刻擒抱你，如同成功对你发动了@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}，或是将你击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
                 },
-                "Title": "擒抱"
+                "Title": "擒拿"
             },
             "Hide": {
                 "Notes": {
