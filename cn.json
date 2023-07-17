@@ -1435,6 +1435,10 @@
                 "Reload": {
                     "LabelN": "装填 {value}",
                     "OneMinute": "1分钟"
+                },
+                "CanBeAmmo": {
+                    "Label": "可作为弹药",
+                    "Hint": "表明此武器可以作为弹药装载到另一种武器中。"
                 }
             },
             "Rules": {
@@ -1447,7 +1451,8 @@
                 },
                 "New": "新规则元素",
                 "RegenerateSlug": "(重新)生成短标签",
-                "Tab": "规则"
+                "Tab": "规则",
+                "Remove": "去除规则元素"
             },
             "Spell": {
                 "PlaceMeasuredTemplate": "放置{size}-{unit} {shape}",
@@ -1509,6 +1514,9 @@
                     "Free": "自由动作",
                     "Activity": "行动"
                 }
+            },
+            "CampaignFeature": {
+                "CampaignLabel": "战役"
             }
         },
         "ActionsCheck": {
@@ -1899,7 +1907,7 @@
         "ArmorPropertyRuneWinged": "飞翼",
         "ArmorResilientRune": "抗力",
         "ArmorSpeedLabel": "速度 减值",
-        "ArmorStrengthLabel": "力量界限值",
+        "ArmorStrengthLabel": "力量需求",
         "ArmorStrengthRequiredLabel": "力量需求",
         "ArmorStrikingRune": "强击",
         "ArmorTypeHeavy": "重甲",
@@ -2036,7 +2044,8 @@
             "Select": "检查掷骰",
             "Title": "掷骰检查器",
             "RollOptions": "掷骰设定",
-            "ModifiersEmpty": "无调整值"
+            "ModifiersEmpty": "无调整值",
+            "FlatCheckNoModifiers": "措手不及判定不会包括任何调整值、加值或减值。"
         },
         "Check": {
             "DC": {
@@ -2736,10 +2745,12 @@
             "BasicWithSave": "基础{save}",
             "DCWithName": "{name} DC",
             "Errors": {
-                "TypeMissing": "Error in @Check: 必须有类型参数",
-                "AdjustmentLengthMismatch": "Error in @Check: 类型:与调整:参数的数目不匹配",
-                "NonIntegerAdjustment": "Error in @Check:调整值必须是整数"
-            }
+                "TypeMissing": "必须有类型参数",
+                "AdjustmentLengthMismatch": "类型与调整参数的数目不匹配",
+                "NonIntegerAdjustment": "调整值必须是整数",
+                "DCAndDefense": "不能同时具有dc和防御参数"
+            },
+            "Invalid": "无效的@Check表达式： {message}"
         },
         "InlineTemplateErrors": {
             "TypeMissing": "Error in @Template: 必须有类型参数",
@@ -3178,7 +3189,7 @@
             "critFailure": "增加2层濒死状态。",
             "critSuccess": "减少2层濒死状态。",
             "failure": "增加1层濒死状态。",
-            "rollingDescription": "复苏检定对抗一个DC {dc} (dying {dying})",
+            "rollingDescription": "DC {dc} (濒死 {dying})",
             "success": "减少1层濒死状态。"
         },
         "RemoveCoinsByValueLabel": "去除值, 无特定类型",
@@ -6531,7 +6542,8 @@
             "heritage": "传承",
             "weapon": "武器",
             "treasure": "宝物",
-            "spellcastingEntry": "法术列表"
+            "spellcastingEntry": "法术列表",
+            "campaignFeature": "战役特征"
         }
     }
 }
