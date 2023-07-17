@@ -1847,6 +1847,11 @@
                 "Prompt": "你的牌和你的阵营一致吗？",
                 "PartialMatch": "部分匹配",
                 "Misaligned": "错位"
+            },
+            "EldritchArcher": {
+                "ArrowOfDeath": {
+                    "Note": "大成功时，目标还必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] ，否则会立即被杀死。"
+                }
             }
         },
         "RuleElement": {
