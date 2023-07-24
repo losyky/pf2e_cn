@@ -1256,7 +1256,15 @@
                         "value": "固定值",
                         "formula": "公式",
                         "counter": "计数"
-                    }
+                    },
+                    "Add": "添加徽标",
+                    "Labels": {
+                        "Label": "标签",
+                        "Add": "添加标签",
+                        "Hint": "徽标的值可以被赋予描述性标签。它们应该足够短，可以放在效果面板中。标签也是徽标的自然最大值。",
+                        "Placeholder": "新建标签"
+                    },
+                    "ReevaluateFormula": "每回合重新计算？"
                 }
             },
             "Feat": {
@@ -1475,7 +1483,14 @@
                     "InvalidLevel": "尝试添加法术{name}至 {targetLevel}，但法术基础环级为{baseLevel}。",
                     "WrongSpellType": "无法将 {spellType} 法术添加到此施法目录。"
                 },
-                "LevelN": "法术{level}"
+                "LevelN": "法术{level}",
+                "Counteract": {
+                    "criticalSuccess": "如果目标的反制等级为{rank}或更低，则对其进行反制。",
+                    "criticalFailure": "反制失败。",
+                    "Label": "反制",
+                    "success": "如果目标的反制等级为{rank}或更低，则对其进行反制。",
+                    "failure": "如果目标的反制等级小于{rank}，则对其进行反制。"
+                }
             },
             "CreationDialog": {
                 "Categories": {
