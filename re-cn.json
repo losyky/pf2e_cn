@@ -477,7 +477,7 @@
                 "Prompt": "选择粘性手雷的品级。"
             },
             "BioluminescenceBomb": {
-                "success": "<p>炸弹落点@Template[type:emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[type:reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[type:fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，然后再目眩1轮。</p>"
+                "success": "<p>炸弹落点@Template[type:emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[type:reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[type:fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，然后再目眩1轮。</p>"
             }
         },
         "SpecificRule": {
@@ -1695,7 +1695,7 @@
                     "ProtectionLabel": "获得对物理攻击的抗性",
                     "PhysicalAttackLabel": "防御一次物理攻击"
                 },
-                "SpiritualFlurryNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Flat-Footed]{措手不及 Flat-Footed}，直到你当前回合结束。"
+                "SpiritualFlurryNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到你当前回合结束。"
             },
             "FanesFourberie": {
                 "Prompt": "将卡牌当作飞镖或匕首？"
