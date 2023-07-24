@@ -1852,6 +1852,11 @@
                 "ArrowOfDeath": {
                     "Note": "大成功时，目标还必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] ，否则会立即被杀死。"
                 }
+            },
+            "RelicGift": {
+                "DivineRetribution": {
+                    "Success": "如果目标是邪恶的，那么它还会在命中时陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}，直到你下一回合开始。"
+                }
             }
         },
         "RuleElement": {
