@@ -1250,6 +1250,13 @@
                 "LabelPlaceholder": "阶段标签",
                 "ExtraSelections": {
                     "Labels": "计数（带标签）"
+                },
+                "Badge": {
+                    "Type": {
+                        "value": "固定值",
+                        "formula": "公式",
+                        "counter": "计数"
+                    }
                 }
             },
             "Feat": {
@@ -1757,6 +1764,10 @@
                 "ClearActivities": {
                     "Label": "清除",
                     "Complete": "队伍的探索期动作已被清除"
+                },
+                "ClownCar": {
+                    "Deposit": "存入PC指示物",
+                    "Retrieve": "检索PC指示物"
                 }
             },
             "Familiar": {
@@ -2945,7 +2956,12 @@
         "AddLoreSkill": "新增学识技能",
         "NewLoreSkill": "新技能",
         "Macro": {
-            "Plural": "宏"
+            "Plural": "宏",
+            "OptionToggle": {
+                "On": "开启",
+                "Notification": "{toggle}已切换为{state}。",
+                "Off": "关闭"
+            }
         },
         "MacroActionNoActorError": "动作没有了!",
         "MacroActionNoActionError": "这个动作没有了!",
@@ -3369,6 +3385,10 @@
                 "IWR": {
                     "Name": "免疫、弱点和抗力",
                     "Hint": "在人物身上应用伤害时，根据人物的免疫、弱点和抗力调整伤害值。"
+                },
+                "Encumbrance": {
+                    "Hint": "自动对携带超过其自身负载的生物应用超载状态。",
+                    "Name": "超载"
                 }
             },
             "Homebrew": {
@@ -6503,7 +6523,9 @@
         "TraitLeadership": "领导力",
         "TraitUpkeep": "保养",
         "TraitRegion": "区域",
-        "TraitReach120": "长触及 120 ft"
+        "TraitReach120": "长触及 120 ft",
+        "MAPAbbreviationValueLabel": "{value} (MAP {penalty})",
+        "ArmorPropertyRuneAssisting": "辅助"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
