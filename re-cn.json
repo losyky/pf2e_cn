@@ -1851,11 +1851,61 @@
             "EldritchArcher": {
                 "ArrowOfDeath": {
                     "Note": "大成功时，目标还必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] ，否则会立即被杀死。"
+                },
+                "EnchantingArrow": {
+                    "Note": "重击时，目标同样陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 1}。"
                 }
             },
             "RelicGift": {
                 "DivineRetribution": {
-                    "Success": "如果目标是邪恶的，那么它还会在命中时陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}，直到你下一回合开始。"
+                    "Success": "如果目标是邪恶的，那么它还会在命中时陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}，直到你下一回合开始。",
+                    "CriticalSuccess": "如果目标是邪恶的，那么它还会在重击时陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 2}，直到你下一回合开始。"
+                }
+            },
+            "AnimalForm": {
+                "Toad": "蟾蜍",
+                "Snake": "蛇",
+                "Shark": "鲨鱼",
+                "Frog": "青蛙",
+                "Deer": "鹿",
+                "Cat": "猫",
+                "Canine": "犬",
+                "Bull": "公牛",
+                "Bear": "熊",
+                "Ape": "猿",
+                "Wolf": "狼",
+                "Centipede": "蜈蚣",
+                "Bat": "蝙蝠"
+            },
+            "TerrainStalker": {
+                "Underbrush": "灌木丛",
+                "Snow": "雪地",
+                "Rubble": "碎石"
+            },
+            "Kineticist": {
+                "KineticGate": {
+                    "Junction": {
+                        "SkillJunction": "技能汇流",
+                        "ImpulseJunction": "涌动汇流",
+                        "ElementalResistance": "元素抗力",
+                        "CriticalBlast": "元素重击",
+                        "AuraJunction": "灵光汇流"
+                    },
+                    "Prompt": {
+                        "Gate": "选择一个元门。",
+                        "Element": "选择一个元素。",
+                        "Threshold": "选择一个元门关窍。",
+                        "Impulse": "选择一个涌动专长。",
+                        "ExpandElement": "选择一个元素去扩张。",
+                        "Junction": "选择一个元门汇流。"
+                    },
+                    "SingleGate": "单门",
+                    "ForkThePath": "分支门径",
+                    "ExpandThePortal": "扩张元门",
+                    "DualGate": "双门"
+                },
+                "Impulse": {
+                    "Prompt": "选择一个涌动。"
                 }
             }
         },
@@ -2058,7 +2108,9 @@
             "ImitateVoice": "模仿声音",
             "SewersScrapyards": "在下水道和废料场",
             "RecallKnowledge": "回忆知识",
-            "FullMoon": "满月"
+            "FullMoon": "满月",
+            "ImpersonateStumpOrLog": "伪装成树桩或原木",
+            "ForestsOrGrasslands": "在森林或草地"
         },
         "OracleCurses": {
             "Label": {
@@ -2080,11 +2132,16 @@
                     "ModerateSpellcasting": "中阶法艺",
                     "MajorSpellcasting": "高阶法艺",
                     "ExtremeSpellcasting": "极端法艺",
-                    "MajorSkillful": "高阶巧技"
+                    "MajorSkillful": "高阶巧技",
+                    "Skillful": "巧技",
+                    "Spellcasting": "法艺",
+                    "Martial": "尚武"
                 },
-                "ModerateFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:6|showDC:owner] 检定。",
-                "MajorFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:8|showDC:owner] 检定。",
-                "MinorFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:4|showDC:owner] 检定。"
+                "ModerateFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:6|showDC:owner] 检定，否则会失去这个动作。",
+                "MajorFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:8|showDC:owner] 检定，否则会失去这个动作。",
+                "MinorFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:4|showDC:owner] 检定，否则会失去这个动作。",
+                "AncestralInfluence": "先祖影响",
+                "MeddlingAncestor": "缠身古灵"
             },
             "Bones": {
                 "ModerateUpgrade": "当你对疾病、毒药或死亡效果豁免成功时，变为大成功。",
