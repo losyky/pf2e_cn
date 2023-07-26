@@ -1489,7 +1489,8 @@
                     "criticalFailure": "反制失败。",
                     "Label": "反制",
                     "success": "如果目标的反制等级为{rank}或更低，则对其进行反制。",
-                    "failure": "如果目标的反制等级小于{rank}，则对其进行反制。"
+                    "failure": "如果目标的反制等级小于{rank}，则对其进行反制。",
+                    "Hint": "若你反制的是苦难，DC会写在苦难的数据栏中。若反制的是法术，使用施法者的DC。对于效果，GM需要基于目标效果等级来计算其DC。"
                 }
             },
             "CreationDialog": {
@@ -1805,7 +1806,8 @@
                         "ShiftClick": "[Shift+点击]减少5个",
                         "ControlClick": "[Crtl+点击]减少10个"
                     }
-                }
+                },
+                "DistributeCoins": "分发货币"
             },
             "HitPoints": {
                 "Unrecoverable": "当前无法恢复{value} 点生命值。"
@@ -2118,7 +2120,8 @@
                     "Label": "察觉检定",
                     "Secret": "察觉检定(暗骰)"
                 },
-                "Recovery": "复苏检定"
+                "Recovery": "复苏检定",
+                "Counteract": "反制检定"
             }
         },
         "CircumstanceBonusShortLabel": "环境",
@@ -6540,7 +6543,31 @@
         "TraitRegion": "区域",
         "TraitReach120": "长触及 120 ft",
         "MAPAbbreviationValueLabel": "{value} (MAP {penalty})",
-        "ArmorPropertyRuneAssisting": "辅助"
+        "ArmorPropertyRuneAssisting": "辅助",
+        "TraitTalos": "金元素裔",
+        "TraitKineticist": "御能师",
+        "TraitInfusion": "注能",
+        "TraitDescriptionInfusion": "具有注能特征的动作会调整你的御能师涌动。你必须在使用注能特征的动作之后紧接着使用想要调整的涌动。如果你使用注能动作之后，没有紧跟着使用涌动，而是使用了其他动作（包括自由动作或反应动作），则你就会浪费注能动作的好处。任何由注能动作带来的额外效果都是涌动效果的一部分，而不属于注能动作本身。",
+        "TraitDescriptionComposite": "复合涌动是多重元素的组合。只有当你的统御元素全部符合该涌动所具有的特征，你才能获得带有复合特征的涌动。",
+        "TraitDescriptionKineticist": "这表示御能师职业的能力。",
+        "TraitVoid": "虚空",
+        "TraitVitality": "活力",
+        "LanguagePyric": "火元素语",
+        "LanguagePetran": "土元素语",
+        "TraitDescriptionRelic": "具有圣物特征的物品随着其持用者的力量而增长。",
+        "LanguageMuan": "木元素语",
+        "TraitDescriptionArdande": "木元素裔是来自木元素位面或其他具有木元素的位面的子民。",
+        "TraitDescriptionImpulse": "御能师所使用的主要魔法动作被称为涌动。你只能在你的御能灵光启动并且引导元素时才能使用涌动，并且同时需要空着一只手来塑造元素之流。涌动特征意味着该动作具有专注特征，除非其他能力将其改变。如果某个涌动允许你选择一种元素，你能选择任何正在引导的元素，并且涌动获得该元素的特征。",
+        "LanguageThalassic": "水元素语",
+        "LanguageSusurran": "气元素语",
+        "LanguageTalican": "金元素语",
+        "TraitComposite": "复合",
+        "TraitDescriptionOverflow": "强大的涌动会暂时透支你的从元门中获得的能量。当你使用带有满溢特征的涌动时，你的御能灵光会失效，直到你再次启动它（通常是通过引导元素动作）。如此驱使你的元素是非常耗费心力的，因此你每回合只能进行一次满溢涌动，哪怕你已经重新启动了你的元门。",
+        "TraitDescriptionTalos": "金元素裔是来自金元素位面的子民。",
+        "TraitOverflow": "满溢",
+        "TraitArdande": "木元素裔",
+        "TraitImpulse": "涌动",
+        "TraitWood": "木"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
