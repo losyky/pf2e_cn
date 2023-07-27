@@ -6567,7 +6567,10 @@
         "TraitOverflow": "满溢",
         "TraitArdande": "木元素裔",
         "TraitImpulse": "涌动",
-        "TraitWood": "木"
+        "TraitWood": "木",
+        "TraitCenser": "香炉",
+        "TraitFigurehead": "船首像",
+        "ConditionTypeOffGuard": "措手不及"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
