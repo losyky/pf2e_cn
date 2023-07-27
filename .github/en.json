@@ -5643,7 +5643,8 @@
             "VehicleString": "Vehicle",
             "collisionDCLabel": "Collision DC",
             "collisionDamageLabel": "Collision Damage"
-        }
+        },
+        "ConditionTypeOffGuard": "Off Guard"
     },
     "SIDEBAR": {
         "TabCombat": "Encounter Tracker"
