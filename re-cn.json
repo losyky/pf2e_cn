@@ -168,16 +168,16 @@
             },
             "BottledLightning": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (3[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (3[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (1[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (1[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (2[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (2[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (4[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (4[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 }
             },
             "CrystalShards": {
@@ -1582,7 +1582,7 @@
             },
             "Gnome": {
                 "GrimInsight": {
-                    "SaveNote": "如果你在对抗恐惧效果的豁免检定中成功，你获得大成功作为代替，并且恐惧效果的来源对你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到你的下个回合结束。"
+                    "SaveNote": "如果你在对抗恐惧效果的豁免检定中成功，你获得大成功作为代替，并且恐惧效果的来源对你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你的下个回合结束。"
                 }
             },
             "HouseOfPerfection": {
@@ -1702,7 +1702,7 @@
                     "ProtectionLabel": "获得对物理攻击的抗性",
                     "PhysicalAttackLabel": "防御一次物理攻击"
                 },
-                "SpiritualFlurryNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到你当前回合结束。"
+                "SpiritualFlurryNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你当前回合结束。"
             },
             "FanesFourberie": {
                 "Prompt": "将卡牌当作飞镖或匕首？"
@@ -1846,7 +1846,7 @@
                 "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气}具有暂时免疫能力，则他们的暂时免疫效果结束。",
                 "Battledancer": "你可以在完成终结后立即以一个自由动作进行一次快步。",
                 "Name": "惩戒终结",
-                "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及}，直到你下一回合。"
+                "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你下一回合。"
             },
             "HarrowChosen": {
                 "Unmatched": "不匹配",
@@ -2275,7 +2275,7 @@
             },
             "YetiNightmareGuardianRage": "噩梦守护者狂暴",
             "PunishingStrike": {
-                "Note": "鲁莽的攻击让使用者陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及}直到下一回合开始。如果命中，可以在打击中添加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离Push}效果"
+                "Note": "鲁莽的攻击让使用者陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到下一回合开始。如果命中，可以在打击中添加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离Push}效果"
             },
             "TreerazerPlantAttack": "攻击一个植物",
             "Vampire": {
