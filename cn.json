@@ -1634,7 +1634,16 @@
                 },
                 "Clear": "清除",
                 "ActiveHeader": "激活动作",
-                "Active": "激活"
+                "Active": "激活",
+                "AttributeBuilder": {
+                    "VoluntaryFlaw": {
+                        "Title": "自选缺陷",
+                        "LegacyDescription": "这是CRB第四次出版之前存在的自选缺陷功能。它因在老角色所被保留，并继续作为开拓者协会的可用选项。",
+                        "Description": "你可以单纯为了扮演一个有缺陷的角色而选择一个或多个自选缺陷。"
+                    },
+                    "Title": "分配你的提升",
+                    "NotSelected": "未选定"
+                }
             },
             "Creature": {
                 "Alliance": {
@@ -6570,7 +6579,8 @@
         "TraitWood": "木",
         "TraitCenser": "香炉",
         "TraitFigurehead": "船首像",
-        "ConditionTypeOffGuard": "措手不及"
+        "ConditionTypeOffGuard": "措手不及",
+        "LanguageSussuran": "气元素语"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
