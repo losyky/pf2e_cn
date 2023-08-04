@@ -3282,10 +3282,14 @@
             "MessageKeep": {
                 "new": "重骰后保留最新结果",
                 "best": "重骰后保留最好结果",
-                "worst": "重骰后保留最差结果"
+                "worst": "重骰后保留最差结果",
+                "lower": "已重骰，并取较低结果",
+                "higher": "已重骰，并取较高结果"
             },
             "MessageHeroPoint": "重骰后消耗英雄点",
-            "WarnNoHeroPoint": "{name} 无可用英雄点"
+            "WarnNoHeroPoint": "{name} 无可用英雄点",
+            "KeepHigher": "重骰并使用较高结果",
+            "KeepLower": "重骰并使用较低结果"
         },
         "ResiliencyRuneLabel": "抗力符文",
         "ResistancesLabel": "抗力",
@@ -6615,7 +6619,12 @@
         "ConditionTypeOffGuard": "措手不及",
         "LanguageSussuran": "气元素语",
         "TraitEtchedOntoMediumHeavyMetalArmor": "蚀刻在金属中甲或重甲上",
-        "TraitAffixedToMediumHeavyMetalArmor": "附在金属中甲或重甲上"
+        "TraitAffixedToMediumHeavyMetalArmor": "附在金属中甲或重甲上",
+        "TraitBottledBreath": "瓶装气息",
+        "TraitDescriptionBottledBreath": "瓶装气息是一些装着云雾的附魔瓶，最初是由气元素位面的居民发明的。要启动瓶装气息，你可以吸入或者让另一个生物吸入瓶内的气体。只有当另一个生物处于你的触及内，且他自愿吸入，或因无助而无法抵抗时，才能让该生物吸入瓶装气息。你通常只需要一只手来消耗瓶装气息，或让另一个生物吸入它。",
+        "TraitDescriptionCenser": "魔法香炉是装饰精美的容器，通常由金属或陶瓷制成，并在内部燃烧香烛。有些香炉主要用于宗教仪典，但也有许多是为民用而设计的。香炉的形状和大小各异，从带盖子的壶，到连接着链条并能摇晃的蛋形容器。大多数香炉都设计了华丽的开口以便空气流通。",
+        "TraitDescriptionFigurehead": "雕刻艺术作为船只的装饰已经司空见惯，而一些大胆的船员们有时会为他们的船只寻觅魔法雕像作为船头装饰。",
+        "TraitAffixedToMeleeWeapon": "附着到一把近战武器"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
