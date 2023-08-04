@@ -1172,7 +1172,19 @@
                     "Note": "当你重击一个亡灵生物，亡灵@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1回合"
                 },
                 "DwarvenClan": {
-                    "Prompt": "选择一个矮人氏族。"
+                    "Prompt": "选择一个矮人氏族。",
+                    "Tolorr": "托洛尔氏族",
+                    "Aringeld": "阿林格德氏族",
+                    "Vanderholl": "范德霍尔氏族",
+                    "Stonefist": "石拳氏族",
+                    "Firecask": "火桶氏族",
+                    "Gelderon": "戈德隆氏族",
+                    "Grimmark": "恶斑氏族",
+                    "Breakiron": "碎铁氏族",
+                    "Ironfist": "铁拳氏族",
+                    "Molgrade": "莫格拉德氏族",
+                    "Oriddus": "奥力达斯氏族",
+                    "Runebinder": "束符氏族"
                 }
             },
             "Fleshwarp": {
@@ -2117,7 +2129,9 @@
             "RecallKnowledge": "回忆知识",
             "FullMoon": "满月",
             "ImpersonateStumpOrLog": "伪装成树桩或原木",
-            "ForestsOrGrasslands": "在森林或草地"
+            "ForestsOrGrasslands": "在森林或草地",
+            "Shoes": "对鞋",
+            "Skinless": "无皮时"
         },
         "OracleCurses": {
             "Label": {
