@@ -1665,7 +1665,8 @@
                     "HasPartial": "具有部分提升",
                     "KeyIcon": "关键",
                     "LegacyFlaws": "遗留缺陷",
-                    "Partial": "部分"
+                    "Partial": "部分",
+                    "Increase": "增加"
                 }
             },
             "Creature": {
@@ -1817,7 +1818,12 @@
                 "ClownCar": {
                     "Deposit": "存入PC指示物",
                     "Retrieve": "检索PC指示物"
-                }
+                },
+                "Sidebar": {
+                    "OtherParties": "其他队伍",
+                    "RemoveMember": "移除成员"
+                },
+                "Skills": "队伍技能"
             },
             "Familiar": {
                 "Master": {
@@ -5610,6 +5616,9 @@
             },
             "deathdrinking": {
                 "Name": "亡饮"
+            },
+            "underwater": {
+                "Name": "水下"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -6629,7 +6638,11 @@
         "TraitDescriptionVitality": "带有此特征的效果用来自创生熔炉的能量治愈活物，对活物造成活力伤害，或操控活力能量。",
         "TraitDescriptionVoid": "带有此特征的效果用虚空能量治愈不死生物，对活物造成虚空伤害，或操控虚空能量。",
         "TraitDescriptionWood": "带有木特征的效果召唤或操控木。操控木的效果在无木区域中无法产生效果。带有此特征的生物主要由木头组成，或者与魔法木有联系。",
-        "TraitDescriptionRadiation": "一种危险、通常有毒的散发物，通常来自辐射性矿物。"
+        "TraitDescriptionRadiation": "一种危险、通常有毒的散发物，通常来自辐射性矿物。",
+        "ArmorPropertyRuneMajorSwallowSpike": "上等吞针",
+        "ArmorPropertyRuneSwallowSpike": "吞针",
+        "TraitVersatilePoison": "多用毒素",
+        "ArmorPropertyRuneGreaterSwallowSpike": "高等吞针"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
