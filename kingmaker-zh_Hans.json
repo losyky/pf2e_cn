@@ -16,7 +16,7 @@
             "Missing": {
                 "Charter": "选择一个特许状来进行提升。",
                 "Heartland": "选择一个核心地域来进行提升。",
-                "Government": "选择一个政府来进行提升"
+                "Government": "选择一个政府来进行提升。"
             },
             "BoostsLabel": "属性提升",
             "FinalizeHeader": "最终王国",
