@@ -1916,7 +1916,8 @@
                         "Threshold": "选择一个元门关窍。",
                         "Impulse": "选择一个涌动专长。",
                         "ExpandElement": "选择一个元素去扩张。",
-                        "Junction": "选择一个元门汇流。"
+                        "Junction": "选择一个元门汇流。",
+                        "AuraSize": "为你的御能灵光选择一个范围。"
                     },
                     "SingleGate": "单门",
                     "ForkThePath": "分支门径",
