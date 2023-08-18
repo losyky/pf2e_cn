@@ -100,20 +100,20 @@
         "BombNotes": {
             "AcidFlask": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3d6[persistent,acid]]]以及[[/r (3[splash])[acid]]]{3点酸液溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d6)[persistent,acid]]]以及[[/r (3}(3[splash])[acid]]]{3点酸液溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3d6[persistent,acid]]]以及[[/r (3[splash])[acid]]]{3点酸蚀溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d6)[persistent,acid]]]以及[[/r (3}(3[splash])[acid]]]{3点酸蚀溅射伤害}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d6[persistent,acid]]]以及[[/r (1[splash])[acid]]]{1点酸液溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d6)[persistent,acid]]]以及[[/r (1[splash])[acid]]]{1点酸液溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d6[persistent,acid]]]以及[[/r (1[splash])[acid]]]{1点酸蚀溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d6)[persistent,acid]]]以及[[/r (1[splash])[acid]]]{1点酸蚀溅射伤害}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4d6[persistent,acid]]]以及[[/r (4[splash])[acid]]]{4点酸液溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成 [[/r (2*4d6)[persistent,acid]]]以及 [[/r (4[splash])[acid]]]{4点酸液溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4d6[persistent,acid]]]以及[[/r (4[splash])[acid]]]{4点酸蚀溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成 [[/r (2*4d6)[persistent,acid]]]以及 [[/r (4[splash])[acid]]]{4点酸蚀溅射伤害}。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d6)[persistent,acid]]]以及[[/r (2[splash])[acid]]]{2点酸液溅射伤害}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d6[persistent,acid]]]以及[[/r (2[splash])[acid]]]{2点酸液溅射伤害}。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d6)[persistent,acid]]]以及[[/r (2[splash])[acid]]]{2点酸蚀溅射伤害}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d6[persistent,acid]]]以及[[/r (2[splash])[acid]]]{2点酸蚀溅射伤害}。"
                 }
             },
             "AlchemistsFire": {
@@ -384,20 +384,20 @@
             },
             "SulfurBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[acid]]]{3酸液溅射伤害}，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[acid]]]{3酸液溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[acid]]]{3酸蚀溅射伤害}，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[acid]]]{3酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[acid]]]{1酸液溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[acid]]]{1酸液溅射伤害}，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[acid]]]{1酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[acid]]]{1酸蚀溅射伤害}，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[acid]]]{2酸液溅射伤害}，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[acid]]]{2酸液溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[acid]]]{2酸蚀溅射伤害}，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[acid]]]{2酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[acid]]]{4酸液溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[acid]]]{4酸液溅射伤害}且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[acid]]]{4酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[acid]]]{4酸蚀溅射伤害}且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 }
             },
             "TanglefootBag": {
@@ -1778,8 +1778,8 @@
                 }
             },
             "CorrosiveBody": {
-                "Note9th": "每回合首次以这种方式对生物造成酸液伤害时，你会获得[[/r 5d6 #Temporary Hit Points]]{5d6点临时生命}",
-                "Note": "每回合首次以这种方式对生物造成酸液伤害时，你会获得[[/r 3d6 #Temporary Hit Points]]{3d6点临时生命}"
+                "Note9th": "每回合首次以这种方式对生物造成酸蚀伤害时，你会获得[[/r 5d6 #Temporary Hit Points]]{5d6点临时生命}",
+                "Note": "每回合首次以这种方式对生物造成酸蚀伤害时，你会获得[[/r 3d6 #Temporary Hit Points]]{3d6点临时生命}"
             },
             "LitCandlecap": "蜡烛帽已被点燃",
             "BonusLabel": {
