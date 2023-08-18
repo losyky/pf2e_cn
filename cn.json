@@ -2505,7 +2505,7 @@
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
             },
             "RollFlavor": {
-                "acid": "酸液",
+                "acid": "酸蚀",
                 "air": "气",
                 "bleed": "流血",
                 "bludgeoning": "钝击",
@@ -5350,7 +5350,7 @@
             "corrosive": {
                 "Name": "酸蚀符文",
                 "Note": {
-                    "criticalSuccess": "重击时，目标的盔甲受到[[/r 3d6[acid] #Corrosive Rune]]{3d6酸液}伤害(计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。"
+                    "criticalSuccess": "重击时，目标的盔甲受到[[/r 3d6[acid] #Corrosive Rune]]{3d6酸蚀}伤害(计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。"
                 }
             },
             "crushing": {
@@ -5422,8 +5422,8 @@
             "greaterCorrosive": {
                 "Name": "高等酸蚀符文",
                 "Note": {
-                    "criticalSuccess": "该武器造成的酸液伤害无视酸液抗力。 重击时，目标的盔甲受到[[/r 6d6[acid]]]{6d6酸液} 伤害 (计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。",
-                    "success": "<strong>高等酸蚀符文</strong> 该武器造成的酸液伤害无视酸液抗力。"
+                    "criticalSuccess": "该武器造成的酸蚀伤害无视酸蚀抗力。 重击时，目标的盔甲受到[[/r 6d6[acid]]]{6d6酸蚀} 伤害 (计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。",
+                    "success": "<strong>高等酸蚀符文</strong> 该武器造成的酸蚀伤害无视酸蚀抗力。"
                 }
             },
             "greaterCrushing": {
