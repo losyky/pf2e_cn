@@ -101,7 +101,7 @@
             "wis": "感知检定",
             "cha": "魅力检定"
         },
-        "AbilityTitle": "能力",
+        "AbilityTitle": "属性",
         "AbilityWis": "感知",
         "AccessoryPropertyRuneCalled": "称呼",
         "AccessoryPropertyRuneDragonsBreath": "龙息",
@@ -3152,7 +3152,7 @@
         "OrphanedSpellsHeader": "提取法术(移动到上方的法术列表)",
         "OverridesTitle": "覆盖",
         "PenaltyLabel": {
-            "ability": "能力减值",
+            "ability": "属性减值",
             "proficiency": "熟练减值",
             "circumstance": "环境减值",
             "item": "物品减值",
