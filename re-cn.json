@@ -803,6 +803,9 @@
                     "Success": "每次对抗炼金毒药、毒品或成瘾的成功豁免可降低2阶段",
                     "CriticalSuccessVirulent": "每当你对恶性的炼金毒药、毒品或成瘾物成功豁免，将减少两个阶段。",
                     "SuccessVirulent": "每当你对恶性的炼金毒药、毒品或成瘾物成功豁免，将减少一个阶段"
+                },
+                "Elemental": {
+                    "ElementalEvolutionLabel": "元素狂暴伤害"
                 }
             },
             "Bard": {
@@ -1656,7 +1659,8 @@
                 },
                 "Dragon": {
                     "EnergyPrompt": "选择你的龙类能力对应的能量。"
-                }
+                },
+                "Label": "特异能力"
             },
             "TrapFinder": {
                 "DefendingLabel": "寻找陷阱（防御陷阱效果）",
@@ -1675,6 +1679,9 @@
             "Fighter": {
                 "DoubleSlice": {
                     "SecondAttackLabel": "双重切割第二击"
+                },
+                "DazingBlow": {
+                    "Note": "<p>如果击中，该生物需进行一次@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation]豁免对抗你的职业DC，这是一个失能效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
                 }
             },
             "DivineAlly": {
@@ -1925,7 +1932,26 @@
                     "DualGate": "双门"
                 },
                 "Impulse": {
-                    "Prompt": "选择一个涌动。"
+                    "Prompt": "选择一个涌动。",
+                    "ElementalBlast": {
+                        "BlastLabels": {
+                            "EarthPoison": "毒素（土）",
+                            "EarthPiercing": "穿刺（土）",
+                            "EarthBludgeoning": "钝击（土）",
+                            "AirSlashing": "挥砍（气）",
+                            "AirElectricity": "电击（气）",
+                            "AirCold": "寒冷（气）",
+                            "WoodBludgeoning": "钝击（木）",
+                            "WaterAcid": "酸蚀（水）",
+                            "WaterCold": "寒冷（水）",
+                            "WaterBludgeoning": "钝击（水）",
+                            "MetalSlashing": "挥砍（金）",
+                            "MetalPiercing": "穿刺（金）",
+                            "FireCold": "寒冷（火）",
+                            "WoodPoison": "毒素（木）",
+                            "MetalElectricity": "电击（金）"
+                        }
+                    }
                 }
             }
         },
@@ -1972,7 +1998,8 @@
             "FlatModifier": "固定调整值",
             "MarkToken": "标记指示物",
             "EphemeralEffect": "临时效果",
-            "ItemAlteration": "物品变化"
+            "ItemAlteration": "物品变化",
+            "SpecialStatistic": "特殊统计"
         },
         "SkillVariant": {
             "Buried": "活埋",
@@ -2206,7 +2233,7 @@
                 "HideIfDisabled": "隐藏(若禁用)"
             },
             "GrantItem": {
-                "ReevaluateOnUpdate": "更新时重新估价",
+                "ReevaluateOnUpdate": "更新时重新评估",
                 "AllowDuplicate": "允许重复项",
                 "ReplaceSelf": "更新自身"
             },
