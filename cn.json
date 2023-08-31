@@ -1550,9 +1550,11 @@
                     "Activity": "行动"
                 },
                 "SelfAppliedEffect": {
-                    "Delete": "删除效果",
+                    "Delete": "删除引用",
                     "Label": "自应用效果",
-                    "Hint": "一个效果物品要应用于使用此动作的角色"
+                    "Hint": "一个效果物品要应用于使用此动作的角色",
+                    "Drop": "下降效果",
+                    "Applied": "{effect} 已被应用。"
                 }
             },
             "CampaignFeature": {
@@ -1811,7 +1813,8 @@
                     "Overview": "总览",
                     "Inventory": "物品",
                     "Orphaned": "孤立物品",
-                    "Exploration": "探索"
+                    "Exploration": "探索",
+                    "Stash": "储物箱"
                 },
                 "Total": "队伍合计",
                 "Wealth": "财富",
@@ -1846,11 +1849,16 @@
                     "OpenSheet": "打开表格"
                 },
                 "Skills": "队伍技能",
-                "DefaultName": "队伍"
+                "DefaultName": "队伍",
+                "Visibility": {
+                    "Restricted": "受限",
+                    "Unrestricted": "不受限"
+                }
             },
             "Familiar": {
                 "Master": {
-                    "Perception": "大师察觉"
+                    "Perception": "大师察觉",
+                    "ArmorClass": "防护等级熟练"
                 }
             },
             "Hardness": {
@@ -1873,7 +1881,8 @@
             },
             "HitPoints": {
                 "Unrecoverable": "当前无法恢复{value} 点生命值。"
-            }
+            },
+            "Attacks": "攻击"
         },
         "ActorSizeGargantuan": "巨型",
         "ActorSizeHuge": "超大型",
@@ -1941,8 +1950,8 @@
         "ArmorBaseLabel": "基础",
         "ArmorCheckLabel": "检定减值",
         "ArmorCheckPenalty": "护甲检定减值",
-        "ArmorClassBase": "基础 护甲等级 10",
-        "ArmorClassLabel": "护甲等级",
+        "ArmorClassBase": "基础防护等级 10",
+        "ArmorClassLabel": "防护等级",
         "ArmorClassShortLabel": "AC",
         "ArmorDexLabel": "敏捷调整值上限",
         "ArmorGreaterResilientRune": "高等抗力",
@@ -2552,7 +2561,8 @@
                 "sonic": "音波",
                 "splash": "泼溅",
                 "untyped": "无名",
-                "fire": "火焰"
+                "fire": "火焰",
+                "spirit": "心灵"
             },
             "PersistentTooltip": "持续{damageType}",
             "IncreasedFrom": "从 {original} 增加到最少一个",
@@ -2731,7 +2741,8 @@
             "WeaponQuantityZero": "你已经没有更多这种武器装备了。",
             "RuleElementSyntax": "规则要素定义中存在语法错误：{message}",
             "NoCreatureTokenSelected": "至少选择一个与生物相关联的指示物。",
-            "WeaponNoDamage": "武器未造成伤害。"
+            "WeaponNoDamage": "武器未造成伤害。",
+            "ItemNotFoundByUUID": "未找到UUID为\"{uuid}\"的物品。"
         },
         "Ethnicity": "种族划分",
         "ExpendSpellTitle": "消耗法术",
@@ -2899,6 +2910,10 @@
             "GMVision": {
                 "Label": "GM视角",
                 "Hint": "点亮黑暗的场景，以便于查看。"
+            },
+            "TogglePartySheet": {
+                "Hint": "打开或关闭正在激活的或（由玩家）指定的队伍窗口。",
+                "Label": "切换队伍窗口"
             }
         },
         "KitItems": "物品",
@@ -3069,7 +3084,7 @@
             "str": "力量熟练",
             "wis": "感知熟练"
         },
-        "MasterArmorClass": "护甲熟练等级 {base}",
+        "MasterArmorClass": "防护等级熟练 {base}",
         "MasterLevel": "熟练等级",
         "MasterLevelHP": "熟练等级",
         "MasterSavingThrow": {
