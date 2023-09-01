@@ -1692,7 +1692,7 @@
             "Creature": {
                 "Alliance": {
                     "Opposition": "敌人",
-                    "Party": "盟友",
+                    "Party": "队伍",
                     "Neutral": "中立",
                     "Default": "权限默认值({alliance})"
                 },
@@ -1853,7 +1853,8 @@
                 "Visibility": {
                     "Restricted": "受限",
                     "Unrestricted": "不受限"
-                }
+                },
+                "NoMembers": "没有成员"
             },
             "Familiar": {
                 "Master": {
@@ -6711,7 +6712,7 @@
             "eidolon": "幻灵",
             "character": "玩家角色",
             "vehicle": "载具",
-            "party": "盟友"
+            "party": "队伍"
         },
         "Item": {
             "feat": "专长/特征",
