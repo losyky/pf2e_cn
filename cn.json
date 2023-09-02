@@ -5017,7 +5017,7 @@
                 "shieldActive": "他们的护甲得到 ",
                 "shieldInActive": "得到"
             },
-            "errorTargetToken": "需要选中一个目标。",
+            "errorTargetToken": "需要选中至少一个合法的指示物。",
             "noDamageInfoForOutcome": "没有关于 {outcome}的伤害信息。",
             "shiftModifyDamageLabel": "调整伤害/治疗",
             "shiftModifyDamageTitle": "修改骰出的伤害/治疗",
