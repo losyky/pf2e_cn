@@ -1837,8 +1837,8 @@
                     "Complete": "队伍的探索期动作已被清除"
                 },
                 "ClownCar": {
-                    "Deposit": "存入PC指示物",
-                    "Retrieve": "检索PC指示物"
+                    "Deposit": "放出PC指示物",
+                    "Retrieve": "回收PC指示物"
                 },
                 "Sidebar": {
                     "OtherParties": "其他队伍",
@@ -2780,7 +2780,7 @@
         "FeatTypeSkill": "技能专长",
         "FeaturesAncestryHeader": "族裔特性",
         "FeaturesClassHeader": "职业特性",
-        "Feet": "专长",
+        "Feet": "尺",
         "FlatBonusHP": "固定HP加值",
         "FlatBonusHPTitle": "为你的HP加一个定值",
         "FlatBonusHPperLevel": "加值 HP / Lvl",
