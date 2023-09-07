@@ -758,7 +758,10 @@
             "stealth": "隐秘检定",
             "survival": "生存检定",
             "thievery": "贼活检定",
-            "unarmed": "无武装攻击骰"
+            "unarmed": "无武装攻击骰",
+            "x-attack-roll": "{type} 攻击骰",
+            "spell": "{type} 法术攻击",
+            "x": "{type} 检定"
         },
         "ActionsWarning": {
             "NoActor": "掷骰前至少选择一个角色，或指定一个默认角色。",
@@ -768,6 +771,15 @@
                 "Multiple": "行动“{action}”有多个变体，但未需求任何变体。",
                 "Nonexisting": "为行动“{action}”指定的变体“{variant}”不存在"
             }
+        },
+        "Action": {
+            "Range": {
+                "IncrementN": "射程增量{n} ft。",
+                "MaxN": "射程{n} ft。"
+            },
+            "Use": "使用",
+            "ApplyEffect": "应用效果",
+            "ExpandDescription": "扩展描述"
         }
     }
 }
