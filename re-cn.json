@@ -528,6 +528,16 @@
                         "Prompt": "选择一个突破性改进。",
                         "AllowedDrops": "7级或者更低的发明家职业特性"
                     }
+                },
+                "OffensiveBoost": {
+                    "Spike": "尖刺（穿刺）",
+                    "Prompt": "选择一个攻势增压。",
+                    "Vitriol": "酸蚀（强酸）",
+                    "Saws": "锯齿（挥砍）",
+                    "Momentum": "动量（钝击）",
+                    "Jolt": "震电（电击）",
+                    "Ignition": "爆燃（火焰）",
+                    "Chill": "冻寒（寒冷）"
                 }
             },
             "DedicationCraftingEntry": {
@@ -1593,7 +1603,21 @@
                 "Style": {
                     "Prompt": "选择一种风格"
                 },
-                "Panache": "你获得@UUID[Compendium.pf2e.Item.feat-effects.uBJsxCzNhje8m8jj]{派头 Panache}。"
+                "Panache": "你获得@UUID[Compendium.pf2e.Item.feat-effects.uBJsxCzNhje8m8jj]{派头 Panache}。",
+                "Finisher": {
+                    "Stunning": "震慑",
+                    "Impaling": "贯通",
+                    "Dual": "双发",
+                    "Confident": "稳妥",
+                    "Bleeding": "溅血",
+                    "Basic": "基础",
+                    "Perfect": "完美",
+                    "Mobile": "机动",
+                    "Lethal": "绝杀",
+                    "Label": "终结",
+                    "Unbalancing": "失衡",
+                    "Targeting": "狙击"
+                }
             },
             "Gnome": {
                 "GrimInsight": {
@@ -1782,6 +1806,10 @@
                 "BooksSuitPrompt": "是从书中抽出的卡吗？",
                 "Fiend": {
                     "ToggleLabel": "重复一个非打击动作"
+                },
+                "BrassDwarf": {
+                    "WeaknessLabel": "黄铜矮人弱点",
+                    "ResistanceLabel": "黄铜矮人抗力"
                 }
             },
             "CorrosiveBody": {
@@ -1821,6 +1849,16 @@
             "AdjustDegreeOfSuccess": {
                 "Squeeze": {
                     "CriticalFailureSuccessBetter": "当你在挤入检定上投出大失败时，会立即变为失败，而当你投出成功时，会立即变为大成功。"
+                },
+                "Athletics": {
+                    "Climb": {
+                        "SuccessBetter": "如果你在攀爬的运动检定中成功，会变为大成功。"
+                    }
+                },
+                "Survival": {
+                    "SenseDirection": {
+                        "SuccessBetter": "如果你在辨别方向的生存检定中成功，会变为大成功。"
+                    }
                 }
             },
             "AerialPiledriver": {
@@ -1851,7 +1889,8 @@
                 "ThirdAttempt": "第三次尝试",
                 "DamageType": "伤害类型",
                 "Exit": "退出",
-                "Enter": "输入"
+                "Enter": "输入",
+                "WeaknessType": "弱点类型"
             },
             "Obcisidaemon": {
                 "ConsumeSoul": {
@@ -1929,7 +1968,8 @@
                     "SingleGate": "单门",
                     "ForkThePath": "分支门径",
                     "ExpandThePortal": "扩张元门",
-                    "DualGate": "双门"
+                    "DualGate": "双门",
+                    "AllowedDropsLabel": "御能师职业专长"
                 },
                 "Impulse": {
                     "Prompt": "选择一个涌动。",
@@ -1950,9 +1990,40 @@
                             "FireCold": "寒冷（火）",
                             "WoodPoison": "毒素（木）",
                             "MetalElectricity": "电击（金）"
-                        }
+                        },
+                        "Label": {
+                            "Air": "元素冲击（气）",
+                            "Wood": "元素冲击（木）",
+                            "Earth": "元素冲击（土）",
+                            "Water": "元素冲击（水）",
+                            "Metal": "元素冲击（金）",
+                            "Fire": "元素冲击（火）"
+                        },
+                        "ShortLabel": "冲击",
+                        "OneAction": "单动作",
+                        "TwoActions": "双动作",
+                        "TwoActionBonus": "双动作冲击"
                     }
+                },
+                "GateAttenuator": "束门环"
+            },
+            "Genie": {
+                "Janni": "小巨灵",
+                "Jabali": "土巨灵",
+                "Prompt": "选择一个巨灵。",
+                "Jaathoom": "气巨灵",
+                "Ifrit": "火巨灵",
+                "Faydhaan": "水巨灵"
+            },
+            "Tengu": {
+                "WeaponFamiliarity": {
+                    "Prompt1": "从剑武器组中选择一个武器。",
+                    "Prompt2": "从剑武器组中选择第二件武器。"
                 }
+            },
+            "WeaponInfusion": {
+                "Ranged": "远程注能",
+                "Melee": "近战注能"
             }
         },
         "RuleElement": {
@@ -2385,6 +2456,13 @@
             },
             "CrumblingCarapace": {
                 "CriticalHit": "甲壳被重击破损"
+            },
+            "Capritellix": {
+                "ShiftMood": {
+                    "Sly": "狡诈",
+                    "Gregarious": "擅长交际",
+                    "Angry": "生气"
+                }
             }
         },
         "UI": {
