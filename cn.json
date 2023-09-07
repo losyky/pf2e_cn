@@ -3475,7 +3475,7 @@
                     "Hint": "过期的效果会自动从角色身上移除（需要任一GM在线）。"
                 },
                 "FlankingDetection": {
-                    "Name": "夹击判定",
+                    "Name": "夹击检测",
                     "Hint": "夹击的判定和基于此的能力将会交由系统管理。"
                 },
                 "ActorsDeadAtZero": {
@@ -3487,7 +3487,7 @@
                     "Both": "PC和NPC"
                 },
                 "LootableNPCs": {
-                    "Name": "NPC是可以被搜刮的",
+                    "Name": "可搜刮的NPC们",
                     "Hint": "NPC死亡后，玩家可以拾取战利品。"
                 },
                 "IWR": {
@@ -3594,7 +3594,7 @@
                     "All": "所有"
                 },
                 "ShowPartyStats": {
-                    "Name": "显示队伍成员信息",
+                    "Name": "显示小队成员信息",
                     "Hint": "如果启用，玩家将在队伍角色表中看到其他队伍成员的数据"
                 }
             },
@@ -3758,8 +3758,8 @@
                 "Hint": "为队伍扩展战役规则类型"
             }
         },
-        "SaveDCLabel": "豁免DC {dc} {type}",
-        "SaveDCLabelBasic": "基础{type}豁免DC {dc}",
+        "SaveDCLabel": "豁免 <dc>DC {dc}</dc> {type}",
+        "SaveDCLabelBasic": "基础{type}<dc>豁免DC {dc}</dc>",
         "SavesFortitude": "强韧",
         "SavesFortitudeShort": "强韧",
         "SavesHeader": "豁免",
@@ -6300,7 +6300,7 @@
             "MainTab": "主要",
             "NotesTab": "笔记",
             "PassivesLabel": "被动",
-            "PublicNotes": "公共笔记",
+            "PublicNotes": "描述",
             "PrivateNotes": "个人笔记",
             "Remove": "去除",
             "SendToChat": "发送到聊天栏",
