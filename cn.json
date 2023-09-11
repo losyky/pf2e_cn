@@ -1692,7 +1692,7 @@
             "Creature": {
                 "Alliance": {
                     "Opposition": "敌人",
-                    "Party": "队伍",
+                    "Party": "盟友",
                     "Neutral": "中立",
                     "Default": "权限默认值({alliance})"
                 },
@@ -2245,7 +2245,8 @@
                 "SelectTableTitle": "选择表",
                 "WeightLabel": "Weight",
                 "AddDialogText": "是否将 {count} 个结果添加到随机表？"
-            }
+            },
+            "TabCampaign": "战役"
         },
         "Condition": {
             "ActiveLabel": "有效的",
@@ -2690,7 +2691,8 @@
             "RevealName": "显露名称",
             "InitiativeSet": "{actor}的先攻被设定为{initiative}。",
             "NotParticipating": "{actor}没有参加正在激活的遭遇。",
-            "AlreadyRolled": "{actor} 已投先攻。"
+            "AlreadyRolled": "{actor} 已投先攻。",
+            "XP": "XP"
         },
         "Edit": "编辑",
         "EditHazardLabel": "编辑危害",
