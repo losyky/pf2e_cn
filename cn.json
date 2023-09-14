@@ -1366,6 +1366,19 @@
                     "Negligible": "—",
                     "NLight": "{light}L",
                     "WithLight": "{bulk}, {light}L"
+                },
+                "GeneratedName": {
+                    "ThreePropertiesMaterial": "",
+                    "ThreeProperties": "",
+                    "Fundamental2Material": "",
+                    "PotencyThreeProperties": "",
+                    "TwoProperties": "",
+                    "TwoPropertiesMaterial": "",
+                    "Fundamental2": "",
+                    "PotencyTwoProperties": "",
+                    "PotencyTwoPropertiesMaterial": "",
+                    "PotencyThreePropertiesMaterial": "",
+                    "PotencyFundamental2TwoPropertiesMaterial": ""
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1461,7 +1474,12 @@
                     "Hint": "表明此武器可以作为弹药装载到另一种武器中。"
                 },
                 "Rune": {
-                    "Potency": "武器熟练"
+                    "Potency": "武器熟练",
+                    "Striking": {
+                        "Major": "上等强击",
+                        "Striking": "强击",
+                        "Greater": "高等强击"
+                    }
                 }
             },
             "Rules": {
@@ -1687,7 +1705,8 @@
                     "Apex": "巅峰属性",
                     "Key": "关键属性",
                     "Boosts": "属性提升"
-                }
+                },
+                "Blurb": "{level}级{ancestry} {class}"
             },
             "Creature": {
                 "Alliance": {
@@ -1862,7 +1881,8 @@
                 "Master": {
                     "Perception": "大师察觉",
                     "ArmorClass": "防护等级熟练"
-                }
+                },
+                "Blurb": "{master}的魔宠"
             },
             "Hardness": {
                 "ShortLabel": "硬度"
@@ -6716,7 +6736,8 @@
         "ArmorPropertyRunePortable": "便携",
         "ArmorPropertyRuneQuenching": "钝化",
         "ArmorPropertyRuneMisleading": "假象",
-        "ArmorPropertyRuneTrueQuenching": "真实钝化"
+        "ArmorPropertyRuneTrueQuenching": "真实钝化",
+        "ArmorPropertyRuneLesserDread": "次等恐惧"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
