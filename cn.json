@@ -875,11 +875,17 @@
                     "scroll-robes": "卷轴袍",
                     "wooden-breastplate": "木制胸甲",
                     "ceramic-plate": "陶瓷甲",
-                    "armored-cloak": "护盾手枪"
+                    "armored-cloak": "护盾手枪",
+                    "power-suit": "力量套装",
+                    "subterfuge-suit": "隐秘套装"
                 },
                 "Category": {
                     "light-barding": "轻型坐骑护甲",
                     "heavy-barding": "重型坐骑护甲"
+                },
+                "Specific": {
+                    "Hint": "将此护甲标记为<i>特殊魔法护甲</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
+                    "Label": "特殊魔法护甲"
                 }
             },
             "CannotAddType": "无法将{type}物品添加到此角色。",
@@ -2266,7 +2272,7 @@
                 "CreateDialogText": "通过{count}结果创建随机表？",
                 "CreateLabel": "创建随机表",
                 "SelectTableTitle": "选择表",
-                "WeightLabel": "Weight",
+                "WeightLabel": "权重",
                 "AddDialogText": "是否将 {count} 个结果添加到随机表？"
             },
             "TabCampaign": "战役"
@@ -3403,7 +3409,13 @@
         "RollBonusPlaceholder": "举例： +3 或 +1d4",
         "RollModeLabel": "骰子模式",
         "Scene": {
-            "Plural": "场景"
+            "Plural": "场景",
+            "HearingRange": {
+                "Unlimited": "无限制",
+                "Name": "听觉范围（英尺）",
+                "Hint": "限制生物在这个场景中听觉的范围*以此来模拟“混淆听觉的环境，例如嘈杂的房间”（CRB第464页）。需要启用基于规则的感官。",
+                "Caveat": "*出于性能原因，半径是真实的测量值，而不是基于网格的测量值。"
+            }
         },
         "SETTINGS": {
             "Settings": "设定",
@@ -3501,7 +3513,8 @@
                 "RulesBasedVision": {
                     "Name": "基于规则的视野",
                     "Hint": "使用符合Pathfinder 2e规则的视觉机制。启用此设置将无法使用配置不受限全局视野以及角色视野半径的功能。",
-                    "ManagedBy": "受控于<rbv>基础规则视野</rbv>."
+                    "ManagedBy": "受控于<rbv>基础规则视野</rbv>.",
+                    "ViewWorldSetting": "浏览世界设置"
                 },
                 "EffectExpiration": {
                     "Name": "效果自动失效",
@@ -3793,6 +3806,11 @@
                 },
                 "Name": "战役类型",
                 "Hint": "为队伍扩展战役规则类型"
+            },
+            "EnabledDisabled": {
+                "Default": "世界默认 ({worldDefault})",
+                "Disabled": "禁用",
+                "Enabled": "启用"
             }
         },
         "SaveDCLabel": "豁免 <dc>DC {dc}</dc> {type}",
@@ -5438,7 +5456,7 @@
             "crushing": {
                 "Name": "粉碎符文",
                 "Note": {
-                    "criticalSuccess": "当你用此武器造成一次重击时，你的目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，直到你的下回合结束。"
+                    "criticalSuccess": "当你用此武器造成一次重击时，你的目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，直到你的下回合结束。@UUID[Compendium.pf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]{Effect: Crushing}"
                 }
             },
             "cunning": {
@@ -5511,7 +5529,7 @@
             "greaterCrushing": {
                 "Name": "高等粉碎符文",
                 "Note": {
-                    "criticalSuccess": "你的重击使目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你的下回合结束。"
+                    "criticalSuccess": "你的重击使目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你的下回合结束。@UUID[Compendium.pf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]{Effect: Crushing (Greater)}"
                 }
             },
             "greaterDisrupting": {
@@ -5885,7 +5903,7 @@
             "blinded": {
                 "name": "目盲",
                 "rules": "<p>你看不见事物。对你而言所有正常地形都是困难地形。你无法用视觉侦查任何事物。你在需要你看的察觉检定上自动大失败，若视觉是你唯一的精确感官，你的察觉检定受到-4状态减值。你免疫视觉效果。目盲覆盖目眩。</p>",
-                "summary": "我的眼前一片黑……"
+                "summary": "你的眼前一片漆黑。"
             },
             "broken": {
                 "name": "破损",
@@ -5920,7 +5938,7 @@
             "deafened": {
                 "name": "耳聋",
                 "rules": "<p>你听不到声音。你在需要你听的察觉检定上自动大失败。你在用察觉进行的先攻检定，和包括声音但也依赖其它感官的察觉检定上都获得-2状态减值。若你进行拥有听觉特征（auditory）的动作，你必须通过DC5的纯骰检定，失败则失去该动作；该检定在消耗动作后，在动作生效前。你免疫听觉效果。</p>",
-                "summary": "大点声，听不见！"
+                "summary": "你的耳旁一片寂静。"
             },
             "doomed": {
                 "name": "毁灭",
@@ -5930,7 +5948,7 @@
             "drained": {
                 "name": "流失",
                 "rules": "<p>当生物成功吸取你的血液或生命力后，你会变得更虚弱。流失状态拥有状态值。你在基于体质的检定上获得等同流失值的状态减值，例如强韧豁免。你同时失去等于你等级（最低1）乘以流失值的HP，你的最大HP也会减少相同的结果。例如，作为3级角色的你被一种效果造成了流失3，你失去9点HP，最大HP也减少9。此法流失的HP不视为受到伤害。</p>\n<p>每当你进行一次完整的夜晚休息，你的流失值减少1。这回增加你的最大HP值，但不会立刻恢复损失的HP。</p>",
-                "summary": "我需要治疗！"
+                "summary": "失血或者什么类似的东西侵蚀了你的活力。"
             },
             "dying": {
                 "name": "濒死",
@@ -5995,7 +6013,7 @@
             "hostile": {
                 "name": "敌对",
                 "rules": "<p>该状态反映了生物对特定角色的倾向，它只会在非玩家角色身上出现。敌人的生物会主动寻找伤害角色的方法。它不一定是会主动攻击，但也不会接受该角色的提出请求（Request）。</p>",
-                "summary": "NPC想害你！"
+                "summary": "处于这种状态的NPC会和你敌对。"
             },
             "immobilized": {
                 "name": "禁足",
@@ -6015,7 +6033,7 @@
             "observed": {
                 "name": "可见",
                 "rules": "<p>在你视野里的事物都对你可见。若生物采取措施避开观察，例如使用隐秘技能躲藏，它将会从可见状态变为藏匿或无踪状态。若你在视觉外有额外的或作为替代的精确感官，你可以只用该精确感官来观察生物或物体。你只能用精确感官来观察生物。若用非精确感官搜索生物，生物会保持藏匿状态，而不会变为可见。</p>",
-                "summary": "我看到你了！"
+                "summary": "你在众目睽睽之下。"
             },
             "paralyzed": {
                 "name": "麻痹",
@@ -6050,7 +6068,7 @@
             "sickened": {
                 "name": "恶心",
                 "rules": "<p>你感觉生病了。恶心状态拥有状态值。你所有检定和DC获得等同于恶心状态值的状态减值。恶心时，你无法自愿咽下任何东西——包括灵药和药水。</p>\n<p>你可以花一个动作干呕来尝试恢复，这使你立刻进行一次强韧豁免检定对抗使你恶心的效果DC。若成功，你的恶心值降低1（大成功则降低2）。</p>",
-                "summary": "我感觉很难受！"
+                "summary": "你的胃感觉不舒服。"
             },
             "slowed": {
                 "name": "缓慢",
@@ -6758,7 +6776,8 @@
         "ArmorPropertyRuneQuenching": "钝化",
         "ArmorPropertyRuneMisleading": "假象",
         "ArmorPropertyRuneTrueQuenching": "真实钝化",
-        "ArmorPropertyRuneLesserDread": "次等恐惧"
+        "ArmorPropertyRuneLesserDread": "次等恐惧",
+        "Pathfinder": "寻路者"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
