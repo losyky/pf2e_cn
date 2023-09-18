@@ -2032,6 +2032,13 @@
             "WeaponInfusion": {
                 "Ranged": "远程注能",
                 "Melee": "近战注能"
+            },
+            "SpellEffectThermalRemedy": {
+                "FireResistance": "火焰抗力",
+                "BonusVsDisease": "对疾病加值",
+                "TempHP": "临时生命",
+                "PromptTwo": "选择第二个增益。",
+                "Prompt": "选择一个增益。"
             }
         },
         "RuleElement": {
@@ -2238,7 +2245,9 @@
             "ImpersonateStumpOrLog": "伪装成树桩或原木",
             "ForestsOrGrasslands": "在森林或草地",
             "Shoes": "对鞋",
-            "Skinless": "无皮时"
+            "Skinless": "无皮时",
+            "Jar": "在罐子里",
+            "Treasure": "在财宝中"
         },
         "OracleCurses": {
             "Label": {
@@ -2483,7 +2492,11 @@
                     "YesLabel": "是",
                     "DragHomebrewItem": "将自定义物品拖到这里，以替换以上选项",
                     "HomebrewItem": "自定义物品",
-                    "Prompt": "进行选择"
+                    "Prompt": "进行选择",
+                    "ViewItem": {
+                        "Disabled": "所选选项没有物品表",
+                        "Tooltip": "浏览物品"
+                    }
                 },
                 "MarkTarget": {
                     "Timeout": "由于缺少目标，效果创建已取消。",
@@ -2825,6 +2838,9 @@
             "FreezingAmmunition": {
                 "Title": "冰冻弹药",
                 "Text": "这种冰冷的弹药是深蓝色的，而且摸起来感觉很冷。当启动的冰冻弹药命中了一个目标，目标必须通过一个@Check[type:fortitude|dc:19]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮（在大失败时则陷入缓慢1，持续1分钟）。"
+            },
+            "OozeAmmunition": {
+                "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}一轮。"
             }
         }
     }
