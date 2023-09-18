@@ -2084,7 +2084,7 @@
         "BiographyBeliefsTitle": "你的角色信仰什么",
         "BiographyBirthPlace": "出生地",
         "BiographyBirthPlaceTitle": "你的角色故乡在哪里",
-        "BiographyCampaignNotesHeader": "战役笔记",
+        "BiographyCampaignNotesHeader": "战役",
         "BiographyCampaignNotes": "笔记",
         "BiographyCampaignNotesTitle": "请随心所欲的记录",
         "BiographyCatchphrases": "口头禅",
@@ -5488,7 +5488,7 @@
                 "Name": "高等锚定符文",
                 "Note": {
                     "criticalSuccess": "当你用锚定武器重击一个目标时, 武器对目标施放8环的<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{次元锚 Dimensional Anchor}</em>(@Check[type:will|dc:38|name:Greater Anchoring Rune], 反制调整值为[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})，除非目标的意志豁免检定大成功， <em>次元锚</em>至少会持续一轮，而不是没有效果。",
-                    "success": "<strong>高等锚定符文</strong> 当命中目标但没有重击时，目标受到四环 <em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{次元锚 Dimensional Anchor}</em> 效果影响一轮而不需要豁免(反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})。"
+                    "success": "当你用该武器命中一个目标但没有重击时，目标受到四环<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{次元锚 Dimensional Anchor}</em>效果影响一轮且没有豁免(反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})。"
                 }
             },
             "greaterBloodbane": {
@@ -5498,14 +5498,14 @@
                 "Name": "高等光辉符文",
                 "Note": {
                     "criticalSuccess": "该武器造成的伤害忽略目标的火焰、善良或正能量的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
-                    "success": "<strong>高等光能符文</strong>该武器造成的伤害忽略目标的火焰、善良或正能量的抗力。"
+                    "success": "该武器造成的伤害忽略目标的火焰、善良或正能量的抗力。"
                 }
             },
             "greaterCorrosive": {
                 "Name": "高等酸蚀符文",
                 "Note": {
                     "criticalSuccess": "该武器造成的酸蚀伤害无视酸蚀抗力。 重击时，目标的盔甲受到[[/r 6d6[acid]]]{6d6酸蚀} 伤害 (计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。",
-                    "success": "<strong>高等酸蚀符文</strong> 该武器造成的酸蚀伤害无视酸蚀抗力。"
+                    "success": "该武器造成的酸蚀伤害无视酸蚀抗力。"
                 }
             },
             "greaterCrushing": {
@@ -5543,7 +5543,7 @@
                 "Name": "高等冻寒符文",
                 "Note": {
                     "criticalSuccess": "该武器造成的寒冷伤害忽略目标的寒冷抗力。重击时，除非成功通过一个@Check[type:fortitude|dc:34|name:Greater Frost Rune]豁免，否则目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到你下一回合结束。",
-                    "success": "<strong>高等冻寒符文</strong>该武器造成的寒冷伤害忽略目标的寒冷抗力。"
+                    "success": "该武器造成的寒冷伤害忽略目标的寒冷抗力。"
                 }
             },
             "greaterHauling": {
@@ -5624,7 +5624,7 @@
             },
             "returning": {
                 "Name": "回力符文",
-                "Note": "<strong>回力符文</strong>当你用该武器进行投掷打击时，打击动作完成后它即会飞回你的手中。若武器飞回时你的手全被占满，该武器会在你所在的位置掉落于地。"
+                "Note": "当你用该武器进行投掷打击时，打击动作完成后它即会飞回你的手中。若武器飞回时你的手全被占满，该武器会在你所在的位置掉落于地。"
             },
             "serrating": {
                 "Name": "旋锯符文"
