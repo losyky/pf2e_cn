@@ -2085,7 +2085,8 @@
             "MarkToken": "标记指示物",
             "EphemeralEffect": "临时效果",
             "ItemAlteration": "物品变化",
-            "SpecialStatistic": "特殊统计"
+            "SpecialStatistic": "特殊统计",
+            "TokenMark": "指示物标记"
         },
         "SkillVariant": {
             "Buried": "活埋",
@@ -2511,6 +2512,9 @@
                 },
                 "EffectTarget": {
                     "Prompt": "选择此效果的目标"
+                },
+                "TokenMark": {
+                    "TargetToken": "鼠标悬浮在某个指示物上，按T选定该指示物为目标，按Esc取消。"
                 }
             }
         },
