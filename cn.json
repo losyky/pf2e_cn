@@ -1930,7 +1930,8 @@
                         "ControlClick": "[Crtl+点击]减少10个"
                     }
                 },
-                "DistributeCoins": "分发货币"
+                "DistributeCoins": "分发货币",
+                "TotalBulk": "总负重： {bulk}"
             },
             "HitPoints": {
                 "Unrecoverable": "当前无法恢复{value} 点生命值。"
@@ -5538,8 +5539,8 @@
             "greaterBrilliant": {
                 "Name": "高等光辉符文",
                 "Note": {
-                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、善良或正能量的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
-                    "success": "该武器造成的伤害忽略目标的火焰、善良或正能量的抗力。"
+                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、活力或正能量的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
+                    "success": "该武器造成的伤害忽略目标的火焰、活力或正能量的抗力。"
                 }
             },
             "greaterCorrosive": {
@@ -5635,7 +5636,7 @@
             "holy": {
                 "Name": "神圣符文",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪恶生物重击成功<br /><strong>效果</strong>你获得该邪恶生物等级双倍的HP。这是一个善良、正能量、治疗效果。"
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪恶生物重击成功<br /><strong>效果</strong>你获得该邪恶生物等级双倍的HP。这是一个活力、正能量、治疗效果。"
                 }
             },
             "hopeful": {
