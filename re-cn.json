@@ -215,16 +215,16 @@
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[positive]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 2}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 2}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[positive]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[positive]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[positive]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
                 }
             },
             "JunkBomb": {
@@ -265,20 +265,20 @@
             },
             "NecroticBomb": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[negative]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[negative]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 3}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[void]]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 3}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[negative]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[negative]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[void]]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。"
                 },
                 "Major": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[negative]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 4}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[negative]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 4}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[void]]]伤害。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[negative]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[negative]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[void]]]伤害。"
                 }
             },
             "PerniciousSporeBomb": {
@@ -615,9 +615,9 @@
                 },
                 "AccursedTouch": {
                     "Note": {
-                        "TwentiethLevel": "若你用拳头造成了重击，你对敌人造成[[/r 4d6[persistent,negative]]]，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
-                        "FourteenthLevel": "若你用拳头造成了重击，你对敌人造成[[/r 3d6[persistent,negative]]]，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
-                        "Base": "若你用拳头造成了重击，你对敌人造成[[/r (2d6)[persistent,negative]]]，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
+                        "TwentiethLevel": "若你用拳头造成了重击，你对敌人造成[[/r 4d6[persistent,void]]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
+                        "FourteenthLevel": "若你用拳头造成了重击，你对敌人造成[[/r 3d6[persistent,void]]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
+                        "Base": "若你用拳头造成了重击，你对敌人造成[[/r (2d6)[persistent,void]]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
                     }
                 }
             },
@@ -801,8 +801,8 @@
                     "Prompt": "选择狂暴的能量抗力类型。"
                 },
                 "Spirit": {
-                    "PositiveDamage": "正能量伤害",
-                    "NegativeDamage": "负能量伤害",
+                    "PositiveDamage": "活力伤害",
+                    "NegativeDamage": "虚空伤害",
                     "ToggleLabel": "精魂狂暴"
                 },
                 "Superstition": {
@@ -866,7 +866,7 @@
                 },
                 "CoreCannon": {
                     "AttackNote": "你需要将最高的潜能符文加成手动加成到此次攻击检定上",
-                    "CriticalHit": "重击时，目标受到[[/r 10[persistent,fire]]]。你的核心火炮不会添加重击专精效果。</p>"
+                    "CriticalHit": "重击时，目标受到[[/r 10[persistent,fire]]]伤害。你的核心火炮不会添加重击专精效果。</p>"
                 },
                 "Enhancement": {
                     "ArcaneLocomotionClimbSpeed": "获得攀爬速度",
@@ -1202,7 +1202,7 @@
             },
             "Fleshwarp": {
                 "CoatingOfSlime": {
-                    "CriticalHit": "重击时，目标承受[[/r 1d4[persistent,acid]]]。"
+                    "CriticalHit": "重击时，目标承受[[/r 1d4[persistent,acid]]]伤害。"
                 },
                 "LivingWeapon": {
                     "Prompt": "选择用作武器的身体部位。"
@@ -1479,9 +1479,9 @@
             "Vampire": {
                 "ViciousFangs": {
                     "Note": {
-                        "Base": "你的尖牙打击在暴击时造成额外[[/r 1d6[bleed]]]。",
-                        "FourteenthLevel": "你的尖牙打击在暴击时造成额外[[/r 2d6[bleed]]]。",
-                        "TwentiethLevel": "你的尖牙打击在暴击时造成额外[[/r 3d6[bleed]]]。"
+                        "Base": "你的尖牙打击在暴击时造成额外[[/r 1d6[bleed]]]伤害。",
+                        "FourteenthLevel": "你的尖牙打击在暴击时造成额外[[/r 2d6[bleed]]]伤害。",
+                        "TwentiethLevel": "你的尖牙打击在暴击时造成额外[[/r 3d6[bleed]]]伤害。"
                     }
                 }
             },
@@ -1639,7 +1639,7 @@
                 "BladeAllyRune": "为利刃盟友选择一个性能符文",
                 "TargetReaction": "目标触发了你的神卫反应",
                 "EvilDamage": "邪恶伤害",
-                "NegativeDamage": "负能量伤害"
+                "NegativeDamage": "虚空伤害"
             },
             "DeviantAbilities": {
                 "AwakenedPower": {
@@ -2387,7 +2387,7 @@
             },
             "SkyDragon": {
                 "DivineLightningGood": "神圣雷霆-善良伤害",
-                "DivineLightningPositive": "神圣雷霆-正能量伤害"
+                "DivineLightningPositive": "神圣雷霆-活力伤害"
             },
             "LemureSubservience": {
                 "Defend": "防守",
@@ -2715,12 +2715,12 @@
                 "success": "[[/r 1d8[persistent,mental]]]"
             },
             "Negative1d6": {
-                "success": "[[/r 1d6[persistent,negative]]]",
-                "criticalSuccess": "[[/r (2*1d6)[persistent,negative]]]"
+                "success": "[[/r 1d6[persistent,void]]]",
+                "criticalSuccess": "[[/r (2*1d6)[persistent,void]]]"
             },
             "Negative1d8": {
-                "criticalSuccess": "[[/r (2*1d8)[persistent,negative]]]",
-                "success": "[[/r 1d8[persistent,negative]]]"
+                "criticalSuccess": "[[/r (2*1d8)[persistent,void]]]",
+                "success": "[[/r 1d8[persistent,void]]]"
             },
             "Poison1d6": {
                 "criticalSuccess": "[[/r (2*1d6)[persistent,poison]]]",
@@ -2739,8 +2739,8 @@
                 "criticalSuccess": "[[/r (2*3d6)[persistent,mental]]]"
             },
             "Negative1d10": {
-                "success": "[[/r 1d10[persistent,negative]]]",
-                "criticalSuccess": "[[/r (2*1d10)[persistent,negative]]]"
+                "success": "[[/r 1d10[persistent,void]]]",
+                "criticalSuccess": "[[/r (2*1d10)[persistent,void]]]"
             },
             "Poison1d4": {
                 "criticalSuccess": "[[/r (2*1d4)[persistent,poison]]]",
@@ -2751,8 +2751,8 @@
                 "success": "[[/r 2d4[persistent,poison]]]"
             },
             "Negative2d10": {
-                "criticalSuccess": "[[/r (2*2d10)[persistent,negative]]]",
-                "success": "[[/r 2d10[persistent,negative]]]"
+                "criticalSuccess": "[[/r (2*2d10)[persistent,void]]]",
+                "success": "[[/r 2d10[persistent,void]]]"
             },
             "Piercing2d8+8": {
                 "success": "[[/r (2d8+8)[persistent,piercing]]]",
