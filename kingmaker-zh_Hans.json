@@ -25,7 +25,18 @@
             "ManualToggle": "使用手动修正",
             "None": "无",
             "SaveAndContinue": "保存并继续",
-            "Aspiration": "志向"
+            "Aspiration": "志向",
+            "ActivationMessage": "要开始创建国家了吗？请确保你的玩家已经准备好了（本操作无法撤回，王国无法删除，请确定你的玩家准备好了）。",
+            "CancelCreation": "取消创建",
+            "Skills": "王国技能",
+            "Feat": "王国专长",
+            "Boost": "提升",
+            "Complete": "完成",
+            "AssignBoostsHeader": "分配你的提升",
+            "NotSelected": "未选择",
+            "Title": "建设你的国家",
+            "Flaw": "缺陷",
+            "Builder": "编辑器"
         },
         "Kingdom": {
             "Tabs": {
@@ -48,7 +59,68 @@
             },
             "ControlDC": "控制DC",
             "Fame": "美名",
-            "Infamy": "恶名"
+            "Infamy": "恶名",
+            "Commodity": {
+                "food": "食物",
+                "lumber": "木材",
+                "luxuries": "奢侈品",
+                "ore": "矿石",
+                "stone": "石材"
+            },
+            "Capital": "首都",
+            "CapitalPlaceholder": "城市名称",
+            "CollectDialog": {
+                "Title": "收集资源",
+                "Header": "维护：资源收集",
+                "Description": "扔 {dice} 资源骰并生成以下内容？",
+                "Disclaimer": "这将取代你当前的资源点（应该已经转化为经验值），多余的资源点将会消失，只有GM才能收集资源。"
+            },
+            "Phases": {
+                "commerce": {
+                    "Header": "商贸阶段",
+                    "Description": "商贸阶段是指王国创造收入或签订贸易协议的阶段。",
+                    "Step1": "<strong>收集税款:</strong> 可以在每个王国回合进行一次。如果你不执行收集税款行动，你可以选择尝试一次 DC 11纯骰检定；如果成功，则减少 1 点动荡",
+                    "Step2": "<strong>批准支出:</strong> 你可以尝试改善生活（Improve Lifestyle）活动，利用王国的支出来提高公民的生活水平，或者你可以尝试挪用国库（Tap Treasury）行动，从国库中提取资金。",
+                    "Step4": "<strong>管理贸易协定:</strong> 如果你已建立贸易协定，可以使用管理贸易协定（Manage Trade Agreements）行动。",
+                    "Step3": "<strong>出售商品:</strong> 如果你的王国有商品库存，你可以尝试交易商品（Trade Commodities）行动，来增加本回合的可用 RP。"
+                },
+                "leadership": {
+                    "Description": "如果你的王国首都里有城堡、宫殿或市政厅，则每个担任领导职务的 PC 最多可以尝试三项领导行动。如果你的首都没有这些建筑，则每个 PC 在本步骤中最多可以尝试两项领导行动。你的队伍在进行领导行动时可以自行决定顺序。除非行动另有说明，否则每个领袖在每个王国回合中不能多次尝试相同的领导行动。",
+                    "Header": "行动阶段：领导行动"
+                }
+            },
+            "Leaders": "领导",
+            "NationType": {
+                "province": "省",
+                "state": "邦",
+                "territory": "领",
+                "country": "国",
+                "dominion": "帝国"
+            },
+            "LeadershipRole": {
+                "counselor": "参事",
+                "ruler": "元首",
+                "general": "将军",
+                "emissary": "特使",
+                "magister": "魔导师",
+                "viceroy": "总督",
+                "treasurer": "司库",
+                "warden": "卫队长"
+            },
+            "ImportDialog": {
+                "Content": "{added} 行动将会被添加并且 {updated} 行动将会被上传；没问题吗？",
+                "Title": "导入行动"
+            },
+            "BuildHeader": "王国建造",
+            "Activities": "王国行动",
+            "Aspiration": {
+                "fame": "美名",
+                "infamy": "恶名"
+            },
+            "LeaderMissing": "无人在岗（拖入一个角色来让他上岗）",
+            "Invested": "聚焦",
+            "InvestedBonus": "{ability}的属性调整值",
+            "NamePlaceholder": "王国名称"
         },
         "Skills": {
             "arts": "艺术",
@@ -133,6 +205,17 @@
                 "Description": "你的国家统治以某个夺取或继承统治权的个人为核心，其拥有绝对的权威。这样的统治者依然需要保留顾问和副手，但前提是他们服从统治者的个人决断。",
                 "Name": "专制独裁"
             }
-        }
+        },
+        "Consumption": {
+            "Reduction": "减少",
+            "Base": "基础",
+            "Label": "消耗"
+        },
+        "Event": {
+            "Details": "正在进行的活动详情",
+            "Random": "随机事件"
+        },
+        "Confirm": "确认",
+        "AbilityScores": "属性值"
     }
 }
