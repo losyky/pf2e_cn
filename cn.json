@@ -1604,6 +1604,10 @@
             },
             "CampaignFeature": {
                 "CampaignLabel": "战役"
+            },
+            "OtherTags": {
+                "Hint": "特征之外的附加标签，以便于对物品进行分类",
+                "Label": "其他标签"
             }
         },
         "ActionsCheck": {
@@ -1736,6 +1740,24 @@
                 "Blurb": "{level}级{ancestry} {class}",
                 "Biography": {
                     "ToggleVisibility": "切换对其他玩家的可见性"
+                },
+                "Proficiency": {
+                    "Attack": {
+                        "Simple": "简易武器",
+                        "Martial": "军用武器",
+                        "Advanced": "异种武器",
+                        "Unarmed": "无武装攻击",
+                        "Title": "攻击"
+                    },
+                    "Defense": {
+                        "Unarmored": "无甲防御",
+                        "Title": "防御",
+                        "Medium": "中甲",
+                        "LightBarding": "轻型坐骑护甲",
+                        "Light": "轻甲",
+                        "HeavyBarding": "重型坐骑护甲",
+                        "Heavy": "重甲"
+                    }
                 }
             },
             "Creature": {
@@ -1843,7 +1865,11 @@
                         "Label": "可用学识：DC {dc1} ({adjustment1}) 或者 DC {dc2} ({adjustment2})"
                     }
                 },
-                "SimpleSheet": "简易NPC表"
+                "SimpleSheet": "简易NPC表",
+                "SkillsEditor": {
+                    "Title": "技能编辑器({actor})",
+                    "LorePlaceholder": "木工学识"
+                }
             },
             "Plural": "角色",
             "IWREditor": {
@@ -1931,7 +1957,8 @@
                     }
                 },
                 "DistributeCoins": "分发货币",
-                "TotalBulk": "总负重： {bulk}"
+                "TotalBulk": "总负重： {bulk}",
+                "Encumbrance": "超载"
             },
             "HitPoints": {
                 "Unrecoverable": "当前无法恢复{value} 点生命值。"
@@ -2586,7 +2613,9 @@
                     "off-guard": "措手不及",
                     "wood": "木",
                     "metal": "金属",
-                    "spells": "法术"
+                    "spells": "法术",
+                    "wounded": "受伤",
+                    "persistent-damage": "持续伤害"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -2617,7 +2646,9 @@
                 "splash": "泼溅",
                 "untyped": "无名",
                 "fire": "火焰",
-                "spirit": "心灵"
+                "spirit": "心灵",
+                "void": "虚空",
+                "vitality": "活力"
             },
             "PersistentTooltip": "持续{damageType}",
             "IncreasedFrom": "从 {original} 增加到最少一个",
@@ -2631,7 +2662,8 @@
                 "Bonus": "额外{dice}",
                 "DamageRoll": "伤害掷骰",
                 "Splash": "{damageType} 溅射",
-                "DiceHeader": "伤害骰"
+                "DiceHeader": "伤害骰",
+                "BaseDamage": "基础伤害"
             },
             "Hardness": {
                 "Half": "半数硬度",
@@ -3776,7 +3808,8 @@
                     "Choices": {
                         "ProficiencyWithLevel": "使用默认规则",
                         "ProficiencyWithoutLevel": "使用变体规则"
-                    }
+                    },
+                    "ModifiersHint": "设置每个熟练等级的调整值。"
                 },
                 "UntrainedModifier": {
                     "Name": "未受训熟练调整值",
@@ -3805,6 +3838,10 @@
                         "Name": "渐进的属性提升",
                         "Hint": "将属性提升的能力分散到更多等级。除6级、11级和16级外，玩家每级都会获得一项提升。"
                     }
+                },
+                "GradualBoosts": {
+                    "Name": "渐进的属性提升",
+                    "Hint": "将属性提升的能力分散到更多等级。除6级、11级和16级外，玩家每级都会获得一项提升。"
                 }
             },
             "TOTMToggles": {
@@ -3911,8 +3948,8 @@
         "ShieldMaxLabel": "最大",
         "ShieldMaxTitle": "盾牌最大生命值",
         "SidebarAppearanceLabel": "外观",
-        "Size": "尺寸",
-        "SizeLabel": "尺寸",
+        "Size": "体型",
+        "SizeLabel": "体型",
         "SkillAcr": "特技",
         "SkillAcrobatics": "特技",
         "SkillArc": "奥法",
@@ -5387,7 +5424,8 @@
                 "gada": "金刚杵",
                 "kalis": "蛇形剑",
                 "visap": "双头曲刃",
-                "zulfikar": "斩脊刀"
+                "zulfikar": "斩脊刀",
+                "arbalest": "劲弩"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -6836,7 +6874,10 @@
         "ArmorPropertyRuneLesserDread": "次等恐惧",
         "Pathfinder": "寻路者",
         "InitiativeIsNow": "{name}的先攻值现在为{value}!",
-        "ArmorPropertyRuneMalleable": "锻型"
+        "ArmorPropertyRuneMalleable": "锻型",
+        "TraitVersatileVoid": "多用虚空",
+        "TraitVersatileVitality": "多用活力",
+        "DeleteQuestion": "你确定要删掉{name}吗？"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
