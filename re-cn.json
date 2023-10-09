@@ -60,7 +60,10 @@
                 "Thorns": "棘刺",
                 "Bite": "咬 Bite",
                 "Web": "蛛网",
-                "LightningLash": "闪电冲击"
+                "LightningLash": "闪电冲击",
+                "StoneBall": "石球",
+                "BoneSpike": "骨刺",
+                "BoneDart": "骨飞镖"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -526,7 +529,8 @@
                     "InnovationCollapsed": "创新爆破",
                     "Breakthrough": {
                         "Prompt": "选择一个突破性改进。",
-                        "AllowedDrops": "7级或者更低的发明家职业特性"
+                        "AllowedDrops": "7级或者更低的发明家职业特性",
+                        "EnhancedResistancePrompt": "选择要增强的初始改修。"
                     }
                 },
                 "OffensiveBoost": {
@@ -2039,6 +2043,29 @@
                 "TempHP": "临时生命",
                 "PromptTwo": "选择第二个增益。",
                 "Prompt": "选择一个增益。"
+            },
+            "Seasons": {
+                "Summer": "夏天",
+                "Spring": "春天",
+                "Prompt": "选择当前季节",
+                "Winter": "冬天",
+                "Fall": "秋天"
+            },
+            "SeasonOfGhosts": {
+                "Background": {
+                    "Prompt": "选择背景调整",
+                    "Outgoing": "外向",
+                    "NoAdjustment": "不调整",
+                    "FoundlingPrompt": "选择你与柳岸镇的关系",
+                    "Foundling": "弃儿",
+                    "Mysterious": "神秘",
+                    "Typical": "典型",
+                    "FamilyPrompt": "选择您的家庭状况",
+                    "Family": "家庭",
+                    "CloseKnit": "亲密",
+                    "Bitter": "悲苦",
+                    "Bickering": "不和"
+                }
             }
         },
         "RuleElement": {
@@ -2844,7 +2871,31 @@
                 "Text": "这种冰冷的弹药是深蓝色的，而且摸起来感觉很冷。当启动的冰冻弹药命中了一个目标，目标必须通过一个@Check[type:fortitude|dc:19]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮（在大失败时则陷入缓慢1，持续1分钟）。"
             },
             "OozeAmmunition": {
-                "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}一轮。"
+                "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}一轮。",
+                "Greater": {
+                    "Text": "生物会受到-10尺速度减值和@Damage[3d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping}(DC 29)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.6Pwdim01PH447CeS]{效果：高等泥怪弹药}",
+                    "Title": "高等泥怪弹药"
+                },
+                "Lesser": {
+                    "Text": "生物会受到-5尺速度减值和@Damage[1d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping} (DC 16)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.FPvMbKX8sXM9fGJT]{效果：次等泥怪弹药}",
+                    "Title": "次等泥怪弹药 Ooze Ammunition (Lesser)"
+                },
+                "Moderate": {
+                    "Title": "中等泥怪弹药"
+                },
+                "Major": {
+                    "Text": "生物会受到-15尺速度减值和@Damage[4d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping} (DC 38)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.UjAJUFMfH0OWWwQS]{Effect: 上等泥怪弹药}",
+                    "Title": "上等泥怪弹药"
+                }
+            }
+        },
+        "IWR": {
+            "Custom": {
+                "MagicalDarkwood": "魔法暗木",
+                "MagicalColdIron": "魔法寒铁",
+                "MagicalBludgeoning": "魔法钝击",
+                "ColdIronBludgeoning": "寒铁钝击",
+                "MagicalSilver": "魔法银"
             }
         }
     }
