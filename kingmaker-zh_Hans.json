@@ -40,7 +40,11 @@
         },
         "Kingdom": {
             "Tabs": {
-                "Main": "主要"
+                "Main": "主要",
+                "Activities": "行动",
+                "World": "世界",
+                "Features": "特征",
+                "Ongoing": "持续进行"
             },
             "BuildElement": {
                 "Charter": "特许状",
@@ -87,6 +91,18 @@
                 "leadership": {
                     "Description": "如果你的王国首都里有城堡、宫殿或市政厅，则每个担任领导职务的 PC 最多可以尝试三项领导行动。如果你的首都没有这些建筑，则每个 PC 在本步骤中最多可以尝试两项领导行动。你的队伍在进行领导行动时可以自行决定顺序。除非行动另有说明，否则每个领袖在每个王国回合中不能多次尝试相同的领导行动。",
                     "Header": "行动阶段：领导行动"
+                },
+                "civic": {
+                    "Description": "PC领导人可以每个定居点尝试一项公民行动。",
+                    "Header": "行动阶段：公民行动"
+                },
+                "army": {
+                    "Description": "在PC完成王国回合的公民行动步骤后，他们可以进行军队行动步骤，在这个步骤中，王国当前维持的每一支军队可以进行一次军队行动。",
+                    "Header": "军队行动"
+                },
+                "region": {
+                    "Description": "PC领导人可以总共尝试最多三项区域行动。",
+                    "Header": "行动阶段：区域行动"
                 }
             },
             "Leaders": "领导",
@@ -120,7 +136,35 @@
             "LeaderMissing": "无人在岗（拖入一个角色来让他上岗）",
             "Invested": "聚焦",
             "InvestedBonus": "{ability}的属性调整值",
-            "NamePlaceholder": "王国名称"
+            "NamePlaceholder": "王国名称",
+            "VacantRole": "空缺({role})",
+            "Ruin": {
+                "strife": "冲突",
+                "decay": "衰退",
+                "crime": "犯罪",
+                "corruption": "腐化"
+            },
+            "Storage": "储物",
+            "Size": "体型",
+            "VacancyPenalty": {
+                "magister": "-4 对战争行动",
+                "counselor": "-1 对所有基于文化的检定",
+                "emissary": "-1 对所有基于忠诚的检定",
+                "ruler": "所有检定-1（这可以与任何其他空职减值叠加）；在王国回合开始时获得1d4的动荡；控制DC增加2点",
+                "treasurer": "-1 对所有基于经济的检定",
+                "viceroy": "-1 对所有基于稳定的检定",
+                "warden": "-4 对区域行动",
+                "general": "-4 对战争行动"
+            },
+            "Resources": {
+                "Points": "资源点",
+                "RP": "RP",
+                "Dice": "资源骰",
+                "Header": "资源和商品",
+                "Collect": "收集"
+            },
+            "Unrest": "动乱",
+            "Vacant": "空缺"
         },
         "Skills": {
             "arts": "艺术",
@@ -216,6 +260,56 @@
             "Random": "随机事件"
         },
         "Confirm": "确认",
-        "AbilityScores": "属性值"
+        "AbilityScores": "属性值",
+        "Settlement": {
+            "LevelRange": "等级范围",
+            "Details": "定居点明细",
+            "Overcrowded": "过度拥挤",
+            "Population": "人口",
+            "Blocks": "格挡",
+            "Name": "定居点名称",
+            "Type": {
+                "village": "村庄",
+                "town": "镇子",
+                "city": "城市",
+                "metropolis": "大都会"
+            },
+            "Header": "王国定居点",
+            "TypeLabel": "类型"
+        },
+        "WorkSites": {
+            "lumber": {
+                "Description": "增加在维护阶段获得的木材。使用\"建立工地\"创造。",
+                "Name": "木材营地"
+            },
+            "ore": {
+                "Name": "矿井",
+                "Description": "增加在维护阶段获得的矿石数量。使用\"建立工地\"创造。"
+            },
+            "stone": {
+                "Name": "采石场",
+                "Description": "增加在维护阶段获得的石材。使用\"建立工地\"创造。"
+            },
+            "luxuries": {
+                "Description": "非常少见的工地。在维护阶段提供奢侈品。",
+                "Name": "矿井 (宝石)"
+            },
+            "food": {
+                "Name": "农田",
+                "Description": "在维护阶段减少消耗。需要在区域阶段使用收获庄稼、钓鱼或者畜牧来采集食物。使用\"建立农田\"创造。"
+            },
+            "Label": "工地"
+        },
+        "Penalty": "减值",
+        "Feature": {
+            "Categories": {
+                "army-tactic": "军队战术",
+                "army-war-action": "陆军战争行动",
+                "kingdom-activity": "王国行动",
+                "kingdom-feat": "王国专长",
+                "kingdom-feature": "王国特征"
+            },
+            "Tactic": "战术"
+        }
     }
 }
