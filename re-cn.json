@@ -2881,7 +2881,8 @@
                     "Title": "次等泥怪弹药 Ooze Ammunition (Lesser)"
                 },
                 "Moderate": {
-                    "Title": "中等泥怪弹药"
+                    "Title": "中等泥怪弹药",
+                    "Text": "生物会受到-10尺速度减值和@Damage[2d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping}(DC 20)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.6c4o7ypWWnZKPy5b]{效果：中等泥怪弹药}"
                 },
                 "Major": {
                     "Text": "生物会受到-15尺速度减值和@Damage[4d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping} (DC 38)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.UjAJUFMfH0OWWwQS]{Effect: 上等泥怪弹药}",
@@ -2895,7 +2896,9 @@
                 "MagicalColdIron": "魔法寒铁",
                 "MagicalBludgeoning": "魔法钝击",
                 "ColdIronBludgeoning": "寒铁钝击",
-                "MagicalSilver": "魔法银"
+                "MagicalSilver": "魔法银",
+                "MagicalSilverWeaponsOrMagicalWeaponsBrightLight": "魔法银制武器或发光的魔法武器",
+                "AdamantineBludgeoning": "精金钝击"
             }
         }
     }
