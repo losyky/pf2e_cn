@@ -298,7 +298,8 @@
                 "Name": "农田",
                 "Description": "在维护阶段减少消耗。需要在区域阶段使用收获庄稼、钓鱼或者畜牧来采集食物。使用\"建立农田\"创造。"
             },
-            "Label": "工地"
+            "Label": "工地",
+            "Resource": "如果工地建在一个人口稠密或利润丰厚的产地上，请在这里标出。这些会产量比通常多一倍。"
         },
         "Penalty": "减值",
         "Feature": {
@@ -310,6 +311,25 @@
                 "kingdom-feature": "王国特征"
             },
             "Tactic": "战术"
+        },
+        "Trait": {
+            "commerce": "商业",
+            "army": "军队",
+            "cavalry": "骑兵",
+            "civic": "公民",
+            "region": "区域",
+            "infantry": "步兵",
+            "kingdom": "王国",
+            "leadership": "领导力",
+            "morale": "士气",
+            "siege": "围攻",
+            "skirmisher": "散兵",
+            "upkeep": "保养",
+            "maneuver": "计谋"
+        },
+        "SIDEBAR": {
+            "CreateKingdom": "创建王国",
+            "OpenSheet": "打开王国卡"
         }
     }
 }
