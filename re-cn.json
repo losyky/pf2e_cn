@@ -542,6 +542,9 @@
                     "Jolt": "震电（电击）",
                     "Ignition": "爆燃（火焰）",
                     "Chill": "冻寒（寒冷）"
+                },
+                "LockOn": {
+                    "TwoActionsLegendary": "双动作（传奇）"
                 }
             },
             "DedicationCraftingEntry": {
@@ -1834,7 +1837,9 @@
             },
             "Actions": {
                 "ThreeActions": "3动作",
-                "TwoActions": "2动作"
+                "TwoActions": "2动作",
+                "Prompt": "选择动作数",
+                "OneAction": "单动作"
             },
             "BloodlettingKukri": {
                 "Note": "若你在重击成功时若目标身上无持续流血伤害，你还能获得[[/r 1d8]]点临时生命值。"
@@ -2066,6 +2071,9 @@
                     "Bitter": "悲苦",
                     "Bickering": "不和"
                 }
+            },
+            "CapeOfJustice": {
+                "Toggle": "目标是你指定的罪犯"
             }
         },
         "RuleElement": {
@@ -2337,7 +2345,8 @@
                     "null": "重击两倍伤害",
                     "true": "只有重击伤害"
                 },
-                "DamageType": "伤害类型"
+                "DamageType": "伤害类型",
+                "PriorityHint": "优先级决定了规则元素的执行顺序。优先级较低的规则元素会先执行。"
             },
             "Note": {
                 "Outcome": "成果",
@@ -2508,6 +2517,25 @@
                     "Gregarious": "擅长交际",
                     "Angry": "生气"
                 }
+            },
+            "Ivarsa": {
+                "ArcaneCascade": {
+                    "Note": "在这种架势下，Ivarsa的近战攻击对她的目标周围的敌人造成@Damage[(4[splash])[fire]]{4点溅射火焰}伤害。"
+                }
+            },
+            "BladeMagus": {
+                "ArcaneCascade": {
+                    "Note": "在这种架势下， the Blade magi的近战攻击对她的目标周围的敌人造成@Damage[(4[splash])[force]]{4点溅射力场}伤害。"
+                }
+            },
+            "AlchemicalGolem": {
+                "Sickness": "病痛"
+            },
+            "GangUp": {
+                "TwoAllies": "两个盟友在目标的射程之内"
+            },
+            "StoneSpider": {
+                "StoneFangs": "石牙"
             }
         },
         "UI": {
@@ -2898,7 +2926,11 @@
                 "ColdIronBludgeoning": "寒铁钝击",
                 "MagicalSilver": "魔法银",
                 "MagicalSilverWeaponsOrMagicalWeaponsBrightLight": "魔法银制武器或发光的魔法武器",
-                "AdamantineBludgeoning": "精金钝击"
+                "AdamantineBludgeoning": "精金钝击",
+                "MagicalSilverWeapons": "魔法银制武器",
+                "AllDamageFromUndead": "承受来自不死生物的全额伤害",
+                "MagicalWeaponsBrightLight": "发光魔法武器",
+                "NonWeapons": "无武器"
             }
         }
     }
