@@ -1291,7 +1291,7 @@
                 "Warning": {
                     "TakenAfterLevel1": "{item}必须在1级时选取，但{actor}在{actorLevel}级上选取。",
                     "TakenMoreThanOnce": "{item}只能选取一次，但{actor}已经额外选取了一次。",
-                    "TakenMoreThanMax": "{item}只能选取{maxtake}次，但{actor}已经选取了{timestake}次。",
+                    "TakenMoreThanMax": "{item}只能被选取{maxtake}次，但{actor}已经选取了{timestake}次。",
                     "InvalidCategory": "无法将专长“{item}”添加到{category}:专长类型无效。"
                 },
                 "Info": {
@@ -4113,7 +4113,7 @@
         "StaminaPointsShortLabel": "耐力",
         "StatusBonusShortLabel": "状态",
         "StatusBonusTitle": "状态加值",
-        "StatusEffects": "{name} 状态效果:",
+        "StatusEffects": "{name}的状态",
         "StealthLabel": "隐秘",
         "StrikesLabel": "攻击",
         "Strike": {
