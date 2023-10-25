@@ -1234,14 +1234,16 @@
                     "Hint": "可以选择追随众神域或是无关神祇的信条，而非特定神明。而牧师与圣骑士必须追随神明或是众神域。",
                     "Pantheon": "众神",
                     "Philosophy": "信条"
-                }
+                },
+                "Spellcasting": "法术书"
             },
             "Effect": {
                 "Sustained": "护命",
                 "Expiry": {
                     "ExpiresOn": "失效",
                     "StartOfTurn": "回合开始",
-                    "EndOfTurn": "回合结束"
+                    "EndOfTurn": "回合结束",
+                    "EndOfRound": "轮结束"
                 },
                 "ShowTokenIcon": "显示指示物图标？",
                 "AddBadge": "增加",
@@ -1548,7 +1550,8 @@
                 "MeasuredTemplate": {
                     "Place": "放置{size}-{unit} {shape}",
                     "Clear": "清除放置的盖板"
-                }
+                },
+                "Rank": "等级"
             },
             "CreationDialog": {
                 "Categories": {
@@ -1771,7 +1774,8 @@
                 "SpellPreparation": {
                     "Title": "{actor}: 法术准备",
                     "Hint": "想要准备一个法术，请将其从列表中拖至角色卡的一个法术空位上。",
-                    "HintFlexible": "要准备咒语，请在此处启用。要准备戏法，请从该列表中将一个戏法拖动到角色卡上的空位中。 "
+                    "HintFlexible": "要准备咒语，请在此处启用。要准备戏法，请从该列表中将一个戏法拖动到角色卡上的空位中。 ",
+                    "Search": "搜索法术"
                 },
                 "Configure": {
                     "Alliance": {
@@ -2615,7 +2619,12 @@
                     "metal": "金属",
                     "spells": "法术",
                     "wounded": "受伤",
-                    "persistent-damage": "持续伤害"
+                    "persistent-damage": "持续伤害",
+                    "inubrix": "虚铅",
+                    "djezet": "血汞",
+                    "abysium": "渊铀",
+                    "siccatite": "漠石",
+                    "noqual": "零晶"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -3162,7 +3171,8 @@
                 "On": "开启",
                 "Notification": "{toggle}已切换为{state}。",
                 "Off": "关闭"
-            }
+            },
+            "NoCompendiumItem": "无法从一个非效果或状态的集合包物品中创建宏。"
         },
         "MacroActionNoActorError": "动作没有了!",
         "MacroActionNoActionError": "这个动作没有了!",
@@ -4196,7 +4206,11 @@
                     "Unlink": "取消与角色体型关联"
                 }
             },
-            "Flanking": "夹击"
+            "Flanking": "夹击",
+            "SecretDisposition": {
+                "Hint": "激活\"秘密\"配置，所有者将会显示一个紫色信息框，而对于其他人则无任何显示变化。",
+                "Label": "秘密配置"
+            }
         },
         "TotalTreasure": "全部宝物",
         "TotalCoinage": "货币总计",
