@@ -6891,7 +6891,16 @@
         "ArmorPropertyRuneMalleable": "锻型",
         "TraitVersatileVoid": "多用虚空",
         "TraitVersatileVitality": "多用活力",
-        "DeleteQuestion": "你确定要删掉{name}吗？"
+        "DeleteQuestion": "你确定要删掉{name}吗？",
+        "Publication": {
+            "Title": "标题",
+            "Remaster": "重置版？",
+            "License": {
+                "ORC": "ORC",
+                "OGL": "OGL",
+                "Label": "授权"
+            }
+        }
     },
     "DOCUMENT": {
         "Combat": "遭遇",
