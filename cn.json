@@ -63,7 +63,8 @@
             "Hint": "检索集合包内容，而不是按名称去筛选"
         },
         "Search": "搜索集合包",
-        "Migrate": "迁移合集"
+        "Migrate": "迁移合集",
+        "MigrationStatus": "迁移状态"
     },
     "CONTROLS": {
         "AdjustSceneDarkness": "调整场景黑暗度",
@@ -1017,7 +1018,7 @@
                         "Description": "你能预见与理解潜藏的无法避免的事情。"
                     },
                     "Fire": {
-                        "Label": "火焰",
+                        "Label": "火",
                         "Description": "你可以控制火焰。"
                     },
                     "Freedom": {
@@ -1227,6 +1228,14 @@
                     "Introspection": {
                         "Description": "你引导他人审视自己的生活、情绪和行为动机，最终成为更真实的自己——这往往是一个困难且痛苦的过程。",
                         "Label": "自省"
+                    },
+                    "Metal": {
+                        "Description": "你可以操纵灵活多变的金属。",
+                        "Label": "金"
+                    },
+                    "Wood": {
+                        "Label": "木",
+                        "Description": "你掌握着如木头般不屈不挠的力量。"
                     }
                 },
                 "Category": {
@@ -1277,7 +1286,8 @@
                         "TurnEnd": "在回合结束时",
                         "Label": "重新评估？",
                         "TurnStart": "在回合开始时"
-                    }
+                    },
+                    "Range": "范围"
                 }
             },
             "Feat": {
@@ -1407,6 +1417,10 @@
                     "PotencyOnePropertyMaterial": "+{potency} {property1} {material} {base}",
                     "PotencyFundamental2": "+{potency} {fundamental2} {base}",
                     "PotencyFundamental2ThreePropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {material} {base}"
+                },
+                "BrokenThreshold": {
+                    "ShortLabel": "BT",
+                    "Label": "破损阈值"
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1761,6 +1775,19 @@
                         "HeavyBarding": "重型坐骑护甲",
                         "Heavy": "重甲"
                     }
+                },
+                "HandsOccupied": "手已占用",
+                "Shield": {
+                    "ACBonus": "盾牌AC加值(举起时)",
+                    "HitPoints": {
+                        "Value": "盾牌HP",
+                        "Max": "盾牌最大HP"
+                    },
+                    "Hardness": {
+                        "Label": "H",
+                        "Hint": "盾牌硬度"
+                    },
+                    "BrokenThreshold": "盾牌破损阈值"
                 }
             },
             "Creature": {
@@ -1774,7 +1801,7 @@
                 "SpellPreparation": {
                     "Title": "{actor}: 法术准备",
                     "Hint": "想要准备一个法术，请将其从列表中拖至角色卡的一个法术空位上。",
-                    "HintFlexible": "要准备咒语，请在此处启用。要准备戏法，请从该列表中将一个戏法拖动到角色卡上的空位中。 ",
+                    "HintFlexible": "要准备咒语，请在此处启用。要准备戏法，请从该列表中将一个戏法拖动到角色卡上的空位中。",
                     "Search": "搜索法术"
                 },
                 "Configure": {
@@ -1935,7 +1962,22 @@
                 },
                 "NoMembers": "没有成员",
                 "Bulk": "总容积: {bulk}",
-                "TravelHeader": "队伍旅程与六角格探索"
+                "TravelHeader": "队伍旅程与六角格探索",
+                "CheckPrompt": {
+                    "ChooseSaves": "选择豁免",
+                    "ChooseLores": "选择学识",
+                    "AdjustDifficulty": "调整难度",
+                    "TitleShort": "检定提示",
+                    "Post": "生成提示",
+                    "LevelDC": "基于等级的DC",
+                    "ChooseSkills": "选择技能/察觉",
+                    "Title": "生成检定提示",
+                    "SkillsPerception": "技能/察觉",
+                    "SimpleDC": "简单DC",
+                    "SetDC": "设定DC",
+                    "SecretCheck": "秘密检定",
+                    "PromptTitle": "提示标题"
+                }
             },
             "Familiar": {
                 "Master": {
@@ -2165,7 +2207,7 @@
         "BonusHPperLevel": "每等级HP加值",
         "BonusHPperLevelTitle": "每等级应用一次 (此后计算体质调整值)",
         "BonusLabel": {
-            "ability": "能力加值",
+            "ability": "属性加值",
             "proficiency": "熟练加值",
             "circumstance": "环境加值",
             "item": "物品 加值",
@@ -2643,7 +2685,7 @@
                 "good": "善良",
                 "lawful": "守序",
                 "mental": "心灵",
-                "metal": "金属",
+                "metal": "金",
                 "negative": "负能量",
                 "persistent": "持续{damageType}",
                 "piercing": "穿刺",
@@ -2654,7 +2696,7 @@
                 "sonic": "音波",
                 "splash": "泼溅",
                 "untyped": "无名",
-                "fire": "火焰",
+                "fire": "火",
                 "spirit": "心灵",
                 "void": "虚空",
                 "vitality": "活力"
@@ -2926,7 +2968,7 @@
         "GenderPronoun": "性别",
         "GenderPronounTitle": "你的性别",
         "GeneralFeatLevels": "通用专长等级",
-        "GreaterWeaponSpecialization": " 高等武器专精",
+        "GreaterWeaponSpecialization": "高等武器专精",
         "HardnessLabel": "硬度",
         "HazardDescriptionLabel": "描述",
         "HazardDescriptionTitle": "这解释了危害的具体形式和特殊规则",
@@ -6899,8 +6941,27 @@
                 "ORC": "ORC",
                 "OGL": "OGL",
                 "Label": "授权"
-            }
-        }
+            },
+            "Label": "出版物",
+            "Authors": "作者"
+        },
+        "CompendiumMigrationStatus": {
+            "Foundry": "Foundry",
+            "FoundryOld": "0.7或以下",
+            "Document": "文档",
+            "LockedTooltip": "无法迁移-集合包已锁定",
+            "Invalid": "无效",
+            "UpToDate": "至今",
+            "Title": "迁移状态",
+            "Size": "大小",
+            "Schema": "概要",
+            "MigrateCompendium": "迁移集合包"
+        },
+        "TraitTea": "茶",
+        "InlineDamage": {
+            "Base": "基础：{formula}"
+        },
+        "ConditionTypeMalevolence": "恶意"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
