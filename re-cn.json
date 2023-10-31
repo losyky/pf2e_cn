@@ -2074,6 +2074,9 @@
             },
             "CapeOfJustice": {
                 "Toggle": "目标是你指定的罪犯"
+            },
+            "ExorcistDedication": {
+                "SpiritDwelling": "你的精神居所里住着一个灵魂"
             }
         },
         "RuleElement": {
