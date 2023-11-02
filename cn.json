@@ -947,7 +947,7 @@
                     },
                     "Air": {
                         "Label": "气",
-                        "Description": "你可以控制风与气相。 "
+                        "Description": "你可以控制风与气相。"
                     },
                     "Ambition": {
                         "Label": "野心",
@@ -2713,7 +2713,7 @@
                 "Bonus": "额外{dice}",
                 "DamageRoll": "伤害掷骰",
                 "Splash": "{damageType} 溅射",
-                "DiceHeader": "伤害骰",
+                "DiceHeader": "骰子",
                 "BaseDamage": "基础伤害"
             },
             "Hardness": {
@@ -3565,7 +3565,7 @@
             },
             "Player": {
                 "QuickRolls": {
-                    "DialogHint": "在尝试检定之前始终显示此窗口。"
+                    "DialogHint": "在投骰之前始终显示此窗口。"
                 }
             },
             "User": {
@@ -3683,7 +3683,7 @@
                 },
                 "SpellTraits": {
                     "Name": "法术特征",
-                    "Hint": " 可以应用于任何法术的特征（例如，诅咒，治愈）"
+                    "Hint": "可以应用于任何法术的特征（例如，诅咒，治愈）"
                 },
                 "WeaponCategories": {
                     "Name": "武器类别",
@@ -3850,7 +3850,7 @@
                     "Choices": {
                         "noABP": "不使用ABP规则",
                         "ABPFundamentalPotency": "ABP：适用基础符文",
-                        "ABPRulesAsWritten": "ABP: 不适用基础符文 "
+                        "ABPRulesAsWritten": "ABP: 不适用基础符文"
                     }
                 },
                 "Proficiency": {
@@ -4499,7 +4499,7 @@
         "TraitDescriptionFetchling": "具有这种特征的生物是窃影鬼种族的成员。窃影鬼曾经也是人类，但几代人在影位面的生活已经改变了他们。",
         "TraitDescriptionFighter": "指战士职业能力。",
         "TraitDescriptionFinesse": "你在用此近战武器进行攻击掷骰时，可以用敏捷调整值取代力量调整值。你在计算伤害时仍然使用力量调整值。",
-        "TraitDescriptionFinisher": " 终结技是使用派头的华丽终结招数。你必须持有派头才能使用终结技，并在使用终结技后立刻失去派头。在你使用终结技后，当回合结束前不得再进行带有攻击特征的动作。某些终结技动作会提供检定失败时的效果，这些失败效果在大失败时不生效。当终结技动作成功时，你仍可选择改为结算失败效果(例如攻击由于抗力无法造成伤害的情况)。",
+        "TraitDescriptionFinisher": "终结技是使用派头的华丽终结招数。你必须持有派头才能使用终结技，并在使用终结技后立刻失去派头。在你使用终结技后，当回合结束前不得再进行带有攻击特征的动作。某些终结技动作会提供检定失败时的效果，这些失败效果在大失败时不生效。当终结技动作成功时，你仍可选择改为结算失败效果(例如攻击由于抗力无法造成伤害的情况)。",
         "TraitDescriptionFire": "具有火焰特征的效果会造成火焰伤害、召唤或操作火焰。操作火焰的效果在没有火焰的区域不会生效。具有此特征的生物主要由火焰构成，或与火焰元素之间有着魔法连接。",
         "TraitDescriptionFleshwarp": "一个完全被外力所改变的人形生物，如今他们已经成为了一个独特的种族。",
         "TraitDescriptionFlexible": "这种盔甲足够柔韧，不会妨碍大多数行动，你在特技和运动检定中不会承受检定减值。",
@@ -5195,8 +5195,8 @@
             },
             "errorTargetToken": "需要选中至少一个合法的指示物。",
             "noDamageInfoForOutcome": "没有关于 {outcome}的伤害信息。",
-            "shiftModifyDamageLabel": "调整伤害/治疗",
-            "shiftModifyDamageTitle": "修改骰出的伤害/治疗",
+            "shiftModifyDamageLabel": "合计",
+            "shiftModifyDamageTitle": "修改伤害/治疗",
             "warnNoActor": "这个垂直列表需要一个角色。"
         },
         "UnitPriceLabel": "单价",
@@ -6268,7 +6268,7 @@
             }
         },
         "ui": {
-            "equipmentInvested": "绑定装备开关",
+            "equipmentInvested": "绑定开关",
             "armorEquipped": "穿戴装备开关",
             "sell": "出售",
             "weaponEquipped": "切换你持握的武器"
@@ -6334,7 +6334,7 @@
             "LootNamePlaceholder": "战利品",
             "LootNPCsPopupHeader": "选择要获取战利品的指示物",
             "LootNPCsLabel": "从选定指示物中获得战利品",
-            "MerchantDescription": "允许玩家之间交换物品。",
+            "MerchantDescription": "允许玩家跟商人卡进行交易",
             "MerchantLabel": "商人",
             "MoveLoot": "移动物品",
             "MoveLootMessage": "你想移动几件物品?",
@@ -6345,7 +6345,7 @@
             "LootSubtitle": "战利品",
             "HiddenWhenEmpty": {
                 "Label": "空白时隐藏",
-                "Hint": "当此角色指示物的可搜刮列表为空时隐藏其指示物"
+                "Hint": "当此角色指示物的可搜刮列表为空时隐藏其指示物。"
             },
             "PlantSubtitle": "安置物",
             "BuySubtitle": "商品",
