@@ -6961,7 +6961,11 @@
         "InlineDamage": {
             "Base": "基础：{formula}"
         },
-        "ConditionTypeMalevolence": "恶意"
+        "ConditionTypeMalevolence": "恶意",
+        "SettingsQuickDamageLabel": "预览伤害掷骰",
+        "SettingsQuickChecksLabel": "预览D20掷骰",
+        "SettingsQuickDamageNotes": "如果禁用，只有在按住shift键点击掷骰按钮时，才会出现预览伤害掷骰的对话框。",
+        "SettingsQuickChecksNotes": "如果禁用，只有在按住Shift键点击掷骰按钮时，才会出现预览D20掷骰的对话框。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
