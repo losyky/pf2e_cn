@@ -1851,7 +1851,13 @@
                     "WithAcuityAndRange": "{sense} ({acuity} {range} 尺)"
                 },
                 "AbilityModifiers": "属性调整值",
-                "AttributeModifiers": "属性调整值"
+                "AttributeModifiers": "属性调整值",
+                "Shield": {
+                    "HitPoints": {
+                        "Value": "盾牌HP",
+                        "Max": "盾牌最大HP"
+                    }
+                }
             },
             "Dead": "死亡",
             "Hazard": {
