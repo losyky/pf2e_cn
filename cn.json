@@ -149,7 +149,7 @@
         },
         "ActionActionTypeLabel": "动作类型",
         "ActionActionsLabel": "动作",
-        "ActionBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 学派, 施法成份, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
+        "ActionBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "ActionCategoryDefensive": "防御",
         "ActionCategoryInteraction": "交互动作",
         "ActionCategoryLabel": "动作列表",
@@ -1431,17 +1431,18 @@
                     "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized} ，它必须使用互动动作尝试进行 @Check[type:athletics|dc:10|name:Pull the Missile Free|showDC:all] 检定来拔出弹头，之后才能移动离开其方格。虚体、液态（例如水元素或某些泥怪）或能以某种方式毫不费力地避开此效果的生物不会被钉住。",
                     "brawling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Brawling Critical Specialization]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续到你的下回合结束。",
                     "club": "目标被你击退至多10尺（距离由你选择）。这是被迫移动。",
-                    "dart": "目标受到@Localize[PF2E.PersistentDamage.Bleed1d6.success]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
+                    "dart": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
                     "firearm": "目标必须通过一个@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Firearm Critical Specialization]豁免，否则会受到@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
                     "flail": "目标被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
                     "hammer": "目标被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
-                    "knife": "目标受到@Localize[PF2E.PersistentDamage.Bleed1d6.success]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
+                    "knife": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
                     "pick": "武器凶狠地刺穿目标。目标受到每颗武器伤害骰2点的额外伤害。",
                     "polearm": "目标往你选择的位置移动5尺。这是被迫移动。",
                     "shield": "目标被你击退5尺。这是被迫移动。",
                     "sling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Sling Critical Specialization]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
                     "spear": "武器刺穿目标，使其攻击变得软弱无力。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你的下一回合开始。",
-                    "sword": "目标因为你的攻击而失去平衡，变得@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到你的下一回合开始。"
+                    "sword": "目标因为你的攻击而失去平衡，变得@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到你的下一回合开始。",
+                    "crossbow": "目标受到@Damage[1d8[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。"
                 },
                 "FromMaterialAndRunes": "此物品上的珍贵材料和符文的{property}调整为{value}。",
                 "GeneratedName": {
@@ -1562,10 +1563,25 @@
                     "Hint": "若你反制的是苦难，DC会写在苦难的数据栏中。若反制的是法术，使用施法者的DC。对于效果，GM需要基于目标效果等级来计算其DC。"
                 },
                 "MeasuredTemplate": {
-                    "Place": "放置{size}-{unit} {shape}",
+                    "Place": "放置{area}",
                     "Clear": "清除放置的盖板"
                 },
-                "Rank": "等级"
+                "Rank": {
+                    "Label": "环级",
+                    "Ordinal": "{rank}环"
+                },
+                "Area": "{size}-{unit} {shape}",
+                "Ritual": {
+                    "Label": "仪式",
+                    "SecondaryCasters": "次要施法者",
+                    "SecondaryChecks": "次要检定",
+                    "PrimaryCheck": "主要检定"
+                },
+                "Defense": {
+                    "Label": "防御"
+                },
+                "Cost": "消耗",
+                "Cast": "施法"
             },
             "CreationDialog": {
                 "Categories": {
@@ -1625,6 +1641,10 @@
             "OtherTags": {
                 "Hint": "特征之外的附加标签，以便于对物品进行分类",
                 "Label": "其他标签"
+            },
+            "MaterialEffects": {
+                "Label": "材料伤害效果",
+                "Hint": "触发或绕过某些生物的免疫、弱点和抗性的珍贵材料伤害效果（应用于联动伤害掷骰）"
             }
         },
         "ActionsCheck": {
@@ -1672,7 +1692,13 @@
                 "ShieldDamagedForNDestroyed": "他们的盾牌也受到 {shieldDamage}点伤害，并破坏。",
                 "ShieldNotRaised": "{actor} 并未举起他们的盾牌。",
                 "TakesNoDamage": "<actor>{actor}</actor>没有受到伤害。",
-                "TheTarget": "目标"
+                "TheTarget": "目标",
+                "InstantDeath": {
+                    "MassiveDamage": "这一巨额伤害会立即杀死它们。",
+                    "FinePowder": "他们被还原成细粉末；他们的装备仍然存在。",
+                    "DeathEffect": "死亡效果立即杀死了他们。",
+                    "Destroyed": "它们被摧毁了。"
+                }
             },
             "Character": {
                 "AbilityBuilder": {
@@ -1856,7 +1882,13 @@
                     "HitPoints": {
                         "Value": "盾牌HP",
                         "Max": "盾牌最大HP"
-                    }
+                    },
+                    "Hardness": {
+                        "Label": "H",
+                        "Hint": "盾牌硬度"
+                    },
+                    "BrokenThreshold": "盾牌破损阈值",
+                    "ACBonus": "盾牌AC加值(举起时)"
                 }
             },
             "Dead": "死亡",
@@ -2177,7 +2209,7 @@
         "BackgroundTitle": "你的 角色 背景",
         "BaseModifier": "基础调整值",
         "BaseWeapons": "基本武器",
-        "BestiaryBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 学派, 施法成份, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
+        "BestiaryBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "Biography": "笔记",
         "BiographyAllies": "盟友",
         "BiographyAlliesTitle": "你角色的盟友",
@@ -2725,6 +2757,29 @@
             "Hardness": {
                 "Half": "半数硬度",
                 "Full": "硬度"
+            },
+            "Kind": {
+                "Healing": {
+                    "Apply": {
+                        "Label": "应用治疗"
+                    },
+                    "Roll": {
+                        "Verb": "骰掷治疗",
+                        "Noun": "治疗骰"
+                    }
+                },
+                "Damage": {
+                    "Roll": {
+                        "Noun": "伤害骰",
+                        "Verb": "骰掷伤害"
+                    }
+                },
+                "Both": {
+                    "Roll": {
+                        "Verb": "骰掷伤害/治疗",
+                        "Noun": "伤害/治疗骰"
+                    }
+                }
             }
         },
         "DamageCategoriesLabel": "伤害类别",
@@ -2911,7 +2966,7 @@
         "FeatArchetypeHeader": "变体专长",
         "FeatBackgroundShort": "BG",
         "FeatBonusHeader": "额外专长",
-        "FeatBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 学派, 施法成份, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
+        "FeatBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "FeatCampaignHeader": "战役专长",
         "FeatClassHeader": "职业专长",
         "FeatDualClassHeader": "双职业专长",
@@ -3029,7 +3084,7 @@
         "InventoryEquipmentHeader": "装备",
         "InventoryTreasureHeader": "宝物",
         "InventoryWeaponsHeader": "武器",
-        "InventroyBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 学派, 施法成份, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
+        "InventroyBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "InvestedLabel": "绑定",
         "ItemBonus0": "0",
         "ItemBonus1": "+1 武器潜能",
@@ -3514,7 +3569,28 @@
             "Normal": "正常",
             "CriticalHit": "重击",
             "Add": "加",
-            "UntypedPenalty": "无名（惩罚）"
+            "UntypedPenalty": "无名（惩罚）",
+            "Dialog": {
+                "Check": {
+                    "Utilize": "使用？",
+                    "Substitution": "取代"
+                },
+                "Damage": {
+                    "Dice": "{dice}骰",
+                    "BaseDamage": "基础伤害",
+                    "None": "无",
+                    "Splash": "{damageType} 溅射",
+                    "Override": "超载{value}",
+                    "Label": "标签",
+                    "ExtraDice": "额外{dice}",
+                    "DieSizeUpgrade": "提升骰子大小",
+                    "DiceHeader": "骰",
+                    "Title": "伤害骰",
+                    "TitleCritical": "暴击伤害骰"
+                },
+                "ShowDefaultHint": "如果启用，除非你按住Shift键否则始终显示此对话框。如果禁用，你可以通过按住Shift键来打开此对话框。",
+                "ShowDefault": "始终显示对话框"
+            }
         },
         "RollTable": {
             "Plural": "随机列表"
@@ -3642,12 +3718,12 @@
                     "Hint": "夹击的判定和基于此的能力将会交由系统管理。"
                 },
                 "ActorsDeadAtZero": {
-                    "Name": "NPC会在HP为0时死亡",
-                    "Hint": "NPC们会在生命值变为0时被标记为死亡。",
+                    "Name": "角色会在HP为0时死亡",
+                    "Hint": "角色们会在生命值变为0时被标记为死亡。对于PC来说，这仅适用于可能立即杀死他们的伤害。",
                     "Neither": "否",
-                    "NPCsOnly": "是",
+                    "NPCsOnly": "NPC 限定",
                     "PCsOnly": "只有PC",
-                    "Both": "PC和NPC"
+                    "Both": "是"
                 },
                 "LootableNPCs": {
                     "Name": "可搜刮的NPC们",
@@ -3718,7 +3794,8 @@
                 "DamageTypes": {
                     "name": "自定义伤害类型",
                     "Hint": "用于系统识别的额外伤害类型"
-                }
+                },
+                "ReservedTerm": "“｛term｝”是一个保留术语。"
             },
             "Metagame": {
                 "Name": "超游信息",
@@ -4069,11 +4146,11 @@
         "SpeedTypesTitle": "转换移动类型",
         "SpellAbilityLabel": "关键属性",
         "SpellAbilityModLabel": "+ Mod",
-        "SpellArea": "范围: {areaSize} {areaUnit} {areaType}",
+        "SpellArea": "范围: {area}",
         "SpellAttackWithTradition": "{tradition} 法术攻击",
         "SpellAttackLabel": "法术攻击",
         "SpellBasicSaveOption": "基础",
-        "SpellBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 学派, 施法成份, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
+        "SpellBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级,法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "SpellCantripLabel": "戏法",
         "SpellCastingFormat": "{traditionSpells} {preparationType} 法术",
         "SpellComponentF": "器材",
@@ -4286,7 +4363,7 @@
         "TraitAffixedToHeadgear": "添加到头部装备",
         "TraitAffixedToWeapon": "添加到武器",
         "TraitAffixedToARangedWeapon": "附在远程武器上",
-        "TraitAffixedToAShield": "添加到盾牌",
+        "TraitAffixedToAShield": "附着在盾牌上",
         "TraitAffixededToATwoHandedFirearmOrCrossbow": "附在双手火器或弩上",
         "TraitAgathion": "福使",
         "TraitAgile": "灵巧",
@@ -4538,7 +4615,7 @@
         "TraitDescriptionHobgolin": "大地精是一个强壮且聪明的种族，有着军国主义的守序倾向。",
         "TraitDescriptionHuman": "具有此特征的生物是人类族裔的一份子。人类是多样化的种族，以其强大的适应性闻名。具有此特征的能力只能由人类使用或选择。",
         "TraitDescriptionHumanoid": "类人生物的行为逻辑与人类非常相似。它们通常直立，并有两只胳膊和两条腿。",
-        "TraitDescriptionIllusion": "具有此特征的效果和魔法物品与魔法幻术学派相关联，通常包含了虚假的感官刺激。",
+        "TraitDescriptionIllusion": "具有此特征的效果和魔法物品相关联，通常包含了虚假的感官刺激。",
         "TraitDescriptionIfrit": "一种源于火元素位面的巨灵子嗣。",
         "TraitDescriptionIncarnate": "具有化身特征的法术和召唤生物的法术性质类似，但这样的法术并不会创造具有被召唤特征的仆从。当你完成施放该法术，化身生物被召唤时，这个生物会进行其降临动作。在你的下个回合的结束时，该化身生物可以选择快步、行走，或者是它拥有的移动类型对应的其他行动（例如攀爬或掘地），接下来它会进行其离去动作。之后该法术结束。降临和离去动作的名称，会在对应的“降临”和“离去”条目后用斜体列出，这里也会列出其具有的特征。化身法术召唤出的生物为你的利益行事，让它的效果尽可能远离你和你的盟友。它可能会听从你的请求，但总体上它是自主的。如果该法术要求化身做出某个决定，此时由GM判断化身会做什么。它甚至可能在不断的召唤中，越来越倾向于精确按照你的意愿行事。该化身不完全是生物。它不能进行任何其他动作，它也不能指定为目标，也不能被打击、法术或者其他效果伤害，除非此效果能够以法术效果为目标、或者能结束法术效果（例如解除魔法）。它拥有体型，用以决定效果位置，但它不会阻碍移动。如适用，其效果使用你的法术DC和法术攻击骰调整值。",
         "TraitDescriptionIncapacitation": "具有此特征的能力能令一个角色完全丧失战斗能力，甚至令其死亡，且这种能力对于更强大的角色来说更难以生效。如果一个法术拥有失能特征，任何等级大于法术等级两倍的生物能将避免陷入失能的检定结果的成功度提升一级，或者将施法者进行的令该生物陷入失能的检定结果的成功度降低一级。如果任何其他效果具有失能特征，比提供该效果的物品、生物或危害等级高的生物都能获得相同的收益。",
@@ -4563,7 +4640,7 @@
         "TraitDescriptionLinguistic": "具有该特征的效果是基于语言理解的。瞄准一个生物的言语效果只在该生物理解你所使用的语言时才能生效。",
         "TraitDescriptionLitany": "祷言是一种特殊的奉献法术，通常由神卫使用，并需要一个单动作；祷言通常会为目标给予针对更多祷言的临时免疫。",
         "TraitDescriptionLizardfolk": "这些爬行纲类人生物，也被称为艾鲁希，适应性极强，而且很有耐心。",
-        "TraitDescriptionMagical": "具有魔法特征的事物被注入了不与任何魔法根源绑定的魔法能量。魔法物品会散发出其主要魔法学派的魔法灵光。有些物品或效果与某个特定的魔法根源紧密联系。这种情况下，这些物品会具有奥术、神术、异能或原能特征，而非魔法特征。以上所有特征都表明了该物品是魔法的。",
+        "TraitDescriptionMagical": "具有魔法特征的事物被注入了不与任何魔法根源绑定的魔法能量。有些物品或效果与某个特定的魔法根源紧密联系。这种情况下，这些物品会具有奥术、神术、异能或原能特征，而非魔法特征。以上所有特征都表明了该物品是魔法的。",
         "TraitDescriptionMagus": "这表示法师的职业能力。",
         "TraitDescriptionManipulate": "你必须物理上操作一件物品或比划手势来使用具有该特征的动作。没有合适肢体的生物无法执行这类动作。操作动作通常会触发反应。",
         "TraitDescriptionMechanical": "具有此特性的危害是拥有物理实体的。",
@@ -6848,8 +6925,8 @@
         "TraitRelic": "圣物",
         "TraitReach200": "长触及 200尺",
         "RevertDamage": {
-            "HealingMessage": "应用于{actor}的治疗已撤销",
-            "DamageMessage": "应用于{actor}的伤害已撤销",
+            "HealingMessage": "应用于{actor}的治疗已撤销。",
+            "DamageMessage": "应用于{actor}的伤害已撤销。",
             "ButtonTooltip": "撤销"
         },
         "BrowserSettingsSaved": "设定已保存",
@@ -6971,7 +7048,20 @@
         "SettingsQuickDamageLabel": "预览伤害掷骰",
         "SettingsQuickChecksLabel": "预览D20掷骰",
         "SettingsQuickDamageNotes": "如果禁用，只有在按住shift键点击掷骰按钮时，才会出现预览伤害掷骰的对话框。",
-        "SettingsQuickChecksNotes": "如果禁用，只有在按住Shift键点击掷骰按钮时，才会出现预览D20掷骰的对话框。"
+        "SettingsQuickChecksNotes": "如果禁用，只有在按住Shift键点击掷骰按钮时，才会出现预览D20掷骰的对话框。",
+        "TraitAffixedToAMetalWeapon": "附在金属武器上",
+        "TraitDescriptionFocus": "聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。",
+        "TraitDescriptionSubtle": "具有微妙特性的法术可以在没有咒语的情况下施展，并且没有明显的表现。",
+        "TraitFocus": "聚能",
+        "TraitUnholy": "邪恶",
+        "WeaponGroupCrossbow": "弩",
+        "TraitHoly": "神圣",
+        "TraitEtchedOntoAShield": "蚀刻到盾牌上",
+        "TraitDescriptionUnholy": "具有邪恶特性的效果与残酷和罪恶的强大魔法力量相关。它们通常对圣洁生物产生更强的影响。具有这种特性的生物对邪恶事物投入极大热忱，并且常常对圣洁事物有弱点。如果具有对邪恶的弱点的生物使用邪恶物品或效果，就会受到其弱点的伤害。",
+        "TraitDescriptionUndead": "这些生物曾经是活物，但死后被虚空能量和腐蚀灵魂的邪恶魔法注入。当它们的生命值降为0时，亡灵生物将被摧毁。亡灵生物受到活力能量的伤害，被虚空能量治愈，并且无法从活力治愈效果中获益。",
+        "TraitDescriptionHoly": "具有神圣特性的效果与仁慈和美德的强大魔法力量相联系。它们经常对邪恶生物产生更强的影响。具有此特性的生物对神圣事业忠诚，常常对邪恶事物有弱点。如果一个具有对神圣事物有弱点的生物使用了神圣物品或效果，则会受到其弱点的伤害",
+        "TraitAffixedToAShieldOrWeapon": "附着在盾牌或武器上",
+        "SavingThrow": "豁免骰"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
