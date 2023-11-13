@@ -1880,8 +1880,8 @@
                 "AttributeModifiers": "属性调整值",
                 "Shield": {
                     "HitPoints": {
-                        "Value": "盾牌HP",
-                        "Max": "盾牌最大HP"
+                        "Value": "盾牌生命值",
+                        "Max": "盾牌最大生命值"
                     },
                     "Hardness": {
                         "Label": "H",
@@ -2558,7 +2558,7 @@
         "CurrencyPP": "白金币",
         "CurrencySP": "银币",
         "CurrentHPTitle": "当前生命值",
-        "CurrentHitPointsShortLabel": "当前 HP",
+        "CurrentHitPointsShortLabel": "当前生命值",
         "CurrentStaminaPointsShortLabel": "当前 SP",
         "CurrentStaminaTitle": "你拥有的耐力池",
         "Damage": {
@@ -3308,8 +3308,8 @@
         },
         "MaxHPTitle": "你的最大生命值将自动计算。",
         "MaxHPTitleNPC": "最大生命值.",
-        "MaxHitPointsBaseLabel": "基础最大HP {base}",
-        "MaxHitPointsShortLabel": "最大 HP",
+        "MaxHitPointsBaseLabel": "基础最大生命值{base}",
+        "MaxHitPointsShortLabel": "最大生命值",
         "MaxStaminaPointsShortLabel": "最大 SP",
         "MaxStaminaTitle": "最大耐力点",
         "MaxHitPointsHeader": "最大生命值",
@@ -4297,7 +4297,7 @@
         "TabSpellbookLabel": "法术书",
         "TargetFlatFootedLabel": "目标措手不及",
         "TempHPTitle": "你拥有的临时生命值",
-        "TempHitPointsShortLabel": "临时HP",
+        "TempHitPointsShortLabel": "临时生命值",
         "TemplateLabel": "{size}-{unit} {shape}",
         "TemporaryItemToolTip": "此物品为临时物品，将会在一段时间后或在日常准备期间失效。它不存在价值，也不能出售。",
         "Time": {
