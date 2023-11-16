@@ -1433,8 +1433,8 @@
                     "club": "目标被你击退至多10尺（距离由你选择）。这是被迫移动。",
                     "dart": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
                     "firearm": "目标必须通过一个@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Firearm Critical Specialization]豁免，否则会受到@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
-                    "flail": "目标被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
-                    "hammer": "目标被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
+                    "flail": "除非目标成功通过@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|name:Flail Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
+                    "hammer": "除非目标成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Hammer Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
                     "knife": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
                     "pick": "武器凶狠地刺穿目标。目标受到每颗武器伤害骰2点的额外伤害。",
                     "polearm": "目标往你选择的位置移动5尺。这是被迫移动。",
@@ -4579,7 +4579,7 @@
         "TraitDescriptionFatalAim": "你可以把这种武器的枪托夹在腋下，所以只需要一只手就能开火，只要另一只手并未持有武器、盾牌或任何其他需要移动或安置的东西，来确保武器不会从腋下滑脱。但是，如果你使用双手持握武器，武器可以造成夺命攻击。当你以双手持握武器时，它将获得夺命特征，伤害骰会列在后面。保证武器夹在腋下时稳定开火远比只是把手从武器上挪开要复杂得多，因此当你在两个握姿之间切换时，必须花费一个交互动作，而不是简单的放开武器或将这个动作视为装填的一部分。",
         "TraitDescriptionFatal": "夺命特征包括了伤害骰的骰面大小。重击时，此武器所有的伤害骰骰面增加到该骰面大小而非原本的骰面大小，并额外加上一颗骰面大小如表中所列的伤害骰。",
         "TraitDescriptionFear": "恐惧效果会唤起恐惧的情绪。具有此特征的效果总是同时具有心灵（mental）和情绪特征。",
-        "TraitDescriptionFetchling": "具有这种特征的生物是窃影鬼种族的成员。窃影鬼曾经也是人类，但几代人在影位面的生活已经改变了他们。",
+        "TraitDescriptionFetchling": "具有这种特征的生物是窃影鬼种族的成员。窃影鬼曾经也是人类，但几代人在阴影位面的生活已经改变了他们。",
         "TraitDescriptionFighter": "指战士职业能力。",
         "TraitDescriptionFinesse": "你在用此近战武器进行攻击掷骰时，可以用敏捷调整值取代力量调整值。你在计算伤害时仍然使用力量调整值。",
         "TraitDescriptionFinisher": "终结技是使用派头的华丽终结招数。你必须持有派头才能使用终结技，并在使用终结技后立刻失去派头。在你使用终结技后，当回合结束前不得再进行带有攻击特征的动作。某些终结技动作会提供检定失败时的效果，这些失败效果在大失败时不生效。当终结技动作成功时，你仍可选择改为结算失败效果(例如攻击由于抗力无法造成伤害的情况)。",
@@ -5716,8 +5716,8 @@
             "greaterBrilliant": {
                 "Name": "高等光辉符文",
                 "Note": {
-                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、活力或正能量的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
-                    "success": "该武器造成的伤害忽略目标的火焰、活力或正能量的抗力。"
+                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、活力或命能的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
+                    "success": "该武器造成的伤害忽略目标的火焰、活力或命能的抗力。"
                 }
             },
             "greaterCorrosive": {
@@ -5813,7 +5813,7 @@
             "holy": {
                 "Name": "神圣符文",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪恶生物重击成功<br /><strong>效果</strong>你获得该邪恶生物等级双倍的HP。这是一个活力、正能量、治疗效果。"
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪恶生物重击成功<br /><strong>效果</strong>你获得该邪恶生物等级双倍的HP。这是一个活力、命能、治疗效果。"
                 }
             },
             "hopeful": {
@@ -6520,20 +6520,20 @@
                     "Ferocity": "<p><strong>触发</strong> 怪物的生命值降低至0点。</p>\n<hr />\n<p><strong>效果</strong> 怪物免于被打倒，并且余留1点HP，其@UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{受伤 Wounded}值增加1。当其受伤3的时候，它无法再使用此能力。</p>",
                     "FormUp": "<p>部队选择它当前占据的一格空间，重新分配其所占据的方格，新的方格可以是任何形状，但是所有方格必须连续，并且位于被选择的方格的15尺之内。部队不能和其他生物共享空间。</p>",
                     "FrightfulPresence": "<p>首次进入灵光的生物必须进行一次意志豁免。</p>\n<p>无论结果如何，该生物都将在1分钟内免疫此怪物的气势凶猛。</p>\n<hr />\n<p><strong>大成功</strong>该生物不受气势凶猛的影响。</p>\n<p><strong>成功</strong>该生物受到@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}.</p>\n<p><strong>失败</strong> 该生物受到 @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}.</p>\n<p><strong>大失败</strong>该生物受到 @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}.</p>",
-                    "Grab": "<p><strong>要求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“攫抓”，或是已经使用此动作擒抱了一个生物。</p>\n<hr />\n<p><strong>效果</strong>直到怪物的下一回合结束前它都将自动攫抓目标。该生物被怪物用于攻击的肢体所@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed} ，并且该肢体在攫抓结束前无法被用于打击生物。使用攫抓可以延长其攫抓能力持续时间直至下一轮结束前都，这对于由此擒抱的所有生物都有效。被擒抱的生物可以使用@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}动作脱离攫抓。如果怪物远离了被擒抱的生物，攫抓也会被终止。</p>",
+                    "Grab": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“攫抓”，或怪物已经让一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态</p>\n<hr />\n<p><strong>效果</strong> 如果在一次打击后使用，怪物尝试用发动攻击的部位@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}该生物。该尝试不适用也不累计怪物的多重攻击减值。</p>\n<p>相对的，怪物可以使用攫抓动作，选择一个正被它擒抱或束缚的生物，拥有攫抓特征的肢体将自动将擒抱或束缚状态延长至怪物的下回合结束。</p>",
                     "GreaterConstrict": "<p>怪物对任意数量的被其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物造成所列出的伤害。这些生物都可进行一次基础强韧豁免对抗所列出的DC。在豁免中失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，豁免成功的生物在1分钟内免疫高等紧勒的昏迷效果。</p>",
                     "GreaterDarkvision": "<p>拥有高等黑暗视觉的生物可以在黑暗和昏暗光照下正常视物，可惜这种视觉只能看见黑白两色。某些形式的黑暗魔法，例如4环<em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{黑暗术 Darkness}</em>，会阻碍普通的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6]{黑暗视觉 Darkvision}。然而，拥有高等黑暗视觉的生物甚至可以看穿这类形式的魔法黑暗。</p>",
                     "ImprovedGrab": "<p>怪物可以在被触发的初始攻击命中时以自由动作使用@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{攫抓 Grab}。精通攫抓依旧需要花费一个动作用来延长被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}生物的擒抱持续时间。</p>",
                     "ImprovedKnockdown": "<p>怪物可以将@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}作为先制攻击命中后触发的自由动作</p>",
                     "ImprovedPush": "<p>怪物可以将@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离 Push}作为先制攻击命中后触发的自由动作</p>",
-                    "Knockdown": "<p><strong>需求</strong>怪物的最后的动作是一次命中的打击，在其伤害条目中列列有“击倒Knockdown”。</p>\n<hr />\n<p><strong>效果</strong> 怪物将目标@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{击倒 Prone}。</p>",
-                    "Lifesense": "<p>生命感知使得怪物能够感知所列范围内所有活物与不死生物的生命力。就如同视觉可以分辨不同的颜色那般，这种感觉可以区分驱使活物的正能量和驱使不死生物的负能量。</p>",
+                    "Knockdown": "<p><strong>需求</strong>怪物的最后的动作是一次命中的打击，在其伤害条目中列列有“击倒”。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔绊 Trip}生物。该尝试不适用也不累计怪物的多重攻击减值。</p>",
+                    "Lifesense": "<p>生命感知使得怪物能够感知所列范围内所有活物与不死生物的生命力。就如同视觉可以分辨不同的颜色那般，这种感觉可以区分驱使活物的命能和驱使不死生物的虚能。</p>",
                     "LightBlindness": "<p>当初次暴露在明亮光照下时，该怪物将会@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{失明 Blinded} 直至其下一回合。在初次暴露后，亮光不再使怪物失明，除非其又在黑暗中呆了1小时。然而，只要怪物还处于明亮光照下，它就会保持@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>",
                     "LowLightVision": "<p>怪物可以在昏暗的光线下视物，就好像在明亮光线下一样，因此它会忽略因昏暗光线产生的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>",
-                    "NegativeHealing": "<p>具有负能量治疗效果的生物从负能量而不是正能量中获取生命。它被正能量伤害所伤，而不是正能量治疗所治愈。它不会受到负能量伤害，并且会被治疗不死的负能量效果治愈。</p>",
+                    "NegativeHealing": "<p>具有虚能治疗效果的生物从虚能而不是命能中获取生命。它被命能伤害所伤，而不是命能治疗所治愈。它不会受到虚能伤害，并且会被治疗不死的虚能效果治愈。</p>",
                     "Poison": "<p>当一名生物暴露在怪物的毒素下时，它需要尝试一次强韧豁免用以避免中毒。毒素的等级为造成疾病的怪物的等级。毒素遵从于苦难规则。</p>",
                     "PowerAttack": "<p><strong>频率</strong>一回合一次</p>\n<hr />\n<p><strong>效果</strong> 怪物进行一次近战攻击。当计算怪物的多次攻击惩罚时，这会算作两次攻击。如果这次攻击命中，怪物造成的武器伤害会额外增加一个武器的伤害骰。</p>",
-                    "Push": "<p><strong>要求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“推离Push”。</p>\n<hr />\n<p><strong>效果</strong>怪物自动将目标从怪物身边击退。除非在能力描述中另有说明，否则生物将被推离5尺。如果攻击为重击，则此距离加倍。</p>",
+                    "Push": "<p><strong>要求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“推离”。</p><hr /><p><strong>效果</strong>怪物尝试@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}生物。该尝试不适用也不会累计多重攻击减值。若推离列明了距离，生物被击退该距离。</p>",
                     "Regeneration": "<p>怪物在每回合开始时恢复所列出的生命值。再生起效期间怪物的@UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{濒死 Dying}状态永远不会超过3。然而，一旦其受到了再生条目中所罗列的伤害类型，再生将在其下一轮结束前失效。再生在受到所罗列的伤害前就已失效，因此这些伤害可能会导致濒死4从而杀死怪物。</p>",
                     "Rend": "<p>撕裂条目中会列出一项怪物所拥有的打击。</p>\n<p><strong>要求</strong>怪物在同一轮中连续两次使用在条目中列的打击类型命中同一名生物。</p>\n<hr />\n<p><strong>效果</strong> 怪物自动对此敌人造成打击伤害。</p>",
                     "RetributiveStrike": "<p><strong>触发</strong> 一个敌人对怪物的盟友造成了伤害，且两者都距离怪物15尺以内。</p>\n<hr />\n<p><strong>效果</strong> 盟友对被触发的伤害获得2+怪物等级的全伤害抗力。如果敌人在触及范围内，怪物对其发动一次近战打击。</p>",
@@ -6650,7 +6650,7 @@
         "TraitDarvakka": "达尔瓦卡",
         "TraitDescriptionAftermath": "这一特征描述了在经历离奇与致命的危险遭遇后获得的特殊能力。",
         "TraitDescriptionAmp": "增幅是一种能调整心能戏法的特殊思维形式。具有增幅特征的专长会提供额外的增幅选项，能用来替换心能戏法的常规增幅。",
-        "TraitDescriptionDarvakka": "熵的不死生物被阴影位面和负能量位面扭曲。",
+        "TraitDescriptionDarvakka": "熵的不死生物被阴影位面和虚能位面扭曲。",
         "TraitDescriptionDeviant": "这种特征描述了奇异的超自然现象或超自然能力。",
         "TraitDescriptionEnvironment": "具有此特征的危害是大自然危险的一部分，例如流沙和害菌。",
         "TraitDescriptionEsoterica": "许多奇术师专长和职业特性中都展示了秘藏特征，这些能力都涉及到你随身携带的各种护符、超自然饰物、以及其他物品。具有秘藏特征的能力要求你拥有你的秘藏以使用它们。通常都会假定你总是随身带着你的秘藏，但在某些稀有的状况中，你可能没法拿到它，或者你的装备被从你身上剥夺。",
@@ -6695,7 +6695,7 @@
         "PreciousMaterialSisterstoneDusk": "姊妹石（黄昏）",
         "PreciousMaterialSisterstoneScarlet": "姊妹石（猩红）",
         "TraitDescriptionReflection": "具有此特征的生物拥有镜像多用传承。镜像是通过克隆、镜面复制或用其他机制复制活人的存在。具有此特性的能力只能由镜像使用或选择。",
-        "TraitDescriptionSkeleton": "这个不死生物是通过负能量驱动已亡生物骨架而制作的。具有此特性的能力只能由骷髅使用或选择。",
+        "TraitDescriptionSkeleton": "这个不死生物是通过虚能驱动已亡生物骨架而制作的。具有此特性的能力只能由骷髅使用或选择。",
         "TraitSiktempora": "癔时妖",
         "TraitDescriptionFinite": "具有此特征的位面由有限的空间组成。",
         "TraitDescriptionSocial": "具有社交特征的行动或能力，只能在侠客的社交身份下才能使用。",
