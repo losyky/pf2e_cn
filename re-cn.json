@@ -1064,7 +1064,7 @@
                 "PathToPerfection": "选择一种完美之道",
                 "DragonBreathWeapon": "选择一种龙类吐息。",
                 "WeaponOrUnarmed": "选择一把武器或无武装打击。",
-                "ClassDCAbilityScore": "选择职业DC的属性值。",
+                "ClassDCAbilityScore": "选择职业DC的关键属性。",
                 "VersatileTrait": "选择一种多用伤害类型。",
                 "DegreeOfSuccess": "选择成功等级。",
                 "Alignment": "选择一个阵营。",
@@ -1324,7 +1324,7 @@
                     "Axe": "斧（斧或镐）",
                     "Shield": "盾牌（锤或盾牌）",
                     "Torch": "火把（炸弹或短刃）",
-                    "Prompt": "选择你部族印记的形状"
+                    "Prompt": "选择你的部族印记纹章"
                 },
                 "OrcWarmask": {
                     "Land": "大地",
@@ -1645,7 +1645,7 @@
                 },
                 "BladeAllyRune": "为利刃盟友选择一个性能符文",
                 "TargetReaction": "目标触发了你的神卫反应",
-                "EvilDamage": "邪恶伤害",
+                "EvilDamage": "精魂伤害",
                 "NegativeDamage": "虚空伤害"
             },
             "DeviantAbilities": {
