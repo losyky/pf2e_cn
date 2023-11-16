@@ -143,7 +143,7 @@
                 "EffectLabel": "使用握不稳的武器",
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong> 你将对手手中的物品打掉在了地上。这件物品掉落在这个对手占据的空间中。",
-                    "success": "<strong>成功</strong> 你震得对手虎口发麻。直到这个生物的回合开始前，你在接下来对同一个生物的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定时承受-2环境减值。 @UUID[Compendium.pf2e.equipment-effects.z3ATL8DcRVrT0Uzt]{效果：卸武（成功）}",
+                    "success": "<strong>成功</strong> 你震得目标虎口发麻。你接下来对该目标的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定时承受-2环境减值。该生物可以用交互动作握紧物品来结束此效果；否则只要该生物还握持着该物品，效果就一直持续。<br>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{效果：卸武（成功）}",
                     "criticalFailure": "<strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态 。"
                 },
                 "Title": "卸武"
@@ -212,10 +212,10 @@
             },
             "HighJump": {
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong> 你最高可以跳到8尺高，或是跳最高到5尺高，同时10尺远。",
-                    "success": "<strong>成功</strong>你最高可以跳到5尺高。",
+                    "criticalSuccess": "<strong>大成功</strong> 你最高可以@UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{跳跃 Leap}8尺高，10尺远。",
+                    "success": "<strong>成功</strong>你最高可以@UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{跳跃 Leap}5尺高，5尺远。",
                     "failure": "<strong>失败</strong> 你如常@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap} 。",
-                    "criticalFailure": "<strong>大失败</strong> 你不但没能@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap} ，还摔了个大马趴，在你占据的空间中陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
+                    "criticalFailure": "<strong>大失败</strong> 你在你占据的空间中陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
                 },
                 "Title": "跳高"
             },
@@ -280,9 +280,9 @@
             },
             "LongJump": {
                 "Notes": {
-                    "success": "<strong>成功</strong> 你可以@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}的最远距离提升到你自己希望的距离，而非普通情况的距离。",
-                    "failure": "<strong>失败</strong> 你如常@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}。",
-                    "criticalFailure": "<strong>大失败</strong> 你正常地@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}了普通距离，但摔了个屁股墩，在你落地时陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。",
+                    "success": "<strong>成功</strong> 你本次@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}的最远距离等于你的检定结果，向下四舍五入取5尺的倍数。同时，你跳跃的最大距离为你的陆地速度。",
+                    "failure": "<strong>失败</strong> 你如常进行了水平@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}。",
+                    "criticalFailure": "<strong>大失败</strong> 你正常进行水平@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}，但摔了个屁股墩，在你落地时陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。",
                     "criticalSuccess": "<strong>大成功</strong> 你可以@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap} 的最远距离提升到你自己希望的距离，而非普通情况的距离。"
                 },
                 "Title": "跳远"
@@ -717,7 +717,7 @@
             },
             "Leap": {
                 "Title": "跳跃",
-                "Description": "<p>你进行一次稳定的短程跳跃。若你的速度至少有15尺你可以水平跳跃10尺，若你的速度至少有30尺你可以水平跳跃15尺。你会落地在跳跃结束的格子中（意味着你可以跳过5尺的裂缝，若速度为30尺或更多时可以跳过10尺的裂缝）。</p><p>若进行垂直跳跃，你可以垂直跳起至多3尺同时水平跳跃5尺到较高的平面上。</p><p>跳得更高或更远需要使用运动技能。</p>"
+                "Description": "<p>你进行一次短程跳高或跳远。进行更远距离的跳跃需要进行@UUID[Compendium.pf2e.actionspf2e.Item.2HJ4yuEFY1Cast4h]{跳高High Jump}或@UUID[Compendium.pf2e.actionspf2e.Item.JUvAvruz7yRQXfz2]{跳远 Long Jump}的运动检定。</p><ul><li><strong>水平跳跃</strong> 若你的速度至少有15尺你可以水平跳跃10尺，若你的速度至少有30尺你可以水平跳跃15尺。你会落地在跳跃结束的格子中（意味着你可以跳过5尺的裂缝，若速度为30尺或更多时可以跳过10尺的裂缝）。若你的速度小于15尺，你无法跳跃。</li><li><strong>垂直跳跃</strong> 垂直跳起至多3尺同时水平跳跃5尺到较高的平面上。</li></ul>"
             },
             "Ready": {
                 "Title": "准备",
