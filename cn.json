@@ -1814,6 +1814,9 @@
                         "Hint": "盾牌硬度"
                     },
                     "BrokenThreshold": "盾牌破损阈值"
+                },
+                "Crafting": {
+                    "Cost": "花费"
                 }
             },
             "Creature": {
@@ -1889,6 +1892,73 @@
                     },
                     "BrokenThreshold": "盾牌破损阈值",
                     "ACBonus": "盾牌AC加值(举起时)"
+                },
+                "Language": {
+                    "adlet": "狼妖语",
+                    "akitonian": "阿基顿语",
+                    "aklo": "邪灵语",
+                    "alghollthu": "鱼人语",
+                    "amurrun": "猫族语",
+                    "anugobu": "阿努人",
+                    "ancient-osiriani": "古奥斯利昂语",
+                    "anadi": "半蛛人语",
+                    "androffan": "机械语",
+                    "dziriak": "影界蚁族语",
+                    "elven": "精灵语",
+                    "formian": "弗米蚁族语",
+                    "kaava": "卡瓦语",
+                    "kashrishi": "犀虫语",
+                    "kelish": "珂莱士语",
+                    "minaten": "民那塔语",
+                    "minkaian": "明海语",
+                    "muan": "木元素语",
+                    "arboreal": "树妖语",
+                    "arcadian": "阿卡狄亚",
+                    "azlanti": "阿兹兰特语",
+                    "boggard": "沼蜍语",
+                    "calda": "卡尔达语",
+                    "destrachan": "暗音盲怪语",
+                    "diabolic": "魔鬼语",
+                    "caligni": "卡利尼语",
+                    "chthonian": "恶魔语",
+                    "common": "通用语",
+                    "cyclops": "独眼巨人语",
+                    "daemonic": "邪魔语",
+                    "draconic": "龙语",
+                    "immolis": "焚身兽语",
+                    "dwarven": "矮人语",
+                    "empyrean": "天族语",
+                    "ekujae": "艾库迦形语",
+                    "elder-thing": "远古者语",
+                    "erutaki": "艾鲁塔基语",
+                    "fey": "精类语",
+                    "garundi": "迦伦德语",
+                    "girtablilu": "半蝎人语",
+                    "gnomish": "侏儒语",
+                    "goblin": "地精语",
+                    "goloma": "戈洛玛语",
+                    "grioth": "格里欧斯语",
+                    "grippli": "树蛙人语",
+                    "halfling": "半身人语",
+                    "hallit": "哈利特语",
+                    "hwan": "嬛语",
+                    "iblydan": "艾布利丹语",
+                    "ikeshti": "异客蜥语",
+                    "iruxi": "蜥蜴人语",
+                    "jistkan": "古吉斯特克语",
+                    "jotun": "巨人语",
+                    "jyoti": "乔帝怪鸟人语",
+                    "kholo": "豺狼人语",
+                    "kibwani": "基布伟语",
+                    "kitsune": "狐妖语",
+                    "lirgeni": "勒根语",
+                    "migo": "米戈语",
+                    "munavri": "白化人语",
+                    "mwangi": "芒吉语",
+                    "nagaji": "娜迦语",
+                    "necril": "死灵语",
+                    "ocotan": "奥科塔语",
+                    "mzunu": "玛祖语"
                 }
             },
             "Dead": "死亡",
@@ -3793,7 +3863,11 @@
                 },
                 "DamageTypes": {
                     "name": "自定义伤害类型",
-                    "Hint": "用于系统识别的额外伤害类型"
+                    "Hint": "用于系统识别的额外伤害类型",
+                    "Add": "增加伤害类型",
+                    "Icon": "图标（Font Awesome）",
+                    "Name": "自定义伤害类型",
+                    "Label": "标签"
                 },
                 "ReservedTerm": "“｛term｝”是一个保留术语。"
             },
@@ -7061,7 +7135,8 @@
         "TraitDescriptionUndead": "这些生物曾经是活物，但死后被虚空能量和腐蚀灵魂的邪恶魔法注入。当它们的生命值降为0时，亡灵生物将被摧毁。亡灵生物受到活力能量的伤害，被虚空能量治愈，并且无法从活力治愈效果中获益。",
         "TraitDescriptionHoly": "具有神圣特性的效果与仁慈和美德的强大魔法力量相联系。它们经常对邪恶生物产生更强的影响。具有此特性的生物对神圣事业忠诚，常常对邪恶事物有弱点。如果一个具有对神圣事物有弱点的生物使用了神圣物品或效果，则会受到其弱点的伤害",
         "TraitAffixedToAShieldOrWeapon": "附着在盾牌或武器上",
-        "SavingThrow": "豁免骰"
+        "SavingThrow": "豁免骰",
+        "TraitAffixedToMetalWeapon": "附在金属武器上"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
