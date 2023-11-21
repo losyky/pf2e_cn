@@ -2077,6 +2077,9 @@
             },
             "ExorcistDedication": {
                 "SpiritDwelling": "你的精神居所里住着一个灵魂"
+            },
+            "MantleOfTheUnwaveringHeart": {
+                "UnyieldingWill": "不屈意志"
             }
         },
         "RuleElement": {
