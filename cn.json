@@ -1244,7 +1244,19 @@
                     "Pantheon": "众神",
                     "Philosophy": "信条"
                 },
-                "Spellcasting": "法术书"
+                "Spellcasting": "法术书",
+                "Sanctification": {
+                    "Must": {
+                        "Unholy": "必须选择邪秽",
+                        "Holy": "必须选择圣洁"
+                    },
+                    "None": "无",
+                    "Can": {
+                        "Holy": "可以选择圣洁",
+                        "HolyUnholy": "可以选择圣洁或邪秽",
+                        "Unholy": "可以选择邪秽"
+                    }
+                }
             },
             "Effect": {
                 "Sustained": "护命",
