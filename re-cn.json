@@ -1068,7 +1068,8 @@
                 "VersatileTrait": "选择一种多用伤害类型。",
                 "DegreeOfSuccess": "选择成功等级。",
                 "Alignment": "选择一个阵营。",
-                "Rune": "选择一个符文。"
+                "Rune": "选择一个符文。",
+                "Sanctification": "选择一个祝佑。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1538,10 +1539,10 @@
                     "AllowedDrops": "1级牧师职业特性"
                 },
                 "SharedReplenishment": {
-                    "Note": "你可以将战时回复赋予的临时生命值给予10尺内的一个盟友，代替自己获得。"
+                    "Note": "你可以将战时补给赋予的临时生命值给予10尺内的一个盟友，代替自己获得。"
                 },
                 "ReplenishmentOfWar": {
-                    "Note": "当你使用你的神祇的偏好武器，通过普通攻击伤害一个生物，你获得等于你的等级一半的临时生命值，如果普通攻击重击，则等于你的等级。@UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{Effect: 战时回复}"
+                    "Note": "当你使用你的神祇的偏好武器，通过普通攻击伤害一个生物，你获得等于你的等级一半的临时生命值，如果普通攻击重击，则等于你的等级。@UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{Effect: 战时补给}"
                 }
             },
             "Conrasu": {
