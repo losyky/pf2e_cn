@@ -1255,7 +1255,12 @@
                         "Holy": "可以选择圣洁",
                         "HolyUnholy": "可以选择圣洁或邪秽",
                         "Unholy": "可以选择邪秽"
-                    }
+                    },
+                    "Label": "神力受祝（Divine Sanctification）"
+                },
+                "DivineAttribute": {
+                    "Hint": "如选择信仰所育背景，其属性提升选项取决于所选神祇。",
+                    "Label": "神圣属性"
                 }
             },
             "Effect": {
@@ -1428,7 +1433,8 @@
                     "PotencyOneProperty": "+{potency} {property1} {base}",
                     "PotencyOnePropertyMaterial": "+{potency} {property1} {material} {base}",
                     "PotencyFundamental2": "+{potency} {fundamental2} {base}",
-                    "PotencyFundamental2ThreePropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {material} {base}"
+                    "PotencyFundamental2ThreePropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {material} {base}",
+                    "Hint": "这是基础武器的名称。对大多数武器来说，基础武器被用于生成完整名称，加上材料成分和/或符文。给武器取一个自定义名称或将其标记为“特殊”武器可以阻止系统自动生成名称。"
                 },
                 "BrokenThreshold": {
                     "ShortLabel": "BT",
@@ -1580,7 +1586,8 @@
                 },
                 "Rank": {
                     "Label": "环级",
-                    "Ordinal": "{rank}环"
+                    "Ordinal": "{rank}环",
+                    "Plural": "环级"
                 },
                 "Area": "{size}-{unit} {shape}",
                 "Ritual": {
@@ -1590,7 +1597,8 @@
                     "PrimaryCheck": "主要检定"
                 },
                 "Defense": {
-                    "Label": "防御"
+                    "Label": "防御",
+                    "BasicSave": "基础豁免"
                 },
                 "Cost": "消耗",
                 "Cast": "施法"
@@ -1657,6 +1665,13 @@
             "MaterialEffects": {
                 "Label": "材料伤害效果",
                 "Hint": "触发或绕过某些生物的免疫、弱点和抗性的珍贵材料伤害效果（应用于联动伤害掷骰）"
+            },
+            "RefreshFromCompendium": {
+                "Tooltip": {
+                    "Enabled": "从合集包中取得此物品的最新数据。",
+                    "Disabled": "无法从合集包取得最新物品数据：包含添加到角色卡时存储的数据"
+                },
+                "Label": "取得最新"
             }
         },
         "ActionsCheck": {
@@ -1860,7 +1875,9 @@
                         "Scroll": "仅卷轴"
                     },
                     "TraditionSpellcasting": "{tradition}施法能力",
-                    "Rituals": "仪式"
+                    "Rituals": "仪式",
+                    "DC": "法术DC",
+                    "Label": "施法"
                 },
                 "Sense": {
                     "Acuity": {
@@ -1970,7 +1987,52 @@
                     "nagaji": "娜迦语",
                     "necril": "死灵语",
                     "ocotan": "奥科塔语",
-                    "mzunu": "玛祖语"
+                    "mzunu": "玛祖语",
+                    "russian": "俄语",
+                    "sakvroth": "地底语",
+                    "samsaran": "轮回语",
+                    "sasquatch": "大脚怪语",
+                    "drooni": "多伦语",
+                    "utopian": "奇匠语",
+                    "xanmba": "桑巴语",
+                    "yithian": "伊斯语",
+                    "vanara": "灵猴语",
+                    "wyrwood": "汲魂木语",
+                    "ysoki": "鼠族语",
+                    "orcish": "兽人语",
+                    "orvian": "奥瓦语",
+                    "osiriani": "奥斯利昂语",
+                    "petran": "土元素语",
+                    "protean": "幻蛇语",
+                    "pyric": "火元素语",
+                    "rasu": "空塑语",
+                    "razatlani": "拉扎特兰语",
+                    "requian": "招魂语",
+                    "senzar": "神知语",
+                    "shadowtongue": "阴影语",
+                    "shae": "影民语",
+                    "shisk": "希斯克语",
+                    "shoanti": "休盎提语",
+                    "shobhad": "绍贝德语",
+                    "shoony": "舒尼语",
+                    "shory": "硕理语",
+                    "skald": "乌尔芬语",
+                    "sphinx": "斯芬克斯语",
+                    "strix": "枭鬼语",
+                    "sussuran": "气元素语",
+                    "taldane": "塔尔多语",
+                    "talican": "金元素语",
+                    "tekritanin": "泰克立坦语",
+                    "tengu": "天狗语",
+                    "thalassic": "水元素语",
+                    "thassilonian": "瑟西隆语",
+                    "undercommon": "地底通用语",
+                    "varisian": "瓦瑞西亚语",
+                    "tien": "天洲语",
+                    "varki": "瓦尔基语",
+                    "vishkanyan": "蝮血裔语",
+                    "vudrani": "伏陀罗语",
+                    "wildsong": "荒野之歌"
                 }
             },
             "Dead": "死亡",
@@ -2124,7 +2186,10 @@
                 },
                 "DistributeCoins": "分发货币",
                 "TotalBulk": "总负重： {bulk}",
-                "Encumbrance": "超载"
+                "Encumbrance": "超载",
+                "Section": {
+                    "WeaponsAndShields": "武器 & 盾牌"
+                }
             },
             "HitPoints": {
                 "Unrecoverable": "当前无法恢复{value} 点生命值。"
@@ -2391,7 +2456,8 @@
             "Title": "掷骰检查器",
             "RollOptions": "掷骰设定",
             "ModifiersEmpty": "无调整值",
-            "FlatCheckNoModifiers": "措手不及判定不会包括任何调整值、加值或减值。"
+            "FlatCheckNoModifiers": "措手不及判定不会包括任何调整值、加值或减值。",
+            "ModifiersAndDice": "调整值和骰子"
         },
         "Check": {
             "DC": {
@@ -2786,7 +2852,9 @@
                     "djezet": "血汞",
                     "abysium": "渊铀",
                     "siccatite": "漠石",
-                    "noqual": "零晶"
+                    "noqual": "零晶",
+                    "holy": "圣洁（Holy）",
+                    "unholy": "邪秽（Unholy）"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -3150,7 +3218,8 @@
                 "TypeMissing": "必须有类型参数",
                 "AdjustmentLengthMismatch": "类型与调整参数的数目不匹配",
                 "NonIntegerAdjustment": "调整值必须是整数",
-                "DCAndDefense": "不能同时具有dc和防御参数"
+                "DCAndDefense": "不能同时具有dc和防御参数",
+                "InvalidDomains": "{type}数据域必须使用减号或者下划线连接（没有空格和特殊符号），且以-damage结束"
             },
             "Invalid": "无效的@Check表达式： {message}"
         },
@@ -7148,7 +7217,22 @@
         "TraitDescriptionHoly": "具有神圣特性的效果与仁慈和美德的强大魔法力量相联系。它们经常对邪恶生物产生更强的影响。具有此特性的生物对神圣事业忠诚，常常对邪恶事物有弱点。如果一个具有对神圣事物有弱点的生物使用了神圣物品或效果，则会受到其弱点的伤害",
         "TraitAffixedToAShieldOrWeapon": "附着在盾牌或武器上",
         "SavingThrow": "豁免骰",
-        "TraitAffixedToMetalWeapon": "附在金属武器上"
+        "TraitAffixedToMetalWeapon": "附在金属武器上",
+        "TraitDescriptionNephilim": "具有此特征的生物拥有异界裔多用传承。异界裔是其他位面不朽存在的后代位面裔。具有此特征的能力只能被异界裔使用或选取。",
+        "TraitDescriptionSanctified": "若你为圣洁（Holy）或邪秽（Unholy），则你的受祝（Sanctified）动作与法术自动获得相同特征。",
+        "TraitSubtle": "晦匿",
+        "TraitDescriptionSpirit": "具有此特征的效果可以影响精魂本质的生物或能造成精魂伤害。具有此特征的生物由其精魂本质定义。精魂生物通常缺乏物质形体。",
+        "TraitDescriptionSpellshape": "塑法动作会微调你的法术效果。你在其后紧接的动作必须是施放你希望调整的法术。如果你紧接着进行的动作（包含自由动作与反应动作）并非施放法术，你会浪费掉塑法动作带来的增益。塑法动作所添加的效果被视为法术效果的一部分，而非塑法动作的效果。",
+        "TraitAiuvarin": "半精灵",
+        "TraitDescriptionAiuvarin": "具有该特征的生物拥有半精灵多用传承。半精灵是一种混血族裔，拥有精灵或其他半精灵血统。具有该特征的能力只能被半精灵使用或选择。",
+        "TraitDescriptionDromaar": "具有该特征的生物拥有半兽人多用传承。半兽人是一种混血族裔，拥有兽人或其他半兽人血统。具有该特征的能力只能被半兽人使用或选择。",
+        "TraitSanctified": "受祝（Sanctified）",
+        "TraitSpellshape": "塑法",
+        "TraitHryngar": "灰矮人",
+        "TraitDromaar": "半兽人",
+        "TraitDescriptionSummon": "具有召唤特征的法术能创造生物，通常是一些有特定特征的生物。这样的生物可以在《怪物核心》和类似的书中找到。除非另外说明，该生物必须是常见的，它获得被召唤特征，并且它必须出现在足够容纳它的未占据空间里该法术能召唤的生物的最高等级基于法术的环级，如下文所列。如果你选择，你也可以召唤一个等级更低的生物。这些规则仅适用于具有召唤特征的法术；其他唤来或者创造物品或存在的，但没有此特征的法术，例如召唤乐器，按照法术描述生效。",
+        "TraitNaari": "火元素裔",
+        "TraitNephilim": "异界裔"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
