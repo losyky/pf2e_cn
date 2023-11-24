@@ -63,7 +63,13 @@
                 "LightningLash": "闪电冲击",
                 "StoneBall": "石球",
                 "BoneSpike": "骨刺",
-                "BoneDart": "骨飞镖"
+                "BoneDart": "骨飞镖",
+                "Blade": "刀刃 Blade",
+                "MetalShard": "金属碎片 Metal Shard",
+                "Quill": "羽尖 Quill",
+                "Boulder": "巨岩 Boulder",
+                "Seed": "种子 Seed",
+                "AqueousFist": "水之拳 Aqueous Fist"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -545,6 +551,9 @@
                 },
                 "LockOn": {
                     "TwoActionsLegendary": "双动作（传奇）"
+                },
+                "Overdrive": {
+                    "DamageTypePrompt": "利用超载造成火焰伤害？"
                 }
             },
             "DedicationCraftingEntry": {
@@ -988,7 +997,35 @@
                     "ResistAllLabel": "激活盾肩披风，获得对所有伤害的抗力。"
                 },
                 "DeckOfDestiny": {
-                    "WealOrWoePrompt": "选择吉或凶。"
+                    "WealOrWoePrompt": "选择吉或凶。",
+                    "MatchingSuitPrompt": "抽取的哈罗牌花色是否与检定相关？"
+                },
+                "BroadleafShield": {
+                    "Void": "粉色（虚能）",
+                    "Fire": "绿色（火焰）",
+                    "Poison": "橙色（毒素）",
+                    "Cold": "棕色（寒冷）"
+                },
+                "Sparkler": {
+                    "CriticalHitNote": "重击时，你让目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，持续一轮。",
+                    "StrikeLabel": "烟花棒"
+                },
+                "UnholyWater": {
+                    "Note": "只能伤害具有圣洁（Holy）特征的生物。"
+                },
+                "ChaplainsCudgel": {
+                    "BowToAHigherPowerLabel": "牧者权杖 — 向神明祈求",
+                    "CastTwoActionSpellLabel": "施展一个需要最少2动作的神术法术"
+                },
+                "ChannelProtectionAmuletLabel": "导能防护",
+                "FightersFork": {
+                    "FluidLengthLabel": "斗士三尖叉 — 长短流变"
+                },
+                "HolyWater": {
+                    "Note": "只能伤害具有邪秽（Unholy）特征的生物。"
+                },
+                "TacticiansHelm": {
+                    "ReactiveStrikeNote": "成功@UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{反应打击 Reactive Strike}时，增加一点充能：@UUID[Compendium.pf2e.equipment-effects.Item.nLwtvyLZZTZgFmKq]{效果: 战术家头盔充能}"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1069,14 +1106,23 @@
                 "DegreeOfSuccess": "选择成功等级。",
                 "Alignment": "选择一个阵营。",
                 "Rune": "选择一个符文。",
-                "Sanctification": "选择一个祝佑。"
+                "Sanctification": "选择一个祝佑。",
+                "Tradition": "选择根源",
+                "Shield": "选择盾牌",
+                "LevelOneAncestryFeat": "选择一个1级族裔专长",
+                "UntamedForm": "选择一种无羁形态效果",
+                "Trait": "选择特征"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
                 "AutomaticPower": "自动出力强化型机铠",
                 "ManualPower": "手动出力强化型机铠",
                 "AutomaticPercussive": "自动精准打击型机铠",
-                "ManualPercussive": "手动精准打击型机铠"
+                "ManualPercussive": "手动精准打击型机铠",
+                "StasianSmash": {
+                    "SuccessText": "成功时，这次打击对目标造成额外的1d12 电击伤害；电火花还会四处飞舞，对10尺内最多两名敌人造成@Damage[(ternary(gte(@actor.level,18),2,1))d4[electricity]]伤害。",
+                    "CriticalFailureText": "如果这次机铠打击掷出大失败，你自己会受到@Damage[1d12[electricity]]伤害。"
+                }
             },
             "TwoHanded": {
                 "Cane": "双手使用手杖",
@@ -1243,7 +1289,8 @@
                 "FlatFooted": "需求目标措手不及的能力正在生效",
                 "Undead": "需求目标是不死生物的能力正在生效",
                 "Incorporeal": "启用需求目标为虚体的能力",
-                "OffGuard": "需求目标处于措手不及的能力正在生效"
+                "OffGuard": "需求目标处于措手不及的能力正在生效",
+                "Prone": "启用需求目标状态为倒地的能力"
             },
             "Wizard": {
                 "ArcaneSchool": {
@@ -1254,6 +1301,12 @@
                 },
                 "Metamagic1": {
                     "Prompt": "选择一个1级法师超魔专长"
+                },
+                "Spellshape1": {
+                    "Prompt": "选择一个1级法师塑法专长"
+                },
+                "UnifiedMagicalTheory": {
+                    "Prompt": "选择一个1级法师专长"
                 }
             },
             "Rogue": {
@@ -1325,7 +1378,11 @@
                     "Axe": "斧（斧或镐）",
                     "Shield": "盾牌（锤或盾牌）",
                     "Torch": "火把（炸弹或短刃）",
-                    "Prompt": "选择你的部族印记纹章"
+                    "Prompt": "选择你的部族印记纹章",
+                    "BurningSun": "燃日",
+                    "DeathsHead": "死颅",
+                    "DefiledCorpse": "渎骸",
+                    "EmptyHand": "空手"
                 },
                 "OrcWarmask": {
                     "Land": "大地",
@@ -1370,7 +1427,8 @@
                 "Necromancer": "目标是死灵师",
                 "AgainstDemons": "对抗恶魔",
                 "AgainstDevils": "对抗魔鬼",
-                "AgainstHumanoids": "对抗类人生物"
+                "AgainstHumanoids": "对抗类人生物",
+                "Metal": "目标穿着金属护甲或由金属制成"
             },
             "TrinityGeodeLabel": "三一晶洞",
             "SkillMastery": {
@@ -1453,7 +1511,8 @@
                     "StumblingSwing": "晃身劝酒",
                     "StingingLash": "蛰刺抽打",
                     "SkywardSlash": "天空劈",
-                    "WindCrash": "风袭"
+                    "WindCrash": "风袭",
+                    "Stonestrike": "石之击"
                 }
             },
             "CriticalDeck": {
@@ -1543,6 +1602,9 @@
                 },
                 "ReplenishmentOfWar": {
                     "Note": "当你使用你的神祇的偏好武器，通过普通攻击伤害一个生物，你获得等于你的等级一半的临时生命值，如果普通攻击重击，则等于你的等级。@UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{Effect: 战时补给}"
+                },
+                "DivineRebuttal": {
+                    "Note": "若你的打击命中，你所有盟友对触发的豁免检定中获得+2环境加值（重击时获得+3环境加值）。@UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{效果: 神力抗驳}"
                 }
             },
             "Conrasu": {
@@ -1602,6 +1664,9 @@
                 },
                 "PursueALead": {
                     "Label": "正在用追查方向调查指定客体"
+                },
+                "SharedStratagem": {
+                    "Note": "在你下一回合开始前，你指定的盟友对该生物的下一次攻击，该生物对盟友视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 }
             },
             "SpellEffectProtection": {
@@ -1647,7 +1712,11 @@
                 "BladeAllyRune": "为利刃盟友选择一个性能符文",
                 "TargetReaction": "目标触发了你的神卫反应",
                 "EvilDamage": "精魂伤害",
-                "NegativeDamage": "虚空伤害"
+                "NegativeDamage": "虚空伤害",
+                "AuraOfFaith": {
+                    "Toggle": "本轮对邪秽（Unholy）生物的首次打击"
+                },
+                "RetributiveStrike": "报应打击"
             },
             "DeviantAbilities": {
                 "AwakenedPower": {
@@ -1900,7 +1969,8 @@
                 "DamageType": "伤害类型",
                 "Exit": "退出",
                 "Enter": "输入",
-                "WeaknessType": "弱点类型"
+                "WeaknessType": "弱点类型",
+                "NonCantrip": "非戏法"
             },
             "Obcisidaemon": {
                 "ConsumeSoul": {
@@ -2021,6 +2091,15 @@
                         "Metal": "选择酸液、电击或穿刺。直到你的下个回合开始，每当有生物接触你或用无武装攻击、非长触及武器伤害你，他都会受到你等级一半的伤害（最小1点伤害），伤害类型和你之前选择的一致。",
                         "Earth": "岩石碎片漂浮在你周围，给与你AC+1环境加值，直到你的下个回合开始。@UUID[Compendium.pf2e.feat-effects.Item.09oP0FBBAhXOS4JW]{效果：土门涌动汇流}",
                         "Title": "涌动汇流"
+                    },
+                    "CriticalBlast": {
+                        "Fire": "目标受到1d6持续火焰伤害。这次持续伤害增加你涌动攻击骰上的物品加值（比如来自束门环）。",
+                        "Earth": "若目标站在地面，它陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}；若目标不在地面上，它下降最多20尺（你自选距离）。",
+                        "Air": "将目标推离最多10尺。",
+                        "Wood": "若重击的目标与一个平面相邻，根茎将纠缠它。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}且必须花费一个交互动作通过@Check[type:athletics|dc:10]检定来使自己脱困。若目标为虚体、液体或可用其他手段轻易逃脱的生物，它不会被困。",
+                        "Metal": "目标受到1d6持续流血伤害；若生物拥有金属性或由金属制成，它转成受到@Damage[1d6[persistent,untyped]]伤害（无类型的锈蚀伤害）。本次持续伤害增加你涌动攻击骰上的物品加值（例如来自束门环）。",
+                        "Water": "冲击造成每伤害骰2点溅射伤害，伤害类型不变。",
+                        "Label": "重击冲击"
                     }
                 },
                 "GateAttenuator": "束门环"
@@ -2080,7 +2159,41 @@
                 "SpiritDwelling": "你的精神居所里住着一个灵魂"
             },
             "MantleOfTheUnwaveringHeart": {
-                "UnyieldingWill": "不屈意志"
+                "UnyieldingWill": "不屈意志",
+                "EvergreenVitality": "常青活力",
+                "OverwhelmingPerfume": "强烈芳香",
+                "ToweringTrunk": "巍峨巨木",
+                "GraspingBranch": "不屈意志"
+            },
+            "ArtokussFire": {
+                "Note": "你的炽火胶造成额外1d4 持续火焰伤害，并且生物必须通过两次纯骰检定才能停止持续伤害（若受到能将纯骰DC降至10的协助恢复，则只需要一次成功）。真火胶就算在水下也能燃烧，任何用水来停止持续伤害的手段没有任何效果。"
+            },
+            "SpellEffectGluttonsJaw": {
+                "Text": "如果你的啃咬命中并造成伤害，你获得[[/r ceil(@item.level/2)d6 #Temporary Hit Points]]点临时生命值。"
+            },
+            "InCombat": {
+                "ToggleLabel": "战斗中"
+            },
+            "Weapon": {
+                "Metal": "正在使用一把金属武器"
+            },
+            "LitAlicornLance": "天角枪闪烁病态红光",
+            "LitFulminatingSpear": "爆燃之矛已点亮",
+            "SpellEffectSweetDream": {
+                "Insight": "洞察之梦",
+                "Glamor": "浪漫之梦",
+                "Prompt": "选择一种美梦",
+                "Voyaging": "远航之梦"
+            },
+            "UntamedShift": {
+                "UntamedClaws": "无羁利爪 Untamed Claws",
+                "UntamedJaws": "无羁颚咬 Untamed Jaws",
+                "Wings": "双翼 Wings",
+                "LongVines": "长藤 Long Vines",
+                "Prompt": "选择一种变形",
+                "ElementalMatter": "元素之形",
+                "PromptTwo": "选择第二种变形",
+                "PromptThree": "选择第三种变形"
             }
         },
         "RuleElement": {
@@ -2290,7 +2403,8 @@
             "Shoes": "对鞋",
             "Skinless": "无皮时",
             "Jar": "在罐子里",
-            "Treasure": "在财宝中"
+            "Treasure": "在财宝中",
+            "BoundHome": "身处所连结的房屋中时"
         },
         "OracleCurses": {
             "Label": {
@@ -2353,7 +2467,8 @@
                     "true": "只有重击伤害"
                 },
                 "DamageType": "伤害类型",
-                "PriorityHint": "优先级决定了规则元素的执行顺序。优先级较低的规则元素会先执行。"
+                "PriorityHint": "优先级决定了规则元素的执行顺序。优先级较低的规则元素会先执行。",
+                "Slug": "标识符"
             },
             "Note": {
                 "Outcome": "成果",
@@ -2371,6 +2486,61 @@
             },
             "FastHealing": {
                 "DeactivatedBy": "使其失效"
+            },
+            "Aura": {
+                "Basic": {
+                    "MergeExisting": {
+                        "Hint": "如果已经开启具有同样标识符的灵光，合并灵光数据、特征、效果以及<em>colors</em>。",
+                        "Label": "合并既存灵光"
+                    },
+                    "Radius": "半径",
+                    "Label": "基础",
+                    "Level": {
+                        "Hint": "灵光的可选等级，用于设置其传递效果的等级",
+                        "Label": "等级"
+                    }
+                },
+                "Effects": {
+                    "AffectsOptions": {
+                        "Enemies": "敌人",
+                        "All": "所有",
+                        "Allies": "盟友"
+                    },
+                    "RemoveEffect": "移除效果",
+                    "DropTooltip": "此灵光包含的效果",
+                    "Events": "起效时间",
+                    "Affects": "影响对象",
+                    "EventsOptions": {
+                        "Enter": "进入时",
+                        "TurnStart": "回合开始时",
+                        "TurnEnd": "回合结束时"
+                    },
+                    "DropText": "传递效果",
+                    "IncludesSelf": "包含自身",
+                    "Label": "影响",
+                    "Type": "类型",
+                    "RemoveOnExit": "离开时移除效果"
+                },
+                "Appearance": {
+                    "Color": "颜色",
+                    "PlaybackRate": {
+                        "Label": "播放速率",
+                        "Hint": "文件为视频时，生成的<em>HTMLVideoElement</em>的播放速率"
+                    },
+                    "Texture": "纹理",
+                    "Border": "边框",
+                    "Highlight": "高亮",
+                    "Translation": {
+                        "Hint": "纹理资源的 x/y 手动平移",
+                        "Label": "平移"
+                    },
+                    "Loop": {
+                        "Hint": "文件为视频时是否循环播放",
+                        "Label": "循环"
+                    },
+                    "Label": "外观",
+                    "NotApplicable": "不可用"
+                }
             }
         },
         "NPCAbility": {
@@ -2461,6 +2631,9 @@
                         },
                         "CloudlessVoid": {
                             "Label": "覆云冥爪架势"
+                        },
+                        "BoneCorpse": {
+                            "Label": "销骨行尸架势"
                         }
                     }
                 }
@@ -2543,6 +2716,13 @@
             },
             "StoneSpider": {
                 "StoneFangs": "石牙"
+            },
+            "ChyzaeduAlienVestment": "异星法衣已破碎",
+            "DeadFaine": {
+                "TargetFeintOrTraitorousBetrayal": "目标由于虚招或Traitorous Betrayal措手不及"
+            },
+            "CyclopsBully": {
+                "TerrorizingSwing": "如果一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}并受伤，它受到额外2d10点伤害并陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
             }
         },
         "UI": {
@@ -2576,7 +2756,8 @@
                     "Prompt": "选择此效果的目标"
                 },
                 "TokenMark": {
-                    "TargetToken": "鼠标悬浮在某个指示物上，按T选定该指示物为目标，按Esc取消。"
+                    "TargetToken": "鼠标悬浮在某个指示物上，按T选定该指示物为目标，按Esc取消。",
+                    "Timeout": "由于缺少目标，已取消效果创建。"
                 }
             }
         },
@@ -2937,7 +3118,13 @@
                 "MagicalSilverWeapons": "魔法银制武器",
                 "AllDamageFromUndead": "承受来自不死生物的全额伤害",
                 "MagicalWeaponsBrightLight": "发光魔法武器",
-                "NonWeapons": "无武器"
+                "NonWeapons": "无武器",
+                "AttacksWaterCreatures": "被水特征生物攻击",
+                "AllNonMagicalDamage": "所有非魔法伤害",
+                "AllMagicalDamage": "所有魔法伤害",
+                "PersistentPoison": "持续毒素",
+                "RangedWeaponAttacks": "远程武器攻击",
+                "PhysicalRangedAttacks": "物理远程攻击"
             }
         }
     }
