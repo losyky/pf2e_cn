@@ -197,8 +197,8 @@
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong> 直到你的下一个回合，你的对手陷入@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态，除非在此期间你进行移动或是对手成功进行@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escapes}动作。",
                     "success": "<strong>成功</strong> 直到你的下一个回合，你的对手@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{被擒抱 Grabbed} ，除非在此期间你进行移动或是对手成功进行@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escapes}动作。",
-                    "failure": "<strong>失败</strong> 你没有擒住你的对手。如果你的对手因为你的擒拿而已经陷入@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}或@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，它不再承受这些状态。",
-                    "criticalFailure": "<strong>大失败</strong> 如果你的对手因为你的擒拿而陷入@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态，它立刻挣脱。这个生物可以立刻擒抱你，如同成功对你发动了@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}，或是将你击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
+                    "failure": "<strong>失败</strong> 你没有擒住你的对手。如果你的对手因为你的擒拿而已经陷入@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}或@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed}，它不再承受这些状态。",
+                    "criticalFailure": "<strong>大失败</strong> 如果你的对手因为你的擒拿而陷入@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态，它立刻挣脱。这个生物可以立刻擒抱你，如同成功对你发动了@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}，或是将你击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
                 },
                 "Title": "擒拿"
             },
@@ -511,7 +511,7 @@
                     "criticalSuccess": "<strong>大成功</strong> 你将生物扔至所需距离并使其@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。",
                     "success": "<strong>成功</strong>你将生物扔至所需距离。",
                     "failure": "<strong>失败</strong> 你没能投掷生物。",
-                    "criticalFailure": "<strong>大失败</strong> 你没能投掷生物， 并且对方不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} 或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。"
+                    "criticalFailure": "<strong>大失败</strong> 你没能投掷生物， 并且对方不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed} 或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。"
                 },
                 "Title": "回旋抛投"
             },
@@ -738,6 +738,15 @@
             "TakeCover": {
                 "Description": "<p>你自身靠近墙壁或矮墙之类的阻挡物，以期从掩蔽中获得优势（见477页）。若你已有标准掩蔽，你改为获得强效掩蔽，这会给AC提供+4环境加值、给对抗区域效果的反射豁免+4环境加值、给躲藏、潜行和其它避开侦查的隐秘简单提供+4环境加值。其它状况下，你获得标准掩蔽（上述条件中获得的环境加值为+2）。这持续到你从当前位置移走、使用攻击动作、变为失去意识、以自由动作解除掩蔽状态。</p>",
                 "Title": "寻找掩蔽"
+            },
+            "Reposition": {
+                "Notes": {
+                    "criticalFailure": "<strong>大失败</strong> 目标可以将你移动5尺。视作它成功对你进行了移位。",
+                    "criticalSuccess": "<strong>大成功</strong> 你成功将该生物移动10尺。移动过程中必须将其保持在你的触及范围内，你不能将其移动到障碍物内或使其穿过障碍物。",
+                    "success": "<strong>成功</strong> 你成功将该生物移动5尺。移动过程中必须将其保持在你的触及范围内，你不能将其移动到障碍物内或使其穿过障碍物。"
+                },
+                "Title": "移位",
+                "Description": "<p>你强行让一个生物或物体移位。进行运动检定对抗目标的强韧DC。</p><p><strong>大成功</strong> 你成功将该生物移动10尺。移动过程中必须将其保持在你的触及范围内，你不能将其移动到障碍物内或使其穿过障碍物。<br><strong>成功</strong> 你成功将该生物移动5尺。移动过程中必须将其保持在你的触及范围内，你不能将其移动到障碍物内或使其穿过障碍物。<br><strong>大失败</strong> 目标可以将你移动5尺。视作它成功对你进行了移位。</p>"
             }
         },
         "ActionsCheck": {
