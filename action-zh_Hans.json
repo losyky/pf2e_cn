@@ -317,11 +317,13 @@
             "RaiseAShield": {
                 "SingleActionTitle": "举起盾牌",
                 "ReactionTitle": "反射持盾",
-                "Content": "{actor} 举起盾牌.",
+                "Content": "{actor} 举起{shield}.",
                 "BadArgs": "此操作只能用一个玩家角色或NPC执行。",
                 "NoShieldEquipped": "{actor} 必须装备盾牌。",
                 "ShieldIsBroken": "{actor}的 {shield} 已损坏.",
-                "ShieldIsDestroyed": "{actor}的 {shield} 已损毁。"
+                "ShieldIsDestroyed": "{actor}的 {shield} 已损毁。",
+                "ShortTitle": "举起",
+                "Title": "举起盾牌"
             },
             "Release": {
                 "Title": "放开",
@@ -518,8 +520,8 @@
             "TreatWounds": {
                 "Rolls": {
                     "RiskySurgery": "伤害骰: 激进手术",
-                    "TreatWounds": "治疗骰: 治疗伤害",
-                    "TreatWoundsCriticalFailure": "伤害骰: 治疗伤害"
+                    "TreatWounds": "治疗骰: 治疗伤势",
+                    "TreatWoundsCriticalFailure": "伤害骰: 治疗伤势"
                 },
                 "Content": "选择目标DC。注意你不能尝试超过你熟练度等级的治疗行动。若你这样做，DC和治疗量会降级到你的最高熟练度等级。",
                 "DC": {
@@ -534,8 +536,8 @@
                     "RiskySurgery": "激进手术",
                     "MortalHealing": "致命治疗"
                 },
-                "Label": "治疗伤害",
-                "SkillSelect": "治疗伤害技能:"
+                "Label": "治疗伤势",
+                "SkillSelect": "治疗伤势技能:"
             },
             "DisableDevice": {
                 "Notes": {
@@ -747,6 +749,11 @@
                 },
                 "Title": "移位",
                 "Description": "<p>你强行让一个生物或物体移位。进行运动检定对抗目标的强韧DC。</p><p><strong>大成功</strong> 你成功将该生物移动10尺。移动过程中必须将其保持在你的触及范围内，你不能将其移动到障碍物内或使其穿过障碍物。<br><strong>成功</strong> 你成功将该生物移动5尺。移动过程中必须将其保持在你的触及范围内，你不能将其移动到障碍物内或使其穿过障碍物。<br><strong>大失败</strong> 目标可以将你移动5尺。视作它成功对你进行了移位。</p>"
+            },
+            "LowerShield": {
+                "ShortTitle": "放下",
+                "Title": "放下盾牌",
+                "Content": "{actor} 放下了 {shield}。"
             }
         },
         "ActionsCheck": {
