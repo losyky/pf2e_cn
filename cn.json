@@ -1400,7 +1400,8 @@
                     "Light": "L",
                     "Negligible": "—",
                     "NLight": "{light}L",
-                    "WithLight": "{bulk}, {light}L"
+                    "WithLight": "{bulk}, {light}L",
+                    "Label": "重量"
                 },
                 "GeneratedName": {
                     "ThreePropertiesMaterial": "{property1} {property2} {property3} {material} {base}",
@@ -1434,11 +1435,17 @@
                     "PotencyOnePropertyMaterial": "+{potency} {property1} {material} {base}",
                     "PotencyFundamental2": "+{potency} {fundamental2} {base}",
                     "PotencyFundamental2ThreePropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {material} {base}",
-                    "Hint": "这是基础武器的名称。对大多数武器来说，基础武器被用于生成完整名称，加上材料成分和/或符文。给武器取一个自定义名称或将其标记为“特殊”武器可以阻止系统自动生成名称。"
+                    "Hint": "这是基础武器的名称。对大多数武器来说，基础武器被用于生成完整名称，加上材料成分和/或符文。给武器取一个自定义名称或将其标记为“特殊”武器可以阻止系统自动生成名称。",
+                    "Reinforcing": "{reinforcing} {base}",
+                    "ReinforcingMaterial": "{reinforcing} {material} {base}"
                 },
                 "BrokenThreshold": {
                     "ShortLabel": "BT",
                     "Label": "破损阈值"
+                },
+                "Base": "基础",
+                "MaterialRunes": {
+                    "Label": "珍贵材料与符文"
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1672,6 +1679,30 @@
                     "Disabled": "无法从合集包取得最新物品数据：包含添加到角色卡时存储的数据"
                 },
                 "Label": "取得最新"
+            },
+            "Shield": {
+                "Base": {
+                    "dart-shield": "镖盾",
+                    "fortress-shield": "要塞盾",
+                    "buckler": "小圆盾",
+                    "casters-targe": "术者圆盾",
+                    "gauntlet-buckler": "铁手套小圆盾",
+                    "harnessed-shield": "挽具盾",
+                    "heavy-rondache": "重圆盾",
+                    "hide-shield": "皮革盾",
+                    "klar": "喀拉尔",
+                    "meteor-shield": "流星盾",
+                    "razor-disc": "剃刀盘",
+                    "salvo-shield": "避矢盾",
+                    "steel-shield": "钢盾",
+                    "swordstealer-shield": "盗剑盾",
+                    "tower-shield": "塔盾",
+                    "wooden-shield": "木盾"
+                },
+                "Specific": {
+                    "Hint": "将此盾牌标记为<i>特殊魔法盾牌</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
+                    "Label": "特殊魔法盾牌"
+                }
             }
         },
         "ActionsCheck": {
