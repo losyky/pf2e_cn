@@ -6163,6 +6163,9 @@
                 "Note": {
                     "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"41\">逃脱 DC 41</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 }
+            },
+            "astral": {
+                "Name": "星界"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -7270,7 +7273,9 @@
         "TraitDescriptionSummon": "具有召唤特征的法术能创造生物，通常是一些有特定特征的生物。这样的生物可以在《怪物核心》和类似的书中找到。除非另外说明，该生物必须是常见的，它获得被召唤特征，并且它必须出现在足够容纳它的未占据空间里该法术能召唤的生物的最高等级基于法术的环级，如下文所列。如果你选择，你也可以召唤一个等级更低的生物。这些规则仅适用于具有召唤特征的法术；其他唤来或者创造物品或存在的，但没有此特征的法术，例如召唤乐器，按照法术描述生效。",
         "TraitNaari": "火元素裔",
         "TraitNephilim": "异界裔",
-        "TraitHefty2": "沉重2"
+        "TraitHefty2": "沉重2",
+        "TraitVersatileSpirit": "多用心灵",
+        "TraitVersatileX": "多用{x}"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
