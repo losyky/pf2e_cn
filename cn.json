@@ -1331,7 +1331,8 @@
                 "KeyAbilityOptions": {
                     "Label": "关键属性选项",
                     "Hint": "由职业提供额外的关键属性选项"
-                }
+                },
+                "Plural": "专长"
             },
             "Heritage": {
                 "AncestryNotFound": "找不到引用的族裔模板。",
@@ -1608,7 +1609,8 @@
                     "BasicSave": "基础豁免"
                 },
                 "Cost": "消耗",
-                "Cast": "施法"
+                "Cast": "施法",
+                "Plural": "法术"
             },
             "CreationDialog": {
                 "Categories": {
@@ -1859,6 +1861,9 @@
                         "Light": "轻甲",
                         "HeavyBarding": "重型坐骑护甲",
                         "Heavy": "重甲"
+                    },
+                    "Spellcasting": {
+                        "AttackDC": "攻击掷骰与DC"
                     }
                 },
                 "HandsOccupied": "手已占用",
@@ -7264,7 +7269,8 @@
         "TraitDromaar": "半兽人",
         "TraitDescriptionSummon": "具有召唤特征的法术能创造生物，通常是一些有特定特征的生物。这样的生物可以在《怪物核心》和类似的书中找到。除非另外说明，该生物必须是常见的，它获得被召唤特征，并且它必须出现在足够容纳它的未占据空间里该法术能召唤的生物的最高等级基于法术的环级，如下文所列。如果你选择，你也可以召唤一个等级更低的生物。这些规则仅适用于具有召唤特征的法术；其他唤来或者创造物品或存在的，但没有此特征的法术，例如召唤乐器，按照法术描述生效。",
         "TraitNaari": "火元素裔",
-        "TraitNephilim": "异界裔"
+        "TraitNephilim": "异界裔",
+        "TraitHefty2": "沉重2"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
