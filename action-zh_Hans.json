@@ -649,22 +649,22 @@
                     "DifficultyClass": {
                         "Label": "进行急救DC"
                     },
-                    "Description": "<p>对于一个生命值为0且处于濒死状态的生物，你可以尝试一个医疗检定稳定其伤势。这个检定DC等于5+该生物尝试恢复稳定的恢复检定DC（通常为15+该生物承受的濒死等级）</p><p><strong>成功</strong> 你急救的生物不再处于濒死状态（但仍然昏迷）。<br><strong>大失败</strong>你急救的生物濒死等级+1。</p>"
+                    "Description": "<p>对一个生命值为0且处于濒死状态的生物进行医疗检定。DC等于5+该生物复苏掷骰的DC（通常为15+该生物的濒死值）。</p><p><strong>成功</strong> 目标失去濒死状态（但仍处于@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态）。<br><strong>大失败</strong> 目标的濒死值增加1点。</p>"
                 },
                 "StopBleeding": {
                     "Notes": {
                         "criticalFailure": "<strong>大失败</strong>生物立刻承受一次等于他承受的持续流血伤害数值的伤害。",
-                        "success": "<strong>成功</strong> 那么生物可以再进行一次无修正测试来尝试移除流血。"
+                        "success": "<strong>成功</strong> 目标受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。"
                     },
                     "Title": "进行急救-止血",
-                    "Description": "<p>你可以对一个正在承受持续流血伤害的生物尝试一个医疗检定，如果成功，他可以获得一次再进行一次无修正测试来尝试移除该持续伤害的机会。本医疗检定的DC和原本造成该生物流血的效果DC通常相同。</p><p><strong>成功</strong> 生物可以再进行一次无修正测试来尝试移除流血。<br><strong>大失败</strong> 生物立刻承受一次等于他承受的持续流血伤害数值的伤害。</p>"
+                    "Description": "<p>对受到持续流血伤害的生物进行医疗检定。DC通常等于导致出血效果的DC。</p><p><strong>成功</strong> 目标会受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。<br><strong>大失败</strong> 目标立刻受到与其持续流血伤害相等的伤害。</p>"
                 },
                 "Warning": {
                     "TargetNotDying": "目标生物没有陷入濒死。",
                     "UnknownVariant": "进行急救所使用的变体{variant}未知，请使用{variants}之一。"
                 },
                 "Title": "进行急救",
-                "Description": "<p> 你对一个邻接你，处于濒死或流血状态的生物进行紧急救治。如果该生物同时濒死和流血，你必须在进行检定前选择其中之一来进行急救。在此之后，你可以选择另一个状态进行急救尝试。</p><ol><li><strong>稳定伤势</strong> 对于一个生命值为0且处于濒死状态的生物，你可以尝试一个医疗检定稳定其伤势。这个检定DC等于5+该生物尝试恢复稳定的恢复检定DC（通常为15+该生物承受的濒死等级）</li><li><strong>止血</strong>你可以对一个正在承受持续流血伤害的生物尝试一个医疗检定，如果成功，他可以获得一次再进行一次无修正测试来尝试移除该持续伤害的机会。本医疗检定的DC和原本造成该生物流血的效果DC通常相同。</li></ol><p><strong>成功</strong>如果你尝试稳定伤势，那么你急救的生物不再处于濒死状态（但仍然昏迷）。如果你尝试止血，那么生物可以再进行一次无修正测试来尝试移除流血。<br><strong>大失败</strong>如果你尝试稳定伤势，那么你急救的生物濒死等级+1。如果你尝试止血，那么生物立刻承受一次等于他承受的持续流血伤害数值的伤害。</p>"
+                "Description": "<p>你对处于濒死或流血的相邻生物进行急救。如果一个生物既处于濒死状态又处于流血状态，你需要在掷骰前选择其中之一来治疗。你可以再次进行急救来尝试治疗其他效果。</p><ul><li><strong>稳定伤势</strong> 对一个生命值为0且处于濒死状态的生物进行医疗检定。DC等于5+该生物复苏掷骰的DC（通常为15+该生物的濒死值）。</li><li><strong>止血</strong> 对受到持续流血伤害（第409页）的生物进行医疗检定。DC通常等于导致出血效果的DC。</li></ul><p></strong>成功</strong> 如果你试图稳定伤势，目标会失去濒死状态（但仍处于@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态）。如果你试图止血，目标会受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。</p><p><strong>大失败</strong> 如果你试图稳定伤势，目标的濒死值会增加1点。如果你试图止血，目标会立刻受到与其持续流血伤害相等的伤害。</p>"
             },
             "CreateForgery": {
                 "ForgedDocument": {
@@ -739,7 +739,11 @@
             },
             "TakeCover": {
                 "Description": "<p>你自身靠近墙壁或矮墙之类的阻挡物，以期从掩蔽中获得优势（见477页）。若你已有标准掩蔽，你改为获得强效掩蔽，这会给AC提供+4环境加值、给对抗区域效果的反射豁免+4环境加值、给躲藏、潜行和其它避开侦查的隐秘简单提供+4环境加值。其它状况下，你获得标准掩蔽（上述条件中获得的环境加值为+2）。这持续到你从当前位置移走、使用攻击动作、变为失去意识、以自由动作解除掩蔽状态。</p>",
-                "Title": "寻找掩蔽"
+                "Title": "寻找掩蔽",
+                "TowerShield": {
+                    "Description": "{actor}在{shield}后寻找掩蔽。"
+                },
+                "ShortTitle": "寻找掩蔽"
             },
             "Reposition": {
                 "Notes": {
@@ -754,6 +758,14 @@
                 "ShortTitle": "放下",
                 "Title": "放下盾牌",
                 "Content": "{actor} 放下了 {shield}。"
+            },
+            "EndCover": {
+                "TowerShield": {
+                    "Description": "{actor}从{weapon}后现身。",
+                    "Title": "结束掩蔽"
+                },
+                "ShortTitle": "结束掩蔽",
+                "Title": "结束掩蔽"
             }
         },
         "ActionsCheck": {
