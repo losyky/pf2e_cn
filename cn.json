@@ -1714,6 +1714,17 @@
                 "Specific": {
                     "Hint": "将此盾牌标记为<i>特殊魔法盾牌</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
                     "Label": "特殊魔法盾牌"
+                },
+                "Rune": {
+                    "Reinforcing": {
+                        "Greater": "高等强固",
+                        "Label": "强固符文",
+                        "Lesser": "次等强固",
+                        "Major": "上等强固",
+                        "Minor": "下等强固",
+                        "Moderate": "中等强固",
+                        "Supreme": "超等强固"
+                    }
                 }
             },
             "Consumable": {
@@ -5500,8 +5511,9 @@
             "errorTargetToken": "需要选中至少一个合法的指示物。",
             "noDamageInfoForOutcome": "没有关于 {outcome}的伤害信息。",
             "shiftModifyDamageLabel": "合计",
-            "shiftModifyDamageTitle": "修改伤害/治疗",
-            "warnNoActor": "这个垂直列表需要一个角色。"
+            "shiftModifyDamageTitle": "修改伤害",
+            "warnNoActor": "这个垂直列表需要一个角色。",
+            "shiftModifyHealingTitle": "修改治疗"
         },
         "UnitPriceLabel": "单价",
         "UnprepareItemTitle": "不适合的物品",
@@ -5888,7 +5900,7 @@
                 "Name": "舞空符文"
             },
             "disrupting": {
-                "Name": "瓦解符文",
+                "Name": "命源符文",
                 "Note": {
                     "criticalSuccess": "若重击，目标不死生物直到你的下一回合结束为止获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 }
@@ -5955,9 +5967,9 @@
                 }
             },
             "greaterDisrupting": {
-                "Name": "高等瓦解符文",
+                "Name": "高等命源符文",
                 "Note": {
-                    "criticalSuccess": "重击时，目标不死生物必须成功通过一个@Check[type:fortitude|dc:34|traits:incapacitation|name:Greater Disrupting Rune]豁免来规避以下效果。这是一个失能效果。<br /><strong>大成功</strong> 陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}直到你下一个回合结束<br /><strong>成功</strong> 陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直到你下一回合结束<br /><strong>失败</strong> 陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 3} 直到你下一回合结束<br /><strong>大失败</strong> 被直接摧毁。"
+                    "criticalSuccess": "重击时，在此符文造成持续伤害期间，目标不死生物陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
                 }
             },
             "greaterExtending": {
@@ -6194,7 +6206,18 @@
                 }
             },
             "astral": {
-                "Name": "星界"
+                "Name": "星界",
+                "Note": {
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:26]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
+                    "Note": "星魂武器能够伤害不具有实体的生物。星魂武器对虚体生物特别有效，而虚体生物几乎都对星魂武器有着弱点。不同于大部分实体物品，虚体生物可以碰触、握持并持用星魂武器。"
+                }
+            },
+            "greaterAstral": {
+                "Note": {
+                    "Note": "星魂武器能够伤害不具有实体的生物。星魂武器对虚体生物特别有效，而虚体生物几乎都对星魂武器有着弱点。不同于大部分实体物品，虚体生物可以碰触、握持并持用星魂武器。高等星魂武器造成的精魂伤害忽视目标的精魂抗力。",
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:36]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
+                },
+                "Name": "高等星魂"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -7310,7 +7333,9 @@
         "PreciousMaterialDawnsilverDescription": "朝银因其轻巧、耐用和对恶魔与兽化人的特效而闻名。它有着和银一样的色泽但更轻。朝银武器和护甲在伤害对银有弱点的生物时可以视为银制。朝银制的金属物品比钢铁制的要轻：物品负载降低1（若正常负载为1，则变为L，对于正常为L的物品来说无效果）。朝银制物品的价格基于物品正常的负载，而非朝银减少过后的负载，不过朝银减少负载的计算，在其它因体型而对物品负载的进行的调整之前。",
         "PreciousMaterialDuskwoodDescription": "夕木是一种非常轻的木头，发现其原生于阿维斯坦南方中心地带的原始森林中；它如同乌木一般暗色，不同点是会显露出淡紫色来。夕木物品的负载降低1（若正常负载为1，则变为L，对于正常为L的物品来说无效果）。夕木制物品的价格基于物品正常的负载，而非夕木减少过后的负载，不过夕木减少负载的计算，在其它因体型而对物品负载的进行的调整之前。",
         "TraitHeldOneTwoHands": "单手或双手持握",
-        "Formula": "公式"
+        "Formula": "公式",
+        "TraitDescriptionNindoru": "灵堕魔是混乱邪恶的魔族，诞生于转世灵魂轮回的腐化中，并生活在物质位面。尽管他们的外观元素让他们看上去像是不死生物，但他们实际上是活着的存在。大多数灵堕魔具有黑暗视觉，且免疫死亡效果，对银具有弱点，并且拥有通过思想具现物体或生物的力量。",
+        "TraitNindoru": "灵堕魔"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
@@ -7350,7 +7375,8 @@
             "weapon": "武器",
             "treasure": "宝物",
             "spellcastingEntry": "法术列表",
-            "campaignFeature": "战役特征"
+            "campaignFeature": "战役特征",
+            "shield": "盾牌"
         }
     }
 }
