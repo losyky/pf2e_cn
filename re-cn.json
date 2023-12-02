@@ -104,6 +104,9 @@
             "ElementEmbodied": {
                 "WaterPushPullNote": "附加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离}或拉近10尺",
                 "AirPushNote": "附加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离}10尺"
+            },
+            "WormForm": {
+                "PurpleWorm": "紫虫"
             }
         },
         "BombNotes": {
@@ -1111,7 +1114,9 @@
                 "Shield": "选择盾牌",
                 "LevelOneAncestryFeat": "选择一个1级族裔专长",
                 "UntamedForm": "选择一种无羁形态效果",
-                "Trait": "选择特征"
+                "Trait": "选择特征",
+                "Color": "选择颜色。",
+                "Form": "选择形态。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -2194,6 +2199,24 @@
                 "ElementalMatter": "元素之形",
                 "PromptTwo": "选择第二种变形",
                 "PromptThree": "选择第三种变形"
+            },
+            "SpiritPower": {
+                "Love": {
+                    "Love": "深爱",
+                    "Trusted": "信任",
+                    "Label": "一位你信任或深爱的盟友在你30尺内"
+                }
+            },
+            "LitItem": "{item}已被点亮",
+            "Feat": {
+                "Forager": {
+                    "Note": "在使用生存技能求生时，若你的检定结果比成功更糟，改为获得成功。你可以为多个生物提供足以维生的生存条件。"
+                }
+            },
+            "SaveCriticalFailureToFailure": {
+                "FailureHalfDamage": {
+                    "Will": "当你在意志豁免中获得大失败时，你转而获得失败作为结果。若你在抵御造成伤害的效果时，意志豁免获得失败，你只收到一半伤害。"
+                }
             }
         },
         "RuleElement": {
@@ -2404,7 +2427,9 @@
             "Skinless": "无皮时",
             "Jar": "在罐子里",
             "Treasure": "在财宝中",
-            "BoundHome": "身处所连结的房屋中时"
+            "BoundHome": "身处所连结的房屋中时",
+            "ImpersonatePeasantOrLaborer": "乔装成农民或劳工",
+            "Moonlight": "月光下"
         },
         "OracleCurses": {
             "Label": {
@@ -2468,7 +2493,8 @@
                 },
                 "DamageType": "伤害类型",
                 "PriorityHint": "优先级决定了规则元素的执行顺序。优先级较低的规则元素会先执行。",
-                "Slug": "标识符"
+                "Slug": "标识符",
+                "Opacity": "不透明度"
             },
             "Note": {
                 "Outcome": "成果",
@@ -2723,6 +2749,23 @@
             },
             "CyclopsBully": {
                 "TerrorizingSwing": "如果一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}并受伤，它受到额外2d10点伤害并陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+            },
+            "NopperaBo": {
+                "Impersonator": {
+                    "SneakAttack": "偷袭",
+                    "AttackOfOpportunity": "反应打击",
+                    "AbilityPrompt": "选择乔装变形能力"
+                }
+            },
+            "Nindoru": {
+                "Meokdan": {
+                    "BoneClub": {
+                        "Label": "具现骨制棍棒",
+                        "New": "新的骨制棍棒",
+                        "ShatteredLabel": "破碎骨制棍棒",
+                        "Shattered": "破碎骨制棍棒"
+                    }
+                }
             }
         },
         "UI": {
@@ -3124,8 +3167,24 @@
                 "AllMagicalDamage": "所有魔法伤害",
                 "PersistentPoison": "持续毒素",
                 "RangedWeaponAttacks": "远程武器攻击",
-                "PhysicalRangedAttacks": "物理远程攻击"
+                "PhysicalRangedAttacks": "物理远程攻击",
+                "MagicalDuskwood": "魔法夕木",
+                "VoidZonKuthonFollowers": "宗-库山信徒造成的虚能伤害",
+                "ImpulseFireFrom": "从{origin}来源涌动火焰"
             }
+        },
+        "Color": {
+            "Black": "黑色",
+            "Blue": "蓝色",
+            "Cyan": "蓝绿",
+            "Green": "绿色",
+            "Indigo": "靛蓝",
+            "Magenta": "品红",
+            "Orange": "橙色",
+            "Red": "红色",
+            "Violet": "紫罗兰",
+            "White": "白色",
+            "Yellow": "黄色"
         }
     }
 }
