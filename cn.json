@@ -2341,7 +2341,7 @@
         "ArmorClassLabel": "防护等级",
         "ArmorClassShortLabel": "AC",
         "ArmorDexLabel": "敏捷调整值上限",
-        "ArmorGreaterResilientRune": "高等抗力",
+        "ArmorGreaterResilientRune": "高等韧性",
         "ArmorGreaterStrikingRune": "高等强击",
         "ArmorGroupChain": "链甲",
         "ArmorGroupCloth": "布甲",
@@ -2349,31 +2349,31 @@
         "ArmorGroupLabel": "武器组",
         "ArmorGroupLeather": "皮甲",
         "ArmorGroupPlate": "板甲",
-        "ArmorMajorResilientRune": "上等抗力",
+        "ArmorMajorResilientRune": "上等韧性",
         "ArmorMajorStrikingRune": "上等强击",
         "ArmorPotencyRune1": "护甲潜力 (+1)",
         "ArmorPotencyRune2": "护甲潜力 (+2)",
         "ArmorPotencyRune3": "护甲潜力 (+3)",
         "ArmorPotencyRune4": "护甲潜力 (+4)",
-        "ArmorPropertyRuneAcidResistant": "抵抗能量-酸",
+        "ArmorPropertyRuneAcidResistant": "抗能-酸蚀",
         "ArmorPropertyRuneAntimagic": "抗魔",
         "ArmorPropertyRuneBitter": "苦味 Bitter",
-        "ArmorPropertyRuneColdResistant": "抵抗能量-寒冷",
+        "ArmorPropertyRuneColdResistant": "抗能-寒冷",
         "ArmorPropertyRuneDeathless": "拒亡",
         "ArmorPropertyRuneDread": "次等恐惧 Dread",
-        "ArmorPropertyRuneElectricityResistant": "抵抗能量-电击",
+        "ArmorPropertyRuneElectricityResistant": "抗能-电击",
         "ArmorPropertyRuneEthereal": "灵化",
-        "ArmorPropertyRuneFireResistant": "抵抗能量-火焰",
+        "ArmorPropertyRuneFireResistant": "抗能-火焰",
         "ArmorPropertyRuneFortification": "护命",
         "ArmorPropertyRuneGlamered": "无相",
-        "ArmorPropertyRuneGreaterAcidResistant": "高等抵抗能量-酸",
-        "ArmorPropertyRuneGreaterColdResistant": "高等抵抗能量-寒冷",
-        "ArmorPropertyRuneGreaterElectricityResistant": "高等抵抗能量-电击",
-        "ArmorPropertyRuneGreaterFireResistant": "高等抵抗能量-火焰",
+        "ArmorPropertyRuneGreaterAcidResistant": "高等抗能-酸蚀",
+        "ArmorPropertyRuneGreaterColdResistant": "高等抗能-寒冷",
+        "ArmorPropertyRuneGreaterElectricityResistant": "高等抗能-电击",
+        "ArmorPropertyRuneGreaterFireResistant": "高等抗能-火焰",
         "ArmorPropertyRuneGreaterFortification": "高等护命",
         "ArmorPropertyRuneGreaterInvisibility": "高等隐形",
-        "ArmorPropertyRuneGreaterReady": "高等准备",
-        "ArmorPropertyRuneGreaterWinged": "高等飞翼",
+        "ArmorPropertyRuneGreaterReady": "高等常备",
+        "ArmorPropertyRuneGreaterWinged": "高等插翅",
         "ArmorPropertyRuneGreaterShadow": "高等暗影",
         "ArmorPropertyRuneGreaterSlick": "高等滑溜",
         "ArmorPropertyRuneGreaterStanching": "高等止血",
@@ -2382,7 +2382,7 @@
         "ArmorPropertyRuneMajorShadow": "上等暗影",
         "ArmorPropertyRuneMajorSlick": "上等滑溜",
         "ArmorPropertyRuneMajorStanching": "上等止血",
-        "ArmorPropertyRuneReady": "准备",
+        "ArmorPropertyRuneReady": "常备",
         "ArmorPropertyRuneRockBraced": "岩石加固",
         "ArmorPropertyRuneShadow": "暗影",
         "ArmorPropertyRuneSinisterKnight": "外道骑士",
@@ -2390,8 +2390,8 @@
         "ArmorPropertyRuneSoaring": "翱翔",
         "ArmorPropertyRuneStanching": "止血",
         "ArmorPropertyRuneTrueStanching": "真实止血",
-        "ArmorPropertyRuneWinged": "飞翼",
-        "ArmorResilientRune": "抗力",
+        "ArmorPropertyRuneWinged": "插翅",
+        "ArmorResilientRune": "韧性",
         "ArmorSpeedLabel": "速度 减值",
         "ArmorStrengthLabel": "力量需求",
         "ArmorStrengthRequiredLabel": "力量需求",
@@ -3778,7 +3778,7 @@
             "KeepHigher": "重骰并使用较高结果",
             "KeepLower": "重骰并使用较低结果"
         },
-        "ResiliencyRuneLabel": "抗力符文",
+        "ResiliencyRuneLabel": "韧性符文",
         "ResistancesLabel": "抗力",
         "ResolvePointsShortLabel": "决意",
         "ResolveTitle": "你拥有决意点的数量",
@@ -5873,7 +5873,7 @@
                 }
             },
             "brilliant": {
-                "Name": "光辉符文",
+                "Name": "辉煌符文",
                 "Note": {
                     "criticalSuccess": "重击时，目标必须通过一次成功的@Check[type:fortitude|dc:29|name:Brilliant Rune]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded} 一轮。"
                 }
@@ -5882,7 +5882,7 @@
                 "Name": "传导符文"
             },
             "corrosive": {
-                "Name": "酸蚀符文",
+                "Name": "侵蚀符文",
                 "Note": {
                     "criticalSuccess": "重击时，目标的盔甲受到[[/r 3d6[acid] #Corrosive Rune]]{3d6酸蚀}伤害(计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。"
                 }
@@ -5909,13 +5909,13 @@
                 "Name": "充能符文"
             },
             "extending": {
-                "Name": "延展符文"
+                "Name": "延拓符文"
             },
             "fanged": {
                 "Name": "獠牙符文"
             },
             "fearsome": {
-                "Name": "可怖符文",
+                "Name": "畏怖符文",
                 "Note": {
                     "criticalSuccess": "当你用此武器重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
                 }
@@ -5947,14 +5947,14 @@
                 "Name": "高等血煞符文"
             },
             "greaterBrilliant": {
-                "Name": "高等光辉符文",
+                "Name": "高等辉煌符文",
                 "Note": {
                     "criticalSuccess": "该武器造成的伤害忽略目标的火焰、活力或命能的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
                     "success": "该武器造成的伤害忽略目标的火焰、活力或命能的抗力。"
                 }
             },
             "greaterCorrosive": {
-                "Name": "高等酸蚀符文",
+                "Name": "高等侵蚀符文",
                 "Note": {
                     "criticalSuccess": "该武器造成的酸蚀伤害无视酸蚀抗力。 重击时，目标的盔甲受到[[/r 6d6[acid]]]{6d6酸蚀} 伤害 (计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。",
                     "success": "该武器造成的酸蚀伤害无视酸蚀抗力。"
@@ -5973,13 +5973,13 @@
                 }
             },
             "greaterExtending": {
-                "Name": "高等延展符文"
+                "Name": "高等延拓符文"
             },
             "greaterFanged": {
                 "Name": "高等獠牙符文"
             },
             "greaterFearsome": {
-                "Name": "高等可怖符文",
+                "Name": "高等畏怖符文",
                 "Note": {
                     "criticalSuccess": "当你用此武器重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。"
                 }
@@ -6044,9 +6044,9 @@
                 "Name": "拖拽符文"
             },
             "holy": {
-                "Name": "神圣符文",
+                "Name": "圣洁符文",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪恶生物重击成功<br /><strong>效果</strong>你获得该邪恶生物等级双倍的HP。这是一个活力、命能、治疗效果。"
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪秽生物重击成功<br /><strong>效果</strong>你获得该邪秽生物等级双倍的HP。这是一个活力、命能、治疗效果。"
                 }
             },
             "hopeful": {
@@ -6103,9 +6103,9 @@
                 }
             },
             "unholy": {
-                "Name": "邪恶符文",
+                "Name": "邪秽符文",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每天一次)<br /><strong>触发</strong>你用该武器对一善良生物的攻击骰重击<br /><strong>效果</strong> 符文蚀刻的武器每有一个武器伤害骰，目标就受到1d8点@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续 Bleed Damage 持续流血伤害} 。"
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每天一次)<br /><strong>触发</strong>你用该武器对一圣洁生物的攻击骰重击<br /><strong>效果</strong> 符文蚀刻的武器每有一个武器伤害骰，目标就受到1d8点@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害} 。"
                 }
             },
             "vorpal": {
@@ -6206,7 +6206,7 @@
                 }
             },
             "astral": {
-                "Name": "星界",
+                "Name": "星魂",
                 "Note": {
                     "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:26]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
                     "Note": "星魂武器能够伤害不具有实体的生物。星魂武器对虚体生物特别有效，而虚体生物几乎都对星魂武器有着弱点。不同于大部分实体物品，虚体生物可以碰触、握持并持用星魂武器。"
@@ -6218,6 +6218,12 @@
                     "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:36]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
                 },
                 "Name": "高等星魂"
+            },
+            "decaying": {
+                "Name": "腐败"
+            },
+            "greaterDecaying": {
+                "Name": "高等腐败"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -7032,9 +7038,9 @@
         "TraitEtchedOntoASlashingMeleeWeapon": "蚀刻到挥砍近战武器上",
         "TraitEtchedOntoAPiercingOrSlashingMeleeWeapon": "蚀刻到穿刺或挥砍近战武器上",
         "TraitEtchedOntoAWeaponWOAxiomaticRune": "蚀刻到没有公理符文的武器上",
-        "TraitEtchedOntoAWeaponWOUnholyRune": "蚀刻到没有邪恶符文的武器上",
+        "TraitEtchedOntoAWeaponWOUnholyRune": "蚀刻到没有邪秽符文的武器上",
         "TraitEtchedOntoAWeaponWOAnarchicRune": "蚀刻到没有混沌符文的武器上",
-        "TraitEtchedOntoAWeaponWOHolyRune": "蚀刻到没有神圣符文的武器上",
+        "TraitEtchedOntoAWeaponWOHolyRune": "蚀刻到没有圣洁符文的武器上",
         "Category": "类别",
         "TraitAppliedToMediumHeavyArmor": "应用于中甲或重甲",
         "TraitDescriptionVishkanya": "形似蛇并拥有猛毒的族裔。",
@@ -7300,13 +7306,13 @@
         "TraitDescriptionFocus": "聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。",
         "TraitDescriptionSubtle": "具有微妙特性的法术可以在没有咒语的情况下施展，并且没有明显的表现。",
         "TraitFocus": "聚能",
-        "TraitUnholy": "邪恶",
+        "TraitUnholy": "邪秽",
         "WeaponGroupCrossbow": "弩",
-        "TraitHoly": "神圣",
+        "TraitHoly": "圣洁",
         "TraitEtchedOntoAShield": "蚀刻到盾牌上",
-        "TraitDescriptionUnholy": "具有邪恶特性的效果与残酷和罪恶的强大魔法力量相关。它们通常对圣洁生物产生更强的影响。具有这种特性的生物对邪恶事物投入极大热忱，并且常常对圣洁事物有弱点。如果具有对邪恶的弱点的生物使用邪恶物品或效果，就会受到其弱点的伤害。",
-        "TraitDescriptionUndead": "这些生物曾经是活物，但死后被虚空能量和腐蚀灵魂的邪恶魔法注入。当它们的生命值降为0时，亡灵生物将被摧毁。亡灵生物受到活力能量的伤害，被虚空能量治愈，并且无法从活力治愈效果中获益。",
-        "TraitDescriptionHoly": "具有神圣特性的效果与仁慈和美德的强大魔法力量相联系。它们经常对邪恶生物产生更强的影响。具有此特性的生物对神圣事业忠诚，常常对邪恶事物有弱点。如果一个具有对神圣事物有弱点的生物使用了神圣物品或效果，则会受到其弱点的伤害",
+        "TraitDescriptionUnholy": "具有邪秽（Unholy）特征的效果与残酷和罪恶的强大魔法力量相关。它们通常对圣洁生物产生更强的影响。具有这种特征的生物对邪恶事物投入极大热忱，并且常常对圣洁事物有弱点。如果具有对邪秽弱点的生物使用邪秽物品或效果，就会受到其弱点的伤害。",
+        "TraitDescriptionUndead": "这些生物曾经是活物，但死后被虚能和腐蚀灵魂的邪秽（Unholy）魔法注入。当它们的生命值降为0时，亡灵生物将被摧毁。亡灵生物受到命能的伤害，被虚能治愈，并且无法从命能治疗效果中获益。",
+        "TraitDescriptionHoly": "具有圣洁（Holy）特征的效果与仁慈和美德的强大魔法力量相联系。它们经常对邪秽（Unholy）生物产生更强的影响。具有此特性的生物对圣洁事业忠诚，常常对邪秽事物有弱点。如果一个具有对圣洁弱点的生物使用了圣洁物品或效果，则会受到其弱点的伤害",
         "TraitAffixedToAShieldOrWeapon": "附着在盾牌或武器上",
         "SavingThrow": "豁免骰",
         "TraitAffixedToMetalWeapon": "附在金属武器上",
@@ -7335,7 +7341,8 @@
         "TraitHeldOneTwoHands": "单手或双手持握",
         "Formula": "公式",
         "TraitDescriptionNindoru": "灵堕魔是混乱邪恶的魔族，诞生于转世灵魂轮回的腐化中，并生活在物质位面。尽管他们的外观元素让他们看上去像是不死生物，但他们实际上是活着的存在。大多数灵堕魔具有黑暗视觉，且免疫死亡效果，对银具有弱点，并且拥有通过思想具现物体或生物的力量。",
-        "TraitNindoru": "灵堕魔"
+        "TraitNindoru": "灵堕魔",
+        "ArmorPropertyRuneRaiment": "衣装"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
@@ -7350,7 +7357,8 @@
             "eidolon": "幻灵",
             "character": "玩家角色",
             "vehicle": "载具",
-            "party": "队伍"
+            "party": "队伍",
+            "army": "军队"
         },
         "Item": {
             "feat": "专长/特征",
