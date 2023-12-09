@@ -911,7 +911,7 @@
             "AnimalSkin": {
                 "BracersOfArmor": "野兽之肤w/盔甲护腕",
                 "ExplorersClothing": "野兽之肤w/探险者服装",
-                "MageArmor": "野兽之肤w/法师护甲"
+                "MageArmor": "野兽之肤w/法术护甲"
             },
             "DancingShield": {
                 "Prompt": "选择盾牌AC加值"
@@ -952,7 +952,7 @@
                     "Sovereign": "君龙"
                 },
                 "ScalesOfTheDragon": {
-                    "MageArmor": "龙之鳞w/法师护甲",
+                    "MageArmor": "龙之鳞w/法术护甲",
                     "BracersOfArmor": "龙之鳞w/盔甲护腕",
                     "ExplorersClothing": "龙之鳞w/探险者服装"
                 },
@@ -1373,7 +1373,7 @@
             "MountainStance": {
                 "BracersOfArmor": "山岳架势w/盔甲护腕",
                 "ExplorersClothing": "山岳架势w/探索者服装",
-                "MageArmor": "山岳架势w/法师护甲"
+                "MageArmor": "山岳架势w/法术护甲"
             },
             "PackAttack": {
                 "Label": "目标位于至少两个盟友的射程内"
