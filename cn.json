@@ -887,7 +887,8 @@
                 "Specific": {
                     "Hint": "将此护甲标记为<i>特殊魔法护甲</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
                     "Label": "特殊魔法护甲"
-                }
+                },
+                "UnequippedHint": "由于未被装备，护甲负载增加。"
             },
             "CannotAddType": "无法将{type}物品添加到此角色。",
             "Condition": {
@@ -896,7 +897,8 @@
                     "Dialog": {
                         "Add": "赋予持续伤害",
                         "Title": "持续伤害 ({actor})",
-                        "Remove": "移除持续伤害"
+                        "Remove": "移除持续伤害",
+                        "Invalid": "该配方无效。"
                     },
                     "Name": "持续伤害 ({formula} {damageType})",
                     "NameWithDC": "持续伤害({formula} DC{dc})",
@@ -1305,7 +1307,8 @@
                         "TurnStart": "在回合开始时"
                     },
                     "Range": "范围"
-                }
+                },
+                "Plural": "影响"
             },
             "Feat": {
                 "OnlyLevel1": "必须在1级时选取",
@@ -1409,7 +1412,7 @@
                     "NLight": "{light}L",
                     "WithLight": "{bulk}, {light}L",
                     "Label": "重量",
-                    "HeldOrStowed": "负重（持握/储存）"
+                    "HeldOrStowed": "负载（持握/储存）"
                 },
                 "GeneratedName": {
                     "ThreePropertiesMaterial": "{property1} {property2} {property3} {material} {base}",
@@ -3005,7 +3008,8 @@
                     "Roll": {
                         "Verb": "骰掷伤害/治疗",
                         "Noun": "伤害/治疗骰"
-                    }
+                    },
+                    "Label": "双方均有"
                 }
             }
         },
@@ -6630,7 +6634,7 @@
             "Unidentified": "未鉴定",
             "TraitGMNote": "注意：这个特征对于玩家是隐藏的。",
             "UnidentifiedDescription": "{item}的性质暂不清楚。",
-            "UnidentifiedHint": "未鉴定时更改此物品显示的基本详细信息。",
+            "UnidentifiedHint": "未鉴定时更改玩家所见的物品详情。",
             "UnidentifiedItem": "不寻常的{item}",
             "UnidentifiedType": {
                 "Amulet": "护身符",
@@ -6658,7 +6662,8 @@
                 "Shoes": "鞋子",
                 "Substance": "物质",
                 "Tool": "工具"
-            }
+            },
+            "DisplayDetails": "显示详情"
         },
         "loot": {
             "EditLootLabel": "设置战利品？",
@@ -7342,7 +7347,9 @@
         "Formula": "公式",
         "TraitDescriptionNindoru": "灵堕魔是混乱邪恶的魔族，诞生于转世灵魂轮回的腐化中，并生活在物质位面。尽管他们的外观元素让他们看上去像是不死生物，但他们实际上是活着的存在。大多数灵堕魔具有黑暗视觉，且免疫死亡效果，对银具有弱点，并且拥有通过思想具现物体或生物的力量。",
         "TraitNindoru": "灵堕魔",
-        "ArmorPropertyRuneRaiment": "衣装"
+        "ArmorPropertyRuneRaiment": "衣装",
+        "BiographyAnathema": "禁忌",
+        "BiographyEdicts": "典范"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
