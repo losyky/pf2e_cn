@@ -69,7 +69,8 @@
                 "Quill": "羽尖 Quill",
                 "Boulder": "巨岩 Boulder",
                 "Seed": "种子 Seed",
-                "AqueousFist": "水之拳 Aqueous Fist"
+                "AqueousFist": "水之拳 Aqueous Fist",
+                "Leaves": "叶子"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -106,7 +107,12 @@
                 "AirPushNote": "附加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离}10尺"
             },
             "WormForm": {
-                "PurpleWorm": "紫虫"
+                "PurpleWorm": "紫虫",
+                "Hybrid": "混合"
+            },
+            "NatureIncarnate": {
+                "GreenMan": "绿境公",
+                "Kaiju": "怪兽"
             }
         },
         "BombNotes": {
@@ -2766,6 +2772,13 @@
                         "Shattered": "破碎骨制棍棒"
                     }
                 }
+            },
+            "Shell": {
+                "BrokenShell": "破损外壳",
+                "CriticalHit": "外壳被重击破损"
+            },
+            "FacetboundCascader": {
+                "EnergyCharge": "能量充能"
             }
         },
         "UI": {
