@@ -1035,6 +1035,9 @@
                 },
                 "TacticiansHelm": {
                     "ReactiveStrikeNote": "成功@UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{反应打击 Reactive Strike}时，增加一点充能：@UUID[Compendium.pf2e.equipment-effects.Item.nLwtvyLZZTZgFmKq]{效果: 战术家头盔充能}"
+                },
+                "HumbugPocket": {
+                    "ConcealAnObjectLabel": "行骗腰包 (往腰包里隐藏物件)"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1122,7 +1125,8 @@
                 "UntamedForm": "选择一种无羁形态效果",
                 "Trait": "选择特征",
                 "Color": "选择颜色。",
-                "Form": "选择形态。"
+                "Form": "选择形态。",
+                "Feature": "选择一种特性。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1332,6 +1336,64 @@
                 },
                 "DistractingFeint": {
                     "Text": "当一个生物被你虚招而陷入措手不及时，它同时在察觉检定和反射豁免上获得-2环境减值。@UUID[Compendium.pf2e.feat-effects.Item.7hRgBo0fRQBxMK7g]{效果：分身虚招}"
+                },
+                "Debilitation": {
+                    "Bloody": {
+                        "Label": "流血衰弱",
+                        "Note": "目标承受@Damage[3d6[bleed]]伤害。"
+                    },
+                    "PreventFlanking": {
+                        "Label": "无法夹击",
+                        "Note": "目标无法夹击，也无法帮助盟友夹击。@UUID[Compendium.pf2e.feat-effects.Item.JUgx48XHMz4QM4Ir]{效果: 衰弱 (无夹击)}"
+                    },
+                    "PrecisionDamage": {
+                        "Label": "精准伤害",
+                        "Note": "目标从你的攻击中额外受到 2d6 精准伤害。@UUID[Compendium.pf2e.feat-effects.Item.ZZXIUvZqqIxkMfYa]{效果: 精准衰弱}"
+                    },
+                    "PreventReactions": {
+                        "Label": "无法进行反应动作",
+                        "Note": "目标无法使用反应动作。"
+                    },
+                    "PreventStep": {
+                        "Label": "无法快步",
+                        "Note": "目标无法快步"
+                    },
+                    "ReduceCover": {
+                        "Label": "减少掩蔽",
+                        "Note": "目标不能从举起盾牌、弱效掩蔽、或标准掩蔽中获得AC的环境加值；而从高等掩蔽或寻找掩蔽中获得AC的环境加值只有 +2 。"
+                    },
+                    "SecondLabel": "第二衰弱",
+                    "Stupefied": {
+                        "Label": "呆滞",
+                        "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}"
+                    },
+                    "SpeedPenalty": {
+                        "Note": "目标的速度受到-10尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.yBTASi3FvnReAwHy]{效果: 衰弱打击}",
+                        "Label": "速度减值"
+                    },
+                    "Weakness": {
+                        "Note": "由你选择，令目标获得5点钝击、穿刺或挥砍弱点。@UUID[Compendium.pf2e.feat-effects.Item.Rgt9hH3W1oh9dvku]{效果: 恶毒衰弱}",
+                        "Label": "弱点"
+                    },
+                    "Enfeebled": {
+                        "Label": "力竭",
+                        "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
+                    },
+                    "Title": "衰弱 <span class=\"action-glyph\">f</span>",
+                    "Trigger": "<strong>触发</strong> 你的打击命中一个措手不及的生物并造成伤害。",
+                    "Clumsy": {
+                        "Label": "笨拙",
+                        "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
+                    },
+                    "Critical": {
+                        "Label": "致命衰弱",
+                        "Note": "目标需要进行@Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)]豁免对抗你的职业DC。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，直到你的下个回合结束。</p><p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，直到你的下个回合结束。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，直到你的下个回合结束。</p>"
+                    },
+                    "Label": "衰弱",
+                    "OffGuard": {
+                        "Label": "措手不及",
+                        "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    }
                 }
             },
             "Sorcerer": {
@@ -2217,12 +2279,28 @@
             "Feat": {
                 "Forager": {
                     "Note": "在使用生存技能求生时，若你的检定结果比成功更糟，改为获得成功。你可以为多个生物提供足以维生的生存条件。"
+                },
+                "FeyInfluence": {
+                    "Gremlin": "小魔怪",
+                    "Monarch": "帝王蝶",
+                    "Unicorn": "独角兽",
+                    "CatSith": "猫妖精",
+                    "CursedBluebird": "受诅青鸟",
+                    "Dryad": "木妖精",
+                    "Faun": "法翁羊人",
+                    "Anteater": "食蚁兽"
                 }
             },
             "SaveCriticalFailureToFailure": {
                 "FailureHalfDamage": {
                     "Will": "当你在意志豁免中获得大失败时，你转而获得失败作为结果。若你在抵御造成伤害的效果时，意志豁免获得失败，你只收到一半伤害。"
                 }
+            },
+            "ActivatedItem": "{item} 已启动",
+            "CharmOfResistance": {
+                "Greater": "高等{damageType}抗力咒符",
+                "Major": "上等{damageType}抗力咒符",
+                "Standard": "{damageType}抗力咒符"
             }
         },
         "RuleElement": {
