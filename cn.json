@@ -1290,7 +1290,7 @@
                 "Badge": {
                     "Type": {
                         "value": "固定值",
-                        "formula": "公式",
+                        "formula": "配方",
                         "counter": "计数"
                     },
                     "Add": "添加徽标",
@@ -2747,16 +2747,16 @@
                 "FormulaExpended": "已准备的配方已经被制作。"
             },
             "CraftQuantityTitle": "数量",
-            "ExpendFormula": "花费公式",
+            "ExpendFormula": "花费配方",
             "ToggleFreeCrafting": "切换免费制作",
             "ToggleQuickAlchemy": "高速炼金术",
-            "UndeletableTooltip": "这个制作公式是另一个物品的一部分，不能单独删除。",
+            "UndeletableTooltip": "这个制作配方是另一个物品的一部分，不能单独删除。",
             "QuickAddTitle": "添加此配方到一个或多个制造列表中",
             "NoEligibleEntry": "未找到符合条件的制造列表。",
-            "RemoveFormulaDialogTitle": "删除公式",
-            "UnprepareFormulaDialogQuestion": "是否确定要取消{name}准备的公式？",
-            "RemoveFormulaDialogQuestion": "是否确定要删除 {name}的公式？",
-            "UnprepareFormulaDialogTitle": "取消准备的公式"
+            "RemoveFormulaDialogTitle": "删除配方",
+            "UnprepareFormulaDialogQuestion": "是否确定要取消{name}准备的配方？",
+            "RemoveFormulaDialogQuestion": "是否确定要删除 {name}的配方？",
+            "UnprepareFormulaDialogTitle": "取消准备的配方"
         },
         "CraftDCTitle": "DC",
         "CraftItemTitle": "手艺",
@@ -3247,7 +3247,7 @@
         "FormulaListEmpty": "空（拖放配方/物品至此）",
         "FormulaPlaceholder": "公式",
         "FormulaSheet": {
-            "DescriptionUnknown": "这个配方完全充满了火柴人图画、不明液体污迹、儿童信件中毫无意义的押韵，以及其他看似随机的标记。那一定是地精做的，对你来说毫无意义。<hr><strong>注:</strong>该公式引用的是一个缺失或无效的项。",
+            "DescriptionUnknown": "这个配方完全充满了火柴人图画、不明液体污迹、儿童信件中毫无意义的押韵，以及其他看似随机的标记。那一定是地精做的，对你来说毫无意义。<hr><strong>注:</strong>该配方引用的是一个缺失或无效的项。",
             "NameEmpty": "空的配方",
             "NamePrefix": "{name}的配方",
             "NameUnknown": "未知配方"
@@ -7344,7 +7344,7 @@
         "PreciousMaterialDawnsilverDescription": "朝银因其轻巧、耐用和对恶魔与兽化人的特效而闻名。它有着和银一样的色泽但更轻。朝银武器和护甲在伤害对银有弱点的生物时可以视为银制。朝银制的金属物品比钢铁制的要轻：物品负载降低1（若正常负载为1，则变为L，对于正常为L的物品来说无效果）。朝银制物品的价格基于物品正常的负载，而非朝银减少过后的负载，不过朝银减少负载的计算，在其它因体型而对物品负载的进行的调整之前。",
         "PreciousMaterialDuskwoodDescription": "夕木是一种非常轻的木头，发现其原生于阿维斯坦南方中心地带的原始森林中；它如同乌木一般暗色，不同点是会显露出淡紫色来。夕木物品的负载降低1（若正常负载为1，则变为L，对于正常为L的物品来说无效果）。夕木制物品的价格基于物品正常的负载，而非夕木减少过后的负载，不过夕木减少负载的计算，在其它因体型而对物品负载的进行的调整之前。",
         "TraitHeldOneTwoHands": "单手或双手持握",
-        "Formula": "公式",
+        "Formula": "配方",
         "TraitDescriptionNindoru": "灵堕魔是混乱邪恶的魔族，诞生于转世灵魂轮回的腐化中，并生活在物质位面。尽管他们的外观元素让他们看上去像是不死生物，但他们实际上是活着的存在。大多数灵堕魔具有黑暗视觉，且免疫死亡效果，对银具有弱点，并且拥有通过思想具现物体或生物的力量。",
         "TraitNindoru": "灵堕魔",
         "ArmorPropertyRuneRaiment": "衣装",
