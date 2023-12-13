@@ -1741,6 +1741,29 @@
                     "None": "无剩余使用次数",
                     "Use": "使用",
                     "Label": "使用次数"
+                },
+                "Category": {
+                    "wand": "魔杖",
+                    "ammo": "弹药",
+                    "catalyst": "触媒",
+                    "drug": "毒品",
+                    "elixir": "灵药",
+                    "fulu": "符箓",
+                    "gadget": "小装置",
+                    "mutagen": "突变药剂",
+                    "oil": "油",
+                    "other": "其他",
+                    "poison": "毒素",
+                    "potion": "药水",
+                    "scroll": "卷轴",
+                    "snare": "圈套",
+                    "talisman": "护符",
+                    "toolkit": "工具包"
+                },
+                "Damage": {
+                    "Remove": "移除伤害/治疗",
+                    "Add": "添加伤害/治疗",
+                    "Label": "伤害/治疗"
                 }
             },
             "Container": {
