@@ -826,8 +826,8 @@
                     "Prompt": "选择狂暴的能量抗力类型。"
                 },
                 "Spirit": {
-                    "PositiveDamage": "活力伤害",
-                    "NegativeDamage": "虚空伤害",
+                    "PositiveDamage": "命能伤害",
+                    "NegativeDamage": "虚能伤害",
                     "ToggleLabel": "精魂狂暴"
                 },
                 "Superstition": {
@@ -1785,7 +1785,7 @@
                 "BladeAllyRune": "为利刃盟友选择一个性能符文",
                 "TargetReaction": "目标触发了你的神卫反应",
                 "EvilDamage": "精魂伤害",
-                "NegativeDamage": "虚空伤害",
+                "NegativeDamage": "虚能伤害",
                 "AuraOfFaith": {
                     "Toggle": "本轮对邪秽（Unholy）生物的首次打击"
                 },
@@ -2710,7 +2710,7 @@
             },
             "SkyDragon": {
                 "DivineLightningGood": "神圣雷霆-精魂伤害",
-                "DivineLightningPositive": "神圣雷霆-活力伤害"
+                "DivineLightningPositive": "神圣雷霆-命能伤害"
             },
             "LemureSubservience": {
                 "Defend": "防守",
