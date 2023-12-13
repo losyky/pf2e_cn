@@ -2965,9 +2965,9 @@
                 "splash": "泼溅",
                 "untyped": "无名",
                 "fire": "火",
-                "spirit": "心灵",
-                "void": "虚空",
-                "vitality": "活力"
+                "spirit": "精魂",
+                "void": "虚能",
+                "vitality": "命能"
             },
             "PersistentTooltip": "持续{damageType}",
             "IncreasedFrom": "从 {original} 增加到最少一个",
@@ -4165,7 +4165,7 @@
                 "AutomaticBonus": {
                     "Title": "自动增长加值",
                     "Name": "自动成长加值",
-                    "Hint": "需要重新加载：除技能/巅峰能力外，支持自动增长加值变量规则。",
+                    "Hint": "启用自动成长加值变体规则。技能效力需要手动管理。",
                     "Choices": {
                         "noABP": "不使用ABP规则",
                         "ABPFundamentalPotency": "ABP：适用基础符文",
@@ -5953,8 +5953,8 @@
             "greaterBrilliant": {
                 "Name": "高等辉煌符文",
                 "Note": {
-                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、活力或命能的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
-                    "success": "该武器造成的伤害忽略目标的火焰、活力或命能的抗力。"
+                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、善良或命能的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
+                    "success": "该武器造成的伤害忽略目标的火焰、善良或命能的抗力。"
                 }
             },
             "greaterCorrosive": {
@@ -6050,7 +6050,7 @@
             "holy": {
                 "Name": "圣洁符文",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪秽生物重击成功<br /><strong>效果</strong>你获得该邪秽生物等级双倍的HP。这是一个活力、命能、治疗效果。"
+                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪秽生物重击成功<br /><strong>效果</strong>你获得该邪秽生物等级双倍的HP。这是一个善良、命能、治疗效果。"
                 }
             },
             "hopeful": {
@@ -7215,8 +7215,8 @@
         "TraitDescriptionInfusion": "具有注能特征的动作会调整你的御能师涌动。你必须在使用注能特征的动作之后紧接着使用想要调整的涌动。如果你使用注能动作之后，没有紧跟着使用涌动，而是使用了其他动作（包括自由动作或反应动作），则你就会浪费注能动作的好处。任何由注能动作带来的额外效果都是涌动效果的一部分，而不属于注能动作本身。",
         "TraitDescriptionComposite": "复合涌动是多重元素的组合。只有当你的统御元素全部符合该涌动所具有的特征，你才能获得带有复合特征的涌动。",
         "TraitDescriptionKineticist": "这表示御能师职业的能力。",
-        "TraitVoid": "虚空",
-        "TraitVitality": "活力",
+        "TraitVoid": "虚能",
+        "TraitVitality": "命能",
         "LanguagePyric": "火族语",
         "LanguagePetran": "土族语",
         "TraitDescriptionRelic": "具有圣物特征的物品随着其持用者的力量而增长。",
@@ -7245,8 +7245,8 @@
         "TraitDescriptionFigurehead": "雕刻艺术作为船只的装饰已经司空见惯，而一些大胆的船员们有时会为他们的船只寻觅魔法雕像作为船头装饰。",
         "TraitAffixedToMeleeWeapon": "附着到一把近战武器",
         "LanguageShory": "硕理语",
-        "TraitDescriptionVitality": "带有此特征的效果用来自创生熔炉的能量治愈活物，对活物造成活力伤害，或操控活力能量。",
-        "TraitDescriptionVoid": "带有此特征的效果用虚空能量治愈不死生物，对活物造成虚空伤害，或操控虚空能量。",
+        "TraitDescriptionVitality": "带有此特征的效果用来自创生熔炉的能量治愈活物，对活物造成命能伤害，或操控命能能量。",
+        "TraitDescriptionVoid": "带有此特征的效果用虚能能量治愈不死生物，对活物造成虚能伤害，或操控虚能能量。",
         "TraitDescriptionWood": "带有木特征的效果召唤或操控木。操控木的效果在无木区域中无法产生效果。带有此特征的生物主要由木头组成，或者与魔法木有联系。",
         "TraitDescriptionRadiation": "一种危险、通常有毒的散发物，通常来自辐射性矿物。",
         "ArmorPropertyRuneMajorSwallowSpike": "上等吞针",
@@ -7272,8 +7272,8 @@
         "Pathfinder": "寻路者",
         "InitiativeIsNow": "{name}的先攻值现在为{value}!",
         "ArmorPropertyRuneMalleable": "锻型",
-        "TraitVersatileVoid": "多用虚空",
-        "TraitVersatileVitality": "多用活力",
+        "TraitVersatileVoid": "多用虚能",
+        "TraitVersatileVitality": "多用命能",
         "DeleteQuestion": "你确定要删掉{name}吗？",
         "Publication": {
             "Title": "标题",
@@ -7337,7 +7337,7 @@
         "TraitNaari": "火元素裔",
         "TraitNephilim": "异界裔",
         "TraitHefty2": "沉重2",
-        "TraitVersatileSpirit": "多用心灵",
+        "TraitVersatileSpirit": "多用精魂",
         "TraitVersatileX": "多用{x}",
         "PreciousMaterialDawnsilver": "朝银",
         "PreciousMaterialDuskwood": "夕木",
