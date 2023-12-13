@@ -1308,7 +1308,10 @@
                     },
                     "Range": "范围"
                 },
-                "Plural": "影响"
+                "Plural": "影响",
+                "Disintegrated": {
+                    "Description": "可能这是一种可治疗的状态。"
+                }
             },
             "Feat": {
                 "OnlyLevel1": "必须在1级时选取",
