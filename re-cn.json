@@ -483,7 +483,7 @@
                     "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[bludgeoning]]]{2非致命钝击溅射伤害}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[bludgeoning]]]{1非致命钝击溅射伤害}"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[bludgeoning]]]{1非致命钝击溅射伤害}。"
                 }
             },
             "GooGrenade": {
