@@ -1678,7 +1678,7 @@
                     "Drop": "拖拽效果至此",
                     "Applied": "{effect} 已被应用。"
                 },
-                "Plural": "属性"
+                "Plural": "能力"
             },
             "CampaignFeature": {
                 "CampaignLabel": "战役"
@@ -1737,7 +1737,7 @@
             "Consumable": {
                 "Plural": "消耗品",
                 "Uses": {
-                    "AutoDestroy": "自毁",
+                    "AutoDestroy": "用后销毁",
                     "None": "无剩余使用次数",
                     "Use": "使用",
                     "Label": "使用次数"
@@ -2151,7 +2151,7 @@
                     "Encounter": "在遭遇中"
                 },
                 "Simple": "简单",
-                "Plural": "危难"
+                "Plural": "危害"
             },
             "NPC": {
                 "Configure": {
