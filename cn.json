@@ -1310,7 +1310,8 @@
                 },
                 "Plural": "影响",
                 "Disintegrated": {
-                    "Description": "可能这是一种可治疗的状态。"
+                    "Description": "可能这是一种可治疗的状态。",
+                    "Name": "被解离 Disintegrated"
                 }
             },
             "Feat": {
