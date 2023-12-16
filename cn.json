@@ -6206,7 +6206,8 @@
             "greaterRooting": {
                 "Note": {
                     "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">逃脱 DC 28</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
-                }
+                },
+                "Name": "高等生根"
             },
             "greaterGiantKilling": {
                 "Note": {
@@ -6218,12 +6219,14 @@
             "rooting": {
                 "Note": {
                     "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"23\">逃脱 DC 23</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
-                }
+                },
+                "Name": "生根"
             },
             "majorRooting": {
                 "Note": {
                     "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"34\">逃脱 DC 34</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
-                }
+                },
+                "Name": "上等生根"
             },
             "giantKilling": {
                 "Name": "杀戮巨人",
@@ -6234,7 +6237,8 @@
             "trueRooting": {
                 "Note": {
                     "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"41\">逃脱 DC 41</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
-                }
+                },
+                "Name": "真实生根"
             },
             "astral": {
                 "Name": "星魂",
