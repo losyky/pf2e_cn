@@ -758,8 +758,8 @@
                     "ElementalAttack": "Elemental Attack",
                     "ShieldCarrier": "Shield Carrier",
                     "SneakAttack": "Sneak Attack",
-                    "WeaponPerk": "武器提升",
-                    "WeaponPerkPrompt": "选择一种武器提升"
+                    "WeaponPerk": "Weapon Perk",
+                    "WeaponPerkPrompt": "Select a Weapon Perk"
                 }
             },
             "PaleStranger": {
