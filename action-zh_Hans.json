@@ -42,8 +42,8 @@
             },
             "Climb": {
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong> 你攀爬、穿越或安全下落5尺，每20尺的陆行速度会再加上5尺（大多数玩家总计会是10尺）。",
-                    "success": "<strong>成功</strong> 你攀爬、穿越或安全下落，每20尺的陆行速度下落5尺（对于大多数玩家角色一共为5尺，如果你的速度低于20尺，则至少为5尺）。",
+                    "criticalSuccess": "<strong>大成功</strong> 你沿着斜坡移动，最大移动距离增加5尺。",
+                    "success": "<strong>成功</strong> 你沿着斜坡移动。",
                     "criticalFailure": "<strong>大失败</strong> 你摔落了。如果你是在稳定地面上攀爬，你就会摔倒并@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}."
                 },
                 "Title": "攀爬"
@@ -179,7 +179,7 @@
             "ForceOpen": {
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong>你强行弄开了门，窗或是容器，并且可以选择不损坏它们。",
-                    "success": "<strong>成功</strong> 你强行弄开了门，窗或是容器，但对象狭窄处于@UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken} 状态。如果GM认为对象的制作和材质异常的坚固，可能这些物品只会受到一定的伤害，而非直接陷入破损状态。",
+                    "success": "<strong>成功</strong> 你强行弄开了门，窗或是容器，但对象获得@UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken} 状态。如果GM认为对象的制作和材质异常的坚固，可能这些物品只会受到一定的伤害，而非直接陷入破损状态。",
                     "criticalFailure": "<strong>大失败</strong> 你把门，窗或锁弄卡住了。在之后的破拆检定上承受-2环境减值。"
                 },
                 "Title": "破拆",
@@ -448,11 +448,12 @@
             },
             "Swim": {
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong> 你可以在水中游动10尺，再加上5尺/你每拥有20尺陆地移动速度（对大多数PC来说，15尺）。",
-                    "success": "<strong>成功</strong>你可以在水中游动5尺，再加上5尺/你每拥有20尺陆地移动速度（对大多数PC来说，15尺）。",
+                    "criticalSuccess": "<strong>大成功</strong> 你在水中移动，最大移动距离增加5尺。",
+                    "success": "<strong>成功</strong> 你在水中移动。",
                     "criticalFailure": "<strong>大失败</strong> 你是一条咸鱼，没有游动。如果你在屏息，你还会失去1轮憋气。"
                 },
-                "Title": "游泳"
+                "Title": "游泳",
+                "Description": "<p>你尝试进行运动（Athletics）检定在水中移动最远10尺距离。GM会根据水的湍急程度或危险性来确定DC。大多数风平浪静的情况下你会自动获得大成功。如果你的陆地移动速度至少为40尺，那么你的速度每比20尺多20尺，你的最大移动距离就能再增加5尺。</p><p>如果你在水中结束回合，但在该回合中的游泳动作没能成功，则由GM决定你会下沉10尺还是被水冲走。如果你在回合结束前的最后一个动作才进入水中，则这条规则不适用。</p><p><strong>大成功</strong> 你在水中移动，最大移动距离增加5尺。<br><strong>成功</strong> 你在水中移动。<br><strong>大失败</strong> 你没能移动。如果你屏息（第437页），你会失去1轮的空气。</p><section class=\"sample-tasks\"><h2>游泳任务范例 Sample Swim Tasks</h2><p><strong>未受训 Untrained</strong> 湖泊或其他平静水域</p><p><strong>受训 Trained</strong> 流淌的水域，比如河流</p><p><strong>专家 Expert</strong> 湍急河流</p><p><strong>大师 Master</strong> 惊涛骇浪</p><p><strong>传奇 Legendary</strong> 旋涡、瀑布</p></section>"
             },
             "Tamper": {
                 "Notes": {
