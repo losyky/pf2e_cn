@@ -1339,7 +1339,13 @@
                     "Label": "关键属性选项",
                     "Hint": "由职业提供额外的关键属性选项"
                 },
-                "Plural": "专长"
+                "Plural": "专长",
+                "Subfeatures": {
+                    "ProficiencyIncreases": {
+                        "Label": "熟练等级提升",
+                        "NoOptionSelected": "选择一个需要提升的熟练项。"
+                    }
+                }
             },
             "Heritage": {
                 "AncestryNotFound": "找不到引用的族裔模板。",
