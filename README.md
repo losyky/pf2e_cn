@@ -15,7 +15,9 @@
 - Discord 服务器： https://discord.gg/7UrkEg634m
 
 ### 如何参与到翻译中
-本项目使用 [Weblate](https://hosted.weblate.org/) 进行翻译工作，使用 Weblate 无需拥有任何 Git 使用知识，只需在界面上进行中英对照翻译即可！
+本项目使用 [Weblate](http://150.109.5.239/) 进行翻译工作，使用 Weblate 无需拥有任何 Git 使用知识，只需在界面上进行中英对照翻译即可！<br/>
+### 或者可以选择...
+[支持我们](support-us.md)
 
 <a href="http://150.109.5.239/engage/pf2/">
 <img src="http://150.109.5.239/widgets/pf2/-/open-graph.png" alt="翻译状态" />
