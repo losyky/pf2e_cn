@@ -1236,7 +1236,7 @@
                     "Prompt": "选择元素之心的种类"
                 },
                 "ForgeBlessedShot": {
-                    "Note": "忽略目标的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}隐蔽状态，以及目标的弱效、标准、强效掩蔽。"
+                    "Note": "忽略目标的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}隐蔽状态，以及目标的次等、标准、高等掩蔽。"
                 },
                 "KneelForNoGod": {
                     "Note": "当你对抗神术时，用失败代替大失败。"
@@ -1360,7 +1360,7 @@
                     },
                     "ReduceCover": {
                         "Label": "减少掩蔽",
-                        "Note": "目标不能从举起盾牌、弱效掩蔽、或标准掩蔽中获得AC的环境加值；而从高等掩蔽或寻找掩蔽中获得AC的环境加值只有 +2 。"
+                        "Note": "目标不能从举起盾牌、次等掩蔽、或标准掩蔽中获得AC的环境加值；而从高等掩蔽或寻找掩蔽中获得AC的环境加值只有 +2 。"
                     },
                     "SecondLabel": "第二衰弱",
                     "Stupefied": {
