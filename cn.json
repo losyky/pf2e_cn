@@ -1589,7 +1589,7 @@
                 "PlaceMeasuredTemplate": "放置{size}-{unit} {shape}",
                 "Variants": {
                     "DeleteDialogTitle": "删除法术变体",
-                    "DeleteDialogText": "确定要删除“{variantName}”吗？",
+                    "DeleteDialogText": "确定要删除{variantName}吗？",
                     "LabelPlural": "法术变体",
                     "SelectVariantLabel": "选择变体",
                     "SelectOtherVariantLabel": "选择其他变体",
@@ -1597,7 +1597,7 @@
                 },
                 "Warning": {
                     "InvalidLevel": "尝试添加法术{name}至 {targetLevel}，但法术基础环级为{baseLevel}。",
-                    "WrongSpellType": "无法将 {spellType} 法术添加到此施法目录。"
+                    "WrongSpellType": "无法将 {type} 法术添加到此施法目录。"
                 },
                 "LevelN": "法术{level}",
                 "Counteract": {
@@ -1948,7 +1948,8 @@
                     },
                     "SavingThrow": {
                         "Title": "豁免骰"
-                    }
+                    },
+                    "HigherUpgrade": "{ability}已将此熟练等级提升至{rank}。"
                 },
                 "HandsOccupied": "手已占用",
                 "Shield": {
@@ -2035,7 +2036,7 @@
                     "Label": "感官",
                     "RangeLabel": "距离",
                     "WithAcuity": "{sense} ({acuity})",
-                    "WithAcuityAndRange": "{sense} ({acuity} {range} 尺)"
+                    "WithAcuityAndRange": "{sense} ({acuity}) {range} 尺"
                 },
                 "AbilityModifiers": "属性调整值",
                 "AttributeModifiers": "属性调整值",
@@ -4451,8 +4452,8 @@
         "SpellComponentShortV": "V",
         "SpellComponentsLabel": "成分",
         "SpellSlotEmpty": "空位（拖入法术）",
-        "SpellSlotNotEnoughError": "没有足够的法术位，因此无法在{level}上施放{name}",
-        "SpellSlotExpendedError": "无法施放{name}，法术已被消耗",
+        "SpellSlotNotEnoughError": "无法在{rank}上施放 {spell} :没有足够的法术位。",
+        "SpellSlotExpendedError": "无法施放{spell}，法术位已耗尽。",
         "SpellPrimaryCheckLabel": "主要检定",
         "SpellSecondaryChecksLabel": "次要检定",
         "SpellSecondaryCasters": "次要施法者",
