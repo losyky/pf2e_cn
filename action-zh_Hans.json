@@ -30,7 +30,14 @@
                     "criticalFailure": "<strong>大失败</strong> 你将会摔倒，你的回合结束。"
                 },
                 "Title": "平衡",
-                "Description": "<p>你移动穿越一个狭窄或是高低不平的平面，尝试一次特技 检定对抗所需的保持平衡检定DC。 当处于狭窄或是高低不平的·平面时，你处于措手不及状态。</p><p><strong>大成功</strong> 你可以以完整的移动速度移动。<br><strong>成功</strong> 你可以以完整的移动速度移动，但视为穿越困难地形（每5尺花费10尺的移动）。<br><strong>失败</strong> 你必须保持静止来维持身体的平衡（技能动作被浪费掉），否则你摔倒。如果你摔倒，你的行动回合立刻结束。<br><strong>大失败</strong> 你摔倒，你的行动回合立刻结束。</p><section class=\"sample-tasks\"><h2>范例保持平衡情景</h2><p></p><p><strong>未受训</strong> 满地老树根，遍布大小岩块的石地</p><p><strong>受训</strong> 木制脚手架</p><p><strong>专家</strong> 一坑松散的小碎石</p><p><strong>大师</strong> 钢丝，冰面</p><p><strong>传奇</strong> 剃刀之缘，正在半空坠落中的建筑物残片</p></section>"
+                "Description": "<p>你移动穿越一个狭窄或是高低不平的平面，尝试一次特技 检定对抗所需的保持平衡检定DC。 当处于狭窄或是高低不平的·平面时，你处于措手不及状态。</p><p><strong>大成功</strong> 你可以以完整的移动速度移动。<br><strong>成功</strong> 你可以以完整的移动速度移动，但视为穿越困难地形（每5尺花费10尺的移动）。<br><strong>失败</strong> 你必须保持静止来维持身体的平衡（技能动作被浪费掉），否则你摔倒。如果你摔倒，你的行动回合立刻结束。<br><strong>大失败</strong> 你摔倒，你的行动回合立刻结束。</p>",
+                "SampleTasks": {
+                    "Untrained": "满地老树根，遍布大小岩块的石地",
+                    "Trained": "木制脚手架",
+                    "Expert": "一坑松散的小碎石",
+                    "Master": "钢丝，冰面",
+                    "Legendary": "剃刀之缘，正在半空坠落中的建筑物残片"
+                }
             },
             "BonMot": {
                 "Notes": {
@@ -46,7 +53,15 @@
                     "success": "<strong>成功</strong> 你沿着斜坡移动。",
                     "criticalFailure": "<strong>大失败</strong> 你摔落了。如果你是在稳定地面上攀爬，你就会摔倒并@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}."
                 },
-                "Title": "攀爬"
+                "Title": "攀爬",
+                "SampleTasks": {
+                    "Untrained": "梯子，陡坡，低矮多枝桠的树",
+                    "Trained": "船帆索具，绳子，普通的树",
+                    "Expert": "有一些细小支撑点和坑洼的墙壁",
+                    "Master": "有抓手处的天花板，普通石墙",
+                    "Legendary": "光可鉴人的墙壁"
+                },
+                "Description": "<p><strong>需求</strong> 你的双手都空着。</p><hr><p>你可以通过一个运动检定，在一个非地平表面上爬上、爬下或左右爬，最大距离为5尺。除非你本身就拥有攀爬速度，否则在攀爬时你处于 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。GM会根据这个攀爬平面的特性和环境因素来决定攀爬检定的DC；对于轻而易举就能攀爬的斜坡，检定可能会自动获得大成功。如果你的陆地速度是40尺或更高，超过20尺的部分每增加20尺，最大距离就会增加5尺。</p><p><strong>大成功</strong>你沿着斜坡移动，最大距离会增加5尺。<br><strong>成功</strong>你沿着斜坡移动。<br><strong>大失败</strong>你掉了下来。如果你是在从平地上开始攀爬，你摔倒并处于@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 prone}状态。</p>"
             },
             "Coerce": {
                 "Notes": {
@@ -666,7 +681,7 @@
                     "UnknownVariant": "进行急救所使用的变体{variant}未知，请使用{variants}之一。"
                 },
                 "Title": "进行急救",
-                "Description": "<p>你对处于濒死或流血的相邻生物进行急救。如果一个生物既处于濒死状态又处于流血状态，你需要在掷骰前选择其中之一来治疗。你可以再次进行急救来尝试治疗其他效果。</p><ul><li><strong>稳定伤势</strong> 对一个生命值为0且处于濒死状态的生物进行医疗检定。DC等于5+该生物复苏掷骰的DC（通常为15+该生物的濒死值）。</li><li><strong>止血</strong> 对受到持续流血伤害（第409页）的生物进行医疗检定。DC通常等于导致出血效果的DC。</li></ul><p></strong>成功</strong> 如果你试图稳定伤势，目标会失去濒死状态（但仍处于@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态）。如果你试图止血，目标会受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。</p><p><strong>大失败</strong> 如果你试图稳定伤势，目标的濒死值会增加1点。如果你试图止血，目标会立刻受到与其持续流血伤害相等的伤害。</p>"
+                "Description": "<p>你对处于濒死或流血的相邻生物进行急救。如果一个生物既处于濒死状态又处于流血状态，你需要在掷骰前选择其中之一来治疗。你可以再次进行急救来尝试治疗其他效果。</p><ul><li><strong>稳定伤势</strong> 对一个生命值为0且处于濒死状态的生物进行医疗检定。DC等于5+该生物复苏掷骰的DC（通常为15+该生物的濒死值）。</li><li><strong>止血</strong> 对受到持续流血伤害（第409页）的生物进行医疗检定。DC通常等于导致出血效果的DC。</li></ul><p><strong>成功</strong> 如果你试图稳定伤势，目标会失去濒死状态（但仍处于@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态）。如果你试图止血，目标会受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。</p><p><strong>大失败</strong> 如果你试图稳定伤势，目标的濒死值会增加1点。如果你试图止血，目标会立刻受到与其持续流血伤害相等的伤害。</p>"
             },
             "CreateForgery": {
                 "ForgedDocument": {
@@ -771,7 +786,7 @@
             },
             "ArrestAFall": {
                 "Title": "着陆 Arrest A Fall",
-                "Description": "<p>你选择尝试一次特技检定或反射豁免来缓冲坠落。DC通常为15，但空气湍流或因素可能会导致DC提高。</p><p><strong>成功</strong> 你不会受到本次坠落伤害。</p>",
+                "Description": "<p><strong>触发</strong> 你处于坠落中。</p><p><strong>需求</strong>你拥有飞行速度。</p><hr><p>你选择尝试一次特技检定或反射豁免来缓冲坠落。DC通常为15，但空气湍流或因素可能会导致DC提高。</p><p><strong>成功</strong> 你不会受到本次坠落伤害。</p>",
                 "Notes": {
                     "success": "<strong>成功</strong> 你不会受到本次坠落伤害。"
                 }
@@ -781,7 +796,7 @@
                 "Description": "<p>你将目光从危险上移开，比如美杜莎的凝视。在对抗如美杜莎的石化凝视这种需要你看着某生物或物体的视觉能力的豁免中，你获得+2环境加值。你的转移目光会持续到你下一回合开始。</p>"
             },
             "Burrow": {
-                "Description": "<p>你在泥地、沙地或类似软性地面中掘地前进。你无法掘地穿越岩石地面或其他比泥地更密实的地面，除非你有能力允许你在这种地面下掘地前进。</p>",
+                "Description": "<p><strong>需求</strong> 你拥有掘地速度。</p><hr><p>你在泥地、沙地或类似软性地面中掘地前进，最多移动等于你掘地速度的距离。你无法掘地穿越岩石地面或类似比泥地更密实的地面，除非你有能力允许你在这种地面下掘地前进。</p>",
                 "Title": "掘地 Burrow"
             },
             "CoverTracks": {
