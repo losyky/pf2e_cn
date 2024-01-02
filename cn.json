@@ -1916,7 +1916,15 @@
                 },
                 "Blurb": "{level}级{ancestry} {class}",
                 "Biography": {
-                    "ToggleVisibility": "切换对其他玩家的可见性"
+                    "ToggleVisibility": "切换对其他玩家的可见性",
+                    "Anathema": {
+                        "Add": "添加禁忌",
+                        "Delete": "删除禁忌"
+                    },
+                    "Edicts": {
+                        "Add": "添加典范",
+                        "Delete": "删除典范"
+                    }
                 },
                 "Proficiency": {
                     "Attack": {
@@ -1937,6 +1945,9 @@
                     },
                     "Spellcasting": {
                         "AttackDC": "攻击掷骰与DC"
+                    },
+                    "SavingThrow": {
+                        "Title": "豁免骰"
                     }
                 },
                 "HandsOccupied": "手已占用",
@@ -1954,7 +1965,15 @@
                 },
                 "Crafting": {
                     "Cost": "花费"
-                }
+                },
+                "Language": {
+                    "Unallocated": {
+                        "Label": "未配置",
+                        "Tooltip": "选择该角色习得的一种语言。"
+                    },
+                    "OverLimit": "此语言超出了该角色所能掌握的语言数量。"
+                },
+                "CreateFeat": "创建专长"
             },
             "Creature": {
                 "Alliance": {
