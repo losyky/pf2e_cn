@@ -7,17 +7,17 @@
                 },
                 "Notes": {
                     "NoTarget": "<strong>体型差异</strong>如果目标体型比你大一级，你将在检定中受到-2环境减值，如果体型更大，将受到-4环境减值。如果目标体型比你小一级，你将在检定中受到+2环境加值，如果体型更小，将受到+4环境加值。",
-                    "criticalSuccess": "<strong>大成功</strong> 你摔倒敌人并且魔法能量压制住它。生物被@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{击倒}，@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩}一轮，并且受到数值等于[[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]]{2d6 加上你力量调整值} 的伤害。敌人不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱} 或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}。",
-                    "success": "<strong>成功</strong> 你摔倒敌人。生物被 @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{击倒}并且受到数值等于你 [[/r @abilities.str.mod # Damage: Arcane Slam]]{力量调整值}的伤害。敌人不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}.",
+                    "criticalSuccess": "<strong>大成功</strong> 你摔倒敌人并且魔法能量压制住它。生物被@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{击倒 Prone}，@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}一轮，并且受到数值等于[[/r 2d6 + @abilities.str.mod # Damage: Arcane Slam]]{2d6加上你力量调整值}的伤害。敌人不再因你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。",
+                    "success": "<strong>成功</strong> 你摔倒敌人。该生物被@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{击倒 Prone}并且受到数值等于你[[/r @abilities.str.mod # Damage: Arcane Slam]]{力量调整值}的伤害。敌人不再因你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。",
                     "failure": "<strong>失败</strong> 你无法摔倒敌人，但是你依然抓住它。",
-                    "criticalFailure": "<strong>大失败</strong> 敌人逃脱，不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱} 或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}。"
+                    "criticalFailure": "<strong>大失败</strong> 敌人逃脱，不再@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。"
                 },
                 "Title": "奥术摔砸"
             },
             "AvoidNotice": {
                 "Notes": {
-                    "success": "<strong>成功</strong> 对于这些生物，你在移动过程中保持@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 状态，且移动结束后仍不会被发现。<br/><br/>有关详细信息参见 @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 动作。",
-                    "criticalSuccess": "<strong>大成功</strong> 对于这些生物，你在移动过程中保持@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 状态，且移动结束后仍不会被发现。<br/><br/>有关详细信息参见 @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 动作。"
+                    "success": "<strong>成功</strong> 对于这些生物，你在移动过程中保持@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 状态，且移动结束后仍不会被发现。<br/><br/>有关详细信息参见@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}动作。",
+                    "criticalSuccess": "<strong>大成功</strong> 对于这些生物，你在移动过程中保持@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 状态，且移动结束后仍不会被发现。<br/><br/>有关详细信息参见@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}动作。"
                 },
                 "Title": "避人耳目",
                 "Description": "<p>你尝试检定来避开他人的注意，并以半速进行旅行。若你具有迅捷潜行专长，你能够以全速进行移动而非原本的半速，但你在这么做的时候无法使用其他探索行动。若你具有 传奇潜行者 专长，就能以全速移动，而且可以使用第二个探索行动。若你在开始一次遭遇时正处于避人耳目期间，则通常先要投掷一次隐秘检定来取代察觉检定，并以此来判断你的先攻以及敌人是否注意到了你（基于对方的察觉DC，就如同正常的潜行判定一般，此判断忽略对方的先攻结果）。</p>"
@@ -51,7 +51,7 @@
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong> 你沿着斜坡移动，最大移动距离增加5尺。",
                     "success": "<strong>成功</strong> 你沿着斜坡移动。",
-                    "criticalFailure": "<strong>大失败</strong> 你摔落了。如果你是在稳定地面上攀爬，你就会摔倒并@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}."
+                    "criticalFailure": "<strong>大失败</strong> 你从坡上坠落下去。如果你从平坦的地表开始攀爬，你会坠落且在落地时@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
                 },
                 "Title": "攀爬",
                 "SampleTasks": {
@@ -126,19 +126,19 @@
             },
             "CreateADiversion": {
                 "DistractingWords": {
-                    "Title": "让敌人分神 - 言语干扰"
+                    "Title": "分心话语"
                 },
                 "Gesture": {
-                    "Title": "让敌人分神 - 姿势干扰"
+                    "Title": "姿势"
                 },
                 "Notes": {
-                    "success": "<strong>成功</strong>对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，并可以开始尝试@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 。这个效果持续到你的回合结束或是进行任何除了@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide} ，@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，然后你立刻对其变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。如果你进行的是其他动作，那么则是你在行动之前立刻变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}，除非GM有其他的看法。",
+                    "success": "<strong>成功</strong> 对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，并可以开始尝试@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 。这个效果持续到你的回合结束或是进行任何除了@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}，@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，然后你立刻对其变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。如果你进行的是其他动作，那么则是你在行动之前立刻变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}，除非GM有其他的看法。",
                     "failure": "<strong>失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。",
                     "criticalSuccess": "<strong>大成功</strong>对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，并可以开始尝试@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 。这个效果持续到你的回合结束或是进行任何除了@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide} ，@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak} 或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，然后你立刻对其变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}。如果你进行的是其他动作，那么则是你在行动之前立刻变得@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}，除非GM有其他的看法。",
                     "criticalFailure": "<strong>大失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。"
                 },
                 "Trick": {
-                    "Title": "让敌人分神 - 唬骗"
+                    "Title": "花招"
                 },
                 "Warning": {
                     "UnknownVariant": "让敌人分神所使用的变体{variant}未知，请使用{variants}之一。"
@@ -157,7 +157,7 @@
             "Disarm": {
                 "EffectLabel": "使用握不稳的武器",
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong> 你将对手手中的物品打掉在了地上。这件物品掉落在这个对手占据的空间中。",
+                    "criticalSuccess": "<strong>大成功</strong> 你将该物品从目标手中击落。它会掉落在目标占据空间的地面上。",
                     "success": "<strong>成功</strong> 你震得目标虎口发麻。你接下来对该目标的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定时承受-2环境减值。该生物可以用交互动作握紧物品来结束此效果；否则只要该生物还握持着该物品，效果就一直持续。<br>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{效果：卸武（成功）}",
                     "criticalFailure": "<strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态 。"
                 },
@@ -194,7 +194,7 @@
             "ForceOpen": {
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong>你强行弄开了门，窗或是容器，并且可以选择不损坏它们。",
-                    "success": "<strong>成功</strong> 你强行弄开了门，窗或是容器，但对象获得@UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken} 状态。如果GM认为对象的制作和材质异常的坚固，可能这些物品只会受到一定的伤害，而非直接陷入破损状态。",
+                    "success": "<strong>成功</strong> 你强行弄开了门，窗或是容器，但对象获得@UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken}状态。如果GM认为对象的制作和材质异常的坚固，可能这些物品只会受到一定的伤害，而非直接陷入破损状态。",
                     "criticalFailure": "<strong>大失败</strong> 你把门，窗或锁弄卡住了。在之后的破拆检定上承受-2环境减值。"
                 },
                 "Title": "破拆",
@@ -318,7 +318,7 @@
                     "criticalSuccess": "<strong>大成功</strong> 你的战技成功了。"
                 },
                 "Title": "空中机动",
-                "Description": "<p>你可以在飞行中尝试通过特技检定来执行特殊的机动动作。GM会判断你可以被允许进行何种类型的机动，但通常这些行动不会让你能够移动超过你的飞行速度的距离。</p><p><strong>成功</strong> 你成功执行机动。<br><strong>失败</strong> 你未能成功机动。GM会根据你原本希望使用的机动动作来决定失败造成的后果（比如，尝试顶着强风飞行如果失败，会让你被吹飞到别的地方）。<br><strong>大失败</strong> 如同失败，但后果更加恐怖。</p><section class=\"sample-tasks\"><h2>范例空中机动情景</h2><p><strong>受训</strong> 高角度起飞或降落</p><p><strong>专家</strong> 顶风飞行，凌空盘旋</p><p><strong>大师</strong> 空中高速调头</p><p><strong>传奇</strong> 在风暴中飞行</p></section>"
+                "Description": "<p>你可以在飞行中尝试通过特技检定来执行特殊的机动动作。GM会判断你可以被允许进行何种类型的机动，但通常这些行动不会让你能够移动超过你的飞行速度的距离。</p><p><strong>成功</strong> 你成功执行机动。<br><strong>失败</strong> 你未能成功机动。GM会根据你原本希望使用的机动动作来决定失败造成的后果（比如，尝试顶着强风飞行如果失败，会让你被吹飞到别的地方）。<br><strong>大失败</strong> 如同失败，但后果更加恐怖。</p>"
             },
             "PickALock": {
                 "Notes": {
@@ -411,7 +411,7 @@
                     "success": "<strong>成功</strong> 你还算清楚自己的位置，至少不会迷失方向。如果你所处的地理区域拥有东南西北四极，你大致知道东南西北的方向。"
                 },
                 "Title": "辨别方向 Sense Direction",
-                "Description": "<p>你可以利用太阳、星辰的位置，地理特征和植被特征，或者动物种群的习性在野外辨认方向。通常，你每天只需进行一次生存检定，但根据具环境条件和环境变化也可能需要频繁掷骰。GM会决定DC以及该行动需要多长时间（通常需要一分钟左右）。环境尤为特殊或者你不熟悉的地方可能需要你拥有最低熟练度才能辨别方向。在没有指南针的情况下，你辨别方向的检定会受到-2物品减值。</p><hr /><p><strong>大成功</strong> 你非常清楚自己所处的位置。如果你所处的环境有基本方位的概念，你就能准确地辨别方位。</p><p><strong>成功</strong> 你拥有足够的方向感，不会陷入迷失的绝望。如果你所处的环境有基本方位的概念，你会对周遭方位有个大致模糊的了解。<section class=\"sample-tasks\"><h2>辨别方向任务 Sense Direction Tasks</h2><p>><strong>未受训</strong> 通过太阳确定基本方位</p><p><strong>受训</strong> 在森林中找到一条杂草丛生的小路</p><p><strong>专家</strong> 在树篱迷宫中穿行</p><p><strong>大师</strong> 穿过错综复杂的迷宫或没有明显地标的沙漠</p><p><strong>传奇</strong> 在不断变化的梦境国度中导航</p></section>"
+                "Description": "<p>你可以利用太阳、星辰的位置，地理特征和植被特征，或者动物种群的习性在野外辨认方向。通常，你每天只需进行一次生存检定，但根据具环境条件和环境变化也可能需要频繁掷骰。GM会决定DC以及该行动需要多长时间（通常需要一分钟左右）。环境尤为特殊或者你不熟悉的地方可能需要你拥有最低熟练度才能辨别方向。在没有指南针的情况下，你辨别方向的检定会受到-2物品减值。</p><p><strong>大成功</strong> 你非常清楚自己所处的位置。如果你所处的环境有基本方位的概念，你就能准确地辨别方位。</p><p><strong>成功</strong> 你拥有足够的方向感，不会陷入迷失的绝望。如果你所处的环境有基本方位的概念，你会对周遭方位有个大致模糊的了解。</p>"
             },
             "SenseMotive": {
                 "Notes": {
@@ -428,8 +428,8 @@
             },
             "Shove": {
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong>你可以将敌人打退10尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。",
-                    "success": "<strong>成功</strong> 你可以将敌人打退5尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。",
+                    "criticalSuccess": "<strong>大成功</strong> 你成功将目标推撞至10尺外。你可以立刻跟随它@UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{行走 Stride}，但必须在同一方向上移动相同的距离。",
+                    "success": "<strong>成功</strong> 你成功将目标推撞至5尺外。你可以立刻跟随它@UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{行走 Stride}，但必须在同一方向上移动相同的距离。",
                     "criticalFailure": "<strong>大失败</strong> 你自己失去平衡摔倒了，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态 。"
                 },
                 "Title": "猛推"
@@ -451,7 +451,7 @@
                     "criticalFailure": "<strong> 大失败</strong> 你被卡住了。如果是这样，你可以花费1分钟时间尝试另一次特技技能检定（DC不变）。只要你不继续骰出大失败，你就不再被卡在原地。"
                 },
                 "Title": "挤入空间",
-                "Description": "<p>你全神贯注地尝试将自己挤进一个比你的身体大不了多少的狭窄空间。只有非常，非常小的空间会需要你进行此类检定；许多“普通的”狭窄空间通常只有困难地形的程度，并不需要你使用技能检定就可以尝试通过。</p><p><strong>大成功</strong> 你可以以每分钟10尺的速度挤过去。<br><strong>成功</strong> 你可以以每分钟5尺的速度挤过去。<br><strong>大失败</strong> 你被卡住了。如果是这样，你可以花费1分钟时间尝试另一次特技技能检定（DC不变）。只要你不继续骰出大失败，你就不再被卡在原地。<section class=\"sample-tasks\"><h2>范例挤入空间情景<p><strong>受训</strong> 挤进一个差不多相当于你肩宽的空间</p><p><strong>大师</strong> 挤进差不多相当于你头宽的空间</p></section>"
+                "Description": "<p>你全神贯注地尝试将自己挤进一个比你的身体大不了多少的狭窄空间。只有非常，非常小的空间会需要你进行此类检定；许多“普通的”狭窄空间通常只有困难地形的程度，并不需要你使用技能检定就可以尝试通过。</p><p><strong>大成功</strong> 你可以以每分钟10尺的速度挤过去。<br><strong>成功</strong> 你可以以每分钟5尺的速度挤过去。<br><strong>大失败</strong> 你被卡住了。如果是这样，你可以花费1分钟时间尝试另一次特技技能检定（DC不变）。只要你不继续骰出大失败，你就不再被卡在原地。</p>"
             },
             "SteelYourResolve": {
                 "Title": "坚定你的决心",
@@ -468,7 +468,7 @@
                     "criticalFailure": "<strong>大失败</strong> 你是一条咸鱼，没有游动。如果你在屏息，你还会失去1轮憋气。"
                 },
                 "Title": "游泳",
-                "Description": "<p>你尝试进行运动（Athletics）检定在水中移动最远10尺距离。GM会根据水的湍急程度或危险性来确定DC。大多数风平浪静的情况下你会自动获得大成功。如果你的陆地移动速度至少为40尺，那么你的速度每比20尺多20尺，你的最大移动距离就能再增加5尺。</p><p>如果你在水中结束回合，但在该回合中的游泳动作没能成功，则由GM决定你会下沉10尺还是被水冲走。如果你在回合结束前的最后一个动作才进入水中，则这条规则不适用。</p><p><strong>大成功</strong> 你在水中移动，最大移动距离增加5尺。<br><strong>成功</strong> 你在水中移动。<br><strong>大失败</strong> 你没能移动。如果你屏息（第437页），你会失去1轮的空气。</p><section class=\"sample-tasks\"><h2>游泳任务范例 Sample Swim Tasks</h2><p><strong>未受训 Untrained</strong> 湖泊或其他平静水域</p><p><strong>受训 Trained</strong> 流淌的水域，比如河流</p><p><strong>专家 Expert</strong> 湍急河流</p><p><strong>大师 Master</strong> 惊涛骇浪</p><p><strong>传奇 Legendary</strong> 旋涡、瀑布</p></section>"
+                "Description": "<p>你尝试进行运动检定在水中移动最远10尺距离。GM会根据水的湍急程度或危险性来确定DC。大多数风平浪静的情况下你会自动获得大成功。如果你的陆地移动速度至少为40尺，那么你的速度每比20尺多20尺，你的最大移动距离就能再增加5尺。</p><p>如果你在水中结束回合，但在该回合中的游泳动作没能成功，则由GM决定你会下沉10尺还是被水冲走。如果你在回合结束前的最后一个动作才进入水中，则这条规则不适用。</p><p><strong>大成功</strong> 你在水中移动，最大移动距离增加5尺。<br><strong>成功</strong> 你在水中移动。<br><strong>大失败</strong> 你没能移动。如果你屏息，你会失去1轮的空气。</p>"
             },
             "Tamper": {
                 "Notes": {
@@ -486,7 +486,7 @@
                     "criticalSuccess": "<strong>大成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹。"
                 },
                 "Title": "追踪",
-                "Description": "<p>你可以以一半的@UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{旅行速度 Travel Speed}移动来追寻踪迹。如果追踪的掷骰成功，你可以继续以半速追寻踪迹，在1小时内无需额外进行检定。</p><p>一些情况下，你可能需要在遭遇中进行追踪。此时你的追踪是一个单动作，不具有探索特征，但由于情况紧急，所以你可能需要更频繁地掷骰。GM会决定你进行检定的频率。</p><p>当你开始追踪时，你需要进行生存检定，每隔一小时或者踪迹出现明显变化的时候重新追踪一次。GM会根据踪迹的新鲜程度、天气和地面材质决定该检定的DC。</p><section class=\"sample-tasks\"><h2>追踪任务范例 Sample Track Tasks</h2><p><strong>未受训</strong> 沿着道路行进的军队留下的踪迹</p><p><strong>受训</strong> 一头熊在平原上横冲直撞留下的相对较新的痕迹</p><p><strong>专家</strong> 一只敏捷的黑豹穿过丛林，但被雨水遮挡住了的踪迹</p><p><strong>大师</strong> 被冬雪遮盖的痕迹，老鼠或体型更小的生物留下的痕迹，或者光秃的岩石这类难以留下痕迹的表面上的踪迹</p><p><strong>传奇</strong> 风沙肆虐的沙漠中的旧踪迹，被大暴雪或飓风遮挡住的痕迹</p></section><p><strong>成功</strong> 你成功追寻到了踪迹，或者能够继续追踪之前跟随的踪迹。</p><p><strong>失败</strong> 你跟丢了，但可以在1小时后重新尝试。</p><p><strong>大失败</strong> 你跟丢了，24小时内无法重试。</p>"
+                "Description": "<p>你可以以一半的@UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{旅行速度 Travel Speed}移动来追寻踪迹。如果追踪的掷骰成功，你可以继续以半速追寻踪迹，在1小时内无需额外进行检定。</p><p>一些情况下，你可能需要在遭遇中进行追踪。此时你的追踪是一个单动作，不具有探索特征，但由于情况紧急，所以你可能需要更频繁地掷骰。GM会决定你进行检定的频率。</p><p>当你开始追踪时，你需要进行生存检定，每隔一小时或者踪迹出现明显变化的时候重新追踪一次。GM会根据踪迹的新鲜程度、天气和地面材质决定该检定的DC。</p><p><strong>成功</strong> 你成功追寻到了踪迹，或者能够继续追踪之前跟随的踪迹。</p><p><strong>失败</strong> 你跟丢了，但可以在1小时后重新尝试。</p><p><strong>大失败</strong> 你跟丢了，24小时内无法重试。</p>"
             },
             "TreatDisease": {
                 "Notes": {
@@ -508,7 +508,7 @@
             },
             "Trip": {
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong> 你的目标立刻被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态，并承受[[/r 1d6[bludgeoning] # Bludgeoning damage]]{1d6}点钝击伤害。",
+                    "criticalSuccess": "<strong>大成功</strong> 你的目标立刻被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态，并承受@Damage[1d6[bludgeoning]]伤害。",
                     "success": "<strong>成功</strong> 目标被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。",
                     "criticalFailure": "<strong>大失败</strong>你自己失去平衡摔倒了，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
                 },
@@ -576,7 +576,7 @@
                 "Warning": {
                     "NoSkill": "解译文书时会使用到不同的技能，但没有明确指定。用于解译文书的技能以及它们通常解读的文本类型是：用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用社交技能解译密码或是古代书写等。"
                 },
-                "Description": "<p>当你面对一份尤其古奥或是信息隐秘的文本时，GM可能会要求你进行一个解译文书检定看你是否能理解他的意思。你需要在相应的技能上拥有受训熟练等级才能解译相关的文书——例如，用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用社群技能解译密码或是古代书写等。</p><p>本检定的DC标准基于GM判断你要解译的文书的复杂程度。GM可能允许你检定一次来解译一篇相对较短的文本，或者进行多次检定来分段解译一篇较长的文本。</p><p><strong> 大成功</strong> 你理解了文本的确切含义。</p><p><strong>成功</strong> 你理解了文本的正确含义。但如果你是在解读加密的文本，那么你知道的是文本的大意，而非百分之百逐字逐句意义的翻译。</p><p><strong>失败</strong> 你看不懂文本的意思，并且在接下来对该文本的解译文书尝试中承受-2环境减值。</p><p><strong>大失败</strong> 你认为你理解了文本的正确含义，但事实上你读错了其中的信息。</p><section class=\"sample-tasks\"><h2>解译文书任务例子</h2><p><strong>受训</strong> 入门级哲学名著</p><p><strong>专家</strong> 复杂的文本，如加密文本</p><p><strong>大师</strong> 大师级间谍的暗文或深奥的研究笔记</p><p><strong>传奇</strong> 古代天界人写下的艰涩的平面文字</p></section>"
+                "Description": "<p>当你面对一份尤其古奥或是信息隐秘的文本时，GM可能会要求你进行一个解译文书检定看你是否能理解他的意思。你需要在相应的技能上拥有受训熟练等级才能解译相关的文书——例如，用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用社群技能解译密码或是古代书写等。</p><p>本检定的DC标准基于GM判断你要解译的文书的复杂程度。GM可能允许你检定一次来解译一篇相对较短的文本，或者进行多次检定来分段解译一篇较长的文本。</p><p><strong> 大成功</strong> 你理解了文本的确切含义。</p><p><strong>成功</strong> 你理解了文本的正确含义。但如果你是在解读加密的文本，那么你知道的是文本的大意，而非百分之百逐字逐句意义的翻译。</p><p><strong>失败</strong> 你看不懂文本的意思，并且在接下来对该文本的解译文书尝试中承受-2环境减值。</p><p><strong>大失败</strong> 你认为你理解了文本的正确含义，但事实上你读错了其中的信息。</p>"
             },
             "Perform": {
                 "Notes": {
@@ -590,31 +590,31 @@
                     "UnknownVariant": "用于表演的变体“{variant}”未知，请使用戏剧、喜剧、舞蹈、键盘、演讲、打击乐、歌唱、弦乐或管乐。"
                 },
                 "Acting": {
-                    "Title": "表演-戏剧"
+                    "Title": "戏剧"
                 },
                 "Comedy": {
-                    "Title": "表演-喜剧"
+                    "Title": "喜剧"
                 },
                 "Dance": {
-                    "Title": "表演-舞蹈"
+                    "Title": "舞蹈"
                 },
                 "Keyboards": {
-                    "Title": "表演-演奏键盘乐器"
+                    "Title": "演奏键盘乐器"
                 },
                 "Oratory": {
-                    "Title": "表演-演说"
+                    "Title": "演说"
                 },
                 "Percussion": {
-                    "Title": "表演-演奏打击乐器"
+                    "Title": "演奏打击乐器"
                 },
                 "Singing": {
-                    "Title": "表演-歌唱"
+                    "Title": "歌唱"
                 },
                 "Strings": {
-                    "Title": "表演-演奏弦乐乐器"
+                    "Title": "演奏弦乐乐器"
                 },
                 "Winds": {
-                    "Title": "表演-演奏管乐器"
+                    "Title": "演奏管乐器"
                 }
             },
             "Subsist": {
@@ -629,7 +629,7 @@
                 "Warning": {
                     "NoSkill": "求生行动可使用不同的技能，但目前未指定任何技能。如果你在定居点，这通常使用社群，如果你在野外，则使用生存。"
                 },
-                "Description": "<p>你尝试为自己，也许还有其他人提供食物和住所，提供的生活标准如第295页所述。GM会根据你尝试求生地区的自然环境来决定DC。如果是在非常陌生的环境中，你可能需要达到某个最低熟练度才能进行求生。与大多数休整期行动不同，你可以在8小时以内的探索行动后继续进行求生行动，但如果这样做，你就需要承担-5的减值。</p><section class=\"sample-tasks\"><h2>求生任务范例 Sample Subsist Tasks</h2><p><strong>未受训</strong> 天气稳定的茂密树林或资源丰富的大城市</p><p><strong>受训</strong> 常见的山坡或村镇</p><p><strong>专家</strong> 常见的山脉或与世隔绝的小村庄</p><p><strong>大师</strong> 常见的沙漠或被围困的城市</p><p><strong>传奇</strong> 贫瘠的荒地或不死生物之城</p></section><hr /><p><strong>大成功</strong> 你可以为自己和另外一个生物提供存活生活标准，或者改善自己的食物和居所，为自己提供舒适生活标准。</p><p><strong>成功</strong> 你找到了足够的食物和能提供基本保护的住所，使你获得存活生活标准。</p><p><strong>失败</strong> 你暴露在恶劣的环境中，没有获得足够的食物，陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，直到你获得足够的食物和住所为止。</p><p><strong>大失败</strong> 你惹了麻烦，吃了些不该吃的东西，或者以其他方式让你的处境恶化。在接下来的1周里，你的求生检定受到-2环境减值。你完全找不到食物，如果你没有任何储备并且检定继续失败，就可能会面临饿死或渴死的危险。</p>"
+                "Description": "<p>你尝试为自己，也许还有其他人提供食物和住所，提供的生活标准如第295页所述。GM会根据你尝试求生地区的自然环境来决定DC。如果是在非常陌生的环境中，你可能需要达到某个最低熟练度才能进行求生。与大多数休整期行动不同，你可以在8小时以内的探索行动后继续进行求生行动，但如果这样做，你就需要承担-5的减值。</p><p><strong>大成功</strong> 你可以为自己和另外一个生物提供存活生活标准，或者改善自己的食物和居所，为自己提供舒适生活标准。</p><p><strong>成功</strong> 你找到了足够的食物和能提供基本保护的住所，使你获得存活生活标准。</p><p><strong>失败</strong> 你暴露在恶劣的环境中，没有获得足够的食物，陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，直到你获得足够的食物和住所为止。</p><p><strong>大失败</strong> 你惹了麻烦，吃了些不该吃的东西，或者以其他方式让你的处境恶化。在接下来的1周里，你的求生检定受到-2环境减值。你完全找不到食物，如果你没有任何储备并且检定继续失败，就可能会面临饿死或渴死的危险。</p>"
             },
             "ConcealAnObject": {
                 "Notes": {
@@ -815,10 +815,10 @@
                     "failure": "<strong>失败</strong> 你工作得敷衍潦草，只能在这段时间里得到最低限度的报酬。获得任务等级且对应失败所列出的现金数量。GM可能会降低你继续进行任务的时间。"
                 },
                 "Title": "赚取收入 Earn Income",
-                "Description": "<p>你使用一项技能在休整期尝试赚钱。GM会设定一个代表最有利可图的工作的任务等级。你可以寻找较低级别的任务，由GM决定能否找到。有时你可以尝试找到比一开始提供的那份报酬更好的工作，但需要花费时间，并且需要使用交涉技能搜集信息，或者进行一些研究和社交方面的努力。</p><p>如果你接受一份工作，GM就会秘密设置你的技能检定DC。你需要在第一天工作后进行检定来确定收入。根据检定结果、任务等级和熟练度（如所赚收入表所示），你将获得一定的收入。</p><p>你可以在接下来几天继续执行该任务，无需再次检定。第一天之后的每一天收入都与第一天相同，直至任务完成。GM决定你可以在该任务中工作多次时间。大多数任务持续一两周，但有些任务可能需要几个月甚至几年的时间。</p><p><strong>大成功</strong> 你工作得非常出色。获得任务等级+1且对应你技能熟练度的现金数量。</p><p><strong>成功</strong> 你工作得很称职。获得任务等级且对应你技能熟练度的现金数量。</p><p><strong>失败</strong> 你工作得敷衍潦草，只能在这段时间里得到最低限度的报酬。获得任务等级且对应失败所列出的现金数量。GM可能会降低你继续进行任务的时间。</p><p><strong>大失败</strong> 你在工作中一无所获并且立刻会被解雇。你无法再继续进行该任务。你的声誉受损，可能导致未来很难在这个社区找到回报可观的工作。</p><section class=\"sample-tasks\"><h2>赚取收入任务范例 Sample Earn Income Tasks</h2><p>以下范例使用酒类学识在酒吧工作，或使用法律学识从事法律工作。</p><p><strong>受训</strong> 调酒师，从事法律研究</p><p><strong>专家</strong> 进行饮料选择策划，在法庭上处理小案件</p><p><strong>大师</strong> 管理一家大型酿酒厂，在法庭上处理重要案件</p><p><strong>传奇</strong> 管理一家国际酿酒特许经营公司，在地狱法庭上提起诉讼</p></section>"
+                "Description": "<p>你使用一项技能在休整期尝试赚钱。GM会设定一个代表最有利可图的工作的任务等级。你可以寻找较低级别的任务，由GM决定能否找到。有时你可以尝试找到比一开始提供的那份报酬更好的工作，但需要花费时间，并且需要使用交涉技能搜集信息，或者进行一些研究和社交方面的努力。</p><p>如果你接受一份工作，GM就会秘密设置你的技能检定DC。你需要在第一天工作后进行检定来确定收入。根据检定结果、任务等级和熟练度（如所赚收入表所示），你将获得一定的收入。</p><p>你可以在接下来几天继续执行该任务，无需再次检定。第一天之后的每一天收入都与第一天相同，直至任务完成。GM决定你可以在该任务中工作多次时间。大多数任务持续一两周，但有些任务可能需要几个月甚至几年的时间。</p><p><strong>大成功</strong> 你工作得非常出色。获得任务等级+1且对应你技能熟练度的现金数量。</p><p><strong>成功</strong> 你工作得很称职。获得任务等级且对应你技能熟练度的现金数量。</p><p><strong>失败</strong> 你工作得敷衍潦草，只能在这段时间里得到最低限度的报酬。获得任务等级且对应失败所列出的现金数量。GM可能会降低你继续进行任务的时间。</p><p><strong>大失败</strong> 你在工作中一无所获并且立刻会被解雇。你无法再继续进行该任务。你的声誉受损，可能导致未来很难在这个社区找到回报可观的工作。</p>"
             },
             "Fly": {
-                "Description": "<p>你在空中飞行至多等于飞行速度的距离。向上飞行（垂直向上或斜向上）使用在困难地形移动的规则。每消耗5尺速度可以垂直向下移动10尺距离。若你飞行到地面上，你不会受到坠落伤害。你可以使用该动作飞行0尺来保持悬停在空中。若你在回合结束时处于空中而本回合没有使用过飞行动作，你会坠落。</p>",
+                "Description": "<p><strong>需求</strong> 你有飞行速度。</p><hr><p>你在空中飞行至多等于飞行速度的距离。向上飞行（垂直向上或斜向上）使用在困难地形移动的规则。每消耗5尺速度可以垂直向下移动10尺距离。若你飞行到地面上，你不会受到坠落伤害。你可以使用该动作飞行0尺来保持悬停在空中。若你在回合结束时处于空中而本回合没有使用过飞行动作，你会坠落。</p>",
                 "Title": "飞行 Fly"
             },
             "GrabAnEdge": {
@@ -828,7 +828,7 @@
                     "criticalSuccess": "<strong>大成功</strong> 无论你是否有空闲手，你都抓住了边缘或把手，典型的比如用合适的持握物品挂住了你自己（例如用战斧卡在了横栏上）。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少30尺来计算。"
                 },
                 "Title": "抓住边缘 Grab An Edge",
-                "Description": "<p>当你坠落的过程中经过一个边缘或把手时，你可以尝试抓住它，阻止自己坠落。你必须选择进行特技检定或反射豁免检定，通常使用攀爬DC。当你抓住边缘或把手后，你就可以使用运动技能向上攀爬。</p><hr /><p><strong>大成功</strong> 无论你是否有空闲手，你都抓住了边缘或把手，典型的比如用合适的持握物品挂住了你自己（例如用战斧卡在了横栏上）。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少30尺来计算。</p><p><strong>成功</strong> 若你至少有一只空闲手，你就抓住了边缘或把手，阻止了坠落。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少20尺来计算。若你没有空闲手，你会如同检定失败一般继续坠落。</p><p><strong>大失败</strong> 你继续坠落，如果你在使用该反应动作前已经坠落了20尺或更远，那么你每坠落20尺就会因冲击而受到@Damage[10[bludgeoning]]伤害。</p>"
+                "Description": "<p><strong>触发</strong> 你处于坠落中时经过一个边缘或把手。</p><p><strong>需求</strong> 你的手没有绑在背后或处于束缚状态中。</p><hr><p>当你坠落的过程中经过一个边缘或把手时，你可以尝试抓住它，阻止自己坠落。你必须选择进行特技检定或反射豁免检定，通常使用攀爬DC。当你抓住边缘或把手后，你就可以使用运动技能向上@UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{攀爬 Climb}。</p><hr /><p><strong>大成功</strong> 无论你是否有空闲手，你都抓住了边缘或把手，典型的比如用合适的持握物品挂住了你自己（例如用战斧卡在了横栏上）。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少30尺来计算。</p><p><strong>成功</strong> 若你至少有一只空闲手，你就抓住了边缘或把手，阻止了坠落。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少20尺来计算。若你没有空闲手，你会如同检定失败一般继续坠落。</p><p><strong>大失败</strong> 你继续坠落，如果你在使用该反应动作前已经坠落了20尺或更远，那么你每坠落20尺就会因冲击而受到@Damage[10[bludgeoning]]伤害。</p>"
             },
             "IdentifyMagic": {
                 "Notes": {
@@ -852,10 +852,10 @@
             },
             "Mount": {
                 "Title": "骑乘 Mount",
-                "Description": "<p>你移动到该生物身上并且骑乘上该生物。若你已处于骑乘中，你可以使用该动作脱离骑乘，离开坐骑移动到与它相邻的空间。</p>"
+                "Description": "<p><strong>需求</strong> 你与一个体型至少大于你一级，且自愿成为你坐骑的生物相邻。</p><hr><p>你移动到该生物身上并且骑乘上该生物。若你已处于骑乘中，你可以使用该动作脱离骑乘，离开坐骑移动到与它相邻的空间。</p>"
             },
             "PointOut": {
-                "Description": "<p>你向一个或更多盟友指出你能看到的某个生物，向某个方向做手势并用语言描述距离。该生物对你的盟友不再为无踪状态，而变为@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态。这只对能看到你且所处位置能侦测到目标的盟友有效。若盟友无法听到或听懂你说的话，他们就需要通过察觉检定对抗所指出位置生物的隐秘DC，否则会遭到误解，认为目标位于其他位置。</p>",
+                "Description": "<p><strong>需求</strong> 一个生物对你的数个盟友视为无踪状态，但对你不为无踪。</p><hr><p>你向一个或更多盟友指出你能看到的某个生物，向某个方向做手势并用语言描述距离。该生物对你的盟友不再为@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}状态，而变为@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态。这只对能看到你且所处位置能侦测到目标的盟友有效。若盟友无法听到或听懂你说的话，他们就需要通过@Check[perception|defense:stealth]检定对抗所指出位置生物的隐秘DC，否则会遭到误解，认为目标位于其他位置。</p>",
                 "Title": "指出位置 Point OUt"
             },
             "Strike": {
