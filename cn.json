@@ -4049,7 +4049,8 @@
                     "Rarities": {
                         "UncommonLanguages": "<rarity>罕见</rarity>语言",
                         "SecretLanguages": "<rarity>秘密</rarity>语言",
-                        "RareLanguages": "<rarity>稀有</rarity>语言"
+                        "RareLanguages": "<rarity>稀有</rarity>语言",
+                        "Name": "语言稀有度"
                     }
                 },
                 "MagicSchools": {
