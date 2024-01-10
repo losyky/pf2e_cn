@@ -1344,6 +1344,9 @@
                     "ProficiencyIncreases": {
                         "Label": "熟练等级提升",
                         "NoOptionSelected": "选择一个需要提升的熟练项。"
+                    },
+                    "Languages": {
+                        "OpenSlots": "开放槽位"
                     }
                 }
             },
@@ -2031,12 +2034,18 @@
                         "Motionsense": "运动感知",
                         "Spiritsense": "灵魂感知",
                         "Thoughtsense": "思维感知",
-                        "Heatsight": "热能视觉"
+                        "Heatsight": "热能视觉",
+                        "Vision": "视觉",
+                        "Truesight": "真景术",
+                        "MotionSense": "动态感知",
+                        "InfraredVision": "红外线视觉"
                     },
                     "Label": "感官",
                     "RangeLabel": "距离",
                     "WithAcuity": "{sense} ({acuity})",
-                    "WithAcuityAndRange": "{sense} ({acuity}) {range} 尺"
+                    "WithAcuityAndRange": "{sense} ({acuity}) {range} 尺",
+                    "WithRange": "{sense} {range}尺",
+                    "NoVision": "无视觉"
                 },
                 "AbilityModifiers": "属性调整值",
                 "AttributeModifiers": "属性调整值",
@@ -2328,7 +2337,21 @@
             "HitPoints": {
                 "Unrecoverable": "当前无法恢复{value} 点生命值。"
             },
-            "Attacks": "攻击"
+            "Attacks": "攻击",
+            "Speed": {
+                "LabelFeet": "速度 (尺)",
+                "Type": {
+                    "Label": "{type}速度",
+                    "Fly": "飞行",
+                    "Climb": "攀爬",
+                    "Burrow": "掘进",
+                    "Swim": "游泳",
+                    "Land": "陆地"
+                },
+                "Label": "速度",
+                "Plural": "速度",
+                "BaseLabel": "基础{type}速度"
+            }
         },
         "ActorSizeGargantuan": "巨型",
         "ActorSizeHuge": "超大型",
@@ -4050,7 +4073,12 @@
                         "UncommonLanguages": "<rarity>罕见</rarity>语言",
                         "SecretLanguages": "<rarity>秘密</rarity>语言",
                         "RareLanguages": "<rarity>稀有</rarity>语言",
-                        "Name": "语言稀有度"
+                        "Name": "语言稀有度",
+                        "CommonLanguages": "<rarity>常见</rarity>语言"
+                    },
+                    "CommonLanguage": {
+                        "Hint": "选择在这个游戏世界中被称为“通用语”的语言。",
+                        "Label": "“通用”语言"
                     }
                 },
                 "MagicSchools": {
@@ -7420,7 +7448,8 @@
         "TraitNindoru": "灵堕魔",
         "ArmorPropertyRuneRaiment": "衣装",
         "BiographyAnathema": "禁忌",
-        "BiographyEdicts": "典范"
+        "BiographyEdicts": "典范",
+        "Details": "详情"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
