@@ -1930,7 +1930,7 @@
                     "Attack": {
                         "Simple": "简易武器",
                         "Martial": "军用武器",
-                        "Advanced": "异种武器",
+                        "Advanced": "进阶武器",
                         "Unarmed": "无武装攻击",
                         "Title": "攻击"
                     },
@@ -2162,7 +2162,10 @@
                     "varki": "瓦尔基语",
                     "vishkanyan": "蝮血裔语",
                     "vudrani": "伏陀罗语",
-                    "wildsong": "荒野之歌"
+                    "wildsong": "荒野之歌",
+                    "CommonLanguage": "通用语({language})",
+                    "DetailsPlaceholder": "注意事项，其他不常见的细节",
+                    "Plural": "语言"
                 }
             },
             "Dead": "死亡",
@@ -4042,7 +4045,12 @@
                 },
                 "Languages": {
                     "Name": "语言",
-                    "Hint": "用于字符了解或学习的语言（例如，龙语、侏儒语）"
+                    "Hint": "用于字符了解或学习的语言（例如，龙语、侏儒语）",
+                    "Rarities": {
+                        "UncommonLanguages": "<rarity>罕见</rarity>语言",
+                        "SecretLanguages": "<rarity>秘密</rarity>语言",
+                        "RareLanguages": "<rarity>稀有</rarity>语言"
+                    }
                 },
                 "MagicSchools": {
                     "Name": "奥术学派",
@@ -4074,7 +4082,8 @@
                 },
                 "Tabs": {
                     "Traits": "特征和类型",
-                    "Damage": "伤害类型"
+                    "Damage": "伤害类型",
+                    "Campaign": "战役"
                 },
                 "DamageTypes": {
                     "name": "自定义伤害类型",
@@ -4125,6 +4134,10 @@
                 "ShowPartyStats": {
                     "Name": "显示小队成员信息",
                     "Hint": "玩家可以在队伍角色表中看到其他队伍成员的数据"
+                },
+                "ShowBreakdowns": {
+                    "Name": "显示骰点拆解",
+                    "Hint": "玩家可以看到由NPC和其他非玩家所有的角色所骰出的点数组成和总调整值。"
                 }
             },
             "Tokens": {
@@ -6369,7 +6382,7 @@
         "WeaponSpecialization": "武器专精",
         "WeaponSplashDamageLabel": "泼溅 伤害",
         "WeaponStrikeLabel": "攻击",
-        "WeaponTypeAdvanced": "异种武器",
+        "WeaponTypeAdvanced": "进阶武器",
         "WeaponTypeLabel": "武器熟练",
         "WeaponTypeMartial": "军用 武器",
         "WeaponTypeSimple": "简易 武器",
