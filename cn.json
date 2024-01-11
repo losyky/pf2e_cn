@@ -888,7 +888,12 @@
                     "Hint": "将此护甲标记为<i>特殊魔法护甲</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
                     "Label": "特殊魔法护甲"
                 },
-                "UnequippedHint": "由于未被装备，护甲负载增加。"
+                "UnequippedHint": "由于未被装备，护甲负载增加。",
+                "Rune": {
+                    "Resilient": {
+                        "Label": "韧性符文"
+                    }
+                }
             },
             "CannotAddType": "无法将{type}物品添加到此角色。",
             "Condition": {
@@ -1347,6 +1352,22 @@
                     },
                     "Languages": {
                         "OpenSlots": "开放槽位"
+                    },
+                    "Proficiencies": {
+                        "NoOptionSelected": "请选择要增加的统计数据。",
+                        "Label": "熟练度"
+                    },
+                    "KeyAbilityOptions": {
+                        "Label": "关键属性选项",
+                        "Hint": "关键属性（除了职业所提供的）"
+                    },
+                    "Label": "子特征",
+                    "Senses": {
+                        "Darkvision": {
+                            "LLV": "角色已从其他来源获得昏暗视觉时，授予黑暗视觉。",
+                            "Ancestry": "角色族裔拥有昏暗视觉时，授予黑暗视觉。",
+                            "Second": "若该专长被选取第二次，授予黑暗视觉。"
+                        }
                     }
                 }
             },
@@ -1600,7 +1621,10 @@
                 },
                 "Warning": {
                     "InvalidLevel": "尝试添加法术{name}至 {targetLevel}，但法术基础环级为{baseLevel}。",
-                    "WrongSpellType": "无法将 {type} 法术添加到此施法目录。"
+                    "WrongSpellType": "无法将 {type} 法术添加到此施法目录。",
+                    "CantripToRankedSlots": "{spell}为戏法，须添加到戏法列表中。",
+                    "InvalidRank": "{spell}是{spellRank}环法术，但所选法术位为{targetRank}环。",
+                    "NonCantripToCantrips": "{spell}不是戏法，无法添加到戏法列表中。"
                 },
                 "LevelN": "法术{level}",
                 "Counteract": {
@@ -1633,7 +1657,11 @@
                 },
                 "Cost": "消耗",
                 "Cast": "施法",
-                "Plural": "法术"
+                "Plural": "法术",
+                "Sustained": {
+                    "Label": "维持",
+                    "Duration": "维持，至多{maximum}"
+                }
             },
             "CreationDialog": {
                 "Categories": {
@@ -2010,7 +2038,8 @@
                     "TraditionSpellcasting": "{tradition}施法能力",
                     "Rituals": "仪式",
                     "DC": "法术DC",
-                    "Label": "法术攻击调整值与DC"
+                    "Label": "法术攻击调整值与DC",
+                    "ShortLabel": "施法"
                 },
                 "Sense": {
                     "Acuity": {
@@ -2045,7 +2074,8 @@
                     "WithAcuity": "{sense} ({acuity})",
                     "WithAcuityAndRange": "{sense} ({acuity}) {range} 尺",
                     "WithRange": "{sense} {range}尺",
-                    "NoVision": "无视觉"
+                    "NoVision": "无视觉",
+                    "Plural": "感官"
                 },
                 "AbilityModifiers": "属性调整值",
                 "AttributeModifiers": "属性调整值",
@@ -2332,6 +2362,10 @@
                 "Encumbrance": "超载",
                 "Section": {
                     "WeaponsAndShields": "武器 & 盾牌"
+                },
+                "UnitTitle": {
+                    "Price": "单位价格",
+                    "Bulk": "单位负重"
                 }
             },
             "HitPoints": {
@@ -2663,7 +2697,8 @@
                 },
                 "Recovery": "复苏检定",
                 "Counteract": "反制检定"
-            }
+            },
+            "SetAsInitiative": "设置为{actor}的先攻值"
         },
         "CircumstanceBonusShortLabel": "环境",
         "CircumstanceBonusTitle": "环境加值",
@@ -7449,7 +7484,9 @@
         "ArmorPropertyRuneRaiment": "衣装",
         "BiographyAnathema": "禁忌",
         "BiographyEdicts": "典范",
-        "Details": "详情"
+        "Details": "详情",
+        "TraitDescriptionTea": "<p>魔茶是一种药水。当你喝下它时便会启动，这会使其消耗殆尽。魔茶具有药水和茶特征。当你制作一剂魔茶时，你提供的原材料是不寻常且昂贵的茶叶。制作魔茶的过程包括给茶叶注入魔法试剂，净化水，将茶叶浸泡在水中，从而产生出一种本质特别美味的药水。你可以用一个交互动作启动魔茶，来让你喝下它或将它喂给另一个生物，如同它是药水一样。你也可以通过进行一个10分钟的行动来启动魔茶，这需要高品质的茶具（这些工匠工具可以被至多4名同时进行此行动的人共享）来准备茶，然后消耗它或在一场简短的茶道仪式中呈给他人，之后魔茶的效果开始生效；以此法启动魔茶可以增强其效果，详情见每个条目的茶道一栏。</p><p>一旦你喝下一剂魔茶，你便会对这种魔茶临时免疫24小时。</p>",
+        "TraitVersatileMental": "多用心灵"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
