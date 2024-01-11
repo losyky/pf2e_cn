@@ -623,7 +623,10 @@
                 "DragonbloodParagon": {
                     "Dracomancer": "龙学家",
                     "VenomtailKobold": "毒尾狗头人",
-                    "KoboldBreath": "狗头人之息",
+                    "KoboldBreath": {
+                        "Note": "对抗狗头人之息大失败的生物承受@Damage[3d4[@actor.flags.pf2e.draconicExemplar.damageType,persistent]]伤害。",
+                        "Label": "狗头人之息"
+                    },
                     "StrongjawKobold": "壮颚狗头人"
                 },
                 "DragonsPresence": {
@@ -1038,6 +1041,14 @@
                 },
                 "HumbugPocket": {
                     "ConcealAnObjectLabel": "行骗腰包 (往腰包里隐藏物件)"
+                },
+                "FuryCocktail": {
+                    "AnimalisticLabel": "兽性",
+                    "DoubleLabel": "双倍",
+                    "TitanicLabel": "泰坦",
+                    "MournfulLabel": "悲恸",
+                    "SkepticalLabel": "疑论",
+                    "WyrmhideLabel": "龙皮"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1126,7 +1137,9 @@
                 "Trait": "选择特征",
                 "Color": "选择颜色。",
                 "Form": "选择形态。",
-                "Feature": "选择一种特性。"
+                "Feature": "选择一种特性。",
+                "Resistance": "选择一种抗力。",
+                "Item": "选择一件物品。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1547,6 +1560,14 @@
             "Witch": {
                 "Patron": {
                     "Prompt": "选择一个庇护主"
+                },
+                "Cauldron": {
+                    "CraftingEntry": "大釜"
+                },
+                "WitchsArmaments": {
+                    "EldritchNails": "魔甲",
+                    "LivingHair": "活发",
+                    "IronTeeth": "铁牙"
                 }
             },
             "CelestialResistance": {
@@ -1678,6 +1699,9 @@
                 },
                 "DivineRebuttal": {
                     "Note": "若你的打击命中，你所有盟友对触发的豁免检定中获得+2环境加值（重击时获得+3环境加值）。@UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{效果: 神力抗驳}"
+                },
+                "CremateUndead": {
+                    "Note": "当你使用<em>治疗术</em>伤害了不死生物，每个受伤的不死生物还受到@Damage[(@item.rank)[persistent,fire]]伤害。"
                 }
             },
             "Conrasu": {
@@ -2273,7 +2297,9 @@
                     "Love": "深爱",
                     "Trusted": "信任",
                     "Label": "一位你信任或深爱的盟友在你30尺内"
-                }
+                },
+                "MajorPrompt": "选择一种上等魂力",
+                "MinorPrompt": "选择一种下等魂力"
             },
             "LitItem": "{item}已被点亮",
             "Feat": {
@@ -2301,6 +2327,35 @@
                 "Greater": "高等{damageType}抗力咒符",
                 "Major": "上等{damageType}抗力咒符",
                 "Standard": "{damageType}抗力咒符"
+            },
+            "SpellEffectTemptFate": {
+                "Note": "如果豁免骰结果为成功，它变为大成功。如果是失败，它变为大失败，并且该大失败不会由于任何通常会减弱大失败的效果所减弱。"
+            },
+            "ItemStrike": "{item}打击",
+            "GolemGrafter": {
+                "ClayFist": {
+                    "Label": "陶拳",
+                    "Note": "当你使用自己的陶土制拳头进行无武装攻击并命中时，你的目标在对抗诅咒效应的豁免骰上获得-2状态减值，维持1小时。@UUID[Compendium.pf2e.feat-effects.Item.bvk5rwYSoTtz8QGf]{效果: 诅咒陶拳}"
+                }
+            },
+            "SpellRank": {
+                "Ninth": "9环",
+                "Prompt": "选择法术环级。",
+                "Fourth": "4环",
+                "Second": "2环",
+                "Seventh": "7环",
+                "First": "1环",
+                "Eighth": "8环",
+                "Fifth": "5环",
+                "Sixth": "6环",
+                "Tenth": "10环",
+                "Third": "3环"
+            },
+            "SpellEffectPreciousMetals": {
+                "Copper": "青铜",
+                "Gold": "黄金",
+                "Iron": "铁",
+                "Steel": "钢"
             }
         },
         "RuleElement": {
@@ -2578,7 +2633,9 @@
                 "DamageType": "伤害类型",
                 "PriorityHint": "优先级决定了规则元素的执行顺序。优先级较低的规则元素会先执行。",
                 "Slug": "标识符",
-                "Opacity": "不透明度"
+                "Opacity": "不透明度",
+                "Add": "增加",
+                "Remove": "移除"
             },
             "Note": {
                 "Outcome": "成果",
@@ -2838,7 +2895,13 @@
                 "Impersonator": {
                     "SneakAttack": "偷袭",
                     "AttackOfOpportunity": "反应打击",
-                    "AbilityPrompt": "选择乔装变形能力"
+                    "AbilityPrompt": "选择乔装变形能力",
+                    "Armored": "着甲 Armored",
+                    "Commander": "指挥者 Commander",
+                    "ElementalAttack": "元素攻击 Elemental Attack",
+                    "ShieldCarrier": "持盾者 Shield Carrier",
+                    "WeaponPerk": "武器提升 Weapon Perk",
+                    "WeaponPerkPrompt": "选择一种武器提升"
                 }
             },
             "Nindoru": {
@@ -2892,6 +2955,9 @@
                 "TokenMark": {
                     "TargetToken": "鼠标悬浮在某个指示物上，按T选定该指示物为目标，按Esc取消。",
                     "Timeout": "由于缺少目标，已取消效果创建。"
+                },
+                "MultipleAttackPenalty": {
+                    "Breakdown": "MAP ({label})"
                 }
             }
         },
@@ -3261,7 +3327,8 @@
                 "PhysicalRangedAttacks": "物理远程攻击",
                 "MagicalDuskwood": "魔法夕木",
                 "VoidZonKuthonFollowers": "宗-库山信徒造成的虚能伤害",
-                "ImpulseFireFrom": "从{origin}来源涌动火焰"
+                "ImpulseFireFrom": "从{origin}来源涌动火焰",
+                "AllDamageFromSpells": "来自法术的全部伤害"
             }
         },
         "Color": {
