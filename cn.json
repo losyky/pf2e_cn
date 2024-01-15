@@ -833,13 +833,15 @@
                 "Cast": "施放法术"
             },
             "ABC": {
-                "InvalidDrop": "{badType} 不能丢弃 (必须在 {goodType})"
+                "InvalidDrop": "{badType} 不能丢弃 (必须在 {goodType})",
+                "Features": "特征"
             },
             "Ancestry": {
                 "Vision": {
                     "Label": "视觉",
                     "Normal": "正常视野"
-                }
+                },
+                "DropFeatures": "将族裔特性拖拽于此处。"
             },
             "Armor": {
                 "Base": {
@@ -916,6 +918,9 @@
                     },
                     "RollDamage": "投骰伤害",
                     "AssistedRecovery": "协助复苏掷骰"
+                },
+                "Chat": {
+                    "Current": "当前状态"
                 }
             },
             "Deity": {
@@ -1673,7 +1678,7 @@
             "Backpack": {
                 "StowingLabel": "要装进容器里吗？"
             },
-            "WorldItemWarning": "这是一个世界项目，如果存入集合包中则不会起效",
+            "WorldItemWarning": "这是一个世界项目，如果存入集合包中则不会起效。",
             "RemovalPrevented": "{preventer}阻止了{item}的移除。",
             "Affliction": {
                 "AddStage": "添加阶段",
@@ -1996,7 +2001,15 @@
                     "BrokenThreshold": "盾牌破损阈值"
                 },
                 "Crafting": {
-                    "Cost": "花费"
+                    "Cost": "花费",
+                    "Daily": {
+                        "Complete": {
+                            "OneConsumed": "每日制作完成：消耗了一个试剂。",
+                            "ZeroConsumed": "每日制作完成。",
+                            "NConsumed": "每日制作完成：消耗了{quantity}个试剂。"
+                        },
+                        "Perform": "执行每日制作"
+                    }
                 },
                 "Language": {
                     "Unallocated": {
