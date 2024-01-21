@@ -2379,6 +2379,9 @@
                 "UnitTitle": {
                     "Price": "单位价格",
                     "Bulk": "单位负重"
+                },
+                "CarryType": {
+                    "OpenMenu": "更改携带类型"
                 }
             },
             "HitPoints": {
@@ -3061,7 +3064,8 @@
                     "holy": "圣洁（Holy）",
                     "unholy": "邪秽（Unholy）",
                     "dawnsilver": "朝银",
-                    "duskwood": "夕木"
+                    "duskwood": "夕木",
+                    "detection": "侦测"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -7499,7 +7503,19 @@
         "BiographyEdicts": "典范",
         "Details": "详情",
         "TraitDescriptionTea": "<p>魔茶是一种药水。当你喝下它时便会启动，这会使其消耗殆尽。魔茶具有药水和茶特征。当你制作一剂魔茶时，你提供的原材料是不寻常且昂贵的茶叶。制作魔茶的过程包括给茶叶注入魔法试剂，净化水，将茶叶浸泡在水中，从而产生出一种本质特别美味的药水。你可以用一个交互动作启动魔茶，来让你喝下它或将它喂给另一个生物，如同它是药水一样。你也可以通过进行一个10分钟的行动来启动魔茶，这需要高品质的茶具（这些工匠工具可以被至多4名同时进行此行动的人共享）来准备茶，然后消耗它或在一场简短的茶道仪式中呈给他人，之后魔茶的效果开始生效；以此法启动魔茶可以增强其效果，详情见每个条目的茶道一栏。</p><p>一旦你喝下一剂魔茶，你便会对这种魔茶临时免疫24小时。</p>",
-        "TraitVersatileMental": "多用心灵"
+        "TraitVersatileMental": "多用心灵",
+        "InlineAction": {
+            "Check": {
+                "DC": "DC {dc}",
+                "VsDefense": "对抗 {defense}",
+                "StatisticVsDefense": "{statistic} 对抗 {defense}"
+            },
+            "Warning": {
+                "InvalidAction": "无效动作：{slug}",
+                "UnresolvableAction": "无法执行动作：{slug}"
+            }
+        },
+        "ArmorPropertyRuneSizeChanging": "更改体型"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
