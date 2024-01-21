@@ -853,6 +853,9 @@
                     "Maestro": "大师 Maestro",
                     "Polymath": "博学 Polymath",
                     "Warrior": "武者 Warrior"
+                },
+                "DiscordantVoice": {
+                    "Label": "不谐之音"
                 }
             },
             "Automaton": {
@@ -1280,6 +1283,9 @@
                     "Molgrade": "莫格拉德氏族",
                     "Oriddus": "奥力达斯氏族",
                     "Runebinder": "束符氏族"
+                },
+                "StrongBloodedDwarf": {
+                    "Note": "对抗毒素苦难时，你每次成功的豁免检定都会使苦难阶段降低2阶，恶性毒素则降低1阶。对抗毒素的每次大成功都会使苦难阶段降低3阶，恶性毒素则为2阶。"
                 }
             },
             "Fleshwarp": {
@@ -2315,6 +2321,9 @@
                     "Dryad": "木妖精",
                     "Faun": "法翁羊人",
                     "Anteater": "食蚁兽"
+                },
+                "CharmingLiar": {
+                    "Note": "当你用说谎行动取得大成功时，目标对你的态度改善一级，如同你用交涉技能建立印象成功。"
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -2356,7 +2365,8 @@
                 "Gold": "黄金",
                 "Iron": "铁",
                 "Steel": "钢"
-            }
+            },
+            "GhostScarfLit": "幽灵围巾正在照明"
         },
         "RuleElement": {
             "Aura": "灵光",
@@ -2568,7 +2578,8 @@
             "Treasure": "在财宝中",
             "BoundHome": "身处所连结的房屋中时",
             "ImpersonatePeasantOrLaborer": "乔装成农民或劳工",
-            "Moonlight": "月光下"
+            "Moonlight": "月光下",
+            "ImpersonateSpecificPerson": "乔装成一个特定人物"
         },
         "OracleCurses": {
             "Label": {
