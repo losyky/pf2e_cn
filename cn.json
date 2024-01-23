@@ -2394,7 +2394,7 @@
                     "Label": "{type}速度",
                     "Fly": "飞行",
                     "Climb": "攀爬",
-                    "Burrow": "掘进",
+                    "Burrow": "掘地",
                     "Swim": "游泳",
                     "Land": "陆地"
                 },
