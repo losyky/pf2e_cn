@@ -1501,21 +1501,21 @@
             "SidebarSummary": "{type}目录",
             "Weapon": {
                 "CriticalSpecialization": {
-                    "axe": "选择一个在你的触及内与初始目标相邻的生物。如果它的AC低于你重击的攻击掷骰，那么你对该生物造成等同一颗武器伤害骰（也包括来自装备符文的额外骰，若有）的伤害。其它加值或额外骰不适用于这个伤害。",
+                    "axe": "选择一个在你的触及内与初始目标相邻的生物。如果它的AC低于你重击的攻击掷骰，那么你对该生物造成等同一颗武器伤害骰（也包括来自<em>强击符文</em>的额外骰，若有）的伤害。其它加值或额外骰不适用于这个伤害。",
                     "bomb": "提升炸弹的溅射伤害（若有）半径到10尺。",
-                    "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized} ，它必须使用互动动作尝试进行 @Check[type:athletics|dc:10|name:Pull the Missile Free|showDC:all] 检定来拔出弹头，之后才能移动离开其方格。虚体、液态（例如水元素或某些泥怪）或能以某种方式毫不费力地避开此效果的生物不会被钉住。",
-                    "brawling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Brawling Critical Specialization]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续到你的下回合结束。",
-                    "club": "目标被你击退至多10尺（距离由你选择）。这是被迫移动。",
+                    "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized} ，它必须使用互动动作尝试进行 @Check[type:athletics|dc:10|name:Pull the Missile Free|showDC:all] 检定来拔出弹头，之后才能移动离开其方格。虚体、液态或能以某种方式毫不费力地避开此效果的生物不会被钉住（例如体积足够大到弹头不会成为阻碍。）",
+                    "brawling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Brawling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续到你的下回合结束。",
+                    "club": "你将目标沿你选择的方向直线推开最多10尺，这是被迫移动。",
                     "dart": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
-                    "firearm": "目标必须通过一个@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Firearm Critical Specialization]豁免，否则会受到@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "firearm": "目标必须通过一个@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Firearm Critical Specialization]豁免对抗你的职业DC，否则会受到@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
                     "flail": "除非目标成功通过@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|name:Flail Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
                     "hammer": "除非目标成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Hammer Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
                     "knife": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
                     "pick": "武器凶狠地刺穿目标。目标受到每颗武器伤害骰2点的额外伤害。",
                     "polearm": "目标往你选择的位置移动5尺。这是被迫移动。",
                     "shield": "目标被你击退5尺。这是被迫移动。",
-                    "sling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Sling Critical Specialization]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
-                    "spear": "武器刺穿目标，使其攻击变得软弱无力。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你的下一回合开始。",
+                    "sling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Sling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "spear": "该类型的武器刺穿目标，会使其攻击变得软弱无力。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你的下一回合开始。",
                     "sword": "目标因为你的攻击而失去平衡，变得@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到你的下一回合开始。",
                     "crossbow": "目标受到@Damage[1d8[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。"
                 },
@@ -2018,7 +2018,14 @@
                     },
                     "OverLimit": "此语言超出了该角色所能掌握的语言数量。"
                 },
-                "CreateFeat": "创建专长"
+                "CreateFeat": "创建专长",
+                "Spellcasting": {
+                    "Tab": {
+                        "KnownSpells": "已知法术",
+                        "Activations": "激活",
+                        "Rituals": "仪式"
+                    }
+                }
             },
             "Creature": {
                 "Alliance": {
