@@ -315,7 +315,9 @@
                 "Moderate": {
                     "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d4[persistent,piercing]]]以及[[/r (2[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。",
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d4)[persistent,piercing]]]以及[[/r (2[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
-                }
+                },
+                "TerrainMajor": "除非大失败，否则炸弹的溅射区域会被植被覆盖，成为困难地形，持续1分钟。",
+                "Terrain": "除非大失败，否则炸弹的溅射区域会被植被覆盖，成为困难地形，持续1轮。"
             },
             "PressureBomb": {
                 "Greater": {
@@ -420,20 +422,20 @@
             },
             "TanglefootBag": {
                 "Greater": {
-                    "criticalSuccess": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15尺速度减值}，持续一分钟。重击时，目标还陷入On critical hit, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，持续一回合。",
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15尺速度减值}，并且目标还陷入持续一回合的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。",
                     "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15尺速度减值}，持续一分钟。"
                 },
                 "Major": {
-                    "criticalSuccess": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20尺速度减值}，持续一分钟。重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，持续一轮。",
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。",
                     "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20速度减值}，持续一分钟。"
                 },
                 "Moderate": {
                     "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15尺速度减值}，持续一分钟。",
-                    "criticalSuccess": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15尺速度减值}，持续一分钟。重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，持续一轮。"
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。"
                 },
                 "Lesser": {
                     "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10尺速度减值}，持续一分钟。",
-                    "criticalSuccess": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10尺速度减值}，持续一分钟。重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，持续一轮。"
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。"
                 }
             },
             "TwigjackSack": {
@@ -2975,6 +2977,9 @@
         "Mutagens": {
             "BestialMutagen": {
                 "FeralPrompt": "是否通过添加AC减值来增大伤害骰？"
+            },
+            "SanguineMutagen": {
+                "DamageNote": "每当你受到穿刺或挥砍伤害时，你都会受到@Damage[1d6[bleed]]。"
             }
         },
         "ResistanceException": {
