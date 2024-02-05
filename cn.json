@@ -1496,7 +1496,8 @@
                 "Base": "基础",
                 "MaterialRunes": {
                     "Label": "珍贵材料与符文"
-                }
+                },
+                "Attachments": "附着"
             },
             "SidebarSummary": "{type}目录",
             "Weapon": {
@@ -1598,6 +1599,10 @@
                         "Striking": "强击",
                         "Greater": "高等强击"
                     }
+                },
+                "Forceful": {
+                    "Second": "+2 强力攻击",
+                    "Third": "+3 强力攻击"
                 }
             },
             "Rules": {
@@ -1666,7 +1671,8 @@
                 "Sustained": {
                     "Label": "维持",
                     "Duration": "维持，至多{maximum}"
-                }
+                },
+                "LineSplit": ";"
             },
             "CreationDialog": {
                 "Categories": {
@@ -4133,7 +4139,15 @@
                         "SecretLanguages": "<rarity>秘密</rarity>语言",
                         "RareLanguages": "<rarity>稀有</rarity>语言",
                         "Name": "语言稀有度",
-                        "CommonLanguages": "<rarity>常见</rarity>语言"
+                        "CommonLanguages": "<rarity>常见</rarity>语言",
+                        "Unavailable": {
+                            "Label": "不可用语言",
+                            "Hint": "世界上任何生物都无法使用的语言"
+                        },
+                        "Uncommon": "<rarity>罕见</rarity>语言",
+                        "Secret": "<rarity>秘密</rarity>语言",
+                        "Rare": "<rarity>稀有</rarity>语言",
+                        "Common": "<rarity>常见</rarity>语言"
                     },
                     "CommonLanguage": {
                         "Hint": "选择在这个游戏世界中被称为“通用语”的语言。",
