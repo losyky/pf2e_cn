@@ -164,7 +164,8 @@
                 "Collect": "收集"
             },
             "Unrest": "动乱",
-            "Vacant": "空缺"
+            "Vacant": "空缺",
+            "ArmyConsumption": "军队损耗"
         },
         "Skills": {
             "arts": "艺术",
@@ -275,7 +276,8 @@
                 "metropolis": "大都会"
             },
             "Header": "王国定居点",
-            "TypeLabel": "类型"
+            "TypeLabel": "类型",
+            "Label": "定居点"
         },
         "WorkSites": {
             "lumber": {
@@ -330,6 +332,116 @@
         "SIDEBAR": {
             "CreateKingdom": "创建王国",
             "OpenSheet": "打开王国卡"
-        }
+        },
+        "Army": {
+            "Armor": "护甲",
+            "Ammunition": "弹药",
+            "RecruitmentDC": "征召 DC",
+            "Strikes": {
+                "CurrentAmmo": "{current} / {max} 弹药<br/>在战争遭遇结束后补充",
+                "None": "这只军队没有武器，在装备界面添加一个。",
+                "OutOfAmmo": "在这场战争中已经没有弹药了",
+                "RestoreAmmunition": "恢复弹药",
+                "melee": "近战",
+                "ranged": "远程",
+                "proficiency": "熟练",
+                "Label": "攻击"
+            },
+            "BasicWarActions": "基础战争动作",
+            "Gear": {
+                "MagicWeapons": {
+                    "Description": "军队拥有魔法武器。如果军队同时具有近战和远程武器，选择当武器升级时需要选择其中一种。你能为军队升级两次武器，一次给近战一次给远程。如果你配发了更强的版本，它会取代旧装备，并且新装备的 RP 成本要扣除旧装备的。",
+                    "Name": "({type}) 魔法武器",
+                    "rank1": {
+                        "Name": "魔法武器",
+                        "Description": "该装备能让军队使用该武器进行打击时的攻击调整值+1。"
+                    },
+                    "rank2": {
+                        "Name": "高等魔法武器",
+                        "Description": "该装备能让军队使用该武器进行打击时的攻击调整值+2。"
+                    },
+                    "rank3": {
+                        "Name": "上等魔法武器",
+                        "Description": "该装备能让军队使用该武器进行打击时的攻击调整值+3。"
+                    }
+                },
+                "ItemLevel": "物品 {level}",
+                "GearInfo": "显示装备信息",
+                "LevelLabel": "等级 {level}",
+                "AdditionalWeapon": {
+                    "Name": "额外武器",
+                    "Description": "大部分军队只有一种武器——一种近战武器或一种远程武器。该装备作为一种额外的武器类型配发给军队。军队获得相应的近战或远程打击，调整值基于等级。"
+                },
+                "Potions": {
+                    "Name": "治疗药水",
+                    "Description": "装备了治疗药水的军队（如果你配发的是炼金治疗灵药，在这里的规则上是相同的），能将使用一剂药水作为机动（Maneuver）动作的一个部分。当军队使用一剂治疗药水时，它恢复 1 点生命值。一支军队不能同时携带超过 3 剂治疗药水；和远程打击的弹药不同，治疗药水不会在战争遭遇结束后自动补充，必须重新购买新的剂量。"
+                },
+                "Armor": {
+                    "Name": "魔法护甲",
+                    "Description": "魔法盔甲被魔法强化，以增强对士兵的保护。",
+                    "rank3": {
+                        "Description": "护甲增加军队 3 点 AC。",
+                        "Name": "上等魔法护甲"
+                    },
+                    "rank1": {
+                        "Name": "魔法护甲",
+                        "Description": "护甲增加军队 1 点 AC。"
+                    },
+                    "rank2": {
+                        "Name": "高等魔法护甲",
+                        "Description": "护甲增加军队 2 点 AC。"
+                    }
+                },
+                "Label": "装备"
+            },
+            "Label": "军队",
+            "TacticsFree": "战术 (自由)",
+            "TacticalWarActions": "战术战争动作",
+            "Alliance": {
+                "Enemy": "敌军",
+                "Kingdom": "王国"
+            },
+            "Potions": {
+                "UsedPotionContent": "军队恢复+1生命值，可以作为机动动作的一个部分。",
+                "FullHP": "军队的生命值已经满了",
+                "Label": "药水",
+                "OutOfPotions": "没有更多的药水可用",
+                "UsePotion": "使用药水 (+1 生命值)",
+                "UsedPotionHeader": "药水消耗"
+            },
+            "Toggles": {
+                "LiveOffTheLand": "六角格内没有定居点",
+                "KeepUpThePressure": "攻击同一目标"
+            },
+            "Stats": "数据",
+            "Adjustment": "改修",
+            "Base": "基础",
+            "NamePlaceholder": "军队名称",
+            "Potency": "潜力",
+            "Save": {
+                "maneuver": "机动",
+                "morale": "士气"
+            },
+            "Scouting": "侦查",
+            "Tactics": "战术",
+            "Description": "描述",
+            "Error": {
+                "InvalidTacticType": "战术 {name} 不受 {type} 军队支持"
+            },
+            "RoutedDescription": "军队的生命值低于溃败阈值！",
+            "RoutThreshold": "溃败阈值",
+            "Condition": {
+                "concealed": {
+                    "name": "隐蔽"
+                }
+            }
+        },
+        "TraitDescription": {
+            "cavalry": "骑兵主要由骑乘作战的部队组成。",
+            "infantry": "步兵主要由步行的生物或士兵组成。",
+            "siege": "攻城部队专注于攻城器械的部署，而非个人作战。",
+            "skirmisher": "散兵主要有少数高机动部队组成。"
+        },
+        "GrantedBy": "此特征由 {granter} 赋予无法删除"
     }
 }
