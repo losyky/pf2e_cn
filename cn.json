@@ -5688,7 +5688,7 @@
             "shiftModifyHealingTitle": "修改治疗"
         },
         "UnitPriceLabel": "单价",
-        "UnprepareItemTitle": "不适合的物品",
+        "UnprepareItemTitle": "删除",
         "UpdateActorLabel": "更新角色",
         "UpdateLabelUniversal": "更新",
         "UserSettings": {
