@@ -934,7 +934,10 @@
                     "Label": "神术能力",
                     "Hint": "如果源于信仰背景，则它的属性提升选项来自神祇。"
                 },
-                "DivineSkill": "神圣技能",
+                "DivineSkill": {
+                    "Label": "神圣技能",
+                    "Hint": "大多数神祇拥有一项神圣技能，尽管有些会提供两项选择。"
+                },
                 "DivineFont": {
                     "Label": "神力源泉",
                     "Harm": "伤害术",
@@ -1497,7 +1500,21 @@
                 "MaterialRunes": {
                     "Label": "珍贵材料与符文"
                 },
-                "Attachments": "附着"
+                "Attachments": "附着",
+                "Attach": {
+                    "PromptTitle": "附着{item}",
+                    "SidebarContextMenuOption": "附着在物品上",
+                    "NoEligibleItem": "未找到可以令{attachable}附着的物品。",
+                    "Detach": {
+                        "Label": "拆分物品",
+                        "Prompt": "你确定要拆分{attachable}吗？"
+                    },
+                    "CraftingCheck": "制作检定",
+                    "Outcome": {
+                        "Failure": "你无法附着{attachable}。",
+                        "Success": "{attachable}现在附着在{target}上。"
+                    }
+                }
             },
             "SidebarSummary": "{type}目录",
             "Weapon": {
@@ -1663,7 +1680,8 @@
                 },
                 "Defense": {
                     "Label": "防御",
-                    "BasicSave": "基础豁免"
+                    "BasicSave": "基础豁免",
+                    "BasicDefense": "基础 {save}"
                 },
                 "Cost": "消耗",
                 "Cast": "施法",
@@ -1745,7 +1763,10 @@
                     "Disabled": "无法从合集包取得最新物品数据：包含添加到角色卡时存储的数据"
                 },
                 "Label": "取得最新",
-                "SourceNotFound": "找不到{item}的集合包来源（源ID: {sourceId}）。"
+                "SourceNotFound": "找不到{item}的集合包来源（源ID: {sourceId}）。",
+                "DifferentItemType": "{item} ({uuid})的合集包来源与此角色当前呈现的类型不符。",
+                "Success": "物品“{item}”已刷新。",
+                "SubitemFailure": "{item} ({uuid}) 上的一个或多个子项无法被刷新。"
             },
             "Shield": {
                 "Base": {
@@ -1983,7 +2004,10 @@
                         "LightBarding": "轻型坐骑护甲",
                         "Light": "轻甲",
                         "HeavyBarding": "重型坐骑护甲",
-                        "Heavy": "重甲"
+                        "Heavy": "重甲",
+                        "HeavyShort": "重",
+                        "LightShort": "轻",
+                        "MediumShort": "中"
                     },
                     "Spellcasting": {
                         "AttackDC": "攻击掷骰与DC"
@@ -2390,7 +2414,7 @@
                     "WeaponsAndShields": "武器 & 盾牌"
                 },
                 "UnitTitle": {
-                    "Price": "单位价格",
+                    "Price": "价格",
                     "Bulk": "单位负重"
                 },
                 "CarryType": {
@@ -2663,7 +2687,8 @@
             "worn": "穿戴",
             "worn-in-slot": "穿戴(槽位中)",
             "stowed": "装载",
-            "dropped": "拖挂"
+            "dropped": "拖挂",
+            "attached": "附着"
         },
         "CastLabel": "施法",
         "CharacterDetails": "角色详情",
@@ -5969,7 +5994,8 @@
                 "kalis": "蛇形剑",
                 "visap": "双头曲刃",
                 "zulfikar": "斩脊刀",
-                "arbalest": "劲弩"
+                "arbalest": "劲弩",
+                "reinforced-stock": "加固枪托"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -7536,7 +7562,11 @@
                 "UnresolvableAction": "无法执行动作：{slug}"
             }
         },
-        "ArmorPropertyRuneSizeChanging": "更改体型"
+        "ArmorPropertyRuneSizeChanging": "更改体型",
+        "TraitDescriptionReincarnated": "这个族裔专长适用于至少经历过一次转生的角色，无论是作为他们背景故事的一部分，还是因为在游戏过程中发生了转生。",
+        "TraitReincarnated": "转生",
+        "TraitExperiment": "实验",
+        "TraitDescriptionExperiment": "一个实验性神秘生物已经通过炼金术、工程、魔法或仪式被故意改造，以包含一定程度的构造体成分。尽管强大，这个过程是不稳定且不完美的。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
