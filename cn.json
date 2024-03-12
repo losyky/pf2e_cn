@@ -3119,7 +3119,11 @@
                     "dawnsilver": "朝银",
                     "duskwood": "夕木",
                     "detection": "侦测",
-                    "alchemical": "炼金"
+                    "alchemical": "炼金",
+                    "divine": "神术",
+                    "occult": "神秘",
+                    "primal": "原能",
+                    "arcane": "奥术"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -3429,7 +3433,15 @@
         },
         "Foot": {
             "Plural": "尺",
-            "Label": "脚"
+            "Label": "脚",
+            "Preformatted": {
+                "10": "10尺",
+                "15": "15尺",
+                "25": "25尺",
+                "30": "30尺",
+                "5": "5尺",
+                "20": "20尺"
+            }
         },
         "FormulaKnownTitle": "已知配方",
         "FormulaListEmpty": "空（拖放配方/物品至此）",
@@ -6981,7 +6993,7 @@
         "NPC": {
             "Abilities": {
                 "Glossary": {
-                    "AllAroundVision": "<p>这个怪物可以同时看见所有方向，因此无法被夹击flanked。</p>",
+                    "AllAroundVision": "<p>这个怪物可以同时看见所有方向，因此无法被夹击。</p>",
                     "AquaticAmbush": "<p><strong>需求</strong> 怪物藏匿在水中，并且一个位于标注距离范围内的生物未能察觉到此怪物。</p>\n<hr />\n<p><strong>效果</strong> 怪物以最大游泳速度+10尺的速度在水中和陆地上向目标移动。一旦目标进入怪物的触及范围，则怪物对其进行一次打击。目标生物在对抗这次打击时视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} 。</p>",
                     "AttackOfOpportunity": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
                     "AtWillSpells": "<p>怪物可以施放任意多次随意法术而无需花费法术位。</p>",
@@ -7591,7 +7603,26 @@
         "TraitDescriptionReincarnated": "这个族裔专长适用于至少经历过一次转生的角色，无论是作为他们背景故事的一部分，还是因为在游戏过程中发生了转生。",
         "TraitReincarnated": "转生",
         "TraitExperiment": "实验",
-        "TraitDescriptionExperiment": "一个实验性神秘生物已经通过炼金术、工程、魔法或仪式被故意改造，以包含一定程度的构造体成分。尽管强大，这个过程是不稳定且不完美的。"
+        "TraitDescriptionExperiment": "一个实验性神秘生物已经通过炼金术、工程、魔法或仪式被故意改造，以包含一定程度的构造体成分。尽管强大，这个过程是不稳定且不完美的。",
+        "Area": {
+            "InFeet": "区域（尺）",
+            "Label": "区域",
+            "Shape": {
+                "burst": "爆发",
+                "cone": "锥形",
+                "cube": "立方体",
+                "cylinder": "圆柱体",
+                "emanation": "弥漫",
+                "line": "线形",
+                "square": "方格"
+            },
+            "Size": {
+                "Quarter": "四分之一",
+                "Mile": "英里",
+                "Half": "一半"
+            }
+        },
+        "TraitRangeIncrement35": "射程增量 35尺"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
