@@ -2963,6 +2963,20 @@
             },
             "FacetboundCascader": {
                 "EnergyCharge": "能量充能"
+            },
+            "ChangeShape": {
+                "Form": {
+                    "Animal": "动物",
+                    "AnimalMedium": "中型动物",
+                    "AnimalSmall": "小型动物",
+                    "AnimalTiny": "超小型动物",
+                    "Bat": "蝙蝠",
+                    "BatGiant": "巨蝙蝠",
+                    "Barghest": "犬魔",
+                    "Cacodaemon": "狂躁邪魔",
+                    "AnimalAquatic": "水生动物",
+                    "AnimalAerial": "飞空动物"
+                }
             }
         },
         "UI": {
@@ -3009,7 +3023,8 @@
                 "FeralPrompt": "是否通过添加AC减值来增大伤害骰？"
             },
             "SanguineMutagen": {
-                "DamageNote": "每当你受到穿刺或挥砍伤害时，你都会受到@Damage[1d6[bleed]]。"
+                "DamageNote": "每当你受到穿刺或挥砍伤害时，你都会受到@Damage[1d6[bleed]]。",
+                "VariantSaveLabel": "{item}对抗疾病、毒素、疲乏"
             }
         },
         "ResistanceException": {
@@ -3374,7 +3389,10 @@
                 "MagicalDuskwood": "魔法夕木",
                 "VoidZonKuthonFollowers": "宗-库山信徒造成的虚能伤害",
                 "ImpulseFireFrom": "从{origin}来源涌动火焰",
-                "AllDamageFromSpells": "来自法术的全部伤害"
+                "AllDamageFromSpells": "来自法术的全部伤害",
+                "AllDamageFromArcaneSpells": "所有奥术法术造成的伤害",
+                "AllStrikeDamageFromUndeadCreatures": "所有不死生物的打击造成的伤害",
+                "IngestedPoisons": "摄入型毒素"
             }
         },
         "Color": {
