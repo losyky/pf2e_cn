@@ -2975,7 +2975,75 @@
                     "Barghest": "犬魔",
                     "Cacodaemon": "狂躁邪魔",
                     "AnimalAquatic": "水生动物",
-                    "AnimalAerial": "飞空动物"
+                    "AnimalAerial": "飞空动物",
+                    "Cassisian": "圣盔天使",
+                    "Jann": "小巨灵",
+                    "Jaathoom": "气巨灵",
+                    "Dog": "狗",
+                    "Dragon": "龙",
+                    "DryadQueen": "木林仙后",
+                    "Faydhaan": "水巨灵",
+                    "Fish": "鱼",
+                    "Elemental": {
+                        "Elemental": "元素",
+                        "Medium": "中型元素",
+                        "Small": "小型元素",
+                        "Air": {
+                            "Elemental": "气元素",
+                            "Medium": "中型气元素",
+                            "Small": "小型气元素"
+                        },
+                        "Earth": {
+                            "Elemental": "土元素",
+                            "Medium": "中型土元素",
+                            "Small": "小型土元素"
+                        },
+                        "Metal": {
+                            "Medium": "中型金元素",
+                            "Small": "小型金元素",
+                            "Elemental": "金元素"
+                        },
+                        "Water": {
+                            "Elemental": "水元素",
+                            "Medium": "中型水元素",
+                            "Small": "小型水元素"
+                        },
+                        "Fire": {
+                            "Medium": "中型火元素",
+                            "Elemental": "火元素",
+                            "Small": "小型火元素"
+                        },
+                        "Wood": {
+                            "Elemental": "木元素",
+                            "Small": "小型木元素",
+                            "Medium": "中型木元素"
+                        }
+                    },
+                    "Gimmerling": "屁孩精",
+                    "HumanoidSmall": "小型类人生物",
+                    "Hybrid": "混合形态",
+                    "Imp": "小恶魔",
+                    "NaiadQueen": "水泽仙后",
+                    "Octopus": "章鱼",
+                    "Raktavarna": "化物罗刹",
+                    "Gylou": "仆魔",
+                    "Hag": "鬼婆",
+                    "Morrigna": "摩莉甘猎魂使",
+                    "Mushroom": "菌类",
+                    "Gosreg": "高斯瑞格",
+                    "Gourd": "葫芦",
+                    "HumanoidLarge": "大型类人生物",
+                    "Humanoid": "类人生物",
+                    "Ifrit": "火元素裔",
+                    "Keketar": "科科塔尔",
+                    "HumanoidMedium": "中型类人生物",
+                    "Pukwudgie": "魒骻吉",
+                    "Gancanagh": "爱语者",
+                    "LamiaMatriarch": "拉米亚女族长",
+                    "Leshy": "莱西",
+                    "Lizard": "蜥蜴",
+                    "Oni": "恶鬼",
+                    "PorcupineGiant": "巨豪猪"
                 }
             }
         },
