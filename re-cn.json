@@ -3043,7 +3043,53 @@
                     "Leshy": "莱西",
                     "Lizard": "蜥蜴",
                     "Oni": "恶鬼",
-                    "PorcupineGiant": "巨豪猪"
+                    "PorcupineGiant": "巨豪猪",
+                    "Vampire": "吸血鬼",
+                    "Vidileth": "幕后尊主",
+                    "Vilderavn": "黑鸦爵",
+                    "Voidworm": "虚空虫",
+                    "Wolf": "狼",
+                    "Rat": "鼠",
+                    "Succubus": "魅魔",
+                    "WolfDire": "恐狼",
+                    "Scorpion": "蝎子",
+                    "Tree": "树",
+                    "WingedHumanoid": "有翼类人生物"
+                }
+            },
+            "Chimera": {
+                "DragonHead": "龙头的魔法根源",
+                "DivineHead": {
+                    "Label": "龙头受祝",
+                    "NoSanctification": "未受祝"
+                },
+                "PrimalHead": "龙息的能量类型"
+            },
+            "RuneGiant": {
+                "InvokeRune": {
+                    "RuneOfDestruction": {
+                        "Text": "被该武器命中的生物必须通过@Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane,electricity]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。",
+                        "Label": "毁灭符文"
+                    },
+                    "RuneOfFlames": {
+                        "Label": "火焰符文"
+                    },
+                    "RuneOfSmiting": {
+                        "Label": "猛击符文",
+                        "Text": "该武器命中时，巨人能@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{击退 Push}目标10尺（重击则击退20尺）。"
+                    },
+                    "Prompt": "选择一种符文"
+                }
+            },
+            "ShockerLizard": {
+                "ShockingBurst": {
+                    "One": "一只蜥蜴",
+                    "Two": "两只蜥蜴"
+                }
+            },
+            "ClayEffigy": {
+                "SacredArt": {
+                    "NoSanctification": "未受祝"
                 }
             }
         },
