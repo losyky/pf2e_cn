@@ -233,16 +233,16 @@
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 2}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 }
             },
             "JunkBomb": {
