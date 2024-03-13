@@ -1326,7 +1326,8 @@
                 "Disintegrated": {
                     "Description": "可能这是一种可治疗的状态。",
                     "Name": "被解离 Disintegrated"
-                }
+                },
+                "Looping": "是否返回开始？"
             },
             "Feat": {
                 "OnlyLevel1": "必须在1级时选取",
@@ -2724,8 +2725,8 @@
                     "AdjustedTarget": "<opposer>目标: {opposer}</opposer> <dc>({dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>)</dc>",
                     "NoChangeTarget": "<opposer>目标: {opposer}</opposer> <dc>({dcType} <adjusted>{adjusted}</adjusted>)</dc>",
                     "NoTarget": "<dc>{dcType} {dc}</dc>",
-                    "WithTarget": "<opposer>目标: {opposer}</target> <dc>({dcType} {dc})</dc>",
-                    "WithOrigin": "<opposer>来源：{opposer}</target> <dc>({dcType} {dc})</dc>"
+                    "WithTarget": "<opposer>目标: {opposer}</opposer> <dc>({dcType} {dc})</dc>",
+                    "WithOrigin": "<opposer>来源：{opposer}</opposer> <dc>({dcType} {dc})</dc>"
                 },
                 "Specific": {
                     "ac": "AC",
@@ -7041,7 +7042,8 @@
                     "TroopDefenses": "<p>部队是由多个单独个体组成的，在经过多次攻击和战损之后，部队的规模就会缩减。大部分部队在初始状态下的规模有16个方格（4*4），并且它们的生命值后面会列出两个阈值，第一个阈值大约是最大生命值的2/3，第二个阈值大约是最大生命值的1/3。一旦部队的生命值减少到第一个阈值以下，它的规模缩减4个方格，还剩下12个方格，并且第一个阈值会成为新的最大生命值。当部队的生命值减少到第二个阈值以下时，它的规模再缩减4个方格，只剩下8个方格，第二个阈值会成为新的最大生命值。为了恢复它的规模和最大生命值，部队需要花费很长时间来治疗伤员并补充新兵。当生命值为0时，部队规模会减为4个方格，这不足以维持部队，所以部队会溃散，剩下的少数幸存者会投降、逃跑或解散，这取决于它们自身的天性。</p>\n<p>伤害性效果，若针对单一目标，例如打击，则无法让部队的生命值一次跨过多个阈值。举例来说，如果一个部队拥有60点生命值，阈值分别为40和20，那么一次造成50点伤害的打击将使部队生命减少至21，刚好在第二个阈值之上。区域性的伤害效果或瞄准多个目标的伤害性效果可以一次跨过多个阈值，甚至可能一击毁灭整个部队。</p>\n<p>非伤害性效果若拥有区域范围或能针对一定范围内的所有生物，并且能覆盖部队占据的整个空间，则能正常对部队生效；如果效果的范围比部队占据的方格少，或可瞄准的目标数量小于部队人数，那么一般而言对部队就没有影响。但例外是：如果一个效果至少能瞄准四个目标，或者至少能覆盖4个方格，并且该效果能够阻止目标行动、导致目标逃跑、或让他们在1轮或更长时间内无法作为部队的一部分发生作用，则部队自动失去下一档阈值之上的全部生命值，并缩减4个方格。如果一个效果既能对部队造成伤害，又会导致部分成员失能从而自动损失生命值，则应先结算伤害；如果伤害没有跨过阈值，那就再结算失能效果：扣除剩余生命值来跨过阈值。</p>",
                     "Wavesense": "<p>这种感知允许怪物感受到那些因为在液体中移动而产生的振波。这是一种在（能力所列出的）有限范围内的模糊感官imprecise sense。只有当怪物位于同一液体中、且仅在对象在此液体中移动时，水波感知才会生效。</p>",
                     "ReactiveStrike": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
-                    "Stench": "<p>任何生物若进入此灵光范围或在灵光范围内开始其回合的话，则必须进行一次强韧豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心1 Sickened 1}（大失败时额外再加上@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢1 Slowed 1}）。豁免成功或从状态中恢复的生物会在一分钟内临时免疫尸臭。</p>"
+                    "Stench": "<p>任何生物若进入此灵光范围或在灵光范围内开始其回合的话，则必须进行一次强韧豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心1 Sickened 1}（大失败时额外再加上@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢1 Slowed 1}）。豁免成功或从状态中恢复的生物会在一分钟内临时免疫尸臭。</p>",
+                    "Pull": "<p><strong>需求</strong> 怪物的最后一个动作是成功的打击并且在伤害条目中列出了拉拽（Pull）</p><hr /><p><strong>效果</strong> 怪物尝试对生物进行@UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{移位 Reposition}，将其拉向怪物。这次尝试既不适用于也不计入怪物的多重攻击惩罚。如果拉拽列出了距离，在成功时变为生物被拉拽至该距离。</p>"
                 }
             },
             "ActionsList": {
