@@ -858,6 +858,9 @@
                 },
                 "DiscordantVoice": {
                     "Label": "不谐之音"
+                },
+                "TriumphantInspiration": {
+                    "Note": "你发出一声得胜的呐喊，激励起盟友们。你施放一个已知且通常使用一个单动作施放的组曲戏法。"
                 }
             },
             "Automaton": {
@@ -1851,7 +1854,10 @@
                 "AuraOfFaith": {
                     "Toggle": "本轮对邪秽（Unholy）生物的首次打击"
                 },
-                "RetributiveStrike": "报应打击"
+                "RetributiveStrike": "报应打击",
+                "IronRepercussions": {
+                    "Description": "不服从你的残酷纪律会有更持久的后果。如果一位敌人拒绝向你跪拜，你可以转而对他造成@Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,9),3,ternary(gte(@actor.level,5),2,1))))))d6[persistent,mental]] 伤害。你必须在敌人决定是否向你跪拜前，选择要不要造成持续性的心灵伤害。伤害的数值不会改变。"
+                }
             },
             "DeviantAbilities": {
                 "AwakenedPower": {
@@ -2073,6 +2079,9 @@
                     "SenseDirection": {
                         "SuccessBetter": "如果你在辨别方向的生存检定中成功，会变为大成功。"
                     }
+                },
+                "RecallKnowledge": {
+                    "SuccessBetterAdditionalInformation": "当你在回忆知识中成功时，你获得额外的信息或说明。当你在回忆知识中大成功时，根据GM的判断，你可以比正常情况获得更多的信息或说明。"
                 }
             },
             "AerialPiledriver": {
@@ -2398,7 +2407,12 @@
                 "Iron": "铁",
                 "Steel": "钢"
             },
-            "GhostScarfLit": "幽灵围巾正在照明"
+            "GhostScarfLit": "幽灵围巾正在照明",
+            "Android": {
+                "ConsistentSurge": "您可以使用纳米机械激增的频率为每10分钟一次，而不是每小时一次。",
+                "OffensiveSubroutine": "当你尝试进行攻击检定时，你可以选择激活纳米机械，而不是当你尝试技能检定时。你在触发该反应的攻击检定时获得+1状态加值。",
+                "ProtectiveSubroutine": "当你尝试豁免时，你可以选择激活纳米机械，而不是当你尝试技能检定时。如果你这样做，你在触发该反应的豁免检定时获得+2状态加值。"
+            }
         },
         "RuleElement": {
             "Aura": "灵光",
@@ -2445,7 +2459,8 @@
             "EphemeralEffect": "临时效果",
             "ItemAlteration": "物品变化",
             "SpecialStatistic": "特殊统计",
-            "TokenMark": "指示物标记"
+            "TokenMark": "指示物标记",
+            "DamageAlteration": "改变伤害"
         },
         "SkillVariant": {
             "Buried": "活埋",
@@ -2653,7 +2668,9 @@
                 "NonTrivialEncounter": "正身处一次不平凡的遭遇中"
             },
             "Life": {
-                "ToggleLabel": "治疗的所有目标都是活物"
+                "ToggleLabel": "治疗的所有目标都是活物",
+                "DescriptionModerate": "当你施放完一个非戏法法术后，你可选择法术目标之一或最靠近你的生物之一，恢复[[/r @item.level[healing]]]{等同法术环级的HP}。你无法用此法治疗自己。该次治疗拥有治疗、死灵系、命能特征，同时拥有触发法术对应的根源特征。",
+                "DescriptionMajor": "每当你使用法术位施放一个至少需要2动作的5环或更高环法术时，溢散出的命能对@Template[type:burst|distance:30]范围造成一个3动作@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{治疗术 Heal}效果，该治疗术等效环级为你所施放法术的环级-4。这次治疗在你@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Casting the Spell}完毕后立刻生效。你不会从这次治疗中获得恢复，相反，你会失去该次治疗术治疗量双倍的HP。"
             },
             "Time": {
                 "ACLabel": "移动时不会触发反应或自由动作"
@@ -2687,7 +2704,8 @@
                 "Text": "文本内容"
             },
             "FlatModifier": {
-                "HideIfDisabled": "隐藏(若禁用)"
+                "HideIfDisabled": "隐藏(若禁用)",
+                "Force": "力场？"
             },
             "GrantItem": {
                 "ReevaluateOnUpdate": "更新时重新评估",
