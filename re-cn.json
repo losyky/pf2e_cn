@@ -2115,7 +2115,7 @@
                 }
             },
             "ExemplaryFinisher": {
-                "Wit": "敌人在对你进行攻击骰时会受到-2的环境减值，直到你下一个回合开始。",
+                "Wit": "敌人在对你进行攻击骰时会受到-2的环境减值，直到你下一个回合开始。@UUID[Compendium.pf2e.feat-effects.Item.cu10OjQUdY0a9gpj]",
                 "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气}具有暂时免疫能力，则他们的暂时免疫效果结束。",
                 "Battledancer": "你可以在完成终结后立即以一个自由动作进行一次快步。",
                 "Name": "惩戒终结",
@@ -2471,7 +2471,7 @@
             "CraftJewelry": "制作珠宝首饰",
             "DemoralizeThreateningLunge": "通过威吓进逼来挫败士气",
             "CommandReptile": "命令虫类",
-            "BloodOrWater": "于血泊之中",
+            "BloodOrWater": "于血或水中",
             "Demoralize": "挫败士气",
             "DisarmMetal": "卸武一件金属物品",
             "GrappleShove": "擒拿或推撞",
@@ -2742,7 +2742,9 @@
                     "Highlight": "高亮",
                     "Translation": {
                         "Hint": "纹理资源的 x/y 手动平移",
-                        "Label": "平移"
+                        "Label": "平移",
+                        "X": "x",
+                        "Y": "y"
                     },
                     "Loop": {
                         "Hint": "文件为视频时是否循环播放",
@@ -3055,7 +3057,8 @@
                     "Scorpion": "蝎子",
                     "Tree": "树",
                     "WingedHumanoid": "有翼类人生物"
-                }
+                },
+                "Label": "当前形态"
             },
             "Chimera": {
                 "DragonHead": "龙头的魔法根源",
@@ -3084,7 +3087,9 @@
             "ShockerLizard": {
                 "ShockingBurst": {
                     "One": "一只蜥蜴",
-                    "Two": "两只蜥蜴"
+                    "Two": "两只蜥蜴",
+                    "Three": "三只蜥蜴",
+                    "Four": "四只蜥蜴"
                 }
             },
             "ClayEffigy": {
