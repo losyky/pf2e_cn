@@ -558,13 +558,30 @@
                     "Momentum": "动量（钝击）",
                     "Jolt": "震电（电击）",
                     "Ignition": "爆燃（火焰）",
-                    "Chill": "冻寒（寒冷）"
+                    "Chill": "冻寒（寒冷）",
+                    "Label": "攻势增压"
                 },
                 "LockOn": {
                     "TwoActionsLegendary": "双动作（传奇）"
                 },
                 "Overdrive": {
-                    "DamageTypePrompt": "利用超载造成火焰伤害？"
+                    "DamageTypePrompt": "利用超载造成火焰伤害？",
+                    "CriticalFailure": "哇哦！有什么东西爆炸了！你受到@Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害，并且1分钟里你不能再使用超载，因为你的装置需要冷却和重置。",
+                    "FireDamage": "超载：火焰伤害",
+                    "CriticalSuccess": "你的装置进入了一种叫做@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{超载 Overdrive}的高效状态，给你的攻击提供巨大加成。",
+                    "Success": "你的装置进入了@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]{超载 Overdrive}状态，给你的攻击提供威力加成。"
+                },
+                "Unstable": {
+                    "FlatCheck": {
+                        "Label": "不稳定检定",
+                        "Failure": "大发明无法继续使用不稳定动作。",
+                        "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。"
+                    },
+                    "Stable": "稳定",
+                    "Note": "当你进行一个不稳定动作，在应用效果之后立刻尝试一次@Check[flat|dc:17|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]检定。"
+                },
+                "BoostModulation": {
+                    "Prompt": "选择一个额外的攻势增压"
                 }
             },
             "DedicationCraftingEntry": {
@@ -1014,7 +1031,8 @@
                     "BoredLabel": "吹嘘猎手感到无聊"
                 },
                 "ScapularOfShields": {
-                    "ResistAllLabel": "激活盾肩披风，获得对所有伤害的抗力。"
+                    "ResistAllLabel": "激活盾肩披风，获得对所有伤害的抗力。",
+                    "CriticalImmunityLabel": "Activate Scapular of Shields to gain critical immunity."
                 },
                 "DeckOfDestiny": {
                     "WealOrWoePrompt": "选择吉或凶。",
@@ -1057,6 +1075,44 @@
                     "MournfulLabel": "悲恸",
                     "SkepticalLabel": "疑论",
                     "WyrmhideLabel": "龙皮"
+                },
+                "Erraticannon": {
+                    "Note": "每当你使用武器攻击时，投掷1d8来决定打击的伤害类型。@UUID[Compendium.pf2e.equipment-effects.Item.wmrINlK6twqfbJjo]{效果：胡逼炮}"
+                },
+                "EggCreamFizz": {
+                    "ChocolateLabel": "巧克力",
+                    "StrawberryLabel": "草莓",
+                    "VanillaLabel": "香草"
+                },
+                "SoothingToddy": {
+                    "WhiskeyLabel": "威士忌",
+                    "AmarettoLabel": "苦杏酒",
+                    "LimoncelloLabel": "柠檬酒"
+                },
+                "DruidsCrown": {
+                    "AntlersLabel": "鹿角",
+                    "LeavesLabel": "树叶",
+                    "FlowersLabel": "鲜花"
+                },
+                "ZuhrasGloves": {
+                    "WallOfMetalLabel": "金属墙已启动"
+                },
+                "ArachnidHarness": {
+                    "ClimbWithAllLimbs": "使用所有肢体攀爬"
+                },
+                "ArmbandsOfAthleticism": {
+                    "GreaterNote": "当你使用一个动作来攀爬或游泳并在相应的运动检定中成功时，你会在移动距离上获得+10尺物品加值。",
+                    "Note": "当你使用一个动作来攀爬或游泳并在相应的运动检定中成功时，你会在移动距离上获得+5尺物品加值。"
+                },
+                "CoyoteCloak": {
+                    "Note": "如果你在用来求生的生存技能检定上达成大成功，你可以供养两倍数量的额外生物。",
+                    "GreaterNote": "如果你在用来求生的生存技能检定上达成大成功，你可以供养四倍数量的额外生物。"
+                },
+                "RobeOfTheArchmagi": {
+                    "VsArcaneSpells": "{item} (对抗奥术法术)"
+                },
+                "SerpentDagger": {
+                    "Note": "当你用<em>毒蛇匕首</em>的一次攻击骰重击时，目标需通过@Check[type:fortitude|dc:19]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1191,6 +1247,10 @@
                 "Way": {
                     "Prompt": "选择道途",
                     "Spellshot": "魔弹射手之道（变体）"
+                },
+                "FinalShot": {
+                    "Note": "不管你的掷骰结果如何，在本次打击之后直到你的下个回合开始你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}并且获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "NoteFailure": "该武器哑火。"
                 }
             },
             "Oracle": {
@@ -1830,6 +1890,16 @@
                 },
                 "Innocuous": {
                     "Note": "即使你在分神的欺骗检定中失败，只要不是大失败，类人生物就不会意识到你在试图忽悠他们。"
+                },
+                "GuidingLuck": "你每天你可以使用半身人幸运两次：一次响应其正常的触发条件，另一次则与正常条件不同，只能在察觉或攻击检定失败时触发。",
+                "SharedLuck": {
+                    "Base": "你可以在30尺内的盟友技能检定或是豁免检定失败时使用半身人幸运，让盟友而不是你重投这个失败的检定。就像通常的那样，你的盟友必须使用新的结果，即使那比他们第一次骰点结果要差也是。",
+                    "GuidingLuck": "如果你拥有幸运指引专长，你不能在使用共享幸运为盟友增益时使用幸运指引来重投盟友的攻击检定或是察觉检定。"
+                },
+                "IncredibleLuck": {
+                    "Base": "你可以每小时使用1次半身人幸运，而不是1天1次。",
+                    "GuidingLuck": "如果你有幸运指引专长，你依旧只能以每天一次的频率在察觉检定或攻击检定失败时使用半身人幸运。（不过你可以在你使用半身人幸运的同一个小时里使用幸运指引）",
+                    "SharedLuck": "如果你有分享幸运专长，你依旧只能以每天一次的频率给你的盟友使用半身人幸运。"
                 }
             },
             "Investigator": {
@@ -2413,6 +2483,12 @@
                 },
                 "CharmingLiar": {
                     "Note": "当你用说谎行动取得大成功时，目标对你的态度改善一级，如同你用交涉技能建立印象成功。"
+                },
+                "RiskySurgery": {
+                    "Note": "当你使用治疗伤势时，在应用治疗伤势的效果前，你先对病人造成@Damage[1d8[slashing]]伤害 。若你如此做，你在治疗伤势的医疗检定上获得+2环境加值，且若你结果为成功，则视为大成功。"
+                },
+                "PeerBeyond": {
+                    "Note": "如果你知道当前出现的虚体不死生物和作祟是什么，你能以魂魄学识或作祟学识进行先攻检定。"
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -2520,7 +2596,8 @@
             "ItemAlteration": "物品变化",
             "SpecialStatistic": "特殊统计",
             "TokenMark": "指示物标记",
-            "DamageAlteration": "改变伤害"
+            "DamageAlteration": "改变伤害",
+            "EffectSpinoff": "Effect Spinoff"
         },
         "SkillVariant": {
             "Buried": "活埋",
@@ -2954,7 +3031,8 @@
                 "TargetMurderedPaleStranger": "目标是苍陌客的杀手"
             },
             "KallasDevil": {
-                "DisguisedAsChild": "正伪装成孩子"
+                "DisguisedAsChild": "正伪装成孩子",
+                "LyingAboutLoathsomeStench": "Lying about Loathsome Stench"
             },
             "RaptorGuardWight": {
                 "TerrorMaster": "尸妖猛禽精卫正戴着它的恐龙头骨头盔。"
@@ -2985,7 +3063,8 @@
                 "ShiftMood": {
                     "Sly": "狡诈",
                     "Gregarious": "擅长交际",
-                    "Angry": "生气"
+                    "Angry": "生气",
+                    "Serene": "Serene"
                 }
             },
             "Ivarsa": {
@@ -3134,7 +3213,11 @@
                     "WolfDire": "恐狼",
                     "Scorpion": "蝎子",
                     "Tree": "树",
-                    "WingedHumanoid": "有翼类人生物"
+                    "WingedHumanoid": "有翼类人生物",
+                    "ObjectTiny": "Tiny Inanimate Object",
+                    "Azuretzi": "Azuretzi",
+                    "Dove": "Dove",
+                    "RajaKrodha": "Raja-Krodha"
                 },
                 "Label": "当前形态"
             },
@@ -3185,6 +3268,28 @@
                 "Earth": {
                     "SpikeStones": "抑制刺石地表灵光"
                 }
+            },
+            "ClockworkSerpent": {
+                "Coils": "Coils"
+            },
+            "Zetogeki": {
+                "TiltScalesChannelEnergy": "Kinetic Energy Channeled",
+                "TiltScalesTilted": "Scales Tilted"
+            },
+            "HehShanBao": {
+                "UrbanLegend": {
+                    "DisbelieveResistance": "Physical Resistance is Disbelieved.",
+                    "DisbelieveSlashing": "Slashing Damage is Disbelieved."
+                }
+            },
+            "Hadrinnex": {
+                "RapidEvolution": {
+                    "EnergyGland": "Rapid Evolution - Energy Gland",
+                    "Husk": "Rapid Evolution - Husk"
+                }
+            },
+            "SoulfiredPot": {
+                "CriticalHit": "Soulfired Pot Broken by a Critical Hit"
             }
         },
         "UI": {
