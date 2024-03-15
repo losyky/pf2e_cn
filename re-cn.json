@@ -518,6 +518,169 @@
             "Psychic": {
                 "UnleashPsyche": {
                     "DamageLabel": "通过心能者施法能力施法"
+                },
+                "Amp": {
+                    "ShatterSpace": "你或法术的一个目标被撕裂的空间漩涡所环绕。这是一个灵光，你选择其范围，最大20尺。在灵光内开始回合或在其回合内进入灵光范围的生物受到@Damage[(@item.level)d6[slashing]]伤害，使用基础反射豁免对抗你的法术DC。如果生物在豁免中大失败，它失去平衡并@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。灵光持续到你的下一回合开始。你可以选择灵光是否影响位于弥漫中心的生物。",
+                    "AmpHeightenedLabel": {
+                        "AmpHeightenedSeventh": "增幅升阶（7环级）",
+                        "AmpHeightenedNinth": "增幅升阶（9环级）",
+                        "AmpHeightenedTenth": "增幅升阶（10环级）",
+                        "AmpHeightenedFifth": "增幅升阶（5环级）",
+                        "AmpHeightenedSixth": "增幅升阶（6环级）",
+                        "AmpHeightenedEighth": "增幅升阶（8环级）",
+                        "AmpHeightenedPlusThree": "增幅升阶（+3）",
+                        "AmpHeightenedPlusFour": "增幅升阶（+4）",
+                        "AmpHeightenedSecond": "增幅升阶（2环级）",
+                        "AmpHeightenedThird": "增幅升阶（3环级）",
+                        "AmpHeightenedFourth": "增幅升阶（4环级）",
+                        "AmpHeightenedPlusOne": "增幅升阶（+1）",
+                        "AmpHeightenedPlusTwo": "增幅升阶（+2）"
+                    },
+                    "DancingBlade": {
+                        "Push": {
+                            "Text": "（攻击） 该武器试图推撞其目标，使用你的法术攻击骰而非运动检定来决定推撞的结果。",
+                            "Title": "推撞"
+                        },
+                        "Guard": {
+                            "Title": "守护",
+                            "Text": "该武器不进行攻击，而是为其所跟随的目标提供对近战攻击的AC+2环境加值。该加值持续到你下一回合开始或武器改变对象之前，以先发生者为准。"
+                        },
+                        "Base": "武器的攻击强度增加，你的控制也精细到可以应用更高级的技巧。武器攻击的伤害骰子从d6变为d10。当你施展或维持法术时，除了标准选项外，你还可以选择以下选项。"
+                    },
+                    "TelekineticRend": {
+                        "Heightened": "伤害同时提升1d6钝击和1d6挥砍，并追加第三个不重叠的@Template[type:burst|distance:5]区域。",
+                        "Base": "你的思考扩展了尺度和威力。该爆发造成1d6钝击和1d6挥砍伤害，而非通常的伤害。在豁免中大失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。"
+                    },
+                    "TesseractTunnel": "你不再需要物理移动以连接空间中的两点。当你施展超维隧道时，你直接创造一条隧道，其终点是在与你速度相等的射程内的一个方格；你可以选择立即传送到隧道另一端的空间。此外，隧道可以双向穿越，而非只从入口到出口。你可以解消该法术。",
+                    "WarpStep": {
+                        "Heightened": "你完全扭曲了空间而不需要再走过其间的距离。你可以选择传送到一个在你视线和效果范围内的位置，最大距离等于你速度的两倍（在应用了跃迁步的状态加值后）。这将赋予该法术以传送特性。",
+                        "Base": "空间在瞬息之间收缩，你能用单动作施展该法术。"
+                    },
+                    "VectorScreen": "你的屏障持续时间更长，并且你可以引爆它进行一次爆炸性的反击。法术的持续时间增加到1分钟。你可以解除该法术。如果有任何弹丸被困在屏障中，你可以作为解消法术的一部分施展念动射弹将它们射向一个生物。从屏障而非你的位置开始判断念动射弹的射程。",
+                    "Daze": {
+                        "Base": "该法术创造的一股能量动摇了目标的心防，让其更易受到接下来的心能攻击。法术的伤害骰改为1d10。如果目标在意志豁免中失败，它或得1点心灵伤害的弱点，并在意志豁免上承受-1状态减值，直到你的下回合结束。大失败时，弱点变成3，目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。弱点在晕眩术造成伤害之前应用。",
+                        "Heightened": "失败或大失败的弱点都提升1，法术伤害增加2d10。"
+                    },
+                    "ContagiousIdea": "你可以选择将思维从第二个目标扩散到第三个目标，其方式与从第一个目标扩散到第二个目标相同。欢愉思维会给予两倍的临时生命值（10，每升一环额外增加2）。",
+                    "TelekineticHand": {
+                        "Base": "你创造出复数念动之手抓住一个生物并使其移动。你可以将一个中等或更小体型的生物而非物体作为目标。你试图对目标进行@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}，沿着你选择的方向，用法术攻击骰而非运动检定来对抗它的强韧DC，该生物的速度会受到-10英尺的环境减值，直到法术结束。从你施法的那一轮开始，在你每一轮第一次维持这个法术时，你可以再次尝试推撞该生物。",
+                        "Heightened": "你可以尝试对该生物进行@UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{卸武 Disarm}，而不是尝试@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}它。如果你以这种方式将物品从生物的手掌中夺出，念动之手会立即抓住它。念动之手对该生物的任何影响会立刻结束，而该法术现在会抓住该物品，就像你用未增幅的念动之手拿起了它一样。"
+                    },
+                    "WhisperingSteps": "选择一个敌人作为该法术的目标。如果该敌人的豁免失败或被法术击中，你就能在该生物的脑海中低语，迫使它朝你选择的方向快步；由于这是强制移动，你不能强迫该生物进入危险地形、跳下栏杆或类似的行动。在它快步之后，该生物会在24小时内暂时对这个增幅免疫。",
+                    "GlimpseWeakness": {
+                        "Heightened": "额外精准伤害提升1d4+1。",
+                        "Base": "额外精准伤害提升到1d4+1。"
+                    },
+                    "OmnidirectionalScan": {
+                        "BaseTwo": "如果你使用通过全向扫描准备的协助反应动作并成功，你所协助的这次攻击的加值提升至+2。在大成功时，该加值提升到+3。如果你有传奇施法熟练，大成功加值提升到+4。",
+                        "Base": "你的扫描非常细致，能够研究出生物可能的强度和弱点。你了解了目标哪个豁免最高，哪个豁免最低，且你和所有30尺内的盟友在针对该生物的攻击和伤害上获得+1环境加值。"
+                    },
+                    "Frostbite": {
+                        "Base": "你隔空汲取热量来补充自己的力量。球体造成3d4寒冷伤害。你获得数值等于你造成伤害的一半的临时生命值（在适用抗力之后）。你会在1分钟后失去这些临时生命。",
+                        "Heightened": "初始伤害增加2d4而非1d4。大失败的弱点增加1。"
+                    },
+                    "Guidance": {
+                        "Base": "你可以在关键时刻向你的盟友投射出一闪的洞见，使他们免于失败。增幅的神导术不会导致生物暂时对神导术免疫，而且即使生物暂时对神导术免疫，也可以被增幅神导术作为目标。",
+                        "Heightened": "法术的加值增加到+2。",
+                        "BaseTwo": "当你的盟友在攻击骰、察觉检定、豁免或技能检定中失败或大失败时，你可以作为触发的反应动作施放一个增幅神导术，而神导术的加值可能会将这次失败变为成功，或将大失败变为普通失败。神导的加值可追溯应用至他们的检定上。"
+                    },
+                    "Message": {
+                        "Heightened": "传讯术的目标可以选择花费反应进行@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}，打击，或@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔绊 Trip}。",
+                        "Base": "你心灵感应的信息让你可以在传递情报时协调你和盟友的动作。传讯术的目标可以立刻花费反应进行快步或行走。"
+                    },
+                    "ForbiddenThought": "你的念动冲击能震撼那些抵抗它的人。如果目标在豁免中失败，它@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "GhostlyShift": {
+                        "Heightened": "穿越生物造成的伤害+1d6。",
+                        "Base": "你变得足够无形，以至于可以穿过其他生物，当你这样做的时候会造成痛苦的干扰效果。每回合一次，当你行走、掘地、游泳或飞行时，你可以在该动作中穿过一个生物的空间，而不需要尝试@UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}检定通过，尽管你不能在其空间中结束你的回合。当你以这种方式穿过一个生物的空间时，你会对该生物造成2d6的力场伤害，目标进行基础强韧豁免。"
+                    },
+                    "ImaginaryWeapon": {
+                        "Heightened": "伤害增加2d8而非1d8。",
+                        "Base": "你创造多把幻想兵器同时攻击复数敌人。你进行两次幻想兵器攻击，每次选择一个不同的目标。你的多重攻击减值在进行完两次攻击后才会增加。"
+                    },
+                    "RedistributePotential": {
+                        "Heightened": "伤害增加2d6而不是1d4。",
+                        "Base": "你可以更大规模地影响能量的流动。法术范围改为两个@Template[type:burst|distance:10]范围。它们仍然必须彼此相邻并且可以重叠。两个区域内的生物仍然只能被你选择的一个范围影响。该法术的伤害增加到6d6。法术造成的效果持续1分钟。"
+                    },
+                    "RemovePresence": "选择该法术的一个目标或被影响范围内的一个生物，如果该敌人的豁免失败或被命中，你会对它无踪，从它的感官中消失1分钟或直到你使用一个敌对行动。这类似于@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}，但类似识破隐形的效果不会揭示你——你影响的是目标的思想，而不是它的视觉。如果反制检定成功，真视术仍然可以看穿这个幻象。",
+                    "Shield": {
+                        "Base": "你创造出三重护盾组成的多层屏障来增强你的防御力。持续时间变为到维持，至多1分钟。护盾在你每个回合开始时仍会撤下，但你可以在维持法术时自动再次举盾。",
+                        "BaseTwo": "当你用此法术进行格挡时，三层盾牌中的一层会被打破，你将不再获得AC加成，但法术并没有结束。你可以继续使用该法术，直到最后一层被打破；一旦最后一层破裂，该法术结束，你在10分钟内不能再施放护盾术或增幅护盾术。当你用增幅护盾术进行格挡时，你可以选择破坏多层护盾以提高你的防御力。如果你破坏了两层而不是一层盾，那么盾的格挡硬度会增加到正常值的1.5倍（1级为7，3级为15，5级为22，7级为30，9级为37）。如果你破坏了所有三层，那么硬度将增加到正常值的两倍。"
+                    },
+                    "TelekineticProjectile": {
+                        "Base": "你用更强的力量投掷物品，以飞雹般的射弹将敌人击退。成功时，你将目标从你的方向推离5尺。大成功时，你在造成双倍伤害之外还能将目标推离10尺。",
+                        "Heightened": "伤害提升2d6而非1d6。"
+                    },
+                    "AstralRain": "范围变为@Template[type:burst|distance:5]，你可以维持法术最多1分钟。在每回合第一次维持法术时，你可以将爆发范围移动20英尺。",
+                    "Toggle": "增幅心能戏法",
+                    "ThermalStasis": "该法术的持续时间变为1分钟。",
+                    "Ignition": {
+                        "Base": "你投射纯净的热量，导致目标燃烧。初始伤害变为1d10火焰伤害加上1点火焰溅射伤害。使用增幅的产生火焰作为近战攻击时，将初始伤害的伤害骰从d10增加到d12。你不会受到增幅引火术的溅射伤害。",
+                        "Heightened": "与引火术的正常升阶条目不同，初始伤害增加1d10（近战为1d12），溅射伤害增加1。大失败的持续火焰伤害增加1d4。"
+                    },
+                    "HomingBeacon": "选择1个被法术命中的生物（如果法术有法术攻击骰）或1个在对抗法术的豁免中失败的生物（如果法术需要一个豁免）。心能信标释放出信号，让观察者自然注意到该生物，使该生物在1分钟内更容易被发现。如果该生物@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}，他在1分钟内变成隐蔽。如果该生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，他在1分钟内不再隐蔽。",
+                    "DetectMagic": {
+                        "Base": "你侦测魔法的脉冲帮助你感觉到附近魔法的强项或弱点。当你探测到敌人或危害上有魔法存在时，你会在3个回合内获得对来自该敌人或危害的魔法的豁免+1状态加值。如果你在一次施放侦测魔法的过程中发现了多个魔法来源，你将获得对所有这些魔法的加值。",
+                        "Heightened": "对魔法的豁免状态加值增加到+2。"
+                    },
+                    "EntropicWheel": "你在施法时以及在每次熵轮会获得一个微子时获得两个微子而不是一个。",
+                    "HologramCage": "构成监牢的力场墙壁获得了实质。监牢墙壁的每个10尺x10尺段落有10AC，两倍于法术等级的硬度以及4倍于法术等级的生命值。如果在你施法时墙壁的任何一段会穿过生物，施法失败。",
+                    "PhaseBolt": {
+                        "Heightened": "伤害提升2d4而非1d4。",
+                        "Base": "你的相位矢进入完全相移，变得无形无影，直到射入目标——仿佛它传送到了目标中一般。目标对此次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。此外，相位矢忽略数值等同法术等级一半的硬度与穿刺伤害抗性。大成功时，目标不能受到传送效果影响，直到你的下回合开始。"
+                    },
+                    "ShatterMind": "你可以选择将法术区域改为@Template[type:cone|distance:30]或@Template[type:cone|distance:60]，伤害骰改为d10。豁免失败的生物在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（或在大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。",
+                    "Figment": "当你增幅法术时，你可以在其正常效果的基础上创建一个特别分散注意力的幻术。选择法术范围内的一个未被占据的方格。该方格中的幻术为在你下一个回合开始前的单次近战攻击提供夹击。如果你维持法术，幻术的细节变化和转移，让你的敌人不安；夹击幻术的持续时间延长到你下一个回合开始，并且你可以将其移动到法术范围内的任何未被占据的方格。已经识破幻术的生物，夹击幻术不能提供其效果。",
+                    "ForeseeThePath": "法术在失败时的结果与成功时相同（但在大失败时仍无效果）。每次你维持法术时，你可以选择一个额外的盟友作为目标，给予他们与初始目标盟友相同的增益。",
+                    "TargetOfPsychicIre": "选择法术的一个目标。种种精神现象向这一目标发难——例如，物件忽然撞向生物。在目标的每个回合开始时，它将受到@Damage[(@item.level)d4[bludgeoning]]伤害，适用基础反射豁免。目标将在3个回合中持续受到心怒聚焦的标记。即使你@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或离开该区域，该效果也会持续。",
+                    "InertialBarrier": "你或法术的1个目标获得对物理伤害的抗力，数值等于2+法术环级，直到你的下一回合开始。",
+                    "MentalBalm": "你或一个30尺内的盟友在对抗情绪效果的意志豁免上获得+2状态加值，持续1分钟。你也可以尝试利用这个增幅过的心能戏法反制对你或你所选盟友施加惊惧或呆滞状态的效果，只要该呆滞状态的持续时间在1小时或以内。如果你反制成功，你终止了惊惧和呆滞状态，但你不能终止效果可能存在的其他任何部分。",
+                    "WarpSpace": "选择30尺内一个你有视线和效果线的方格。从该位置决定法术的效果线和视线，也决定生物相对该法术是否具有掩蔽。该法术可以超过根据你原本位置测量的常规射程，只要法术目标到你选择的方格的距离在其常规射程内。",
+                    "AlternateAmp": "额外增幅",
+                    "DistortionLens": "透镜不仅可以干涉攻击，还可以干涉生物行动。当一个中体型或更小的盟友生物移动时，它可以移入或移出透镜所在方格而不将该方格计算在总移动距离中。同时，透镜所在方格对你的敌人成为困难地形。"
+                },
+                "PsiCantripLabels": {
+                    "DistortionLens": "曲折透镜",
+                    "Daze": "晕眩术",
+                    "DetectMagic": "侦测魔法",
+                    "Guidance": "神导术",
+                    "Ignition": "引火术",
+                    "ImaginaryWeapon": "幻想兵器",
+                    "TelekineticRend": "念动撕裂",
+                    "ThermalStasis": "热能静滞",
+                    "WarpStep": "跃迁步",
+                    "TelekineticProjectile": "念动射弹",
+                    "Figment": "虚构幻术",
+                    "ForbiddenThought": "思维禁制",
+                    "Frostbite": "冻伤术",
+                    "GlimpseWeakness": "窥视弱点",
+                    "Message": "传讯术",
+                    "PhaseBolt": "相位矢",
+                    "Shield": "护盾术",
+                    "TelekineticHand": "念动之手"
+                },
+                "OscillatingWave": {
+                    "AddEnergy": "增加能量",
+                    "Mindshift": "心象转移：增加/移除能量",
+                    "ConservationOfEnergyLabel": "能量守恒",
+                    "RemoveEnergy": "移除能量"
+                },
+                "SpellModification": {
+                    "Message": "你的传讯不受障碍阻隔。该法术可以旅行120尺，绕过墙壁和障碍物传达到目标，这意味着只要你不需要效果线或视觉系来施展该法术，只要你知道目标的位置且有一条未被阻挡并不长于120尺的路径到达目标。",
+                    "PhaseBolt": "你的相位矢能暂时将命中目标的掩护移位。在成功时，降低目标的AC环境加值（如果有）1点，直到你的下一回合开始。",
+                    "Frostbite": "你可以从更远的地方冻结目标。你的冻伤范围增加到120尺。",
+                    "Guidance": "你的眼睛无处不在，使你能够从远程给予指引。神导术的距离增加到120英尺。",
+                    "Ignition": "你可以在远处大幅增加目标的热量。使用引火术作为远程攻击时，将范围增加到60尺。使用引火术作为近战攻击时，你的攻击范围增加5尺。",
+                    "TelekineticHand": "你的念动之手可以拿起1负载的物体。如果该戏法升阶到3环或以上，负载上限提升到2负载。如果该戏法升阶到7环或以上，负载上限提升到3负载。",
+                    "Figment": "你的小幻象变幻莫测。虚构幻术的范围增加到60尺。当你维持法术时，你可以将明显的声音或视觉移动最多15尺。然后你可以像往常一样尝试@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{分神 Create a Diversion}。那些已经识破幻术的生物不会受到分神的影响。",
+                    "TelekineticProjectile": "你的念动射弹能飞得更远。将念动射弹的距离增加到60尺。",
+                    "Daze": "你可以在更远的距离上晕眩敌人，晕眩术距离增加到120尺。",
+                    "WarpStep": "你能更大幅地跃过空间，当你使用跃迁步时，你获得10尺速度状态加值而非5尺。",
+                    "DeepRoots": "当你施展一个造成@UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{被控制 Controlled}状态或用其他方式强迫目标执行某些动作（例如@UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]）的法术时，你可以选择1个在豁免中大失败的目标。当这个目标完成了法术要求的任何命令之后，或当法术被解除或反制之后，他受到@Damage[(@item.level)d6[mental]]伤害。",
+                    "Shield": "你的护盾术可以施展在他人身上。当你施展护盾术，你可以选择30尺内的目标盟友取代你自己获得该法术增益。使用护盾术进行格挡的选择仍然取决于你并占用你的反应。",
+                    "StrainMind": "即使你的心灵力量已经干涸，你也能让身体突破极限以使用增幅。你将你知道的消耗1点聚能的增幅应用在法术上。你不支付通常需花费的聚能点数，而是失去受增幅心能戏法环级4倍的生命值，同时你流出鼻血或产生其他可见的伤害表征。",
+                    "ThoughtformSummoning": "你可以从你的想象力深处创造一个理想型生物，而非从其他地方召唤一个。每当你召唤一个生物时，你可以选择创造一个该生物的思念构造体。这将赋予它对相当于其等级一半的物理伤害的抵抗力，对力场和精神伤害的弱点5，以及通过敌人的空间而不需要@UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}通过的能力（尽管它不能在一个被占据的空间内结束其回合）。",
+                    "DetectMagic": "你拥有其他施法者梦寐以求的精细掌控技巧。当你施展侦测魔法时，你会察觉到范围中的任何受到法术影响或携带魔法物品的生物，并且你会确定范围中任何魔法危害当中的主要魔法位置（对于侦测幻象有正常的限制）。这通常表现为你视野的改变，比如看到生物或危害周围有一个柔和的光环。对这些现象的感应并不能使你清楚地知道生物身上的是哪种法术，也不能知道它的哪些物品是有魔法的。",
+                    "PsychicRapport": "当你受心灵魔法的影响时，你的心灵感应更加敏锐，使你更加容易与其他生物建立连接。当你施展了一个心灵法术，在你下回合开始前，你在欺骗，交涉，和威吓检定，以及用于@UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{察言观色 Sense Motive}的察觉检定上获得+1环境加值。"
                 }
             },
             "Inventor": {
@@ -1203,7 +1366,9 @@
                 "Form": "选择形态。",
                 "Feature": "选择一种特性。",
                 "Resistance": "选择一种抗力。",
-                "Item": "选择一件物品。"
+                "Item": "选择一件物品。",
+                "Spell": "选择一个法术。",
+                "PsiCantrip": "选择一个心能戏法。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1256,6 +1421,17 @@
             "Oracle": {
                 "Mystery": {
                     "Prompt": "选择一种秘示域"
+                },
+                "CurseSeverity": {
+                    "ModerateToMajor": "你在中阶诅咒生效的情况下施放启示法术后，你立即提升至高阶诅咒。",
+                    "NoneToMinor": "在每日准备后，你第一次施放完启示法术完毕后，你的低阶诅咒便显现出来。",
+                    "MinorToModerate": "如果你在低阶诅咒生效的情况下施放启示法术，则诅咒在你结束施放法术行动之后立即提升至中阶诅咒。",
+                    "MinorToOffGuard": "你在低阶诅咒的效果之外还陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。",
+                    "MajorToExtreme": "你在高阶诅咒生效的情况下施放启示法术后，你立即提升至极端诅咒。处于极端诅咒时，你获得@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 2}状态（若你已处于毁灭状态中，毁灭状态值增加2）。每10分钟一次，当你一次攻击骰、技能检定或察觉检定、豁免骰失败时，你可以重骰之并使用第二次的结果。这次重骰拥有幸运特征并且无需动作，意味着你可以在无法行动时重骰。",
+                    "Overwhelmed": "在你施放启示法术后，你陷入过载状态。当你过载时，你无法施放和维持任何启示法术"
+                },
+                "MysteryConduit": {
+                    "Note": "当你施放5环级及更低环且没有持续时间的法术时，可以不消耗法术位，而是如同施放了启示法术一般增长一级诅咒严重性。用该法施放的法术获得咒缚特征。"
                 }
             },
             "Magus": {
@@ -1410,7 +1586,7 @@
             },
             "Rogue": {
                 "EldritchTrickster": {
-                    "Prompt": "选择一个施法兼职变体"
+                    "Prompt": "选择一个施法兼职变体。"
                 },
                 "Racket": {
                     "Prompt": "选择一种诡术"
@@ -1478,11 +1654,39 @@
                         "Label": "措手不及",
                         "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                     }
+                },
+                "OverextendingFeint": {
+                    "Note": "在虚招成功时，你可以使目标在他的下个回合结束前，对你的攻击检定受到-2状态减值，而不是在虚招的任何其他效果。@UUID[Compendium.pf2e.feat-effects.Item.x7CjbOQZUgZKW16M]{效果：自大虚招}"
                 }
             },
             "Sorcerer": {
                 "Bloodline": {
-                    "Prompt": "选择血统"
+                    "Prompt": "选择血统",
+                    "BloodMagicDescription": {
+                        "Diabolic": "地狱的火焰灼烧着目标，或是用谎言填满了你的舌头。一个目标受到@Damage[@item.level[fire]]伤害（如果法术已经造成了初始的火焰伤害，将此伤害与初始伤害合计后再计算弱点和抗力），或者你于1轮内在欺骗检定上获得+1状态加值。",
+                        "Genie": "你的施法能够扭曲现实，从而分散敌人的注意力。你于1轮内在欺骗检定上获得+1状态加值，或者目标于1轮内在察觉上承受-1状态罚值。",
+                        "Shadow": {
+                            "PerceptionPenalty": "察觉上承受-1罚值",
+                            "StealthBonus": "隐秘上获得+1加值",
+                            "Text": "影子在你或是一个目标的周围变得愈发幽暗，在隐秘检定上获得+1状态加值或是在察觉上承受-1状态罚值，持续1轮。"
+                        },
+                        "Undead": "死灵能量流过你或是一个目标。你在1轮内获得等同于法术环级的临时生命，或者一个目标受到@Damage[@item.level[void]]伤害（如果法术已经造成了初始的负能量伤害，将此伤害与初始伤害合计后再计算弱点和抗力）。",
+                        "Wyrmblessed": "你的声音传递巨龙之威。你在1个回合内获得威吓检定上的+1状态加值，或者目标在1个回合内意志豁免受到-1状态减值。",
+                        "Draconic": "你或目标身上在短时间里长出了些许龙鳞，在AC上获得+1状态加值，持续1轮。",
+                        "Aberrant": "怪异的耳语遮掩了你或是一个目标的思想，在意志豁免上获得+2状态加值，持续1轮。",
+                        "Angelic": "天界的灵光守护着你或是一个目标，在豁免骰上获得+1状态加值，持续1轮。",
+                        "Phoenix": "原能的生命与死亡之火在你或单个目标间流转。选择你或一个法术目标获得等同于法术环级的临时生命值持续1轮，或则使得法术目标受到@Damage[@item.level[fire]]伤害（如果法术本身就造成火焰伤害，在计算弱点与抗力之前加上此额外伤害）。",
+                        "Elemental": "元素的能量环绕着你或是一个目标。你于1轮内在威吓检定上获得+1状态加值，或者目标受到@Damage[@item.level[@actor.flags.pf2e.sorcerer.elementalBloodline.damageType]]伤害。根据你的元素类型（见下文），这一伤害的类型为钝击或火焰。如果法术已经造成了这一类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
+                        "Fey": "五彩缤纷的精类在你或是一个目标的周围跳起了迷舞，使其在1轮内@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。如此显而易见的遮蔽无法被用于躲藏。",
+                        "AncestralBloodMagic": "施放一个先祖法术",
+                        "Imperial": "来自先祖的记忆使得你或是一个目标在技能检定上获得+1状态加值，持续1轮。",
+                        "Demonic": "源自罪孽的腐化削弱了目标的防御，亦或使你愈发威严。目标于1轮内在AC上受到-1状态罚值，或者你于1轮内在威吓检定上获得+1状态加值。",
+                        "Hag": "恶毒的诅咒惩罚着你的敌人。在你下一轮结束之前第一名对你造成伤害的敌人受到@Damage[@item.level[mental]]伤害，且必须尝试一次@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免。",
+                        "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealement}，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide}。",
+                        "Title": "血统奥秘",
+                        "Nymph": "你的动作中尽显宁芙的优雅，甚至能使你的敌人分心。你于1轮内在交涉检定上获得+1状态加值，或者目标于1轮内在意志豁免上承受-1状态罚值。",
+                        "Psychopomp": "生与死的界限在你身上显得模糊不清。你于1轮内在强韧豁免上获得+2状态加值，或者目标受到每法术环级1点的伤害。此伤害当目标为活物时为@Damage[@item.level[void]]，当目标为不死生物时为@Damage[@item.level[vitality]]。如果法术已经造成了该种类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。"
+                    }
                 }
             },
             "Defending": {
@@ -1933,7 +2137,9 @@
                     "Lethal": "绝杀",
                     "Label": "终结",
                     "Unbalancing": "失衡",
-                    "Targeting": "狙击"
+                    "Targeting": "狙击",
+                    "PreciseNote": "当稳妥终结普通失败时，你造成@Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{完整的精准打击伤害}而非一半。",
+                    "ConfidentNote": "你向目标造成一半的@Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{精准打击伤害}。此伤害的伤害类型与发动打击的武器或无武装攻击的伤害类型相同。"
                 }
             },
             "Gnome": {
@@ -2296,7 +2502,10 @@
                         "ImpulseJunction": "涌动汇流",
                         "ElementalResistance": "元素抗力",
                         "CriticalBlast": "元素重击",
-                        "AuraJunction": "灵光汇流"
+                        "AuraJunction": "灵光汇流",
+                        "Skill": "技能",
+                        "Aura": "灵光",
+                        "Impulse": "涌动"
                     },
                     "Prompt": {
                         "Gate": "选择一个元门。",
@@ -2308,9 +2517,18 @@
                         "AuraSize": "为你的御能灵光选择一个范围。"
                     },
                     "SingleGate": "单门",
-                    "ForkThePath": "分支门径",
-                    "ExpandThePortal": "扩张元门",
-                    "DualGate": "双门",
+                    "ForkThePath": {
+                        "Label": "分支门径",
+                        "Rename": "元门关窍（分支门径：{elementFork}）"
+                    },
+                    "ExpandThePortal": {
+                        "Label": "扩张元门",
+                        "Rename": "元门关窍（扩张元门：{elementOne}）"
+                    },
+                    "DualGate": {
+                        "Label": "双门",
+                        "Rename": "元门 ({elementOne}, {elementTwo})"
+                    },
                     "AllowedDropsLabel": "御能师职业专长"
                 },
                 "Impulse": {
@@ -2364,7 +2582,11 @@
                         "Label": "重击冲击"
                     }
                 },
-                "GateAttenuator": "束门环"
+                "GateAttenuator": "束门环",
+                "Overflow": {
+                    "Title": "满溢",
+                    "Description": "当你使用带有满溢特征的涌动时，你的御能灵光会失效，直到你再次启动它（通常是通过@UUID[Compendium.pf2e.actionspf2e.Item.g8QrV39TmZfkbXgE]{引导元素 Channel Elements}动作）。如此驱使你的元素是非常耗费心力的，因此你每轮只能进行一次满溢涌动，哪怕你已经重新启动了你的元门。"
+                }
             },
             "Genie": {
                 "Janni": "小巨灵",
@@ -2548,6 +2770,148 @@
             },
             "DubiousKnowledge": {
                 "Note": "当你使用任何技能进行的回忆知识检定失败（但没有大失败）时，你会得到一个正确的答案和一个错误的答案，但你不会知道哪个是正确的。"
+            },
+            "SpellTrickster": {
+                "ShiningArms": {
+                    "Label": "闪耀武装",
+                    "Note": "当持用该武器的生物对一个敌人造成重击时，你可以用反应动作解消法术，使该敌人@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1回合。",
+                    "Description": "当你施放光亮术时，你可以将它的目标修改为一件近战武器，可以是无人持有的，也可以是由你或自愿的盟友持有的，其持续时间修改为1分钟。如果你这样做，在其的效果上增加以下内容：当持用该武器的生物对一个敌人造成重击时，你可以用反应动作解消法术，使该敌人@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1回合。在你使用这个反应动作后，你在10分钟内不能再使用这个修改。"
+                },
+                "SmolderingExplosion": {
+                    "Description": "当你施展升阶到4环级或以上的火球术时，你可以修改该法术，在其标准效果上增加以下内容。你的火球在其区域内留下一团短暂的烟云。虽然它是烟而不是雾，但这团云在其他方面具有@UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]的效果，它持续1轮。"
+                },
+                "StealVitality": {
+                    "Description": "当你施放吸血鬼之触时，你可以修改其标准效果如下：你将不获得临时生命值。如果你的目标失败或大失败，你可以尝试一个反制检定来消除自己身上的笨拙或力竭状态，使用该状态的来源来确定其反制等级和DC。如果该状态是由一个持续的效果引起的，而你没有消除该效果，该状态会在你的下一回合结束时恢复。"
+                },
+                "VolatileGrease": {
+                    "CriticalSuccess": "目标不受影响。",
+                    "Description": "当你施放油腻术时，你可以将其目标修改为一个生物。如果你这样做了，你可以用以下效果取代该法术的标准效果：你将可燃的油脂溅到目标身上。目标必须尝试@Check[type:reflex]豁免。",
+                    "Failure": "和成功一样，除了对火焰的弱点持续1分钟。",
+                    "DescriptionHeightened": "弱点增加1。",
+                    "Success": "目标被溅上油脂并获得火焰弱点2，直到你下一回合结束。目标或相邻的生物可以用一个交互动作擦掉可燃的油脂，结束这个效果。"
+                },
+                "DiskRider": {
+                    "Description": "当你施放浮碟术时，你可以将其持续时间修改为维持，最多10分钟。如果你这样做，在它的效果上增加以下的升阶条目。",
+                    "DescriptionHeightened": "该盘可以承载最多10负载。如果你骑在浮碟上，法术不再结束（但如果任何其他生物骑在浮碟上，包括该生物骑在你身上，法术仍会结束）。如果你骑在浮碟上，它就会改变其载重力以承载你，再加上相当于你可以携带并不被超载的最大额外负载。当你骑在浮碟上，每次你维持法术时可以指示它沿着地面移动，最多 30 英尺或你的速度，以较慢者为准。当你骑在它上面，只要它在坚实的地面上结束其运动，圆盘就可以穿过液体表面移动。如果它在不能支撑它的表面上结束运动，则法术结束。"
+                },
+                "DrenchingMist": {
+                    "Description": "当你施放隐雾术时，你可以对它进行修改，使其效果上增加以下的升阶条目。",
+                    "DescriptionHeightened": "雾气中充满了水分。区域内的非魔法火焰会自动熄灭。选择该区域内的一处魔法火焰或具有火焰特征的法术并尝试反制它。"
+                },
+                "ForcefulPush": {
+                    "Description": "当你施放念动之手时，你可以将其目标修改为一个生物。如果你这样做了，就用以下效果取代它的标准效果：你以念动力推动你的敌人。以法术攻击骰对抗目标强韧DC。成功时，你将目标推离5尺。如果大成功，你将目标推离10尺。"
+                },
+                "SiphoningTouch": {
+                    "Description": "当你施展吸血鬼之触时，你可以修改其标准效果如下。你可以将临时生命给予30尺范围内的一个盟友，而不是让自己获得临时生命。1分钟后，该盟友将失去任何剩余的临时生命。"
+                },
+                "SummonEnsemble": {
+                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[type:will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。随后目标在24小时内暂时免疫该效果。"
+                },
+                "UneasyRest": {
+                    "Description": "当你施展睡眠术时，你可以修改该法术，在其标准效果上增加以下内容：你施法的目标会经历可怕的梦境。当一个豁免失败或大失败的目标醒来时，它将获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
+                },
+                "WildLights": {
+                    "Description": "当你施放光亮术时，你可以将其持续时间修改为1分钟，并修改其标准效果，以创造一个形如超小型生物的漂浮光源，而不是至多四个光源。这个生物会在你的头上盘旋，除非你花费一个具有专注特征的单动作来引导光源移动最多30尺，在这种情况下，它会一直留在那里直到你再次引导它。如果你引导它回到你的头上，它就会在你头上盘旋并再次跟随你，直到你把它引导到其他地方。如果该生物移动到你的120尺以外，它就会立即消失。"
+                },
+                "BeaconMark": {
+                    "DescriptionHeightened": "你将自己与被标记的目标相调谐。在法术持续期间，你可以花费一个具有专注、侦测和预言特性的行动来尝试定位目标，只要你在目标的1英里范围内，就可以知道通往目标的方向。如果目标是一个生物或一个生物拥有目标物体，该生物可以尝试对你的法术DC进行@Check[type:will]豁免。如果它成功了，你定位目标的尝试就会失败，而且你在1天内不能再尝试这个动作。你只能让一个目标以这种方式被标记。如果你对第二个目标施展这个法术，第一个目标上的魔法印记法术就会结束，你的魔法印记也会消失。",
+                    "Description": "当你施展魔法印记时，你可以修改该法术以增加以下的升阶条目。"
+                },
+                "ConfoundingImage": {
+                    "Description": "当你施放镜影术时，你可以将其持续时间改为维持，最长1分钟，并修改其范围为30尺。如果你这样做，你用以下的效果来取代该法术的标准效果：你创造一个你自己的幻术副本，出现在范围内一个无人的方格中。这个影像会占据空间，并有5尺的触及，你的盟友可以与这个影像进行夹击。它没有任何其他生物通常会有的属性，除了等于你的法术DC的AC和等于你的法术DC-10的豁免调整。如果影像被攻击击中或豁免失败，或者你从它身边移动超过30尺，则法术结束。生物可以不受阻碍地在其空间内移动。当你维持法术时，你可以将影像移动到范围内一个未被占用的方格。"
+                },
+                "LarcenousHand": {
+                    "Description": "当你施放念动之手时，你可以移除其持续时间，将其范围修改为20尺，并将其目标修改为在法术的负载限制内的一个有主物品，只要移除该物品不会很费时间。在该法术的标准效果上增加以下内容：如果该物品的主人愿意让你拿走该物品，念动之手将该物品带到你面前。如果该生物不愿意，你必须尝试用贼活检定来偷取目标物品。偷窃物品的通常限制适用，包括你不能偷窃那些非常明显或耗时的物品（如穿着的鞋子或盔甲或正被挥舞的物品），以及你不能从战斗中的生物或其他警戒状态下的生物身上偷窃。在贼活检定成功时，念动之手会把物品带到你面前，如果大失败，你在1小时内不能再使用这种修改。如果你在贼活上的熟练是大师，你可以尝试从战斗中的生物或其他处于警戒状态的生物身上偷窃，不过如果你这样做，该法术的施法时间会增加一个动作。"
+                },
+                "TopplingTentacles": {
+                    "Description": "当你施放黑触手时，用以下效果取代该法术的标准效果：触手沿着该区域的地面滑行，试图阻碍范围内的任何人。粘稠的黑色触手试图@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔绊 Trip}该区域内的每个生物。对每个受影响的生物进行法术攻击骰对抗反射DC。任何被击中的生物都会被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}，并受到@Damage[3d6[bludgeoning]]伤害。每当有生物在该区域内结束其回合时，如果该生物还没有倒地，触手就会试图摔绊它；如果他已经倒地了，就对他造成@Damage[1d6[bludgeoning]]伤害。生物将该法术的区域视为困难地形。"
+                },
+                "TracingSigil": {
+                    "Description": "当你施放魔法印记时，你可以修改该法术，在其标准效果上添加以下内容：目标会留下一条魔法痕迹，你和其他生物可以尝试@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{追踪 Track}目标，用奥术、自然、神秘或宗教（这必须符合该法术的根源）代替生存检定。与使用生存进行追踪一样，这必须在目标去过的地方进行，并追踪其痕迹；它不允许任何人从远处找到目标。你只能对一个目标以这种方式标上修改过的魔法印记。如果你对第二个目标再次使用这个能力，第一个目标上的魔法印记就会结束，你的标记也会消失。"
+                },
+                "AgileHand": {
+                    "CriticalFailureNote": "如果你大失败，法术就会结束，并且你在24小时内不能再使用这种修改。",
+                    "PenaltyLabel": "使用远程巧手的贼活",
+                    "Description": "当你施放念动之手时，你可以将其目标修改为一套盗贼工具。当你以这种方式施展法术时，这些工具最多可以向一个装置或锁移动20尺。在你维持法术后，你可以在法术范围内使用这些工具尝试用贼活检定来@UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]{解除装置 Disable a Device}或@UUID[Compendium.pf2e.actionspf2e.2EE4aF4SZpYf0R6H]{撬锁 Pick a Lock}，但你的贼活检定会受到-2的惩罚。如果你大失败，法术就会结束，并且你在24小时内不能再使用这种修改。"
+                },
+                "DirectedPoison": {
+                    "Description": "当你施放死云术时，修改其持续时间为维持，最多1分钟，并修改其标准效果以包括以下内容：死云不会每回合远离你。每回合当你维持法术时，你可以将死云向你选择的方向移动10尺。"
+                },
+                "Label": "魔咒技法师",
+                "LingeringFlames": {
+                    "DescriptionHeightened": "伤害增加1d6，持续火焰伤害增加2。",
+                    "Description": "当你施放火球术时，你可以修改其效果，将基础伤害降低至5d6，并使其对豁免失败的生物造成@Damage[(2*(@item.level - 2))[fire,persistent]]伤害，大失败时加倍。如果你这样做，用以下内容取代它的升阶条目。"
+                },
+                "BarrierShield": {
+                    "Description": "当你施放护盾术时，你可以修改该法术以创造一个坚固的屏障，你可以将它作为@UUID[Compendium.pf2e.other-effects.Item.I9lfZUiCwMiGogVi]{掩蔽 Cover}，但不能用来盾牌格挡。当法术以这种方式被修改时，你不能使用@UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{盾牌格挡 Shield Block}反应动作，但你（而且只有你）可以花费一个行动来进行@UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{寻找掩蔽 Take Cover}，以从它获得标准掩蔽。"
+                },
+                "ChokingSmoke": {
+                    "Description": "当你施展升阶到6环或以上的火球术时，你可以修改该法术的标准效果，具体如下：该法术的伤害减少6d6。你的火球在其区域内留下一团挥之不去的有毒烟雾。虽然它是烟而不是雾，但这团烟具有@UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]的效果。"
+                },
+                "SurroundingFlames": {
+                    "Description": "当你施放火墙时，你可以修改其标准效果如下：你可以将火墙术变成一个@Template[type:burst|distance:10]的火焰，而非5尺厚，10尺半径10尺高的环形火焰。"
+                },
+                "AnimateNet": {
+                    "Description": "当你施展活化绳时，你可以将其目标修改为1张@UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{网 Net}。如果你这样做了，你可以用以下效果取代该法术的标准效果：你使一张网活化起来，并将其丢向周围20尺内的一个中型或小型生物。尝试用法术攻击骰对抗目标的反射DC。如果成功，目标会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，并在其速度上受到-10尺的减值，直到它逃脱；如果大成功，它也会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它逃脱。在法术持续期间逃脱的DC等于你的法术DC。一旦法术结束，逃脱的DC就会回到正常的网的DC（通常是16），并且目标相邻的生物可以通过交互动作来移除网。"
+                },
+                "ScatteredFire": {
+                    "Description": "当你施放火球术时，你可以将它的范围修改为两个不重叠的@Template[type:burst|distance:10]范围。"
+                },
+                "ObscuredTerrain": {
+                    "Description": "当你施放隐雾术时，你可以修改该法术，用以下方法取代其标准效果。你创造一团浓雾笼罩该区域，使生物难以看到地面。雾气内的区域对于不能看穿雾气的生物来说是困难地形。你可以解消这团雾。"
+                }
+            },
+            "Notes": {
+                "NoteLabel": "注意",
+                "RequirementsNotMet": "生物目前没有满足使用这个能力的需求。"
+            },
+            "Numbers": {
+                "Four": "四",
+                "Nine": "九",
+                "One": "一",
+                "Seven": "七",
+                "Six": "六",
+                "Ten": "十",
+                "Three": "三",
+                "Two": "二",
+                "Eight": "八",
+                "Five": "五"
+            },
+            "ShadowSignet": {
+                "Note": "如果你的下一个动作是施放需要对抗AC掷法术攻击骰的法术，选择强韧DC或反射DC。你改为使用你的法术攻击骰来对抗该防御属性，而非AC。"
+            },
+            "Shillelagh": {
+                "RollOptionLabel": "将橡棍术的武器伤害骰子增加到三个",
+                "DamageDiceLabel": "橡棍术（伤害增加）"
+            },
+            "WardMedic": {
+                "Note": "当你使用治疗疾病或治疗伤势时，你可以同时治疗至多两个目标。若你在医疗技能上的熟练度达到大师，可以同时治疗至多四个目标；若达到传奇，可以同时治疗至多八个目标。"
+            },
+            "SpellHeightened": {
+                "HeightenedEighth": "升阶（8环级）",
+                "HeightenedSeventh": "升阶（7环级）",
+                "HeightenedSixth": "升阶（6环级）",
+                "HeightenedTenth": "升阶（10环级）",
+                "HeightenedThird": "升阶（3环级）",
+                "HeightenedFifth": "升阶（5环级）",
+                "HeightenedFourth": "升阶（4环级）",
+                "HeightenedNinth": "升阶（9环级）",
+                "HeightenedPlusFour": "升阶（+4）",
+                "HeightenedSecond": "升阶（2环级）",
+                "HeightenedPlusOne": "升阶（+1）",
+                "HeightenedPlusTwo": "升阶（+2）",
+                "HeightenedPlusThree": "升阶（+3）"
+            },
+            "Staff": {
+                "AccursedStaff": {
+                    "Note": "当一名敌人在对抗你所施放的具有诅咒特征的法术时豁免失败，你获得等同于该法术环级两倍的临时生命值。此临时生命值持续10分钟。此处所指的“敌人”必须是显著的威胁，并且自愿承受诅咒者亦不被包括在内。"
+                }
+            },
+            "SpellEffectAnimalFeature": {
+                "CatEyes": "猫眼",
+                "FishTail": "鱼尾",
+                "OwlEyes": "枭瞳",
+                "Wings": "双翼"
             }
         },
         "RuleElement": {
