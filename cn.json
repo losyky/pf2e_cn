@@ -2198,7 +2198,7 @@
                     "jistkan": "古吉斯特克语",
                     "jotun": "巨人语",
                     "jyoti": "乔帝怪鸟人语",
-                    "kholo": "豺狼人语",
+                    "kholo": "鬣狗人语",
                     "kibwani": "基布伟语",
                     "kitsune": "狐妖语",
                     "lirgeni": "勒根语",
@@ -5062,7 +5062,7 @@
         "TraitDescriptionGenie": "各种各样的巨灵家族生活在各元素位面中。他们拥有着强大的魔法能力。",
         "TraitDescriptionGeniekin": "是对于源于元素位面的位面种族后裔的总称。",
         "TraitDescriptionGeneral": "这是一类任何角色都可以选择的专长，和族裔以及职业都不相关，只要该角色满足了专长的先决条件。当你的职业提供了一个通用专长时，你就可以选择一个具有此特征的专长。",
-        "TraitDescriptionGnoll": "豺狼人是类似鬣狗的人形生物。",
+        "TraitDescriptionGnoll": "鬣狗人是类似鬣狗的人形生物。",
         "TraitDescriptionGnome": "具有此特征的生物是侏儒族裔的一员。侏儒是一些擅长魔法的小人，喜欢探求新的经历，并通常拥有昏暗视觉。具有此特征的能力只能由侏儒使用或选择。具有此特征的武器是由侏儒创造并使用的。",
         "TraitDescriptionGoblin": "具有此特征的生物可能来自多种生物部落，包括地精，大地精，熊地精。地精通常拥有黑暗视觉。具有此特征的能力只能由地精使用或选择。具有此特征的武器是由地精创造并使用的。",
         "TraitDescriptionGood": "善良效果通常会操作来自善良阵营外层界域的能量，是邪恶阵营的圣仆或邪恶神祇的圣仆相对立。具有此特征的生物在阵营上是善良的。",
@@ -5295,7 +5295,7 @@
         "TraitGhost": "幽灵",
         "TraitGhoul": "食尸鬼",
         "TraitGiant": "巨人",
-        "TraitGnoll": "豺狼人",
+        "TraitGnoll": "鬣狗人",
         "TraitGnome": "侏儒",
         "TraitGoblin": "地精",
         "TraitGolem": "魔像",
@@ -7624,7 +7624,9 @@
                 "Half": "一半"
             }
         },
-        "TraitRangeIncrement35": "射程增量 35尺"
+        "TraitRangeIncrement35": "射程增量 35尺",
+        "TraitGraveknight": "死墓骑士",
+        "PreciousMaterialSisterstone": "姐妹石"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
