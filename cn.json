@@ -2256,7 +2256,8 @@
                     "wildsong": "荒野之歌",
                     "CommonLanguage": "通用语({language})",
                     "DetailsPlaceholder": "注意事项，其他不常见的细节",
-                    "Plural": "语言"
+                    "Plural": "语言",
+                    "tanuki": "化狸语"
                 }
             },
             "Dead": "死亡",
@@ -5241,7 +5242,7 @@
         "TraitDrow": "卓尔",
         "TraitDrug": "药物",
         "TraitDruid": "德鲁伊",
-        "TraitDuergar": "灰矮人",
+        "TraitDuergar": "地底矮人",
         "TraitDuskwalker": "冥人",
         "TraitDwarf": "矮人",
         "TraitEachRuneAppliedToASeparateItemThatHasPockets": "每个符文都附在一个单独的具有口袋的物品",
@@ -7626,7 +7627,11 @@
         },
         "TraitRangeIncrement35": "射程增量 35尺",
         "TraitGraveknight": "死墓骑士",
-        "PreciousMaterialSisterstone": "姐妹石"
+        "PreciousMaterialSisterstone": "姐妹石",
+        "TraitTanuki": "化狸",
+        "TraitBugbear": "熊地精",
+        "TraitCentaur": "半人马",
+        "TraitSedacthy": "海魔鬼"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
