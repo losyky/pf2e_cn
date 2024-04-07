@@ -3578,12 +3578,17 @@
                     "Scorpion": "蝎子",
                     "Tree": "树",
                     "WingedHumanoid": "有翼类人生物",
-                    "ObjectTiny": "Tiny Inanimate Object",
-                    "Azuretzi": "Azuretzi",
-                    "Dove": "Dove",
+                    "ObjectTiny": "超小型非生物",
+                    "Azuretzi": "阿偕提兹",
+                    "Dove": "鸽子",
                     "RajaKrodha": "Raja-Krodha",
                     "Owlbear": "枭熊",
-                    "Unicorn": "独角兽"
+                    "Unicorn": "独角兽",
+                    "Nymph": "宁芙",
+                    "Ape": "猿",
+                    "Boar": "野猪",
+                    "Cobra": "眼镜蛇",
+                    "Mantis": "螳螂"
                 },
                 "Label": "当前形态"
             },
