@@ -813,6 +813,9 @@
                 },
                 "DragonsPresence": {
                     "Note": "当你在对抗恐惧效果的豁免检定中掷出成功时，可用大成功替代它。当你在此检定中投掷出失败时，则用大失败替代它。"
+                },
+                "DragonsBreath": {
+                    "DescriptionAlteration": "You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[type:line|distance:60] or a @Template[type:cone|distance:30], dealing @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for 1 hour."
                 }
             },
             "Mummy": {
@@ -1858,7 +1861,7 @@
                         },
                         "FreezingRime": {
                             "Title": "冻霜魔宠",
-                            "Description": "你的魔宠摸起来很冷，它的呼吸总是清晰可见。当你施放或维持一个巫术时，你能够以你的魔宠所在方格为中心的5尺爆反范围生成冰。这些方格成为困难地形，直到你下回合开始。"
+                            "Description": "你的魔宠摸起来很冷，它的呼吸总是清晰可见。当你施放或维持一个巫术时，你能够以你的魔宠所在方格为中心的@Template[type:burst|distance:5]范围生成冰。这些方格成为困难地形，直到你下回合开始。"
                         },
                         "StalkingNight": {
                             "Description": "你的魔宠有着黑色的毛皮或羽毛，光似乎会消失在其中。当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
