@@ -3471,7 +3471,7 @@
         "HazardHardnessTitle": "危害造成的伤害因硬度值而减少",
         "HazardResetLabel": "重置",
         "HazardResetTitle": "如果危害可以被重置，相关信息如下",
-        "HazardRoutineLabel": "例行程序",
+        "HazardRoutineLabel": "流程",
         "HazardRoutineTitle": "这部分会讲述遭遇中的复杂危害在每回合的作用; \"Routine\" 后括号内的数字指每回合危害可用的行动数. 简单危害不参考这一规则",
         "HealingTypeTemporaryHealing": "治疗 (临时)",
         "Height": "身高",
