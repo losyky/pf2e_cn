@@ -1622,6 +1622,9 @@
                 "Forceful": {
                     "Second": "叠劲第二次攻击",
                     "Third": "叠劲第3+次攻击"
+                },
+                "Twin": {
+                    "SecondPlus": "成对二次以上攻击"
                 }
             },
             "Rules": {
@@ -5090,7 +5093,7 @@
         "TraitDescriptionInfused": "你可以使用灌注试剂制造一件具有灌注特征的炼金物品，它会在限定的时间结束后失效。任何来自于你的灌注炼金物品的非永久性效果，除了类似行动迟缓毒素（Slow-acting poisons）的苦难（Afflictions）之外，都会在你再次进行日常准备时终止。",
         "TraitDescriptionIngested": "这种毒药会在饮用或食用后起效。",
         "TraitDescriptionInhaled": "这种毒药会在吸入后就会起效。",
-        "TraitDescriptionInjection": "该武器可以装填一剂伤口毒药（injury poison）。在以该武器成功进行攻击之后，你能以一个单一的交互动作将毒药注射进目标体内。用新物质重新装填武器需要花费3个交互动作，并使用双手。",
+        "TraitDescriptionInjection": "该武器可以装填一份液体，通常是伤口毒药。在以该武器成功进行攻击之后，你能以一个单一的交互动作将液体注射进目标体内。用新物质重新装填武器需要花费3个交互动作，并使用双手。",
         "TraitDescriptionInjury": "这种毒药会在进入伤口后起效。",
         "TraitDescriptionIntelligent": "具有这一特征的物品是有智能的，它有自己的意志和个性，还有一些其他物品没有的纸面数据。智能物品不能用普通方法制作，它们总会是稀有或独特的。",
         "TraitDescriptionInventor": "这表示发明家职业的能力。",
@@ -5727,7 +5730,10 @@
             },
             "ActivitiesPerDay": "每日动作",
             "Label": "旅行速度",
-            "HexplorationActivities": "六角格探索行动数"
+            "HexplorationActivities": "六角格探索行动数",
+            "MilesPerHour": "英里每小时",
+            "MilesPerDay": "英里每天",
+            "FeetPerMinute": "尺每分钟"
         },
         "TrickMagicItemPopup": {
             "Label": "选择一个技能用于巧取魔法物品。",
