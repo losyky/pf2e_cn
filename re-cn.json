@@ -1865,7 +1865,7 @@
                             "Description": "你的魔宠摸起来很冷，它的呼吸总是清晰可见。当你施放或维持一个巫术时，你能够以你的魔宠所在方格为中心的@Template[type:burst|distance:5]范围生成冰。这些方格成为困难地形，直到你下回合开始。"
                         },
                         "StalkingNight": {
-                            "Description": "你的魔宠有着黑色的毛皮或羽毛，光似乎会消失在其中。当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
+                            "Description": "当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
                             "Title": "行夜魔宠"
                         }
                     }
