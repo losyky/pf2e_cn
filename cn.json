@@ -7637,7 +7637,11 @@
         "TraitTanuki": "化狸",
         "TraitBugbear": "熊地精",
         "TraitCentaur": "半人马",
-        "TraitSedacthy": "海魔鬼"
+        "TraitSedacthy": "海魔鬼",
+        "TraitDescriptionSurki": "萨基虫人是一种地下的昆虫族裔，它们吸收周围的魔法并进化出独特的适应性。",
+        "TraitGraft": "植入体",
+        "TraitSurki": "萨基虫人",
+        "TraitMinotaur": "牛头人"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
