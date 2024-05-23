@@ -71,7 +71,9 @@
                 "Seed": "种子 Seed",
                 "AqueousFist": "水之拳 Aqueous Fist",
                 "Leaves": "叶子",
-                "Fist": "拳头"
+                "Fist": "拳头",
+                "Nectar": "甘露 Nectar",
+                "Horns": "角抵 Horns"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -951,7 +953,8 @@
                 "MartialVishkanyaWeapons": "军用蝮蛇武器",
                 "MartialVanaraWeapons": "军用灵猴武器",
                 "AdvancedVishkanyaWeapons": "进阶蝮蛇武器",
-                "AdvancedVanaraWeapons": "进阶灵猴武器"
+                "AdvancedVanaraWeapons": "进阶灵猴武器",
+                "MinotaurWeapons": "牛头人武器"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -1372,7 +1375,9 @@
                 "Resistance": "选择一种抗力。",
                 "Item": "选择一件物品。",
                 "Spell": "选择一个法术。",
-                "PsiCantrip": "选择一个心能戏法。"
+                "PsiCantrip": "选择一个心能戏法。",
+                "Benefit": "选择一种好处。",
+                "ShieldOrWeapon": "选择盾牌或武器。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1447,6 +1452,9 @@
                 },
                 "ArcaneCascade": {
                     "WeaponDamage": "武器伤害"
+                },
+                "Spellstrike": {
+                    "RechargeNote": "施放花费至少一个动作的汇聚法术时，你可以再充能你的法术打击。"
                 }
             },
             "Monk": {
@@ -1867,6 +1875,18 @@
                         "StalkingNight": {
                             "Description": "当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
                             "Title": "行夜魔宠"
+                        },
+                        "ParasiticMight": {
+                            "Description": "当你施放或维持巫术时，你的魔宠会抽取另一个生物的逐渐衰弱的体能来维持自身。你魔宠15尺内一个生命值少于最大生命值一半的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}，除非它成功通过一次对抗你法术DC的@Check[type:fortitude|dc:resolve(@actor.system.attributes.spellDC.value)]豁免。",
+                            "Title": "寄生魔宠"
+                        },
+                        "OverwhelmingTides": {
+                            "Description": "当你施放或维持巫术时，你可以在你魔宠前面涌起一道小浪花。你魔宠10尺内的一个生物被推离魔宠5尺远。",
+                            "Title": "狂潮魔宠"
+                        },
+                        "NimbleFlight": {
+                            "Description": "当你施放或维持一个巫术法术，你的魔宠可以飞行最多15尺；该移动不触发反应动作。",
+                            "Title": "迅飞魔宠"
                         }
                     }
                 },
@@ -1877,6 +1897,17 @@
                     "EldritchNails": "魔甲",
                     "LivingHair": "活发",
                     "IronTeeth": "铁牙"
+                },
+                "WildWitchsArmaments": {
+                    "EldritchNails": {
+                        "RollOptionLabel": "你连续两次指甲打击命中同一目标"
+                    },
+                    "IronTeeth": {
+                        "Note": "被你的颚打击重击的生物必须成功通过一次@Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                    },
+                    "LivingHair": {
+                        "SrikeLabel": "棘刺 Quill"
+                    }
                 }
             },
             "CelestialResistance": {
@@ -2916,6 +2947,40 @@
                 "FishTail": "鱼尾",
                 "OwlEyes": "枭瞳",
                 "Wings": "双翼"
+            },
+            "HeroPointDeck": {
+                "CalledFoe": {
+                    "Note": "该效果一直持续到你的下个回合结束，或直到你对指定敌人打出重击（以最先出现的结果为准）。"
+                },
+                "CriticalMoment": {
+                    "Note": "如果你检定依然失败，你陷入@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。"
+                },
+                "DesperateSwing": {
+                    "Note": "如果攻击失败，你的武器会掉落，或者如果你使用非武装攻击，或无法松开武器的情形下，你会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+                },
+                "AncestralMight": {
+                    "SkipChoice": "跳过",
+                    "FirstBoostPrompt": "选择其中一项族裔属性提升，如果只有自由提升则自选一项。",
+                    "SecondBoostPrompt": "选择另一项族裔属性提升，如果只有自由提升则跳过。"
+                },
+                "AuraOfProtection": {
+                    "SpellRankPrompt": "选择你刚刚施法的环级。"
+                }
+            },
+            "PathfinderAgentDedication": {
+                "ThoroughReports": "详尽回报"
+            },
+            "MechanicalSymbiosis": {
+                "FailureNote": "你陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}",
+                "CriticalFailureNote": "你陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}"
+            },
+            "Nephilim": {
+                "Pitborn": {
+                    "AllowedDrops": "1级运动技能专长"
+                }
+            },
+            "VenomGlands": {
+                "Note": "重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
             }
         },
         "RuleElement": {
@@ -3653,8 +3718,8 @@
             },
             "HehShanBao": {
                 "UrbanLegend": {
-                    "DisbelieveResistance": "Physical Resistance is Disbelieved.",
-                    "DisbelieveSlashing": "Slashing Damage is Disbelieved."
+                    "DisbelieveResistance": "已不相信物理伤害抗力。",
+                    "DisbelieveSlashing": "已不相信挥砍伤害抗力。"
                 }
             },
             "Hadrinnex": {
@@ -3665,6 +3730,46 @@
             },
             "SoulfiredPot": {
                 "CriticalHit": "Soulfired Pot Broken by a Critical Hit"
+            },
+            "Silene": {
+                "LumberjacksBane": "目标正持握一把斧子"
+            },
+            "FiveColorOrchidMantis": {
+                "ColorShift": {
+                    "None": "没有选择颜色",
+                    "Red": "红色 - 火焰",
+                    "White": "白色 - 金",
+                    "Yellow": "黄色 - 土",
+                    "Green": "绿色 - 木",
+                    "Black": "黑色 - 水"
+                }
+            },
+            "Hryngar": {
+                "AlchemicalGrenade": "炼金手榴弹的伤害类型"
+            },
+            "AsoBerang": {
+                "PhantomFlames": {
+                    "Fire": "火焰",
+                    "None": "无",
+                    "Spirit": "精魂"
+                }
+            },
+            "GauChoRong": {
+                "SubsumedTrait": {
+                    "Animal": "动物",
+                    "Aquatic": "水栖",
+                    "Amphibious": "两栖",
+                    "Humanoid": "类人",
+                    "NoneOrOther": "手动选择抗力，如果有"
+                }
+            },
+            "PlanarScion": {
+                "Duskwalker": {
+                    "Immunity": "将他们的身体或灵魂转化为不死生物的效果"
+                }
+            },
+            "Target": {
+                "GrabbedByNPC": "目标受擒于你。"
             }
         },
         "UI": {
@@ -4080,7 +4185,8 @@
                 "AllDamageFromSpells": "来自法术的全部伤害",
                 "AllDamageFromArcaneSpells": "所有奥术法术造成的伤害",
                 "AllStrikeDamageFromUndeadCreatures": "所有不死生物的打击造成的伤害",
-                "IngestedPoisons": "摄入型毒素"
+                "IngestedPoisons": "摄入型毒素",
+                "AllDamageFromFungus": "所有来自真菌的伤害"
             }
         },
         "Color": {
