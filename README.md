@@ -18,6 +18,6 @@
 本项目使用 [Weblate](http://weblate.ashfinder.com/) 进行翻译工作，使用 Weblate 无需拥有任何 Git 使用知识，只需在界面上进行中英对照翻译即可！<br/>
 > 感谢Cirnoの圣剑、小早川黑二、神绮对服务器维护的支持
 
-<a href="http://150.109.5.239/engage/pf2/">
+<a href="http://weblate.ashfinder.com/">
 <img src="http://weblate.ashfinder.com/widgets/pf2/-/open-graph.png" alt="翻译状态" />
 </a>
