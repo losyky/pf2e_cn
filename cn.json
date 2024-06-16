@@ -7705,7 +7705,25 @@
         "TraitDescriptionMonitor": "来自轴心枢纽、骨园或大漩涡或者与这些位面具有强烈联系的生物被称为观察者。观察者能够在外环宇宙的基础环境效果中存活下来。",
         "TraitDescriptionNymph": "这群美丽的精类生物与自然地点有着强烈的联系。",
         "TraitImplanted": "植入",
-        "TraitDescriptionBugbear": "具有该特征的生物是生有皮毛、行事鬼祟的地精类生物。熊地精往往具有黑暗视觉。"
+        "TraitDescriptionBugbear": "具有该特征的生物是生有皮毛、行事鬼祟的地精类生物。熊地精往往具有黑暗视觉。",
+        "Skill": {
+            "Acrobatics": "特技",
+            "Arcana": "奥法",
+            "Athletics": "运动",
+            "Crafting": "手艺",
+            "Medicine": "医疗",
+            "Performance": "表演",
+            "Religion": "宗教",
+            "Occultism": "神秘",
+            "Deception": "欺骗",
+            "Diplomacy": "交涉",
+            "Intimidation": "威吓",
+            "Nature": "自然",
+            "Society": "社群",
+            "Stealth": "隐秘",
+            "Survival": "生存",
+            "Thievery": "贼活"
+        }
     },
     "DOCUMENT": {
         "Combat": "遭遇",
