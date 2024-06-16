@@ -6470,6 +6470,18 @@
             },
             "greaterDecaying": {
                 "Name": "高等腐败"
+            },
+            "flickering": {
+                "Note": {
+                    "criticalSuccess": "重击时，武器会向生物的眼睛放射明亮的色彩脉冲，使生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮（此效果具有视觉特征）。"
+                },
+                "Name": "隐现"
+            },
+            "nightmare": {
+                "Name": "梦魇",
+                "Note": {
+                    "criticalSuccess": "重击时，目标会因脑海中挥之不去的个人恐怖幻象而陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。如果你重创了一个已经陷入呆滞的生物，它也会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。这些重击效果具有情绪、恐惧和心灵特征。"
+                }
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -7723,6 +7735,28 @@
             "Stealth": "隐秘",
             "Survival": "生存",
             "Thievery": "贼活"
+        },
+        "Environment": {
+            "Feature": {
+                "Ice": "冰",
+                "Crowd": "人群",
+                "Lava": "岩浆",
+                "Rubble": "石堆",
+                "Sewer": "下水道",
+                "Snow": "雪",
+                "Sand": "沙"
+            },
+            "Type": {
+                "Aquatic": "水中",
+                "Arctic": "寒地",
+                "Desert": "沙漠",
+                "Forest": "森林",
+                "Mountain": "山脉",
+                "Plains": "平原",
+                "Swamp": "沼泽",
+                "Underground": "地底",
+                "Urban": "都市"
+            }
         }
     },
     "DOCUMENT": {
