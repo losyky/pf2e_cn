@@ -834,7 +834,8 @@
             },
             "ABC": {
                 "InvalidDrop": "{badType} 不能丢弃 (必须在 {goodType})",
-                "Features": "特征"
+                "Features": "特征",
+                "Add": "添加"
             },
             "Ancestry": {
                 "Vision": {
@@ -1515,7 +1516,8 @@
                     "Outcome": {
                         "Failure": "你无法附着{attachable}。",
                         "Success": "{attachable}现在附着在{target}上。"
-                    }
+                    },
+                    "Label": "附着"
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1633,13 +1635,15 @@
                 "Hint": {
                     "UUID": "此物品的通用唯一标识符",
                     "SourceId": "原始集合包中的物品UUID",
-                    "Slug": "一个稳定的、可读的标识符：设置后即使物品被重命名，标识符也将保持不变。"
+                    "Slug": "一个稳定的、可读的标识符：设置后即使物品被重命名，标识符也将保持不变。",
+                    "RollOptions": "物品掷骰选项的前缀取决于它的用法。大多数情况下使用<em>物品:</em>作为前缀，但是包含规则元素的项会使用<em>根源:</em>。"
                 },
                 "New": "新规则元素",
                 "RegenerateSlug": "(重新)生成短标签",
                 "Tab": "规则",
                 "Remove": "去除规则元素",
-                "Edit": "编辑JSON"
+                "Edit": "编辑JSON",
+                "ViewRollOptions": "查看掷骰选项"
             },
             "Spell": {
                 "PlaceMeasuredTemplate": "放置{size}-{unit} {shape}",
@@ -2261,7 +2265,8 @@
                     "CommonLanguage": "通用语({language})",
                     "DetailsPlaceholder": "注意事项，其他不常见的细节",
                     "Plural": "语言",
-                    "tanuki": "化狸语"
+                    "tanuki": "化狸语",
+                    "surki": "瑟基虫人语"
                 }
             },
             "Dead": "死亡",
@@ -2821,7 +2826,8 @@
                 "CreateLabel": "创建随机表",
                 "SelectTableTitle": "选择表",
                 "WeightLabel": "权重",
-                "AddDialogText": "是否将 {count} 个结果添加到随机表？"
+                "AddDialogText": "是否将 {count} 个结果添加到随机表？",
+                "TooManyResults": "结果列表长度 {size}过长。 最大长度为{maxSize}"
             },
             "TabCampaign": "战役"
         },
@@ -3129,7 +3135,8 @@
                     "divine": "神术",
                     "occult": "神秘",
                     "primal": "原能",
-                    "arcane": "奥术"
+                    "arcane": "奥术",
+                    "axes": "斧"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -4024,7 +4031,8 @@
                     "DieSizeUpgrade": "提升骰子大小",
                     "DiceHeader": "骰",
                     "Title": "伤害骰",
-                    "TitleCritical": "暴击伤害骰"
+                    "TitleCritical": "暴击伤害骰",
+                    "OverrideLabel": "覆盖"
                 },
                 "ShowDefaultHint": "如果启用，除非你按住Shift键否则始终显示此对话框。如果禁用，你可以通过按住Shift键来打开此对话框。",
                 "ShowDefault": "始终显示对话框"
@@ -4257,7 +4265,11 @@
                     "Name": "自定义伤害类型",
                     "Label": "标签"
                 },
-                "ReservedTerm": "“｛term｝”是一个保留术语。"
+                "ReservedTerm": "“｛term｝”是一个保留术语。",
+                "EnvironmentTypes": {
+                    "Hint": "任何自定义环境类型",
+                    "Name": "环境类型"
+                }
             },
             "Metagame": {
                 "Name": "超游信息",
@@ -4476,6 +4488,13 @@
                 "Default": "世界默认 ({worldDefault})",
                 "Disabled": "禁用",
                 "Enabled": "启用"
+            },
+            "Core": {
+                "ManagedBySystem": "由PF2e系统管理并锁定"
+            },
+            "MinimumRulesUI": {
+                "Hint": "查看和使用物品表上的规则元素面板所需的最低权限。",
+                "Name": "最低规则元素访问权限"
             }
         },
         "SaveDCLabel": "豁免 <dc>DC {dc}</dc> {type}",
@@ -6962,7 +6981,11 @@
             "Stack": "创建新的战利品堆？",
             "PurchaseLootMessage": "你希望购买多少道具？",
             "PurchaseLoot": "购买道具",
-            "PartyStash": "队伍藏匿处"
+            "PartyStash": "队伍藏匿处",
+            "PurchaseLootPrompt": "{buyer}想要购买这个物品吗?",
+            "Purchase": "购买",
+            "PurchasePrice": "购买价格",
+            "Give": "给予"
         },
         "vehicle": {
             "VehicleString": "载具",
@@ -7757,7 +7780,35 @@
                 "Underground": "地底",
                 "Urban": "都市"
             }
-        }
+        },
+        "Region": {
+            "Environment": {
+                "Mode": {
+                    "Label": "模式",
+                    "Add": {
+                        "Label": "添加"
+                    },
+                    "Remove": {
+                        "Label": "移除"
+                    },
+                    "Override": {
+                        "Label": "覆盖"
+                    },
+                    "Hint": "设置地形应用的模式。将所选类型添加到现有环境类型中，从现有类型中删除所选类型，或者用所选类型覆盖现有类型。"
+                },
+                "Type": {
+                    "Hint": "此场景区域的一个或多个环境类型。",
+                    "SceneHint": "为整个场景指定一个或多个环境类型。",
+                    "Label": "环境"
+                },
+                "RegionLegend": {
+                    "SceneRegionsHeader": "场景区域",
+                    "Header": "场景默认"
+                },
+                "Label": "环境"
+            }
+        },
+        "TraitVenomous": ""
     },
     "DOCUMENT": {
         "Combat": "遭遇",
