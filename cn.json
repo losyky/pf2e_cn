@@ -1424,7 +1424,8 @@
                         "saddle": "马鞍",
                         "shoes": "鞋子",
                         "wrist": "手腕上",
-                        "footwear": "鞋子"
+                        "footwear": "鞋子",
+                        "eyeglasses": "眼镜"
                     }
                 },
                 "OtherTags": {
@@ -2316,8 +2317,16 @@
                 "SimpleSheet": "简易NPC表",
                 "SkillsEditor": {
                     "Title": "技能编辑器({actor})",
-                    "LorePlaceholder": "木工学识"
-                }
+                    "LorePlaceholder": "木工学识",
+                    "Special": "特殊",
+                    "Note": "笔记",
+                    "Predicate": "谓词",
+                    "Error": {
+                        "PredicateArray": "谓词必须是一个数组"
+                    },
+                    "AddSpecial": "添加特殊"
+                },
+                "SpecialSkill": "+{mod} {label}"
             },
             "Plural": "角色",
             "IWREditor": {
@@ -2401,7 +2410,9 @@
                     "Perception": "大师察觉",
                     "ArmorClass": "防护等级熟练"
                 },
-                "Blurb": "{master}的魔宠"
+                "Blurb": "{master}的魔宠",
+                "NoAttribute": "无(宠物)",
+                "MinimumAttributeModifier": "最低属性调整值"
             },
             "Hardness": {
                 "ShortLabel": "硬度"
@@ -2992,7 +3003,8 @@
                     "unaffected": "不受{type}影响:{adjustment}",
                     "weakness": "具有{type}弱点: {adjustment}",
                     "ignored": "忽略了对{type}的抗力！",
-                    "reduction": "对{type}减弱：{adjustment}"
+                    "reduction": "对{type}减弱：{adjustment}",
+                    "redirect": "具有{type}抗力(视为{redirect}): {adjustment}"
                 },
                 "CompositeLabel": {
                     "Exceptions0DoubleVs0": "{type} {value}",
@@ -3388,7 +3400,8 @@
             "RuleElementSyntax": "规则要素定义中存在语法错误：{message}",
             "NoCreatureTokenSelected": "至少选择一个与生物相关联的指示物。",
             "WeaponNoDamage": "武器未造成伤害。",
-            "ItemNotFoundByUUID": "未找到UUID为\"{uuid}\"的物品。"
+            "ItemNotFoundByUUID": "未找到UUID为\"{uuid}\"的物品。",
+            "MissingStatisticSelected": "缺少所选角色的数据{statistic}。"
         },
         "Ethnicity": "种族划分",
         "ExpendSpellTitle": "消耗法术",
@@ -3572,6 +3585,10 @@
             "TogglePartySheet": {
                 "Hint": "打开或关闭正在激活的或（由玩家）指定的队伍窗口。",
                 "Label": "切换队伍窗口"
+            },
+            "PlaceWaypoint": {
+                "Label": "锚定路径点(拖拽量尺)",
+                "Hint": "在使用拖拽量尺时放置一个路径点。"
             }
         },
         "KitItems": "物品",
@@ -4495,6 +4512,10 @@
             "MinimumRulesUI": {
                 "Hint": "查看和使用物品表上的规则元素面板所需的最低权限。",
                 "Name": "最低规则元素访问权限"
+            },
+            "DragMeasurement": {
+                "Name": "拖拽量尺",
+                "Hint": "测量拖动指示物时的行程距离，无需按住其他键。通过按 \"{key}\" 键来锚定路径点。"
             }
         },
         "SaveDCLabel": "豁免 <dc>DC {dc}</dc> {type}",
@@ -7806,9 +7827,25 @@
                     "Header": "场景默认"
                 },
                 "Label": "环境"
+            },
+            "EnvironmentFeature": {
+                "Terrain": {
+                    "Difficult": {
+                        "Greater": "危害",
+                        "None": "无",
+                        "Label": "困难地形",
+                        "Difficult": "困难"
+                    }
+                },
+                "Label": "环境特征"
             }
         },
-        "TraitVenomous": ""
+        "TraitVenomous": "",
+        "Level25": "等级 25",
+        "Level24": "等级 24",
+        "Level23": "等级 23",
+        "Level22": "等级 22",
+        "Level21": "等级 21"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
