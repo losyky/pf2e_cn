@@ -73,7 +73,8 @@
                 "Leaves": "叶子",
                 "Fist": "拳头",
                 "Nectar": "甘露 Nectar",
-                "Horns": "角抵 Horns"
+                "Horns": "角抵 Horns",
+                "BigClaw": "巨爪"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -308,8 +309,8 @@
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d4)[persistent,piercing]]]以及[[/r (3[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d4[persistent,piercing]]]以及[[/r (1[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d4)[persistent,piercing]]]以及[[/r (1[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d4[persistent,piercing]]]以及[[/r (1[splash])[poison]]]伤害。同时目标所在的方格会被植被覆盖，造成1轮的困难地形。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d4)[persistent,piercing]]]以及[[/r (1[splash])[poison]]]伤害。同时目标所在的方格会被植被覆盖，造成1轮的困难地形。"
                 },
                 "Major": {
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4d4)[persistent,piercing]]]以及[[/r (4[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成一分钟的困难地形。",
@@ -320,7 +321,8 @@
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d4)[persistent,piercing]]]以及[[/r (2[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
                 },
                 "TerrainMajor": "除非大失败，否则炸弹的溅射区域会被植被覆盖，成为困难地形，持续1分钟。",
-                "Terrain": "除非大失败，否则炸弹的溅射区域会被植被覆盖，成为困难地形，持续1轮。"
+                "Terrain": "除非大失败，否则炸弹的溅射区域会被植被覆盖，成为困难地形，持续1轮。",
+                "TerrainLesser": "除非是大失败，目标生物所在的方格会被植被覆盖成为困难地形持续1轮。"
             },
             "PressureBomb": {
                 "Greater": {
@@ -2981,6 +2983,14 @@
             },
             "VenomGlands": {
                 "Note": "重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+            },
+            "Spellshape": {
+                "VigorousAnthem": "你和所有受影响的盟友获得等同3+你魅力调整值的临时生命值，持续1分钟 @UUID[Compendium.pf2e.feat-effects.Item.7AzGhIOx4Df5Cicr]{Effect: Vigorous Anthem}",
+                "UnusualComposition": "如果你的下一个动作是施放一个具有听觉或视觉特征的复合法术，你可以让它影响任何能用感官察觉法术的生物，而不仅仅是特性所指出的感官，甚至包括特殊感官如震颤感应。你可以选择排除任何你选择的感官。",
+                "GustingSpell": "如果你接下来的动作是施放具有气或电特征的法术，你可以在施法前或施法后飞行最多10尺。",
+                "ThunderclapSpell": "如果你的下一个动作是施放一个具有电特征或造成电击伤害、没有持续时间并要求生物尝试豁免的法术，那么该法术的闪电力量除了其原本效果外还会产生雷鸣。每个在该法术的反射豁免中失败的生物会被@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1轮，而大失败的生物还会被@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                "SplitHex": "如果你接下来的动作是施放一个以单一目标为对象的伤害法术，将其环级降低2级（使其比你能施放的最高环级低2级）。如果你如此，你可以选择第二个目标来受到该法术的影响。",
+                "WidenSpell": "如果你接下来的动作是施放一个具有爆发、锥形或直线范围且没有持续时间的法术，则扩展法术的作用区域。对于通常有至少10尺半径爆发影响区域的法术来说，爆发区域半径增加5尺；对于通常长度为15尺或更低的锥形和线形法术，区域长度增加5尺；对于更大的锥形和线形法术则区域长度增加10尺。"
             }
         },
         "RuleElement": {
@@ -3657,7 +3667,10 @@
                     "Ape": "猿",
                     "Boar": "野猪",
                     "Cobra": "眼镜蛇",
-                    "Mantis": "螳螂"
+                    "Mantis": "螳螂",
+                    "Shark": "鲨鱼",
+                    "Moose": "麋鹿",
+                    "Plant": "植物"
                 },
                 "Label": "当前形态"
             },
@@ -3710,7 +3723,7 @@
                 }
             },
             "ClockworkSerpent": {
-                "Coils": "Coils"
+                "Coils": "线圈"
             },
             "Zetogeki": {
                 "TiltScalesChannelEnergy": "Kinetic Energy Channeled",
@@ -3752,7 +3765,8 @@
                     "Fire": "火焰",
                     "None": "无",
                     "Spirit": "精魂"
-                }
+                },
+                "SpectralFlame": "灵火"
             },
             "GauChoRong": {
                 "SubsumedTrait": {
@@ -3770,6 +3784,15 @@
             },
             "Target": {
                 "GrabbedByNPC": "目标受擒于你。"
+            },
+            "GrimReaper": {
+                "InfuseWeapon": "如果收割者死神攻击对任何有特定类型弱点的生物，镰刀的伤害将被视为该类型的伤害，除了挥砍伤害。"
+            },
+            "GiantTardigrade": {
+                "TunState": {
+                    "Dry": "干燥",
+                    "Rehydrating": "补水"
+                }
             }
         },
         "UI": {
@@ -4186,7 +4209,10 @@
                 "AllDamageFromArcaneSpells": "所有奥术法术造成的伤害",
                 "AllStrikeDamageFromUndeadCreatures": "所有不死生物的打击造成的伤害",
                 "IngestedPoisons": "摄入型毒素",
-                "AllDamageFromFungus": "所有来自真菌的伤害"
+                "AllDamageFromFungus": "所有来自真菌的伤害",
+                "CrystalHazards": "晶石危害",
+                "Spirits": "精魂",
+                "AcidAndSpellsThatCauseRust": "酸蚀和导致生锈的法术"
             }
         },
         "Color": {
