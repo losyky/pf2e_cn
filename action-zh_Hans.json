@@ -763,7 +763,7 @@
                     "UnknownVariant": "进行急救所使用的变体{variant}未知，请使用{variants}之一。"
                 },
                 "Title": "进行急救",
-                "Description": "<p>你对处于濒死或流血的相邻生物进行急救。如果一个生物既处于濒死状态又处于流血状态，你需要在掷骰前选择其中之一来治疗。你可以再次进行急救来尝试治疗其他效果。</p><ul><li><strong>稳定伤势</strong> 对一个生命值为0且处于濒死状态的生物进行医疗检定。DC等于5+该生物复苏掷骰的DC（通常为15+该生物的濒死值）。</li><li><strong>止血</strong> 对受到持续流血伤害（第409页）的生物进行医疗检定。DC通常等于导致出血效果的DC。</li></ul><p><strong>成功</strong> 如果你试图稳定伤势，目标会失去濒死状态（但仍处于@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态）。如果你试图止血，目标会受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。</p><p><strong>大失败</strong> 如果你试图稳定伤势，目标的濒死值会增加1点。如果你试图止血，目标会立刻受到与其持续流血伤害相等的伤害。</p>"
+                "Description": "<p>你对处于濒死或流血的相邻生物进行急救。如果一个生物既处于濒死状态又处于流血状态，你需要在掷骰前选择其中之一来治疗。你可以再次进行急救来尝试治疗其他效果。</p><ul><li><strong>稳定伤势</strong> 对一个生命值为0且处于濒死状态的生物进行医疗检定。DC等于5+该生物复苏掷骰的DC（通常为15+该生物的濒死值）。</li><li><strong>止血</strong> 对受到持续流血伤害的生物进行医疗检定。DC通常等于导致出血效果的DC。</li></ul><p><strong>成功</strong> 如果你试图稳定伤势，目标会失去濒死状态（但仍处于@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态）。如果你试图止血，目标会受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。</p><p><strong>大失败</strong> 如果你试图稳定伤势，目标的濒死值会增加1点。如果你试图止血，目标会立刻受到与其持续流血伤害相等的伤害。</p>"
             },
             "CreateForgery": {
                 "ForgedDocument": {
