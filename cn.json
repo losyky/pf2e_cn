@@ -3004,7 +3004,10 @@
                     "weakness": "具有{type}弱点: {adjustment}",
                     "ignored": "忽略了对{type}的抗力！",
                     "reduction": "对{type}减弱：{adjustment}",
-                    "redirect": "具有{type}抗力(视为{redirect}): {adjustment}"
+                    "redirect": {
+                        "resistance": "对{type}具有抗力 (视为{redirect}): {adjustment}",
+                        "immunity": "对{type}免疫 (视为{redirect}): {adjustment}"
+                    }
                 },
                 "CompositeLabel": {
                     "Exceptions0DoubleVs0": "{type} {value}",
@@ -4515,7 +4518,10 @@
             },
             "DragMeasurement": {
                 "Name": "拖拽量尺",
-                "Hint": "测量拖动指示物时的行程距离，无需按住其他键。通过按 \"{key}\" 键来锚定路径点。"
+                "Hint": "测量拖动指示物时的行程距离，无需按住其他键。通过按 \"{key}\" 键来锚定路径点，右键单击删除路径点。",
+                "Always": "总是",
+                "Encounters": "在遭遇中",
+                "Never": "永不"
             }
         },
         "SaveDCLabel": "豁免 <dc>DC {dc}</dc> {type}",
@@ -5011,7 +5017,7 @@
         "TraitDescriptionAnadi": "来自加伦德的一个隐居民族，形似蜘蛛，可以模仿人形。",
         "TraitDescriptionAnroid": "人工创造的类人种族。最常见于纽梅利亚。",
         "TraitDescriptionAphorite": "公理裔是起源于守序位面都市轴心城的位面族裔。",
-        "TraitDescriptionArcane": "这个魔法源于奥术法术根源，是建立在逻辑和合理性上的特征，拥有此特征的法术称作魔法。",
+        "TraitDescriptionArcane": "这个魔法源于奥术法术根源，是建立在逻辑和合理性上的特征，拥有此特征的法术称作魔法。拥有此特征的生物基本是由奥术魔法构成，或与奥术魔法有强烈联系。",
         "TraitDescriptionArchetype": "这个专长属于一个变体.",
         "TraitDescriptionAttached": "附着武器必须和另一件装备结合才能使用。此特性会列出它必须与哪种类型的物品附着。你必须持用或穿戴这个武器附着的物品才能用它进行攻击。举例来说，附着盾牌的盾刺允许你用盾刺而非盾击进行攻击，不过只有在你持用盾牌时才能如此做。附着武器往往被固定或内建在它所附着的物品上，而且通常来说，一个物品只能安装一件附着武器。一件附着武器可以花费10分钟，通过@Check[type:crafting|dc:10]技能检定来安装，如果需要这还包括从上一件物品上拆卸的时间。若物品被破坏，仍有机会救回它上头附着的武器。",
         "TraitDescriptionAttack": "如果你在同一轮中使用攻击特性的动作超过一次，第一次之后的攻击都要承受多次攻击罚值。",
@@ -6166,7 +6172,7 @@
             "corrosive": {
                 "Name": "侵蚀",
                 "Note": {
-                    "criticalSuccess": "重击时，目标的盔甲受到[[/r 3d6[acid] #Corrosive Rune]]{3d6酸蚀}伤害(计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。"
+                    "criticalSuccess": "重击时，目标的盔甲受到@Damage[3d6[acid]]伤害(计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。"
                 }
             },
             "crushing": {
@@ -6205,7 +6211,7 @@
             "flaming": {
                 "Name": "炽焰",
                 "Note": {
-                    "criticalSuccess": "当你用此武器的一次打击重击时，你额外造成[[/r {1d10}[persistent,fire]]] # Flaming Rune]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害 Persistent Fire Damage}。"
+                    "criticalSuccess": "当你用此武器的一次打击重击时，你额外造成@Damage[1d10[persistent,fire]]伤害。"
                 }
             },
             "frost": {
@@ -6231,14 +6237,14 @@
             "greaterBrilliant": {
                 "Name": "高等辉煌",
                 "Note": {
-                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、善良或命能的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
-                    "success": "该武器造成的伤害忽略目标的火焰、善良或命能的抗力。"
+                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
+                    "success": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。"
                 }
             },
             "greaterCorrosive": {
                 "Name": "高等侵蚀",
                 "Note": {
-                    "criticalSuccess": "该武器造成的酸蚀伤害无视酸蚀抗力。 重击时，目标的盔甲受到[[/r 6d6[acid]]]{6d6酸蚀} 伤害 (计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。",
+                    "criticalSuccess": "该武器造成的酸蚀伤害无视酸蚀抗力。 重击时，目标的盔甲受到@Damage[6d6[acid]]伤害 (计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。",
                     "success": "该武器造成的酸蚀伤害无视酸蚀抗力。"
                 }
             },
@@ -6269,7 +6275,7 @@
             "greaterFlaming": {
                 "Name": "高等炽焰",
                 "Note": {
-                    "criticalSuccess": "该武器造成的火焰伤害（包括持续火焰伤害）忽略目标的火焰抗力。",
+                    "criticalSuccess": "重击时，你造成额外@Damage[2d10[persistent,fire]]伤害。该武器造成的火焰伤害（包括持续火焰伤害）忽略目标的火焰抗力。",
                     "success": "该武器造成的火焰伤害忽略目标的火焰抗力。"
                 }
             },
@@ -6310,7 +6316,7 @@
                     "Bow": "拔出弹头的运动DC为20。",
                     "Brawling": "目标的豁免获得-4环境减值。",
                     "Club": "你可以击退目标最多15尺远。",
-                    "Dart": "基础持续流血伤害提升为[[/r 2d6[bleed]]]。",
+                    "Dart": "基础持续流血伤害提升为@Damage[2d6[persistent,bleed]]。",
                     "Flail": "你移动目标5尺。你无法将其移动远离你，但可以按你所想将其移动到你的另一个方位上。",
                     "Hammer": "你还可以将其击退离你5尺远。",
                     "Knife": "只要目标还受到该@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}，其速度获得-5尺状态减值。",
@@ -6319,7 +6325,9 @@
                     "Shield": "你可以击退目标最多10尺远。",
                     "Sling": "若目标豁免失败，其移动速度1轮内获得-10尺的减值。",
                     "Spear": "力竭状态持续2轮。",
-                    "Sword": "目标直到你的下一回合结束时措手不及。"
+                    "Sword": "目标直到你的下一回合结束时措手不及。",
+                    "Crossbow": "若被重击的目标与一个平面相邻，它会被导弹钉住，效果同弓的重击专精效果。",
+                    "Firearm": "目标在豁免上承受-4环境减值。"
                 }
             },
             "hauling": {
@@ -6328,7 +6336,7 @@
             "holy": {
                 "Name": "圣洁",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 命令; 每日一次)<br /><strong>触发</strong> 你用该武器对一邪秽生物重击成功<br /><strong>效果</strong>你获得该邪秽生物等级双倍的HP。这是一个善良、命能、治疗效果。"
+                    "criticalSuccess": "神圣疗愈 Holy Healing <span class=\"action-glyph\">R</span> (专注，治疗，命能)</p><p><strong>频率</strong> 每天一次</p><p><strong>触发</strong> 你使用这把武器对邪秽生物的打击造成重击</p><hr /><p><strong>效果</strong> 你获得该邪秽生物等级双倍的HP。这是一个善良、命能、治疗效果。"
                 }
             },
             "hopeful": {
@@ -6387,13 +6395,13 @@
             "unholy": {
                 "Name": "邪秽",
                 "Note": {
-                    "criticalSuccess": "（<span class=\"pf2-icon\">R</span> 命令；每天一次）<br /><strong>触发</strong> 你用该武器对一圣洁生物的攻击骰重击<br /><strong>效果</strong> 符文蚀刻的武器每有一个武器伤害骰，目标就受到1d8点持续流血伤害。"
+                    "criticalSuccess": "堕邪喋血 Unholy Bloodshed <span class='pf2-icon'>R</span> (专注)</p><p><strong>频率</strong> 每天一次</p><p><strong>触发</strong> 你用该武器对一圣洁生物的攻击骰重击</p><hr /><p><strong>效果</strong> 目标受到蚀刻武器每颗武器骰1d8的持续流血伤害。"
                 }
             },
             "vorpal": {
                 "Name": "斩首",
                 "Note": {
-                    "criticalSuccess": "(<span class=\"pf2-icon\">R</span> 想象(死亡，失能))<br /><strong>触发</strong>你用该武器的打击动作骰出天然20、重击成功且造成了挥砍伤害，目标必须有头；<br /><strong>效果</strong> 目标必须成功通过@Check[type:fortitude|dc:37|traits:death,incapacitation|name:Vorpal Rune]检定，否则被斩首。除非目标失去这个头部也能活，否则会击杀它。对于有多个头部的生物，通常只在砍掉其最后一个头部时才会立刻击杀它。"
+                    "criticalSuccess": "不平则鸣 Snicker-Snack <span class=\"action-glyph\">R</span> (专注，死亡，失能)</p><p><strong>触发</strong> 你使用这把武器对有头生物的打击掷出了自然20，造成了重击，且为挥砍伤害</p><hr /><p><strong>效果</strong> 目标必须成功通过一次@Check[type:fortitude|dc:37|traits:death,incapacitation|name:斩首]豁免，否则将被斩首。这会立即杀死任何生物，除非其不需要头也能存活。对于拥有多头的生物，你通常需要砍下它的最后一颗头颅才能将其杀死。"
                 }
             },
             "wounding": {
@@ -6495,12 +6503,12 @@
                 "Name": "星魂",
                 "Note": {
                     "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:26]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
-                    "Note": "星魂武器能够伤害不具有实体的生物。星魂武器对虚体生物特别有效，而虚体生物几乎都对星魂武器有着弱点。不同于大部分实体物品，虚体生物可以碰触、握持并持用星魂武器。"
+                    "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用星魂武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。"
                 }
             },
             "greaterAstral": {
                 "Note": {
-                    "Note": "星魂武器能够伤害不具有实体的生物。星魂武器对虚体生物特别有效，而虚体生物几乎都对星魂武器有着弱点。不同于大部分实体物品，虚体生物可以碰触、握持并持用星魂武器。高等星魂武器造成的精魂伤害忽视目标的精魂抗力。",
+                    "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用此武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。",
                     "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:36]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
                 },
                 "Name": "高等星魂"
@@ -6522,6 +6530,14 @@
                 "Note": {
                     "criticalSuccess": "重击时，目标会因脑海中挥之不去的个人恐怖幻象而陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。如果你重创了一个已经陷入呆滞的生物，它也会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。这些重击效果具有情绪、恐惧和心灵特征。"
                 }
+            },
+            "shockwave": {
+                "Name": "震波",
+                "Note": "使用此武器进行的打击造成等同于武器骰数量的钝击溅射伤害。你自己对该溅射伤害免疫。"
+            },
+            "quickstrike": {
+                "Name": "迅击",
+                "Note": "当持用一把迅击武器时，你获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，但你只能使用其赋予的额外动作用蚀刻武器进行一次打击。"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -7063,7 +7079,7 @@
                     "AttackOfOpportunity": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
                     "AtWillSpells": "<p>怪物可以施放任意多次随意法术而无需花费法术位。</p>",
                     "Aura": "<p>怪物的灵光会自动影响怪物周边指定发散范围内的一切事物。怪物无需在灵光上花费任何动作；灵光将在特定的时间起效，例如生物在灵光内结束其回合或是生物进入灵光。</p>\n<p>如果一个灵光仅造成伤害，它的条目中只会列出半径、伤害和豁免检定。这类灵光在生物进入灵光或是在灵光内开始其回合时对生物造成伤害。一个生物在同一回合内仅会被此灵光伤害一次。</p>\n<p>GM也许会判定怪物的光环不会影响其盟友。例如，一个生物在与某怪物长时间同处之后可能会免疫此怪物的气势凶猛。</p>",
-                    "Buck": "<hr />\n<p>大多数充当坐骑的怪物都会尝试甩脱那些讨厌恼人的骑手，不过除非是收到了惊吓或是虐待，否则大多数坐骑不会对被信任的生物使用这种反应动作。</p>\n<p><strong>触发</strong> 一个生物在骑在怪物上时使用@UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{骑乘 Mounts}或是@UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{指挥怪物 Command an Animal}动作。</p>\n<hr />\n<p><strong>效果</strong>触发的生物必须成功通过一次所列DC的反射豁免检定，否则被摔落且@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。如果豁免结果是大失败，触发的生物还会在正常的坠落伤害外额外承受[[/roll 1d6[bludgeoning]]]{1d6钝击伤害}。</p>",
+                    "Buck": "<hr />\n<p>大多数充当坐骑的怪物都会尝试甩脱那些讨厌恼人的骑手，不过除非是收到了惊吓或是虐待，否则大多数坐骑不会对被信任的生物使用这种反应动作。</p>\n<p><strong>触发</strong> 一个生物在骑在怪物上时使用@UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{骑乘 Mounts}或是@UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{指挥怪物 Command an Animal}动作。</p>\n<hr />\n<p><strong>效果</strong>触发的生物必须成功通过一次所列DC的反射豁免检定，否则被摔落且@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。如果豁免结果是大失败，触发的生物还会在正常的坠落伤害外额外承受@Damage[1d6[bludgeoning]]伤害。</p>",
                     "CatchRock": "<p><strong>要求</strong> 怪物必须有一只空闲手，但是能够@UUID[Compendium.pf2e.actionspf2e.Item.wQYmDStjdjn0I26t]{松开}手上握持的物品作为此反应动作的一部分。</p>\n<p><strong>触发</strong> 怪物成为一次投石打击的目标，或是石块将要掉落到怪物上。</p>\n<hr />\n<p><strong>效果</strong> 怪物在对抗此次攻击的AC或是任何对抗落石的防御上获得+4环境加值。如果攻击未命中或是怪物成功避免了落石，怪物接住了石头，避免了伤害。现在，是这只怪物握住了石头。</p>",
                     "ChangeShape": "<p>怪物无限期地改变了其形态。它能够使用此动作恢复原形或是改为一个新的形态。除非另有说明，否则怪物无法使用变身能力呈现出某个特定个体。使用变身也被视为使用欺骗技能的@UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{乔装 Impersonate}来伪装自身。在判别所变化形态的生物族裔或是生物类型时，怪物的变形将自动成功对抗察觉DC，并且在防止从其他方面识破其伪装的欺骗DC上获得+4状态加值。变身能力指定了怪物能够变化的形态。怪物仅能变化其生理形态，并不会获得新形态的特殊能力。例如，在每个形态下，它都会替换其正常速度与打击，并且可能改变其感官或体型。所有变更都会在数据栏中列出。</p>",
                     "ConstantSpells": "<p>一个恒定法术将持续对怪物生效而无需怪物施放之，并且法术的持续时间为永久。如果一个恒定法术被反制，则怪物可以花费此法术正常情况下所要求的施法动作来将其重新激活。</p>",
@@ -7845,7 +7861,8 @@
         "Level24": "等级 24",
         "Level23": "等级 23",
         "Level22": "等级 22",
-        "Level21": "等级 21"
+        "Level21": "等级 21",
+        "TraitDescriptionEthereal": "灵体生物是灵界的原住民。他们可以在灵界的基本环境效果中存活。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
