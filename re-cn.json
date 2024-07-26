@@ -85,7 +85,7 @@
                 "Shove": "你可以在攻击命中后立刻花费一个动作将目标推离5尺，如同成功的@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}动作一般"
             },
             "DaemonForm": {
-                "CeustodaemonDamageNote": "任何成功的噬咬或爪击都会造成额外的[[/r {1d6}]]{1d6点伤害}，并且你会受到等量伤害"
+                "CeustodaemonDamageNote": "任何成功的噬咬或爪击都会造成额外的@Damage[1d6[untyped]]伤害，并且你会受到等量伤害"
             },
             "MonstrosityForm": {
                 "ShroudOfFlame": "火焰护罩"
@@ -122,180 +122,180 @@
         "BombNotes": {
             "AcidFlask": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3d6[persistent,acid]]]以及[[/r (3[splash])[acid]]]{3点酸蚀溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d6)[persistent,acid]]]以及[[/r (3}(3[splash])[acid]]]{3点酸蚀溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3d6[persistent,acid]]以及@Damage[(3[splash])[acid]]{3点酸蚀溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3d6)[persistent,acid]]以及@Damage[(3[splash])[acid]]{3点酸蚀溅射伤害}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d6[persistent,acid]]]以及[[/r (1[splash])[acid]]]{1点酸蚀溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d6)[persistent,acid]]]以及[[/r (1[splash])[acid]]]{1点酸蚀溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1d6[persistent,acid]]以及@Damage[(1[splash])[acid]]{1点酸蚀溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1d6)[persistent,acid]]以及@Damage[(1[splash])[acid]]{1点酸蚀溅射伤害}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4d6[persistent,acid]]]以及[[/r (4[splash])[acid]]]{4点酸蚀溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成 [[/r (2*4d6)[persistent,acid]]]以及 [[/r (4[splash])[acid]]]{4点酸蚀溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4d6[persistent,acid]]以及@Damage[(4[splash])[acid]]{4点酸蚀溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4d6)[persistent,acid]]以及@Damage[(4[splash])[acid]]{4点酸蚀溅射伤害}。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d6)[persistent,acid]]]以及[[/r (2[splash])[acid]]]{2点酸蚀溅射伤害}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d6[persistent,acid]]]以及[[/r (2[splash])[acid]]]{2点酸蚀溅射伤害}。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2d6)[persistent,acid]]以及[[/r (2[splash])[acid]]]{2点酸蚀溅射伤害}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2d6[persistent,acid]]以及@Damage[(2[splash])[acid]]{2点酸蚀溅射伤害}。"
                 }
             },
             "AlchemistsFire": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3[persistent,fire]]]以及[[/r (3[splash])[fire]]]{3点火焰溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3)[persistent,fire]]]以及[[/r (3[splash])[fire]]]{3点火焰溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3[persistent,fire]]以及@Damage[(3[splash])[fire]]{3点火焰溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3)[persistent,fire]]以及@Damage[(3[splash])[fire]]{3点火焰溅射伤害}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1[persistent,fire]]]以及[[/r (1[splash])[fire]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1)[persistent,fire]]]以及[[/r (1[splash])[fire]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1[persistent,fire]]以及@Damage[(1[splash])[fire]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1)[persistent,fire]]以及@Damage[(1[splash])[fire]]伤害。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4[persistent,fire]]]伤害以及[[/r (4[splash])[fire]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4)[persistent,fire]]]伤害以及[[/r (4[splash])[fire]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4[persistent,fire]]伤害以及@Damage[(4[splash])[fire]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4)[persistent,fire]]伤害以及@Damage[(4[splash])[fire]]伤害。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2)[persistent,fire]]]伤害以及[[/r (2[splash])[fire]]]伤害。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2[persistent,fire]]]以及[[/r (2[splash])[fire]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2)[persistent,fire]]伤害以及@Damage[(2[splash])[fire]]伤害。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2[persistent,fire]]以及@Damage[(2[splash])[fire]][fire]]]伤害。"
                 }
             },
             "FrostVial": {
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (4[splash])[cold]]]伤害，并且目标会受到15尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.4G9qnI0oRyL6eKFQ]{效果: 上等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[cold]]{4点寒冷溅射伤害}，并且目标会受到15尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.4G9qnI0oRyL6eKFQ]{效果: 上等霜冻瓶 })。"
                 },
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (3[splash])[cold]]]伤害，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{效果: 高等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(3[splash])[cold]]{3点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{效果: 高等霜冻瓶 })。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (2[splash])[cold]]]伤害，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{效果: 中等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[cold]]{2点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{效果: 中等霜冻瓶 })。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (1[splash])[cold]]]伤害，并且目标会受到5尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.RLsdvhmTh64Mmty9]{效果: 次等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[cold]]{1点寒冷溅射伤害}，并且目标会受到5尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.RLsdvhmTh64Mmty9]{效果: 次等霜冻瓶 })。"
                 }
             },
             "BlightBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d4}[persistent,fire]]]以及[[/r (3[splash])[poison]]]伤害。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3d4[persistent,fire]]]以及[[/r (3[splash])[poison]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3d4)[persistent,poison]]以及@Damage[(3[splash])[poison]]伤害。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3d4[persistent,poison]]以及@Damage[(3[splash])[poison]]伤害。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成 [[/r 1d4[persistent,poison]]]伤害以及[[/r (1[splash])[poison]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成 [[/r (2*1d4)[persistent,poison]]]以及[[/r (1[splash])[poison]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1d4[persistent,poison]]伤害以及@Damage[(1[splash])[poison]]{1点毒素溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1d4)[persistent,poison]]以及@Damage[(1[splash])[poison]]{1点毒素溅射伤害}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4d4[persistent,poison]]]以及[[/r (4[splash])[poison]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4d4)[persistent,poison]]]以及[[/r (4[splash])[poison]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4d4[persistent,poison]]以及@Damage[(4[splash])[poison]]{4点毒素溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4d4)[persistent,poison]]以及@Damage[(4[splash])[poison]]{4点毒素溅射伤害}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d4[persistent,poison]]]以及[[/r (2[splash])[poison]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d4)[persistent,poison]]]以及[[/r (2[splash])[poison]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2d4[persistent,poison]]以及@Damage[(2[splash])[poison]]{2点毒素溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2d4)[persistent,poison]]以及@Damage[(2[splash])[poison]]{2点毒素溅射伤害}。"
                 }
             },
             "BottledLightning": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (3[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(3[splash])[electricity]]{3点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (1[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[electricity]]{1点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (2[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[electricity]]{2点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (4[splash])[electricity]]]伤害且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[electricity]]{4点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 }
             },
             "CrystalShards": {
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (6[splash])[piercing]]]伤害，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+3的物品加值。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(6[splash])[piercing]]{6点穿刺溅射伤害}，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+3的物品加值。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (4[splash])[piercing]]]伤害，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+1的物品加值。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[piercing]]{4点穿刺溅射伤害}，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+1的物品加值。"
                 },
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (5[splash])[piercing]]]伤害，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+2的物品加值。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(5[splash])[piercing]]{5点穿刺溅射伤害}，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+2的物品加值。"
                 }
             },
             "DreadAmpoule": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[mental]]]伤害以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]{3点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[mental]]]伤害以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]{1点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[mental]]]伤害以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]{4点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[mental]]]伤害以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]{2点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
                 }
             },
             "DwarvenDaisy": {
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (1[splash])[fire]]]伤害，并且目标必须通过成功的@Check[type:fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[fire]]{1点火焰溅射伤害}，并且目标必须通过成功的@Check[type:fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成[[/r (2[splash])[fire]]]伤害，并且目标必须通过成功的@Check[type:fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[fire]]{2点火焰溅射伤害}，并且目标必须通过成功的@Check[type:fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
                 }
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[vitality]]{3点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[vitality]]{1点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[vitality]]{2点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[vitality]]]伤害，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[vitality]]{4点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 }
             },
             "JunkBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3)[bleed]]]伤害以及[[/r (3[splash])[slashing]]]伤害。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3[bleed]]]以及[[/r (3[splash])[slashing]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3)[bleed]]伤害以及@Damage[(3[splash])[slashing]]{3点挥砍溅射伤害}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3[bleed]]以及@Damage[(3[splash])[slashing]]{3点挥砍溅射伤害}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1[bleed]]]伤害以及[[/r (1[splash])[slashing]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1)[bleed]]]以及[[/r (1[splash])[slashing]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1[bleed]]伤害以及@Damage[(1[splash])[slashing]]{1点挥砍溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1)[bleed]]以及@Damage[(1[splash])[slashing]]{1点挥砍溅射伤害}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4[bleed]]]以及[[/r (4[splash])[slashing]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4)[bleed]]]以及[[/r (4[splash])[slashing]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4[bleed]]以及@Damage[(4[splash])[slashing]]{4点挥砍溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4)[bleed]]以及@Damage[(4[splash])[slashing]]{4点挥砍溅射伤害}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2[bleed]]]以及[[/r (2[splash])[slashing]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2)[bleed]]]以及[[/r (2[splash])[slashing]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2[bleed]]以及@Damage[(2[splash])[slashing]]{2点挥砍溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2)[bleed]]以及@Damage[(2[splash])[slashing]]{2点挥砍溅射伤害}。"
                 }
             },
             "MudBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[bludgeoning]]]伤害。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[bludgeoning]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[bludgeoning]]{3点钝击溅射伤害}。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[bludgeoning]]{3点钝击溅射伤害}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[bludgeoning]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[bludgeoning]]]伤害。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[bludgeoning]]{1点钝击溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[bludgeoning]]{1点钝击溅射伤害}。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[bludgeoning]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[bludgeoning]]]伤害。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[bludgeoning]]{4点钝击溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[bludgeoning]]{4点钝击溅射伤害}。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[bludgeoning]]]伤害。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[bludgeoning]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[bludgeoning]]{2点钝击溅射伤害}。目标直到你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[bludgeoning]]{2点钝击溅射伤害}。"
                 }
             },
             "NecroticBomb": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[void]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 3}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[void]]{3点虚能溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[void]]{3点虚能溅射伤害}，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 3}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[void]]]伤害。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[void]]{1点虚能溅射伤害}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[void]]{1点虚能溅射伤害}，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。"
                 },
                 "Major": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 4}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[void]]{4点虚能溅射伤害}，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 4}。",
                     "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[void]]]伤害。"
                 },
                 "Moderate": {
@@ -3860,7 +3860,7 @@
             },
             "Acid2d6": {
                 "criticalSuccess": "[[/r (2*2d6)[persistent,acid]]]",
-                "success": "[[/r 2d6[persistent,acid]]]"
+                "success": "@Damage[2d6[persistent,acid]]"
             },
             "Acid2d6+2": {
                 "success": "[[/r (2d6+2)[persistent,acid]]]",
@@ -4114,10 +4114,10 @@
             "ExplosiveAmmunition": {
                 "Greater": {
                     "Title": "高等爆炸弹药",
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成[[/r 10d6[fire]]]伤害（包括目标）。每个生物都必须尝试一次@Check[type:reflex|dc:30|basic:true|name:Explosive Ammunition]豁免。"
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[10d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[type:reflex|dc:30|basic:true|name:Explosive Ammunition]豁免。"
                 },
                 "Normal": {
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成[[/r 6d6[fire]]]伤害（包括目标）。每个生物都必须尝试一次@Check[type:reflex|dc:25|basic:true|name:Explosive Ammunition]豁免。",
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[6d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[type:reflex|dc:25|basic:true|name:Explosive Ammunition]豁免。",
                     "Title": "爆炸弹药"
                 }
             },
@@ -4147,16 +4147,16 @@
             "MeteorShot": {
                 "Normal": {
                     "Title": "流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:5]区域内造成 [[/r 3d6[fire]]] 伤害 (@Check[type:reflex|dc:23|basic:true|name:Meteor Shot] 豁免)."
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:5]区域内造成@Damage[3d6[fire]]伤害 (@Check[type:reflex|dc:23|basic:true|name:Meteor Shot] 豁免)."
                 },
                 "Major": {
                     "Title": "上等流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:20]区域内造成[[/r 9d6[fire]]]伤害 (@Check[type:reflex|dc:37|basic:true|name:Meteor Shot]豁免)."
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:20]区域内造成@Damage[9d6[fire]]伤害 (@Check[type:reflex|dc:37|basic:true|name:Meteor Shot]豁免)."
                 },
                 "CriticalFailureText": "当大失败时，武器会哑火。",
                 "Greater": {
                     "Title": "高等流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。弹药在目标周围@Template[type:emanation|distance:10]造成[[/r 6d6[fire]]]伤害（@Check[type:reflex|dc:29|basic:true|name:Meteor Shot]豁免）。"
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。弹药在目标周围@Template[type:emanation|distance:10]造成@Damage[6d6[fire]]伤害（@Check[type:reflex|dc:29|basic:true|name:Meteor Shot]豁免）。"
                 }
             },
             "FreezingAmmunition": {
