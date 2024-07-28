@@ -296,29 +296,29 @@
                 },
                 "Major": {
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[void]]{4点虚能溅射伤害}，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 4}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[void]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[void]]伤害。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[void]]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[void]]]伤害。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[void]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[void]]伤害。"
                 }
             },
             "PerniciousSporeBomb": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3d4[persistent,piercing]]]以及[[/r (3[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d4)[persistent,piercing]]]以及[[/r (3[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3d4[persistent,piercing]]以及@Damage[(3[splash])[poison]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3d4)[persistent,piercing]]以及@Damage[(3[splash])[poison]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d4[persistent,piercing]]]以及[[/r (1[splash])[poison]]]伤害。同时目标所在的方格会被植被覆盖，造成1轮的困难地形。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d4)[persistent,piercing]]]以及[[/r (1[splash])[poison]]]伤害。同时目标所在的方格会被植被覆盖，造成1轮的困难地形。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1d4[persistent,piercing]]以及@Damage[(1[splash])[poison]]伤害。同时目标所在的方格会被植被覆盖，造成1轮的困难地形。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1d4)[persistent,piercing]]以及@Damage[(1[splash])[poison]]伤害。同时目标所在的方格会被植被覆盖，造成1轮的困难地形。"
                 },
                 "Major": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4d4)[persistent,piercing]]]以及[[/r (4[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成一分钟的困难地形。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4d4[persistent,piercing]]]以及[[/r (4[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成一分钟的困难地形。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4d4)[persistent,piercing]]以及@Damage[(4[splash])[poison]]伤害。同时炸弹溅射的区域会被植被覆盖，造成一分钟的困难地形。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4d4[persistent,piercing]]以及@Damage[(4[splash])[poison]]伤害。同时炸弹溅射的区域会被植被覆盖，造成一分钟的困难地形。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d4[persistent,piercing]]]以及[[/r (2[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d4)[persistent,piercing]]]以及[[/r (2[splash])[poison]]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2d4[persistent,piercing]]以及@Damage[(2[splash])[poison]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2d4)[persistent,piercing]]以及@Damage[(2[splash])[poison]]伤害。同时炸弹溅射的区域会被植被覆盖，造成1轮的困难地形。"
                 },
                 "TerrainMajor": "除非大失败，否则炸弹的溅射区域会被植被覆盖，成为困难地形，持续1分钟。",
                 "Terrain": "除非大失败，否则炸弹的溅射区域会被植被覆盖，成为困难地形，持续1轮。",
@@ -326,103 +326,103 @@
             },
             "PressureBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[bludgeoning]]]伤害，中体型或小体型的目标会被推离5尺，并被击至 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{俯卧}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[bludgeoning]]]伤害，中体型或小体型的目标会被推离5尺。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[bludgeoning]]伤害，中体型或小体型的目标会被推离5尺，并被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[bludgeoning]]伤害，中体型或小体型的目标会被推离5尺。"
                 },
                 "Lesser": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成 [[/r (1[splash])[bludgeoning]]]{1钝击溅射伤害}，超小体型或小体型的目标会被推离5尺，并被击至 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{俯卧}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[bludgeoning]]]伤害，超小体型或小体型的目标会被推离5尺。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[bludgeoning]]伤害，超小体型或小体型的目标会被推离5尺，并被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[bludgeoning]]伤害，超小体型或小体型的目标会被推离5尺。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[bludgeoning]]]{2钝击溅射伤害}，小型或更小体型的目标被推离你5尺，且陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[bludgeoning]]]{2钝击溅射伤害}，若目标为小型或更小体型，它被推离你5尺。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[bludgeoning]]伤害，小型或更小体型的目标被推离你5尺，且陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[bludgeoning]]伤害，若目标为小型或更小体型，它被推离你5尺。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[bludgeoning]]]{4钝击溅射伤害}，受到溅射伤害的生物如是中型或更小体型，他们被推离目标5尺。若目标为大型或更小体型，它被推离你5尺。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[bludgeoning]]]{4钝击溅射伤害}，受到溅射伤害的生物如是中型或更小体型，他们被推离目标5尺。若目标为大型或更小体型，它被推离你5尺，且陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[bludgeoning]]伤害，受到溅射伤害的生物如是中型或更小体型，他们被推离目标5尺。若目标为大型或更小体型，它被推离你5尺。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[bludgeoning]]伤害，受到溅射伤害的生物如是中型或更小体型，他们被推离目标5尺。若目标为大型或更小体型，它被推离你5尺，且陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
                 }
             },
             "PeshspineGrenade": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[piercing]]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 2} 直到其回合结束。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[piercing]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 2} 直到其回合结束。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[piercing]]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 1} 直到其回合结束。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[piercing]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 1} 直到其回合结束。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[piercing]]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 3} 直到其回合结束。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[piercing]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 3} 直到其回合结束。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[piercing]]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 1} 直到其回合结束。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[piercing]]伤害，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 1} 直到其回合结束。"
                 }
             },
             "Thunderstone": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[sonic]]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:28|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:28|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[sonic]]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:17|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:17|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[sonic]]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:20|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:20|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[sonic]]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:36|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:36|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 }
             },
             "TallowBomb": {
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4d4[persistent,fire]]]和[[/r (4[splash])[fire]]]{4火焰溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4d4)[persistent,fire]]]、[[/r (4[splash])[fire]]]{4火焰溅射伤害}，且目标因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4d4[persistent,fire]]和@Damage[(4[splash])[fire]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4d4)[persistent,fire]]、@Damage[(4[splash])[fire]]伤害，且目标因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d4)[persistent,fire]]]、[[/r (2[splash])[fire]]]{2火焰溅射伤害}，且目标因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d4[persistent,fire]]]和[[/r (2[splash])[fire]]]{2火焰溅射伤害}。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2d4)[persistent,fire]]、@Damage[(2[splash])[fire]]伤害，且目标因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2d4[persistent,fire]]和@Damage[(2[splash])[fire]]伤害。"
                 },
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d4)[persistent,fire]]]、[[/r (3[splash])[fire]]]{3火焰溅射伤害}，并因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3d4[persistent,fire]]]和[[/r (3[splash])[fire]]]{3火焰溅射伤害}。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3d4)[persistent,fire]], @Damage[(3[splash])[fire]]伤害，并因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3d4[persistent,fire]]和@Damage[(3[splash])[fire]]伤害。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d4[persistent,fire]]]和[[/r (1[splash])[fire]]]{1火焰溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d4)[persistent,fire]]]、[[/r (1[splash])[fire]]]{1 fire splash damage}火焰溅射伤害}，且目标因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1d4[persistent,fire]]和@Damage[(1[splash])[fire]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1d4)[persistent,fire]]、@Damage[(1[splash])[fire]]伤害，且目标因为燃烧脂肪的恶臭陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。持续伤害生效期间，生物无法将恶心值降到1以下。"
                 },
                 "criticalSuccess": "如果造成重击，一个因为油脂炸弹而受到持续火焰伤害的生物将会因为燃烧脂肪的恶臭而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}，并且在火焰伤害持续期间，无法将恶心值降低到1以下。"
             },
             "RedpitchBomb": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3d4[persistent,fire]]]和[[/r (3[splash])[fire]]]{3火焰溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3d4)[persistent,fire]]]和[[/r (3[splash])[fire]]]{3火焰溅射伤害}。重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续到你下回合开始。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3d4[persistent,fire]]和@Damage[(3[splash])[fire]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3d4)[persistent,fire]]和@Damage[(3[splash])[fire]]伤害。重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续到你下回合开始。"
                 },
                 "Major": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4d4)[persistent,fire]]]和[[/r (4[splash])[fire]]]{4火焰溅射伤害}。重击时目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3}，直到你下回合开始。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4d4[persistent,fire]]]和[[/r (4[splash])[fire]]]{4火焰溅射伤害}。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4d4)[persistent,fire]]和@Damage[(4[splash])[fire]]伤害。重击时目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3}，直到你下回合开始。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4d4[persistent,fire]]和@Damage[(4[splash])[fire]]伤害。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 2d4[persistent,fire]]]和 [[/r (2[splash])[fire]]]{2火焰溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*2d4)[persistent,fire]]]和[[/r (2[splash])[fire]]]{2火焰溅射伤害}。重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你下回合开始。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2d4[persistent,fire]]和@Damage[(2[splash])[fire]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2d4)[persistent,fire]]和@Damage[(2[splash])[fire]]伤害。重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你下回合开始。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1d4[persistent,fire]]]和[[/r (1[splash])[fire]]]{1火焰溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1d4)[persistent,fire]]]和[[/r (1[splash])[fire]]]{1火焰溅射伤害}。重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续到你下回合开始。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1d4[persistent,fire]]和@Damage[(1[splash])[fire]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1d4)[persistent,fire]]和@Damage[(1[splash])[fire]]伤害。重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续到你下回合开始。"
                 }
             },
             "SulfurBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[acid]]]{3酸蚀溅射伤害}，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[acid]]]{3酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[acid]]]{1酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[acid]]]{1酸蚀溅射伤害}，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[acid]]]{2酸蚀溅射伤害}，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[acid]]]{2酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[acid]]]{4酸蚀溅射伤害}，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[acid]]]{4酸蚀溅射伤害}且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 }
             },
             "TanglefootBag": {
@@ -445,52 +445,52 @@
             },
             "TwigjackSack": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 4[bleed]]]和[[/r (3[splash])[piercing]]]{3穿刺溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*4)[bleed]]]和[[/r (3[splash])[piercing]]]{3穿刺溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[4[bleed]]和@Damage[(3[splash])[piercing]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*4)[bleed]]和@Damage[(3[splash])[piercing]]伤害。"
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*3)[bleed]]]和[[/r (2[splash])[piercing]]]{2穿刺溅射伤害}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 3[bleed]]]和[[/r (2[splash])[piercing]]]{2穿刺溅射伤害}。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*3)[bleed]]和@Damage[(2[splash])[piercing]]伤害。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[3[bleed]]和@Damage[(2[splash])[piercing]]伤害。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 1[bleed]]]和[[/r (1[splash])[piercing]]]{1穿刺溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*1)[bleed]]]和[[/r (1[splash])[piercing]]]{1穿刺溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[1[bleed]]和@Damage[(1[splash])[piercing]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*1)[bleed]]和@Damage[(1[splash])[piercing]]伤害。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r 5[bleed]]]和[[/r (4[splash])[piercing]]]{4穿刺溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2*5)[bleed]]]和[[/r (4[splash])[piercing]]]{4穿刺溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[5[bleed]]和@Damage[(4[splash])[piercing]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*5)[bleed]]和@Damage[(4[splash])[piercing]]伤害。"
                 }
             },
             "VexingVapor": {
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[mental]]]{1心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续到目标下回合结束。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[mental]]]{1心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续1分钟。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。"
                 },
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[mental]]]{3心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续1分钟。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[mental]]]{3心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续到目标下回合结束。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[mental]]]{4心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续到目标下回合结束。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[mental]]]{4心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续1分钟。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[mental]]]{2心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续到目标下回合结束。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[mental]]]{2心灵溅射伤害}，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]，该效果持续1分钟。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。"
                 }
             },
             "WaterBomb": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (3[splash])[bludgeoning]]]{3非致命钝击溅射伤害}。炸弹熄灭溅射区域内的非魔法火焰。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[bludgeoning]]伤害。炸弹熄灭溅射区域内的非魔法火焰。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (4[splash])[bludgeoning]]]{4非致命钝击溅射伤害}。炸弹熄灭溅射区域内的非魔法火焰。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[bludgeoning]]伤害。炸弹熄灭溅射区域内的非魔法火焰。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (2[splash])[bludgeoning]]]{2非致命钝击溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[bludgeoning]]伤害。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成[[/r (1[splash])[bludgeoning]]]{1非致命钝击溅射伤害}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[bludgeoning]]伤害。"
                 }
             },
             "GooGrenade": {
@@ -799,7 +799,7 @@
                     "Note": "对抗使你入睡的效果时，豁免成功度提升1级。"
                 },
                 "DemonbaneWarrior": {
-                    "Note": "如果你的行动强迫一个恶魔受到它弱点罪孽造成的伤害，专长的伤害再增加 [[/r 2]]。"
+                    "Note": "如果你的行动强迫一个恶魔受到它弱点罪孽造成的伤害，专长的伤害再增加@Damage[2[untyped]]"
                 },
                 "Atavism": {
                     "AllowedDrops": "精灵族裔传承",
@@ -833,9 +833,9 @@
                 },
                 "AccursedTouch": {
                     "Note": {
-                        "TwentiethLevel": "若你用拳头造成了重击，你对敌人造成[[/r 4d6[persistent,void]]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
-                        "FourteenthLevel": "若你用拳头造成了重击，你对敌人造成[[/r 3d6[persistent,void]]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
-                        "Base": "若你用拳头造成了重击，你对敌人造成[[/r (2d6)[persistent,void]]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
+                        "TwentiethLevel": "若你用拳头造成了重击，你对敌人造成@Damage[4d6[persistent,void]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
+                        "FourteenthLevel": "若你用拳头造成了重击，你对敌人造成@Damage[3d6[persistent,void]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
+                        "Base": "若你用拳头造成了重击，你对敌人造成@Damage[2d6[persistent,void]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
                     }
                 }
             },
@@ -1091,7 +1091,7 @@
                 },
                 "CoreCannon": {
                     "AttackNote": "你需要将最高的潜能符文加成手动加成到此次攻击检定上",
-                    "CriticalHit": "重击时，目标受到[[/r 10[persistent,fire]]]伤害。你的核心火炮不会添加重击专精效果。</p>"
+                    "CriticalHit": "重击时，目标受到@Damage[10[persistent,fire]]伤害。你的核心火炮不会添加重击专精效果。</p>"
                 },
                 "Enhancement": {
                     "ArcaneLocomotionClimbSpeed": "获得攀爬速度",
@@ -1131,7 +1131,7 @@
                     "SaveNote": "你在抵抗带有情绪特征的效果的意志豁免成功时，视为大成功处理。"
                 },
                 "BloodlettingFangs": {
-                    "AttackNote": "当你使用尖牙的打击造成重击时，额外造成[[/r 1d4[bleed]]]。"
+                    "AttackNote": "当你使用尖牙的打击造成重击时，额外造成@Damage[1d4[bleed]]。"
                 }
             },
             "DragonDisciple": {
@@ -1285,6 +1285,15 @@
                 },
                 "SerpentDagger": {
                     "Note": "当你用<em>毒蛇匕首</em>的一次攻击骰重击时，目标需通过@Check[type:fortitude|dc:19]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                },
+                "Bomb": {
+                    "Choice": "炸弹种类",
+                    "Type": {
+                        "Moderate": "中等",
+                        "Greater": "高等",
+                        "Lesser": "次等",
+                        "Major": "上等"
+                    }
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1519,7 +1528,7 @@
                     "Prompt": "选择一种世代仇敌"
                 },
                 "SparkFist": {
-                    "Note": "每次你用拳头命中时，你承受[[/r (1+@weapon.system.runes.striking)[fire]]]{火焰伤害}。"
+                    "Note": "每次你用拳头命中时，你承受@Damage[(1+@weapon.system.runes.striking)[fire]]伤害。"
                 },
                 "TombWatchersGlare": {
                     "Note": "当你重击一个亡灵生物，亡灵@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1回合"
@@ -1545,7 +1554,7 @@
             },
             "Fleshwarp": {
                 "CoatingOfSlime": {
-                    "CriticalHit": "重击时，目标承受[[/r 1d4[persistent,acid]]]伤害。"
+                    "CriticalHit": "重击时，目标承受@Damage[1d4[persistent,acid]]伤害。"
                 },
                 "LivingWeapon": {
                     "Prompt": "选择用作武器的身体部位。"
@@ -1813,7 +1822,7 @@
             },
             "Hobgoblin": {
                 "AgonizingRebuke": {
-                    "Note": "当你成功对一个敌人@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}时，只要该敌人仍然处于@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态并正在与你交战，就会在每回合开始时承受[[/r 1d4[mental]]]{1d4心灵伤害}。如果你在威吓技能上达到大师熟练，伤害提升至[[/r 2d4[mental]]]{2d4}，如果你有传奇熟练，伤害提升至[[/r 3d4[mental]]]{3d4}。"
+                    "Note": "当你成功对一个敌人挫败士气时，只要该敌人仍然处于@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]状态并正在与你交战，就会在每回合开始时承受@Damage[(ternary(gte(@actor.system.skills.intimidation.rank,4),3,ternary(gte(@actor.system.skills.intimidation.rank,3),2,1))d4)[mental]]伤害。如果你在威吓技能上达到大师熟练，伤害提升至2d4，如果你有传奇熟练，伤害提升至3d4。"
                 },
                 "CantorianReinforcement": {
                     "Note": "当你在一个抵抗疾病或毒素的豁免骰中获得成功，你的苦难阶段降低2（对于恶性疾病或毒素则降低1），当你获得大成功，阶段降低3（对于恶性的疾病或毒素则降低2）。"
@@ -1968,7 +1977,7 @@
             },
             "Leshy": {
                 "ThornedSeedpod": {
-                    "Note": "当你用种子荚进行的打击获得大成功时，藤蔓将缠绕并刺伤你的敌人，造成[[/r 1d4[persistent,piercing]]]。"
+                    "Note": "当你用种子荚进行的打击获得大成功时，藤蔓将缠绕并刺伤你的敌人，造成@Damage[1d4[persistent,piercing]]伤害。"
                 },
                 "Seedpod": {
                     "Note": "当造成重击时，种子荚会爆裂，长出一堆杂乱的植物，并对目标的速度造成-10尺的环境减值，效果持续1回合。@UUID[Compendium.pf2e.feat-effects.Item.wQDHpOKY3GZqvS2v]{效果：种子荚}"
@@ -1982,9 +1991,9 @@
             "Vampire": {
                 "ViciousFangs": {
                     "Note": {
-                        "Base": "你的尖牙打击在暴击时造成额外[[/r 1d6[bleed]]]伤害。",
-                        "FourteenthLevel": "你的尖牙打击在暴击时造成额外[[/r 2d6[bleed]]]伤害。",
-                        "TwentiethLevel": "你的尖牙打击在暴击时造成额外[[/r 3d6[bleed]]]伤害。"
+                        "Base": "你的尖牙打击在暴击时造成额外@Damage[1d6[bleed]]伤害。",
+                        "FourteenthLevel": "你的尖牙打击在暴击时造成额外@Damage[2d6[bleed]]伤害。",
+                        "TwentiethLevel": "你的尖牙打击在暴击时造成额外@Damage[3d6[bleed]]伤害。"
                     }
                 }
             },
@@ -2063,7 +2072,7 @@
                     "Description": "当你唤来你神祇的力量展现祂们领域的奇迹时，你会获得神力的庇护。在施放一个领域法术后，你获得全伤害抗力直到你的下回合开始。抗力数值等同于你施放的领域法术环级。"
                 },
                 "SapLife": {
-                    "Note": "当你施放<em>伤害术</em>法术并对至少一名活体生物造成伤害时，你恢复[[/r (@item.rank)[healing]]]生命值。"
+                    "Note": "当你施放<em>伤害术</em>法术并对至少一名活体生物造成伤害时，你恢复@Damage[(@item.rank)[healing]]生命值。"
                 },
                 "RestorativeStrike": {
                     "Note": "你可以选择另一个自愿生物，为其治疗等同于该法术为你治疗的相同生命值。若该生物邻接于你命中的敌人，即使其在法术正常射程之外，你也可以将其选做治疗的目标。"
@@ -2103,7 +2112,7 @@
                     "Note": "若你对抗有害效果的豁免检定失败或大失败，改为获得成功。"
                 },
                 "TorchGoblin": {
-                    "Note": "只要你受到持续的火焰伤害，你对相邻生物的所有近战攻击都会额外造成每个武器伤害骰[[/r 1[fire]]]{1火焰伤害}。"
+                    "Note": "只要你受到持续的火焰伤害，你对相邻生物的所有近战攻击都会额外造成每个武器伤害骰@Damage[1[fire]]伤害。"
                 },
                 "ChosenOfLamashtu": {
                     "AllowedDrops": "地精族裔传承",
@@ -2272,7 +2281,7 @@
             "Nagaji": {
                 "VenomSpit": {
                     "HoodedNote": "目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，直到你下回合开始。",
-                    "CriticalNote": "目标受到等于武器伤害骰数量的[[/r (1+@weapon.system.runes.striking)[persistent,poison]]]{持续毒素伤害}",
+                    "CriticalNote": "目标受到等于武器伤害骰数量的@Damage[(@weapon.system.damage.dice)[persistent,poison]]伤害",
                     "StrikeLabel": "剧毒喷吐 Venomous Spit"
                 }
             },
@@ -2377,7 +2386,7 @@
             "Ifrit": {
                 "Lavasoul": {
                     "MagmaSpike": "熔岩尖刺",
-                    "MagmaSpikeCriticalSpecialization": "目标受到[[/r 1d6[persistent,fire]]]点伤害，而不是正常的重击专精效果；你获得等同于你无武装攻击时的物品加值到该持续伤害加值当中。"
+                    "MagmaSpikeCriticalSpecialization": "目标受到@Damage[1d6[persistent,fire]]伤害，而不是正常的重击专精效果；你获得等同于你无武装攻击时的物品加值到该持续伤害加值当中。"
                 }
             },
             "LitFirePoi": "火焰链球已被点燃",
@@ -2991,6 +3000,34 @@
                 "ThunderclapSpell": "如果你的下一个动作是施放一个具有电特征或造成电击伤害、没有持续时间并要求生物尝试豁免的法术，那么该法术的闪电力量除了其原本效果外还会产生雷鸣。每个在该法术的反射豁免中失败的生物会被@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1轮，而大失败的生物还会被@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                 "SplitHex": "如果你接下来的动作是施放一个以单一目标为对象的伤害法术，将其环级降低2级（使其比你能施放的最高环级低2级）。如果你如此，你可以选择第二个目标来受到该法术的影响。",
                 "WidenSpell": "如果你接下来的动作是施放一个具有爆发、锥形或直线范围且没有持续时间的法术，则扩展法术的作用区域。对于通常有至少10尺半径爆发影响区域的法术来说，爆发区域半径增加5尺；对于通常长度为15尺或更低的锥形和线形法术，区域长度增加5尺；对于更大的锥形和线形法术则区域长度增加10尺。"
+            },
+            "AwakenedAnimal": {
+                "LateAwakener": {
+                    "Prompt": "选择一个启蒙动物传承"
+                },
+                "NaturalSenses": {
+                    "Prompt": "选择一种适合你动物种类的感官"
+                },
+                "SwimmingAnimal": {
+                    "Prompt": "你是水栖还是水居动物",
+                    "WaterDwelling": "水居"
+                }
+            },
+            "Ardande": {
+                "CausticNectar": {
+                    "Note": "重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                },
+                "PotentNectar": {
+                    "PersistentDamage": "持续酸蚀伤害",
+                    "SplashDamage": "酸蚀溅射伤害"
+                }
+            },
+            "ConcertFrog": {
+                "Conduct": {
+                    "Yellow": "黄",
+                    "Blue": "蓝",
+                    "Red": "红"
+                }
             }
         },
         "RuleElement": {
@@ -3249,7 +3286,7 @@
             },
             "Life": {
                 "ToggleLabel": "治疗的所有目标都是活物",
-                "DescriptionModerate": "当你施放完一个非戏法法术后，你可选择法术目标之一或最靠近你的生物之一，恢复[[/r @item.level[healing]]]{等同法术环级的HP}。你无法用此法治疗自己。该次治疗拥有治疗、死灵系、命能特征，同时拥有触发法术对应的根源特征。",
+                "DescriptionModerate": "当你施放完一个非戏法法术后，你可选择法术目标之一或最靠近你的生物之一，恢复@Damage[@item.level[healing]]HP。你无法用此法治疗自己。该次治疗拥有治疗、死灵系、命能特征，同时拥有触发法术对应的根源特征。",
                 "DescriptionMajor": "每当你使用法术位施放一个至少需要2动作的5环或更高环法术时，溢散出的命能对@Template[type:burst|distance:30]范围造成一个3动作@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{治疗术 Heal}效果，该治疗术等效环级为你所施放法术的环级-4。这次治疗在你@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Casting the Spell}完毕后立刻生效。你不会从这次治疗中获得恢复，相反，你会失去该次治疗术治疗量双倍的HP。"
             },
             "Time": {
@@ -3395,7 +3432,7 @@
             "PoltergeistTelekineticStorm": {
                 "SingleAttackLabel": "心灵风暴-单个目标",
                 "MultiAttackLabel": "心灵风暴-多个目标",
-                "SingleAttackEffect": "攻击失手时造成[[/r (1d12}]]{1d12点伤害}。",
+                "SingleAttackEffect": "攻击失手时造成@Damage[1d12[untyped]]伤害。",
                 "SingleTarget": "单目标",
                 "MultipleTargets": "多目标"
             },
@@ -3505,9 +3542,9 @@
             "Capritellix": {
                 "ShiftMood": {
                     "Sly": "狡诈",
-                    "Gregarious": "擅长交际",
-                    "Angry": "生气",
-                    "Serene": "Serene"
+                    "Gregarious": "友善",
+                    "Angry": "愤怒",
+                    "Serene": "宁静"
                 }
             },
             "Ivarsa": {
@@ -3660,7 +3697,7 @@
                     "ObjectTiny": "超小型非生物",
                     "Azuretzi": "阿偕提兹",
                     "Dove": "鸽子",
-                    "RajaKrodha": "Raja-Krodha",
+                    "RajaKrodha": "忿怒罗刹",
                     "Owlbear": "枭熊",
                     "Unicorn": "独角兽",
                     "Nymph": "宁芙",
@@ -3670,7 +3707,8 @@
                     "Mantis": "螳螂",
                     "Shark": "鲨鱼",
                     "Moose": "麋鹿",
-                    "Plant": "植物"
+                    "Plant": "植物",
+                    "LeshyMob": "莱西暴徒"
                 },
                 "Label": "当前形态"
             },
@@ -3779,7 +3817,12 @@
             },
             "PlanarScion": {
                 "Duskwalker": {
-                    "Immunity": "将他们的身体或灵魂转化为不死生物的效果"
+                    "Immunity": "将他们的身体或灵魂转化为不死生物的效果",
+                    "HuntPrey": {
+                        "AC": "指定猎物攻击冥人",
+                        "Checks": "冥人骰检定对抗猎杀目标"
+                    },
+                    "SpiritHunter": "目标被指定为猎魂者能力的目标"
                 }
             },
             "Target": {
@@ -3793,6 +3836,9 @@
                     "Dry": "干燥",
                     "Rehydrating": "补水"
                 }
+            },
+            "Herexen": {
+                "HereticSmite": "正持握前神祇的偏好武器"
             }
         },
         "UI": {
@@ -3851,252 +3897,252 @@
         },
         "PersistentDamage": {
             "Acid1d4": {
-                "criticalSuccess": "[[/r (2*1d4)[persistent,acid]]]",
-                "success": "[[/r 1d4[persistent,acid]]]"
+                "criticalSuccess": "@Damage[(2*1d4)[persistent,acid]]",
+                "success": "@Damage[1d4[persistent,acid]]"
             },
             "Acid1d6": {
-                "success": "[[/r 1d6[persistent,acid]]]",
-                "criticalSuccess": "[[/r (2*1d6)[persistent,acid]]]"
+                "success": "@Damage[1d6[persistent,acid]]",
+                "criticalSuccess": "@Damage[(2*1d6)[persistent,acid]]"
             },
             "Acid2d6": {
-                "criticalSuccess": "[[/r (2*2d6)[persistent,acid]]]",
+                "criticalSuccess": "@Damage[(2*2d6)[persistent,acid]]",
                 "success": "@Damage[2d6[persistent,acid]]"
             },
             "Acid2d6+2": {
-                "success": "[[/r (2d6+2)[persistent,acid]]]",
-                "criticalSuccess": "[[/r (2*2d6+4)[persistent,acid]]]"
+                "success": "@Damage[(2d6+2)[persistent,acid]]",
+                "criticalSuccess": "@Damage[(2*2d6+4)[persistent,acid]]"
             },
             "Bleed1": {
-                "success": "[[/r 1[bleed]]]",
-                "criticalSuccess": "[[/r 2[bleed]]]"
+                "success": "@Damage[1[bleed]]",
+                "criticalSuccess": "@Damage[2[bleed]]"
             },
             "Bleed2d4": {
-                "criticalSuccess": "[[/r (2*2d4)[bleed]]]",
-                "success": "[[/r 2d4[bleed]]]"
+                "criticalSuccess": "@Damage[(2*2d4)[bleed]]",
+                "success": "@Damage[2d4[bleed]]"
             },
             "Bleed8d4": {
-                "success": "[[/r 8d4[bleed]]]",
-                "criticalSuccess": "[[/r (2*8d4)[bleed]]]"
+                "success": "@Damage[8d4[bleed]]",
+                "criticalSuccess": "@Damage[(2*8d4)[bleed]]"
             },
             "Bleed1d6": {
-                "criticalSuccess": "[[/r (2*1d6)[bleed]]]",
-                "success": "[[/r 1d6[bleed]]]"
+                "criticalSuccess": "@Damage[(2*1d6)[bleed]]",
+                "success": "@Damage[1d6[bleed]]"
             },
             "Bleed2d6": {
-                "criticalSuccess": "[[/r (2*2d6)[bleed]]]",
-                "success": "[[/r 2d6[bleed]]]"
+                "criticalSuccess": "@Damage[(2*2d6)[bleed]]",
+                "success": "@Damage[2d6[bleed]]"
             },
             "Bleed4d6": {
-                "criticalSuccess": "[[/r (2*4d6)[bleed]]]",
-                "success": "[[/r 4d6[bleed]]]"
+                "criticalSuccess": "@Damage[(2*4d6)[bleed]]",
+                "success": "@Damage[4d6[bleed]]"
             },
             "Bleed6d6": {
-                "success": "[[/r 6d6[bleed]]]",
-                "criticalSuccess": "[[/r (2*6d6)[bleed]]]"
+                "success": "@Damage[6d6[bleed]]",
+                "criticalSuccess": "@Damage[(2*6d6)[bleed]]"
             },
             "Bleed2d8": {
-                "success": "[[/r 2d8[bleed]]]",
-                "criticalSuccess": "[[/r (2*2d8)[bleed]]]"
+                "success": "@Damage[2d8[bleed]]",
+                "criticalSuccess": "@Damage[(2*2d8)[bleed]]"
             },
             "Bleed1d10": {
-                "criticalSuccess": "[[/r (2*1d10)[bleed]]]",
-                "success": "[[/r 1d10[bleed]]]"
+                "criticalSuccess": "@Damage[(2*1d10)[bleed]]",
+                "success": "@Damage[1d10[bleed]]"
             },
             "Bleed2d10": {
-                "success": "[[/r 2d10[bleed]]]",
-                "criticalSuccess": "[[/r (2*2d10)[bleed]]]"
+                "success": "@Damage[2d10[bleed]]",
+                "criticalSuccess": "@Damage[(2*2d10)[bleed]]"
             },
             "Bleed6d10": {
-                "criticalSuccess": "[[/r (2*6d10)[bleed]]]",
-                "success": "[[/r 6d10[bleed]]]"
+                "criticalSuccess": "@Damage[(2*6d10)[bleed]]",
+                "success": "@Damage[6d10[bleed]]"
             },
             "Bleed1d12": {
-                "success": "[[/r 1d12[bleed]]]",
-                "criticalSuccess": "[[/r (2*1d12)[bleed]]]"
+                "success": "@Damage[1d12[bleed]]",
+                "criticalSuccess": "@Damage[(2*1d12)[bleed]]"
             },
             "Cold1d8": {
-                "criticalSuccess": "[[/r (2*1d8)[persistent,cold]]]",
-                "success": "[[/r 1d8[persistent,cold]]]"
+                "criticalSuccess": "@Damage[(2*1d8)[persistent,cold]]",
+                "success": "@Damage[1d8[persistent,cold]]"
             },
             "Fire1d4": {
-                "criticalSuccess": "[[/r (2*1d4)[persistent,fire]]]",
-                "success": "[[/r 1d4[persistent,fire]]]"
+                "criticalSuccess": "@Damage[(2*1d4)[persistent,fire]]",
+                "success": "@Damage[1d4[persistent,fire]]"
             },
             "Fire2d4": {
-                "criticalSuccess": "[[/r (2*2d4)[persistent,fire]]]",
-                "success": "[[/r 2d4[persistent,fire]]]"
+                "criticalSuccess": "@Damage[(2*2d4)[persistent,fire]]",
+                "success": "@Damage[2d4[persistent,fire]]"
             },
             "Fire2d6": {
-                "success": "[[/r 2d6[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*2d6)[persistent,fire]]]"
+                "success": "@Damage[2d6[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*2d6)[persistent,fire]]"
             },
             "Bleed2": {
-                "criticalSuccess": "[[/r 4[bleed]]]",
-                "success": "[[/r 2[bleed]]]"
+                "criticalSuccess": "@Damage[4[bleed]]",
+                "success": "@Damage[2[bleed]]"
             },
             "Bleed3d6": {
-                "success": "[[/r 3d6[bleed]]]",
-                "criticalSuccess": "[[/r (2*3d6)[bleed]]]"
+                "success": "@Damage[3d6[bleed]]",
+                "criticalSuccess": "@Damage[(2*3d6)[bleed]]"
             },
             "Bleed3d10": {
-                "success": "[[/r 3d10[bleed]]]",
-                "criticalSuccess": "[[/r (2*3d10)[bleed]]]"
+                "success": "@Damage[3d10[bleed]]",
+                "criticalSuccess": "@Damage[(2*3d10)[bleed]]"
             },
             "Bleed2d12": {
-                "criticalSuccess": "[[/r (2*2d12)[bleed]]]",
-                "success": "[[/r 2d12[bleed]]]"
+                "criticalSuccess": "@Damage[(2*2d12)[bleed]]",
+                "success": "@Damage[2d12[bleed]]"
             },
             "Cold1d6": {
-                "success": "[[/r 1d6[persistent,cold]]]",
-                "criticalSuccess": "[[/r (2*1d6)[persistent,cold]]]"
+                "success": "@Damage[1d6[persistent,cold]]",
+                "criticalSuccess": "@Damage[(2*1d6)[persistent,cold]]"
             },
             "Cold2d6": {
-                "success": "[[/r 2d6[persistent,cold]]]",
-                "criticalSuccess": "[[/r (2*2d6)[persistent,cold]]]"
+                "success": "@Damage[2d6[persistent,cold]]",
+                "criticalSuccess": "@Damage[(2*2d6)[persistent,cold]]"
             },
             "Cold2d8": {
-                "success": "[[/r 2d8[persistent,cold]]]",
-                "criticalSuccess": "[[/r (2*2d8)[persistent,cold]]]"
+                "success": "@Damage[2d8[persistent,cold]]",
+                "criticalSuccess": "@Damage[(2*2d8)[persistent,cold]]"
             },
             "Fire1": {
-                "success": "[[/r 1[persistent,fire]]]",
-                "criticalSuccess": "[[/r 2[persistent,fire]]]"
+                "success": "@Damage[1[persistent,fire]]",
+                "criticalSuccess": "@Damage[2[persistent,fire]]"
             },
             "Fire1d6": {
-                "success": "[[/r 1d6[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*1d6)[persistent,fire]]]"
+                "success": "@Damage[1d6[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*1d6)[persistent,fire]]"
             },
             "Fire3d6": {
-                "success": "[[/r 3d6[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*3d6)[persistent,fire]]]"
+                "success": "@Damage[3d6[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*3d6)[persistent,fire]]"
             },
             "Bleed1d4": {
-                "success": "[[/r 1d4[bleed]]]",
-                "criticalSuccess": "[[/r (2*1d4)[bleed]]]"
+                "success": "@Damage[1d4[bleed]]",
+                "criticalSuccess": "@Damage[(2*1d4)[bleed]]"
             },
             "Bleed3d8": {
-                "success": "[[/r 3d8[bleed]]]",
-                "criticalSuccess": "[[/r (2*3d8)[bleed]]]"
+                "success": "@Damage[3d8[bleed]]",
+                "criticalSuccess": "@Damage[(2*3d8)[bleed]]"
             },
             "Bleed1d8": {
-                "criticalSuccess": "[[/r (2*1d8)[bleed]]]",
-                "success": "[[/r 1d8[bleed]]]"
+                "criticalSuccess": "@Damage[(2*1d8)[bleed]]",
+                "success": "@Damage[1d8[bleed]]"
             },
             "Bleed4d8": {
-                "success": "[[/r 4d8[bleed]]]",
-                "criticalSuccess": "[[/r (2*4d8)[bleed]]]"
+                "success": "@Damage[4d8[bleed]]",
+                "criticalSuccess": "@Damage[(2*4d8)[bleed]]"
             },
             "Fire2d10": {
-                "criticalSuccess": "[[/r (2*2d10)[persistent,fire]]]",
-                "success": "[[/r 2d10[persistent,fire]]]"
+                "criticalSuccess": "@Damage[(2*2d10)[persistent,fire]]",
+                "success": "@Damage[2d10[persistent,fire]]"
             },
             "Fire3d10": {
-                "success": "[[/r 3d10[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*3d10)[persistent,fire]]]"
+                "success": "@Damage[3d10[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*3d10)[persistent,fire]]"
             },
             "Fire2d8": {
-                "success": "[[/r 2d8[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*2d8)[persistent,fire]]]"
+                "success": "@Damage[2d8[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*2d8)[persistent,fire]]"
             },
             "Mental1d6": {
-                "criticalSuccess": "[[/r (2*1d6)[persistent,mental]]]",
-                "success": "[[/r 1d6[persistent,mental]]]"
+                "criticalSuccess": "@Damage[(2*1d6)[persistent,mental]]",
+                "success": "@Damage[1d6[persistent,mental]]"
             },
             "Mental2d6": {
-                "criticalSuccess": "[[/r (2*2d6)[persistent,mental]]]",
-                "success": "[[/r 2d6[persistent,mental]]]"
+                "criticalSuccess": "@Damage[(2*2d6)[persistent,mental]]",
+                "success": "@Damage[2d6[persistent,mental]]"
             },
             "Fire1d10": {
-                "success": "[[/r 1d10[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*1d10)[persistent,fire]]]"
+                "success": "@Damage[1d10[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*1d10)[persistent,fire]]"
             },
             "Force2d12": {
-                "success": "[[/r 2d12[persistent,force]]]",
-                "criticalSuccess": "[[/r (2*2d12)[persistent,force]]]"
+                "success": "@Damage[2d12[persistent,force]]",
+                "criticalSuccess": "@Damage[(2*2d12)[persistent,force]]"
             },
             "Fire4d10": {
-                "success": "[[/r 4d10[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*4d10)[persistent,fire]]]"
+                "success": "@Damage[4d10[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*4d10)[persistent,fire]]"
             },
             "Fire3d8": {
-                "success": "[[/r 3d8[persistent,fire]]]",
-                "criticalSuccess": "[[/r (2*3d8)[persistent,fire]]]"
+                "success": "@Damage[3d8[persistent,fire]]",
+                "criticalSuccess": "@Damage[(2*3d8)[persistent,fire]]"
             },
             "Force1d12": {
-                "criticalSuccess": "[[/r (2*1d12)[persistent,force]]]",
-                "success": "[[/r 1d12[persistent,force]]]"
+                "criticalSuccess": "@Damage[(2*1d12)[persistent,force]]",
+                "success": "@Damage[1d12[persistent,force]]"
             },
             "Mental1d4": {
-                "criticalSuccess": "[[/r (2*1d4)[persistent,mental]]]",
-                "success": "[[/r 1d4[persistent,mental]]]"
+                "criticalSuccess": "@Damage[(2*1d4)[persistent,mental]]",
+                "success": "@Damage[1d4[persistent,mental]]"
             },
             "Mental1d8": {
-                "criticalSuccess": "[[/r (2*1d8)[persistent,mental]]]",
-                "success": "[[/r 1d8[persistent,mental]]]"
+                "criticalSuccess": "@Damage[(2*1d8)[persistent,mental]]",
+                "success": "@Damage[1d8[persistent,mental]]"
             },
             "Negative1d6": {
-                "success": "[[/r 1d6[persistent,void]]]",
-                "criticalSuccess": "[[/r (2*1d6)[persistent,void]]]"
+                "success": "@Damage[1d6[persistent,void]]",
+                "criticalSuccess": "@Damage[(2*1d6)[persistent,void]]"
             },
             "Negative1d8": {
-                "criticalSuccess": "[[/r (2*1d8)[persistent,void]]]",
-                "success": "[[/r 1d8[persistent,void]]]"
+                "criticalSuccess": "@Damage[(2*1d8)[persistent,void]]",
+                "success": "@Damage[1d8[persistent,void]]"
             },
             "Poison1d6": {
-                "criticalSuccess": "[[/r (2*1d6)[persistent,poison]]]",
-                "success": "[[/r 1d6[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*1d6)[persistent,poison]]",
+                "success": "@Damage[1d6[persistent,poison]]"
             },
             "Poison1d12": {
-                "criticalSuccess": "[[/r (2*1d12)[persistent,poison]]]",
-                "success": "[[/r 1d12[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*1d12)[persistent,poison]]",
+                "success": "@Damage[1d12[persistent,poison]]"
             },
             "Poison2d6": {
-                "success": "[[/r 2d6[persistent,poison]]]",
-                "criticalSuccess": "[[/r (2*2d6)[persistent,poison]]]"
+                "success": "@Damage[2d6[persistent,poison]]",
+                "criticalSuccess": "@Damage[(2*2d6)[persistent,poison]]"
             },
             "Mental3d6": {
-                "success": "[[/r 3d6[persistent,mental]]]",
-                "criticalSuccess": "[[/r (2*3d6)[persistent,mental]]]"
+                "success": "@Damage[3d6[persistent,mental]]",
+                "criticalSuccess": "@Damage[(2*3d6)[persistent,mental]]"
             },
             "Negative1d10": {
-                "success": "[[/r 1d10[persistent,void]]]",
-                "criticalSuccess": "[[/r (2*1d10)[persistent,void]]]"
+                "success": "@Damage[1d10[persistent,void]]",
+                "criticalSuccess": "@Damage[(2*1d10)[persistent,void]]"
             },
             "Poison1d4": {
-                "criticalSuccess": "[[/r (2*1d4)[persistent,poison]]]",
-                "success": "[[/r 1d4[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*1d4)[persistent,poison]]",
+                "success": "@Damage[1d4[persistent,poison]]]"
             },
             "Poison2d4": {
-                "criticalSuccess": "[[/r (2*2d4)[persistent,poison]]]",
-                "success": "[[/r 2d4[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*2d4)[persistent,poison]]",
+                "success": "@Damage[2d4[persistent,poison]]"
             },
             "Negative2d10": {
-                "criticalSuccess": "[[/r (2*2d10)[persistent,void]]]",
-                "success": "[[/r 2d10[persistent,void]]]"
+                "criticalSuccess": "@Damage[(2*2d10)[persistent,void]]",
+                "success": "@Damage[2d10[persistent,void]]"
             },
             "Piercing2d8+8": {
-                "success": "[[/r (2d8+8)[persistent,piercing]]]",
-                "criticalSuccess": "[[/r (2*2d8+16)[persistent,piercing]]]"
+                "success": "@Damage[(2d8+8)[persistent,piercing]]",
+                "criticalSuccess": "@Damage[(2*2d8+16)[persistent,piercing]]"
             },
             "Poison1d8": {
-                "criticalSuccess": "[[/r (2*1d8)[persistent,poison]]]",
-                "success": "[[/r 1d8[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*1d8)[persistent,poison]]",
+                "success": "@Damage[1d8[persistent,poison]]"
             },
             "Poison3d4": {
-                "criticalSuccess": "[[/r (2*3d4)[persistent,poison]]]",
-                "success": "[[/r 3d4[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*3d4)[persistent,poison]]",
+                "success": "@Damage[3d4[persistent,poison]]"
             },
             "Poison3d6": {
-                "success": "[[/r 3d6[persistent,poison]]]",
-                "criticalSuccess": "[[/r (2*3d6)[persistent,poison]]]"
+                "success": "@Damage[3d6[persistent,poison]]",
+                "criticalSuccess": "@Damage[(2*3d6)[persistent,poison]]"
             },
             "Poison2d8": {
-                "criticalSuccess": "[[/r (2*2d8)[persistent,poison]]]",
-                "success": "[[/r 2d8[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*2d8)[persistent,poison]]",
+                "success": "@Damage[2d8[persistent,poison]]"
             },
             "Poison4d6": {
-                "criticalSuccess": "[[/r (2*4d6)[persistent,poison]]]",
-                "success": "[[/r 4d6[persistent,poison]]]"
+                "criticalSuccess": "@Damage[(2*4d6)[persistent,poison]]",
+                "success": "@Damage[4d6[persistent,poison]]"
             }
         },
         "Terrain": {
@@ -4212,7 +4258,9 @@
                 "AllDamageFromFungus": "所有来自真菌的伤害",
                 "CrystalHazards": "晶石危害",
                 "Spirits": "精魂",
-                "AcidAndSpellsThatCauseRust": "酸蚀和导致生锈的法术"
+                "AcidAndSpellsThatCauseRust": "酸蚀和导致生锈的法术",
+                "AttacksDemons": "被恶魔攻击",
+                "DraconicBreathWeapons": "龙类吐息武器"
             }
         },
         "Color": {
