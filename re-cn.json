@@ -2702,7 +2702,7 @@
                 "Note": "你的炽火胶造成额外1d4 持续火焰伤害，并且生物必须通过两次纯骰检定才能停止持续伤害（若受到能将纯骰DC降至10的协助恢复，则只需要一次成功）。真火胶就算在水下也能燃烧，任何用水来停止持续伤害的手段没有任何效果。"
             },
             "SpellEffectGluttonsJaw": {
-                "Text": "如果你的啃咬命中并造成伤害，你获得[[/r ceil(@item.level/2)d6 #Temporary Hit Points]]点临时生命值。"
+                "Text": "如果你的啃咬命中并造成伤害，你获得[[/r (ceil(@item.level/2))d6 #Temporary Hit Points]]点临时生命值。"
             },
             "InCombat": {
                 "ToggleLabel": "战斗中"
