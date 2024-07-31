@@ -1294,6 +1294,9 @@
                         "Lesser": "次等",
                         "Major": "上等"
                     }
+                },
+                "BlackScorpionStingmace": {
+                    "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong> (毒素)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2} (1轮).</p>"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -3243,7 +3246,9 @@
             "BoundHome": "身处所连结的房屋中时",
             "ImpersonatePeasantOrLaborer": "乔装成农民或劳工",
             "Moonlight": "月光下",
-            "ImpersonateSpecificPerson": "乔装成一个特定人物"
+            "ImpersonateSpecificPerson": "乔装成一个特定人物",
+            "Balance": "保持平衡",
+            "Fly": "飞行"
         },
         "OracleCurses": {
             "Label": {
@@ -3839,6 +3844,12 @@
             },
             "Herexen": {
                 "HereticSmite": "正持握前神祇的偏好武器"
+            },
+            "Vordine": {
+                "TridentOfDis": {
+                    "NoAlly": "无盟友",
+                    "UnholyAlly": "邪秽盟友"
+                }
             }
         },
         "UI": {
