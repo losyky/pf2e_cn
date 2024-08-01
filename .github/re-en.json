@@ -1926,6 +1926,11 @@
             "ArtokussFire": {
                 "Note": "Your Alchemist's Fire deals an additional 1d4 persistent fire damage, and creatures must make two succesful flat checks to end the condition (or one check, if they had assisted recovery that reduces the flat check to DC 10). Your enhanced fire burns underwater, and water does not help to end the persistent damage."
             },
+            "Assassin": {
+                "Assassinate": {
+                    "Note": "If you hit, your mark takes an additional @Damage[(6d6[precision])[@item.system.damage.damageType]] damage with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. If the mark critically fails, it dies unless its level is higher than yours."
+                }
+            },
             "Automaton": {
                 "ArcaneLocomotion": {
                     "Prompt": "Select a movement type."
@@ -2496,6 +2501,9 @@
                 },
                 "EnchantingArrow": {
                     "Note": "On a critical hit, the target also becomes @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}."
+                },
+                "IncorporealShot": {
+                    "Label": "Incorporeal Shot - Target Wearing Armor"
                 }
             },
             "Elf": {
@@ -2563,6 +2571,11 @@
                     "Fire": "Green (Fire)",
                     "Poison": "Orange (Poison)",
                     "Cold": "Brown (Cold)"
+                },
+                "ChaliceOfJustice": {
+                    "SipOfJustice": {
+                        "Note": "Whenever you critically hit an unholy creature with the <em>chalice of justice</em>, the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round."
+                    }
                 },
                 "ChannelProtectionAmuletLabel": "Channel Protection",
                 "ChaplainsCudgel": {
@@ -3994,7 +4007,7 @@
                         "Elemental": "Either you gain a +2 status bonus to Intimidation checks for 1 round, or a target takes @Damage[@item.level[@actor.flags.pf2e.elementalBloodline.damageType]] damage. If the spell already deals that type of damage, combine it with the spell's initial damage before determining weaknesses and resistances.",
                         "Fey": "Either you gain a +2 status bonus to Performance checks for 1 round, or you can become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} for 1 round. Such obvious concealment can't be used to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}",
                         "Genie": "Your spellcasting warps reality and distracts your foes. Either you gain a +1 status bonus to Deception checks for 1 round, or a target takes a -1 status penalty to Perception for 1 round.",
-                        "Hag": "You deal @Damage[(4*@item.level)[mental]] damage (@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)] save) to the first creature that deals damage to you before the end of your next turn; if  no creature damages you in that time, you consume that spite to gain temporary Hit Points at the beginning of your next turn equal to the spell's rank. These temporary Hit Points last until the beginning of your following turn.",
+                        "Hag": "You deal @Damage[(4*@item.level)[mental]] damage (@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)] save) to the first creature that deals damage to you before the end of your next turn; if no creature damages you in that time, you consume that spite to gain temporary Hit Points at the beginning of your next turn equal to the spell's rank. These temporary Hit Points last until the beginning of your following turn.",
                         "Harrow": "You become enveloped in possibility, represented as multiple versions of yourself from your possible futures overlaid on each other. You gain @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealement} for 1 round, but can't use the concealment to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide}.",
                         "Imperial": "Until the start of your next turn, you gain your choice of either a +1 status bonus to AC or to saving throws.",
                         "Title": "Blood Magic",
