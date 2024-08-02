@@ -7862,7 +7862,8 @@
         "Level23": "等级 23",
         "Level22": "等级 22",
         "Level21": "等级 21",
-        "TraitDescriptionEthereal": "灵体生物是灵界的原住民。他们可以在灵界的基本环境效果中存活。"
+        "TraitDescriptionEthereal": "灵体生物是灵界的原住民。他们可以在灵界的基本环境效果中存活。",
+        "TraitBravado": "虚势"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
