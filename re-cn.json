@@ -1296,7 +1296,7 @@
                     }
                 },
                 "BlackScorpionStingmace": {
-                    "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong> (毒素)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2} (1轮).</p>"
+                    "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong> （毒素）</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}（1轮）</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（1轮）</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}（1轮）</p>"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1689,25 +1689,25 @@
                 "Bloodline": {
                     "Prompt": "选择血统",
                     "BloodMagicDescription": {
-                        "Diabolic": "地狱的火焰灼烧着目标，或是用谎言填满了你的舌头。一个目标受到@Damage[@item.level[fire]]伤害（如果法术已经造成了初始的火焰伤害，将此伤害与初始伤害合计后再计算弱点和抗力），或者你于1轮内在欺骗检定上获得+1状态加值。",
+                        "Diabolic": "一个目标受到@Damage[@item.level[fire]]伤害（如果法术已经能造成初始火焰伤害，将此伤害与初始伤害合计后再计算弱点和抗力），或者你于1轮内在欺骗检定上获得+2状态加值。",
                         "Genie": "你的施法能够扭曲现实，从而分散敌人的注意力。你于1轮内在欺骗检定上获得+1状态加值，或者目标于1轮内在察觉上承受-1状态罚值。",
                         "Shadow": {
                             "PerceptionPenalty": "察觉上承受-1罚值",
                             "StealthBonus": "隐秘上获得+1加值",
                             "Text": "影子在你或是一个目标的周围变得愈发幽暗，在隐秘检定上获得+1状态加值或是在察觉上承受-1状态罚值，持续1轮。"
                         },
-                        "Undead": "死灵能量流过你或是一个目标。你在1轮内获得等同于法术环级的临时生命，或者一个目标受到@Damage[@item.level[void]]伤害（如果法术已经造成了初始的虚能伤害，将此伤害与初始伤害合计后再计算弱点和抗力）。",
+                        "Undead": "你获得等同于法术环级的临时生命直到你下一个回合的回合开始时，或者一个目标受到@Damage[@item.level[void]]伤害（如果法术已能造成初始虚能伤害，将此伤害与初始伤害合计后再计算弱点和抗力）。",
                         "Wyrmblessed": "你的声音传递巨龙之威。你在1个回合内获得威吓检定上的+1状态加值，或者目标在1个回合内意志豁免受到-1状态减值。",
-                        "Draconic": "你或目标身上在短时间里长出了些许龙鳞，在AC上获得+1状态加值，持续1轮。",
-                        "Aberrant": "怪异的耳语遮掩了你或是一个目标的思想，在意志豁免上获得+2状态加值，持续1轮。",
-                        "Angelic": "天界的灵光守护着你或是一个目标，在豁免骰上获得+1状态加值，持续1轮。",
+                        "Draconic": "你或是一个目标在AC上获得+1状态加值，持续1轮。",
+                        "Aberrant": "目标于1轮内在意志豁免上获得-1状态减值，或者你于1轮内在意志豁免上获得+2状态加值。",
+                        "Angelic": "你或是一个目标在豁免骰上获得+1状态加值，持续1轮。",
                         "Phoenix": "原能的生命与死亡之火在你或单个目标间流转。选择你或一个法术目标获得等同于法术环级的临时生命值持续1轮，或则使得法术目标受到@Damage[@item.level[fire]]伤害（如果法术本身就造成火焰伤害，在计算弱点与抗力之前加上此额外伤害）。",
-                        "Elemental": "元素的能量环绕着你或是一个目标。你于1轮内在威吓检定上获得+1状态加值，或者目标受到@Damage[@item.level[@actor.flags.pf2e.sorcerer.elementalBloodline.damageType]]伤害。根据你的元素类型（见下文），这一伤害的类型为钝击或火焰。如果法术已经造成了这一类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
-                        "Fey": "五彩缤纷的精类在你或是一个目标的周围跳起了迷舞，使其在1轮内@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。如此显而易见的遮蔽无法被用于躲藏。",
+                        "Elemental": "你于1轮内在威吓检定上获得+2状态加值，或者目标受到@Damage[@item.level[@actor.flags.pf2e.elementalBloodline.damageType]]伤害。伤害类型由你的元素影响决定。如果法术已能造成这一类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
+                        "Fey": "你于1轮内在表演检定上获得+2状态加值，或者在1轮内获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]。如此显而易见的遮蔽无法被用于@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]。",
                         "AncestralBloodMagic": "施放一个先祖法术",
-                        "Imperial": "来自先祖的记忆使得你或是一个目标在技能检定上获得+1状态加值，持续1轮。",
-                        "Demonic": "源自罪孽的腐化削弱了目标的防御，亦或使你愈发威严。目标于1轮内在AC上受到-1状态罚值，或者你于1轮内在威吓检定上获得+1状态加值。",
-                        "Hag": "恶毒的诅咒惩罚着你的敌人。在你下一轮结束之前第一名对你造成伤害的敌人受到@Damage[@item.level[mental]]伤害，且必须尝试一次@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免。",
+                        "Imperial": "直到你的下一个回合开始，你可以选择在AC或是在豁免骰上获得+1状态加值。",
+                        "Demonic": "目标于1轮内在AC上受到-1状态罚值，或者你于1轮内在威吓检定上获得+2状态加值。",
+                        "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命，持续到你之后那个回合的回合开始。",
                         "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealement}，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide}。",
                         "Title": "血统奥秘",
                         "Nymph": "你的动作中尽显宁芙的优雅，甚至能使你的敌人分心。你于1轮内在交涉检定上获得+1状态加值，或者目标于1轮内在意志豁免上承受-1状态罚值。",
@@ -2188,8 +2188,18 @@
                     "Unbalancing": "失衡",
                     "Targeting": "狙击",
                     "PreciseNote": "当稳妥终结普通失败时，你造成@Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{完整的精准打击伤害}而非一半。",
-                    "ConfidentNote": "你向目标造成一半的@Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{精准打击伤害}。此伤害的伤害类型与发动打击的武器或无武装攻击的伤害类型相同。"
-                }
+                    "ConfidentNote": "你向目标造成一半的@Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{精准打击伤害}。此伤害的伤害类型与发动打击的武器或无武装攻击的伤害类型相同。",
+                    "Retreating": "重整",
+                    "RetreatingNote": "你使用自由动作快步。",
+                    "Revitalizing": "赋生",
+                    "Stumbling": "踉跄",
+                    "TwirlingThrow": "回旋投掷",
+                    "TwirlingThrowNote": "该武器会在攻击后飞回你的手上"
+                },
+                "GoadingFeint": {
+                    "Note": "虚招成功时，取代虚招的通常效果，直到目标的下个回合结束，其对你的下一次攻击骰受到-2环境减值。@UUID[Compendium.pf2e.feat-effects.Item.rflbFzV44Fd6aBLE]"
+                },
+                "PanacheFailure": "直到你的下回合结束为止你获得@UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]"
             },
             "Gnome": {
                 "GrimInsight": {
@@ -2760,6 +2770,9 @@
                 },
                 "PeerBeyond": {
                     "Note": "如果你知道当前出现的虚体不死生物和作祟是什么，你能以魂魄学识或作祟学识进行先攻检定。"
+                },
+                "BespellStrikes": {
+                    "Sorcerer": "你从上一个法术中汲取残余的能量注入你所持握的一把武器或是你的一种无武装攻击中。直到你的回合结束时为止，该武器或无武装攻击造成额外1d6点力场伤害并获得你血脉的魔法根源的特征。如果你施放的法术造成其他种类的伤害，则打击取而代之造成该种类的伤害（如果法术能够造成复数种类的伤害，由你选择一种伤害类型适用）。"
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -4271,7 +4284,10 @@
                 "Spirits": "精魂",
                 "AcidAndSpellsThatCauseRust": "酸蚀和导致生锈的法术",
                 "AttacksDemons": "被恶魔攻击",
-                "DraconicBreathWeapons": "龙类吐息武器"
+                "DraconicBreathWeapons": "龙类吐息武器",
+                "BludgeoningPiercingSlashing": "钝击，穿刺和挥砍伤害",
+                "HolyBludgeoningPiercingSlashing": "圣洁钝击，穿刺和挥砍伤害",
+                "UnholyBludgeoningPiercingSlashing": "邪秽钝击，穿刺和挥砍伤害"
             }
         },
         "Color": {
@@ -4286,6 +4302,38 @@
             "Violet": "紫罗兰",
             "White": "白色",
             "Yellow": "黄色"
+        },
+        "Dragon": {
+            "Adamantine": "精金龙",
+            "Arcane": "奥术龙",
+            "Black": "黑龙",
+            "Blue": "蓝龙",
+            "Brass": "黄铜龙",
+            "Bronze": "青铜龙",
+            "Conspirator": "诡谋龙",
+            "Copper": "赤铜龙",
+            "Diabolic": "地狱龙",
+            "Divine": "神术龙",
+            "Empyreal": "圣天龙",
+            "Horned": "智角龙",
+            "Mirage": "幻影龙",
+            "Fortune": "福宝龙",
+            "Green": "绿龙",
+            "Gold": "金龙",
+            "Occult": "异能龙",
+            "Omen": "兆命龙",
+            "Primal": "原能龙",
+            "Red": "红龙",
+            "Silver": "银龙",
+            "White": "白龙"
+        },
+        "FeatDescription": {
+            "Frequency": {
+                "OncePerTurn": "每回合一次"
+            },
+            "Requirements": {
+                "Label": "需求"
+            }
         }
     }
 }
