@@ -2142,8 +2142,8 @@
                 "AttributeModifiers": "属性调整值",
                 "Shield": {
                     "HitPoints": {
-                        "Value": "盾牌生命值",
-                        "Max": "盾牌最大生命值"
+                        "Value": "盾牌HP",
+                        "Max": "盾牌最大HP"
                     },
                     "Hardness": {
                         "Label": "H",
