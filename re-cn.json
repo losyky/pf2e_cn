@@ -410,18 +410,18 @@
             "SulfurBomb": {
                 "Greater": {
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。",
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 },
                 "Moderate": {
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹 (失败)})。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。",
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 }
             },
@@ -3043,6 +3043,50 @@
                     "Yellow": "黄",
                     "Blue": "蓝",
                     "Red": "红"
+                }
+            },
+            "Werecreature": {
+                "Weremoose": {
+                    "Label": "鹿化人",
+                    "Description": "你获得25尺的速度，以及带有推撞特征的1d8穿刺鹿角无武装攻击。"
+                },
+                "Wererat": {
+                    "Label": "鼠化人",
+                    "Description": "你获得25尺的速度，一个带有娴熟特征的1d6穿刺噬咬无武装攻击，以及一个带有灵巧和娴熟特征的1d4挥砍爪击无武装攻击。你的动物形态为小型。"
+                },
+                "Wereshark": {
+                    "Description": "你获得15尺的速度和25尺的游泳速度，以及1d8穿刺噬咬的无武装攻击，并带有擒抱特性。你的混合形态获得两栖游泳25尺的特征。在你的动物形态中，你失去陆地移动速度，游泳速度增加到35尺，并且获得水生特征。",
+                    "Label": "鲨化人"
+                },
+                "Werebat": {
+                    "Description": "你获得10尺的速度和15尺的飞行速度，并且拥有1d8穿刺尖牙无武装攻击。当由此形态给予的飞行速度进行飞行时，你必须在坚固表面上开始和结束你的移动，否则会立即坠落.",
+                    "Label": "蝠化人"
+                },
+                "YouDontSmellRight": {
+                    "Label": "设法确定一个生物是否伪装。"
+                },
+                "Werebear": {
+                    "Label": "熊化人",
+                    "Description": "你获得25尺的速度，一个1d8穿刺噬咬无武装攻击，以及一个带有灵巧特性的1d6挥砍爪击无武装攻击。"
+                },
+                "Werecrocodile": {
+                    "Label": "鳄化人",
+                    "Description": "你获得25尺的速度和15尺的游泳速度，并且拥有1d8穿刺噬咬无武装攻击，附带擒抱特质。在动物形态或混合形态下，你可以屏息2小时。"
+                },
+                "Weretiger": {
+                    "Label": "虎化人",
+                    "Description": "你获得25尺的速度，1d8穿刺伤害的爪子无武装攻击，以及一个带有灵巧特性的1d6挥砍伤害的爪子无武装攻击。"
+                },
+                "Werewolf": {
+                    "Description": "你获得30尺的速度和一个带有摔绊特性以及1d8穿刺伤害的无武装攻击。",
+                    "Label": "狼化人"
+                },
+                "ChangeShape": {
+                    "AlterationLabel": "混合形态与动物形态"
+                },
+                "Wereboar": {
+                    "Description": "你获得30尺的速度，以及一个带有横扫特征的1d8挥砍獠牙无武装攻击。",
+                    "Label": "猪化人"
                 }
             }
         },
