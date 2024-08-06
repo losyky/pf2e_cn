@@ -4289,6 +4289,10 @@
                 "EnvironmentTypes": {
                     "Hint": "任何自定义环境类型",
                     "Name": "环境类型"
+                },
+                "ShieldTraits": {
+                    "Name": "盾牌特征",
+                    "Hint": "可应用于盾牌的特征"
                 }
             },
             "Metagame": {
@@ -7863,7 +7867,9 @@
         "Level22": "等级 22",
         "Level21": "等级 21",
         "TraitDescriptionEthereal": "灵体生物是灵界的原住民。他们可以在灵界的基本环境效果中存活。",
-        "TraitBravado": "虚势"
+        "TraitBravado": "虚势",
+        "TraitDescriptionDragonblood": "具有此特征的生物拥有龙血多用传承。这些生物出生于龙族血统，通常具有龙族外貌。",
+        "TraitDragonblood": "龙血"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
