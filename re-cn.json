@@ -984,10 +984,20 @@
             },
             "Alchemist": {
                 "ResearchField": {
-                    "Prompt": "选择一个研究课题"
+                    "Prompt": "选择一个研究课题",
+                    "Bomber": {
+                        "FieldBenefit": "当投掷带有溅射特征的炼金炸弹时，你可以放弃通常的溅射区域，只对你的主要目标造成溅射伤害。",
+                        "GreaterFieldDiscovery": "你可以提升炸弹的溅射范围，让它对周围10尺的生物造成溅射伤害，或者如果你具有溅射扩展专长，则为15尺。"
+                    }
                 },
                 "AlchemicalCrossbow": {
                     "Prompt": "选择装填到弩上的炸弹"
+                },
+                "Alchemy": {
+                    "IdentifyAlchemy": "你可以自动辨识出掌握了配方的炼金物品。"
+                },
+                "ExpandedSplash": {
+                    "Note": "溅射伤害影响目标周围10尺内的所有生物，而非5尺。"
                 }
             },
             "Aid": {
@@ -1455,6 +1465,24 @@
                 },
                 "MysteryConduit": {
                     "Note": "当你施放5环级及更低环且没有持续时间的法术时，可以不消耗法术位，而是如同施放了启示法术一般增长一级诅咒严重性。用该法施放的法术获得咒缚特征。"
+                },
+                "NudgeTheScales": {
+                    "Life": "生",
+                    "Death": "死"
+                },
+                "MeddlingFutures": {
+                    "Note": "如果你尝试进行一个不同于的动作，你必须成功通过一次@Check[type:flat|dc:6]检定，否则动作丢失。"
+                },
+                "ConduitOfVoidAndVitality": {
+                    "HarmDescription": "你施展3动作版本的伤害术，如常消耗法术位。如果这个法术为一个或更多的生物恢复了生命值，一个被这个法术恢复生命值的生物额外获得@Damage[(@actor.conditions.cursebound.value)d8[healing,void]|shortLabel:true]临时生命；如果这个法术对一个或更多的生物造成了伤害，一个被这个法术伤害的生物额外受到@Damage[(@actor.conditions.cursebound.value)d8[void]|shortLabel:true]伤害。",
+                    "HealDescription": "你施展3动作版本的治疗术，如常消耗法术位。如果这个法术为一个或更多的生物恢复了生命值，一个被这个法术恢复生命值的生物额外获得@Damage[(@actor.conditions.cursebound.value)d8[healing,vitality]|shortLabel:true]临时生命；如果这个法术对一个或更多的生物造成了伤害，一个被这个法术伤害的生物额外受到@Damage[(@actor.conditions.cursebound.value)d8[vitality]|shortLabel:true]伤害。"
+                },
+                "Cursebound": {
+                    "IncreaseNote": "当你使用一个咒缚能力时，你陷入@UUID[Compendium.pf2e.conditionitems.Item.zXZjC8HLaRoLR17U]{咒缚 Cursebound 1}，或在你已经陷入咒缚状态时将其状态值提升1。",
+                    "MaximumNote": "如果你没有先知诅咒或已经处于最大@UUID[Compendium.pf2e.conditionitems.Item.zXZjC8HLaRoLR17U]状态，你就不能施展咒缚能力。"
+                },
+                "DiverseMystery": {
+                    "Toggle": "已用的异色秘示域咒缚法术"
                 }
             },
             "Magus": {
@@ -1711,8 +1739,42 @@
                         "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealement}，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide}。",
                         "Title": "血统奥秘",
                         "Nymph": "你的动作中尽显宁芙的优雅，甚至能使你的敌人分心。你于1轮内在交涉检定上获得+1状态加值，或者目标于1轮内在意志豁免上承受-1状态罚值。",
-                        "Psychopomp": "生与死的界限在你身上显得模糊不清。你于1轮内在强韧豁免上获得+2状态加值，或者目标受到每法术环级1点的伤害。此伤害当目标为活物时为@Damage[@item.level[void]]，当目标为不死生物时为@Damage[@item.level[vitality]]。如果法术已经造成了该种类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。"
+                        "Psychopomp": "生与死的界限在你身上显得模糊不清。你于1轮内在强韧豁免上获得+2状态加值，或者目标受到每法术环级1点的伤害。此伤害当目标为活物时为@Damage[@item.level[void]]，当目标为不死生物时为@Damage[@item.level[vitality]]。如果法术已经造成了该种类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
+                        "ExplosionOfPower": "@Template[type:emanation|distance:5]内的每一个生物都受到@Damage[(@item.level)d6|options:explosion-of-power]伤害（@Check[type:reflex|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免）。",
+                        "PropellingSorcery": "你将你的魔力向外引导，转换为一次急促的移动。你以自由动作进行一次快步，或是将目标按你所选择的方向移动5尺。",
+                        "TerraformingTrickery": "你周围的每个相邻格子都将变成困难地形，或是每个相邻格子都不再是困难地形。这个伎俩对高等困难地形没有效果，也无法消除危害性地形带来的伤害性影响。",
+                        "ReflectHarm": "在你下一个回合的回合开始前，你第一次受到法术的伤害时可以尝试一次攻击骰对抗施放了那个法术的生物。成功命中时，该生物遭受与你所受相同数量相同类型的伤害。大成功时，该生物承受两倍伤害。"
+                    },
+                    "BloodMagicLabel": {
+                        "Aberrant": "诡异帷幕",
+                        "Diabolic": "地狱火舌",
+                        "Hag": "恶意报应",
+                        "Angelic": "神圣灵光",
+                        "Demonic": "罪孽腐化",
+                        "Elemental": "元素狂怒",
+                        "Fey": "缎带斗篷",
+                        "Genie": "巨灵血脉",
+                        "Harrow": "哈罗血脉",
+                        "Imperial": "皇威守御",
+                        "Nymph": "宁芙血脉",
+                        "Phoenix": "凤凰血脉",
+                        "Psychopomp": "招魂者血脉",
+                        "Shadow": "幽影血脉",
+                        "Wyrmblessed": "龙佑血脉",
+                        "Draconic": "龙鳞甲",
+                        "Undead": "盗命"
                     }
+                },
+                "BloodSovereignty": {
+                    "Description": "你失去相当于法术环级两倍的生命值，然后获得你掌握的两种不同血统奥秘效果。这些效果可以有不同的目标。"
+                },
+                "SecondBloodMagic": "第二血统奥秘",
+                "TapIntoBlood": {
+                    "Occult": "奇妙的迷雾或色彩的漩涡掩盖了你的移动。你进行一次最远10尺的快步。",
+                    "Primal": "自然的庞大能量在你的声音中回响。你可以尝试用一次自然检定来对一个目标[[/act demoralize skill=nature]]。",
+                    "Requirements": "你正在从血统奥秘效果中获益",
+                    "Divine": "你血脉中的神圣起源指引着你，令你能凭借直觉将自己或他人从危险中移出。你进行一次快步，或使用宗教进行检定对你触及范围内的一个目标进行一次[[/act reposition skill=religion]]。",
+                    "Arcane": "世界的秘密暂时向你的心灵敞开。尝试一次[[/act recall-knowledge skill=arcana]]；你可以用奥法替代回忆这一主题通常需要的技能。如果你在这次检定中大失败，你取而代之获得失败结果。"
                 }
             },
             "Defending": {
@@ -2081,7 +2143,7 @@
                     "Note": "你可以选择另一个自愿生物，为其治疗等同于该法术为你治疗的相同生命值。若该生物邻接于你命中的敌人，即使其在法术正常射程之外，你也可以将其选做治疗的目标。"
                 },
                 "CastigatingWeapon": {
-                    "Note": "来自神祇的斥责力量强化了你的身躯，你以此击倒邪恶的敌人。在你使用治疗术（heal）伤害了邪魔之后，你的武器或者无武装攻击造成等于治疗术（heal）环级一般的额外善良伤害，直到你的下个回合的结束。这与任何武器已经能造成的善良伤害叠加（例如来自神圣符文）。@UUID[Compendium.pf2e.feat-effects.Item.BTI4obxa5UmNltyU]{效果：斥责武器}"
+                    "Note": "来自神祇的斥责力量强化了你的身躯，你以此击倒邪恶的敌人。在你使用治疗术伤害了邪魔之后，你的武器或者无武装攻击造成等于治疗术环级一般的额外善良伤害，直到你的下个回合的结束。这与任何武器已经能造成的善良伤害叠加（例如来自神圣符文）。@UUID[Compendium.pf2e.feat-effects.Item.BTI4obxa5UmNltyU]{效果：斥责武器}"
                 },
                 "DirectedChannel": {
                     "ItemAlterationNote": "你可以令范围改为@Template[type:cone|distance:60]而非弥漫。"
@@ -2164,6 +2226,14 @@
                 },
                 "SharedStratagem": {
                     "Note": "在你下一回合开始前，你指定的盟友对该生物的下一次攻击，该生物对盟友视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                },
+                "CertainStratagem": {
+                    "Note": "你对目标造成@Damage[(floor((@actor.level+3)/4)d6[precision])[@item.system.damage.damageType]|traits:certain-stratagem]{策士之击一半的伤害}"
+                },
+                "DeviseAStratagem": {
+                    "Defensive": "防御策略",
+                    "Skill": "技能策略",
+                    "Attack": "攻击策略"
                 }
             },
             "SpellEffectProtection": {
@@ -2547,7 +2617,9 @@
                 "Ape": "猿",
                 "Wolf": "狼",
                 "Centipede": "蜈蚣",
-                "Bat": "蝙蝠"
+                "Bat": "蝙蝠",
+                "Crocodile": "鳄鱼",
+                "Crab": "螃蟹"
             },
             "TerrainStalker": {
                 "Underbrush": "灌木丛",
@@ -2773,6 +2845,10 @@
                 },
                 "BespellStrikes": {
                     "Sorcerer": "你从上一个法术中汲取残余的能量注入你所持握的一把武器或是你的一种无武装攻击中。直到你的回合结束时为止，该武器或无武装攻击造成额外1d6点力场伤害并获得你血脉的魔法根源的特征。如果你施放的法术造成其他种类的伤害，则打击取而代之造成该种类的伤害（如果法术能够造成复数种类的伤害，由你选择一种伤害类型适用）。"
+                },
+                "YoureNext": {
+                    "Swashbuckler": "在你击倒敌人后，你可以恐吓另外一个敌人你即将把他选择为下个目标。尝试一次有+2环境加值的威吓检定来对一个与你互相可见的敌人进行@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]。如果你的威吓熟练度为传奇，你能以一个触发条件相同的自由动作来使用此专长。",
+                    "Rogue": "在你放倒一个敌人后，你威胁另一个。你对60尺内的一个生物尝试@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]，这次检定获得+2环境加值。你和该目标必须能看见彼此。如果你有传奇熟练度的威吓技能，你能以一个相同触发条件的自由动作来使用此能力。"
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -3015,7 +3091,8 @@
                 "GustingSpell": "如果你接下来的动作是施放具有气或电特征的法术，你可以在施法前或施法后飞行最多10尺。",
                 "ThunderclapSpell": "如果你的下一个动作是施放一个具有电特征或造成电击伤害、没有持续时间并要求生物尝试豁免的法术，那么该法术的闪电力量除了其原本效果外还会产生雷鸣。每个在该法术的反射豁免中失败的生物会被@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1轮，而大失败的生物还会被@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                 "SplitHex": "如果你接下来的动作是施放一个以单一目标为对象的伤害法术，将其环级降低2级（使其比你能施放的最高环级低2级）。如果你如此，你可以选择第二个目标来受到该法术的影响。",
-                "WidenSpell": "如果你接下来的动作是施放一个具有爆发、锥形或直线范围且没有持续时间的法术，则扩展法术的作用区域。对于通常有至少10尺半径爆发影响区域的法术来说，爆发区域半径增加5尺；对于通常长度为15尺或更低的锥形和线形法术，区域长度增加5尺；对于更大的锥形和线形法术则区域长度增加10尺。"
+                "WidenSpell": "如果你接下来的动作是施放一个具有爆发、锥形或直线范围且没有持续时间的法术，则扩展法术的作用区域。对于通常有至少10尺半径爆发影响区域的法术来说，爆发区域半径增加5尺；对于通常长度为15尺或更低的锥形和线形法术，区域长度增加5尺；对于更大的锥形和线形法术则区域长度增加10尺。",
+                "OverwhelmingBreath": "如果你下一个动作是施放一个有武僧特征并且没有持续时间的法术，此法术以及因为法术而进行的任何打击，皆可忽视敌人在物理伤害的抗力，忽视的数值与你的等级相同。"
             },
             "AwakenedAnimal": {
                 "LateAwakener": {
@@ -3088,6 +3165,40 @@
                     "Description": "你获得30尺的速度，以及一个带有横扫特征的1d8挥砍獠牙无武装攻击。",
                     "Label": "猪化人"
                 }
+            },
+            "Dragonblood": {
+                "BreathOfTheDragon": {
+                    "Line": {
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                    },
+                    "Cone": {
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                    }
+                },
+                "FormidableBreath": {
+                    "Line": {
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                    },
+                    "Cone": {
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                    }
+                },
+                "LingeringBreath": {
+                    "Description": "当你使用龙息时，你吐息的区域会在1分钟内变成困难地形。此外，豁免失败或大失败的生物会受到@Damage[2d6[persistent,@actor.flags.pf2e.dragonblood.damageType]]伤害"
+                }
+            },
+            "TempestForm": {
+                "Mist": "雾",
+                "Water": "水",
+                "Air": "气"
             }
         },
         "RuleElement": {
@@ -4377,6 +4488,9 @@
             },
             "Requirements": {
                 "Label": "需求"
+            },
+            "Trigger": {
+                "Label": "触发"
             }
         }
     }
