@@ -4381,12 +4381,12 @@
                 "CriticalFailureText": "当大失败时，武器会哑火。",
                 "Greater": {
                     "Title": "高等流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。弹药在目标周围@Template[type:emanation|distance:10]造成@Damage[6d6[fire]]伤害（@Check[type:reflex|dc:29|basic:true|name:Meteor Shot]豁免）。"
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。弹药在目标周围@Template[emanation|distance:10]造成@Damage[6d6[fire]]伤害（@Check[reflex|dc:29|basic|name:Meteor Shot]豁免）。"
                 }
             },
             "FreezingAmmunition": {
                 "Title": "冰冻弹药",
-                "Text": "这种冰冷的弹药是深蓝色的，而且摸起来感觉很冷。当启动的冰冻弹药命中了一个目标，目标必须通过一个@Check[type:fortitude|dc:19]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮（在大失败时则陷入缓慢1，持续1分钟）。"
+                "Text": "这种冰冷的弹药是深蓝色的，而且摸起来感觉很冷。当启动的冰冻弹药命中了一个目标，目标必须通过一个@Check[fortitude|dc:19]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮（在大失败时则陷入缓慢1，持续1分钟）。"
             },
             "OozeAmmunition": {
                 "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}一轮。",
