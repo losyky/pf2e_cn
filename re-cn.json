@@ -1701,7 +1701,7 @@
                     },
                     "Critical": {
                         "Label": "致命衰弱",
-                        "Note": "目标需要进行@Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)]豁免对抗你的职业DC。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，直到你的下个回合结束。</p><p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，直到你的下个回合结束。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，直到你的下个回合结束。</p>"
+                        "Note": "目标需要进行@Check[fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)]豁免对抗你的职业DC。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，直到你的下个回合结束。</p><p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，直到你的下个回合结束。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，直到你的下个回合结束。</p>"
                     },
                     "Label": "衰弱",
                     "OffGuard": {
@@ -2376,7 +2376,7 @@
                     "SecondAttackLabel": "双重切割第二击"
                 },
                 "DazingBlow": {
-                    "Note": "<p>如果击中，该生物需进行一次@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation]豁免对抗你的职业DC，这是一个失能效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
+                    "Note": "<p>如果击中，该生物需进行一次@Check[fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation]豁免对抗你的职业DC，这是一个失能效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
                 }
             },
             "DivineAlly": {
@@ -2707,7 +2707,7 @@
                         "Fire": "目标受到1d6持续火焰伤害。这次持续伤害增加你涌动攻击骰上的物品加值（比如来自束门环）。",
                         "Earth": "若目标站在地面，它陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}；若目标不在地面上，它下降最多20尺（你自选距离）。",
                         "Air": "将目标推离最多10尺。",
-                        "Wood": "若重击的目标与一个平面相邻，根茎将纠缠它。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}且必须花费一个交互动作通过@Check[type:athletics|dc:10]检定来使自己脱困。若目标为虚体、液体或可用其他手段轻易逃脱的生物，它不会被困。",
+                        "Wood": "若重击的目标与一个平面相邻，根茎将纠缠它。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}且必须花费一个交互动作通过@Check[athletics|dc:10]检定来使自己脱困。若目标为虚体、液体或可用其他手段轻易逃脱的生物，它不会被困。",
                         "Metal": "目标受到1d6持续流血伤害；若生物拥有金属性或由金属制成，它转成受到@Damage[1d6[persistent,untyped]]伤害（无类型的锈蚀伤害）。本次持续伤害增加你涌动攻击骰上的物品加值（例如来自束门环）。",
                         "Water": "冲击造成每伤害骰2点溅射伤害，伤害类型不变。",
                         "Label": "重击冲击"
