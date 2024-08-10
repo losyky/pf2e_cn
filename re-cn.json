@@ -1294,7 +1294,7 @@
                     "VsArcaneSpells": "{item} (对抗奥术法术)"
                 },
                 "SerpentDagger": {
-                    "Note": "当你用<em>毒蛇匕首</em>的一次攻击骰重击时，目标需通过@Check[type:fortitude|dc:19]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                    "Note": "当你用<em>毒蛇匕首</em>的一次攻击骰重击时，目标需通过@Check[fortitude|dc:19]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 },
                 "Bomb": {
                     "Choice": "炸弹种类",
@@ -1735,7 +1735,7 @@
                         "AncestralBloodMagic": "施放一个先祖法术",
                         "Imperial": "直到你的下一个回合开始，你可以选择在AC或是在豁免骰上获得+1状态加值。",
                         "Demonic": "目标于1轮内在AC上受到-1状态罚值，或者你于1轮内在威吓检定上获得+2状态加值。",
-                        "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[type:will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命，持续到你之后那个回合的回合开始。",
+                        "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命，持续到你之后那个回合的回合开始。",
                         "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealement}，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide}。",
                         "Title": "血统奥秘",
                         "Nymph": "你的动作中尽显宁芙的优雅，甚至能使你的敌人分心。你于1轮内在交涉检定上获得+1状态加值，或者目标于1轮内在意志豁免上承受-1状态罚值。",
@@ -2923,7 +2923,7 @@
                 },
                 "VolatileGrease": {
                     "CriticalSuccess": "目标不受影响。",
-                    "Description": "当你施放油腻术时，你可以将其目标修改为一个生物。如果你这样做了，你可以用以下效果取代该法术的标准效果：你将可燃的油脂溅到目标身上。目标必须尝试@Check[type:reflex]豁免。",
+                    "Description": "当你施放油腻术时，你可以将其目标修改为一个生物。如果你这样做了，你可以用以下效果取代该法术的标准效果：你将可燃的油脂溅到目标身上。目标必须尝试@Check[reflex]豁免。",
                     "Failure": "和成功一样，除了对火焰的弱点持续1分钟。",
                     "DescriptionHeightened": "弱点增加1。",
                     "Success": "目标被溅上油脂并获得火焰弱点2，直到你下一回合结束。目标或相邻的生物可以用一个交互动作擦掉可燃的油脂，结束这个效果。"
@@ -2943,7 +2943,7 @@
                     "Description": "当你施展吸血鬼之触时，你可以修改其标准效果如下。你可以将临时生命给予30尺范围内的一个盟友，而不是让自己获得临时生命。1分钟后，该盟友将失去任何剩余的临时生命。"
                 },
                 "SummonEnsemble": {
-                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[type:will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。随后目标在24小时内暂时免疫该效果。"
+                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。随后目标在24小时内暂时免疫该效果。"
                 },
                 "UneasyRest": {
                     "Description": "当你施展睡眠术时，你可以修改该法术，在其标准效果上增加以下内容：你施法的目标会经历可怕的梦境。当一个豁免失败或大失败的目标醒来时，它将获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
@@ -2952,7 +2952,7 @@
                     "Description": "当你施放光亮术时，你可以将其持续时间修改为1分钟，并修改其标准效果，以创造一个形如超小型生物的漂浮光源，而不是至多四个光源。这个生物会在你的头上盘旋，除非你花费一个具有专注特征的单动作来引导光源移动最多30尺，在这种情况下，它会一直留在那里直到你再次引导它。如果你引导它回到你的头上，它就会在你头上盘旋并再次跟随你，直到你把它引导到其他地方。如果该生物移动到你的120尺以外，它就会立即消失。"
                 },
                 "BeaconMark": {
-                    "DescriptionHeightened": "你将自己与被标记的目标相调谐。在法术持续期间，你可以花费一个具有专注、侦测和预言特性的行动来尝试定位目标，只要你在目标的1英里范围内，就可以知道通往目标的方向。如果目标是一个生物或一个生物拥有目标物体，该生物可以尝试对你的法术DC进行@Check[type:will]豁免。如果它成功了，你定位目标的尝试就会失败，而且你在1天内不能再尝试这个动作。你只能让一个目标以这种方式被标记。如果你对第二个目标施展这个法术，第一个目标上的魔法印记法术就会结束，你的魔法印记也会消失。",
+                    "DescriptionHeightened": "你将自己与被标记的目标相调谐。在法术持续期间，你可以花费一个具有专注、侦测和预言特性的行动来尝试定位目标，只要你在目标的1英里范围内，就可以知道通往目标的方向。如果目标是一个生物或一个生物拥有目标物体，该生物可以尝试对你的法术DC进行@Check[will]豁免。如果它成功了，你定位目标的尝试就会失败，而且你在1天内不能再尝试这个动作。你只能让一个目标以这种方式被标记。如果你对第二个目标施展这个法术，第一个目标上的魔法印记法术就会结束，你的魔法印记也会消失。",
                     "Description": "当你施展魔法印记时，你可以修改该法术以增加以下的升阶条目。"
                 },
                 "ConfoundingImage": {
@@ -3896,7 +3896,7 @@
             "RuneGiant": {
                 "InvokeRune": {
                     "RuneOfDestruction": {
-                        "Text": "被该武器命中的生物必须通过@Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane,electricity]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。",
+                        "Text": "被该武器命中的生物必须通过@Check[fortitude|dc:35|name:Rune of Destruction|traits:arcane,electricity]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。",
                         "Label": "毁灭符文"
                     },
                     "RuneOfFlames": {
