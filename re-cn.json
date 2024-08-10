@@ -2592,7 +2592,7 @@
             },
             "EldritchArcher": {
                 "ArrowOfDeath": {
-                    "Note": "大成功时，目标还必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] ，否则会立即被杀死。"
+                    "Note": "大成功时，目标还必须成功通过@Check[fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] ，否则会立即被杀死。"
                 },
                 "EnchantingArrow": {
                     "Note": "重击时，目标同样陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 1}。"
