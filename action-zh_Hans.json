@@ -767,10 +767,10 @@
             },
             "CreateForgery": {
                 "ForgedDocument": {
-                    "Description": "<p>一个粗略看过伪造的文书并被骗过的读者可能之后再次仔细地阅读这份文件，使用更加严格和深刻的方式尝试从你成功伪造的文本中发现问题。这时，他们可以尝试一个@Check[type:perception|dc:{societyDC}] 或是@Check[type:society|dc:{societyDC}]对抗你的社群技能DC（成功则发现你的文本是假的）。</p>",
+                    "Description": "<p>一个粗略看过伪造的文书并被骗过的读者可能之后再次仔细地阅读这份文件，使用更加严格和深刻的方式尝试从你成功伪造的文本中发现问题。这时，他们可以尝试一个@Check[perception|dc:{societyDC}] 或是@Check[society|dc:{societyDC}]对抗你的社群技能DC（成功则发现你的文本是假的）。</p>",
                     "Name": "伪造文书",
                     "FailureGmNote": "<p>这些文书存在一些明显的问题，GM会允许任何读者在阅读它时被动进行一个察觉检定或是社群技能检定（取其高者）与结果{total}对抗，从而看出它的漏洞，成功或失败情况见下。一旦GM为伪造的文书进行了一次检定，无论多少读者观察了这份文件和他们的察觉DC，他们都会对抗这单次检定的结果。</p>\n<p>{success}</p>\n<p>{failure}</p>",
-                    "SuccessGmNote": "<p>文书伪造得足够好，通常的读者不会直接发现问题。只有那些非常仔细的审查文件的人才可以尝试一个@Check[type:perception|dc:{societyDC}|showDC:gm]或是@Check[type:society|dc:{societyDC}|showDC:gm]检定对抗你的社群技能DC，尝试找出这份伪物的破绽。</p>"
+                    "SuccessGmNote": "<p>文书伪造得足够好，通常的读者不会直接发现问题。只有那些非常仔细的审查文件的人才可以尝试一个@Check[perception|dc:{societyDC}|showDC:gm]或是@Check[society|dc:{societyDC}|showDC:gm]检定对抗你的社群技能DC，尝试找出这份伪物的破绽。</p>"
                 },
                 "ForgedDocumentCreatedNotification": "伪造的文书已经添加至{name}的仓库。",
                 "Notes": {
