@@ -98,7 +98,7 @@
                 "SunNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩Dazzled}，持续一轮。"
             },
             "OozeForm": {
-                "GelatinousCubeNote": "你的面触打击命中的生物必须成功通过一次@Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation]豁免，对抗你的法术DC，否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（或者大失败时@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}持续1轮）；该豁免具有失能特征。"
+                "GelatinousCubeNote": "你的面触打击命中的生物必须成功通过一次@Check[fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation]豁免，对抗你的法术DC，否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（或者大失败时@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}持续1轮）；该豁免具有失能特征。"
             },
             "InsectForm": {
                 "SpiderWebNote": "一次成功的蛛网攻击会纠缠目标1轮，但不会造成伤害"
@@ -229,10 +229,10 @@
             },
             "DwarvenDaisy": {
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[fire]]{1点火焰溅射伤害}，并且目标必须通过成功的@Check[type:fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[fire]]{1点火焰溅射伤害}，并且目标必须通过成功的@Check[fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[fire]]{2点火焰溅射伤害}，并且目标必须通过成功的@Check[type:fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[fire]]{2点火焰溅射伤害}，并且目标必须通过成功的@Check[fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
                 }
             },
             "GhostCharge": {
@@ -358,16 +358,16 @@
             },
             "Thunderstone": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:28|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:28|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:17|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:17|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:20|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:20|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[type:fortitude|dc:36|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:36|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
                 }
             },
             "TallowBomb": {
@@ -463,20 +463,20 @@
             },
             "VexingVapor": {
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续到目标下回合结束。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续1分钟。"
                 },
                 "Greater": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。"
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续1分钟。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续到目标下回合结束。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续到目标下回合结束。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续1分钟。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续到目标下回合结束。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[type:flat|dc:5]检定，该效果持续1分钟。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续到目标下回合结束。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]伤害，且目标必须在执行专注动作前成功通过一次@Check[flat|dc:5]检定，该效果持续1分钟。"
                 }
             },
             "WaterBomb": {
@@ -502,7 +502,7 @@
                 "Prompt": "选择粘性手雷的品级。"
             },
             "BioluminescenceBomb": {
-                "success": "<p>炸弹落点@Template[type:emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[type:reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[type:fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，然后再目眩1轮。</p>"
+                "success": "<p>炸弹落点@Template[type:emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，然后再目眩1轮。</p>"
             }
         },
         "SpecificRule": {
@@ -1208,7 +1208,7 @@
                     "RequestLabel": "疫鸟魅力(请求)"
                 },
                 "BoastfulHunter": {
-                    "MisfireNote": "使用被侮辱的<em>吹嘘猎手</em>的所有攻击承受@Check[type:flat|dc:5]失火风险直到这把武器被安抚。",
+                    "MisfireNote": "使用被侮辱的<em>吹嘘猎手</em>的所有攻击承受@Check[flat|dc:5]失火风险直到这把武器被安抚。",
                     "InsultedLabel": "吹嘘猎手被侮辱",
                     "BoredLabel": "吹嘘猎手感到无聊"
                 },
@@ -3443,9 +3443,9 @@
                     "Spellcasting": "法艺",
                     "Martial": "尚武"
                 },
-                "ModerateFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:6|showDC:owner] 检定，否则会失去这个动作。",
-                "MajorFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:8|showDC:owner] 检定，否则会失去这个动作。",
-                "MinorFailure": "你的诅咒干扰了此动作，你必须通过@Check[type:flat|dc:4|showDC:owner] 检定，否则会失去这个动作。",
+                "ModerateFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:6|showDC:owner] 检定，否则会失去这个动作。",
+                "MajorFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:8|showDC:owner] 检定，否则会失去这个动作。",
+                "MinorFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:4|showDC:owner] 检定，否则会失去这个动作。",
                 "AncestralInfluence": "先祖影响",
                 "MeddlingAncestor": "缠身古灵"
             },
