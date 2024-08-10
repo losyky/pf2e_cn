@@ -1504,7 +1504,7 @@
                     "Prompt": "选择阵营伤害"
                 },
                 "StunningFist": {
-                    "Note": "目标必须通过@Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true]，对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1} (大失败陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3})。"
+                    "Note": "目标必须通过@Check[fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true]，对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1} (大失败陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3})。"
                 },
                 "OneInchPunch": {
                     "TwoActionLabel": "寸拳（2动作）",
