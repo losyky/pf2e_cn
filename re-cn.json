@@ -1306,7 +1306,7 @@
                     }
                 },
                 "BlackScorpionStingmace": {
-                    "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong> （毒素）</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}（1轮）</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（1轮）</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}（1轮）</p>"
+                    "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong> （毒素）</p>\n<p><strong>豁免检定</strong> @Check[fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}（1轮）</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（1轮）</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}（1轮）</p>"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1471,7 +1471,7 @@
                     "Death": "死"
                 },
                 "MeddlingFutures": {
-                    "Note": "如果你尝试进行一个不同于的动作，你必须成功通过一次@Check[type:flat|dc:6]检定，否则动作丢失。"
+                    "Note": "如果你尝试进行一个不同于的动作，你必须成功通过一次@Check[flat|dc:6]检定，否则动作丢失。"
                 },
                 "ConduitOfVoidAndVitality": {
                     "HarmDescription": "你施展3动作版本的伤害术，如常消耗法术位。如果这个法术为一个或更多的生物恢复了生命值，一个被这个法术恢复生命值的生物额外获得@Damage[(@actor.conditions.cursebound.value)d8[healing,void]|shortLabel:true]临时生命；如果这个法术对一个或更多的生物造成了伤害，一个被这个法术伤害的生物额外受到@Damage[(@actor.conditions.cursebound.value)d8[void]|shortLabel:true]伤害。",
@@ -1953,7 +1953,7 @@
                             "Title": "行夜魔宠"
                         },
                         "ParasiticMight": {
-                            "Description": "当你施放或维持巫术时，你的魔宠会抽取另一个生物的逐渐衰弱的体能来维持自身。你魔宠15尺内一个生命值少于最大生命值一半的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}，除非它成功通过一次对抗你法术DC的@Check[type:fortitude|dc:resolve(@actor.system.attributes.spellDC.value)]豁免。",
+                            "Description": "当你施放或维持巫术时，你的魔宠会抽取另一个生物的逐渐衰弱的体能来维持自身。你魔宠15尺内一个生命值少于最大生命值一半的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}，除非它成功通过一次对抗你法术DC的@Check[fortitude|dc:resolve(@actor.system.attributes.spellDC.value)]豁免。",
                             "Title": "寄生魔宠"
                         },
                         "OverwhelmingTides": {
@@ -1979,7 +1979,7 @@
                         "RollOptionLabel": "你连续两次指甲打击命中同一目标"
                     },
                     "IronTeeth": {
-                        "Note": "被你的颚打击重击的生物必须成功通过一次@Check[type:fortitude|dc:resolve(@actor.system.attributes.classDC.value)]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                        "Note": "被你的颚打击重击的生物必须成功通过一次@Check[fortitude|dc:resolve(@actor.system.attributes.classDC.value)]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                     },
                     "LivingHair": {
                         "SrikeLabel": "棘刺 Quill"
