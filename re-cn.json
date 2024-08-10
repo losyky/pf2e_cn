@@ -8,7 +8,7 @@
             "IncreasedCriticalChance": "如果攻击命中，并且该生物在d20掷骰中掷出19，则该攻击视为一次暴击。但如果19的结果是失手，就不会产生任何效果。",
             "IncreasedReach5": "射程增加5尺",
             "InterruptAction": "命中时，目标的动作会被打断。",
-            "ReduceHiddenCheck": "对@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}生物的纯骰检定DC为@Check[type:flat|dc:5]。"
+            "ReduceHiddenCheck": "对@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}生物的纯骰检定DC为@Check[flat|dc:5]。"
         },
         "BattleForm": {
             "Attack": {
@@ -4339,16 +4339,16 @@
             "ExplosiveAmmunition": {
                 "Greater": {
                     "Title": "高等爆炸弹药",
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[10d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[type:reflex|dc:30|basic:true|name:Explosive Ammunition]豁免。"
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[10d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:30|basic:true|name:Explosive Ammunition]豁免。"
                 },
                 "Normal": {
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[6d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[type:reflex|dc:25|basic:true|name:Explosive Ammunition]豁免。",
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[6d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:25|basic:true|name:Explosive Ammunition]豁免。",
                     "Title": "爆炸弹药"
                 }
             },
             "AntlerArrow": {
-                "CriticalText": "拔出弹头的运动检定的DC提升至@Check[type:athletics|dc:15|name:拔出弹头|showDC:all]",
-                "Text": "目标必须成功通过一个@Check[type:reflex|dc:16|name:鹿角箭]豁免否则会困在平面上，受到弓箭的重击专精效果",
+                "CriticalText": "拔出弹头的运动检定的DC提升至@Check[athletics|dc:15|name:拔出弹头|showDC:all]",
+                "Text": "目标必须成功通过一个@Check[reflex|dc:16|name:鹿角箭]豁免否则会困在平面上，受到弓箭的重击专精效果",
                 "Title": "鹿角箭"
             },
             "ShiningAmmunition": {
@@ -4372,11 +4372,11 @@
             "MeteorShot": {
                 "Normal": {
                     "Title": "流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:5]区域内造成@Damage[3d6[fire]]伤害 (@Check[type:reflex|dc:23|basic:true|name:Meteor Shot] 豁免)."
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:5]区域内造成@Damage[3d6[fire]]伤害 (@Check[reflex|dc:23|basic:true|name:Meteor Shot] 豁免)."
                 },
                 "Major": {
                     "Title": "上等流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:20]区域内造成@Damage[9d6[fire]]伤害 (@Check[type:reflex|dc:37|basic:true|name:Meteor Shot]豁免)."
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:20]区域内造成@Damage[9d6[fire]]伤害 (@Check[reflex|dc:37|basic:true|name:Meteor Shot]豁免)."
                 },
                 "CriticalFailureText": "当大失败时，武器会哑火。",
                 "Greater": {
