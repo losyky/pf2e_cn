@@ -2050,7 +2050,7 @@
             },
             "Lich": {
                 "HandOfTheLich": {
-                    "Note": "当你用拳头打击对一个活着的生物造成重击时，该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到其下回合结束，除非它成功通过一次对抗你法术DC的@Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)]豁免。"
+                    "Note": "当你用拳头打击对一个活着的生物造成重击时，该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到其下回合结束，除非它成功通过一次对抗你法术DC的@Check[fortitude|dc:resolve(@actor.attributes.spellDC.value)]豁免。"
                 }
             },
             "Vampire": {
