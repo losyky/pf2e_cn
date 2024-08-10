@@ -98,7 +98,7 @@
             "str": "力量检定",
             "dex": "敏捷检定",
             "con": "体质检定",
-            "int": "智力鉴定",
+            "int": "智力检定",
             "wis": "感知检定",
             "cha": "魅力检定"
         },
@@ -1526,18 +1526,18 @@
                 "CriticalSpecialization": {
                     "axe": "选择一个在你的触及内与初始目标相邻的生物。如果它的AC低于你重击的攻击掷骰，那么你对该生物造成等同一颗武器伤害骰（也包括来自<em>强击符文</em>的额外骰，若有）的伤害。其它加值或额外骰不适用于这个伤害。",
                     "bomb": "提升炸弹的溅射伤害（若有）半径到10尺。",
-                    "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized} ，它必须使用互动动作尝试进行 @Check[type:athletics|dc:10|name:Pull the Missile Free|showDC:all] 检定来拔出弹头，之后才能移动离开其方格。虚体、液态或能以某种方式毫不费力地避开此效果的生物不会被钉住（例如体积足够大到弹头不会成为阻碍。）",
-                    "brawling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Brawling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续到你的下回合结束。",
+                    "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe] ，它必须使用互动动作尝试进行@Check[athletics|dc:10|name:Pull the Missile Free|showDC:all]检定来拔出弹头，之后才能移动离开其方格。虚体、液态或能以某种方式毫不费力地避开此效果的生物不会被钉住（例如体积足够大到弹头不会成为阻碍。）",
+                    "brawling": "目标必须成功通过@Check[fortitude|against:class|name:Brawling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续到你的下回合结束。",
                     "club": "你将目标沿你选择的方向直线推开最多10尺，这是被迫移动。",
                     "dart": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
-                    "firearm": "目标必须通过一个@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Firearm Critical Specialization]豁免对抗你的职业DC，否则会受到@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
-                    "flail": "除非目标成功通过@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|name:Flail Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
-                    "hammer": "除非目标成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Hammer Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
+                    "firearm": "目标必须通过一个@Check[fortitude|against:class|name:Firearm Critical Specialization]豁免对抗你的职业DC，否则会受到@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "flail": "除非目标成功通过@Check[reflex|against:class|name:Flail Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "hammer": "除非目标成功通过@Check[fortitude|against:class|name:Hammer Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                     "knife": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
                     "pick": "武器凶狠地刺穿目标。目标受到每颗武器伤害骰2点的额外伤害。",
                     "polearm": "目标往你选择的位置移动5尺。这是被迫移动。",
                     "shield": "目标被你击退5尺。这是被迫移动。",
-                    "sling": "目标必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|name:Sling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "sling": "目标必须成功通过@Check[fortitude|against:class|name:Sling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
                     "spear": "该类型的武器刺穿目标，会使其攻击变得软弱无力。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你的下一回合开始。",
                     "sword": "目标因为你的攻击而失去平衡，变得@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到你的下一回合开始。",
                     "crossbow": "目标受到@Damage[1d8[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。"
@@ -4261,7 +4261,7 @@
                     "Hint": "PF2e武器的次级分类（例如，弩、剑）"
                 },
                 "BaseWeapons": {
-                    "Name": "基本武器",
+                    "Name": "武器基本类型",
                     "Hint": "PF2e武器的底层分类（例如，重弩，长剑）"
                 },
                 "WeaponTraits": {
@@ -4270,10 +4270,10 @@
                 },
                 "EquipmentTraits": {
                     "Name": "装备特征",
-                    "Hint": "适用于武器以外的装备的特性"
+                    "Hint": "适用于道具，护甲和消耗品的特性"
                 },
                 "Tabs": {
-                    "Traits": "特征和类型",
+                    "Traits": "特征",
                     "Damage": "伤害类型",
                     "Campaign": "战役"
                 },
@@ -5023,7 +5023,7 @@
         "TraitDescriptionAphorite": "公理裔是起源于守序位面都市轴心城的位面族裔。",
         "TraitDescriptionArcane": "这个魔法源于奥术法术根源，是建立在逻辑和合理性上的特征，拥有此特征的法术称作魔法。拥有此特征的生物基本是由奥术魔法构成，或与奥术魔法有强烈联系。",
         "TraitDescriptionArchetype": "这个专长属于一个变体.",
-        "TraitDescriptionAttached": "附着武器必须和另一件装备结合才能使用。此特性会列出它必须与哪种类型的物品附着。你必须持用或穿戴这个武器附着的物品才能用它进行攻击。举例来说，附着盾牌的盾刺允许你用盾刺而非盾击进行攻击，不过只有在你持用盾牌时才能如此做。附着武器往往被固定或内建在它所附着的物品上，而且通常来说，一个物品只能安装一件附着武器。一件附着武器可以花费10分钟，通过@Check[type:crafting|dc:10]技能检定来安装，如果需要这还包括从上一件物品上拆卸的时间。若物品被破坏，仍有机会救回它上头附着的武器。",
+        "TraitDescriptionAttached": "附着武器必须和另一件装备结合才能使用。此特性会列出它必须与哪种类型的物品附着。你必须持用或穿戴这个武器附着的物品才能用它进行攻击。举例来说，附着盾牌的盾刺允许你用盾刺而非盾击进行攻击，不过只有在你持用盾牌时才能如此做。附着武器往往被固定或内建在它所附着的物品上，而且通常来说，一个物品只能安装一件附着武器。一件附着武器可以花费10分钟，通过@Check[crafting|dc:10]技能检定来安装，如果需要这还包括从上一件物品上拆卸的时间。若物品被破坏，仍有机会救回它上头附着的武器。",
         "TraitDescriptionAttack": "如果你在同一轮中使用攻击特性的动作超过一次，第一次之后的攻击都要承受多次攻击罚值。",
         "TraitDescriptionAuditory": "听觉动作和效果依赖于声音。具有听觉特征的动作只有在使用动作的生物能说话或发声时才可以成功生效。听觉法术依赖于声音。具有听觉特征的法术只有当目标能够听到它时才会生效。这与音波效果不同，目标即使无法听见音波效果（例如耳聋的目标），音波效果也会生效，只要该效果能发出音波。",
         "TraitDescriptionAura": "灵光由你周身持续散发，影响一定辐射范围内的生物。灵光同时也出现在一些强大的魔法物品或较强的阵营倾向上.",
@@ -5048,7 +5048,7 @@
         "TraitDescriptionCleric": "指牧师职业能力。",
         "TraitDescriptionClockwork": "发条生物是复杂的复合型构装体，可以通过编译程序来执行特定的功能。发条生物必须定期上发条才能够运作起来。",
         "TraitDescriptionClimbing": "装备着此武器可以进行攀爬。",
-        "TraitDescriptionCobbled": "这把枪是胡乱拼凑在一起的，很可能开不了火。无论你维护得多好，当掷出一次失败的攻击骰时，攻击会失手并且你必须投掷@Check[type:flat|dc:5]。如果纯骰检定失败，武器会哑火。",
+        "TraitDescriptionCobbled": "这把枪是胡乱拼凑在一起的，很可能开不了火。无论你维护得多好，当掷出一次失败的攻击骰时，攻击会失手并且你必须投掷@Check[flat|dc:5]。如果纯骰检定失败，武器会哑火。",
         "TraitDescriptionCold": "拥有此特征的效果造成寒冷伤害。具有此特征的生物与魔法寒冷有某种联系。",
         "TraitDescriptionCombination": "组合武器以独特或不同寻常的方式将近战武器和火器结合起来。组合武器既有火器形态的用法，也有近战武器形态的用法。",
         "TraitDescriptionComfort": "这种盔甲是如此舒适，以至于你可以在休息时穿戴。",
@@ -5106,7 +5106,7 @@
         "TraitDescriptionFire": "具有火特征的效果造成火焰伤害，或者能创造或操控火。操控火的效果在没有火的区域内没有效果。具有此特征的生物主体由火构成，或者与魔法火焰具有联系。",
         "TraitDescriptionFleshwarp": "一个完全被外力所改变的人形生物，如今他们已经成为了一个独特的种族。",
         "TraitDescriptionFlexible": "这种盔甲足够柔韧，不会妨碍大多数行动，你在特技和运动检定中不会承受检定减值。",
-        "TraitDescriptionFlourish": "绝技动作是使用起来极其费劲的动作，因此无法连续频繁地使用。你每轮只能使用一个具有绝技特征的动作。",
+        "TraitDescriptionFlourish": "具有该特征的动作属于极特殊的技巧，需要耗费大量体力才能经常施展。你每轮只能使用一个具有绝技特征的动作。",
         "TraitDescriptionFocused": "具有此特征的物品可以给你额外的聚能点。这个聚能点与你的聚能池相互独立，不会受聚能池的上限所限制。只有当你拥有聚能池时，你才能从这个物品中获益，而且物品可能会限制你使用该聚能点的方式。你每天不能从聚能物品中获得超过1点聚能点。",
         "TraitDescriptionForce": "具有此特征的效果会造成力场伤害，或创造由纯粹的魔法力场所构成的物件。",
         "TraitDescriptionForceful": "此武器累积动能之后便得更加危险。当你用此武器在你的轮中进行多于一次的攻击时，第二次的攻击在伤害上获得等同武器伤害骰数量的环境加值，而后续的每次攻击的伤害则加上等同武器伤害骰数量两倍的环境加值。",
@@ -5233,7 +5233,7 @@
         "TraitDescriptionStaff": "这个魔法物品中保存了一些特定主题的法术，施法者可以准备好这根法杖以施展额外的法术。",
         "TraitDescriptionSteam": "具有这种特性的物品由发动机提供动力，发动机用沸水产生蒸汽并驱动部件。",
         "TraitDescriptionStrix": "有翅膀的人形生物，大多数生活在切利亚斯及其周围。",
-        "TraitDescriptionStructure": "拥有构造物特征的物品在启动时可以变成魔法建筑或其它构造物。该物品必须在一片没有其他构造物的地面上启动。该构造物会自动适应自然地形，并适用当地建筑的建筑需求。构造物细节部分可根据诸如人工池或石尖顶之类自动调整，但它不能在水面或其它非固体表明生成。若在雪地、沙丘或其它有着固体底部的软性地面上启动，该构造物的地基（若有）会深入直达固体底部。若拥有该特征的物品在不稳固的固体地面上启动——比如沼泽或地震区域——每天需要骰一个@Check[type:flat|dc:3]；若失败，构造物会开始下沉或塌陷。构造物在出现时不会伤害区域内的生物，也不能在人群或人员拥挤的区域生成。当物品被启动时，任何无意中被困其中的生物最终都会无伤地留在了构造物内，并且总是有一条清晰的离开路径。位于构造物内的生物在启动终止后不会受伤，若人员在构造物的高层，他们会无伤地降落在地面上。",
+        "TraitDescriptionStructure": "拥有构造物特征的物品在启动时可以变成魔法建筑或其它构造物。该物品必须在一片没有其他构造物的地面上启动。该构造物会自动适应自然地形，并适用当地建筑的建筑需求。构造物细节部分可根据诸如人工池或石尖顶之类自动调整，但它不能在水面或其它非固体表明生成。若在雪地、沙丘或其它有着固体底部的软性地面上启动，该构造物的地基（若有）会深入直达固体底部。若拥有该特征的物品在不稳固的固体地面上启动——比如沼泽或地震区域——每天需要骰一个@Check[flat|dc:3]；若失败，构造物会开始下沉或塌陷。构造物在出现时不会伤害区域内的生物，也不能在人群或人员拥挤的区域生成。当物品被启动时，任何无意中被困其中的生物最终都会无伤地留在了构造物内，并且总是有一条清晰的离开路径。位于构造物内的生物在启动终止后不会受伤，若人员在构造物的高层，他们会无伤地降落在地面上。",
         "TraitDescriptionSummoned": "由法术或效果召来的生物会获得召唤特征。召唤生物无法召唤其他生物，创造有价值的事物，或施展需要代价的法术。它具有仆从特征。如果它尝试施展法术环级等于或大于召唤他自身的法术的法术，它会压制召唤魔法，令它准备施展的法术失败，并令召唤法术立刻终止。除此之外，召唤生物可以使用同类的生物的标准能力。它通常会使用最强的能力攻击你的敌人。如果你可以与其交流，你可以对其下达命令，但由GM判断它是否会听从你的命令。召唤生物产生的卵或其他生物在召唤生物离开时会立刻回到未变动时的状态（在卵的情况下会变成尸骸）。如果不确定会变成什么状态，由GM决定。如果不清楚这种状态会是什么，则由GM做出决定。召唤生物可能会被多种法术和效果驱逐。它们在生命值降低到0点时，或召唤法术终止时会自动被驱逐。",
         "TraitDescriptionSummoner": "这表示召唤师职业的能力。",
         "TraitDescriptionSuli": "巨灵裔是小巨灵群体后裔的族裔。",
@@ -6143,7 +6143,7 @@
             "anchoring": {
                 "Name": "锚定",
                 "Note": {
-                    "criticalSuccess": "如果你用锚定武器对目标重击, 武器会在目标上施放<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{次元拴绳 Planar Tether}</em> (@Check[type:will|dc:27|name:Anchoring Rune], 反制调整值[[/r 1d20+17 # Anchoring Rune Counteract Check]]{+17})。"
+                    "criticalSuccess": "如果你用锚定武器对目标重击，武器会在目标上施放<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]</em>（@Check[will|dc:27|name:Anchoring Rune]，反制调整值[[/r 1d20+17 # Anchoring Rune Counteract Check]]{+17}）。"
                 }
             },
             "axiomatic": {
@@ -6167,7 +6167,7 @@
             "brilliant": {
                 "Name": "辉煌",
                 "Note": {
-                    "criticalSuccess": "重击时，目标必须通过一次成功的@Check[type:fortitude|dc:29|name:Brilliant Rune]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded} 一轮。"
+                    "criticalSuccess": "重击时，目标必须通过一次成功的@Check[fortitude|dc:29|name:Brilliant Rune]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]一轮。"
                 }
             },
             "conducting": {
@@ -6221,7 +6221,7 @@
             "frost": {
                 "Name": "冻寒",
                 "Note": {
-                    "criticalSuccess": "重击时，除非成功通过一次@Check[type:fortitude|dc:24|name:Frost Rune]豁免，否则目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到你的下回合结束。"
+                    "criticalSuccess": "重击时，除非成功通过一次@Check[fortitude|dc:24|name:Frost Rune]豁免，否则目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到你的下回合结束。"
                 }
             },
             "ghostTouch": {
@@ -6231,7 +6231,7 @@
             "greaterAnchoring": {
                 "Name": "高等锚定",
                 "Note": {
-                    "criticalSuccess": "当你用锚定武器重击一个目标时, 武器对目标施放8环的<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{次元拴绳 Planar Tether}</em>(@Check[type:will|dc:38|name:Greater Anchoring Rune], 反制调整值为[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})，除非目标的意志豁免检定大成功， <em>次元拴绳</em>至少会持续一轮，而不是没有效果。",
+                    "criticalSuccess": "当你用锚定武器重击一个目标时, 武器对目标施放8环级的<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]</em>（@Check[will|dc:38|name:Greater Anchoring Rune]，反制调整值为[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}），除非目标的意志豁免检定大成功， <em>次元拴绳</em>至少会持续一轮，而不是没有效果。",
                     "success": "当你用该武器命中一个目标但没有重击时，目标受到四环<em>@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]{次元拴绳 Planar Tether}</em>效果影响一轮且没有豁免(反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})。"
                 }
             },
@@ -6241,7 +6241,7 @@
             "greaterBrilliant": {
                 "Name": "高等辉煌",
                 "Note": {
-                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。重击时, 目标必须成功通过一个@Check[type:fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}一轮。",
+                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。重击时, 目标必须成功通过一个@Check[fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]一轮。",
                     "success": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。"
                 }
             },
@@ -6286,7 +6286,7 @@
             "greaterFrost": {
                 "Name": "高等冻寒",
                 "Note": {
-                    "criticalSuccess": "该武器造成的寒冷伤害忽略目标的寒冷抗力。重击时，除非成功通过一个@Check[type:fortitude|dc:34|name:Greater Frost Rune]豁免，否则目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到你下一回合结束。",
+                    "criticalSuccess": "该武器造成的寒冷伤害忽略目标的寒冷抗力。重击时，除非成功通过一个@Check[fortitude|dc:34|name:Greater Frost Rune]豁免，否则目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到你下一回合结束。",
                     "success": "该武器造成的寒冷伤害忽略目标的寒冷抗力。"
                 }
             },
@@ -6296,7 +6296,7 @@
             "greaterImpactful": {
                 "Name": "高等冲击",
                 "Note": {
-                    "criticalSuccess": "重击时，你可以选择推动目标，目标必须通过@Check[type:fortitude|dc:37|name:Greater Impactful Rune]豁免检定，否则将被推离10尺，方向为你所在位置相反的方向。"
+                    "criticalSuccess": "重击时，你可以选择推动目标，目标必须通过@Check[fortitude|dc:37|name:Greater Impactful Rune]豁免检定，否则将被推离10尺，方向为你所在位置相反的方向。"
                 }
             },
             "greaterShock": {
@@ -6309,7 +6309,7 @@
             "greaterThundering": {
                 "Name": "高等雷鸣",
                 "Note": {
-                    "criticalSuccess": "该武器造成的音波伤害忽视音波抗力。 重击时，目标必须成功通过一个@Check[type:fortitude|dc:34|name:Greater Thundering Rune]豁免，否则永久陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened} 。",
+                    "criticalSuccess": "该武器造成的音波伤害忽视音波抗力。 重击时，目标必须成功通过一个@Check[fortitude|dc:34|name:Greater Thundering Rune]豁免，否则永久陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]。",
                     "success": "该武器造成的音波伤害忽视音波抗力。"
                 }
             },
@@ -6352,7 +6352,7 @@
             "impactful": {
                 "Name": "冲击",
                 "Note": {
-                    "criticalSuccess": "重击时，你可以选择推动目标，目标必须通过@Check[type:fortitude|dc:27|name:Impactful Rune]豁免检定，否则将被推离5尺，方向为你所在位置相反的方向。"
+                    "criticalSuccess": "重击时，你可以选择推动目标，目标必须通过@Check[fortitude|dc:27|name:Impactful Rune]豁免检定，否则将被推离5尺，方向为你所在位置相反的方向。"
                 }
             },
             "keen": {
@@ -6393,7 +6393,7 @@
             "thundering": {
                 "Name": "雷鸣",
                 "Note": {
-                    "criticalSuccess": "当造成一次重击时， 目标必须成功通过一次@Check[type:fortitude|dc:24|name:Thundering Rune]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}一分钟(大失败时变为一小时)。"
+                    "criticalSuccess": "当造成一次重击时， 目标必须成功通过一次@Check[fortitude|dc:24|name:Thundering Rune]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]一分钟(大失败时变为一小时)。"
                 }
             },
             "unholy": {
@@ -6405,7 +6405,7 @@
             "vorpal": {
                 "Name": "斩首",
                 "Note": {
-                    "criticalSuccess": "不平则鸣 Snicker-Snack <span class=\"action-glyph\">R</span> (专注，死亡，失能)</p><p><strong>触发</strong> 你使用这把武器对有头生物的打击掷出了自然20，造成了重击，且为挥砍伤害</p><hr /><p><strong>效果</strong> 目标必须成功通过一次@Check[type:fortitude|dc:37|traits:death,incapacitation|name:斩首]豁免，否则将被斩首。这会立即杀死任何生物，除非其不需要头也能存活。对于拥有多头的生物，你通常需要砍下它的最后一颗头颅才能将其杀死。"
+                    "criticalSuccess": "不平则鸣 Snicker-Snack <span class=\"action-glyph\">R</span> (专注，死亡，失能)</p><p><strong>触发</strong> 你使用这把武器对有头生物的打击掷出了自然20，造成了重击，且为挥砍伤害</p><hr /><p><strong>效果</strong> 目标必须成功通过一次@Check[fortitude|dc:37|traits:death,incapacitation|name:斩首]豁免，否则将被斩首。这会立即杀死任何生物，除非其不需要头也能存活。对于拥有多头的生物，你通常需要砍下它的最后一颗头颅才能将其杀死。"
                 }
             },
             "wounding": {
@@ -6450,13 +6450,13 @@
             },
             "greaterAshen": {
                 "Note": {
-                    "success": "这种灰烬模糊了感官，导致生物在1轮中陷入困惑，除非它在@Check[type:will|dc:35]豁免中成功。大失败时，影响持续1分钟。"
+                    "success": "这种灰烬模糊了感官，导致生物在1轮中陷入困惑，除非它在@Check[will|dc:35]豁免中成功。大失败时，影响持续1分钟。"
                 },
                 "Name": "高等灰烬"
             },
             "ashen": {
                 "Note": {
-                    "success": "这种灰烬模糊了感官，导致生物在1轮中变得困惑，除非它在@Check[type:will|dc:25]豁免中成功。"
+                    "success": "这种灰烬模糊了感官，导致生物在1轮中变得困惑，除非它在@Check[will|dc:25]豁免中成功。"
                 },
                 "Name": "灰烬"
             },
@@ -6475,7 +6475,7 @@
             "greaterGiantKilling": {
                 "Note": {
                     "success": "该武器造成的心灵伤害忽视心灵抗力。",
-                    "criticalSuccess": "当使用这个武器进行重击时，巨人必须进行一次 @Check[type:fortitude|dc:34] 检定，效果如下。<br /><strong>大成功</strong> 巨人陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 1} 直到你的下个回合结束。<br /><strong>成功</strong> 巨人陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 2} 直到你的下个回合结束，并受到 @Damage[1d10[mental]] 伤害。<br /><strong>失败</strong> 巨人在接下来的一分钟内陷入 @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 2} 并受到 @Damage[2d10[mental]] 伤害。<br/><strong>大失败</strong> 巨人在接下来的一分钟内陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 4} 并受到 @Damage[4d10[mental]] 伤害。"
+                    "criticalSuccess": "当使用这个武器进行重击时，巨人必须进行一次@Check[fortitude|dc:34]检定，效果如下。<br /><strong>大成功</strong> 巨人陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}直到你的下个回合结束。<br /><strong>成功</strong> 巨人陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直到你的下个回合结束，并受到@Damage[1d10[mental]]伤害。<br /><strong>失败</strong> 巨人在接下来的一分钟内陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}并受到@Damage[2d10[mental]]伤害。<br/><strong>大失败</strong> 巨人在接下来的一分钟内陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 4}并受到@Damage[4d10[mental]]伤害。"
                 },
                 "Name": "高等杀戮巨人"
             },
@@ -6506,14 +6506,14 @@
             "astral": {
                 "Name": "星魂",
                 "Note": {
-                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:26]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:26]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
                     "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用星魂武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。"
                 }
             },
             "greaterAstral": {
                 "Note": {
                     "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用此武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。",
-                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[type:will|dc:36]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:36]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
                 },
                 "Name": "高等星魂"
             },
@@ -6722,12 +6722,12 @@
             },
             "concealed": {
                 "name": "隐蔽",
-                "rules": "<p>例如处在薄雾中的你难以被某生物看到，即说你对该生物处于隐蔽状态。你依然可见，但很难被瞄准。你对其隐蔽的生物因攻击、法术或其它效果而试图瞄准你时，需要成功通过@Check[type:flat|dc:5]检定。</p>\n<p>区域效果无需进行此纯骰检定。若检定失败，该次攻击、法术或效果不会影响你。</p>",
+                "rules": "<p>例如处在薄雾中的你难以被某生物看到，即说你对该生物处于隐蔽状态。你依然可见，但很难被瞄准。你对其隐蔽的生物因攻击、法术或其它效果而试图瞄准你时，需要成功通过@Check[flat|dc:5]检定。</p>\n<p>区域效果无需进行此纯骰检定。若检定失败，该次攻击、法术或效果不会影响你。</p>",
                 "summary": "雾气或类似障碍物让你不能被轻易看到和瞄准。"
             },
             "confused": {
                 "name": "困惑",
-                "rules": "<p>你失去了冷静，攻击变得大开大合。你进入措手不及状态，你不能将任何单位视为盟友（他们依然能将你视为盟友），你无法进行延迟、准备，也无法使用反应动作。</p><p>你必须使用所有动作进行打击或施放进攻性戏法，GM可以允许你使用其它辅助攻击的动作，例如拔出武器，移动靠近使敌人进入自己的触及内，等等。你的目标由GM随机决定。若你无可视的目标，就会瞄准自己，自动命中自己，但不会造成重击。若对你而言攻击或施法无法完成，你会口出狂言喋喋不休，浪费自己的动作。</p>\n<p>每当你因攻击或法术受到伤害时，可进行一次@Check[type:flat|dc:11]检定，成功则从困惑中恢复，终止该状态。</p>",
+                "rules": "<p>你失去了冷静，攻击变得大开大合。你进入措手不及状态，你不能将任何单位视为盟友（他们依然能将你视为盟友），你无法进行延迟、准备，也无法使用反应动作。</p><p>你必须使用所有动作进行打击或施放进攻性戏法，GM可以允许你使用其它辅助攻击的动作，例如拔出武器，移动靠近使敌人进入自己的触及内，等等。你的目标由GM随机决定。若你无可视的目标，就会瞄准自己，自动命中自己，但不会造成重击。若对你而言攻击或施法无法完成，你会口出狂言喋喋不休，浪费自己的动作。</p>\n<p>每当你因攻击或法术受到伤害时，可进行一次@Check[flat|dc:11]检定，成功则从困惑中恢复，终止该状态。</p>",
                 "summary": "你的攻击漫无目的。"
             },
             "controlled": {
@@ -6742,7 +6742,7 @@
             },
             "deafened": {
                 "name": "耳聋",
-                "rules": "<p>你听不到声音。你在需要你听的察觉检定上自动大失败。你在用察觉进行的先攻检定，和包括声音但也依赖其它感官的察觉检定上都获得-2状态减值。若你进行拥有听觉特征（Auditory）的动作，你必须通过@Check[type:flat|dc:5]检定，失败则失去该动作；该检定在消耗动作后，在动作生效前。你免疫听觉效果。</p>",
+                "rules": "<p>你听不到声音。你在需要你听的察觉检定上自动大失败。你在用察觉进行的先攻检定，和包括声音但也依赖其它感官的察觉检定上都获得-2状态减值。若你进行拥有听觉特征的动作，你必须通过@Check[flat|dc:5]检定，失败则失去该动作；该检定在消耗动作后，在动作生效前。你免疫听觉效果。</p>",
                 "summary": "你的耳旁一片寂静。"
             },
             "doomed": {
@@ -6802,7 +6802,7 @@
             },
             "grabbed": {
                 "name": "擒抱",
-                "rules": "<p>你被其它生物固定在原处，使你获得措手不及状态和禁足状态。被擒抱时若你尝试使用拥有操作特征的动作，你必须通过@Check[type:flat|dc:5]检定，失败则失去该动作；该检定在消耗动作后，效果生效前进行。</p>",
+                "rules": "<p>你被其它生物固定在原处，使你获得措手不及状态和禁足状态。被擒抱时若你尝试使用拥有操作特征的动作，你必须通过@Check[flat|dc:5]检定，失败则失去该动作；该检定在消耗动作后，效果生效前进行。</p>",
                 "summary": "生物、物体或魔法让你被定在原地。"
             },
             "helpful": {
@@ -6812,7 +6812,7 @@
             },
             "hidden": {
                 "name": "藏匿",
-                "rules": "<p>当你对某生物处于藏匿状态时，该生物大致知道你的位置，但无法精确定位你在哪里。通常你会因使用隐秘技能的躲藏动作而进入藏匿状态。若只用不精确的感官搜索你，则你依然能保持藏匿状态，而不会变成可见状态。你对其为藏匿状态的生物，对你也为措手不及状态，且其攻击、法术或其它效果瞄准你时，必须通过@Check[type:flat|dc:11] ，失败则无法影响到你。区域效果无需进行该纯骰检定。</p>\n<p>生物可以使用搜索动作尝试观察到你 。</p>",
+                "rules": "<p>当你对某生物处于藏匿状态时，该生物大致知道你的位置，但无法精确定位你在哪里。通常你会因使用隐秘技能的躲藏动作而进入藏匿状态。若只用不精确的感官搜索你，则你依然能保持藏匿状态，而不会变成可见状态。你对其为藏匿状态的生物，对你也为措手不及状态，且其攻击、法术或其它效果瞄准你时，必须通过@Check[flat|dc:11] ，失败则无法影响到你。区域效果无需进行该纯骰检定。</p>\n<p>生物可以使用搜索动作尝试观察到你 。</p>",
                 "summary": "生物知道你在哪但没法看到你。"
             },
             "hostile": {
@@ -6847,7 +6847,7 @@
             },
             "persistent-damage": {
                 "name": "持续伤害",
-                "rules": "<p>持续伤害会因例如酸液、着火或类型情形而获得。它的写法是“X持续[类型]伤害”，X是数值而[类型]是伤害类型。你不会立刻受到持续伤害，而是在获得状态后你的回合结束时受伤，每次都要骰伤害骰。在你受到持续伤害后，若你想摆脱持续伤害，骰@Check[type:flat|dc:15]。若成功，对应持续伤害终止。</p>",
+                "rules": "<p>持续伤害会因例如酸液、着火或类型情形而获得。它的写法是“X持续[类型]伤害”，X是数值而[类型]是伤害类型。你不会立刻受到持续伤害，而是在获得状态后你的回合结束时受伤，每次都要骰伤害骰。在你受到持续伤害后，若你想摆脱持续伤害，骰@Check[flat|dc:15]。若成功，对应持续伤害终止。</p>",
                 "summary": "你每轮持续受到伤害。"
             },
             "petrified": {
@@ -6897,7 +6897,7 @@
             },
             "undetected": {
                 "name": "无踪",
-                "rules": "<p>当你对某生物处于无踪状态时，该生物完全无法看到你，也不知道你所在的位置，更无法瞄准你，不过你依然能被区域效果覆盖到。当你对某生物处于无踪状态时，该生物对你措手不及。</p>\n<p>你对其无踪的生物可以猜测你处于什么位置并尝试瞄准你。她必须选择一个方格然后尝试一次攻击。这和瞄准藏匿状态下的生物类似（需要@Check[type:flat|dc:11]），但纯骰检定和攻击骰都由GM进行暗骰，并不会揭示攻击结果，到底是纯骰失败、攻击骰失败或选择错了方格。</p>\n<p>生物可用搜索动作尝试找到你。</p>",
+                "rules": "<p>当你对某生物处于无踪状态时，该生物完全无法看到你，也不知道你所在的位置，更无法瞄准你，不过你依然能被区域效果覆盖到。当你对某生物处于无踪状态时，该生物对你措手不及。</p>\n<p>你对其无踪的生物可以猜测你处于什么位置并尝试瞄准你。她必须选择一个方格然后尝试一次攻击。这和瞄准藏匿状态下的生物类似（需要@Check[flat|dc:11]），但纯骰检定和攻击骰都由GM进行暗骰，并不会揭示攻击结果，到底是纯骰失败、攻击骰失败或选择错了方格。</p>\n<p>生物可用搜索动作尝试找到你。</p>",
                 "summary": "对方生物不知道你在哪。"
             },
             "unfriendly": {
@@ -7116,7 +7116,7 @@
                     "Scent": "<p>灵敏嗅觉通过气味感应生物或物品，并且这是一种朦胧感官。其作用范围已在能力中列出，并且仅能在侦测散发出气味的生物或物品时起效（例如，无生命的生物通常都不会发出气味）。</p>\n<p>如果一个生物散发出浓郁的气味或是出于上风处，GM可将灵敏嗅觉用于侦测此生物的范围加倍或加至三倍，而当生物出于下风处时GM则可减小作用范围。</p>",
                     "ShieldBlock": "<p><strong>触发</strong> 怪物已经举起了盾牌，并且受到一次物理攻击的伤害。</p>\n<hr />\n<p><strong>效果</strong>怪物挺起盾牌格挡了攻击。盾牌使得怪物所受的伤害减少最多等同于盾牌硬度的数值。怪物和盾牌同时承受剩余的伤害，并且这也可能损坏或摧毁盾牌。</p>",
                     "SneakAttack": "<p>当怪物用灵巧或娴熟近战武器、灵巧或娴熟的无武装攻击、或是远距攻击来对@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的生物进行打击，它还会造成所列出的精准伤害。用投掷武器来远距攻击的场合，该武器必须为灵巧或娴熟。 </p>",
-                    "SwallowWhole": "<p>怪物尝试吞下一只已被其口嘴所受擒或束缚的体型等于或小于所列体型的生物。如果被吞下的生物的体型已经达到了所列体型的最大值，怪物便无法再次使用活吞。如果生物的体型比最大值要小，则怪物通常而言便还能吞下更多的生物；其具体的极限由GM判断。怪物尝试一次@Check[type:athletics|defense:reflex]检定对抗被擒抱生物的反射DC。如果检定成功，则能吞下该生物。怪物的口嘴不再擒抱被其吞下的生物，所以怪物能够用其再次进行打击或擒抱Grab。怪物无法攻击被其吞下的生物。</p>\n<p>被活吞的生物视为被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{受擒 Grabbed}，且获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，同时必须屏住呼吸，否则便会开始窒息。被吞下的生物在初次被吞以及被吞后的每一轮结束时受到所列出的伤害。如果受害者从这一能力的擒抱状态中@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escapes} ，则他会从怪物的嘴里钻出来。这会同时解放怪物口嘴中所擒抱的其他任何生物。被吞下的生物可以攻击那只吞食它的怪物，但是仅能以无武装攻击或是轻负载及更小的武器进行攻击。吞食中的生物在对抗此攻击时@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。如果怪物于单次攻击或法术中受到的穿刺或挥砍伤害等于或超过所列的破裂Rupture值，那个被吞的生物便重获自由。通过这些法脱困的生物可以立即开始呼吸，并且离开吞食他们的怪物的占据空间。</p>\n<p>如果怪物死亡，邻近尸体的生物们可以花费总计3个动作使用武器或者无武装攻击对怪物造成穿刺或挥砍伤害，以此切开怪物并且解放被活吞的生物。</p>",
+                    "SwallowWhole": "<p>怪物尝试吞下一只已被其口嘴所受擒或束缚的体型等于或小于所列体型的生物。如果被吞下的生物的体型已经达到了所列体型的最大值，怪物便无法再次使用活吞。如果生物的体型比最大值要小，则怪物通常而言便还能吞下更多的生物；其具体的极限由GM判断。怪物尝试一次@Check[athletics|defense:reflex]检定对抗被擒抱生物的反射DC。如果检定成功，则能吞下该生物。怪物的口嘴不再擒抱被其吞下的生物，所以怪物能够用其再次进行打击或擒抱Grab。怪物无法攻击被其吞下的生物。</p>\n<p>被活吞的生物视为被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]，且获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，同时必须屏住呼吸，否则便会开始窒息。被吞下的生物在初次被吞以及被吞后的每一轮结束时受到所列出的伤害。如果受害者从这一能力的擒抱状态中@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9] ，则他会从怪物的嘴里钻出来。这会同时解放怪物口嘴中所擒抱的其他任何生物。被吞下的生物可以攻击那只吞食它的怪物，但是仅能以无武装攻击或是轻负载及更小的武器进行攻击。吞食中的生物在对抗此攻击时@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。如果怪物于单次攻击或法术中受到的穿刺或挥砍伤害等于或超过所列的破裂Rupture值，那个被吞的生物便重获自由。通过这些法脱困的生物可以立即开始呼吸，并且离开吞食他们的怪物的占据空间。</p>\n<p>如果怪物死亡，邻近尸体的生物们可以花费总计3个动作使用武器或者无武装攻击对怪物造成穿刺或挥砍伤害，以此切开怪物并且解放被活吞的生物。</p>",
                     "SwarmMind": "<p>该怪物并没有一个单一的心智（通常是因为它是一个小型生物的集群），并且免疫以特定数量生物为目标的心灵效果。它仍然会受到那些对范围内所有生物起效的心灵效果。</p>",
                     "Telepathy": "<p>具有心灵感应能力的怪物可以与所列半径内任意生物进行心灵交流，然而它们必须能够使用同种语言。这并没有给他们的思维提供特殊的渠道，也无法比正常的开口交流传递更多的信息。</p>",
                     "Thoughtsense": "<p>思维感知允许怪物感知所列范围内的所有心智生物。</p>",
