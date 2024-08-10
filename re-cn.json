@@ -3182,7 +3182,7 @@
                 "FormidableBreath": {
                     "Line": {
                         "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
                         "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
                     },
                     "Cone": {
