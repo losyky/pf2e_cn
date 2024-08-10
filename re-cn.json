@@ -8,7 +8,7 @@
             "IncreasedCriticalChance": "如果攻击命中，并且该生物在d20掷骰中掷出19，则该攻击视为一次暴击。但如果19的结果是失手，就不会产生任何效果。",
             "IncreasedReach5": "射程增加5尺",
             "InterruptAction": "命中时，目标的动作会被打断。",
-            "ReduceHiddenCheck": "对@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}生物的纯骰检定DC为@Check[flat|dc:5]。"
+            "ReduceHiddenCheck": "对@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]生物的纯骰检定DC为@Check[flat|dc:5]。"
         },
         "BattleForm": {
             "Attack": {
@@ -98,7 +98,7 @@
                 "SunNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩Dazzled}，持续一轮。"
             },
             "OozeForm": {
-                "GelatinousCubeNote": "你的面触打击命中的生物必须成功通过一次@Check[fortitude|dc:resolve(@actor.attributes.spellDC.value)|traits:incapacitation]豁免，对抗你的法术DC，否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（或者大失败时@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}持续1轮）；该豁免具有失能特征。"
+                "GelatinousCubeNote": "你的面触打击命中的生物必须成功通过一次@Check[fortitude|against:spell|traits:incapacitation]豁免，对抗你的法术DC，否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（或者大失败时@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]持续1轮）；该豁免具有失能特征。"
             },
             "InsectForm": {
                 "SpiderWebNote": "一次成功的蛛网攻击会纠缠目标1轮，但不会造成伤害"
@@ -229,10 +229,10 @@
             },
             "DwarvenDaisy": {
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[fire]]{1点火焰溅射伤害}，并且目标必须通过成功的@Check[fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[fire]]伤害，并且目标必须通过成功的@Check[fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[fire]]{2点火焰溅射伤害}，并且目标必须通过成功的@Check[fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}一轮。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[fire]]伤害，并且目标必须通过成功的@Check[fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。"
                 }
             },
             "GhostCharge": {
@@ -358,16 +358,16 @@
             },
             "Thunderstone": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:28|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:28|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:17|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:17|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:20|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:20|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:36|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[sonic]]伤害，并且10尺内所有生物必须进行一个@Check[fortitude|dc:36|showDC:all]豁免，失败则直到他下一个回合结束陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]。"
                 }
             },
             "TallowBomb": {
@@ -502,7 +502,7 @@
                 "Prompt": "选择粘性手雷的品级。"
             },
             "BioluminescenceBomb": {
-                "success": "<p>炸弹落点@Template[type:emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，然后再目眩1轮。</p>"
+                "success": "<p>炸弹落点@Template[emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮，然后再目眩1轮。</p>"
             }
         },
         "SpecificRule": {
@@ -553,7 +553,7 @@
                         "Base": "武器的攻击强度增加，你的控制也精细到可以应用更高级的技巧。武器攻击的伤害骰子从d6变为d10。当你施展或维持法术时，除了标准选项外，你还可以选择以下选项。"
                     },
                     "TelekineticRend": {
-                        "Heightened": "伤害同时提升1d6钝击和1d6挥砍，并追加第三个不重叠的@Template[type:burst|distance:5]区域。",
+                        "Heightened": "伤害同时提升1d6钝击和1d6挥砍，并追加第三个不重叠的@Template[burst|distance:5]区域。",
                         "Base": "你的思考扩展了尺度和威力。该爆发造成1d6钝击和1d6挥砍伤害，而非通常的伤害。在豁免中大失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。"
                     },
                     "TesseractTunnel": "你不再需要物理移动以连接空间中的两点。当你施展超维隧道时，你直接创造一条隧道，其终点是在与你速度相等的射程内的一个方格；你可以选择立即传送到隧道另一端的空间。此外，隧道可以双向穿越，而非只从入口到出口。你可以解消该法术。",
@@ -604,7 +604,7 @@
                     },
                     "RedistributePotential": {
                         "Heightened": "伤害增加2d6而不是1d4。",
-                        "Base": "你可以更大规模地影响能量的流动。法术范围改为两个@Template[type:burst|distance:10]范围。它们仍然必须彼此相邻并且可以重叠。两个区域内的生物仍然只能被你选择的一个范围影响。该法术的伤害增加到6d6。法术造成的效果持续1分钟。"
+                        "Base": "你可以更大规模地影响能量的流动。法术范围改为两个@Template[burst|distance:10]范围。它们仍然必须彼此相邻并且可以重叠。两个区域内的生物仍然只能被你选择的一个范围影响。该法术的伤害增加到6d6。法术造成的效果持续1分钟。"
                     },
                     "RemovePresence": "选择该法术的一个目标或被影响范围内的一个生物，如果该敌人的豁免失败或被命中，你会对它无踪，从它的感官中消失1分钟或直到你使用一个敌对行动。这类似于@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}，但类似识破隐形的效果不会揭示你——你影响的是目标的思想，而不是它的视觉。如果反制检定成功，真视术仍然可以看穿这个幻象。",
                     "Shield": {
@@ -615,7 +615,7 @@
                         "Base": "你用更强的力量投掷物品，以飞雹般的射弹将敌人击退。成功时，你将目标从你的方向推离5尺。大成功时，你在造成双倍伤害之外还能将目标推离10尺。",
                         "Heightened": "伤害提升2d6而非1d6。"
                     },
-                    "AstralRain": "范围变为@Template[type:burst|distance:5]，你可以维持法术最多1分钟。在每回合第一次维持法术时，你可以将爆发范围移动20英尺。",
+                    "AstralRain": "范围变为@Template[burst|distance:5]，你可以维持法术最多1分钟。在每回合第一次维持法术时，你可以将爆发范围移动20英尺。",
                     "Toggle": "增幅心能戏法",
                     "ThermalStasis": "该法术的持续时间变为1分钟。",
                     "Ignition": {
@@ -633,7 +633,7 @@
                         "Heightened": "伤害提升2d4而非1d4。",
                         "Base": "你的相位矢进入完全相移，变得无形无影，直到射入目标——仿佛它传送到了目标中一般。目标对此次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。此外，相位矢忽略数值等同法术等级一半的硬度与穿刺伤害抗性。大成功时，目标不能受到传送效果影响，直到你的下回合开始。"
                     },
-                    "ShatterMind": "你可以选择将法术区域改为@Template[type:cone|distance:30]或@Template[type:cone|distance:60]，伤害骰改为d10。豁免失败的生物在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（或在大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。",
+                    "ShatterMind": "你可以选择将法术区域改为@Template[cone|distance:30]或@Template[cone|distance:60]，伤害骰改为d10。豁免失败的生物在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（或在大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。",
                     "Figment": "当你增幅法术时，你可以在其正常效果的基础上创建一个特别分散注意力的幻术。选择法术范围内的一个未被占据的方格。该方格中的幻术为在你下一个回合开始前的单次近战攻击提供夹击。如果你维持法术，幻术的细节变化和转移，让你的敌人不安；夹击幻术的持续时间延长到你下一个回合开始，并且你可以将其移动到法术范围内的任何未被占据的方格。已经识破幻术的生物，夹击幻术不能提供其效果。",
                     "ForeseeThePath": "法术在失败时的结果与成功时相同（但在大失败时仍无效果）。每次你维持法术时，你可以选择一个额外的盟友作为目标，给予他们与初始目标盟友相同的增益。",
                     "TargetOfPsychicIre": "选择法术的一个目标。种种精神现象向这一目标发难——例如，物件忽然撞向生物。在目标的每个回合开始时，它将受到@Damage[(@item.level)d4[bludgeoning]]伤害，适用基础反射豁免。目标将在3个回合中持续受到心怒聚焦的标记。即使你@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或离开该区域，该效果也会持续。",
@@ -742,11 +742,11 @@
                 "Unstable": {
                     "FlatCheck": {
                         "Label": "不稳定检定",
-                        "Failure": "大发明无法继续使用不稳定动作。",
-                        "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。"
+                        "Failure": "大发明无法继续使用不稳定动作。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]",
+                        "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]"
                     },
                     "Stable": "稳定",
-                    "Note": "当你进行一个不稳定动作，在应用效果之后立刻尝试一次@Check[flat|dc:17|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]检定。"
+                    "Note": "当你进行一个不稳定动作，在应用效果之后立刻尝试一次@Check[flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]检定。"
                 },
                 "BoostModulation": {
                     "Prompt": "选择一个额外的攻势增压"
@@ -820,7 +820,7 @@
                     "Note": "当你在对抗恐惧效果的豁免检定中掷出成功时，可用大成功替代它。当你在此检定中投掷出失败时，则用大失败替代它。"
                 },
                 "DragonsBreath": {
-                    "DescriptionAlteration": "You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[type:line|distance:60] or a @Template[type:cone|distance:30], dealing @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for 1 hour."
+                    "DescriptionAlteration": "You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[line|distance:60] or a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for 1 hour."
                 }
             },
             "Mummy": {
@@ -1035,7 +1035,7 @@
                     "ToggleLabel": "精魂狂暴"
                 },
                 "Superstition": {
-                    "TargetingCaster": "目标是施法者"
+                    "TargetingCaster": "目睹目标施法"
                 },
                 "InuredToAlchemy": {
                     "CriticalSuccess": "每次对抗炼金毒药、毒品或成瘾的豁免获得大成功可降低3阶段。",
@@ -1504,7 +1504,7 @@
                     "Prompt": "选择阵营伤害"
                 },
                 "StunningFist": {
-                    "Note": "目标必须通过@Check[fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true]，对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1} (大失败陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3})。"
+                    "Note": "目标必须通过@Check[fortitude|against:monk|name:Monk|traits:incapacitation|overrideTraits:true]，对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1} (大失败陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3})。"
                 },
                 "OneInchPunch": {
                     "TwoActionLabel": "寸拳（2动作）",
@@ -1701,7 +1701,7 @@
                     },
                     "Critical": {
                         "Label": "致命衰弱",
-                        "Note": "目标需要进行@Check[fortitude|dc:resolve(@actor.system.proficiencies.classDCs.rogue.dc)]豁免对抗你的职业DC。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，直到你的下个回合结束。</p><p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，直到你的下个回合结束。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，直到你的下个回合结束。</p>"
+                        "Note": "目标需要进行@Check[fortitude|against:rogue]豁免对抗你的职业DC。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，直到你的下个回合结束。</p><p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，直到你的下个回合结束。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，直到你的下个回合结束。</p>"
                     },
                     "Label": "衰弱",
                     "OffGuard": {
@@ -1735,12 +1735,12 @@
                         "AncestralBloodMagic": "施放一个先祖法术",
                         "Imperial": "直到你的下一个回合开始，你可以选择在AC或是在豁免骰上获得+1状态加值。",
                         "Demonic": "目标于1轮内在AC上受到-1状态罚值，或者你于1轮内在威吓检定上获得+2状态加值。",
-                        "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[will|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命，持续到你之后那个回合的回合开始。",
+                        "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[will|basic|against:spell]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命，持续到你之后那个回合的回合开始。",
                         "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealement}，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide}。",
                         "Title": "血统奥秘",
                         "Nymph": "你的动作中尽显宁芙的优雅，甚至能使你的敌人分心。你于1轮内在交涉检定上获得+1状态加值，或者目标于1轮内在意志豁免上承受-1状态罚值。",
                         "Psychopomp": "生与死的界限在你身上显得模糊不清。你于1轮内在强韧豁免上获得+2状态加值，或者目标受到每法术环级1点的伤害。此伤害当目标为活物时为@Damage[@item.level[void]]，当目标为不死生物时为@Damage[@item.level[vitality]]。如果法术已经造成了该种类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
-                        "ExplosionOfPower": "@Template[type:emanation|distance:5]内的每一个生物都受到@Damage[(@item.level)d6|options:explosion-of-power]伤害（@Check[type:reflex|basic:true|dc:resolve(@actor.system.attributes.spellDC.value)]豁免）。",
+                        "ExplosionOfPower": "@Template[emanation|distance:5]内的每一个生物都受到@Damage[(@item.level)d6|options:explosion-of-power]伤害（@Check[reflex|basic|against:spell]豁免）。",
                         "PropellingSorcery": "你将你的魔力向外引导，转换为一次急促的移动。你以自由动作进行一次快步，或是将目标按你所选择的方向移动5尺。",
                         "TerraformingTrickery": "你周围的每个相邻格子都将变成困难地形，或是每个相邻格子都不再是困难地形。这个伎俩对高等困难地形没有效果，也无法消除危害性地形带来的伤害性影响。",
                         "ReflectHarm": "在你下一个回合的回合开始前，你第一次受到法术的伤害时可以尝试一次攻击骰对抗施放了那个法术的生物。成功命中时，该生物遭受与你所受相同数量相同类型的伤害。大成功时，该生物承受两倍伤害。"
@@ -1848,7 +1848,7 @@
                 }
             },
             "SnipingDuoDedication": {
-                "Label": "狙击小组搭档本轮已用打击击中目标"
+                "Label": "狙击小组搭档你的上回合之后已用打击击中目标"
             },
             "Sprite": {
                 "SpritesSpark": {
@@ -1946,14 +1946,14 @@
                         },
                         "FreezingRime": {
                             "Title": "冻霜魔宠",
-                            "Description": "你的魔宠摸起来很冷，它的呼吸总是清晰可见。当你施放或维持一个巫术时，你能够以你的魔宠所在方格为中心的@Template[type:burst|distance:5]范围生成冰。这些方格成为困难地形，直到你下回合开始。"
+                            "Description": "你的魔宠摸起来很冷，它的呼吸总是清晰可见。当你施放或维持一个巫术时，你能够以你的魔宠所在方格为中心的@Template[burst|distance:5]范围生成冰。这些方格成为困难地形，直到你下回合开始。"
                         },
                         "StalkingNight": {
                             "Description": "当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
                             "Title": "行夜魔宠"
                         },
                         "ParasiticMight": {
-                            "Description": "当你施放或维持巫术时，你的魔宠会抽取另一个生物的逐渐衰弱的体能来维持自身。你魔宠15尺内一个生命值少于最大生命值一半的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}，除非它成功通过一次对抗你法术DC的@Check[fortitude|dc:resolve(@actor.system.attributes.spellDC.value)]豁免。",
+                            "Description": "当你施放或维持巫术时，你的魔宠会抽取另一个生物的逐渐衰弱的体能来维持自身。你魔宠15尺内一个生命值少于最大生命值一半的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}，除非它成功通过一次对抗你法术DC的@Check[fortitude|against:spell]豁免。",
                             "Title": "寄生魔宠"
                         },
                         "OverwhelmingTides": {
@@ -1979,7 +1979,7 @@
                         "RollOptionLabel": "你连续两次指甲打击命中同一目标"
                     },
                     "IronTeeth": {
-                        "Note": "被你的颚打击重击的生物必须成功通过一次@Check[fortitude|dc:resolve(@actor.system.attributes.classDC.value)]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                        "Note": "被你的颚打击重击的生物必须成功通过一次@Check[fortitude|against:witch]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                     },
                     "LivingHair": {
                         "SrikeLabel": "棘刺 Quill"
@@ -2050,7 +2050,7 @@
             },
             "Lich": {
                 "HandOfTheLich": {
-                    "Note": "当你用拳头打击对一个活着的生物造成重击时，该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到其下回合结束，除非它成功通过一次对抗你法术DC的@Check[fortitude|dc:resolve(@actor.attributes.spellDC.value)]豁免。"
+                    "Note": "当你用拳头打击对一个活着的生物造成重击时，该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到其下回合结束，除非它成功通过一次对抗你法术DC的@Check[fortitude|against:spell]豁免。"
                 }
             },
             "Vampire": {
@@ -2092,7 +2092,7 @@
             },
             "VitalityManipulationStance": {
                 "StrikeLabel": "生命波 Vitality Blast",
-                "Note": "当你使用震慑拳时，取代豁免造成震慑，你可以选择改为让目标进行一次@Check[fortitude|dc:resolve(@actor.attributes.classDC.value)]豁免对抗你的职业DC，对照下列结果。你必须在目标掷豁免骰之前选择。</p><hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标的肌肉会暂时变弱1轮，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且它在尝试使用具有操作特征的动作时，除非成功通过一次DC为5+力竭状态值的纯骰检定，否则被打断。</p><p><strong>失败</strong> 同成功，但持续时间为1分钟。</p><p><strong>大失败</strong> 同成功，但持续时间为1分钟，纯骰DC为11，且目标在持续时间内所有速度承受-10尺状态减值。</p>"
+                "Note": "当你使用震慑拳时，取代豁免造成震慑，你可以选择改为让目标进行一次@Check[fortitude|against:class]豁免对抗你的职业DC，对照下列结果。你必须在目标掷豁免骰之前选择。</p><hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标的肌肉会暂时变弱1轮，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且它在尝试使用具有操作特征的动作时，除非成功通过一次DC为5+力竭状态值的纯骰检定，否则被打断。</p><p><strong>失败</strong> 同成功，但持续时间为1分钟。</p><p><strong>大失败</strong> 同成功，但持续时间为1分钟，纯骰DC为11，且目标在持续时间内所有速度承受-10尺状态减值。</p>"
             },
             "BlessingOfDefiance": {
                 "Prompt": "选择一种豁免"
@@ -2146,7 +2146,7 @@
                     "Note": "来自神祇的斥责力量强化了你的身躯，你以此击倒邪恶的敌人。在你使用治疗术伤害了邪魔之后，你的武器或者无武装攻击造成等于治疗术环级一般的额外善良伤害，直到你的下个回合的结束。这与任何武器已经能造成的善良伤害叠加（例如来自神圣符文）。@UUID[Compendium.pf2e.feat-effects.Item.BTI4obxa5UmNltyU]{效果：斥责武器}"
                 },
                 "DirectedChannel": {
-                    "ItemAlterationNote": "你可以令范围改为@Template[type:cone|distance:60]而非弥漫。"
+                    "ItemAlterationNote": "你可以令范围改为@Template[cone|distance:60]而非弥漫。"
                 },
                 "DivineInfusion": {
                     "Note": "目标在其下回合结束前的近战武器或无武装攻击造成额外1d6伤害。若你施放的是<em>伤害术</em>，则该伤害的类型为虚能，若是<em>治疗术</em>则为命能。@UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{效果：神力灌注}"
@@ -2300,10 +2300,10 @@
                     "Description": "不服从你的残酷纪律会有更持久的后果。如果一位敌人拒绝向你跪拜，你可以转而对他造成@Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,9),3,ternary(gte(@actor.level,5),2,1))))))d6[persistent,mental]] 伤害。你必须在敌人决定是否向你跪拜前，选择要不要造成持续性的心灵伤害。伤害的数值不会改变。"
                 },
                 "RangedReprisal": {
-                    "Description": "你能够使用远程武器发动报应打击。此外，如果触发反应动作的敌人在你的触及范围周围5尺之中，而不在你的触及范围之内，你可以在发动一次近战报应打击之前，作为反应动作的一部分进行快步好让敌人处于你的触及范围之内。"
+                    "Description": "你能够在更远的距离上使用报应打击。你能够在进行报应打击时，取代近战打击，转而使用远程武器进行远程打击。触发反应的敌人需要位于射程而非触及之内，并且其仍然要身处你神卫灵光范围内。你也能够对站位稍远的敌人进行近战打击。如果触发反应的敌人在你的触及之外，且在你触及周围5尺之内，作为反应的一部分，你能够在进行近战报应打击之前使用快步将敌人置于你的触及之内。"
                 },
                 "UnimpededStep": {
-                    "Description": "伴随着神圣解放之力的爆发，因为你的自由快步而得以移动的盟友免受困难地形，高等困难地形，狭窄平面和崎岖地面的影响。"
+                    "Description": "伴随着神圣解放之力的爆发，因为你的解放踏步而得以移动的盟友免受困难地形、高等困难地形、狭窄平面和不稳表面的影响。如果你获得激昂反应的增益，上述好处将适用于所有进行快步的人。"
                 },
                 "OngoingSelfishness": {
                     "Description": "在你使用自私卫盾后，直到你使用此反应动作的那回合结束之前，你会对来自触发敌人的所有伤害上获得自私卫盾抗性一半的抗性。@UUID[Compendium.pf2e.feat-effects.Item.seOQfjfjrDyK6rCo]{效果：利己自利}"
@@ -2376,7 +2376,7 @@
                     "SecondAttackLabel": "双重切割第二击"
                 },
                 "DazingBlow": {
-                    "Note": "<p>如果击中，该生物需进行一次@Check[fortitude|dc:resolve(@actor.attributes.classDC.value)|traits:incapacitation]豁免对抗你的职业DC，这是一个失能效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
+                    "Note": "<p>如果击中，该生物需进行一次@Check[fortitude|against:class|traits:incapacitation]豁免对抗你的职业DC，这是一个失能效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
                 }
             },
             "DivineAlly": {
@@ -2592,7 +2592,7 @@
             },
             "EldritchArcher": {
                 "ArrowOfDeath": {
-                    "Note": "大成功时，目标还必须成功通过@Check[fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation] ，否则会立即被杀死。"
+                    "Note": "大成功时，目标还必须成功通过@Check[fortitude|against:class-spell|traits:death,incapacitation]，否则会立即被杀死。"
                 },
                 "EnchantingArrow": {
                     "Note": "重击时，目标同样陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 1}。"
@@ -2707,7 +2707,7 @@
                         "Fire": "目标受到1d6持续火焰伤害。这次持续伤害增加你涌动攻击骰上的物品加值（比如来自束门环）。",
                         "Earth": "若目标站在地面，它陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}；若目标不在地面上，它下降最多20尺（你自选距离）。",
                         "Air": "将目标推离最多10尺。",
-                        "Wood": "若重击的目标与一个平面相邻，根茎将纠缠它。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}且必须花费一个交互动作通过@Check[athletics|dc:10]检定来使自己脱困。若目标为虚体、液体或可用其他手段轻易逃脱的生物，它不会被困。",
+                        "Wood": "若重击的目标与一个平面相邻，根茎将纠缠它。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]且必须花费一个交互动作通过@Check[athletics|dc:10]检定来使自己脱困。若目标为虚体、液体或可用其他手段轻易逃脱的生物，它不会被困。",
                         "Metal": "目标受到1d6持续流血伤害；若生物拥有金属性或由金属制成，它转成受到@Damage[1d6[persistent,untyped]]伤害（无类型的锈蚀伤害）。本次持续伤害增加你涌动攻击骰上的物品加值（例如来自束门环）。",
                         "Water": "冲击造成每伤害骰2点溅射伤害，伤害类型不变。",
                         "Label": "重击冲击"
@@ -2943,7 +2943,7 @@
                     "Description": "当你施展吸血鬼之触时，你可以修改其标准效果如下。你可以将临时生命给予30尺范围内的一个盟友，而不是让自己获得临时生命。1分钟后，该盟友将失去任何剩余的临时生命。"
                 },
                 "SummonEnsemble": {
-                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。随后目标在24小时内暂时免疫该效果。"
+                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。随后目标在24小时内暂时免疫该效果。"
                 },
                 "UneasyRest": {
                     "Description": "当你施展睡眠术时，你可以修改该法术，在其标准效果上增加以下内容：你施法的目标会经历可怕的梦境。当一个豁免失败或大失败的目标醒来时，它将获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
@@ -2987,13 +2987,13 @@
                     "Description": "当你施展升阶到6环或以上的火球术时，你可以修改该法术的标准效果，具体如下：该法术的伤害减少6d6。你的火球在其区域内留下一团挥之不去的有毒烟雾。虽然它是烟而不是雾，但这团烟具有@UUID[Compendium.pf2e.spells-srd.Item.GKpEcy9WId6NJvtx]的效果。"
                 },
                 "SurroundingFlames": {
-                    "Description": "当你施放火墙时，你可以修改其标准效果如下：你可以将火墙术变成一个@Template[type:burst|distance:10]的火焰，而非5尺厚，10尺半径10尺高的环形火焰。"
+                    "Description": "当你施放火墙时，你可以修改其标准效果如下：你可以将火墙术变成一个@Template[burst|distance:10]的火焰，而非5尺厚，10尺半径10尺高的环形火焰。"
                 },
                 "AnimateNet": {
                     "Description": "当你施展活化绳时，你可以将其目标修改为1张@UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{网 Net}。如果你这样做了，你可以用以下效果取代该法术的标准效果：你使一张网活化起来，并将其丢向周围20尺内的一个中型或小型生物。尝试用法术攻击骰对抗目标的反射DC。如果成功，目标会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，并在其速度上受到-10尺的减值，直到它逃脱；如果大成功，它也会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它逃脱。在法术持续期间逃脱的DC等于你的法术DC。一旦法术结束，逃脱的DC就会回到正常的网的DC（通常是16），并且目标相邻的生物可以通过交互动作来移除网。"
                 },
                 "ScatteredFire": {
-                    "Description": "当你施放火球术时，你可以将它的范围修改为两个不重叠的@Template[type:burst|distance:10]范围。"
+                    "Description": "当你施放火球术时，你可以将它的范围修改为两个不重叠的@Template[burst|distance:10]范围。"
                 },
                 "ObscuredTerrain": {
                     "Description": "当你施放隐雾术时，你可以修改该法术，用以下方法取代其标准效果。你创造一团浓雾笼罩该区域，使生物难以看到地面。雾气内的区域对于不能看穿雾气的生物来说是困难地形。你可以解消这团雾。"
@@ -3169,26 +3169,26 @@
             "Dragonblood": {
                 "BreathOfTheDragon": {
                     "Line": {
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
                     },
                     "Cone": {
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
                     }
                 },
                 "FormidableBreath": {
                     "Line": {
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
                     },
                     "Cone": {
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[type:cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|traits:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]轮内无法再次使用此能力。"
                     }
                 },
                 "LingeringBreath": {
@@ -3443,9 +3443,9 @@
                     "Spellcasting": "法艺",
                     "Martial": "尚武"
                 },
-                "ModerateFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:6|showDC:owner] 检定，否则会失去这个动作。",
-                "MajorFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:8|showDC:owner] 检定，否则会失去这个动作。",
-                "MinorFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:4|showDC:owner] 检定，否则会失去这个动作。",
+                "ModerateFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:6|showDC:owner]检定，否则会失去这个动作。",
+                "MajorFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:8|showDC:owner]检定，否则会失去这个动作。",
+                "MinorFailure": "你的诅咒干扰了此动作，你必须通过@Check[flat|dc:4|showDC:owner]检定，否则会失去这个动作。",
                 "AncestralInfluence": "先祖影响",
                 "MeddlingAncestor": "缠身古灵"
             },
@@ -3460,7 +3460,7 @@
             "Life": {
                 "ToggleLabel": "治疗的所有目标都是活物",
                 "DescriptionModerate": "当你施放完一个非戏法法术后，你可选择法术目标之一或最靠近你的生物之一，恢复@Damage[@item.level[healing]]HP。你无法用此法治疗自己。该次治疗拥有治疗、死灵系、命能特征，同时拥有触发法术对应的根源特征。",
-                "DescriptionMajor": "每当你使用法术位施放一个至少需要2动作的5环或更高环法术时，溢散出的命能对@Template[type:burst|distance:30]范围造成一个3动作@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{治疗术 Heal}效果，该治疗术等效环级为你所施放法术的环级-4。这次治疗在你@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Casting the Spell}完毕后立刻生效。你不会从这次治疗中获得恢复，相反，你会失去该次治疗术治疗量双倍的HP。"
+                "DescriptionMajor": "每当你使用法术位施放一个至少需要2动作的5环或更高环法术时，溢散出的命能对@Template[burst|distance:30]范围造成一个3动作@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]效果，该治疗术等效环级为你所施放法术的环级-4。这次治疗在你@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]完毕后立刻生效。你不会从这次治疗中获得恢复，相反，你会失去该次治疗术治疗量双倍的HP。"
             },
             "Time": {
                 "ACLabel": "移动时不会触发反应或自由动作"
@@ -3481,7 +3481,7 @@
                     "true": "只有重击伤害"
                 },
                 "DamageType": "伤害类型",
-                "PriorityHint": "优先级决定了规则元素的执行顺序。优先级较低的规则元素会先执行。",
+                "PriorityHint": "优先级决定了同阶段中规则元素的执行顺序。优先级较低的规则元素会先执行。",
                 "Slug": "标识符",
                 "Opacity": "不透明度",
                 "Add": "增加",
@@ -4339,10 +4339,10 @@
             "ExplosiveAmmunition": {
                 "Greater": {
                     "Title": "高等爆炸弹药",
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[10d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:30|basic:true|name:Explosive Ammunition]豁免。"
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[burst|distance:10]范围内的每个生物都造成@Damage[10d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:30|basic|name:Explosive Ammunition]豁免。"
                 },
                 "Normal": {
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成@Damage[6d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:25|basic:true|name:Explosive Ammunition]豁免。",
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[burst|distance:10]范围内的每个生物都造成@Damage[6d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:25|basic|name:Explosive Ammunition]豁免。",
                     "Title": "爆炸弹药"
                 }
             },
@@ -4372,11 +4372,11 @@
             "MeteorShot": {
                 "Normal": {
                     "Title": "流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:5]区域内造成@Damage[3d6[fire]]伤害 (@Check[reflex|dc:23|basic:true|name:Meteor Shot] 豁免)."
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[emanation|distance:5]区域内造成@Damage[3d6[fire]]伤害 (@Check[reflex|dc:23|basic|name:Meteor Shot] 豁免)."
                 },
                 "Major": {
                     "Title": "上等流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[type:emanation|distance:20]区域内造成@Damage[9d6[fire]]伤害 (@Check[reflex|dc:37|basic:true|name:Meteor Shot]豁免)."
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[emanation|distance:20]区域内造成@Damage[9d6[fire]]伤害 (@Check[reflex|dc:37|basic|name:Meteor Shot]豁免)."
                 },
                 "CriticalFailureText": "当大失败时，武器会哑火。",
                 "Greater": {
