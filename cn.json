@@ -3531,7 +3531,8 @@
                 "DCAndDefense": "不能同时具有dc和防御参数",
                 "InvalidDomains": "{type}数据域必须使用减号或者下划线连接（没有空格和特殊符号），且以-damage结束"
             },
-            "Invalid": "无效的@Check表达式： {message}"
+            "Invalid": "无效的@Check表达式： {message}",
+            "DCAdjustment": "DC调整"
         },
         "InlineTemplateErrors": {
             "TypeMissing": "Error in @Template: 必须有类型参数",
@@ -4047,7 +4048,7 @@
                     "Splash": "{damageType}溅射",
                     "Override": "超载{value}",
                     "Label": "标签",
-                    "ExtraDice": "额外{dice}",
+                    "ExtraDice": "额外",
                     "DieSizeUpgrade": "提升骰子大小",
                     "DiceHeader": "骰",
                     "Title": "伤害骰",
