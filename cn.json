@@ -2947,7 +2947,7 @@
             "Alerts": {
                 "CharacterLevel": "物品等级超过角色等级。",
                 "ItemMissingTraits": "物品与制造所需的物品要求不符。",
-                "MaxItemLevel": "物品级别超过最大所选物品等级。",
+                "MaxItemLevel": "物品级别超过最大所选物品等级{level}。",
                 "MissingReagents": "灌注试剂不足，无法完成制作。",
                 "MaxSlots": "制造栏位已满。",
                 "FormulaExpended": "已准备的配方已经被制作。"
@@ -6451,13 +6451,13 @@
             },
             "greaterAshen": {
                 "Note": {
-                    "success": "这种灰烬模糊了感官，导致生物在1轮中陷入困惑，除非它在@Check[will|dc:35]豁免中成功。大失败时，影响持续1分钟。"
+                    "success": "这种灰烬模糊了感官，导致生物在1轮中陷入@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]，除非它在@Check[will|dc:35]豁免中成功。大失败时，影响持续1分钟。"
                 },
                 "Name": "高等灰烬"
             },
             "ashen": {
                 "Note": {
-                    "success": "这种灰烬模糊了感官，导致生物在1轮中变得困惑，除非它在@Check[will|dc:25]豁免中成功。"
+                    "success": "这种灰烬模糊了感官，导致生物在1轮中变得@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]，除非它在@Check[will|dc:25]豁免中成功。"
                 },
                 "Name": "灰烬"
             },
