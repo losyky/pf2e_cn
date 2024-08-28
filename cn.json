@@ -4294,6 +4294,14 @@
                 "ShieldTraits": {
                     "Name": "盾牌特征",
                     "Hint": "可应用于盾牌的特征"
+                },
+                "ArmorGroups": {
+                    "Hint": "PF2e护甲的次级分类（例如，板甲、链甲）",
+                    "Name": "护甲组"
+                },
+                "BaseArmors": {
+                    "Name": "护甲基本类型",
+                    "Hint": "PF2e护甲的底层分类（ 如全身甲、链甲）"
                 }
             },
             "Metagame": {
@@ -6090,7 +6098,9 @@
                 "visap": "双头曲刃",
                 "zulfikar": "斩脊刀",
                 "arbalest": "劲弩",
-                "reinforced-stock": "加固枪托"
+                "reinforced-stock": "加固枪托",
+                "capturing-spetum": "捕获刺叉",
+                "spirit-thresher": "碎魂连枷"
             }
         },
         "WeaponAbilityLabel": "武器能力",
