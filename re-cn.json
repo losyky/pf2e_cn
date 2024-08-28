@@ -998,6 +998,9 @@
                 },
                 "ExpandedSplash": {
                     "Note": "溅射伤害影响目标周围10尺内的所有生物，而非5尺。"
+                },
+                "UncannyBombs": {
+                    "Note": "你在攻击@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽}生物时的纯骰自动成功。"
                 }
             },
             "Aid": {
@@ -4480,7 +4483,17 @@
             "Primal": "原能龙",
             "Red": "红龙",
             "Silver": "银龙",
-            "White": "白龙"
+            "White": "白龙",
+            "Brine": "洋龙",
+            "Cloud": "云龙",
+            "Crystal": "结晶龙",
+            "Forest": "森龙",
+            "Magma": "熔岩龙",
+            "Sea": "海龙",
+            "Sky": "天龙",
+            "Sovereign": "君龙",
+            "Umbral": "影龙",
+            "Underworld": "伏藏龙"
         },
         "FeatDescription": {
             "Frequency": {
