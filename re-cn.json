@@ -703,7 +703,8 @@
                     "Weapon": {
                         "AllowedDrops": "0级或1级的简易或军用武器",
                         "Prompt": "选择一项武器大发明。"
-                    }
+                    },
+                    "MalfunctionDamage": "故障大发明"
                 },
                 "Modification": {
                     "Initial": {
@@ -718,6 +719,11 @@
                         "Prompt": "选择一个突破性改进。",
                         "AllowedDrops": "7级或者更低的发明家职业特性",
                         "EnhancedResistancePrompt": "选择要增强的初始改修。"
+                    },
+                    "Revolutionary": {
+                        "Prompt": "选择一种革命性改进。",
+                        "EnhancedResistancePrompt": "选择要增强的初始改进。",
+                        "AllowedDrops": "不高于15级的发明家职业特性"
                     }
                 },
                 "OffensiveBoost": {
@@ -748,10 +754,17 @@
                         "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]"
                     },
                     "Stable": "稳定",
-                    "Note": "当你进行一个不稳定动作，在应用效果之后立刻尝试一次@Check[flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]检定。"
+                    "Note": "当你进行一个不稳定动作，在应用效果之后立刻尝试一次@Check[flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]检定。",
+                    "FailureNote": "大发明无法继续使用不稳定动作。作为大发明的创造者，你可以花费10分钟再调校你的大发明，让它能够正常工作，之后你就可以使用大发明再次进行不稳定动作。",
+                    "UnstableFunction": {
+                        "Label": "启用不稳定功能"
+                    }
                 },
                 "BoostModulation": {
                     "Prompt": "选择一个额外的攻势增压"
+                },
+                "PersistentBoost": {
+                    "Label": "持续性增压"
                 }
             },
             "DedicationCraftingEntry": {
@@ -822,7 +835,7 @@
                     "Note": "当你在对抗恐惧效果的豁免检定中掷出成功时，可用大成功替代它。当你在此检定中投掷出失败时，则用大失败替代它。"
                 },
                 "DragonsBreath": {
-                    "DescriptionAlteration": "You channel your draconic exemplar's power into a gout of energy that manifests as a @Template[line|distance:60] or a @Template[cone|distance:30], dealing @Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage] damage. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can't use this ability again for 1 hour."
+                    "DescriptionAlteration": "你引导龙血典范中的力量形成一股能量冲击，吐息的形状为@Template[line|distance:60]或@Template[cone|distance:30]，造成@Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage]伤害。每个区域内的生物都必须尝试一次基础豁免检定对抗你的职业DC或法术DC（取其中较高者）。你在接下来的1小时内无法再次使用该能力。"
                 }
             },
             "Mummy": {
@@ -958,7 +971,33 @@
                 "MartialVanaraWeapons": "军用灵猴武器",
                 "AdvancedVishkanyaWeapons": "进阶蝮蛇武器",
                 "AdvancedVanaraWeapons": "进阶灵猴武器",
-                "MinotaurWeapons": "牛头人武器"
+                "MinotaurWeapons": "牛头人武器",
+                "MartialCentaurWeapons": "军用半人马武器",
+                "AdvancedSurkiWeapons": "进阶瑟基虫人武器",
+                "AdvancedTripkeeWeapons": "进阶树蛙人武器",
+                "MartialAthamaruWeapons": "军用阿萨鱼人武器",
+                "MartialBowsAndCrossbows": "军用弓弩",
+                "MartialDuskwalkerWeapons": "军用冥裔武器",
+                "AdvancedBowsAndCrossbows": "进阶弓弩",
+                "AdvancedKholoWeapons": "进阶鬣狗人武器",
+                "AdvancedTwoHandedMeleeWeapons": "进阶双手近战武器",
+                "BountyHunterWeapons": "赏金猎人的谋生家伙",
+                "AdvancedMerfolkWeapons": "进阶人鱼武器",
+                "MartialKholoWeapons": "军用鬣狗人武器",
+                "MartialTripkeeWeapons": "军用树蛙人武器",
+                "MartialTwoHandedMeleeWeapons": "军用双手近战武器",
+                "PerformativeWeapons": "角斗武器",
+                "PirateWeapons": "海盗武器",
+                "VikingWeapons": "维京人武器",
+                "BayonetsAndReinforcedStocks": "刺刀和加固枪托",
+                "AdvancedMonasticWeaponry": "进阶修道武器",
+                "AdvancedSamsaranWeapons": "进阶轮回者武器",
+                "AdvancedWayangWeapons": "进阶剪影人武器",
+                "MartialSamsaranWeapons": "军用轮回者武器",
+                "MartialWayangWeapons": "军用剪影人武器",
+                "MartialSurkiWeapons": "军用瑟基虫人武器",
+                "AdvancedAthamaruWeapons": "进阶阿萨鱼人武器",
+                "MartialMerfolkWeapons": "军用人鱼武器"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -1065,7 +1104,21 @@
                     "Ape": "猿",
                     "Wolf": "狼",
                     "Snake": "蛇",
-                    "Shark": "鲨鱼"
+                    "Shark": "鲨鱼",
+                    "Ankylosaurus": "甲龙",
+                    "Orca": "虎鲸",
+                    "Tyrannosaurus": "暴龙",
+                    "Ant": "蚂蚁",
+                    "Bat": "蝙蝠",
+                    "Spider": "蜘蛛",
+                    "Bird": "飞鸟",
+                    "Brontosaurus": "雷龙",
+                    "Wasp": "黄蜂",
+                    "Seal": "海豹",
+                    "Scorpion": "蝎子",
+                    "WebNote": "<p>蜘蛛的蛛网打击不会造成伤害，但在命中时目标会在1轮内于速度上受到-10尺环境减值。</p><p>@UUID[Compendium.pf2e.feat-effects.Item.tCMVyxQhzYCjBQtK]</p><p>若处于该减值下的目标被同一角色的蛛网攻击再次命中，其会改为陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，直到成功通过一次对抗你职业DC的@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]检定。</p>",
+                    "Crab": "螃蟹",
+                    "Crocodile": "鳄鱼"
                 },
                 "Instinct": {
                     "Prompt": "选择一种本能",
@@ -1091,6 +1144,9 @@
                 },
                 "Elemental": {
                     "ElementalEvolutionLabel": "元素狂暴伤害"
+                },
+                "Ligneous": {
+                    "ToggleLabel": "木之狂暴"
                 }
             },
             "Bard": {
@@ -1353,6 +1409,47 @@
                 },
                 "BlackScorpionStingmace": {
                     "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong> （毒素）</p>\n<p><strong>豁免检定</strong> @Check[fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}（1轮）</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（1轮）</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}（1轮）</p>"
+                },
+                "LionsShield": {
+                    "LionsBiteLabel": "雄狮撕咬",
+                    "LionsHeadLabel": "雄狮头"
+                },
+                "ChimeraFlail": {
+                    "GoatLabel": "羊头",
+                    "StrideHalfLabel": "奇美拉连枷 - 你至少行走了半速距离",
+                    "PouncingWhirlUsedLabel": "奇美拉连枷 - 跳跃旋风已使用",
+                    "BurstingBreathUsedLabel": "奇美拉连枷 - 爆发吐息已使用",
+                    "ChargingHornsLabel": "奇美拉连枷 - 冲锋尖角",
+                    "ChargingHornsUsedLabel": "奇美拉连枷 - 冲锋尖角已使用",
+                    "DragonHeadDamagePrompt": "选择一种龙头伤害类型。",
+                    "LionLabel": "狮头",
+                    "PouncingWhirlLabel": "奇美拉连枷 - 跳跃旋风"
+                },
+                "AmphisbaenaHandwraps": {
+                    "TwinVenomStrikeLabel": "双头蛇缠手带 - 双毒打击"
+                },
+                "ConstrictingMeteor": {
+                    "CoilingChainLabel": "紧勒流星锤 - 缠蛇链"
+                },
+                "FulminationFang": {
+                    "LightningRodResistanceLabel": "雷鸣之牙 - 避雷针抗力"
+                },
+                "ChaliceOfJustice": {
+                    "SipOfJustice": {
+                        "Note": "每当你用<em>公义之杯</em>对邪秽生物造成重击时，该生物在1轮内@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。"
+                    }
+                },
+                "MantisEmbrace": {
+                    "CrushingEmbraceLabel": "碾压之拥"
+                },
+                "MantleOfTheTikbalang": {
+                    "IllusoryThrashLabel": "提克巴朗披风 - 幻术猛击"
+                },
+                "MaskOfTheMantis": {
+                    "VernaisIreLabel": "渥娜依之怒"
+                },
+                "SplitheadBow": {
+                    "HealingLabel": "裂头弓 - 治疗"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1447,7 +1544,14 @@
                 "Spell": "选择一个法术。",
                 "PsiCantrip": "选择一个心能戏法。",
                 "Benefit": "选择一种好处。",
-                "ShieldOrWeapon": "选择盾牌或武器。"
+                "ShieldOrWeapon": "选择盾牌或武器。",
+                "SkillTrained": "选择一项受训技能。",
+                "SavingThrow": "选择一种豁免。",
+                "DieSize": "选择骰面。",
+                "SkillUntrained": "选择一项未受训技能。",
+                "Immunity": "选择一种免疫。",
+                "Cantrip": "选择一个戏法。",
+                "MovementType": "选择一种移动类型。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1529,6 +1633,11 @@
                 },
                 "DiverseMystery": {
                     "Toggle": "已用的异色秘示域咒缚法术"
+                },
+                "RevelInRetribution": {
+                    "Label": "纵狂报复",
+                    "Note": "击中那些毫无防备的敌人会让你充满斗志，无论何时你通过反应打击命中都会获得临时生命值。临时生命值持续到法术结束。@UUID[Compendium.pf2e.spell-effects.Item.rnkQKEwUxrGruE1e]{效果: 纵狂报复 (临时生命值)}",
+                    "RollOptionLabel": "使用反应打击"
                 }
             },
             "Magus": {
@@ -1539,7 +1648,8 @@
                     "DefendingLabel": "防御魔法"
                 },
                 "ArcaneCascade": {
-                    "WeaponDamage": "武器伤害"
+                    "WeaponDamage": "武器伤害",
+                    "IncreaseDamage": "增加奥术奔涌伤害"
                 },
                 "Spellstrike": {
                     "RechargeNote": "施放花费至少一个动作的汇聚法术时，你可以再充能你的法术打击。"
@@ -1821,6 +1931,14 @@
                     "Requirements": "你正在从血统奥秘效果中获益",
                     "Divine": "你血脉中的神圣起源指引着你，令你能凭借直觉将自己或他人从危险中移出。你进行一次快步，或使用宗教进行检定对你触及范围内的一个目标进行一次[[/act reposition skill=religion]]。",
                     "Arcane": "世界的秘密暂时向你的心灵敞开。尝试一次[[/act recall-knowledge skill=arcana]]；你可以用奥法替代回忆这一主题通常需要的技能。如果你在这次检定中大失败，你取而代之获得失败结果。"
+                },
+                "DiabolicEdict": {
+                    "Label": "执行魔鬼律令的任务",
+                    "Prompt": "选择是否接受律令。",
+                    "Accept": "接受",
+                    "Refuse": "拒绝",
+                    "Bonus": "魔鬼律令：接受",
+                    "Penalty": "魔鬼律令：拒绝"
                 }
             },
             "Defending": {
@@ -1840,7 +1958,8 @@
             "Ganzi": {
                 "Irrepressible": {
                     "SaveNote": "当你在对抗情绪或恐惧效果的豁免中骰出成功时，你改为获得大成功。"
-                }
+                },
+                "Resistance": "混沌裔抗力"
             },
             "Human": {
                 "WitchWarden": {
@@ -1891,6 +2010,10 @@
             "Poppet": {
                 "WashOut": {
                     "Note": "每当你对正在生效的毒素进行豁免成功时，你将其阶段减少2，或将恶性毒的阶段减少1。每当你对正在生效的毒素进行豁免大成功时，你将其阶段减少3，或将恶性毒的阶段减少2。"
+                },
+                "Tsukumogami": {
+                    "Cloth": "木头或布料",
+                    "Ceramic": "陶瓷"
                 }
             },
             "SnipingDuoDedication": {
@@ -2200,6 +2323,12 @@
                 "SacredGround": {
                     "Harmful": "在10分钟内完全停留在区域内的生物恢复等同于你等级的@Damage[(@actor.level)[void,healing]]{生命值}。此行动会具有治疗与虚能特征并且治疗不死生物（或其它拥有虚能治疗的生物）。",
                     "Healing": "在10分钟内完全停留在区域内的生物恢复等同于你等级的@Damage[(@actor.level)[void,healing]]{生命值}。此行动会具有治疗与命能特征并且治疗活着的生物。"
+                },
+                "EmblazonEnergy": {
+                    "MatchingDomainPrompt": "相同特征的领域法术？"
+                },
+                "EmblazonAntimagic": {
+                    "WeaponNote": "当武器的持用者使用其造成重击时，他可以尝试反制目标身上的一个法术，使用他等级的一半作为反制等级，向上取整。在这次反制尝试后，刻印圣徽立即消失。"
                 }
             },
             "Conrasu": {
@@ -2356,6 +2485,41 @@
                 },
                 "WeightOfGuilt": {
                     "Description": "负罪感笼罩在那些忽视你救赎瞥视的敌人心中。你可以选择取代给触发反应动作的生物造成力竭2，令其在同样的时间内承受@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}。"
+                },
+                "ExaltedReaction": {
+                    "Justice": "若触发反应的敌人处于盟友的触及内，且这些盟友都身处你神卫灵光范围内，他们可以花费一个反应动作以-5的减值对该名敌人进行打击。",
+                    "Grandeur": "除了受到辉煌闪耀影响的敌人之外，身处你神卫灵光范围内的其他敌人也会在1轮内受到显光尘法术的影响。",
+                    "Obedience": "除了触发反应的生物之外，所有身处你神卫灵光范围内的敌人同样必须选择@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]或者承受心灵伤害（每个敌人分别选择）。这些生物只会受到最小值的伤害（通常为@Damage[ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,11),3)[mental]]伤害），并且其承受的效果不会被任何针对你严酷铁律的改变所影响。举例而言，除了触发反应的生物外，残酷回响专长无法将其他生物受到的伤害转变为持续心灵伤害。",
+                    "Iniquity": "除了触发反应的生物外，你同时对神卫灵光范围内的其他敌人造成伤害，数值等同于对触发反应的生物造成伤害的一半。",
+                    "Liberation": "除了受到解放踏步影响的盟友之外，你和其他身处你神卫灵光范围内的盟友也能以一个自由动作进行快步。即使受益于解放踏步的盟友无法移动，你和其他盟友依然能获得上述增益。",
+                    "Redemption": "如果敌人选择抗拒，你可以选择给予自身以及身处你神卫灵光范围内的所有盟友（包括触发反应的盟友）抗力。如果你这样做，所有人获得的抗力减少2点。@UUID[Compendium.pf2e.feat-effects.Item.GFLiTESBmoyQ3sLx]{效果: 激昂反应 (救赎)}",
+                    "Desecration": "直到你下一轮开始为止，所有身处你神卫灵光范围内的敌人在针对你的攻击投骰上获得-1状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ef63SlxSKlZmHosM]{效果: 激昂反应 (亵渎)}"
+                },
+                "GruesomeStrike": {
+                    "Note": "目标必须成功通过一次对抗你职业DC的@Check[fortitude|against:class]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。"
+                },
+                "GreaterSecurity": {
+                    "Description": "当伴随他人的精魂之盾生效时，如果你举起盾牌，被精魂之盾伴随的盟友也会获得你的盾牌给予的AC加值，并且只要该盟友满足触发条件，你便能触发盾牌格挡。这会使用你盾牌的数据，而你的盾牌也会如常承受伤害。"
+                },
+                "Security": {
+                    "Description": "代替原本的一个动作，你能够使用2个动作施展 <i>精魂之盾</i>。若你如此做，你能够选择一名身处你神卫灵光范围内的盟友，令其获得伴随左右的精魂之盾。在1分钟内，盟友获得精魂之盾的增益，即使盟友离开你的神卫灵光或者你不再举起盾牌，这个增益也不会消失。如果你创造出另一面伴随他人的盾牌，先前的那面便会消失。"
+                },
+                "Mercy": {
+                    "Body": {
+                        "Label": "躯体的救济"
+                    },
+                    "Grace": {
+                        "Label": "优雅的救济"
+                    },
+                    "Mind": {
+                        "Label": "心灵的救济"
+                    }
+                },
+                "RelentlessReaction": {
+                    "Grandeur": "触发反应的敌人同时受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害，在受到来自于辉煌闪耀的显光尘影响期间，其无法从该持续伤害中恢复。",
+                    "Iniquity": "受到该反应动作初始伤害的敌人也会受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
+                    "Liberation": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
+                    "ObedienceRedemption": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。"
                 }
             },
             "DeviantAbilities": {
@@ -2386,7 +2550,23 @@
                     "TitanSwingProne": "泰坦挥击: 推离",
                     "TitanSwingBleed": "泰坦挥击: 流血",
                     "AwakenedLabel": "觉醒",
-                    "HighSpeedRegenerationRecovery": "高速再生：紧急再生"
+                    "HighSpeedRegenerationRecovery": "高速再生：紧急再生",
+                    "VineLashCone": "藤蔓鞭打：30尺锥形",
+                    "ReleaseSporesToxic": "释放孢子：有毒孢子",
+                    "DefensiveGrowthStrongerShield": "防御性生长：更坚固的盾牌",
+                    "ReleaseSporesSickening": "释放孢子：散发恶臭",
+                    "VineLashConstrict": "藤蔓鞭打：紧勒",
+                    "DisperseIntoPetalsExtendedFlight": "散花形态：延长飞行",
+                    "IrradiatePoison": "辐射：毒素伤害",
+                    "IrradiateRadiusIncrease": "辐射：增加半径",
+                    "RottenSlurrySplash": "腐烂泥浆：溅射伤害",
+                    "UnleashTheBlightDebilitating": "释放荒疫：削弱",
+                    "UnleashTheBlightInfectious": "释放荒疫：传染",
+                    "DisperseIntoPetalsBlossomVortex": "散花形态：花瓣旋风",
+                    "RottenSlurryPersistent": "腐烂泥浆：持续伤害",
+                    "SproutFruitPlentiful": "发芽果实：丰富",
+                    "SproutFruitPotent": "发芽果实：强大",
+                    "DefensiveGrowthExplodingShield": "防御性生长：爆炸盾牌"
                 },
                 "TitanSwing": {
                     "NoteFifteenFeet": "目标被推离15尺。",
@@ -2431,10 +2611,103 @@
             },
             "CatharticMage": {
                 "EmotionalState": {
-                    "Prompt": "选择一种宣洩情绪。"
+                    "Prompt": "选择一种宣洩情绪。",
+                    "Activation": "情绪激化",
+                    "Fallout": "情绪余波",
+                    "Fervor": "炽情",
+                    "Focus": "聚能法术",
+                    "Trigger": "宣情触发点"
                 },
                 "Love": {
-                    "Toggle": "施展一个法术让你的情绪焦点获得好处"
+                    "Toggle": "施展一个法术让你的情绪焦点获得好处",
+                    "Activation": "如果你或你的情绪焦点陷入@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]或是@UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]，其中一人可以尝试对一个困惑或控制效果进行一次新的豁免检定（如果可以豁免），若新的豁免成功，则状态结束。如果你们两人都符合条件，则由你的情绪焦点得到这次新的豁免。",
+                    "Description": "爱的牵绊联系着你，没有什么可以打破它，但爱也会分散你对生活中其他事物的注意力。你的情绪焦点是你爱的人；但他们不一定要爱你。",
+                    "Fallout": "你对自己的情绪焦点@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]1 分钟。",
+                    "Fervor": "你在意志豁免上获得 +1 状态加值。如果你施展一个法术让你的情绪焦点获得好处，这个加值会增加到 +3，直到你的下一个回合开始。法术：@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.YGRpHU5yxw73mls8]",
+                    "Label": "爱",
+                    "Trigger": "你的情绪焦点在距离你 30 尺的范围内受到敌人伤害。"
+                },
+                "Anger": {
+                    "Activation": "如果你@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]、@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]，你可以尝试@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]。如果成功，对你施加状态的生物或危害（若适用）会受到等同于你角色等级的力场伤害。",
+                    "Description": "毁灭性的怒气催使你去伤害敌人，但这个过程也会造成你的痛苦。",
+                    "Fallout": " 在你安顿情绪前会处于@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]状态。",
+                    "Fervor": "当你用自己的法术位施展一个法术，如果法术造成伤害并且没有持续时间，该法术的伤害获得等于法术环级的状态加值。法术：@UUID[Compendium.pf2e.spells-srd.Item.jsWthW1Qy6tg3SwD]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.UGJzJRJDoonfWqqI]",
+                    "Label": "愤怒",
+                    "Trigger": "一个敌人对你造成伤害。如果你处于@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]状态，就不能使用这个反射动作。"
+                },
+                "Awe": {
+                    "Activation": "如果你处于@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]或@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]，而且该效果允许豁免的话，你可以多尝试一次豁免来结束这个效果。",
+                    "Description": "你那强烈的赞叹足以感染或妨碍周遭的人。",
+                    "Fallout": "在你安顿情绪前，你会处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。",
+                    "Fervor": " 施展法术时，选择一个被你的法术攻击检定击中或是豁免失败的生物（如果有的话）。该生物对你迷魂，直到它的下一个回合结束。接着它牠会在1小时内暂时免疫这种个炽情效果。法术：@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.zul5cBTfr7NXHBZf]（无需圣徽）",
+                    "Label": "惊叹",
+                    "Trigger": "你或30尺内盟友在对敌人AC的攻击检定，或是在对抗敌人DC的的技能检定上得到大成功。"
+                },
+                "Dedication": {
+                    "Activation": "你的情绪焦点获得临时生命值，数量等于你的角色等级的一半，向上取整。这份临时生命值持续1分钟。",
+                    "Description": "你承诺保护某人，但这份承诺也可能导致依赖。你的情绪焦点依附于一个特定生物。",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.rQYob0QMJ0I1U2sU]",
+                    "Fallout": "在安顿情绪前，除非你和你的情绪焦点相邻，否则你无法施展法术。",
+                    "Fervor": "你以自己的情绪焦点为目标施展法术时，获得及远法术专长的好处。当你施展有治疗特征的法术影响到你的情绪焦点时，除了获得法术效果外，你的情绪焦点还会获得等同于该法术环级的临时生命值。这份临时生命值持续1分钟。法术：@UUID[Compendium.pf2e.spells-srd.Item.yHujiDQPdtXW797e]",
+                    "Label": "奉献",
+                    "Trigger": "你的情绪焦点在离你30尺内受到敌人伤害。"
+                },
+                "Fear": {
+                    "Activation": "你的惊惧值增加 1，最大到达@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}。",
+                    "Description": "你让恐惧成为你的燃料而非负担，但这也会燃烧你的耐力。",
+                    "Fallout": "你会从触发宣情的惊惧状态来源@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]，持续 2 轮。如果该来源不复存在，你会从情绪余波开始时的位置逃离。",
+                    "Fervor": "你的法术 DC 或法术攻击加值不须承受惊惧状态的状态减值。取而代之的是，你的法术攻击检定上获得状态加值，数值等同你原本要承受的减值；你的敌人在对抗你的法术的豁免检定中也会受到相等的状态减值。其他数据都像平常一样承受状态减值。法术：@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.DU5daB09xwfE1y38]",
+                    "Label": "恐惧",
+                    "Trigger": "你让恐惧成为你的燃料而非负担，但这也会燃烧你的耐力。"
+                },
+                "Hatred": {
+                    "Activation": "你可以快步或行走。在结束这次移动时，你必须比原本更靠近你的情绪焦点。",
+                    "Description": "你让未加修饰的仇怨吞噬你的灵魂，连你的敌人也因此动摇。你的情绪焦点是一个受你憎恨的特定敌人。",
+                    "Fallout": "你陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。",
+                    "Fervor": "你的情绪焦点对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，并且在对抗你的法术时豁免检定受到 –2 状态减值。你也对自己的情绪焦点措手不及，且对抗他的豁免检定也承受 –2 状态减值。法术：@UUID[Compendium.pf2e.spells-srd.Item.TaaMEYdZXQXF0Sks]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.0H1ozccQGGFLUwFI]",
+                    "Label": "仇恨",
+                    "Trigger": "在与你的情绪焦点，或是他的一个追随者的遭遇中，开始你的第一个回合。如果遭遇中包括多个符合条件的追随者，但不包括你真正的情绪焦点，请选择其中一个追随者作为这次遭遇的情绪焦点（或直到你真正的情绪焦点出现）。"
+                },
+                "Joy": {
+                    "Activation": "你现有的任何@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]或@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}的状态值降低 1，并结束现正遭受的任何持续心灵伤害。",
+                    "Description": "恣肆的热情和正面的态度可以带你走向成功，但也可能比原本的计划消耗你更多精力。",
+                    "Fallout": "在你你安顿情绪前，你陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]。",
+                    "Fervor": "你在表演检定和有情绪特征的法术的攻击检定上获得 +1 状态加值，而敌人在对抗你的情绪法术时，豁免受到 –1 状态减值。法术：@UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.gwOYh5zMVZB0HNcT]",
+                    "Label": "喜悦",
+                    "Trigger": "你在一次攻击检定或豁免检定中得到大成功，或是一个敌人在对抗你的豁免检定中大失败。"
+                },
+                "Misery": {
+                    "Activation": "你获得与角色等级相等的临时生命值，持续 1 分钟。",
+                    "Description": "受苦让你知道自己还活着；让你的敌人感受一样的痛苦，可以缓解你的痛苦。",
+                    "Fallout": "在你安顿情绪前施放任何法术，所造成的任何伤害都会受到无类型减值。减值为每法术环级 –1。",
+                    "Fervor": "你可以选择不进行纯骰检定来结束你正在承受的持续伤害。当你施展伤害性法术时，可以选择一个豁免检定失败，或是被法术攻击检定命中的生物；该目标受到与法术相同类型的持续性伤害，数值等于你当前所承受最高的持续伤害。你不能选择已经遭受持续伤害的生物。法术：@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.xn0V2HDrmDWNzPEt]",
+                    "Label": "苦痛",
+                    "Trigger": "一个敌人对你造成持续伤害。"
+                },
+                "Pride": {
+                    "Activation": "大失败变成失败。",
+                    "Description": "只要看起来没事，你就不会出乱子，但你常困在当下，忘记其他重要的事。",
+                    "Fallout": "你会暂时分不清真假，陷入@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]1轮。法术：@UUID[Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI]",
+                    "Fervor": "每当你施展一个有幻术特征的法术，在你的下一回合开始前，任何你在攻击检定或豁免检定上掷出的大失败都是失败。法术：@UUID[Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.Q25JQAgnJSGgFDKZ]",
+                    "Label": "骄傲",
+                    "Trigger": "你在一次攻击检定或豁免检定中掷出大失败。"
+                },
+                "Remorse": {
+                    "Activation": "你进行快步或行走。这次移动结束时必须比原本更靠近触发此效果的盟友。",
+                    "Description": "你想要克服自己的失败，但内疚依然与你同在。",
+                    "Fallout": "你被情绪压力压垮了，你陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，直到你安顿情绪。",
+                    "Fervor": "你所施展的任何法术，只要能恢复触发盟友的生命值，治疗量都会获得与法术环级相等的的状态加值；如果目标盟友的生命值为 0，加值增为法术环级的两倍。法术：@UUID[Compendium.pf2e.spells-srd.Item.kIwA7kwp5E0AC3yM]",
+                    "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.rhJyqB9g3ziImQgM]",
+                    "Label": "悔恨",
+                    "Trigger": "30 尺内一名盟友的生命值降至 0。"
                 }
             },
             "LitCandle": "蜡烛被点燃",
@@ -2627,7 +2900,8 @@
                 "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气}具有暂时免疫能力，则他们的暂时免疫效果结束。",
                 "Battledancer": "你可以在完成终结后立即以一个自由动作进行一次快步。",
                 "Name": "惩戒终结",
-                "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你下一回合。"
+                "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你下一回合。",
+                "Rascal": "该敌人直到你的下回合开始在速度上受到-10尺环境减值。@UUID[Compendium.pf2e.feat-effects.Item.fgz7lwg1xHsVW4dX]{效果: 惩戒终结 (轻狡无赖)}"
             },
             "HarrowChosen": {
                 "Unmatched": "不匹配",
@@ -2642,6 +2916,9 @@
                 },
                 "EnchantingArrow": {
                     "Note": "重击时，目标同样陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 1}。"
+                },
+                "IncorporealShot": {
+                    "Label": "无形射击 - 目标穿戴护甲"
                 }
             },
             "RelicGift": {
@@ -2665,7 +2942,9 @@
                 "Centipede": "蜈蚣",
                 "Bat": "蝙蝠",
                 "Crocodile": "鳄鱼",
-                "Crab": "螃蟹"
+                "Crab": "螃蟹",
+                "Seal": "海豹",
+                "Orca": "虎鲸"
             },
             "TerrainStalker": {
                 "Underbrush": "灌木丛",
@@ -2817,7 +3096,13 @@
                 "Toggle": "目标是你指定的罪犯"
             },
             "ExorcistDedication": {
-                "SpiritDwelling": "你的精神居所里住着一个灵魂"
+                "SpiritDwelling": "你的精神居所里住着一个灵魂",
+                "SpiritRemnant": "残魂",
+                "SpiritWisp": "魂火",
+                "SpiritsMercy": {
+                    "Prompt": "选择灵魂宽恕的开销",
+                    "PromptLevel": "选择残魂的等级"
+                }
             },
             "MantleOfTheUnwaveringHeart": {
                 "UnyieldingWill": "不屈意志",
@@ -2890,11 +3175,42 @@
                     "Note": "如果你知道当前出现的虚体不死生物和作祟是什么，你能以魂魄学识或作祟学识进行先攻检定。"
                 },
                 "BespellStrikes": {
-                    "Sorcerer": "你从上一个法术中汲取残余的能量注入你所持握的一把武器或是你的一种无武装攻击中。直到你的回合结束时为止，该武器或无武装攻击造成额外1d6点力场伤害并获得你血脉的魔法根源的特征。如果你施放的法术造成其他种类的伤害，则打击取而代之造成该种类的伤害（如果法术能够造成复数种类的伤害，由你选择一种伤害类型适用）。"
+                    "Sorcerer": "你从上一个法术中汲取残余的能量注入你所持握的一把武器或是你的一种无武装攻击中。直到你的回合结束时为止，该武器或无武装攻击造成额外1d6点力场伤害并获得你血脉的魔法根源的特征。如果你施放的法术造成其他种类的伤害，则打击取而代之造成该种类的伤害（如果法术能够造成复数种类的伤害，由你选择一种伤害类型适用）。",
+                    "Wizard": "你抽取法术能量注入你握持的一件武器，或是你的一项无武装攻击，比如拳头。直到你回合结束，武器或无武装攻击造成一个额外的 1d6 力场伤害，并且如果其未拥有奥术特征，则会获得此特征。如果法术造成不同类型伤害，则打击取而代之造成此类型伤害（如果法术造成多种类型伤害，则由你选择其中之一）。",
+                    "Requirements": "你最近一个动作是释放一个非戏法的法术",
+                    "Oracle": "你抽取法术能量注入你握持的一件武器，或是你的一项无武装攻击，比如拳头。直到你回合结束，武器或无武装攻击造成一个额外的 1d6 力场伤害，并且如果其未拥有神术特征，则会获得此特征。如果法术造成不同类型伤害，则打击取而代之造成此类型伤害（如果法术造成多种类型伤害，则由你选择其中之一）。"
                 },
                 "YoureNext": {
                     "Swashbuckler": "在你击倒敌人后，你可以恐吓另外一个敌人你即将把他选择为下个目标。尝试一次有+2环境加值的威吓检定来对一个与你互相可见的敌人进行@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]。如果你的威吓熟练度为传奇，你能以一个触发条件相同的自由动作来使用此专长。",
-                    "Rogue": "在你放倒一个敌人后，你威胁另一个。你对60尺内的一个生物尝试@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]，这次检定获得+2环境加值。你和该目标必须能看见彼此。如果你有传奇熟练度的威吓技能，你能以一个相同触发条件的自由动作来使用此能力。"
+                    "Rogue": "在你放倒一个敌人后，你威胁另一个。你对60尺内的一个生物尝试@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]，这次检定获得+2环境加值。你和该目标必须能看见彼此。如果你有传奇熟练度的威吓技能，你能以一个相同触发条件的自由动作来使用此能力。",
+                    "Trigger": "你将一个敌人的HP降至0。"
+                },
+                "ThlipitContestantDedication": {
+                    "Lash": "扫击"
+                },
+                "ExperiencedProfessional": {
+                    "Note": "若你在学识技能上的熟练度达到专家，你赚取收入检定失败时可获得的收入翻倍，原本结果为大失败的情况除外。"
+                },
+                "FastRecovery": {
+                    "Note": "你每次对持续中的疾病或毒素强韧豁免成功时，使其阶段降低2，对于恶性疾病或毒素则降低1。你每次对持续中的疾病或毒素强韧豁免大成功时，使其阶段降低3，对于恶性疾病或毒素则降低2。"
+                },
+                "ClawdancerDedication": {
+                    "FrenziedClaw": "狂怒之爪",
+                    "SpinningTalon": "旋风脚爪"
+                },
+                "DuosAim": {
+                    "Note": "忽略目标的隐蔽状态。"
+                },
+                "SolarRejuvenation": {
+                    "Ghoran": "如果你白天时在户外休息了10分钟，你将恢复等于你的@Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{体质调整值×一半你等级的生命值}。在获得此增益的同时，你仍能获得任何来自@UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]的治疗效果。",
+                    "Leshy": "如果你白天时在户外休息了10分钟，你将恢复等于你的@Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{体质调整值×一半你等级的生命值}。在获得此增益的同时，你仍能获得任何来自@UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]的治疗效果。不依赖于光合作用获取营养的莱西则需要一个适合他们的环境。例如，真菌莱西需要阴暗、潮湿的环境和一堆腐烂的植物物质。"
+                },
+                "BurnIt": {
+                    "Label": "烧光！"
+                },
+                "KnowItAll": {
+                    "Bard": "当你在一次回忆知识的检定中成功，你获得关于给定主体的额外信息或上下文。当你在一次回忆知识的检定中大成功，根据GM的判断，你可能能获得比平常还要多的额外信息或上下文。",
+                    "Thaumaturge": "你听闻过每条传言或书本中的故事，你明白，如果你一开始就听说了某件事，你可能早就充分地听说过了。当你在一次回忆知识的检定中成功，你获得关于给定主体的额外信息或上下文。当你在一次回忆知识的检定中大成功，根据GM的判断，你可能能获得比平常还要多的额外信息或上下文。"
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -3129,7 +3445,8 @@
                 }
             },
             "VenomGlands": {
-                "Note": "重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                "Note": "重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
+                "Label": "喷毒"
             },
             "Spellshape": {
                 "VigorousAnthem": "你和所有受影响的盟友获得等同3+你魅力调整值的临时生命值，持续1分钟 @UUID[Compendium.pf2e.feat-effects.Item.7AzGhIOx4Df5Cicr]{Effect: Vigorous Anthem}",
@@ -3138,7 +3455,67 @@
                 "ThunderclapSpell": "如果你的下一个动作是施放一个具有电特征或造成电击伤害、没有持续时间并要求生物尝试豁免的法术，那么该法术的闪电力量除了其原本效果外还会产生雷鸣。每个在该法术的反射豁免中失败的生物会被@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1轮，而大失败的生物还会被@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                 "SplitHex": "如果你接下来的动作是施放一个以单一目标为对象的伤害法术，将其环级降低2级（使其比你能施放的最高环级低2级）。如果你如此，你可以选择第二个目标来受到该法术的影响。",
                 "WidenSpell": "如果你接下来的动作是施放一个具有爆发、锥形或直线范围且没有持续时间的法术，则扩展法术的作用区域。对于通常有至少10尺半径爆发影响区域的法术来说，爆发区域半径增加5尺；对于通常长度为15尺或更低的锥形和线形法术，区域长度增加5尺；对于更大的锥形和线形法术则区域长度增加10尺。",
-                "OverwhelmingBreath": "如果你下一个动作是施放一个有武僧特征并且没有持续时间的法术，此法术以及因为法术而进行的任何打击，皆可忽视敌人在物理伤害的抗力，忽视的数值与你的等级相同。"
+                "OverwhelmingBreath": "如果你下一个动作是施放一个有武僧特征并且没有持续时间的法术，此法术以及因为法术而进行的任何打击，皆可忽视敌人在物理伤害的抗力，忽视的数值与你的等级相同。",
+                "QuickenedCasting": "如果你下个动作是施放一个吟游诗人戏法、或是一个比你拥有的最高环级吟游诗人法术位至少低2环的吟游诗人法术，则减少1施法动作数量（最小1动作）。",
+                "GrowthSpell": "增大该法术的区域。对于爆发，增加5尺半径；对于锥形，增大锥形10尺；对于线形，增加15尺长度。法术获得木特征。",
+                "BondConservation": "你获得一次额外机会使用汲取连结物品。你可以使用它来施放一个法术，此法术的环级低于先前法术2级及以上，并且必须在你下一轮结束前使用它，否则你会失去这个机会。",
+                "BurningSpell": "除了该法术的其他效果之外，它还会造成@Damage[(@item.rank)[persistent,fire]]伤害。该专长对原本就能够造成持续火焰伤害的法术无效。该法术获得火特征。",
+                "CastDown": "如果你的下一个动作是施放伤害术或治疗术法术来对一个生物造成伤害，目标只要从该法术中受到伤害就会陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。若目标在对抗该法术的豁免中掷出大失败，其还会在1分钟内于速度上受到-10尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]{效果: 击倒施法}",
+                "ScintillatingSpell": "如果你下个动作是施放法术，并且法术不具有黑暗特征、不具有持续时间、需要生物尝试反射豁免，则法术除了其他效果以外，还会爆发出一阵耀眼光芒。每个在其对抗法术的反射豁免中失败的生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮，大失败则改为@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮。",
+                "CourageousAdvance": "你任选一位从该法术获得状态加值的盟友，其可以立即使用一个反应动作进行一次行走。",
+                "CourageousOnslaught": "你选定其中一名从该法术中获得状态加值的盟友，其可以立即使用一个反应动作进行行走，然后进行一次近战打击。",
+                "HealingTransformation": "你的变形法术同时能为该生物治疗@Damage[(@item.rank)d6[healing]]生命值。这是一个治疗效果。",
+                "InTune": "如果你的下一个动作是施放影响弥漫区域的组曲法术，该法术的扩散中心会改为60尺内你所选择的一位自愿盟友，而不是你。如果你拥有引导听众，你还可以选择将生效范围改成以该盟友起始的锥形。",
+                "CourageousAssault": "你可以选择一名从此法术中获得状态加值的盟友，其立即用反应动作进行一次近战打击。",
+                "CallAndResponse": "当该法术生效时，由你选择一名受该法术影响的盟友可以使用单动作对你的寻呼部奏唱一段应答部，该动作具有听觉与专注特征，并且会使该法术的持续时间延长1轮。只能有一名盟友奏响给定寻呼部的应答部，且对该盟友的应答部再次进行应答不会产生额外效果。",
+                "Martyr": "你失去@Damage[(@item.rank)d8]点生命值，且无法以任何方式减少或转移，随后你的盟友恢复等量的生命值。",
+                "Harmonize": "如果你的下一个动作是施放一个组曲法术，其会成为一个和声组曲。与通常的组曲不同，和声组曲不会在你施放另一个组曲法术时结束，你可以在施放和声组曲的同一轮中施放另一个组曲法术。施放另一个和声组曲法术会使得你已经生效的和声组曲法术立即终止。",
+                "CrypticSpell": "若你采取的下个动作是施法，则尝试一次自然检定对抗所有观察者的察觉DC。若你的检定成功对抗一名观察者的察觉DC，则该观察者不会发现你在施法，即便法术的语言、姿势、材料成分在通常情况下很明显，且法术在通常情况下有明显的感官表现使得施法对于周遭的人来说十分明显也是如此。所有这些都隐藏在自然景观以及环境的声音之中。该能力仅会隐藏法术的施法动作以及法术表现，而非其效果，因此观察者仍然能够看到你变成了一头巨熊。",
+                "HeroicRecovery": "目标还会获得三项加值直到其下回合结束：在其速度上获得+5尺状态加值，在攻击骰上获得+1状态加值，以及在伤害骰上获得+1状态加值。此外，若目标处于倒地，其可以立即使用一个不会触发反应动作的自由动作重新站立。",
+                "IntoTheFuture": "如果你的下一个动作是施放一个需要1或2动作的法术，那么该法术的效果不是立即发生，而是会在一轮后，你的下一个回合开始时发生。法术要求的选择与目标必须在施放法术时决定，而某些需求，例如视线与效果线，则是必须在你施放和效果出现时都成立。施放法术这个行动本身所产生的后果，如反应打击或者@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]状态的判定，并不会延迟。",
+                "MelodiousSpell": "法术会获得晦匿特征。晦匿特征只会隐藏该法术的施法动作与表征，但不会改变其效果。作为使用旋律法术的一部分，你可以进行一次@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]，@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]，@UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]或请求动作。若你如此做，仅当你下一个法术是具有听觉，情绪，音波或视觉特征的情况下才会因此获得晦匿特征。",
+                "SecondaryDetonationArray": "如果你下个动作是施放法术，并且法术会造成伤害、没有持续时间、影响一个区域，则一个发光的魔法环印出现在区域内的一个@Template[burst|distance:5]区域中。在你下个回合开始时，环印爆炸，对圆形区域内所有生物造成@Damage[(@item.level)d6[force]]伤害，基础反射豁免对抗你的法术 DC。如果法术造成不同类型的伤害，环印取而代之造成@Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]]{对应伤害类型的伤害}（如果法术造成多种伤害类型，则由你选择其一）。",
+                "SnowdriftSpell": "如果你的下一个动作是施放具有气，水或寒冷特征，且没有火焰特征的法术，选择地面上一个受该法术影响的生物。与该生物邻接的每格地面会积起及膝深的雪。这些区域变为困难地形直到你的下回合开始。一个生物可以通过交互动作清除一格积雪，且当积雪受到具有火焰特征的效果影响时就会融化。",
+                "SowSpell": "如果你下一个动作是使用1或2个动作施法，法术会转而根植在一个邻接方格里。你必须在施放时决定关于该法术的所有可选项。之后的10分钟内，你能以一个反应动作指挥你播种的法术发芽并产生该法术的效果，该反应的触发条件是有一个生物进入播种法术的方格或其邻接方格。同一时间你只能有一个播种法术，如果你在10分钟内没有触发播种法术，法术会消散并失去。成功通过一次察觉检定来对抗你的法术DC的生物可以注意到播种法术。",
+                "SpellShroud": "如果你的下一个动作是施放一个以你为目标的法术，你将自己笼罩在一股@Template[emanation|distance:15]范围的魔法浓雾之中，浓雾持续至你的下一轮开始。所有云雾中的生物都被视为@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，同样云雾外的生物对云雾内的生物而言也视为隐蔽。",
+                "WhatCouldHaveBeen": "如果你的下一个动作是施法召唤生物，那么召唤出来的生物都会是另一个版本的你。该生物仍然属于你所召唤的生物类型，大体上拥有相同的能力（除了以下调整），它看起来就与你相似，还有着相同的表征，比如言谈举止、纹身、说话方式或者衣服。召唤出来的生物会在你拥有受训熟练度的所有技能的检定中获得+1状态加值，若为专家则+2，若为大师则+3，若为传奇则+4。该生物还会在你不具有受训的技能上获得-2减值。",
+                "EbbAndFlow": "选择区域中一个会被该法术所伤害的生物，并且选择区域中另一个会被该法术治愈的生物。你的治疗术或者伤害术同时以这些生物为目标。",
+                "CurrentSpell": "如果你下一个动作是施法有气或水特征的法术，则直到你下回合开始你的AC会获得+1环境加值，如果是对抗远程攻击，则改为+2。此效果有气或水特征，或两者皆有，取决于你施放的法术。同时直到你下一回合开始，你在对抗气、水或两种特征皆有的效果（取决于法术的特征）时，在所有豁免上获得+1环境加值。@UUID[Compendium.pf2e.feat-effects.Item.8HGz3rQCHNgdAqFC]{效果: 流动法术}",
+                "DefensiveRecovery": "如果目标因法术恢复了生命值，其还会在1轮内于AC和豁免骰上获得+2状态加值。@UUID[Compendium.pf2e.feat-effects.Item.jwxurN6JPQm9wXug]{效果: 防御恢复}",
+                "FormControl": "如果你的下一个动作是施放无羁形态，那么无羁形态的法术环级会比通常低2环（最低为1环级），但你可以维持变身1小时或维持原本的持续时间（以持续时间更长者为准）。你仍然可以如常消解无羁形态。",
+                "LeyLineConduit": "如果你的下一个动作是施放一个不高于5环且没有持续时间的法术，你不会在施放这个法术时消耗准备的法术位。",
+                "OverwhelmingEnergy": "如果你的下一个动作是施放法术，该法术可以忽视目标对酸蚀、寒冷、电击、火焰或音波伤害数量等同于你等级的抗性。该效果会应用在所有由此法术造成的伤害上，包含来自该法术的持续伤害以及后续效果所造成的伤害，例如火墙术所创造出的火墙。生物的免疫效果不受此影响。",
+                "WindTossedSpell": "你能忽略目标的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]状态以及任何他们对你具有的掩蔽。法术获得气特征。",
+                "BloodlineConduit": "如果你的下一个动作是施放一个不高于5环级且没有持续时间的法术，你不会在施放这个法术时消耗法术位。",
+                "EchoingChannel": "选择射程内的另一名生物。以该生物为目标再次施放一个1动作版本的相同法术。此法术与你施放的2环级伤害术或治疗术具有相同环级且无需消耗法术位。",
+                "SurgingMight": "若你下一个动作是施放法术，该法术在下列伤害类型中，忽略目标等同于你等级数的抗力：精魂，命能，虚能。该效果对所有因该法术造成的伤害生效，包括持续伤害或法术持续效果造成的伤害。该专长不会使法术克服免疫，只克服抗力。",
+                "NonLethal": "如果你下个动作是施放法术，并且法术可以造成伤害且没有死亡或虚能特征，那么该法术会获得非致命特征。",
+                "Remediate": "如果你的下一个动作是使用神力源泉来施放3动作版本的伤害术或治疗术法术，你可以控制残余的能量抵消对立的力量。除其通常效果之外，你还可以使用你的伤害术或治疗术法术来尝试反制法术区域内的一个神术效果。",
+                "PortentousSpell": "若你下一个动作是施放法术，任何因你施放法术而被触发的反应动作中的攻击骰和技能检定都会受到-2环境减值。另外，若该法术包括法术攻击骰或需要受影响者进行豁免，被击中的生物和豁免失败的生物会@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]直到你下一回合开始。@UUID[Compendium.pf2e.feat-effects.Item.klZVVIetJlR99cT6]{效果: 惊奇法术}",
+                "DivineInfusion": "目标在其下回合结束前的近战武器或无武装攻击造成额外伤害。若你施放的是<em>伤害术</em>，则该伤害的类型为虚能，若是<em>治疗术</em>则为命能。@UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{效果: 神力灌注}.",
+                "DousingSpell": "你用水浸透目标。若目标具有持续酸蚀或火焰伤害，结束这些状态的DC降低至10点，并且该生物能够立即尝试一次纯骰检定来结束这些类型的持续伤害。该法术获得水特征（这会使该法术对将水视为弱点的生物造成额外伤害）。",
+                "ConcealSpell": "如果你下个动作是施法，该法术获得晦匿特征，藏匿了发光的符文，魔法的火花，和其他通常会泄露你施法的呈现。该特征藏匿的只有法术的施法动作和呈现，不包括其效果，所以观察者还是能看到有条射线从你那边飞射而出，或看到你消失在空气中。",
+                "DefensiveCoordination": "你可以举起盾牌，并且你任选一名从该法术中获得状态加值的盟友，其也能立即使用一个反应动作举起盾牌。",
+                "ReverberatingSpell": "如果你的下个动作是施放非戏法法术，且法术造成范围伤害（例如爆发，线形，锥形），该法术会造成额外@Damage[1d8[sonic]]伤害，且所有对抗法术豁免失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]状态一轮。对抗该法术豁免大失败的生物改为陷入耳聋1分钟。法术获得音波特征。",
+                "RockslideSpell": "(@item.rank)个5尺方格会变为困难地形，持续1轮。这些方格必须在地面上，而且全部困难地形的区域必须是连续的。该法术获得土特征。",
+                "InterweaveDispel": "如果你的下一个动作是针对一名敌人施放一个单目标法术，并且你的法术攻击骰命中或是敌人的豁免骰失败，你能够以自由动作对此敌人施放@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]，这将如常消耗法术位，并且目标为此敌人身上一个正在生效的法术效果。",
+                "SplitShot": "如果你的下一个动作是使用施放法术动作施放一个需要进行一次攻击骰对抗单个生物的，且没有持续时间的法术，你可以在法术射程内选择一个第二目标。投掷一次攻击骰并将其结果与两个目标的AC进行比较。在计算你的多重攻击罚值时这被视为一次攻击。对于你的第二目标，法术仅造成通常伤害的一半，且除了造成的初始伤害之外没有别的效果（譬如造成状态或减值）。",
+                "UnlimitedPotential": "如果你的下一个动作是施放一个不高于5环且没有持续时间的法术，你不会在施放这个法术时消耗法术位。",
+                "EnergyAblation": "如果你下个动作是施放法术，并且其会造成至少一种能量伤害（酸蚀、 寒冷、电击、火焰、力场、音波、命能或虚能），你获得你所选能量伤害类型的抗力，其数值等于法术环级。抗力持续到你下个回合结束。无论你的法术是否造成伤害，你都能获得抗力。",
+                "EnergyFusion": "如果你的下一个动作是使用施放一个造成能量伤害的法术，选择一个你法术库中能够造成另一种能量伤害类型的非戏法的法术，并且额外消耗一个和这一次要法术同环级的法术位。你所释放的法术将造成等同于所花费的次要法术位环级的额外伤害。该法术的总伤害将平摊到所施放法术的伤害类型级次要法术的伤害类型上。",
+                "KnowledgeOfShapes": "你以自由动作施展@UUID[Compendium.pf2e.feats-srd.Item.BWomK7EVY0WXxWgh]或@UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]。",
+                "ReachSpell": "如果你的下一个动作是施放一个具有射程的法术，该法术的射程提高30尺。若该法术通常情况下射程为接触， 则该法术的射程提高至30尺。",
+                "ForcibleEnergy": "如果你下个动作是施放法术，并且法术会造成酸蚀、 寒冷、电击、火焰或音波伤害，则你可以选择一名受伤目标获得对应伤害类型的弱点5 直到你的下一轮结束。如果法术造成多种能量伤害类型，选择其中一种伤害类型让目标获得对应弱点。目标对于你选择的能量类型具有抗力或免疫的话，则此效果不会生效。@UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{效果: 能量侵蚀}",
+                "PurifyingSpell": "如果你的下一个动作是对单个生物施展治疗术，除去治疗术的原有效果，你还可以尝试反制其身上的疾病与毒素。若你如此做，该治疗术获得水特征。",
+                "SafeguardSpell": "如果你的下一个动作是使用施放法术动作施放一个区域法术，那么即使你处于区域之内也不会受到该法术的影响。",
+                "TimelineSplittingSpell": "你施放两道需要1或2动作的法术。他们不能是同一种但是用不同环位施放的法术。你为这两道法术分别花费资源，如法术位，聚能点与材料成分。确定这两道法术会产生的即时效果，包括攻击骰、豁免、伤害以及其他需要的掷骰。然后，选择两道法术之一产生效果，并使用预先掷骰的结果。另一道法术仍然会花费资源，但不会产生任何效果，因为它已经消失到了其他时间线。",
+                "BizzareTransformation": "若你的下个动作是施放@UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]，则可以改变 <em>无羁形态</em>所赋予的单个无武装攻击的伤害类型，使其变为后述类型中的一种：酸蚀、钝击、寒冷、电击、火焰、毒素、穿刺、或挥砍。被选取的攻击会获得相应的特征。",
+                "GarlandSpell": "一道由植物交织成的花环会在法术范围内的@Template[burst|distance:10]区域生长出来。该区域变为困难地形和有害地形，根据你的选择覆盖有荆棘或毒藤。任何进入该区域中方格或在其中结束自己回合的生物受到2d6伤害（对于荆棘为@Damage[2d6[piercing]]伤害，对于毒藤为@Damage[2d6[poison]]伤害）。每个生物每轮只能从中受到一次伤害。你和你的魔宠对此伤害免疫。这些植物持续1分钟或直到你再次施放花环法术，取决于何者为先。该伤害在16级时提高至3d6，20级时提高至4d6。",
+                "OstentatiousArrivalSummonSpell": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
+                "OstentatiousArrivalManifestEidolon": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrayDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
+                "ExplosiveArrival": "如果你下个动作是施放法术，并且法术具有召唤特征，在你召唤生物的周围@Template[emanation|distance:10]区域中的所有生物受到@Damage[(@item.level)d4[fire]|traits:area-damage]伤害。如果被召唤的生物具有@Damage[(@item.level)d4[acid]|traits:area-damage]{酸蚀}、 , @Damage[(@item.level)d4[electricity]|traits:area-damage]{寒冷}、@Damage[(@item.level)d4[electricity]|traits:area-damage]{电击}、@Damage[(@item.level)d4[sonic]|traits:area-damage]{音波}、@Damage[(@item.level)d4[spirit]|traits:area-damage]{精魂}特征，你可取而代之造成对应类型伤害。",
+                "FamiliarsResolve": "如果你接下来的行动是施展法术，那么你或你30尺范围内的任意一名盟友在1轮内对抗那些会使你或盟友陷入毁灭或惊惧状态的豁免检定获得+2状态加值。在14级时，你或盟友在针对这些效果的豁免检定将获得+3状态加值。@UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{效果: 魔宠决意}",
+                "GoldenDragonsBounty": "如果你接下来的动作是施展一个造成钝击、穿刺或挥砍伤害的法术，那么该伤害的类型可以由你选择为寒铁、银或钢，用于弱点、抗力、易伤等。在14级时，将精金加入到金属选择列表中。该法术获得金特征。"
             },
             "AwakenedAnimal": {
                 "LateAwakener": {
@@ -3239,6 +3616,11 @@
                 },
                 "LingeringBreath": {
                     "Description": "当你使用龙息时，你吐息的区域会在1分钟内变成困难地形。此外，豁免失败或大失败的生物会受到@Damage[2d6[persistent,@actor.flags.pf2e.dragonblood.damageType]]伤害"
+                },
+                "ScalyHide": {
+                    "BracersOfArmor": "复鳞皮肤 w/ 力场手环",
+                    "ExplorersClothing": "复鳞皮肤 w/ 探险者服装",
+                    "MageArmor": "复鳞皮肤 w/ 法术护甲"
                 }
             },
             "TempestForm": {
@@ -3253,6 +3635,132 @@
                 "Contortionist": {
                     "Note": "每当你成功使用特技技能@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]，被你逃脱的生物在对抗你所做出的下一次攻击时会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，但此攻击必须在你的下个回合结束前作出。"
                 }
+            },
+            "CrystalLuminescence": {
+                "Normal": "正常",
+                "Enhanced": "增加半径"
+            },
+            "Merfolk": {
+                "ReefMerfolk": {
+                    "CriticalSuccessNote": "你将毒素阶段降低3。",
+                    "SuccessNote": "你将毒素阶段降低2。",
+                    "VirulentCriticalSuccessNote": "你将恶性毒素阶段降低2。",
+                    "VirulentSuccessNote": "你将恶性毒素阶段降低1。"
+                },
+                "ShieldingWave": {
+                    "Dry": "干燥",
+                    "Wet": "湿润"
+                }
+            },
+            "Harrowing": {
+                "RerollLabel": "使用百搭牌重骰检定"
+            },
+            "AlkenstarAgent": {
+                "LooseCannon": {
+                    "Note": {
+                        "CriticalFailure": "火器哑火并爆炸。它变为@UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]状态，对火器@Template[burst|distance:20]范围内所有生物造成通常的武器伤害，@Check[reflex|against:class|basic]豁免DC等于你的职业DC。此伤害包括该武器的基础符文和性能符文。",
+                        "Failure": "火器哑火，但不会导致其他大失败效果。"
+                    }
+                }
+            },
+            "CrystalKeeper": {
+                "RollOptionLabel": "与水晶有关的危害造成的伤害"
+            },
+            "Geomancer": {
+                "TerrainAttunement": {
+                    "Desert": "敌人必须尝试@Check[fortitude]豁免。失败时，敌人会陷入@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]直至饮水或喝下其他可饮用的液体为止。",
+                    "Label": "地形同调",
+                    "Underground": "在1轮内，你获得黑暗视觉以及15尺范围的模糊震颤感知。",
+                    "Arctic": "敌人必须尝试@Check[fortitude]豁免。他们的速度会承受-5尺状态减值（大失败为-10尺），持续2轮。",
+                    "Forest": "树枝与藤蔓伸出来阻挡敌人的去路。敌人必须尝试@Check[reflex]豁免。失败时，他们会陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}持续1轮（大失败为@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}）。",
+                    "Mountain": "你获得对抗物理伤害的抗力（精金除外），数值等同于法术环级，持续1轮。",
+                    "Plains": "你获得临时生命值，数值等同于法术环级，持续1轮。",
+                    "Sky": "你能够飞行至多10尺。若你在回合结束时位于空中，而且你并不具有飞行速度，则会坠落。",
+                    "Swamp": "受影响的敌人进行@Check[fortitude|basic]豁免，失败则承受@Damage[(max(1,floor(@item.level/2)))[persistent,poison]]伤害，数值等同于法术环级的一半（最低1点伤害）。",
+                    "Aquatic": "若你在水中，则获得等同于你的陆上速度的游泳速度。若你在地面上，则暂时会有水浪跟随你移动，允许你用自己的游泳速度——若你有的话——作为你的陆上速度来移动。"
+                },
+                "AttunementShift": "转换同调"
+            },
+            "Surki": {
+                "BreakerSurki": {
+                    "DiggingWedgeLabel": "启动接地爪刺"
+                },
+                "SecondaryAdaptation": {
+                    "Prompt": "选择一种瑟基虫人传承"
+                }
+            },
+            "ChangeShape": {
+                "Anadi": "你可以在人类或蜘蛛的外形中切换。每种形态都拥有一个特定的、固定的外观。在你的人类形态下，你不能使用族裔给与你的非武装攻击（尖牙）。在你的蜘蛛形态下，你在攀爬时不会措手不及，但是你无法使用武器、盾牌或任何其他需要持握的物品，你所能进行的带有操作特征的动作也受到限制。你只能进行下列操作动作：@UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]带有姿势成分的法术、编织丝线和网、或简单的@UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]动作（例如打开一扇未上锁的门）。你的蜘蛛腿无法执行那些需要手指或灵巧双手的操作，包括任何需要检查才能完成的动作。GM可以裁定你的蜘蛛腿是否能完成其他操作动作。",
+                "Werecreature": "你变形成自己的混合或动物形态。你的装备会随着你一起变化，且会持续提供加值，但是你的动物形态无法使用武器、盾牌或其他持用的物品，也无法使用操作动作。你会根据自身的化形生物类型获得移动速度、无武装攻击、以及潜在的其他能力。这些无武装攻击属于搏击武器组。你能解消该效果来回复到自己的类人形态，若你的生命值降低至0点，也会自动回复到自己的类人形态。",
+                "Beastkin": "你变成类人形态或人兽混合形态。每种形态都拥有特定的、固有的外观，大多兽化裔都在默认情况下保持混合形态。在混合形态下，你的外表看起来同时具有你的族裔和本源动物的特征。当你处于混合形态时，你获得啃咬作为非武装打击，这取决于你所选的本源动物（蝙蝠为尖牙、鹰为鸟喙、黄蜂为虫颚，以此类推）。你的啃咬造成1d4穿刺伤害，拥有灵巧、娴熟和非武装特征，并且属于搏击武器组。而在类人形态下，你保持原本族裔的外观。",
+                "Kitsune": "你变成另一种由传承决定的型态。如果你的传承没有列出型态，则你的变化型态是无尾型态，呈现为你成长背景中常见的中型类人生物族裔（通常是人类）。此型态的年龄和身材都和你的真实型态相同，毛色等体貌特征也大致相似。使用变身算作是用欺骗技能的@UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]动作来创造伪装。处在此型态时，你会失去由狐妖传承或族裔专长得到的非武装打击。你维持变化型态的时间不受限制，只要再次使用此能力，就可以变回真正的狐妖型态。",
+                "Tanuki": "你可以将外表变化为一头貉子，使用@UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]的数据卡。貉的年龄与体态和你的真实状态相同，并且具有大略类似的身体特征，譬如毛发的颜色。使用狸猫变化视同使用@UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]的欺骗检定来进行伪装。你在变化形态后失去由化狸传承或族裔专长获得的无武装打击。你可以无限时间地维持貉形态，也可以再次使用此动作变回原本的化狸形态。",
+                "Yaoguai": "你可以从妖怪形态变换成人形，也可以从人形变换为妖怪形态，你的人形是你出生地常见中型类人族裔（通常为人类）。这种形态与妖怪形态有着相同的年龄和体型，并且有着相似的外貌特征，例如发色。使用变身等同于使用欺骗进行@UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]来进行伪装。你可以无限期地保持类人形态，但在失去意识1小时后或死亡1分钟后，你会恢复为妖怪形态。"
+            },
+            "KeepPace": {
+                "GameHunter": "当你的猎物试图逃走时，你追上前去。你以最大速度@UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]，跟随你的猎杀目标并且尽量让它不要离开自己的触及范围内，直到它停止移动或你已经满速移动。如果你有合适的移动类型，你还可以在使用此能力时用@UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]、@UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]、@UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]或@UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]来取代行走动作。",
+                "BountyHunter": "你的猎物无法逃出你的掌心。至多以你的速度进行行走跟上敌人，并在他移动的过程中自始至终都将其维持在你的触及之内，直至他停下或你已经以完整的速度进行移动为止。若你具有相应的移动类型，便可以使用@UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]，@UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]，@UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]或@UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]来取代行走进行跟进。",
+                "Trigger": "你的猎物在你的触及范围内，并且正在尝试远离你。"
+            },
+            "DivineIntercessions": {
+                "Lamashtu": {
+                    "MinorBoon": {
+                        "LamashtusMutation": "拉玛什图的变异",
+                        "DFourLabel": "1d4 (娴熟，灵巧)"
+                    }
+                },
+                "HeiFeng": {
+                    "MinorCurse": {
+                        "ConsumedAlcohol": "宿醉"
+                    }
+                }
+            },
+            "Assassin": {
+                "Assassinate": {
+                    "Note": "若命中，你的标记目标额外承受@Damage[(6d6[precision])[@item.system.damage.damageType]]伤害，并进行一次@Check[fortitude|against:class-spell|basic]豁免，对抗你的职业DC或法术DC里的较高者。"
+                }
+            },
+            "FireShield": {
+                "DefendingAgainstWaterLabel": "对抗一个水效果"
+            },
+            "ResonantReflection": {
+                "Label": "启动共鸣反射"
+            },
+            "Summoner": {
+                "OstentatiousArrival": {
+                    "Label": "华丽降临：生物特征"
+                }
+            },
+            "Modifier": {
+                "Bonus": "加值",
+                "Penalty": "减值"
+            },
+            "MusicalShift": {
+                "Double": {
+                    "Label": "双倍"
+                }
+            },
+            "Wayang": {
+                "ShadowOfTheCourtier": "每天一次，如果你在建立印象的检定中失败但未遭到大失败，你可以重骰检定；这是一个幸运效果。"
+            },
+            "AldoriDuelist": {
+                "DuelistsEdge": {
+                    "Note": "你能够立刻进行交互来拔出你的奥多里决斗剑。"
+                }
+            },
+            "BreathWeapon": {
+                "Shape": {
+                    "Cone": {
+                        "Label": "锥形",
+                        "Description": "你的幻灵喷出破坏性的能量波。幻灵对@Template[cone|distance:30]区域内的所有生物造成@Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage]伤害，这需要对抗你的法术DC的基础反射豁免。"
+                    },
+                    "Line": {
+                        "Label": "线型",
+                        "Description": "你的幻灵喷出破坏性的能量波。幻灵对@Template[line|distance:60]区域内的所有生物造成@Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage]伤害，这需要对抗你的法术DC的基础反射豁免。"
+                    }
+                },
+                "Cooldown": "你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。",
+                "Scaling": "在3级以及之后的每2级，伤害提升1d6。"
             }
         },
         "RuleElement": {
