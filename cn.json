@@ -7871,7 +7871,7 @@
                 "Label": "环境特征"
             }
         },
-        "TraitVenomous": "",
+        "TraitVenomous": "毒性",
         "Level25": "等级 25",
         "Level24": "等级 24",
         "Level23": "等级 23",
@@ -7880,7 +7880,9 @@
         "TraitDescriptionEthereal": "灵体生物是灵界的原住民。他们可以在灵界的基本环境效果中存活。",
         "TraitBravado": "虚势",
         "TraitDescriptionDragonblood": "具有此特征的生物拥有龙血多用传承。这些生物出生于龙族血统，通常具有龙族外貌。",
-        "TraitDragonblood": "龙血"
+        "TraitDragonblood": "龙血",
+        "TraitTrial": "考验",
+        "TraitSarangay": "水牛人"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
