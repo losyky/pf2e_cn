@@ -74,7 +74,9 @@
                 "Fist": "拳头",
                 "Nectar": "甘露 Nectar",
                 "Horns": "角抵 Horns",
-                "BigClaw": "巨爪"
+                "BigClaw": "巨爪",
+                "Root": "根须",
+                "SpiritTouch": "灵魂之触"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -987,7 +989,26 @@
                     "Prompt": "选择一个研究课题",
                     "Bomber": {
                         "FieldBenefit": "当投掷带有溅射特征的炼金炸弹时，你可以放弃通常的溅射区域，只对你的主要目标造成溅射伤害。",
-                        "GreaterFieldDiscovery": "你可以提升炸弹的溅射范围，让它对周围10尺的生物造成溅射伤害，或者如果你具有溅射扩展专长，则为15尺。"
+                        "GreaterFieldDiscovery": "你可以提升炸弹的溅射范围，让它对周围10尺的生物造成溅射伤害，或者如果你具有溅射扩展专长，则为15尺。",
+                        "FieldVials": {
+                            "RollOptionLabel": "万用制剂伤害"
+                        }
+                    },
+                    "Chirurgeon": {
+                        "FieldVials": {
+                            "Description": "你的万用制剂可以被用于治疗活物，为其恢复@Damage[(ternary(gte(@actor.level,18),4,ternary(gte(@actor.level,12),3,ternary(gte(@actor.level,4),2,1))))d6[healing]]的生命值。任一生物都可以通过喝下制剂来获得这一效果，或者你可以用一个交互动作将它投掷在任一20尺内的自愿生物上来为其进行治疗。不论哪种情况，如此使用的制剂会失去酸特征和溅射特征并获得凝血特征和治疗特征，如果是喝下的情况还会获得灵药特征。"
+                        }
+                    },
+                    "FieldVials": "课题制剂",
+                    "Mutagenist": {
+                        "FieldVials": {
+                            "Description": "你可以喝下你的万用制剂来压制当前正在生效的一种突变药剂的缺陷，持续到你的下个回合开始。如此使用的制剂会失去酸特征、炸弹特征和溅射特征，并获得灵药特征。如果由于@UUID[Compendium.pf2e.feats-srd.Item.jSkJIWPfSZZzvYzq]或类似能力同时有不止一个缺陷正在影响你，喝下万用制剂会压制你所选的一项缺陷。"
+                        }
+                    },
+                    "Toxicologist": {
+                        "FieldVials": {
+                            "Description": "你可以将万用制剂作为一种伤口型毒素涂抹在武器或者弹药上。将万用制剂的初始伤害添加在使用该武器或弹药的第一次成功的打击上。这一效果会在你当前回合结束时失效。"
+                        }
                     }
                 },
                 "AlchemicalCrossbow": {
@@ -1001,6 +1022,28 @@
                 },
                 "UncannyBombs": {
                     "Note": "你在攻击@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽}生物时的纯骰自动成功。"
+                },
+                "AlchemicalAssessment": {
+                    "Note": "若你在鉴定一个你拥有配方的物品时骰出大失败，你转而获得失败的结果。"
+                },
+                "ImprovedInvigoratingElixir": {
+                    "Description": "将下列状态加入你制作的提振灵药可以选择反制的状态：",
+                    "Physical": {
+                        "Label": "提振心理",
+                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]，被控制，@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]，@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]，@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]。"
+                    },
+                    "Label": "进阶提振灵药",
+                    "Mental": {
+                        "Label": "提振生理",
+                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]，@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]，@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]"
+                    }
+                },
+                "BlowgunPoisoner": {
+                    "CriticalNote": "如果你在使用淬毒飞镖的吹箭打击上大成功，那么目标对毒素的初始豁免骰出的成功度会下降一级，这是一个厄运效果。",
+                    "StealthNote": "此外，如果你在@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]或@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]的情况下使用吹箭进行打击，你不会自动变为@UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]，而是立即尝试进行@Check[stealth|against:perception]检定对抗目标的察觉DC。如果你成功了，你就不会对其变为可见，而是处于藏匿（如果你原本处于无踪，你仍然会变为藏匿而非保持无踪）。"
+                },
+                "SupremeInvigoratingElixir": {
+                    "Description": "将你的等级比实际高2来进行提振灵药的反制检定。并且将下列状态加入制作的提振灵药可以选择反制的状态：@UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]，@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]。你也可以选择反制一个疾病，不论它施加了何种状态。"
                 }
             },
             "Aid": {
@@ -3202,6 +3245,14 @@
                 "Mist": "雾",
                 "Water": "水",
                 "Air": "气"
+            },
+            "Acrobat": {
+                "AcrobatDedication": {
+                    "Note": "当你翻滚通过敌人所占据的空间时，若特技检定的结果为大成功，则不会将敌人占据的空间视为困难地形。"
+                },
+                "Contortionist": {
+                    "Note": "每当你成功使用特技技能@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]，被你逃脱的生物在对抗你所做出的下一次攻击时会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，但此攻击必须在你的下个回合结束前作出。"
+                }
             }
         },
         "RuleElement": {
@@ -3419,7 +3470,8 @@
             "Moonlight": "月光下",
             "ImpersonateSpecificPerson": "乔装成一个特定人物",
             "Balance": "保持平衡",
-            "Fly": "飞行"
+            "Fly": "飞行",
+            "RockyOrBarren": "在岩石或贫瘠地形中"
         },
         "OracleCurses": {
             "Label": {
@@ -3884,7 +3936,12 @@
                     "Shark": "鲨鱼",
                     "Moose": "麋鹿",
                     "Plant": "植物",
-                    "LeshyMob": "莱西暴徒"
+                    "LeshyMob": "莱西暴徒",
+                    "Fox": "狐狸",
+                    "Human": "人类",
+                    "Spider": "蜘蛛",
+                    "Tailless": "无尾",
+                    "Yaoguai": "妖怪"
                 },
                 "Label": "当前形态"
             },
@@ -4021,6 +4078,57 @@
                     "NoAlly": "无盟友",
                     "UnholyAlly": "邪秽盟友"
                 }
+            },
+            "TheGreatFlood": {
+                "LeadingHeadDescription": {
+                    "NoHeadSelected": "在相柳每次现身期间，只要战斗开始就会有一颗头主导，由GM在掷骰先攻时选择。不同的头进行主导会赋予相柳一个不同的动作，可以在每轮第一个回合使用（见协调动作）。",
+                    "Ambitious": "野心之首宣称超出其地位的神位。它获得100临时生命值，持续1分钟。它还将获得对精魂伤害的20弱点，且在1分钟内不能再次使用索取神位。",
+                    "Aloof": "冷漠之首施放5环@UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{命令术 Command} (@Check[will|dc:42])。",
+                    "Playful": "贪玩之首对生命的无常发出不合时宜的讽刺。他对灵光范围内每个生物尝试@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气 Demoralize}。",
+                    "Secretive": "相柳成为@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}直到其回合结束，然后传送至其灵光范围内的一个开放空间。",
+                    "Suspicious": "相柳注视其周围的环境。直到其移动，他能够识破灵光范围内的幻术，且其颚咬的触及提升至25尺。",
+                    "PeoplePleaser": "众首讨论并大声商定一个目标生物。直到再次使用达成共识，其对该目标的打击造成额外20精准伤害。",
+                    "Perfectionist": "完美之首批评其灵光范围内的一个生物。该生物必须成功过通过一次@Check[will|dc:42]豁免，否则将受到@Damage[9d6[persistent,mental]]伤害。",
+                    "Assertive": "相柳游泳，然后进行一次近战打击。",
+                    "Capricious": "善变之首以10环效果反制其身上的每个心灵效果，使用[[/r 1d20+32 #Counteract]]{+32}反制调整。"
+                },
+                "LeadingHeadName": {
+                    "Aloof": "冷漠",
+                    "Ambitious": "野心",
+                    "Assertive": "自信",
+                    "Capricious": "善变",
+                    "PeoplePleaser": "兼爱",
+                    "Perfectionist": "完美",
+                    "Playful": "贪玩",
+                    "Secretive": "神秘",
+                    "Suspicious": "多疑",
+                    "NoHeadSelected": "未选择"
+                },
+                "LeadingHead": "主导头颅"
+            },
+            "Warsworn": {
+                "AnimatedWeapon": {
+                    "DamageType": "活化武器 - 伤害类型",
+                    "DieSize": "活化武器 - 骰面"
+                }
+            },
+            "StargutHydra": {
+                "SkymetalMetamorphosis": {
+                    "Djezet": {
+                        "Label": "天金蜕变（血汞）"
+                    },
+                    "Siccatite": {
+                        "Chilled": "冰冷",
+                        "Superheated": "过热",
+                        "Label": "天金蜕变（漠石）"
+                    },
+                    "Noqual": {
+                        "Label": "天金蜕变（零晶）"
+                    }
+                }
+            },
+            "Tyrafdir": {
+                "DeceptiveJaws": "虚幻颚咬"
             }
         },
         "UI": {
@@ -4505,6 +4613,9 @@
             "Trigger": {
                 "Label": "触发"
             }
+        },
+        "Background": {
+            "Favored": "<p><strong>频率</strong> 每天一次</p><hr><p><strong>效果</strong> 重骰技能检定。你必须使用第二次的结果，即使它更差。</p>"
         }
     }
 }
