@@ -2267,7 +2267,9 @@
                     "DetailsPlaceholder": "注意事项，其他不常见的细节",
                     "Plural": "语言",
                     "tanuki": "化狸语",
-                    "surki": "瑟基虫人语"
+                    "surki": "瑟基虫人语",
+                    "wayang": "剪影人",
+                    "yaksha": "夜叉"
                 }
             },
             "Dead": "死亡",
@@ -4864,7 +4866,8 @@
             "SecretDisposition": {
                 "Hint": "激活\"秘密\"配置，所有者将会显示一个紫色信息框，而对于其他人则无任何显示变化。",
                 "Label": "秘密配置"
-            }
+            },
+            "ActorLinkForced": "{type} 类型的角色无法被解除链接。"
         },
         "TotalTreasure": "全部宝物",
         "TotalCoinage": "货币总计",
@@ -7882,7 +7885,12 @@
         "TraitDescriptionDragonblood": "具有此特征的生物拥有龙血多用传承。这些生物出生于龙族血统，通常具有龙族外貌。",
         "TraitDragonblood": "龙血",
         "TraitTrial": "考验",
-        "TraitSarangay": "水牛人"
+        "TraitSarangay": "水牛人",
+        "TraitAdditive": "添加剂",
+        "TraitCoagulant": "凝血",
+        "TraitDescriptionCoagulant": "具有凝血特征的治疗炼金物品会在短期内的多次使用时失去效力。一名生物在通过具有凝血特征的物品恢复生命值后，其会对随后来自具有凝血特征的物品的治疗临时免疫10分钟（但不免疫这些物品的其他效果）。",
+        "TraitYaksha": "夜叉",
+        "TraitYaoguai": "妖怪"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
