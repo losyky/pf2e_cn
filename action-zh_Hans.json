@@ -118,7 +118,7 @@
                 "Notes": {
                     "success": "<strong>成功</strong> 动物会按照你指令的内容在它的下回合行动。",
                     "failure": "<strong>失败</strong> 动物对你没有兴趣或是抵抗，什么都不做。",
-                    "criticalFailure": "<strong>大失败</strong>动物误解了你的指令。GM决定它会做什么怪事。.",
+                    "criticalFailure": "<strong>大失败</strong>动物误解了你的指令。GM决定它会做什么怪事。",
                     "criticalSuccess": "<strong>大成功</strong> 动物将会在下一个回合听命于你。"
                 },
                 "Title": "指挥动物",
