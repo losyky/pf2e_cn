@@ -160,16 +160,16 @@
             },
             "FrostVial": {
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[cold]]{4点寒冷溅射伤害}，并且目标会受到15尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.4G9qnI0oRyL6eKFQ]{效果: 上等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[cold]]{4点寒冷溅射伤害}，并且目标会受到15尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.4G9qnI0oRyL6eKFQ]{效果：上等霜冻瓶 })。"
                 },
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(3[splash])[cold]]{3点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{效果: 高等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(3[splash])[cold]]{3点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{效果：高等霜冻瓶 })。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[cold]]{2点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{效果: 中等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[cold]]{2点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{效果：中等霜冻瓶 })。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[cold]]{1点寒冷溅射伤害}，并且目标会受到5尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.RLsdvhmTh64Mmty9]{效果: 次等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[cold]]{1点寒冷溅射伤害}，并且目标会受到5尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.RLsdvhmTh64Mmty9]{效果：次等霜冻瓶 })。"
                 }
             },
             "BlightBomb": {
@@ -412,18 +412,18 @@
             "SulfurBomb": {
                 "Greater": {
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果：硫磺炸弹})。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果：硫磺炸弹})。",
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 },
                 "Moderate": {
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果：硫磺炸弹})。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果: 硫磺炸弹})。",
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标的察觉和攻击检定受到-1状态减值，持续到它下回合结束。(@UUID[Compendium.pf2e.equipment-effects.Item.fuQVJiPPUsvL6fi5]{效果：硫磺炸弹})。",
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[acid]]伤害，且目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 }
             },
@@ -496,7 +496,7 @@
                 }
             },
             "GooGrenade": {
-                "success": "<strong>效果</strong> 在命中时，该生物因粘在身上的粘性物质而获得速度减值。 @UUID[Compendium.pf2e.equipment-effects.Item.5JYchreCttBg7RcD]{效果: 粘性手雷 Goo Grenade}",
+                "success": "<strong>效果</strong> 在命中时，该生物因粘在身上的粘性物质而获得速度减值。 @UUID[Compendium.pf2e.equipment-effects.Item.5JYchreCttBg7RcD]{效果：粘性手雷 Goo Grenade}",
                 "Greater": "高等",
                 "Lesser": "次等",
                 "Major": "上等",
@@ -1347,7 +1347,7 @@
                     "Note": "只能伤害具有邪秽（Unholy）特征的生物。"
                 },
                 "TacticiansHelm": {
-                    "ReactiveStrikeNote": "成功@UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{反应打击 Reactive Strike}时，增加一点充能：@UUID[Compendium.pf2e.equipment-effects.Item.nLwtvyLZZTZgFmKq]{效果: 战术家头盔充能}"
+                    "ReactiveStrikeNote": "成功@UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{反应打击 Reactive Strike}时，增加一点充能：@UUID[Compendium.pf2e.equipment-effects.Item.nLwtvyLZZTZgFmKq]{效果：战术家头盔充能}"
                 },
                 "HumbugPocket": {
                     "ConcealAnObjectLabel": "行骗腰包 (往腰包里隐藏物件)"
@@ -1636,7 +1636,7 @@
                 },
                 "RevelInRetribution": {
                     "Label": "纵狂报复",
-                    "Note": "击中那些毫无防备的敌人会让你充满斗志，无论何时你通过反应打击命中都会获得临时生命值。临时生命值持续到法术结束。@UUID[Compendium.pf2e.spell-effects.Item.rnkQKEwUxrGruE1e]{效果: 纵狂报复 (临时生命值)}",
+                    "Note": "击中那些毫无防备的敌人会让你充满斗志，无论何时你通过反应打击命中都会获得临时生命值。临时生命值持续到法术结束。@UUID[Compendium.pf2e.spell-effects.Item.rnkQKEwUxrGruE1e]{效果：纵狂报复 (临时生命值)}",
                     "RollOptionLabel": "使用反应打击"
                 }
             },
@@ -1765,7 +1765,7 @@
                 },
                 "HamstringingStrike": {
                     "Prompt": "选择打击结果。",
-                    "Note": "如果命中猎物，该生物的速度将获得-5尺的状态减值。如果对你的猎物造成了重击，该生物的速度将获得-10尺的状态减值。\n@UUID[Compendium.pf2e.feat-effects.Item.ESnzqtwSgahLcxg2]{效果: 断筋打击}"
+                    "Note": "如果命中猎物，该生物的速度将获得-5尺的状态减值。如果对你的猎物造成了重击，该生物的速度将获得-10尺的状态减值。\n@UUID[Compendium.pf2e.feat-effects.Item.ESnzqtwSgahLcxg2]{效果：断筋打击}"
                 }
             },
             "TOTMToggle": {
@@ -1814,11 +1814,11 @@
                     },
                     "PreventFlanking": {
                         "Label": "无法夹击",
-                        "Note": "目标无法夹击，也无法帮助盟友夹击。@UUID[Compendium.pf2e.feat-effects.Item.JUgx48XHMz4QM4Ir]{效果: 衰弱 (无夹击)}"
+                        "Note": "目标无法夹击，也无法帮助盟友夹击。@UUID[Compendium.pf2e.feat-effects.Item.JUgx48XHMz4QM4Ir]{效果：衰弱 (无夹击)}"
                     },
                     "PrecisionDamage": {
                         "Label": "精准伤害",
-                        "Note": "目标从你的攻击中额外受到 2d6 精准伤害。@UUID[Compendium.pf2e.feat-effects.Item.ZZXIUvZqqIxkMfYa]{效果: 精准衰弱}"
+                        "Note": "目标从你的攻击中额外受到 2d6 精准伤害。@UUID[Compendium.pf2e.feat-effects.Item.ZZXIUvZqqIxkMfYa]{效果：精准衰弱}"
                     },
                     "PreventReactions": {
                         "Label": "无法进行反应动作",
@@ -1838,11 +1838,11 @@
                         "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}"
                     },
                     "SpeedPenalty": {
-                        "Note": "目标的速度受到-10尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.yBTASi3FvnReAwHy]{效果: 衰弱打击}",
+                        "Note": "目标的速度受到-10尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.yBTASi3FvnReAwHy]{效果：衰弱打击}",
                         "Label": "速度减值"
                     },
                     "Weakness": {
-                        "Note": "由你选择，令目标获得5点钝击、穿刺或挥砍弱点。@UUID[Compendium.pf2e.feat-effects.Item.Rgt9hH3W1oh9dvku]{效果: 恶毒衰弱}",
+                        "Note": "由你选择，令目标获得5点钝击、穿刺或挥砍弱点。@UUID[Compendium.pf2e.feat-effects.Item.Rgt9hH3W1oh9dvku]{效果：恶毒衰弱}",
                         "Label": "弱点"
                     },
                     "Enfeebled": {
@@ -2283,7 +2283,7 @@
                     "Note": "当你使用你的神祇的偏好武器，通过普通攻击伤害一个生物，你获得等于你的等级一半的临时生命值，如果普通攻击重击，则等于你的等级。@UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{Effect: 战时补给}"
                 },
                 "DivineRebuttal": {
-                    "Note": "若你的打击命中，你所有盟友对触发的豁免检定中获得+2环境加值（重击时获得+3环境加值）。@UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{效果: 神力抗驳}"
+                    "Note": "若你的打击命中，你所有盟友对触发的豁免检定中获得+2环境加值（重击时获得+3环境加值）。@UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{效果：神力抗驳}"
                 },
                 "CremateUndead": {
                     "Note": "当你使用<em>治疗术</em>伤害了不死生物，每个受伤的不死生物还受到@Damage[(@item.rank)[persistent,fire]]伤害。"
@@ -2492,8 +2492,8 @@
                     "Obedience": "除了触发反应的生物之外，所有身处你神卫灵光范围内的敌人同样必须选择@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]或者承受心灵伤害（每个敌人分别选择）。这些生物只会受到最小值的伤害（通常为@Damage[ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,11),3)[mental]]伤害），并且其承受的效果不会被任何针对你严酷铁律的改变所影响。举例而言，除了触发反应的生物外，残酷回响专长无法将其他生物受到的伤害转变为持续心灵伤害。",
                     "Iniquity": "除了触发反应的生物外，你同时对神卫灵光范围内的其他敌人造成伤害，数值等同于对触发反应的生物造成伤害的一半。",
                     "Liberation": "除了受到解放踏步影响的盟友之外，你和其他身处你神卫灵光范围内的盟友也能以一个自由动作进行快步。即使受益于解放踏步的盟友无法移动，你和其他盟友依然能获得上述增益。",
-                    "Redemption": "如果敌人选择抗拒，你可以选择给予自身以及身处你神卫灵光范围内的所有盟友（包括触发反应的盟友）抗力。如果你这样做，所有人获得的抗力减少2点。@UUID[Compendium.pf2e.feat-effects.Item.GFLiTESBmoyQ3sLx]{效果: 激昂反应 (救赎)}",
-                    "Desecration": "直到你下一轮开始为止，所有身处你神卫灵光范围内的敌人在针对你的攻击投骰上获得-1状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ef63SlxSKlZmHosM]{效果: 激昂反应 (亵渎)}"
+                    "Redemption": "如果敌人选择抗拒，你可以选择给予自身以及身处你神卫灵光范围内的所有盟友（包括触发反应的盟友）抗力。如果你这样做，所有人获得的抗力减少2点。@UUID[Compendium.pf2e.feat-effects.Item.GFLiTESBmoyQ3sLx]{效果：激昂反应 (救赎)}",
+                    "Desecration": "直到你下一轮开始为止，所有身处你神卫灵光范围内的敌人在针对你的攻击投骰上获得-1状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ef63SlxSKlZmHosM]{效果：激昂反应 (亵渎)}"
                 },
                 "GruesomeStrike": {
                     "Note": "目标必须成功通过一次对抗你职业DC的@Check[fortitude|against:class]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。"
@@ -2901,7 +2901,7 @@
                 "Battledancer": "你可以在完成终结后立即以一个自由动作进行一次快步。",
                 "Name": "惩戒终结",
                 "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你下一回合。",
-                "Rascal": "该敌人直到你的下回合开始在速度上受到-10尺环境减值。@UUID[Compendium.pf2e.feat-effects.Item.fgz7lwg1xHsVW4dX]{效果: 惩戒终结 (轻狡无赖)}"
+                "Rascal": "该敌人直到你的下回合开始在速度上受到-10尺环境减值。@UUID[Compendium.pf2e.feat-effects.Item.fgz7lwg1xHsVW4dX]{效果：惩戒终结 (轻狡无赖)}"
             },
             "HarrowChosen": {
                 "Unmatched": "不匹配",
@@ -3231,7 +3231,7 @@
             "GolemGrafter": {
                 "ClayFist": {
                     "Label": "陶拳",
-                    "Note": "当你使用自己的陶土制拳头进行无武装攻击并命中时，你的目标在对抗诅咒效应的豁免骰上获得-2状态减值，维持1小时。@UUID[Compendium.pf2e.feat-effects.Item.bvk5rwYSoTtz8QGf]{效果: 诅咒陶拳}"
+                    "Note": "当你使用自己的陶土制拳头进行无武装攻击并命中时，你的目标在对抗诅咒效应的豁免骰上获得-2状态减值，维持1小时。@UUID[Compendium.pf2e.feat-effects.Item.bvk5rwYSoTtz8QGf]{效果：诅咒陶拳}"
                 }
             },
             "SpellRank": {
@@ -3460,7 +3460,7 @@
                 "GrowthSpell": "增大该法术的区域。对于爆发，增加5尺半径；对于锥形，增大锥形10尺；对于线形，增加15尺长度。法术获得木特征。",
                 "BondConservation": "你获得一次额外机会使用汲取连结物品。你可以使用它来施放一个法术，此法术的环级低于先前法术2级及以上，并且必须在你下一轮结束前使用它，否则你会失去这个机会。",
                 "BurningSpell": "除了该法术的其他效果之外，它还会造成@Damage[(@item.rank)[persistent,fire]]伤害。该专长对原本就能够造成持续火焰伤害的法术无效。该法术获得火特征。",
-                "CastDown": "如果你的下一个动作是施放伤害术或治疗术法术来对一个生物造成伤害，目标只要从该法术中受到伤害就会陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。若目标在对抗该法术的豁免中掷出大失败，其还会在1分钟内于速度上受到-10尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]{效果: 击倒施法}",
+                "CastDown": "如果你的下一个动作是施放伤害术或治疗术法术来对一个生物造成伤害，目标只要从该法术中受到伤害就会陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。若目标在对抗该法术的豁免中掷出大失败，其还会在1分钟内于速度上受到-10尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]{效果：击倒施法}",
                 "ScintillatingSpell": "如果你下个动作是施放法术，并且法术不具有黑暗特征、不具有持续时间、需要生物尝试反射豁免，则法术除了其他效果以外，还会爆发出一阵耀眼光芒。每个在其对抗法术的反射豁免中失败的生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮，大失败则改为@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮。",
                 "CourageousAdvance": "你任选一位从该法术获得状态加值的盟友，其可以立即使用一个反应动作进行一次行走。",
                 "CourageousOnslaught": "你选定其中一名从该法术中获得状态加值的盟友，其可以立即使用一个反应动作进行行走，然后进行一次近战打击。",
@@ -3480,8 +3480,8 @@
                 "SpellShroud": "如果你的下一个动作是施放一个以你为目标的法术，你将自己笼罩在一股@Template[emanation|distance:15]范围的魔法浓雾之中，浓雾持续至你的下一轮开始。所有云雾中的生物都被视为@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，同样云雾外的生物对云雾内的生物而言也视为隐蔽。",
                 "WhatCouldHaveBeen": "如果你的下一个动作是施法召唤生物，那么召唤出来的生物都会是另一个版本的你。该生物仍然属于你所召唤的生物类型，大体上拥有相同的能力（除了以下调整），它看起来就与你相似，还有着相同的表征，比如言谈举止、纹身、说话方式或者衣服。召唤出来的生物会在你拥有受训熟练度的所有技能的检定中获得+1状态加值，若为专家则+2，若为大师则+3，若为传奇则+4。该生物还会在你不具有受训的技能上获得-2减值。",
                 "EbbAndFlow": "选择区域中一个会被该法术所伤害的生物，并且选择区域中另一个会被该法术治愈的生物。你的治疗术或者伤害术同时以这些生物为目标。",
-                "CurrentSpell": "如果你下一个动作是施法有气或水特征的法术，则直到你下回合开始你的AC会获得+1环境加值，如果是对抗远程攻击，则改为+2。此效果有气或水特征，或两者皆有，取决于你施放的法术。同时直到你下一回合开始，你在对抗气、水或两种特征皆有的效果（取决于法术的特征）时，在所有豁免上获得+1环境加值。@UUID[Compendium.pf2e.feat-effects.Item.8HGz3rQCHNgdAqFC]{效果: 流动法术}",
-                "DefensiveRecovery": "如果目标因法术恢复了生命值，其还会在1轮内于AC和豁免骰上获得+2状态加值。@UUID[Compendium.pf2e.feat-effects.Item.jwxurN6JPQm9wXug]{效果: 防御恢复}",
+                "CurrentSpell": "如果你下一个动作是施法有气或水特征的法术，则直到你下回合开始你的AC会获得+1环境加值，如果是对抗远程攻击，则改为+2。此效果有气或水特征，或两者皆有，取决于你施放的法术。同时直到你下一回合开始，你在对抗气、水或两种特征皆有的效果（取决于法术的特征）时，在所有豁免上获得+1环境加值。@UUID[Compendium.pf2e.feat-effects.Item.8HGz3rQCHNgdAqFC]{效果：流动法术}",
+                "DefensiveRecovery": "如果目标因法术恢复了生命值，其还会在1轮内于AC和豁免骰上获得+2状态加值。@UUID[Compendium.pf2e.feat-effects.Item.jwxurN6JPQm9wXug]{效果：防御恢复}",
                 "FormControl": "如果你的下一个动作是施放无羁形态，那么无羁形态的法术环级会比通常低2环（最低为1环级），但你可以维持变身1小时或维持原本的持续时间（以持续时间更长者为准）。你仍然可以如常消解无羁形态。",
                 "LeyLineConduit": "如果你的下一个动作是施放一个不高于5环且没有持续时间的法术，你不会在施放这个法术时消耗准备的法术位。",
                 "OverwhelmingEnergy": "如果你的下一个动作是施放法术，该法术可以忽视目标对酸蚀、寒冷、电击、火焰或音波伤害数量等同于你等级的抗性。该效果会应用在所有由此法术造成的伤害上，包含来自该法术的持续伤害以及后续效果所造成的伤害，例如火墙术所创造出的火墙。生物的免疫效果不受此影响。",
@@ -3491,8 +3491,8 @@
                 "SurgingMight": "若你下一个动作是施放法术，该法术在下列伤害类型中，忽略目标等同于你等级数的抗力：精魂，命能，虚能。该效果对所有因该法术造成的伤害生效，包括持续伤害或法术持续效果造成的伤害。该专长不会使法术克服免疫，只克服抗力。",
                 "NonLethal": "如果你下个动作是施放法术，并且法术可以造成伤害且没有死亡或虚能特征，那么该法术会获得非致命特征。",
                 "Remediate": "如果你的下一个动作是使用神力源泉来施放3动作版本的伤害术或治疗术法术，你可以控制残余的能量抵消对立的力量。除其通常效果之外，你还可以使用你的伤害术或治疗术法术来尝试反制法术区域内的一个神术效果。",
-                "PortentousSpell": "若你下一个动作是施放法术，任何因你施放法术而被触发的反应动作中的攻击骰和技能检定都会受到-2环境减值。另外，若该法术包括法术攻击骰或需要受影响者进行豁免，被击中的生物和豁免失败的生物会@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]直到你下一回合开始。@UUID[Compendium.pf2e.feat-effects.Item.klZVVIetJlR99cT6]{效果: 惊奇法术}",
-                "DivineInfusion": "目标在其下回合结束前的近战武器或无武装攻击造成额外伤害。若你施放的是<em>伤害术</em>，则该伤害的类型为虚能，若是<em>治疗术</em>则为命能。@UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{效果: 神力灌注}.",
+                "PortentousSpell": "若你下一个动作是施放法术，任何因你施放法术而被触发的反应动作中的攻击骰和技能检定都会受到-2环境减值。另外，若该法术包括法术攻击骰或需要受影响者进行豁免，被击中的生物和豁免失败的生物会@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]直到你下一回合开始。@UUID[Compendium.pf2e.feat-effects.Item.klZVVIetJlR99cT6]{效果：惊奇法术}",
+                "DivineInfusion": "目标在其下回合结束前的近战武器或无武装攻击造成额外伤害。若你施放的是<em>伤害术</em>，则该伤害的类型为虚能，若是<em>治疗术</em>则为命能。@UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{效果：神力灌注}.",
                 "DousingSpell": "你用水浸透目标。若目标具有持续酸蚀或火焰伤害，结束这些状态的DC降低至10点，并且该生物能够立即尝试一次纯骰检定来结束这些类型的持续伤害。该法术获得水特征（这会使该法术对将水视为弱点的生物造成额外伤害）。",
                 "ConcealSpell": "如果你下个动作是施法，该法术获得晦匿特征，藏匿了发光的符文，魔法的火花，和其他通常会泄露你施法的呈现。该特征藏匿的只有法术的施法动作和呈现，不包括其效果，所以观察者还是能看到有条射线从你那边飞射而出，或看到你消失在空气中。",
                 "DefensiveCoordination": "你可以举起盾牌，并且你任选一名从该法术中获得状态加值的盟友，其也能立即使用一个反应动作举起盾牌。",
@@ -3505,7 +3505,7 @@
                 "EnergyFusion": "如果你的下一个动作是使用施放一个造成能量伤害的法术，选择一个你法术库中能够造成另一种能量伤害类型的非戏法的法术，并且额外消耗一个和这一次要法术同环级的法术位。你所释放的法术将造成等同于所花费的次要法术位环级的额外伤害。该法术的总伤害将平摊到所施放法术的伤害类型级次要法术的伤害类型上。",
                 "KnowledgeOfShapes": "你以自由动作施展@UUID[Compendium.pf2e.feats-srd.Item.BWomK7EVY0WXxWgh]或@UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]。",
                 "ReachSpell": "如果你的下一个动作是施放一个具有射程的法术，该法术的射程提高30尺。若该法术通常情况下射程为接触， 则该法术的射程提高至30尺。",
-                "ForcibleEnergy": "如果你下个动作是施放法术，并且法术会造成酸蚀、 寒冷、电击、火焰或音波伤害，则你可以选择一名受伤目标获得对应伤害类型的弱点5 直到你的下一轮结束。如果法术造成多种能量伤害类型，选择其中一种伤害类型让目标获得对应弱点。目标对于你选择的能量类型具有抗力或免疫的话，则此效果不会生效。@UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{效果: 能量侵蚀}",
+                "ForcibleEnergy": "如果你下个动作是施放法术，并且法术会造成酸蚀、 寒冷、电击、火焰或音波伤害，则你可以选择一名受伤目标获得对应伤害类型的弱点5 直到你的下一轮结束。如果法术造成多种能量伤害类型，选择其中一种伤害类型让目标获得对应弱点。目标对于你选择的能量类型具有抗力或免疫的话，则此效果不会生效。@UUID[Compendium.pf2e.feat-effects.Item.0Ai0u9kNJrEudPnN]{效果：能量侵蚀}",
                 "PurifyingSpell": "如果你的下一个动作是对单个生物施展治疗术，除去治疗术的原有效果，你还可以尝试反制其身上的疾病与毒素。若你如此做，该治疗术获得水特征。",
                 "SafeguardSpell": "如果你的下一个动作是使用施放法术动作施放一个区域法术，那么即使你处于区域之内也不会受到该法术的影响。",
                 "TimelineSplittingSpell": "你施放两道需要1或2动作的法术。他们不能是同一种但是用不同环位施放的法术。你为这两道法术分别花费资源，如法术位，聚能点与材料成分。确定这两道法术会产生的即时效果，包括攻击骰、豁免、伤害以及其他需要的掷骰。然后，选择两道法术之一产生效果，并使用预先掷骰的结果。另一道法术仍然会花费资源，但不会产生任何效果，因为它已经消失到了其他时间线。",
@@ -3514,7 +3514,7 @@
                 "OstentatiousArrivalSummonSpell": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
                 "OstentatiousArrivalManifestEidolon": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrayDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
                 "ExplosiveArrival": "如果你下个动作是施放法术，并且法术具有召唤特征，在你召唤生物的周围@Template[emanation|distance:10]区域中的所有生物受到@Damage[(@item.level)d4[fire]|traits:area-damage]伤害。如果被召唤的生物具有@Damage[(@item.level)d4[acid]|traits:area-damage]{酸蚀}、 , @Damage[(@item.level)d4[electricity]|traits:area-damage]{寒冷}、@Damage[(@item.level)d4[electricity]|traits:area-damage]{电击}、@Damage[(@item.level)d4[sonic]|traits:area-damage]{音波}、@Damage[(@item.level)d4[spirit]|traits:area-damage]{精魂}特征，你可取而代之造成对应类型伤害。",
-                "FamiliarsResolve": "如果你接下来的行动是施展法术，那么你或你30尺范围内的任意一名盟友在1轮内对抗那些会使你或盟友陷入毁灭或惊惧状态的豁免检定获得+2状态加值。在14级时，你或盟友在针对这些效果的豁免检定将获得+3状态加值。@UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{效果: 魔宠决意}",
+                "FamiliarsResolve": "如果你接下来的行动是施展法术，那么你或你30尺范围内的任意一名盟友在1轮内对抗那些会使你或盟友陷入毁灭或惊惧状态的豁免检定获得+2状态加值。在14级时，你或盟友在针对这些效果的豁免检定将获得+3状态加值。@UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{效果：魔宠决意}",
                 "GoldenDragonsBounty": "如果你接下来的动作是施展一个造成钝击、穿刺或挥砍伤害的法术，那么该伤害的类型可以由你选择为寒铁、银或钢，用于弱点、抗力、易伤等。在14级时，将精金加入到金属选择列表中。该法术获得金特征。"
             },
             "AwakenedAnimal": {
