@@ -698,7 +698,7 @@
                     "criticalSuccess": "<strong>大成功</strong> 你可以为自己加上另一个生物提供足以维生程度的饮食和住所，或是为自己一个人提供舒适生活标准程度的食物和住所。",
                     "success": "<strong>成功</strong> 你为自己找到了足以保证基本生活和遮风避雨的食物及住所。",
                     "failure": "<strong>失败</strong> 你被风吹雨淋而且没有吃饱，直到你下一次成功获得足够好的饮食和住所前你陷入疲乏状态。",
-                    "criticalFailure": "<strong>Critical Failure</strong>你给自己招来麻烦，吃错了东西，或是造成了其他会让你变得更惨的结果。你在接下来一周中所有的求生检定上承受-2环境减值，并且你没有获得任何食物。如果你没有储备的话，可能你很快就会死于冻饿饥渴。@UUID[Compendium.pf2e.other-effects.wHWWHkjDXmJl4Ia6]{Effect: Adverse Subsist Situation}"
+                    "criticalFailure": "<strong>大失败</strong> 你给自己招来麻烦，吃错了东西，或是造成了其他会让你变得更惨的结果。你在接下来一周中所有的求生检定上承受-2环境减值，并且你没有获得任何食物。如果你没有储备的话，可能你很快就会死于冻饿饥渴。@UUID[Compendium.pf2e.other-effects.wHWWHkjDXmJl4Ia6]"
                 },
                 "Title": "求生",
                 "Warning": {
