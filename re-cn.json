@@ -2099,7 +2099,7 @@
                         },
                         "KeenSenses": {
                             "Title": "锐感魔宠",
-                            "Description": "你的魔宠有着闪亮的眼睛，抽动的耳朵，或某些其他野兽那强大感官的迹象。当你施放或维持一个戏法时，你的魔宠获得由你选择的一项模糊感官，震颤感知，或水波感知，具有60尺范围，直到你下回合开始，它能够以自由动作立即使用@UUID[Compendium.pf2e.actionspf2e.Item.sn2hIy1iIJX9Vpgj]{指出位置 Point Out}。"
+                            "Description": "你的魔宠有着闪亮的眼睛，抽动的耳朵，或某些其他野兽那强大感官的迹象。当你施放或维持一个戏法时，你的魔宠获得由你选择的一项模糊感官，震颤感知，或水波感知，具有60尺范围，直到你下回合开始，它能够以自由动作立即使用@UUID[Compendium.pf2e.actionspf2e.Item.sn2hIy1iIJX9Vpgj]。"
                         },
                         "FlowingScript": {
                             "Title": "盖经魔宠",
@@ -2897,11 +2897,11 @@
             },
             "ExemplaryFinisher": {
                 "Wit": "敌人在对你进行攻击骰时会受到-2的环境减值，直到你下一个回合开始。@UUID[Compendium.pf2e.feat-effects.Item.cu10OjQUdY0a9gpj]",
-                "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气}具有暂时免疫能力，则他们的暂时免疫效果结束。",
+                "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]具有暂时免疫能力，则他们的暂时免疫效果结束。",
                 "Battledancer": "你可以在完成终结后立即以一个自由动作进行一次快步。",
                 "Name": "惩戒终结",
-                "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你下一回合。",
-                "Rascal": "该敌人直到你的下回合开始在速度上受到-10尺环境减值。@UUID[Compendium.pf2e.feat-effects.Item.fgz7lwg1xHsVW4dX]{效果：惩戒终结 (轻狡无赖)}"
+                "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下一回合。",
+                "Rascal": "该敌人直到你的下回合开始在速度上受到-10尺环境减值。@UUID[Compendium.pf2e.feat-effects.Item.fgz7lwg1xHsVW4dX]"
             },
             "HarrowChosen": {
                 "Unmatched": "不匹配",
