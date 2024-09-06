@@ -2214,7 +2214,7 @@
                     "Note": "当你用种子荚进行的打击获得大成功时，藤蔓将缠绕并刺伤你的敌人，造成@Damage[1d4[persistent,piercing]]伤害。"
                 },
                 "Seedpod": {
-                    "Note": "当造成重击时，种子荚会爆裂，长出一堆杂乱的植物，并对目标的速度造成-10尺的环境减值，效果持续1回合。@UUID[Compendium.pf2e.feat-effects.Item.wQDHpOKY3GZqvS2v]{效果：种子荚}"
+                    "Note": "当造成重击时，种子荚会爆裂，长出一堆杂乱的植物，并对目标的速度造成-10尺的环境减值，效果持续1回合。@UUID[Compendium.pf2e.feat-effects.Item.wQDHpOKY3GZqvS2v]"
                 }
             },
             "Lich": {
