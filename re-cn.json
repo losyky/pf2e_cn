@@ -1068,13 +1068,13 @@
                 "ImprovedInvigoratingElixir": {
                     "Description": "将下列状态加入你制作的提振灵药可以选择反制的状态：",
                     "Physical": {
-                        "Label": "提振心理",
-                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]，被控制，@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]，@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]，@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]。"
+                        "Label": "提振生理",
+                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]，@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]，@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]"
                     },
                     "Label": "进阶提振灵药",
                     "Mental": {
-                        "Label": "提振生理",
-                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]，@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]，@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]"
+                        "Label": "提振心理",
+                        "Conditions": "@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]，被控制，@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]，@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]，@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]。"
                     }
                 },
                 "BlowgunPoisoner": {
@@ -1892,7 +1892,7 @@
                         "Imperial": "直到你的下一个回合开始，你可以选择在AC或是在豁免骰上获得+1状态加值。",
                         "Demonic": "目标于1轮内在AC上受到-1状态罚值，或者你于1轮内在威吓检定上获得+2状态加值。",
                         "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[will|basic|against:spell]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命，持续到你之后那个回合的回合开始。",
-                        "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealement}，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide}。",
+                        "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]。",
                         "Title": "血统奥秘",
                         "Nymph": "你的动作中尽显宁芙的优雅，甚至能使你的敌人分心。你于1轮内在交涉检定上获得+1状态加值，或者目标于1轮内在意志豁免上承受-1状态罚值。",
                         "Psychopomp": "生与死的界限在你身上显得模糊不清。你于1轮内在强韧豁免上获得+2状态加值，或者目标受到每法术环级1点的伤害。此伤害当目标为活物时为@Damage[@item.level[void]]，当目标为不死生物时为@Damage[@item.level[vitality]]。如果法术已经造成了该种类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
@@ -2631,7 +2631,7 @@
                 "Anger": {
                     "Activation": "如果你@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]、@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]，你可以尝试@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]。如果成功，对你施加状态的生物或危害（若适用）会受到等同于你角色等级的力场伤害。",
                     "Description": "毁灭性的怒气催使你去伤害敌人，但这个过程也会造成你的痛苦。",
-                    "Fallout": " 在你安顿情绪前会处于@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]状态。",
+                    "Fallout": "在你安顿情绪前会处于@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]状态。",
                     "Fervor": "当你用自己的法术位施展一个法术，如果法术造成伤害并且没有持续时间，该法术的伤害获得等于法术环级的状态加值。法术：@UUID[Compendium.pf2e.spells-srd.Item.jsWthW1Qy6tg3SwD]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.UGJzJRJDoonfWqqI]",
                     "Label": "愤怒",
@@ -2641,7 +2641,7 @@
                     "Activation": "如果你处于@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]或@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]，而且该效果允许豁免的话，你可以多尝试一次豁免来结束这个效果。",
                     "Description": "你那强烈的赞叹足以感染或妨碍周遭的人。",
                     "Fallout": "在你安顿情绪前，你会处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。",
-                    "Fervor": " 施展法术时，选择一个被你的法术攻击检定击中或是豁免失败的生物（如果有的话）。该生物对你迷魂，直到它的下一个回合结束。接着它牠会在1小时内暂时免疫这种个炽情效果。法术：@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]",
+                    "Fervor": "施展法术时，选择一个被你的法术攻击检定击中或是豁免失败的生物（如果有的话）。该生物对你迷魂，直到它的下一个回合结束。接着它牠会在1小时内暂时免疫这种个炽情效果。法术：@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.zul5cBTfr7NXHBZf]（无需圣徽）",
                     "Label": "惊叹",
                     "Trigger": "你或30尺内盟友在对敌人AC的攻击检定，或是在对抗敌人DC的的技能检定上得到大成功。"
@@ -3497,7 +3497,7 @@
                 "ConcealSpell": "如果你下个动作是施法，该法术获得晦匿特征，藏匿了发光的符文，魔法的火花，和其他通常会泄露你施法的呈现。该特征藏匿的只有法术的施法动作和呈现，不包括其效果，所以观察者还是能看到有条射线从你那边飞射而出，或看到你消失在空气中。",
                 "DefensiveCoordination": "你可以举起盾牌，并且你任选一名从该法术中获得状态加值的盟友，其也能立即使用一个反应动作举起盾牌。",
                 "ReverberatingSpell": "如果你的下个动作是施放非戏法法术，且法术造成范围伤害（例如爆发，线形，锥形），该法术会造成额外@Damage[1d8[sonic]]伤害，且所有对抗法术豁免失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]状态一轮。对抗该法术豁免大失败的生物改为陷入耳聋1分钟。法术获得音波特征。",
-                "RockslideSpell": "(@item.rank)个5尺方格会变为困难地形，持续1轮。这些方格必须在地面上，而且全部困难地形的区域必须是连续的。该法术获得土特征。",
+                "RockslideSpell": "数个5尺方格会变为困难地形，持续1轮。这些方格必须在地面上，而且全部困难地形的区域必须是连续的。该法术获得土特征。",
                 "InterweaveDispel": "如果你的下一个动作是针对一名敌人施放一个单目标法术，并且你的法术攻击骰命中或是敌人的豁免骰失败，你能够以自由动作对此敌人施放@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]，这将如常消耗法术位，并且目标为此敌人身上一个正在生效的法术效果。",
                 "SplitShot": "如果你的下一个动作是使用施放法术动作施放一个需要进行一次攻击骰对抗单个生物的，且没有持续时间的法术，你可以在法术射程内选择一个第二目标。投掷一次攻击骰并将其结果与两个目标的AC进行比较。在计算你的多重攻击罚值时这被视为一次攻击。对于你的第二目标，法术仅造成通常伤害的一半，且除了造成的初始伤害之外没有别的效果（譬如造成状态或减值）。",
                 "UnlimitedPotential": "如果你的下一个动作是施放一个不高于5环且没有持续时间的法术，你不会在施放这个法术时消耗法术位。",
