@@ -3153,7 +3153,8 @@
                     "occult": "神秘",
                     "primal": "原能",
                     "arcane": "奥术",
-                    "axes": "斧"
+                    "axes": "斧",
+                    "fortune-effects": "幸运效果"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -7890,7 +7891,8 @@
         "TraitCoagulant": "凝血",
         "TraitDescriptionCoagulant": "具有凝血特征的治疗炼金物品会在短期内的多次使用时失去效力。一名生物在通过具有凝血特征的物品恢复生命值后，其会对随后来自具有凝血特征的物品的治疗临时免疫10分钟（但不免疫这些物品的其他效果）。",
         "TraitYaksha": "夜叉",
-        "TraitYaoguai": "妖怪"
+        "TraitYaoguai": "妖怪",
+        "TraitHungerseed": "饥饿之种"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
