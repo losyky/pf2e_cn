@@ -78,7 +78,10 @@
                 "Root": "根须",
                 "SpiritTouch": "灵魂之触",
                 "Spoke": "辐条",
-                "Wrap": "布巾"
+                "Wrap": "布巾",
+                "ElementalCurrent": "元素流",
+                "Belly": "腹撞",
+                "StrikingSurface": "表面打击"
             },
             "Note": {
                 "GrabbingTrunk": {
