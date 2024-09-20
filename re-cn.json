@@ -76,7 +76,9 @@
                 "Horns": "角抵 Horns",
                 "BigClaw": "巨爪",
                 "Root": "根须",
-                "SpiritTouch": "灵魂之触"
+                "SpiritTouch": "灵魂之触",
+                "Spoke": "辐条",
+                "Wrap": "布巾"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -997,7 +999,8 @@
                 "MartialWayangWeapons": "军用剪影人武器",
                 "MartialSurkiWeapons": "军用瑟基虫人武器",
                 "AdvancedAthamaruWeapons": "进阶阿萨鱼人武器",
-                "MartialMerfolkWeapons": "军用人鱼武器"
+                "MartialMerfolkWeapons": "军用人鱼武器",
+                "MartialOniWeapons": "军用恶鬼武器"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -1134,7 +1137,22 @@
                     "ToggleLabel": "精魂狂暴"
                 },
                 "Superstition": {
-                    "TargetingCaster": "目睹目标施法"
+                    "TargetingCaster": "目睹目标施法",
+                    "RagingResistance": {
+                        "Prompt": "选择一种关联魔法根源。",
+                        "ResistanceLabels": {
+                            "ArcaneAndOccult": "奥术和异能法术",
+                            "ArcaneAndPrimal": "奥术和原能法术",
+                            "DivineAndOccult": "神术和异能法术",
+                            "DivineAndPrimal": "神术和原能法术"
+                        },
+                        "Traditions": {
+                            "ArcaneAndOccult": "奥术和异能",
+                            "ArcaneAndPrimal": "奥术和原能",
+                            "DivineAndOccult": "神术和异能",
+                            "DivineAndPrimal": "神术和原能"
+                        }
+                    }
                 },
                 "InuredToAlchemy": {
                     "CriticalSuccess": "每次对抗炼金毒药、毒品或成瘾的豁免获得大成功可降低3阶段。",
@@ -3874,6 +3892,11 @@
                 "SiphonTorment": {
                     "Description": "目标生物获得等于你等级的临时生命值"
                 }
+            },
+            "Organsight": {
+                "Organs": "器官视域（器官）",
+                "Skin": "器官视域（皮肤）",
+                "Success": "器官视域 — 医疗检定成功"
             }
         },
         "RuleElement": {
