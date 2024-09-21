@@ -1480,6 +1480,9 @@
                 },
                 "UnholyPlate": {
                     "Note": "用角重击成功时，目标必须通过@Check[fortitude|dc:30]检定，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2} ）。"
+                },
+                "CloakOfWavesAndClouds": {
+                    "CutAirAndSea": "裁气断海"
                 }
             },
             "FighterWeaponMasteryLegend": {
