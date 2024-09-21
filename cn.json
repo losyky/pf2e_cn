@@ -6104,7 +6104,11 @@
                 "arbalest": "劲弩",
                 "reinforced-stock": "加固枪托",
                 "capturing-spetum": "捕获刺叉",
-                "spirit-thresher": "碎魂连枷"
+                "spirit-thresher": "碎魂连枷",
+                "tetsubo": "狼牙棒",
+                "liuyedao": "柳叶刀",
+                "shuan-ji": "画戟",
+                "zhuazhi-bang": "爪子棒"
             }
         },
         "WeaponAbilityLabel": "武器能力",
