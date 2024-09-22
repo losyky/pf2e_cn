@@ -6404,7 +6404,8 @@
                 }
             },
             "speed": {
-                "Name": "加速符文"
+                "Name": "加速符文",
+                "Note": "当持用一把加速武器时，你获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，但你只能用这个额外的动作使用该武器进行打击动作。"
             },
             "spellStoring": {
                 "Name": "储法"
