@@ -1053,6 +1053,9 @@
                     "Toxicologist": {
                         "FieldVials": {
                             "Description": "你可以将万用制剂作为一种伤口型毒素涂抹在武器或者弹药上。将万用制剂的初始伤害添加在使用该武器或弹药的第一次成功的打击上。这一效果会在你当前回合结束时失效。"
+                        },
+                        "FieldBenefit": {
+                            "RollOptionLabel": "毒理学家 — 课题增益"
                         }
                     }
                 },
@@ -3903,6 +3906,9 @@
                 "Organs": "器官视域（器官）",
                 "Skin": "器官视域（皮肤）",
                 "Success": "器官视域 — 医疗检定成功"
+            },
+            "FrenziedRevelry": {
+                "Note": "每当从该加值中受益者对抗敌方心灵效果时在豁免骰上取得大成功，其疯狂加剧，在攻击和伤害骰获得+1状态加值，持续1轮。@UUID[Compendium.pf2e.spell-effects.Item.ldl1aU5ovTQMUHJ2]{法术效果: 迷乱狂欢 (大成功)}"
             }
         },
         "RuleElement": {
@@ -5220,7 +5226,8 @@
                 "DraconicBreathWeapons": "龙类吐息武器",
                 "BludgeoningPiercingSlashing": "钝击，穿刺和挥砍伤害",
                 "HolyBludgeoningPiercingSlashing": "圣洁钝击，穿刺和挥砍伤害",
-                "UnholyBludgeoningPiercingSlashing": "邪秽钝击，穿刺和挥砍伤害"
+                "UnholyBludgeoningPiercingSlashing": "邪秽钝击，穿刺和挥砍伤害",
+                "EnemyStrikes": "敌人打击"
             }
         },
         "Color": {
