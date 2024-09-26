@@ -3909,6 +3909,11 @@
             },
             "FrenziedRevelry": {
                 "Note": "每当从该加值中受益者对抗敌方心灵效果时在豁免骰上取得大成功，其疯狂加剧，在攻击和伤害骰获得+1状态加值，持续1轮。@UUID[Compendium.pf2e.spell-effects.Item.ldl1aU5ovTQMUHJ2]{法术效果: 迷乱狂欢 (大成功)}"
+            },
+            "WingedWarrior": {
+                "Dedication": {
+                    "RollOptionLabel": "以永久翅膀飞行"
+                }
             }
         },
         "RuleElement": {
