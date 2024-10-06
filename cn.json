@@ -1757,7 +1757,8 @@
                 "Plural": "能力"
             },
             "CampaignFeature": {
-                "CampaignLabel": "战役"
+                "CampaignLabel": "战役",
+                "Plural": "战役特性"
             },
             "OtherTags": {
                 "Hint": "特征之外的附加标签，以便于对物品进行分类",
@@ -1851,6 +1852,37 @@
                 "Bulk": {
                     "Capacity": "负重容量",
                     "Ignored": "负重忽视"
+                }
+            },
+            "Ability": {
+                "Category": {
+                    "Defensive": "防御",
+                    "Interaction": "交互",
+                    "Offensive": "进攻",
+                    "Familiar": "魔宠能力",
+                    "None": "无"
+                },
+                "FIELDS": {
+                    "selfEffect": {
+                        "label": "自动应用效果",
+                        "hint": "为使用此动作的角色附加的单个效果物品"
+                    }
+                },
+                "Plural": "能力",
+                "SelfAppliedEffect": {
+                    "Drop": "拖拽效果",
+                    "Applied": "{effect}已应用。"
+                },
+                "Type": {
+                    "Activity": "行动",
+                    "Free": "自由动作",
+                    "Reaction": "反应动作",
+                    "Single": "单动作"
+                }
+            },
+            "FIELDS": {
+                "category": {
+                    "label": "种类"
                 }
             }
         },
@@ -7046,7 +7078,8 @@
             "PurchaseLootPrompt": "{buyer}想要购买这个物品吗?",
             "Purchase": "购买",
             "PurchasePrice": "购买价格",
-            "Give": "给予"
+            "Give": "给予",
+            "SendToPartyStash": "送到小队储物箱"
         },
         "vehicle": {
             "VehicleString": "载具",
@@ -7897,7 +7930,8 @@
         "TraitDescriptionCoagulant": "具有凝血特征的治疗炼金物品会在短期内的多次使用时失去效力。一名生物在通过具有凝血特征的物品恢复生命值后，其会对随后来自具有凝血特征的物品的治疗临时免疫10分钟（但不免疫这些物品的其他效果）。",
         "TraitYaksha": "夜叉",
         "TraitYaoguai": "妖怪",
-        "TraitHungerseed": "饥饿之种"
+        "TraitHungerseed": "饥饿之种",
+        "TraitVolley60": "远射 60尺"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
