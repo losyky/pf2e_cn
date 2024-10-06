@@ -160,7 +160,7 @@
                 },
                 "Moderate": {
                     "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2*2)[persistent,fire]]伤害以及@Damage[(2[splash])[fire]]伤害。",
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2[persistent,fire]]以及@Damage[(2[splash])[fire]][fire]]]伤害。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[2[persistent,fire]]以及@Damage[(2[splash])[fire]]伤害。"
                 }
             },
             "FrostVial": {
@@ -1171,6 +1171,9 @@
                 },
                 "Ligneous": {
                     "ToggleLabel": "木之狂暴"
+                },
+                "ComeAndGetMe": {
+                    "IncomingDamage": "若一个生物的攻击命中你，该生物对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下回合结束。"
                 }
             },
             "Bard": {
@@ -2441,7 +2444,7 @@
                     "Prompt": "选择一种方法论"
                 },
                 "PursueALead": {
-                    "Label": "正在用追查方向调查指定客体"
+                    "Label": "追查方向 — 调查加值"
                 },
                 "SharedStratagem": {
                     "Note": "在你下一回合开始前，你指定的盟友对该生物的下一次攻击，该生物对盟友视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
@@ -2848,7 +2851,7 @@
             },
             "CorrosiveBody": {
                 "Note9th": "每回合首次以这种方式对生物造成酸蚀伤害时，你会获得[[/r 5d6 #Temporary Hit Points]]{5d6点临时生命}",
-                "Note": "每回合首次以这种方式对生物造成酸蚀伤害时，你会获得[[/r 3d6 #Temporary Hit Points]]{3d6点临时生命}"
+                "Note": "每回合首次以这种方式对生物造成酸蚀伤害时，你会获得3d6点临时生命。@UUID[Compendium.pf2e.spell-effects.Item.IUxQCyO3EXSkId5F]"
             },
             "LitCandlecap": "蜡烛帽已被点燃",
             "BonusLabel": {
@@ -4284,7 +4287,8 @@
                         "Label": "等级"
                     },
                     "MergeExisting": {
-                        "Label": "合并已有"
+                        "Label": "合并已有",
+                        "Hint": "若另一个带有同样短标识符的灵光已在生效，将此灵光的数据与其他合并，包括特征、效果和<em>颜色</em>数据。"
                     },
                     "Radius": "半径"
                 }
