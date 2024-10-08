@@ -1069,7 +1069,7 @@
                     "Note": "溅射伤害影响目标周围10尺内的所有生物，而非5尺。"
                 },
                 "UncannyBombs": {
-                    "Note": "你在攻击@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽}生物时的纯骰自动成功。"
+                    "Note": "你在攻击@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]生物时的纯骰检定自动成功。"
                 },
                 "AlchemicalAssessment": {
                     "Note": "若你在鉴定一个你拥有配方的物品时骰出大失败，你转而获得失败的结果。"
@@ -2528,7 +2528,7 @@
                     "Description": "伴随着神圣解放之力的爆发，因为你的解放踏步而得以移动的盟友免受困难地形、高等困难地形、狭窄平面和不稳表面的影响。如果你获得激昂反应的增益，上述好处将适用于所有进行快步的人。"
                 },
                 "OngoingSelfishness": {
-                    "Description": "在你使用自私卫盾后，直到你使用此反应动作的那回合结束之前，你会对来自触发敌人的所有伤害上获得自私卫盾抗性一半的抗性。@UUID[Compendium.pf2e.feat-effects.Item.seOQfjfjrDyK6rCo]{效果：利己自利}"
+                    "Description": "在你使用自私卫盾后，直到你使用此反应动作的那回合结束之前，你会对来自触发敌人的所有伤害上获得自私卫盾抗性一半的抗性。@UUID[Compendium.pf2e.feat-effects.Item.seOQfjfjrDyK6rCo]"
                 },
                 "WeightOfGuilt": {
                     "Description": "负罪感笼罩在那些忽视你救赎瞥视的敌人心中。你可以选择取代给触发反应动作的生物造成力竭2，令其在同样的时间内承受@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}。"
@@ -2796,7 +2796,7 @@
             },
             "Marshal": {
                 "DreadMarshalStance": {
-                    "Note": "当你的打击重击一名敌人时，对方陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 1}。",
+                    "Note": "当你的打击重击一名敌人时，对方陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
                     "Title": "恐怖军势灵光"
                 }
             },
@@ -3069,7 +3069,7 @@
                     },
                     "ImpulseJunction": {
                         "Water": "在你涌动的其他效果生效之后，你能将涌动瞄准的生物（或涌动区域中的一个生物）向任意方向移动5尺，如果该生物在水体中，则移动10尺。这不能将生物移动到空中。你只能移动自愿的生物、对抗涌动豁免失败的生物、或者你涌动攻击骰成功命中的生物。",
-                        "Wood": "你获得和你等级相同的临时生命值，直到你的下个回合开始。@UUID[Compendium.pf2e.feat-effects.Item.rCsmv66TzQhte4Gp]{效果：木门涌动汇流}",
+                        "Wood": "你获得和你等级相同的临时生命值，直到你的下个回合开始。@UUID[Compendium.pf2e.feat-effects.Item.rCsmv66TzQhte4Gp]",
                         "Air": "在涌动的其他效果生效之前或之后，你能选择最多以半速进行一次行走，或进行一次快步。如果你拥有飞行速度，你能选择最多以半速飞行。",
                         "Metal": "选择酸蚀、电击或穿刺。直到你的下个回合开始，每当有生物接触你或用无武装攻击、非长触及武器伤害你，他都会受到你等级一半的伤害（最小1点伤害），伤害类型和你之前选择的一致。",
                         "Earth": "岩石碎片漂浮在你周围，给与你AC+1环境加值，直到你的下个回合开始。@UUID[Compendium.pf2e.feat-effects.Item.09oP0FBBAhXOS4JW]{效果：土门涌动汇流}",
@@ -3324,8 +3324,8 @@
             "SpellTrickster": {
                 "ShiningArms": {
                     "Label": "闪耀武装",
-                    "Note": "当持用该武器的生物对一个敌人造成重击时，你可以用反应动作解消法术，使该敌人@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1回合。",
-                    "Description": "当你施放光亮术时，你可以将它的目标修改为一件近战武器，可以是无人持有的，也可以是由你或自愿的盟友持有的，其持续时间修改为1分钟。如果你这样做，在其的效果上增加以下内容：当持用该武器的生物对一个敌人造成重击时，你可以用反应动作解消法术，使该敌人@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1回合。在你使用这个反应动作后，你在10分钟内不能再使用这个修改。"
+                    "Note": "当持用该武器的生物对一个敌人造成重击时，你可以用反应动作解消法术，使该敌人@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。",
+                    "Description": "当你施放光亮术时，你可以将它的目标修改为一件近战武器，可以是无人持有的，也可以是由你或自愿的盟友持有的，其持续时间修改为1分钟。如果你这样做，在其的效果上增加以下内容：当持用该武器的生物对一个敌人造成重击时，你可以用反应动作解消法术，使该敌人@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。在你使用这个反应动作后，你在10分钟内不能再使用这个修改。"
                 },
                 "SmolderingExplosion": {
                     "Description": "当你施展升阶到4环级或以上的火球术时，你可以修改该法术，在其标准效果上增加以下内容。你的火球在其区域内留下一团短暂的烟云。虽然它是烟而不是雾，但这团云在其他方面具有@UUID[Compendium.pf2e.spells-srd.Item.9XHmC2JgTUIQ1CCm]的效果，它持续1轮。"
