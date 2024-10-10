@@ -1675,7 +1675,7 @@
                 },
                 "RevelInRetribution": {
                     "Label": "纵狂报复",
-                    "Note": "击中那些毫无防备的敌人会让你充满斗志，无论何时你通过反应打击命中都会获得临时生命值。临时生命值持续到法术结束。@UUID[Compendium.pf2e.spell-effects.Item.rnkQKEwUxrGruE1e]{效果：纵狂报复 (临时生命值)}",
+                    "Note": "击中那些毫无防备的敌人会让你充满斗志，无论何时你通过反应打击命中都会获得临时生命值。临时生命值持续到法术结束。@UUID[Compendium.pf2e.spell-effects.Item.rnkQKEwUxrGruE1e]",
                     "RollOptionLabel": "使用反应打击"
                 }
             },
