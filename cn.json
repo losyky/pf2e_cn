@@ -1866,12 +1866,16 @@
                     "selfEffect": {
                         "label": "自动应用效果",
                         "hint": "为使用此动作的角色附加的单个效果物品"
+                    },
+                    "deathNote": {
+                        "label": "死亡记录"
                     }
                 },
                 "Plural": "能力",
                 "SelfAppliedEffect": {
                     "Drop": "拖拽效果",
-                    "Applied": "{effect}已应用。"
+                    "Applied": "{effect}已应用。",
+                    "Delete": "删除参考"
                 },
                 "Type": {
                     "Activity": "行动",
@@ -4311,7 +4315,8 @@
                 "Tabs": {
                     "Traits": "特征",
                     "Damage": "伤害类型",
-                    "Campaign": "战役"
+                    "Campaign": "战役",
+                    "Taxonomies": "装备分类系统"
                 },
                 "DamageTypes": {
                     "name": "自定义伤害类型",
@@ -7931,7 +7936,8 @@
         "TraitYaksha": "夜叉",
         "TraitYaoguai": "妖怪",
         "TraitHungerseed": "饥饿之种",
-        "TraitVolley60": "远射 60尺"
+        "TraitVolley60": "远射 60尺",
+        "TraitAttachedToMeleeWeapon": "附在近战武器上"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
