@@ -81,7 +81,10 @@
                 "Wrap": "布巾",
                 "ElementalCurrent": "元素流",
                 "Belly": "腹撞",
-                "StrikingSurface": "表面打击"
+                "StrikingSurface": "表面打击",
+                "SacredArmament": "神圣武装",
+                "LittleClaw": "小爪",
+                "FlameHair": "炎发"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -1173,7 +1176,8 @@
                     "ToggleLabel": "木之狂暴"
                 },
                 "ComeAndGetMe": {
-                    "IncomingDamage": "若一个生物的攻击命中你，该生物对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下回合结束。"
+                    "IncomingDamage": "若一个生物的攻击命中你，该生物对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下回合结束。",
+                    "Name": "舍命相搏"
                 }
             },
             "Bard": {
@@ -3966,7 +3970,8 @@
             "SpecialStatistic": "特殊统计",
             "TokenMark": "指示物标记",
             "DamageAlteration": "改变伤害",
-            "EffectSpinoff": "Effect Spinoff"
+            "EffectSpinoff": "Effect Spinoff",
+            "CraftingAbility": "工艺能力"
         },
         "SkillVariant": {
             "Buried": "活埋",
@@ -4811,6 +4816,20 @@
             },
             "Tyrafdir": {
                 "DeceptiveJaws": "虚幻颚咬"
+            },
+            "Scroungefeather": {
+                "GrabDebris": {
+                    "BrokenBlade": "断刃",
+                    "MagicBolt": "魔法箭"
+                }
+            },
+            "Shieldmarshal": {
+                "LawbringerSpeedLabel": "圣使裔 - 向目标前进"
+            },
+            "Asper": {
+                "Aura": {
+                    "Fire": "在30尺内，任何受到火焰伤害的生物都会额外受到@Damage[2d10[persistent,fire]]伤害。"
+                }
             }
         },
         "UI": {
@@ -4859,6 +4878,9 @@
             "SanguineMutagen": {
                 "DamageNote": "每当你受到穿刺或挥砍伤害时，你都会受到@Damage[1d6[bleed]]。",
                 "VariantSaveLabel": "{item}对抗疾病、毒素、疲乏"
+            },
+            "SereneMutagen": {
+                "PenaltyLabel": "宁静突变药剂— 施放攻击性法术。"
             }
         },
         "ResistanceException": {
