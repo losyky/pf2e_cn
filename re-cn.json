@@ -1177,7 +1177,8 @@
                 },
                 "ComeAndGetMe": {
                     "IncomingDamage": "若一个生物的攻击命中你，该生物对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下回合结束。",
-                    "Name": "舍命相搏"
+                    "Name": "舍命相搏",
+                    "TemporaryHitPoints": "当你的打击命中了上轮击中过你的生物，你会获得等于体质调整值的临时生命值，重击时可获得双倍。这些临时生命值持续到你的狂暴结束。@UUID[Compendium.pf2e.feat-effects.Item.CYmipBeliNuymENB]"
                 }
             },
             "Bard": {
@@ -1493,6 +1494,60 @@
                 },
                 "CloakOfWavesAndClouds": {
                     "CutAirAndSea": "裁气断海"
+                },
+                "Antidote": {
+                    "Lesser": "次等解毒剂",
+                    "Greater": "高等解毒剂",
+                    "Major": "上等解毒剂",
+                    "Moderate": "中等解毒剂"
+                },
+                "Antiplague": {
+                    "Lesser": "次等抗生素",
+                    "Greater": "高等抗生素",
+                    "Major": "上等抗生素",
+                    "Moderate": "中等抗生素"
+                },
+                "BloodBooster": {
+                    "Greater": "高等壮血剂",
+                    "Lesser": "次等壮血剂",
+                    "Moderate": "中等壮血剂"
+                },
+                "DazzlingRosary": {
+                    "Note": "目标主导你的下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]。"
+                },
+                "HealersGel": {
+                    "Greater": "高等治愈膏药",
+                    "Lesser": "次等治愈膏药",
+                    "Moderate": "中等治愈膏药"
+                },
+                "WemmuthTrinket": {
+                    "Description": "在反射豁免上失败或大失败的生物承受@Damage[(@item.rank)[piercing]]伤害。"
+                },
+                "ElixirOfLife": {
+                    "MinorOrLesser": "下等或次等生命灵药",
+                    "Major": "上等生命灵药",
+                    "ModerateOrGreater": "中等或高等生命灵药",
+                    "True": "真实生命灵药"
+                },
+                "Confabulator": {
+                    "RollOptionLabel": "用诉说者乐器表演"
+                },
+                "EnergizingLattice": {
+                    "Note": "如果你的打击失败但不是大失败，目标任承受一半的@Damage[6d6[force]]{力场伤害}。"
+                },
+                "LifeShot": {
+                    "Major": "上等生命子弹",
+                    "MinorOrLesser": "下等或次等生命子弹",
+                    "ModerateOrGreater": "中等或高等生命子弹",
+                    "True": "真实生命子弹"
+                },
+                "BombersEyeElixir": {
+                    "Greater": "高等爆破者之眼灵药",
+                    "Lesser": "次等爆破者之眼灵药"
+                },
+                "RhinoShot": {
+                    "Success": "目标必须在@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免上大成功，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "CriticalSuccess": "目标必须成功通过@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -3253,8 +3308,8 @@
                     "Note": "忽略目标的隐蔽状态。"
                 },
                 "SolarRejuvenation": {
-                    "Ghoran": "如果你白天时在户外休息了10分钟，你将恢复等于你的@Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{体质调整值×一半你等级的生命值}。在获得此增益的同时，你仍能获得任何来自@UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]的治疗效果。",
-                    "Leshy": "如果你白天时在户外休息了10分钟，你将恢复等于你的@Damage[(floor(@actor.level/2)*@actor.con.mod)[healing]]{体质调整值×一半你等级的生命值}。在获得此增益的同时，你仍能获得任何来自@UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]的治疗效果。不依赖于光合作用获取营养的莱西则需要一个适合他们的环境。例如，真菌莱西需要阴暗、潮湿的环境和一堆腐烂的植物物质。"
+                    "Ghoran": "如果你白天时在户外休息了10分钟，你将恢复等于你的@Damage[(floor(@actor.level/2)*@actor.abilities.con.mod)[healing]]{体质调整值×一半你等级的生命值}。在获得此增益的同时，你仍能获得任何来自@UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]的治疗效果。",
+                    "Leshy": "如果你白天时在户外休息了10分钟，你将恢复等于你的@Damage[(floor(@actor.level/2)*@actor.abilities.con.mod)[healing]]{体质调整值×一半你等级的生命值}。在获得此增益的同时，你仍能获得任何来自@UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]的治疗效果。不依赖于光合作用获取营养的莱西则需要一个适合他们的环境。例如，真菌莱西需要阴暗、潮湿的环境和一堆腐烂的植物物质。"
                 },
                 "BurnIt": {
                     "Label": "烧光！"
@@ -4628,9 +4683,14 @@
                     "Human": "人类",
                     "Spider": "蜘蛛",
                     "Tailless": "无尾",
-                    "Yaoguai": "妖怪"
+                    "Yaoguai": "妖怪",
+                    "Orc": "兽人",
+                    "Tiger": "虎"
                 },
-                "Label": "当前形态"
+                "Label": "当前形态",
+                "AlterationNotes": {
+                    "Unusable": "你当前的形态无法使用这个能力。"
+                }
             },
             "Chimera": {
                 "DragonHead": "龙头的魔法根源",
@@ -5328,6 +5388,9 @@
         "GenericLabel": {
             "PreviousAction": {
                 "ClimbLeapStride": "你上一个动作是攀爬、跳跃或行走"
+            },
+            "ItemVs": {
+                "Fear": "{item} vs 恐惧"
             }
         }
     }
