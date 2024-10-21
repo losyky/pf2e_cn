@@ -842,7 +842,8 @@
                     "Label": "视觉",
                     "Normal": "正常视野"
                 },
-                "DropFeatures": "将族裔特性拖拽于此处。"
+                "DropFeatures": "将族裔特性拖拽于此处。",
+                "Plural": "族裔"
             },
             "Armor": {
                 "Base": {
@@ -1277,7 +1278,8 @@
                 "DivineAttribute": {
                     "Hint": "如选择信仰所育背景，其属性提升选项取决于所选神祇。",
                     "Label": "神圣属性"
-                }
+                },
+                "Plural": "神祇"
             },
             "Effect": {
                 "Sustained": "护命",
@@ -1386,7 +1388,8 @@
                 "AncestryNotFound": "找不到引用的族裔模板。",
                 "DragAncestryHere": "将族裔模板拖到此处可设置此传承所需的先决族裔。",
                 "NoneVersatile": "无(多用)",
-                "RemoveAncestry": "移除所需的先决族裔"
+                "RemoveAncestry": "移除所需的先决族裔",
+                "Plural": "传承"
             },
             "IconLabel": "图标",
             "NameLabel": "名称",
@@ -1439,7 +1442,8 @@
                     "Innovation": "发明",
                     "Improvised": "临时",
                     "Shoddy": "劣质",
-                    "Herbal": "草药"
+                    "Herbal": "草药",
+                    "HandwrapsOfMightyBlows": "重拳缠手带"
                 },
                 "FromSpell": {
                     "Scroll": "{name} 卷轴 ({level}环级)",
@@ -1888,6 +1892,12 @@
                 "category": {
                     "label": "种类"
                 }
+            },
+            "Background": {
+                "Plural": "背景"
+            },
+            "Class": {
+                "Plural": "职业"
             }
         },
         "ActionsCheck": {
@@ -2100,6 +2110,12 @@
                         "KnownSpells": "已知法术",
                         "Activations": "启动",
                         "Rituals": "仪式"
+                    }
+                },
+                "ABCPicker": {
+                    "SearchPlaceholder": "搜索{items}",
+                    "Tooltip": {
+                        "ConfirmSelection": "确认选择"
                     }
                 }
             },
@@ -4108,7 +4124,7 @@
             "HearingRange": {
                 "Unlimited": "无限制",
                 "Name": "听觉范围（英尺）",
-                "Hint": "限制生物在这个场景中听觉的范围*以此来模拟“混淆听觉的环境，例如嘈杂的房间”（CRB第464页）。需要启用基于规则的感官。",
+                "Hint": "限制生物在这个场景中听觉的范围*以此来模拟“混淆听觉的环境，例如嘈杂的房间”（PC第432页）。需要启用基于规则的感官。",
                 "Caveat": "*出于性能原因，半径是真实的测量值，而不是基于网格的测量值。"
             }
         },
@@ -5181,7 +5197,7 @@
         "TraitDescriptionHampering": "当你用该武器击中目标后，你可以使用一个交互动作来给目标造成所有速度-10尺的环境减值。这个减值在目标进行移动动作后、在你的下一个回合开始时、你用武器攻击、或者你移出目标的攻击范围时结束，以先者为准。",
         "TraitDescriptionHaunt": "具有这种特征的危害是一种精神所成的回响，通常是一个不幸死亡的生物。使鬼魂安息通常需要解决鬼魂所未完成的事情。一个作祟（Haunts），如果没有得到适当的安抚，那它总是会在一段时间后再次回归。",
         "TraitDescriptionHealing": "治疗效果能够复原生物的肉体，通常体现为恢复其生命值，但也可能为其祛除疾病或其他衰弱效果。",
-        "TraitDescriptionHex": "巫术是一种女巫释放的聚能法术。",
+        "TraitDescriptionHex": "作为庇护主的宠儿，你可以祈求祂的力量来进行更直接的干预。巫术是由的庇护主所塑造的法术，通过魔宠传递给你，而非你直接使用的能力。你的庇护主希望你推进其事业，不会好心接受重复的请求；因此，你每回合只能使用一个巫术，当前回合尝试第二次使用巫术会失败，动作也会损失。",
         "TraitDescriptionHobgolin": "大地精是一个强壮且聪明的种族，有着军国主义的守序倾向。",
         "TraitDescriptionHuman": "具有此特征的生物是人类族裔的一份子。人类是多样化的种族，以其强大的适应性闻名。具有此特征的能力只能由人类使用或选择。",
         "TraitDescriptionHumanoid": "类人生物的行为逻辑与人类非常相似。它们通常直立，并有两只胳膊和两条腿。",
