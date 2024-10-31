@@ -132,7 +132,8 @@
                     "TemporaryItems": "临时物品已移除。",
                     "WandsCharges": "魔杖已充能。",
                     "Frequencies": "动作频次已刷新。",
-                    "HitPointsSingle": "恢复了{hitPoints}点生命值。"
+                    "HitPointsSingle": "恢复了{hitPoints}点生命值。",
+                    "Resource": "{name} 已恢复。"
                 }
             },
             "Strike": {
@@ -1382,6 +1383,17 @@
                             "Second": "若该专长被选取第二次，授予黑暗视觉。"
                         }
                     }
+                },
+                "Category": {
+                    "General": "通用专长",
+                    "DeityBoon": "神授恩惠",
+                    "Curse": "神圣诅咒",
+                    "ClassFeature": "职业特性",
+                    "Class": "职业专长",
+                    "Bonus": "额外专长",
+                    "AncestryFeature": "族裔特性",
+                    "Skill": "技能专长",
+                    "PfsBoon": "协会福利"
                 }
             },
             "Heritage": {
@@ -2115,8 +2127,10 @@
                 "ABCPicker": {
                     "SearchPlaceholder": "搜索{items}",
                     "Tooltip": {
-                        "ConfirmSelection": "确认选择"
-                    }
+                        "ConfirmSelection": "确认选择",
+                        "ViewSheet": "查看表格"
+                    },
+                    "Title": "{type} 选择"
                 }
             },
             "Creature": {
