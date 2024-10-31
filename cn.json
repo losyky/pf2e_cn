@@ -2131,6 +2131,22 @@
                         "ViewSheet": "查看表格"
                     },
                     "Title": "{type} 选择"
+                },
+                "FeatSlot": {
+                    "AncestryHeader": "族裔专长",
+                    "AncestryFeaturesHeader": "族裔特性",
+                    "ArchetypeHeader": "变体专长",
+                    "BonusHeader": "额外专长",
+                    "CampaignHeader": "战役专长",
+                    "ClassHeader": "职业专长",
+                    "ClassFeaturesHeader": "职业特性",
+                    "DivineIntercessions": "神力干预",
+                    "GeneralHeader": "通用专长",
+                    "SkillHeader": "技能专长",
+                    "MythicDestinyPlaceholder": "神话命途",
+                    "MythicHeader": "神话",
+                    "MythicFeatPlaceholder": "神话专长",
+                    "MythicCallingPlaceholder": "神话感召"
                 }
             },
             "Creature": {
