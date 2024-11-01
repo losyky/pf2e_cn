@@ -619,7 +619,8 @@
                     "RemovePresence": "选择该法术的一个目标或被影响范围内的一个生物，如果该敌人的豁免失败或被命中，你会对它无踪，从它的感官中消失1分钟或直到你使用一个敌对行动。这类似于@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}，但类似识破隐形的效果不会揭示你——你影响的是目标的思想，而不是它的视觉。如果反制检定成功，真视术仍然可以看穿这个幻象。",
                     "Shield": {
                         "Base": "你创造出三重护盾组成的多层屏障来增强你的防御力。持续时间变为到维持，至多1分钟。护盾在你每个回合开始时仍会撤下，但你可以在维持法术时自动再次举盾。",
-                        "BaseTwo": "当你用此法术进行格挡时，三层盾牌中的一层会被打破，你将不再获得AC加成，但法术并没有结束。你可以继续使用该法术，直到最后一层被打破；一旦最后一层破裂，该法术结束，你在10分钟内不能再施放护盾术或增幅护盾术。当你用增幅护盾术进行格挡时，你可以选择破坏多层护盾以提高你的防御力。如果你破坏了两层而不是一层盾，那么盾的格挡硬度会增加到正常值的1.5倍（1级为7，3级为15，5级为22，7级为30，9级为37）。如果你破坏了所有三层，那么硬度将增加到正常值的两倍。"
+                        "BaseTwo": "当你用此法术进行格挡时，三层盾牌中的一层会被打破，你将不再获得AC加成，但法术并没有结束。你可以继续使用该法术，直到最后一层被打破；一旦最后一层破裂，该法术结束，你在10分钟内不能再施放护盾术或增幅护盾术。当你用增幅护盾术进行格挡时，你可以选择破坏多层护盾以提高你的防御力。如果你破坏了两层而不是一层盾，那么盾的格挡硬度会增加到正常值的1.5倍（1级为7，3级为15，5级为22，7级为30，9级为37）。如果你破坏了所有三层，那么硬度将增加到正常值的两倍。",
+                        "RollOptionLabel": "护盾术（增幅） — 破坏盾牌格挡的层数"
                     },
                     "TelekineticProjectile": {
                         "Base": "你用更强的力量投掷物品，以飞雹般的射弹将敌人击退。成功时，你将目标从你的方向推离5尺。大成功时，你在造成双倍伤害之外还能将目标推离10尺。",
@@ -1179,6 +1180,10 @@
                     "IncomingDamage": "若一个生物的攻击命中你，该生物对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下回合结束。",
                     "Name": "舍命相搏",
                     "TemporaryHitPoints": "当你的打击命中了上轮击中过你的生物，你会获得等于体质调整值的临时生命值，重击时可获得双倍。这些临时生命值持续到你的狂暴结束。@UUID[Compendium.pf2e.feat-effects.Item.CYmipBeliNuymENB]"
+                },
+                "Bloodrager": {
+                    "BloodRage": "血怒",
+                    "SpellMiss": "将狂暴的额外@Damage[ternary(gte(@actor.level,13),8,ternary(gte(@actor.level,7),4,2))]伤害应用于该法术，即使获得了失败结果。"
                 }
             },
             "Bard": {
@@ -1533,7 +1538,8 @@
                     "RollOptionLabel": "用诉说者乐器表演"
                 },
                 "EnergizingLattice": {
-                    "Note": "如果你的打击失败但不是大失败，目标任承受一半的@Damage[6d6[force]]{力场伤害}。"
+                    "Note": "如果你的打击失败但不是大失败，目标任承受一半的@Damage[6d6[force]]{力场伤害}。",
+                    "RollOptionLabel": "充能格栅 — 释放能量"
                 },
                 "LifeShot": {
                     "Major": "上等生命子弹",
@@ -1547,7 +1553,11 @@
                 },
                 "RhinoShot": {
                     "Success": "目标必须在@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免上大成功，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
-                    "CriticalSuccess": "目标必须成功通过@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
+                    "CriticalSuccess": "目标必须成功通过@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "Label": "犀牛弹药"
+                },
+                "ShardOfSelfDestruction": {
+                    "Note": "你还承受@Damage[1d6[bleed]]伤害。"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1649,7 +1659,9 @@
                 "SkillUntrained": "选择一项未受训技能。",
                 "Immunity": "选择一种免疫。",
                 "Cantrip": "选择一个戏法。",
-                "MovementType": "选择一种移动类型。"
+                "MovementType": "选择一种移动类型。",
+                "Persona": "选择一种人格特质。",
+                "EquipmentVariety": "选择一个物品变体。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1872,6 +1884,10 @@
                 "HamstringingStrike": {
                     "Prompt": "选择打击结果。",
                     "Note": "如果命中猎物，该生物的速度将获得-5尺的状态减值。如果对你的猎物造成了重击，该生物的速度将获得-10尺的状态减值。\n@UUID[Compendium.pf2e.feat-effects.Item.ESnzqtwSgahLcxg2]{效果：断筋打击}"
+                },
+                "Vindicator": {
+                    "Edge": "卫道者优势",
+                    "Interrogate": "对抗伪装成你信仰神祇的信徒的不死生物或变形生物"
                 }
             },
             "TOTMToggle": {
@@ -2132,10 +2148,17 @@
                     "LuminousSprite": "光辉火花",
                     "Grig": "不谐音符",
                     "Pixie": "皮克精之尘",
-                    "Draxie": "欢乐闪光"
+                    "Draxie": "欢乐闪光",
+                    "Dijiang": "原始脉冲",
+                    "Gandharva": "天界之歌",
+                    "Kanchil": "迷惑之箭",
+                    "Leungli": "汹涌飞溅"
                 },
                 "LuminousSprite": {
                     "Light": "点燃"
+                },
+                "Dijiang": {
+                    "Emotion": "当你对情绪效果的豁免失败（但不是大失败）时，你改为获得成功。"
                 }
             },
             "Suli": {
@@ -2297,7 +2320,10 @@
                     "StingingLash": "蛰刺抽打",
                     "SkywardSlash": "天空劈",
                     "WindCrash": "风袭",
-                    "Stonestrike": "石之击"
+                    "Stonestrike": "石之击",
+                    "GaleBlossom": "风花打击",
+                    "RammingHorn": "角撞攻击",
+                    "ShatteringEarth": "碎地攻击"
                 }
             },
             "CriticalDeck": {
@@ -2469,6 +2495,10 @@
                 },
                 "CityScavenger": {
                     "EarnIncome": "城镇拾荒者 - 赚取收入"
+                },
+                "Twitchy": {
+                    "InitiativeToggle": "神经兮兮— 对手使用欺骗或交涉决定先攻",
+                    "TOTMToggle": "神经兮兮 — 对抗危害"
                 }
             },
             "HalfElf": {
@@ -2515,6 +2545,9 @@
                     "Defensive": "防御策略",
                     "Skill": "技能策略",
                     "Attack": "攻击策略"
+                },
+                "DetectivesReadiness": {
+                    "ClueInAddendum": "你在追查方向上获得的加值，可以用在对抗与调查的核心问题相关的生物或效果的豁免中。"
                 }
             },
             "SpellEffectProtection": {
@@ -2605,7 +2638,8 @@
                     "Note": "目标必须成功通过一次对抗你职业DC的@Check[fortitude|against:class]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。"
                 },
                 "GreaterSecurity": {
-                    "Description": "当伴随他人的精魂之盾生效时，如果你举起盾牌，被精魂之盾伴随的盟友也会获得你的盾牌给予的AC加值，并且只要该盟友满足触发条件，你便能触发盾牌格挡。这会使用你盾牌的数据，而你的盾牌也会如常承受伤害。"
+                    "Description": "当伴随他人的精魂之盾生效时，如果你举起盾牌，被精魂之盾伴随的盟友也会获得你的盾牌给予的AC加值，并且只要该盟友满足触发条件，你便能触发盾牌格挡。这会使用你盾牌的数据，而你的盾牌也会如常承受伤害。",
+                    "RollOptionLabel": "高等卫戍 — 神卫已举盾"
                 },
                 "Security": {
                     "Description": "代替原本的一个动作，你能够使用2个动作施展 <i>精魂之盾</i>。若你如此做，你能够选择一名身处你神卫灵光范围内的盟友，令其获得伴随左右的精魂之盾。在1分钟内，盟友获得精魂之盾的增益，即使盟友离开你的神卫灵光或者你不再举起盾牌，这个增益也不会消失。如果你创造出另一面伴随他人的盾牌，先前的那面便会消失。"
@@ -2626,6 +2660,9 @@
                     "Iniquity": "受到该反应动作初始伤害的敌人也会受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
                     "Liberation": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
                     "ObedienceRedemption": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。"
+                },
+                "BlessedSwiftness": {
+                    "RollOptionLabel": "针对一个被你的移动触发的反应动作进行防御"
                 }
             },
             "DeviantAbilities": {
@@ -3320,6 +3357,18 @@
                 },
                 "IntensifiedElementStance": {
                     "RollOptionLabel": "劲能调息 — 对构装体的伤害"
+                },
+                "IncredibleFamiliar": {
+                    "Animist": "你与你的精魄之间的联系以及你对精魂魔法的掌握达到了新的高度，让你可以将更多的力量注入到你允许它作为你魔宠的实体形态中。你每天可以选择六种魔宠和主人能力，而非四种。",
+                    "Thaumaturge": "通过利用每个魔法根源中最精华的部分，你找到了一种方法可以为你的魔宠提供比其他魔宠还要更多的能力。你每天可以选择6个魔宠或主人能力，而非4个。",
+                    "Witch": {
+                        "Description": "你的魔宠比其他魔宠灌注了更多的魔力。你每天可以选择6个魔宠能力或主人能力，而非4个。",
+                        "Special": "将你因成为女巫而获得的奖励魔宠能力加到这个数额上。"
+                    }
+                },
+                "LightningSwap": {
+                    "Exemplar": "你熟悉如何快速切换战斗方式以及对应的武器，这对有多个武器神迹的特别有用。你交互以将手中任意数量的物品储存起来，然后拔出至多两把武器或一把武器与一面盾牌。",
+                    "Fighter": "你练习过快速切换战斗风格和所需装备。你可以通过交动作将手中任意数量的物品收起，然后最多拿出两把武器或一面盾牌一把武器。"
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -3551,6 +3600,9 @@
             "Nephilim": {
                 "Pitborn": {
                     "AllowedDrops": "1级运动技能专长"
+                },
+                "Proteankin": {
+                    "Resistance": "幻蛇之嗣抗力"
                 }
             },
             "VenomGlands": {
@@ -3624,7 +3676,8 @@
                 "OstentatiousArrivalManifestEidolon": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrayDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
                 "ExplosiveArrival": "如果你下个动作是施放法术，并且法术具有召唤特征，在你召唤生物的周围@Template[emanation|distance:10]区域中的所有生物受到@Damage[(@item.level)d4[fire]|traits:area-damage]伤害。如果被召唤的生物具有@Damage[(@item.level)d4[acid]|traits:area-damage]{酸蚀}、 , @Damage[(@item.level)d4[electricity]|traits:area-damage]{寒冷}、@Damage[(@item.level)d4[electricity]|traits:area-damage]{电击}、@Damage[(@item.level)d4[sonic]|traits:area-damage]{音波}、@Damage[(@item.level)d4[spirit]|traits:area-damage]{精魂}特征，你可取而代之造成对应类型伤害。",
                 "FamiliarsResolve": "如果你接下来的行动是施展法术，那么你或你30尺范围内的任意一名盟友在1轮内对抗那些会使你或盟友陷入毁灭或惊惧状态的豁免检定获得+2状态加值。在14级时，你或盟友在针对这些效果的豁免检定将获得+3状态加值。@UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{效果：魔宠决意}",
-                "GoldenDragonsBounty": "如果你接下来的动作是施展一个造成钝击、穿刺或挥砍伤害的法术，那么该伤害的类型可以由你选择为寒铁、银或钢，用于弱点、抗力、易伤等。在14级时，将精金加入到金属选择列表中。该法术获得金特征。"
+                "GoldenDragonsBounty": "如果你接下来的动作是施展一个造成钝击、穿刺或挥砍伤害的法术，那么该伤害的类型可以由你选择为寒铁、银或钢，用于弱点、抗力、易伤等。在14级时，将精金加入到金属选择列表中。该法术获得金特征。",
+                "PitchPerfectProjection": "若你本轮的下一个动作是施法或使用一个拥有射程的听觉效果，则射程增加30尺。"
             },
             "AwakenedAnimal": {
                 "LateAwakener": {
@@ -3804,8 +3857,12 @@
                     "LanternBeam": "明灯射线",
                     "LanternStrobe": "明灯快闪",
                     "Prompt": "选择一种进化",
-                    "DiggingWedge": "",
-                    "DampeningField": ""
+                    "DiggingWedge": "棱锥挖爪",
+                    "DampeningField": "谐振力场",
+                    "StrengthenedCarapace": "强化甲壳",
+                    "GroundingClawSpikes": "接地爪刺",
+                    "ResonatingMembranes": "共鸣薄膜",
+                    "GlowingWings": "闪光双翅"
                 }
             },
             "ChangeShape": {
@@ -3844,7 +3901,27 @@
                 "DefendingAgainstWaterLabel": "对抗一个水效果"
             },
             "ResonantReflection": {
-                "Label": "启动共鸣反射"
+                "Label": "启动共鸣反射",
+                "ReflectionOfStone": {
+                    "Title": "石之反射",
+                    "Description": "你以一个内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.2BV2yYPfVJ5zirZt]，将法术环阶升高到等同于你等级一半（向上取整）。"
+                },
+                "ReflectionOfStorm": {
+                    "Title": "风暴反射",
+                    "Description": "你可以以 8 环内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.4MOew29Z1oCX8O28]（仅自身），并恢复 1 聚能点。"
+                },
+                "ReflectionOfLife": {
+                    "Description": "你获得快速治疗 3， 持续1分钟。 超过 5 级后，你每升 2 级，快速治疗量就增加 1。</p>\n<p>@UUID[Compendium.pf2e.campaign-effects.Item.DOxl0FDd21VMDOMP]{效果: 生命共鸣 (快速治疗)}.",
+                    "Title": "生命共鸣"
+                },
+                "ReflectionOfLight": {
+                    "Title": "光之反射",
+                    "Description": "你以一个内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.DyiD239dNS7RIxZE]，将法术环阶升高到等同于你等级一半（向上取整）。"
+                },
+                "ReflectionOfWater": {
+                    "Title": "水之反射",
+                    "Description": "你以一个 5 环内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.zfn5RqAdF63neqpP]。在 10 级后你每拥有 2 级等级，你控制的水域的长度和宽度就增加 10 尺。"
+                }
             },
             "Summoner": {
                 "OstentatiousArrival": {
@@ -3858,6 +3935,21 @@
             "MusicalShift": {
                 "Double": {
                     "Label": "双倍"
+                },
+                "Natural": {
+                    "Label": "本位音"
+                },
+                "Flat": {
+                    "Label": "降音"
+                },
+                "Sharp": {
+                    "Label": "升音"
+                },
+                "Quadruple": {
+                    "Label": "四重升"
+                },
+                "Triple": {
+                    "Label": "三重升"
                 }
             },
             "Wayang": {
@@ -3976,6 +4068,256 @@
                 "Dedication": {
                     "RollOptionLabel": "以永久翅膀飞行"
                 }
+            },
+            "StarlitSentinel": {
+                "Constellation": {
+                    "Ox": "青牛",
+                    "Archer": "神弓",
+                    "Blossom": "繁桜",
+                    "Swordswoman": "剑姬",
+                    "Ogre": "山鬼",
+                    "Swallow": "飞燕",
+                    "Prompt": "选择一个十二宫星宿"
+                },
+                "StarlitTransformation": {
+                    "BoltsOfStarlight": "星光箭矢"
+                }
+            },
+            "ZephyrGuard": {
+                "KnowTheBeat": {
+                    "RollOptionLabel": "通晓关节 — 调查犯罪"
+                }
+            },
+            "Exemplar": {
+                "CompliantGold": {
+                    "ExtraReachToggle": "如意神兵 — 武器已有长触及特征。"
+                },
+                "DestinedVictory": {
+                    "Label": "天命决胜",
+                    "OnlyYouAndI": {
+                        "Note": "每当敌人对你打击失手，你恢复@Damage[(1d8+5)[healing]]HP。"
+                    },
+                    "Note": "每当敌人成功用近战武器打击了你，在你的下回合开始前，你会在对抗该敌人的下一次攻击的AC上获得+2状态加值。"
+                },
+                "DivineSpark": {
+                    "Label": "神性火花",
+                    "SparkTranscendence": {
+                        "Reminder": "当你的神性火花处在神迹中时，你能持续获得该神迹的固有能力。"
+                    }
+                },
+                "EnergizedSpark": {
+                    "Label": "神能激发"
+                },
+                "Epithet": {
+                    "BornOfTheBonesOfTheEarth": {
+                        "Description": "当你站在地面或石头上神火解放，你可以选择震裂@Template[type:emanation|distance:10]范围内的地表，使其变为困难地形，你不受这一困难地形影响。",
+                        "Label": "坚地为骨",
+                        "CriticalSpecialization": "当你在一次打击中重击并且重击的目标站在地面或石头上时，目标被大地困住。目标受到@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]状态，并且必须成功通过一次对抗你的职业DC的@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]才能结束禁足。如果他是虚体生物、液态生物（如水元素或某些泥怪）、有掘地速度、或者其他能轻易逃脱的生物，那就不会被困住。"
+                    },
+                    "CriticalSpecializationToggle": "使用尊名重击专精效果",
+                    "DancerInTheSeasons": {
+                        "CriticalSpecialization": "当你重击时，你可以自由动作快步。",
+                        "Description": "当你神火解放时，季节的轮转使你神光焕发，你获得等于等级一半的临时生命，持续到你下个回合开始。"
+                    },
+                    "Label": "尊名",
+                    "OfVerseUnbroken": {
+                        "CriticalSpecialization": "你在一次打击中大成功时，目标会被扰神的旋律萦绕，陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}除非通过@Check[will|against:exemplar]检定对抗你的职业DC。",
+                        "Description": "当你神火解放，你的神性火花化作至崇的仙乐，使你的盟友谐调一致。直到你的下回合开始，任何在你30尺内开始回合的盟友可以在回合开始时自由动作轻声哼唱进行维持动作，以维持任何一个他们可被维持的效果。在这之后你的仙乐结束，且该盟友在10分钟内不能再次受益于该能力。这是一个心灵、听觉效果。"
+                    },
+                    "PeerlessUnderHeaven": {
+                        "Description": "在你神火解放后，你的无双战姿令人畏惧。选择30尺内的一个敌人，目标必须通过@Check[will|against:exemplar|traits:emotion,fear,mental,visual]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧Frightened 1}。目标随后免疫该效果10分钟。这是一个情感、心灵、恐惧、视觉效果。",
+                        "GrievousToggle": "天下无双 — 获得深化符文的额外重击专精效果"
+                    },
+                    "RestlessAsTheTide": {
+                        "CriticalSpecialization": "当你在一次打击中大成功时，水流冲击目标与周围。这对目标与10尺范围内所有生物造成武器伤害骰数量的钝击溅射伤害。这个效果具有水特征。",
+                        "Description": "当你神火解放，升起的潮水托举着你的身体，你可以快步。如果你的神火解放影响一个敌人，你可以作为代替，选择将该敌人向你选择的方向移动5尺，除非目标通过@Check[fortitude|against:exemplar]检定对抗你的职业DC。如果你移动了一个之前与你相邻的敌人，你可以快步移入他空出来的空间。"
+                    },
+                    "TheBrave": {
+                        "Description": "你的身体带着你前进，使你可以以一个自由动作向你选择的一个敌人直线行走至多你的一半速度。一旦你对某个敌人使用该能力，你在10分钟内不能再次对同一个敌人使用该能力。"
+                    },
+                    "TheCunning": {
+                        "Description": "在你进行神火解放后，你可以以自由动作进行一次@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]或者@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]。"
+                    },
+                    "TheLastRuler": {
+                        "Description": "在你神火解放后，你释放出权威的灵气。直到你下回合开始，如果任何生物对你进行攻击检定并失败，你可以以一个自由动作对他尝试一次威吓检定以[[/act demoralize]]，叱责他愚蠢的反抗。"
+                    },
+                    "TheProud": {
+                        "Description": "在你神火解放后，你可以吸引30尺内一个敌人的注意，这个效果有听觉，心灵、情绪、预言特征。直到你下回合开始，目标在对你以外的生物进行攻击、伤害、技能检定上获得-1状态减值，但对你进行这些检定时获得+1状态加值。"
+                    },
+                    "TheRadiant": {
+                        "Description": "在你进行神火解放时，你激励30尺内的一个盟友继续前进，为他恢复@Damage[(2*(1+@actor.level))[healing]]{2+你等级两倍的HP}；这是心灵和情绪效果。然后该盟友暂时免疫10分钟。"
+                    },
+                    "ThiefOfMoonlight": {
+                        "Description": "在你神火解放后，你可以用自由动作对30尺内的一个敌人进行一次[[/act steal]]或者[[/act palm-an-object]]偷走一件物品。被偷走的物品会直接消失并出现在你的手中。"
+                    },
+                    "WhoseCryIsThunder": {
+                        "Description": "当你神火解放时，你可以使自身充满电流，直到你下回合开始。在你充满电流时，任何触摸你，用无武装攻击或非触及近战武器伤害你的生物会受到@Damage[1d6[electricity]]伤害。",
+                        "CriticalSpecialization": "你在一次打击中大成功时会激发雷霆震响。目标必须通过@Check[fortitude|against:exemplar|traits:sonic]检定对抗你的职业DC，失败时，他会被击 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]并@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1分钟，这是个音波效果。"
+                    },
+                    "TheMournful": {
+                        "Description": "在你进行神火解放时，你的行动有着辛酸的悲壮色彩，使30尺内的一个敌人由于眼中打转的泪水和闪现回忆而@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]；这一个是心灵和情绪效果，持续到你的下回合开始，该敌人在随后10分钟内免疫这一效果。"
+                    },
+                    "HealerOfTheWorld": {
+                        "Description": "在你神火解放后，选择@Template[type:emanation|distance:30]范围内任意数量的自愿或@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]的生物。每个濒死的生物失去@UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]状态，仍处在失去意识状态并保持0点生命，每个并非濒死的生物获得10点临时生命，持续到你的下个回合开始。这是一个治疗、命能效果。"
+                    },
+                    "TeacherOfHeroes": {
+                        "Description": "在你神火解放后，你可以以自由动作尝试对一个你能看见的生物进行一次回忆知识检定，并立即将你获得的任何知识传递给60尺内的每个盟友。当你以这种方式回忆知识时，你获得的第一项知识总是敌人的免疫（如果有的话）或最高的抗力（如果他没有免疫）。如果目标没有免疫或抗力，那么你会得知他最高的弱点。如果目标没有免疫、抗力或弱点，那么你可以了解他最低的豁免是哪一个。"
+                    },
+                    "TheDeft": {
+                        "Description": "当你神火解放时，你可以自由动作交互以装填或取出一件武具神迹，这可以发生在你进行解放动作之前或之后。该武器必须是具有装填特征的远程武器或带有投掷特征的单手近战武器。"
+                    }
+                },
+                "EternityIncineratingBlaze": {
+                    "BurnOutOfTime": {
+                        "Label": "焚灭时隙"
+                    },
+                    "Label": "燃尽时光之焰",
+                    "Note": "你灌注的武器造成重击时，目标受到@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}或将其毁灭状态值增加1。如果目标的最大濒死值被该能力降低至0，它就会立即在灵体火焰中死亡，身躯化为灰烬。"
+                },
+                "GiftOfTheImmortalHerb": {
+                    "ShedOfTheMortalSkin": {
+                        "Label": "褪去凡躯"
+                    }
+                },
+                "HurlAtTheHorizon": {
+                    "Note": "武器的投掷距离增加10尺。"
+                },
+                "Ikon": {
+                    "BandsOfImprisonment": {
+                        "Label": "紧禁箍"
+                    },
+                    "BarrowsEdge": {
+                        "Label": "荒冢神锋",
+                        "RollOptionLabel": "荒冢神锋 — 目标生物的当前生命值低于其最大生命一半"
+                    },
+                    "EyeCatchingSpot": {
+                        "Label": "夺目神颜"
+                    },
+                    "FetchingBangles": {
+                        "Label": "摄人手镯"
+                    },
+                    "GazeSharpAsSteel": {
+                        "Label": "锐眼如钢"
+                    },
+                    "GleamingBlade": {
+                        "Label": "映光之刃"
+                    },
+                    "HandsOfTheWildling": {
+                        "Label": "野性之手"
+                    },
+                    "HornOfPlenty": {
+                        "Label": "丰饶号角"
+                    },
+                    "MirroredAegis": {
+                        "Label": "月镜盾"
+                    },
+                    "MortalHarvest": {
+                        "Label": "刈命"
+                    },
+                    "NobleBranch": {
+                        "Label": "尊者木枝"
+                    },
+                    "PeltOfTheBeast": {
+                        "Label": "野兽之皮",
+                        "RollOptionLabel": "野兽之皮 — 同调"
+                    },
+                    "Physical": {
+                        "Existing": "使用角色已有的物品。",
+                        "Grant": "赋予一样新物品。",
+                        "Prompt": "哪个物品会成为你的神迹？",
+                        "UnarmedOrWeapon": "你的神迹是无武装攻击或武器吗？"
+                    },
+                    "Prompt": "选择一种神迹。",
+                    "ScarOfTheSurvivor": {
+                        "Label": "幸存者之痕"
+                    },
+                    "ShadowSheath": {
+                        "Label": "影鞘",
+                        "LoadNote": "你可以花费一分钟准备将符合影鞘需求的武器装入鞘中。"
+                    },
+                    "SkinHardAsHorn": {
+                        "Label": "灵犀坚体",
+                        "CrashAgainstMe": {
+                            "RollOptionLabel": "万毁难敌此身 — 伤害与你抗力一致的武器攻击"
+                        }
+                    },
+                    "SkybearersBelt": {
+                        "Label": "擎天者腰带"
+                    },
+                    "Starshot": {
+                        "Label": "坠星射弹"
+                    },
+                    "ThousandLeagueSandals": {
+                        "Label": "神行千里便鞋"
+                    },
+                    "TitansBreaker": {
+                        "Label": "破地巨兵"
+                    },
+                    "UnfailingBow": {
+                        "Label": "无失弓"
+                    },
+                    "VictorsWreath": {
+                        "Label": "胜者的桂冠"
+                    }
+                },
+                "InfiniteBladesCelestialArrow": {
+                    "HeavenRainsAnEnding": {
+                        "Label": "末世天劫之雨"
+                    },
+                    "Label": "万刃天箭",
+                    "Note": "每当你以你的神迹武器成功打击一个敌人，至多两个相邻目标的敌人被复制出的投射物击中，受到等同于你的神迹武器伤害骰的@Damage[@item.system.damage.dice@item.system.damage.die[spirit]]伤害。"
+                },
+                "MatedBirdsInPairedFlight": {
+                    "Pair": "两种不同神迹。",
+                    "Prompt": "要注入几种神迹？",
+                    "RejoinInFlight": {
+                        "RollOptionLabel": "燕迹翔聚 — 额外武器伤害骰"
+                    },
+                    "Single": "有复数副本的单个武具神迹。"
+                },
+                "SevenColoredCosmicBridge": {
+                    "Label": "虹宇飞桥",
+                    "Note": "当你成功打击一个敌人时，你可以以一个自由动作传送到10尺内的一个无人占据的位置。"
+                },
+                "Sunwrecker": {
+                    "Label": "熄日者",
+                    "Note": "当使用该武器造成重击时，它会以目标为中心创造一个2环黑暗术效果。"
+                }
+            },
+            "PlayingItem": "演奏 {item}",
+            "WarriorOfLegend": {
+                "CursedWeakness": {
+                    "Prompt": "选择一种受诅弱点。"
+                }
+            },
+            "Avenger": {
+                "Slay": {
+                    "Note": "如果命中，目标将受到额外@Damage[(4d6[precision])[@item.system.damage.damageType]]伤害，并需要进行一次@Check[fortitude|against:class|basic|traits:incapacitation]豁免检定对抗你的职业DC。如果目标在豁免检定中大失败，则会死亡。"
+                }
+            },
+            "Animist": {
+                "ChanneledProtection": {
+                    "Prompt": "所需法术是否至少为7环级？"
+                }
+            },
+            "EnvenomCompanion": {
+                "DamageNote": "被此毒素伤害的生物必须尝试一次@Check[fortitude|traits:poison]豁免。在失败时，它也会获得@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} ，持续1轮。"
+            },
+            "ImpeccableFlow": {
+                "Note": "如果你受此法术影响的任何检定大失败，加值将终止，并且在法术剩余时间内所有检定都有-1状态减值。",
+                "RollOptionLabel": "无暇心流 — 你的任何检定大失败。"
+            },
+            "SixthPillar": {
+                "SixthPillarMastery": {
+                    "AttackNote": "当你在对敌人的一次无武装攻击成功时，在你的下回合开始前他们对抗你的法术的豁免受到-1状态减值。@UUID[Compendium.pf2e.feat-effects.Item.DX6v0lcI2uA99Yjv]{效果: 第六柱精通}",
+                    "SpellNote": "当你使用法术位施放一个法术时，你在下回合开始前无武装攻击的攻击骰获得+1状态加值。"
+                }
+            },
+            "RapidAdaptation": {
+                "Prompt": "此角色是否已经拥有游泳速度？"
+            },
+            "SpiritWarrior": {
+                "SpiritDamage": "灵明剑客 — 造成精魂伤害"
             }
         },
         "RuleElement": {
@@ -4890,6 +5232,9 @@
                 "Aura": {
                     "Fire": "在30尺内，任何受到火焰伤害的生物都会额外受到@Damage[2d10[persistent,fire]]伤害。"
                 }
+            },
+            "WeaverOfWebs": {
+                "InBrightLight": "在明亮光中"
             }
         },
         "UI": {
@@ -5377,6 +5722,9 @@
             },
             "Trigger": {
                 "Label": "触发"
+            },
+            "Special": {
+                "Label": "特殊"
             }
         },
         "Background": {
@@ -5391,6 +5739,10 @@
             },
             "ItemVs": {
                 "Fear": "{item} vs 恐惧"
+            },
+            "StrikeCount": {
+                "Second": "第二次打击",
+                "First": "首次打击"
             }
         }
     }
