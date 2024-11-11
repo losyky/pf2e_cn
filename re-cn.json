@@ -1552,8 +1552,8 @@
                     "Lesser": "次等爆破者之眼灵药"
                 },
                 "RhinoShot": {
-                    "Success": "目标必须在@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免上大成功，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
-                    "CriticalSuccess": "目标必须成功通过@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "Success": "目标必须在@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免上成功，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
+                    "CriticalSuccess": "目标必须在@Check[fortitude|dc:19|name:Rhino Shot|traits:conjuration,consumable,magical|showDC:all]豁免上大成功，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                     "Label": "犀牛弹药"
                 },
                 "ShardOfSelfDestruction": {
@@ -2075,7 +2075,8 @@
                 "Prompt": "选择专家的技能熟练度"
             },
             "GameHunterDedication": {
-                "TargetHuntedPrey": "目标是你的猎杀目标（仅限动物、魔兽或龙）"
+                "TargetHuntedPrey": "目标是你的猎杀目标（仅限动物、魔兽或龙）",
+                "SuccessAttack": "当你成功对你的猎杀目标进行了一次打击，且目标措手不及时，猎物必须尝试一次@Check[fortitude|against:class]豁免，对抗你的职业DC。如果失败，猎物的所有速度减少10尺，持续1轮；如果大失败，此效果的持续时间变为1分钟。猎物在10分钟内对此效果临时免疫。@UUID[Compendium.pf2e.feat-effects.Item.eTosCwuCMf09fYYH] @UUID[Compendium.pf2e.feat-effects.Item.lfbDqyKUMssoxUTZ]"
             },
             "Ganzi": {
                 "Irrepressible": {
@@ -2583,7 +2584,11 @@
                 "GoadingFeint": {
                     "Note": "虚招成功时，取代虚招的通常效果，直到目标的下个回合结束，其对你的下一次攻击骰受到-2环境减值。@UUID[Compendium.pf2e.feat-effects.Item.rflbFzV44Fd6aBLE]"
                 },
-                "PanacheFailure": "直到你的下回合结束为止你获得@UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]"
+                "PanacheFailure": "直到你的下回合结束为止你获得@UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]",
+                "TheBiggerTheyAre": {
+                    "CriticalSuccess": "大成功时，如果你成功穿过了目标占据的方格，目标获得对你的精准伤害弱点，持续到你的回合结束。@UUID[Compendium.pf2e.feat-effects.Item.SLXhPgaeKB0W3k1D]",
+                    "Success": "成功时，如果你成功穿过了目标占据的方格，目标在你下次攻击时获得对你的精准伤害弱点。@UUID[Compendium.pf2e.feat-effects.Item.SLXhPgaeKB0W3k1D]"
+                }
             },
             "Gnome": {
                 "GrimInsight": {
@@ -2805,7 +2810,7 @@
                     "Fervor": "你的法术 DC 或法术攻击加值不须承受惊惧状态的状态减值。取而代之的是，你的法术攻击检定上获得状态加值，数值等同你原本要承受的减值；你的敌人在对抗你的法术的豁免检定中也会受到相等的状态减值。其他数据都像平常一样承受状态减值。法术：@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.DU5daB09xwfE1y38]",
                     "Label": "恐惧",
-                    "Trigger": "你让恐惧成为你的燃料而非负担，但这也会燃烧你的耐力。"
+                    "Trigger": "一个敌人使你陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]。"
                 },
                 "Hatred": {
                     "Activation": "你可以快步或行走。在结束这次移动时，你必须比原本更靠近你的情绪焦点。",
@@ -3369,6 +3374,15 @@
                 "LightningSwap": {
                     "Exemplar": "你熟悉如何快速切换战斗方式以及对应的武器，这对有多个武器神迹的特别有用。你交互以将手中任意数量的物品储存起来，然后拔出至多两把武器或一把武器与一面盾牌。",
                     "Fighter": "你练习过快速切换战斗风格和所需装备。你可以通过交动作将手中任意数量的物品收起，然后最多拿出两把武器或一面盾牌一把武器。"
+                },
+                "CavaliersBanner": {
+                    "Label": "骑兵旗帜——对抗恐惧效果"
+                },
+                "QuickClimb": {
+                    "Note": "你获得成功结果时多移动5尺，大成功时多移动10尺，最多不超过你的速度。"
+                },
+                "QuickSwim": {
+                    "Note": "你获得成功结果时多游泳5尺，大成功时多游泳10尺，最多不超过你的速度。"
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -4038,6 +4052,9 @@
                     },
                     "witch": {
                         "Description": "通过纯粹的经验，你已经提高了你的武器熟练。你在简易武器和无武装攻击上的熟练度提升至专家。"
+                    },
+                    "exemplar": {
+                        "Description": "你不懈掌握武器的精妙之处。你的军用武器、简易武器、和无武装攻击的熟练等级提升至专家。"
                     }
                 }
             },
@@ -4260,7 +4277,8 @@
                     },
                     "VictorsWreath": {
                         "Label": "胜者的桂冠"
-                    }
+                    },
+                    "UnarmedIkonToggle": "用无武装神迹攻击"
                 },
                 "InfiniteBladesCelestialArrow": {
                     "HeavenRainsAnEnding": {
@@ -4370,7 +4388,8 @@
             "TokenMark": "指示物标记",
             "DamageAlteration": "改变伤害",
             "EffectSpinoff": "Effect Spinoff",
-            "CraftingAbility": "工艺能力"
+            "CraftingAbility": "工艺能力",
+            "SpecialResource": "特殊资源"
         },
         "SkillVariant": {
             "Buried": "活埋",
