@@ -4238,7 +4238,9 @@
                     "SkinHardAsHorn": {
                         "Label": "灵犀坚体",
                         "CrashAgainstMe": {
-                            "RollOptionLabel": "万毁难敌此身 — 伤害与你抗力一致的武器攻击"
+                            "RollOptionLabel": "万毁难敌此身 — 伤害与你抗力一致的武器攻击",
+                            "Label": "万毁难敌此身",
+                            "Note": "如果一个生物使用造成伤害与你抗力一致的武器，在一次对你的近战攻击骰中失败，或者攻击成功但你的抗力将伤害减少到0，那么该武器伴随着刺耳的声响从你的皮肤上猛得弹开，使得攻击的敌人措手不及，并且在以该武器进行的攻击中遭受-2环境减值，直到他的下回合开始。@UUID[Compendium.pf2e.feat-effects.Item.sEWwGSuXxcTl020D]"
                         }
                     },
                     "SkybearersBelt": {
