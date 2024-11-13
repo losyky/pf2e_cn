@@ -1384,6 +1384,10 @@
                             "Ancestry": "角色族裔拥有昏暗视觉时，授予黑暗视觉。",
                             "Second": "若该专长被选取第二次，授予黑暗视觉。"
                         }
+                    },
+                    "SuppressedFeatures": {
+                        "Hint": "要从数据准备和专长栏中移除一个特征，则将其拖放到此表上。",
+                        "Label": "排除特征"
                     }
                 },
                 "Category": {
@@ -1396,7 +1400,8 @@
                     "AncestryFeature": "族裔特性",
                     "Skill": "技能专长",
                     "PfsBoon": "协会福利",
-                    "Ancestry": "族裔专长"
+                    "Ancestry": "族裔专长",
+                    "Calling": "神话感召"
                 }
             },
             "Heritage": {
@@ -2111,7 +2116,8 @@
                             "NConsumed": "每日制作完成：消耗了{quantity}个试剂。"
                         },
                         "Perform": "执行每日制作"
-                    }
+                    },
+                    "RemainingSlots": "空位(剩余{remaining})"
                 },
                 "Language": {
                     "Unallocated": {
@@ -2561,7 +2567,15 @@
                     "True": "是",
                     "Title": "发出声响？"
                 }
-            }
+            },
+            "Resource": {
+                "Resolve": "决意",
+                "MythicPoints": "神话点",
+                "Focus": "聚能点",
+                "HeroPoints": "英雄点",
+                "Investiture": "绑定"
+            },
+            "Resources": "资源"
         },
         "ActorSizeGargantuan": "巨型",
         "ActorSizeHuge": "超大型",
@@ -4589,9 +4603,9 @@
                     "Choices": {
                         "disabled": "不启用",
                         "enabled": "启用",
-                        "variant-tiers": "变体（神话等级(Mythic Tiers)）"
+                        "variant-tiers": "替换神话进程"
                     },
-                    "Hint": "启用神话感召、专长和命途分配栏。"
+                    "Hint": "启用神话感召、专长和命途分配栏。替换神话进程，写在替换神话规则中，使角色能够独立于等级增长而进阶。"
                 }
             },
             "TOTMToggles": {
@@ -8046,7 +8060,8 @@
         "TraitPersonaWarrior": "人格特质: 斗士",
         "TraitPersonaWildcard": "人格特质: 百搭牌",
         "TraitCertainKill": "必杀",
-        "TraitDescriptionLineage": "具有此特征的专长表明角色是某个特定类型生物的后裔。你只能拥有一个血脉专长。你只能在1级时选取血脉专长，你不能重训来取得或替换这些专长。"
+        "TraitDescriptionLineage": "具有此特征的专长表明角色是某个特定类型生物的后裔。你只能拥有一个血脉专长。你只能在1级时选取血脉专长，你不能重训来取得或替换这些专长。",
+        "ConditionTypeCursebound": "咒缚"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
