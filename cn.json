@@ -129,11 +129,12 @@
                     "Resolve": "决心已恢复。",
                     "SpellSlots": "所有法术位已恢复。",
                     "StaminaPoints": "耐力点数已恢复。",
-                    "TemporaryItems": "临时物品已移除。",
+                    "TemporaryItems": "临时物品已过期。",
                     "WandsCharges": "魔杖已充能。",
                     "Frequencies": "动作频次已刷新。",
                     "HitPointsSingle": "恢复了{hitPoints}点生命值。",
-                    "Resource": "{name} 已恢复。"
+                    "Resource": "{name} 已恢复。",
+                    "CraftingSlots": "制作位已恢复。"
                 }
             },
             "Strike": {
@@ -1006,7 +1007,7 @@
                         "Description": "你有使物质腐败衰退的力量。"
                     },
                     "Delirium": {
-                        "Label": "癫狂",
+                        "Label": "迷失",
                         "Description": "你可以召来幻觉与躁动。"
                     },
                     "Destruction": {
@@ -1174,7 +1175,7 @@
                         "Description": "你看顾古昔死者并保护其秘密。"
                     },
                     "Void": {
-                        "Label": "虚空",
+                        "Label": "空无",
                         "Description": "你从无中汲取力量。"
                     },
                     "Water": {
@@ -1260,9 +1261,10 @@
                 },
                 "Category": {
                     "Label": "类别",
-                    "Hint": "可以选择追随众神域或是无关神祇的信条，而非特定神明。而牧师与圣骑士必须追随神明或是众神域。",
+                    "Hint": "可以选择追随众神域，誓盟或是无关神祇的信条，而非特定神明。",
                     "Pantheon": "众神",
-                    "Philosophy": "信条"
+                    "Philosophy": "信条",
+                    "Covenant": "誓盟"
                 },
                 "Spellcasting": "法术书",
                 "Sanctification": {
@@ -2110,14 +2112,12 @@
                 "Crafting": {
                     "Cost": "花费",
                     "Daily": {
-                        "Complete": {
-                            "OneConsumed": "每日制作完成：消耗了一个试剂。",
-                            "ZeroConsumed": "每日制作完成。",
-                            "NConsumed": "每日制作完成：消耗了{quantity}个试剂。"
-                        },
+                        "Complete": "每日制作完成。",
                         "Perform": "执行每日制作"
                     },
-                    "RemainingSlots": "空位(剩余{remaining})"
+                    "RemainingSlots": "空位(剩余{remaining})",
+                    "BatchQuantity": "x{quantity}",
+                    "MissingResource": "制作所需的资源不足。"
                 },
                 "Language": {
                     "Unallocated": {
@@ -2575,7 +2575,8 @@
                 "HeroPoints": "英雄点",
                 "Investiture": "绑定"
             },
-            "Resources": "资源"
+            "Resources": "资源",
+            "ResourceRatio": "{value}/{max} {resource}"
         },
         "ActorSizeGargantuan": "巨型",
         "ActorSizeHuge": "超大型",
