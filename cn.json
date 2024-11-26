@@ -1641,7 +1641,7 @@
                     "Hint": "表明此武器可以作为弹药装载到另一种武器中。"
                 },
                 "Rune": {
-                    "Potency": "武器熟练",
+                    "Potency": "武器潜能",
                     "Striking": {
                         "Major": "上等强击",
                         "Striking": "强击",
