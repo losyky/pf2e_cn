@@ -918,7 +918,8 @@
                     "knife": "军用短刃",
                     "flail": "军用连枷",
                     "bow": "军用弓弩",
-                    "sword": "军用剑"
+                    "sword": "军用剑",
+                    "crossbow": "军用弩"
                 },
                 "MartialOrcWeapons": "军用兽人武器",
                 "MartialTenguWeapons": "军用天狗武器",
@@ -944,7 +945,8 @@
                     "axe": "进阶斧",
                     "bomb": "进阶炸弹",
                     "bow": "进阶弓弩",
-                    "brawling": "进阶搏击"
+                    "brawling": "进阶搏击",
+                    "crossbow": "进阶弩"
                 },
                 "AdvancedHobgoblinWeapons": "进阶大地精武器",
                 "AdvancedKoboldWeapons": "进阶狗头人武器",
@@ -1096,7 +1098,8 @@
                 },
                 "SupremeInvigoratingElixir": {
                     "Description": "将你的等级比实际高2来进行提振灵药的反制检定。并且将下列状态加入制作的提振灵药可以选择反制的状态：@UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]，@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]。你也可以选择反制一个疾病，不论它施加了何种状态。"
-                }
+                },
+                "AdvancedAlchemy": "高阶炼金术"
             },
             "Aid": {
                 "Prompt": "选择协助带来的加值"
@@ -1184,6 +1187,9 @@
                 "Bloodrager": {
                     "BloodRage": "血怒",
                     "SpellMiss": "将狂暴的额外@Damage[ternary(gte(@actor.level,13),8,ternary(gte(@actor.level,7),4,2))]伤害应用于该法术，即使获得了失败结果。"
+                },
+                "Decay": {
+                    "ToggleLabel": "腐烂狂暴"
                 }
             },
             "Bard": {
@@ -1558,6 +1564,9 @@
                 },
                 "ShardOfSelfDestruction": {
                     "Note": "你还承受@Damage[1d6[bleed]]伤害。"
+                },
+                "FinalScalecloak": {
+                    "EmbodyTheStormLabel": "究级鳞片斗篷 — 风暴显现"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1577,7 +1586,8 @@
                     "bow": "进阶弓弩",
                     "knife": "进阶短刃",
                     "sling": "进阶投索",
-                    "sword": "进阶剑"
+                    "sword": "进阶剑",
+                    "crossbow": "进阶弩"
                 },
                 "SimpleMartial": {
                     "sling": "简易&军用投索",
@@ -1595,7 +1605,8 @@
                     "bomb": "简易&军用炸弹",
                     "brawling": "简易&军用搏击",
                     "dart": "简易&军用暗器",
-                    "club": "简易&军用棍棒"
+                    "club": "简易&军用棍棒",
+                    "crossbow": "简易 & 军用弩"
                 }
             },
             "MarkForDeath": {
@@ -1661,7 +1672,8 @@
                 "Cantrip": "选择一个戏法。",
                 "MovementType": "选择一种移动类型。",
                 "Persona": "选择一种人格特质。",
-                "EquipmentVariety": "选择一个物品变体。"
+                "EquipmentVariety": "选择一个物品变体。",
+                "Penalty": "选择一种减值。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1683,7 +1695,8 @@
                 "Staff": "双手使用杖",
                 "BastardSword": "双手使用变种剑",
                 "BattleLute": "双手使用战斗鲁特琴",
-                "Broom": "双手使用扫帚"
+                "Broom": "双手使用扫帚",
+                "OrcSkewermaul": "双手使用兽人矛锤"
             },
             "WellspringMage": {
                 "CriticalSuccess": "你暂时恢复一个由你选择的任何环级的已消耗法术位。这个暂时恢复的临时法术位将会持续一分钟，如果你不在一分钟内使用它，你将在法术位过期时产生@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{泉源涌动 Wellspring Surge}。",
@@ -1789,6 +1802,11 @@
                 },
                 "DragonRoar": {
                     "Label": "第一次攻击惊惧的生物"
+                },
+                "QiSpells": {
+                    "HeavensThunder": {
+                        "RollOptionLabel": "天堂之雷 — 真气波"
+                    }
                 }
             },
             "Shisk": {
@@ -2262,6 +2280,26 @@
                         "NimbleFlight": {
                             "Description": "当你施放或维持一个巫术法术，你的魔宠可以飞行最多15尺；该移动不触发反应动作。",
                             "Title": "迅飞魔宠"
+                        },
+                        "BolsteringAid": {
+                            "Description": "你的魔宠知道各种能帮上忙的技巧！当你施放或维持一个巫术时，如果你的魔宠与某位盟友相邻，该盟友在你下个回合开始前尝试的下次非攻击技能检定上获得+2状态加值。",
+                            "Title": "强援魔宠 Familiar of Bolstering Aid"
+                        },
+                        "EnticingNegotiation": {
+                            "Title": "诱人魔宠 Familiar of Enticing Negotiation",
+                            "Description": "当你施放或维持一个巫术，且你的魔宠位于一个敌人10尺内时，敌人就会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下个回合开始。你的魔宠每轮只能以此法分散一个敌人的注意力。"
+                        },
+                        "ObscuringSnowfall": {
+                            "Title": "漫雪魔宠 Familiar of Obscuring Snowfall",
+                            "Description": "当你施放或维持一个巫术时，你可以使附着的雪以你魔宠所处空间的方格为中心，在@Template[type:burst|distance:5]范围内落下。降雪会持续到你的下个回合开始，在此期间进入这些方格的敌人会陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]状态，直到你的下个回合开始。"
+                        },
+                        "PairedPerplexity": {
+                            "Title": "双惑魔宠 Familiar of Paired Perplexity",
+                            "Description": "当你施放或维持一个巫术时，你的魔宠会看似翻倍，同时出现在两个地方。你选择的20尺内一个生物使其陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，直到你的下个回合开始；这是一种视觉效果。"
+                        },
+                        "SwarmsHeart": {
+                            "Description": "当你施放或维持一个巫术时，昆虫会蜂拥而至保护你和你的盟友。直到你的下个回合开始，你的魔宠为你或任何与其共享空间的盟友提供隐蔽。",
+                            "Title": "虫心魔宠 Familiar of Swarm's Heart"
                         }
                     }
                 },
@@ -2462,6 +2500,9 @@
                 },
                 "EmblazonAntimagic": {
                     "WeaponNote": "当武器的持用者使用其造成重击时，他可以尝试反制目标身上的一个法术，使用他等级的一半作为反制等级，向上取整。在这次反制尝试后，刻印圣徽立即消失。"
+                },
+                "BattleHarbinger": {
+                    "DivineFont": "你不再用神力源泉准备@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]或@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]，而是获得战斗源泉，允许你准备战斗灵光法术。你每天会在你最高环的牧师法术位上额外获得4个法术位。你只能使用这些法术位准备@UUID[Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx]或@UUID[Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu]。任何提及战斗灵光的专长和效果都指这些法术，无论它们是通过你的标准法术位还是神力源泉法术位施展的。5级时，额外法术位的数量增加到5个，15级时，额外法术位的总数增加到6个。取代法术DC，你的战斗灵光使用你的职业DC。"
                 }
             },
             "Conrasu": {
@@ -2668,6 +2709,18 @@
                 },
                 "BlessedSwiftness": {
                     "RollOptionLabel": "针对一个被你的移动触发的反应动作进行防御"
+                },
+                "ExaltedGreatness": {
+                    "Label": "激昂伟力",
+                    "Liberation": "除触发盟友之外，你与受激昂反应影响的所有角色均可以尝试挣脱相应效果。",
+                    "Redemption": "激昂反应赋予的抗力不会减少。",
+                    "Grandeur": "你辉煌闪耀产生的显光尘效果持续1分钟。",
+                    "Iniquity": "你的激昂反应对除触发生物之外的其它生物造成的伤害会增加@Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,9),3,ternary(gte(@actor.level,5),2,1))))))[spirit]]（在伤害减半后再应用此额外伤害）。",
+                    "Justice": "激昂反应额外攻击的减值为-2而非-5。",
+                    "Obedience": "对除触发生物之外其他拒绝@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]的生物造成的伤害提升至触发生物抗命时受到伤害的一半（对所有影响生物只进行一次掷骰）。"
+                },
+                "OathOfTheSlayer": {
+                    "RollOptionLabel": "屠灭誓约 — 双倍额外伤害"
                 }
             },
             "DeviantAbilities": {
@@ -3691,7 +3744,16 @@
                 "ExplosiveArrival": "如果你下个动作是施放法术，并且法术具有召唤特征，在你召唤生物的周围@Template[emanation|distance:10]区域中的所有生物受到@Damage[(@item.level)d4[fire]|traits:area-damage]伤害。如果被召唤的生物具有@Damage[(@item.level)d4[acid]|traits:area-damage]{酸蚀}、 , @Damage[(@item.level)d4[electricity]|traits:area-damage]{寒冷}、@Damage[(@item.level)d4[electricity]|traits:area-damage]{电击}、@Damage[(@item.level)d4[sonic]|traits:area-damage]{音波}、@Damage[(@item.level)d4[spirit]|traits:area-damage]{精魂}特征，你可取而代之造成对应类型伤害。",
                 "FamiliarsResolve": "如果你接下来的行动是施展法术，那么你或你30尺范围内的任意一名盟友在1轮内对抗那些会使你或盟友陷入毁灭或惊惧状态的豁免检定获得+2状态加值。在14级时，你或盟友在针对这些效果的豁免检定将获得+3状态加值。@UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{效果：魔宠决意}",
                 "GoldenDragonsBounty": "如果你接下来的动作是施展一个造成钝击、穿刺或挥砍伤害的法术，那么该伤害的类型可以由你选择为寒铁、银或钢，用于弱点、抗力、易伤等。在14级时，将精金加入到金属选择列表中。该法术获得金特征。",
-                "PitchPerfectProjection": "若你本轮的下一个动作是施法或使用一个拥有射程的听觉效果，则射程增加30尺。"
+                "PitchPerfectProjection": "若你本轮的下一个动作是施法或使用一个拥有射程的听觉效果，则射程增加30尺。",
+                "SeneschalSpell": "如果你的下一个动作是施放法术，且你的受监护人在30英尺内，你可以让法术从你的受监护人身上发出。该生物可以使用其反应来大致完成法术的吟唱，这会使法术对你（而不是对它们）而言具有晦匿特征，因为法术的外观仅围绕你的受监护人出现。",
+                "KaleidoscopicEntreaty": {
+                    "Success": "生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。",
+                    "CriticalFailure": "生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮并目眩1分钟。",
+                    "CriticalSuccess": "生物不受影响。",
+                    "Failure": "生物目眩1分钟。",
+                    "Description": "若你的下个动作是施放@UUID[Compendium.pf2e.spells-srd.Item.Yph1UqZU8vMc9bJG]，你能让该精魂对你为中心的@Template[type:emanation|distance:10]区域释放出多彩、明亮、且具有声响的灿烂表象。区域内的每个生物必须尝试@Check[fortitude|against:class-spell]豁免对抗你的职业DC或法术DC且具有后述结果。"
+                },
+                "HeraldicProclamation": "30尺射程内的所有盟友都会获得@Damage[(2*@item.rank)[healing,vitality]|shortLabel]生命值，并且30尺射程内的所有敌人都会承受@Damage[(2*@item.rank)[spirit]|traits:sanctified]伤害，数值等同于法术环级的两倍（@Check[will|basic]豁免对抗你的法术DC）。"
             },
             "AwakenedAnimal": {
                 "LateAwakener": {
@@ -4055,6 +4117,54 @@
                     },
                     "exemplar": {
                         "Description": "你不懈掌握武器的精妙之处。你的军用武器、简易武器、和无武装攻击的熟练等级提升至专家。"
+                    },
+                    "psychic": {
+                        "Description": "训练和魔法也加强了你的武器技巧。你在简易武器和无武装攻击上的熟练等级提升至专家。"
+                    }
+                },
+                "FortitudeExpertise": {
+                    "animist": {
+                        "Description": "精魂力量增强了你的身体。你的强韧豁免熟练度提升为专家。"
+                    },
+                    "bard": {
+                        "Description": "你的肉体在冒险途中变得愈发强壮。你在强韧豁免上的熟练度提升至专家。"
+                    },
+                    "druid": {
+                        "Description": "你的肉体在冒险途中变得愈发强壮。你在强韧豁免上的熟练度提升至专家。"
+                    },
+                    "investigator": {
+                        "Description": "你的肉体在冒险途中变得愈发强壮。你在强韧豁免上的熟练度提升至专家。"
+                    },
+                    "swashbuckler": {
+                        "Description": "你的肉体在冒险途中变得愈发强壮。你在强韧豁免上的熟练度提升至专家。"
+                    }
+                },
+                "SimpleWeaponExpertise": {
+                    "summoner": {
+                        "Description": "练习与魔法增进了你的武器技艺。你在简易武器和无武装攻击上的熟练度提升至专家。"
+                    },
+                    "animist": {
+                        "Description": "与灵体同伴一起训练让你的武器技巧有所改善。你的简易武器和无武装攻击熟练度提升至专家。"
+                    }
+                },
+                "PerceptionMastery": {
+                    "barbarian": {
+                        "Description": "你的本能让你的所有感官变得更加敏锐。你在察觉上的熟练度提升为大师。"
+                    },
+                    "bard": {
+                        "Description": "你对细致入微的事物也有着敏锐的察觉。你在察觉上的熟练度提升至大师。"
+                    },
+                    "exemplar": {
+                        "Description": "随着你的冒险，你发展出对细节的敏锐感知和关注。你的察觉熟练等级提升至大师。"
+                    },
+                    "ranger": {
+                        "Description": "你对各种细节具有极高的敏感性和关注力。你在察觉上的熟练度提升至大师。"
+                    },
+                    "rogue": {
+                        "Description": "你对细节之处有了更加敏锐的觉察力与注意力。你在察觉上的熟练度提升至大师。"
+                    },
+                    "swashbuckler": {
+                        "Description": "你的冒险生涯令你对于细节有了敏锐的认知和关注。你在察觉上的熟练等级提升至大师。"
                     }
                 }
             },
@@ -4318,6 +4428,9 @@
             "Animist": {
                 "ChanneledProtection": {
                     "Prompt": "所需法术是否至少为7环级？"
+                },
+                "RoaringHeart": {
+                    "Prompt": "有几个被成功推撞的生物？"
                 }
             },
             "EnvenomCompanion": {
@@ -4338,7 +4451,36 @@
             },
             "SpiritWarrior": {
                 "SpiritDamage": "灵明剑客 — 造成精魂伤害"
-            }
+            },
+            "MortalHerald": {
+                "DivinePresence": {
+                    "OffGuardToggle": "显化圣相 — 让目标措手不及"
+                }
+            },
+            "LostInTheCrowd": {
+                "Prompt": "选择人群的数量。",
+                "CrowdSize": {
+                    "Ten": "至少10个生物",
+                    "Hundred": "至少100个生物"
+                }
+            },
+            "RivethunInvoker": {
+                "InvokeOffense": {
+                    "Label": "唤醒攻击性"
+                },
+                "OneWithTheSpirits": {
+                    "Label": "众魂合一 — 造成精魂伤害"
+                }
+            },
+            "GreyGardener": {
+                "Execution": {
+                    "Note": "如果命中，死刑犯受到额外@Damage[(8d6[precision])[@item.system.damage.damageType]]伤害，@Check[fortitude|against:class-spell|basic]豁免，对抗你的职业DC或法术DC，取其高者。如果死刑犯被处决降低到0HP，且需要首级才能活命，他们死亡。"
+                },
+                "HarshJudgement": {
+                    "SeekCondemnedFoeLabel": "严厉审判 - 搜索死刑犯"
+                }
+            },
+            "ObjectMemory": "触物回想"
         },
         "RuleElement": {
             "Aura": "灵光",
@@ -5048,7 +5190,10 @@
                     "Tailless": "无尾",
                     "Yaoguai": "妖怪",
                     "Orc": "兽人",
-                    "Tiger": "虎"
+                    "Tiger": "虎",
+                    "SnappingFlytrap": "猛咬捕蝇草",
+                    "CaveWorm": "洞穴蠕虫",
+                    "SeaSerpent": "大海蛇"
                 },
                 "Label": "当前形态",
                 "AlterationNotes": {
@@ -5684,7 +5829,8 @@
                 "BludgeoningPiercingSlashing": "钝击，穿刺和挥砍伤害",
                 "HolyBludgeoningPiercingSlashing": "圣洁钝击，穿刺和挥砍伤害",
                 "UnholyBludgeoningPiercingSlashing": "邪秽钝击，穿刺和挥砍伤害",
-                "EnemyStrikes": "敌人打击"
+                "EnemyStrikes": "敌人打击",
+                "DamageFromSwornCreatures": "誓约生物类型造成的伤害"
             }
         },
         "Color": {
@@ -5736,7 +5882,8 @@
         },
         "FeatDescription": {
             "Frequency": {
-                "OncePerTurn": "每回合一次"
+                "OncePerTurn": "每回合一次",
+                "OncePerHour": "每小时一次"
             },
             "Requirements": {
                 "Label": "需求"
