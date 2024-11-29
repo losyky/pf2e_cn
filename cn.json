@@ -1311,7 +1311,7 @@
                 "Badge": {
                     "Type": {
                         "value": "固定值",
-                        "formula": "配方",
+                        "formula": "公式",
                         "counter": "计数"
                     },
                     "Add": "添加徽标",
