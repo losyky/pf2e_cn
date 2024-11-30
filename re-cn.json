@@ -2599,7 +2599,7 @@
                 "Style": {
                     "Prompt": "选择一种风格"
                 },
-                "Panache": "你获得@UUID[Compendium.pf2e.Item.feat-effects.uBJsxCzNhje8m8jj]{派头 Panache}。",
+                "Panache": "你获得@UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]。",
                 "Finisher": {
                     "Stunning": "震慑",
                     "Impaling": "贯通",
