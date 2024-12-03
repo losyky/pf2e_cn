@@ -2118,7 +2118,7 @@
                     },
                     "RemainingSlots": "空位(剩余{remaining})",
                     "BatchQuantity": "x{quantity}",
-                    "MissingResource": "制作所需的资源不足。"
+                    "MissingResource": "你未持有制作所需的资源。"
                 },
                 "Language": {
                     "Unallocated": {
