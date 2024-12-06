@@ -4480,7 +4480,13 @@
                     "SeekCondemnedFoeLabel": "严厉审判 - 搜索死刑犯"
                 }
             },
-            "ObjectMemory": "触物回想"
+            "ObjectMemory": "触物回想",
+            "BlinkCharge": {
+                "Note": {
+                    "CriticalFailure": "大失败时，打击不造成伤害且你承受@Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]]伤害。",
+                    "Failure": "失败时，打击不造成伤害，但目标承受@Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]]伤害。"
+                }
+            }
         },
         "RuleElement": {
             "Aura": "灵光",
