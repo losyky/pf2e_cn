@@ -444,5 +444,131 @@
             "skirmisher": "散兵主要有少数高机动部队组成。"
         },
         "GrantedBy": "此特征由 {granter} 赋予无法删除"
+    },
+    "KINGMAKER": {
+        "ZONES": {
+          "NA": "无",
+          "BV": "布雷斡",
+          "RL": "罗斯特兰腹地",
+          "GB": "绿野",
+          "TW": "獠牙湖",
+          "KL": "卡姆兰德",
+          "NM": "纳玛彻斯",
+          "SH": "塞伦丘陵",
+          "DS": "敦斯沃德",
+          "NH": "诺门高地",
+          "LV": "莱文尼斯岩峰",
+          "HT": "钩舌泥沼",
+          "DR": "德雷勒夫",
+          "TL": "虎王领地",
+          "RU": "粼湖",
+          "GL": "格伦邦低地",
+          "PX": "皮塔克斯",
+          "GU": "格伦邦高地",
+          "NU": "钮梅利亚",
+          "TV": "千语林",
+          "BR": "布兰特伦德山脉"
+        },
+        "TERRAIN": {
+            "PLAINS": "平原",
+            "FOREST": "森林",
+            "HILLS": "丘陵",
+            "MOUNTAINS": "山脉",
+            "WETLANDS": "废墟",
+            "SWAMP": "沼泽",
+            "LAKE": "湖泊"
+          },
+        "TRAVEL": {
+          "OPEN": "开阔地形",
+          "DIFFICULT": "困难地形",
+          "GREATER": "高等困难地形",
+          "WATER": "水体",
+          "IMPASSABLE": "不可通行"
+        },
+        "DISCOVERY_TRAITS": {
+          "LANDMARK": "地标",
+          "STANDARD": "标准",
+          "SECRET": "秘密"
+        },
+        "EXPLORATION_STATES": {
+            "NONE": "无",
+            "RECON": "已探勘",
+            "MAP": "已制图"
+        },
+        "FEATURES": {
+          "LANDMARK": "地标",
+          "REFUGE": "避难所",
+          "RUIN": "废墟",
+          "STRUCTURE": "建筑",
+          "FARMLAND": "农场",
+          "ROAD": "道路",
+          "BRIDGE": "桥梁",
+          "FORD": "浅滩",
+          "WATERFALL": "瀑布",
+          "HAZARD": "危害",
+          "BLOOM": "开花",
+          "FREEHOLD": "自由地",
+          "VILLAGE": "村庄",
+          "TOWN": "镇子",
+          "CITY": "城市",
+          "METROPOLIS": "大都会"
+        },
+        "COMMODITIES": {
+          "NONE": "无",
+          "FOOD": "食物",
+          "ORE": "矿石",
+          "LUMBER": "木材",
+          "LUXURIES": "奢侈品",
+          "STONE": "石材"
+        },
+        "CAMPS": {
+          "QUARRY": "采石场",
+          "MINE": "矿井",
+          "LUMBER": "伐木场"
+        },
+        "ToggleHexTool": "开关六角格控制模式",
+        "ToggleZoneBoundaries": "开关地区边界",
+        "HEXTOOL": {
+          "Visibility": "公开情报",
+          "Exploration": "探索情况",
+          "Hex": "六角格",
+          "Zone": "地区",
+          "Terrain": "地形",
+          "Travel": "旅行",
+          "Explored": "已探索",
+          "Claimed": "已宣称",
+          "ClaimedTooltip": "该六角格是否已被王国宣称？",
+          "Cleared": "已清理",
+          "ClearedTooltip": "该六角格是否已被王国清理？",
+          "Discovered": "展示给玩家",
+          "ShowEncounter": "将遭遇展示给玩家",
+          "ShowEncounterTooltip": "玩家可以看见这个六角格的日志名称。",
+          "ShowResources": "将工地和商品展示给玩家",
+          "ShowResourcesTooltip": "玩家可以看见这个六角格现有的的工地和商品。",
+          "ExplorationStatus": "探索状态",
+          "ExplorationStatusTooltip": "小队是否已对这个六角格探勘或绘制地图？",
+          "Commodity": "商品",
+          "Commodities": "商品",
+          "Camp": "工地",
+          "Features": "特性",
+          "Resources": "资源",
+          "Resource": "资源",
+          "Add": "添加",
+          "Save": "保存"
+        },
+        "IMPORTER": {
+          "ResetState": "重置游戏状态",
+          "ResetStateTooltip": "重置所有失窃之地场景上已储存的数据，包括小队探索的进度，自设的兴趣点和已建的建筑。",
+          "ActivateScene": "激活初始场景",
+          "ActivateSceneTooltip": "导入完成后，激活失窃之地场景。",
+          "DisplayJournal": "展示介绍",
+          "DisplayJournalTooltip": "打开介绍日志",
+          "CustomizeWorld": "更改世界信息",
+          "CustomizeWorldTooltip": "将世界的描述和封面图改为拥王者的内容。",
+          "OpenChangelog": "打开更新记录",
+          "OpenChangelogTooltip": "在FVTT内打开本模组的更新记录。",
+          "IssueTracker": "报告问题",
+          "IssueTrackerTooltip": "反馈本模组bug的链接。"
+        }
     }
 }
