@@ -828,6 +828,9 @@
                 "Atavism": {
                     "AllowedDrops": "精灵族裔传承",
                     "Prompt": "选择一个精灵族裔传承"
+                },
+                "AgelessPatience": {
+                    "Note": "若你在该检定上骰出了天然1，你的结果不会因此下降一个成功等级（因此你只有在掷骰结果比检定DC低10的情况下才会大失败）。"
                 }
             },
             "Kobold": {
@@ -1099,7 +1102,8 @@
                 "SupremeInvigoratingElixir": {
                     "Description": "将你的等级比实际高2来进行提振灵药的反制检定。并且将下列状态加入制作的提振灵药可以选择反制的状态：@UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]，@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]。你也可以选择反制一个疾病，不论它施加了何种状态。"
                 },
-                "AdvancedAlchemy": "高阶炼金术"
+                "AdvancedAlchemy": "高阶炼金术",
+                "VersatileVials": "万用制剂"
             },
             "Aid": {
                 "Prompt": "选择协助带来的加值"
@@ -1567,6 +1571,13 @@
                 },
                 "FinalScalecloak": {
                     "EmbodyTheStormLabel": "究级鳞片斗篷 — 风暴显现"
+                },
+                "RootBoots": {
+                    "GripGround": "根靴 — 紧抓地面",
+                    "WoodenSurfaceLabel": "根靴 — 木质表面"
+                },
+                "ClandestineCloak": {
+                    "RollOptionLabel": "隐秘斗篷 - 拉上斗篷的头罩"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1673,7 +1684,9 @@
                 "MovementType": "选择一种移动类型。",
                 "Persona": "选择一种人格特质。",
                 "EquipmentVariety": "选择一个物品变体。",
-                "Penalty": "选择一种减值。"
+                "Penalty": "选择一种减值。",
+                "Attribute": "选择一个属性。",
+                "Level": "选择等级。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1906,6 +1919,11 @@
                 "Vindicator": {
                     "Edge": "卫道者优势",
                     "Interrogate": "对抗伪装成你信仰神祇的信徒的不死生物或变形生物"
+                },
+                "FocusSpells": {
+                    "GravityWeapon": {
+                        "RollOptionLabel": "重压武器 - 本轮第一次武器打击"
+                    }
                 }
             },
             "TOTMToggle": {
@@ -2503,6 +2521,9 @@
                 },
                 "BattleHarbinger": {
                     "DivineFont": "你不再用神力源泉准备@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]或@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]，而是获得战斗源泉，允许你准备战斗灵光法术。你每天会在你最高环的牧师法术位上额外获得4个法术位。你只能使用这些法术位准备@UUID[Compendium.pf2e.spells-srd.Item.7ZinJNzxq0XF0oMx]或@UUID[Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu]。任何提及战斗灵光的专长和效果都指这些法术，无论它们是通过你的标准法术位还是神力源泉法术位施展的。5级时，额外法术位的数量增加到5个，15级时，额外法术位的总数增加到6个。取代法术DC，你的战斗灵光使用你的职业DC。"
+                },
+                "CompetitiveEdge": {
+                    "RollOptionLabel": "竞争优势 — 增加状态加值"
                 }
             },
             "Conrasu": {
@@ -4166,6 +4187,87 @@
                     "swashbuckler": {
                         "Description": "你的冒险生涯令你对于细节有了敏锐的认知和关注。你在察觉上的熟练等级提升至大师。"
                     }
+                },
+                "Spellcaster": {
+                    "animist": {
+                        "Master": "你与绑定的附灵间的亲密联系进一步的增强了你的魔法威力。你的法术攻击和法术DC熟练度提升至大师。",
+                        "Legendary": "你是外界魔法能量的近乎完美的通道。你的法术攻击和法术DC熟练度提升至传奇。",
+                        "Expert": "精魂的力量在你体内自由流淌。你的法术攻击和法术DC熟练度提升至专家。"
+                    },
+                    "magus": {
+                        "Master": "你凭借大师级造诣强化你的法术。你在奥术法术攻击骰和法术DC上的熟练度提升至大师等级。",
+                        "Expert": "你对魔法的基础理解得以提升，使你的法术更加难以抵抗。你在奥术法术攻击骰以及法术DC上的熟练度提升至专家等级。"
+                    },
+                    "psychic": {
+                        "Legendary": "你感觉自己不仅理解了自己的心灵，还理解了作为一切心智力量源泉的集体无意识。你在异能法术上的法术攻击骰和法术DC的熟练等级提升至传奇。",
+                        "Expert": "自我反省的过程让你更深入地了解了自己，也同时获得了更强大的心能力量。你在异能法术上的法术攻击骰和法术DC的熟练度提升至专家。",
+                        "Master": "你挖掘了心灵更深的角落，进一步强化了心能力量。你在异能法术上的法术攻击骰和法术DC的熟练等级提升至大师。"
+                    },
+                    "sorcerer": {
+                        "Legendary": "你在施法上展现出了卓越的天赋。你在法术攻击调整值和法术DC上的熟练等级提升至传奇。",
+                        "Master": "你已经完全驾驭住了流淌在血液中的魔力。你在法术攻击调整值和法术DC上的熟练等级提升至大师。",
+                        "Expert": "你内在的魔力能够更为简单有效地回应你的命令。你在血统所对应的魔法根源的法术攻击骰和法术DC上的熟练等级提升至专家。"
+                    },
+                    "oracle": {
+                        "Expert": "你在神术力量上的感悟日益明晰。你在法术攻击调整和法术DC上的熟练度提升至专家。",
+                        "Master": "你理解了自己秘示域中深邃而复杂的神力。你在法术攻击调整和法术DC上的熟练度提高至大师。",
+                        "Legendary": "你能够利用他人无法比拟等级的神力。你在法术攻击调整和法术DC上的熟练度提高至传奇。"
+                    },
+                    "druid": {
+                        "Expert": "你加深了对原能力量的控制，增强了你的法术。你在法术攻击调整和法术DC上的熟练度提升至专家。",
+                        "Legendary": "你与自然的魔法间达成了无与伦比的和谐。你在法术攻击调整和法术DC上的熟练度提升至传奇。",
+                        "Master": "原能魔法遵从你的指令。你在法术攻击调整和法术DC上的熟练度提升至大师。"
+                    },
+                    "summoner": {
+                        "Expert": "在你深化与幻灵的联结之时，你的法术强度也得到了提升。你在幻灵决定的根源上的法术攻击骰和法术DC的熟练度提升至专家。",
+                        "Master": "你与幻灵之间的联结极其强大，能够让你掌握联结法术的精髓。你在幻灵决定的魔法根源的法术攻击骰和法术DC上的熟练度提升至大师。"
+                    },
+                    "bard": {
+                        "Expert": "你的魔法技艺愈加强大。你在法术攻击调整和法术DC上的熟练度提升至专家。",
+                        "Legendary": "你对魔法的号令是那些传奇故事的素材。你在法术攻击调整和法术DC上的熟练度提升至传奇。",
+                        "Master": "你拨动魔法之弦如同拨弄竖琴般轻而易举。你在法术攻击调整和法术DC上的熟练度提升至大师。"
+                    },
+                    "wizard": {
+                        "Expert": "对奥术长久的实践强化了你的实力。你在法术攻击调整和法术DC上的熟练度提升至专家。",
+                        "Legendary": "你是个已达化境的施法者，在奥术的理论与实践层面上都有着无比全面的认知。你在法术攻击调整和法术DC上的熟练度提升至传奇。",
+                        "Master": "你驱使至高的施法能力。你在法术攻击调整和法术DC上的熟练度提升至大师。"
+                    },
+                    "witch": {
+                        "Legendary": "你对于庇护主给予的魔法已臻至完美。你在法术攻击调整和法术DC上的熟练度提升至传奇。",
+                        "Master": "你已精通庇护主的魔法。你在法术攻击调整和法术DC上的熟练度提升至大师。",
+                        "Expert": "你学会了更好的控制庇护主给你的力量，你在法术攻击调整和法术DC上的熟练度提升至专家。"
+                    }
+                },
+                "Juggernaut": {
+                    "barbarian": {
+                        "Description": "你的身体对肉体方面的磨难习以为常，令病痛难以入侵。你在强韧豁免上的熟练度提升为大师。当你在强韧豁免中获得成功时，改为获得大成功。"
+                    },
+                    "gunslinger": {
+                        "Description": "你的身体习惯于承受物理伤害和抵抗细菌与疾病。你的强韧豁免的熟练度提升至大师。当你的强韧豁免骰出成功时，你改为获得大成功。"
+                    },
+                    "inventor": {
+                        "Description": "你的身体习惯于对抗物理疼痛，并能够很好的抵抗疾病。你在强韧豁免上的熟练度提升至大师。当你在强韧豁免中骰出成功，将其改为大成功。"
+                    },
+                    "thaumaturge": {
+                        "Description": "你的身体习惯于承受物理伤害和抵抗疾病。你在强韧豁免上的熟练等级提升至大师等级。当你在一个强韧豁免检定上骰出成功时，改为获得大成功。"
+                    },
+                    "magus": {
+                        "Description": "你的身体习惯于承受物理伤害和抵抗大多数疾病。你在强韧豁免上的熟练等级提升至大师等级。当你在一个强韧豁免检定上骰出成功时，改为获得大成功。"
+                    }
+                },
+                "MagicalFortitude": {
+                    "oracle": {
+                        "Description": "魔力增强了你身体的韧性。你在强韧豁免上的熟练度提升至专家。"
+                    },
+                    "sorcerer": {
+                        "Description": "魔力增强了你身体的韧性。你在强韧豁免上的熟练度提升至专家。"
+                    },
+                    "witch": {
+                        "Description": "你的庇护主的力量增加了你身体的韧性。你在强韧豁免上的熟练度提升至专家。"
+                    },
+                    "wizard": {
+                        "Description": "魔力增强了你身体的韧性。你在强韧豁免上的熟练度提升至专家。"
+                    }
                 }
             },
             "FamiliarSage": {
@@ -4486,6 +4588,103 @@
                     "CriticalFailure": "大失败时，打击不造成伤害且你承受@Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]]伤害。",
                     "Failure": "失败时，打击不造成伤害，但目标承受@Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]]伤害。"
                 }
+            },
+            "BodyParts": {
+                "Arms": "手臂",
+                "Head": "头部",
+                "Legs": "腿",
+                "Torso": "躯干"
+            },
+            "SwearOath": {
+                "RollOptionLabel": "宣誓信条 — 为已准备的动作启用加值"
+            },
+            "AscendedCelestial": {
+                "AegisForTheInnocent": {
+                    "HalveAuraToggle": "庇护无辜 — 灵光半径减半"
+                },
+                "CelestialArmaments": {
+                    "Note": "当你使用该武器造成重击时，目标必须成功通过一次@Check[fortitude|against:class-spell]豁免对抗你的职业DC或法术DC（二者取高）否则在[[/r 1d4 #rounds]]{1d4轮}内陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]。"
+                },
+                "CelestialRebirth": {
+                    "SpellDescriptionAlteration": "当你施放不以自身为目标且具有治疗特征的法术时，你可以在释放治疗能量前先令其流经自己的身体，使你恢复@Damage[(@item.rank)d6[healing]]HP。"
+                },
+                "ChannelDivineSpark": {
+                    "Note": "每当你使用近战打击对一名生物造成伤害时，你可以使用一个自由动作尝试对目标进行@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]或@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]。以上效果持续1分钟。"
+                },
+                "Dedication": {
+                    "NimbusToggle": "晋升天族 — 光晕之轮",
+                    "RollTwiceToggle": "晋升天族 — 意志掷骰两次"
+                },
+                "ScouringSpark": {
+                    "DamageReceivedNote": "任何触碰你，或是使用无武装攻击或非长触及武器对你造成伤害的生物受到@Damage[3d6[fire]]伤害。",
+                    "DoubleDamageNote": "该专长所有伤害在对抗异怪，魔族与不死生物时翻倍。"
+                }
+            },
+            "BeastLord": {
+                "CreatureOfMyth": {
+                    "Description": "你特化的统合伙伴获得了无与伦比的力量，成为了一头神话生物。其获得以下效果。",
+                    "BalefulBody": {
+                        "Label": "天灾之躯",
+                        "Description": "你的统合伙伴体内流淌着沸腾之血，体液化作强酸，或是身体中潜藏着其它毁灭性力量。选择酸蚀，火焰或毒素。如果你的统合伙伴将要受到近战攻击的伤害，其对进行近战攻击的生物造成@Damage[floor(@actor.level / 2)]{等同于你等级一半}的所选类型伤害。你指挥统合伙伴时可以花费一个神话点，使其可以使用一个2动作行动施放出腐蚀性能量，对@Template[type:cone|distance:15]或@Template[type:line|distance:30]范围造成@Damage[14d6|options:area-damage|shortLabel]所选类型的伤害（@Check[reflex|against:class-spell|basic|options:area-effect]豁免对抗你职业DC与法术DC的较高者）。"
+                    },
+                    "ChimericHeads": {
+                        "Label": "空想之颅",
+                        "Description": "你的统合伙伴长出了又一颗头颅，赋予其额外的眼睛和头部相关的无武装攻击。你的伙伴获得全域视野。你指挥统合伙伴时可以花费一个神话点，使其用一个单动作来进行两次无武装打击，两次打击都应用当前的多重攻击减值。两次打击都必须选择同一目标。若两次攻击均命中，则将两次伤害相加再应用其它可应用的效果。在增加多重攻击减值时该动作只计算一次攻击。你的统合伙伴必须拥有头部以及一种与头部相关的无武装攻击（譬如鸟喙，颚咬或虫颚）才能选择此选项。"
+                    },
+                    "EnergyAegis": {
+                        "Description": "你的统合伙伴能免受有害能量的伤害。选择酸蚀，寒冷，电击或火焰，你的统合伙伴对所选类型免疫。你的统合伙伴在对抗具有所选特征的效果或法术，或对抗具有所选特征的生物时在AC和豁免上获得+1状态加值。你指挥统合伙伴时可以花费一个神话点，使其用一个具有专注特征的单动作将上述增益分享给邻接于它的所有生物，直到你的下回合开始。",
+                        "Label": "能量之盾"
+                    },
+                    "MagnificentFlight": {
+                        "Label": "壮美之翼",
+                        "Description": "你的统合伙伴长出了双翼，或是掌握了其它飞翔的方法。你的统合伙伴获得等同于其速度的飞行速度，并且获得骑乘特殊能力。如果你的统合伙伴已经拥有骑乘能力或飞行速度，则令其速度增加10尺。你指挥统合伙伴时可以花费一个神话点，使其可以用一个双动作行动来飞行两次，并且在飞行路径上的任意一点进行一次无武装近战攻击。"
+                    },
+                    "ProtectiveSkin": {
+                        "Label": "坚实之肤",
+                        "Description": "你的统合伙伴通体被异界魔力侵染而坚比金石。其最大HP提高30但获得对寒铁或银之一的10弱点。你指挥统合伙伴时可以花费一个神话点，使其获得等同于你等级的快速治疗，持续1分钟。"
+                    }
+                },
+                "ChosenWard": {
+                    "DefenseToggle": "选定监护 — 启用AC和反射豁免的加值",
+                    "FortuneToggle": "选定监护 — 启用反射豁免的幸运效果"
+                },
+                "WeAreOne": {
+                    "OffGuardToggle": "生而为一 — 让目标对你的打击措手不及"
+                }
+            },
+            "WanderingChef": {
+                "RegionalSpecialty": {
+                    "BonusToggle": "本地特产 — 启用豁免加值",
+                    "Prompt": "物品不低于18级吗？"
+                }
+            },
+            "SpellEffectMantle": {
+                "FrozenHeart": {
+                    "Label": {
+                        "IcyClaws": "冰刃利爪",
+                        "ChillingIce": "刺骨寒冰",
+                        "HeartOfIce": "冰霜之心",
+                        "IceGlide": "冰面滑行",
+                        "IceGlideSurface": "在光滑表面移动"
+                    },
+                    "RollOptionLabel": {
+                        "First": "寒心披风 — 第一个能力",
+                        "Second": "寒心披风 — 第二个能力"
+                    }
+                }
+            },
+            "ApocalypseRider": {
+                "StealDeath": {
+                    "RollOptionLabel": "窃夺死亡 — 你和你的天启战骑距离10尺以内。"
+                },
+                "ToWar": {
+                    "RollOptionLabel": "死亡冲锋 — 敌人被天启战骑伤害。"
+                }
+            },
+            "Archfiend": {
+                "FiendEternal": {
+                    "RollOptionLabel": "不朽魔神 – 回忆知识或搜集信息"
+                }
             }
         },
         "RuleElement": {
@@ -4706,7 +4905,8 @@
             "ImpersonateSpecificPerson": "乔装成一个特定人物",
             "Balance": "保持平衡",
             "Fly": "飞行",
-            "RockyOrBarren": "在岩石或贫瘠地形中"
+            "RockyOrBarren": "在岩石或贫瘠地形中",
+            "Wilderness": "在野外"
         },
         "OracleCurses": {
             "Label": {
