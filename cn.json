@@ -1465,7 +1465,9 @@
                     "Improvised": "临时",
                     "Shoddy": "劣质",
                     "Herbal": "草药",
-                    "HandwrapsOfMightyBlows": "重拳缠手带"
+                    "HandwrapsOfMightyBlows": "重拳缠手带",
+                    "AlchemicalTool": "炼金工具",
+                    "AlchemicalFood": "炼金食物"
                 },
                 "FromSpell": {
                     "Scroll": "{name} 卷轴 ({level}环级)",
@@ -1728,7 +1730,8 @@
                     "Duration": "维持，至多{maximum}"
                 },
                 "LineSplit": ";",
-                "Heightening": "升阶"
+                "Heightening": "升阶",
+                "BaseValue": "基础：{value}"
             },
             "CreationDialog": {
                 "Categories": {
@@ -1910,6 +1913,10 @@
                     "Free": "自由动作",
                     "Reaction": "反应动作",
                     "Single": "单动作"
+                },
+                "CraftedItem": {
+                    "Crafted": "已制作{item}。",
+                    "CraftedWithoutResources": "不消耗所需资源完成制作"
                 }
             },
             "FIELDS": {
@@ -2118,7 +2125,14 @@
                     },
                     "RemainingSlots": "空位(剩余{remaining})",
                     "BatchQuantity": "x{quantity}",
-                    "MissingResource": "你未持有制作所需的资源。"
+                    "MissingResource": "你未持有制作所需的资源。",
+                    "FreeCrafting": "免费制作",
+                    "FreeCraftingTooltip": "启用时，立刻生成物品而不花费金币",
+                    "PrepareHint": "选择你想要准备的物品",
+                    "Action": {
+                        "Hint": "选择一项使用{resource}制作的物品 ({value}/{max})"
+                    },
+                    "Search": "搜索配方"
                 },
                 "Language": {
                     "Unallocated": {
@@ -2537,7 +2551,8 @@
                 },
                 "CarryType": {
                     "OpenMenu": "更改携带类型"
-                }
+                },
+                "Search": "搜索物品栏"
             },
             "HitPoints": {
                 "Unrecoverable": "当前无法恢复{value} 点生命值。"
@@ -2842,7 +2857,11 @@
             "ModifiersEmpty": "无调整值",
             "FlatCheckNoModifiers": "措手不及判定不会包括任何调整值、加值或减值。",
             "ModifiersAndDice": "调整值和骰子",
-            "DiceAndModifiers": "骰子与调整值"
+            "DiceAndModifiers": "骰子与调整值",
+            "ContextualOptions": {
+                "postRoll": "发布掷骰选项"
+            },
+            "DiceRollOptionsHint": "判断“伤害修改”规则元素时的骰子和调整值掷骰选项。"
         },
         "Check": {
             "DC": {
@@ -2933,7 +2952,10 @@
             "Title": "浏览合集包",
             "Settings": {
                 "SourcesLabel": "来源",
-                "PacksLabel": "合集包"
+                "PacksLabel": "合集包",
+                "OpenSettings": "打开设置",
+                "Saved": "设置已保存",
+                "Title": "合集浏览器设置"
             },
             "RollTable": {
                 "AddLabel": "添加至随机表",
@@ -2944,7 +2966,38 @@
                 "AddDialogText": "是否将 {count} 个结果添加到随机表？",
                 "TooManyResults": "结果列表长度 {size}过长。 最大长度为{maxSize}"
             },
-            "TabCampaign": "战役"
+            "TabCampaign": "战役",
+            "Filter": {
+                "Alignments": "阵营",
+                "Ancestries": "族裔",
+                "ArmorFilters": "护甲筛选",
+                "ClearAllFilters": "清除所有筛选条件",
+                "CastingTime": "施法时间",
+                "SearchPlaceholder": "搜索文本",
+                "WeaponFilters": "武器筛选",
+                "ClearFilter": "清除",
+                "Categories": "种类",
+                "Conjunction": {
+                    "AndLabel": "以上全部",
+                    "OrLabel": "以上任一"
+                },
+                "FilterSources": "筛选来源",
+                "Class": "职业",
+                "Complexity": "危害复杂度",
+                "InventoryTypes": "物品类型",
+                "Levels": "等级",
+                "OrderByLabel": "排序标准",
+                "ProficiencyRequirements": "熟练度需求",
+                "Rarities": "稀有度",
+                "Sizes": "体型",
+                "Source": "来源",
+                "Traditions": "根源",
+                "WarnPackNotLoaded": "无法载入合集包 \"{pack}\"。"
+            },
+            "TraitsComponent": {
+                "NoMatch": "无符合条件的结果",
+                "Empty": "无结果"
+            }
         },
         "Condition": {
             "ActiveLabel": "有效的",
@@ -4615,14 +4668,14 @@
                 "Hint": "在人物卡上添加额外的开关，以播放心灵剧场。 此操作将允许启用某些功能而无需在Foundry中选定目标。"
             },
             "CompendiumBrowserSources": {
-                "IgnoreAsGM": "令GM忽略筛选并查看所有条目。",
+                "IgnoreAsGM": "令GM忽略这些设置并查看所有条目。",
                 "Hint": "设置将会令合集包浏览器中仅显示具有指定来源的条目。",
                 "DeleteAllTitle": "重置设置",
                 "DeleteAllQuestion": "确定要重置所包含来源的相关设置？",
                 "DeleteAllInfo": "可以浏览所有合集包文件，也包括那些来源为空的文件。",
                 "SourcesListHeader": "指定来源",
-                "ShowUnknownSources": "不会筛选未知来源的条目。",
-                "ShowEmptySources": "不会筛选无来源的条目。",
+                "ShowUnknownSources": "允许未知来源的条目。",
+                "ShowEmptySources": "允许无来源的条目。",
                 "Name": "所包含的来源"
             },
             "CampaignType": {
@@ -7271,7 +7324,8 @@
                     "Wavesense": "<p>这种感知允许怪物感受到那些因为在液体中移动而产生的振波。这是一种在（能力所列出的）有限范围内的模糊感官imprecise sense。只有当怪物位于同一液体中、且仅在对象在此液体中移动时，水波感知才会生效。</p>",
                     "ReactiveStrike": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
                     "Stench": "<p>任何生物若进入此灵光范围或在灵光范围内开始其回合的话，则必须进行一次强韧豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心1 Sickened 1}（大失败时额外再加上@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢1 Slowed 1}）。豁免成功或从状态中恢复的生物会在一分钟内临时免疫尸臭。</p>",
-                    "Pull": "<p><strong>需求</strong> 怪物的最后一个动作是成功的打击并且在伤害条目中列出了拉拽（Pull）</p><hr /><p><strong>效果</strong> 怪物尝试对生物进行@UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{移位 Reposition}，将其拉向怪物。这次尝试既不适用于也不计入怪物的多重攻击惩罚。如果拉拽列出了距离，在成功时变为生物被拉拽至该距离。</p>"
+                    "Pull": "<p><strong>需求</strong> 怪物的最后一个动作是成功的打击并且在伤害条目中列出了拉拽（Pull）</p><hr /><p><strong>效果</strong> 怪物尝试对生物进行@UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{移位 Reposition}，将其拉向怪物。这次尝试既不适用于也不计入怪物的多重攻击惩罚。如果拉拽列出了距离，在成功时变为生物被拉拽至该距离。</p>",
+                    "GolemAntimagic": "<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p><ul><li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li><li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li><li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/gmr 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li><li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li></ul>"
                 }
             },
             "ActionsList": {
@@ -8065,7 +8119,10 @@
         "TraitPersonaWildcard": "人格特质: 百搭牌",
         "TraitCertainKill": "必杀",
         "TraitDescriptionLineage": "具有此特征的专长表明角色是某个特定类型生物的后裔。你只能拥有一个血脉专长。你只能在1级时选取血脉专长，你不能重训来取得或替换这些专长。",
-        "ConditionTypeCursebound": "咒缚"
+        "ConditionTypeCursebound": "咒缚",
+        "TraitJoustingD4": "骑战 d4",
+        "TraitJoustingD8": "骑战 d8",
+        "TraitJoustingD10": "骑战 d10"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
