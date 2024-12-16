@@ -5458,8 +5458,8 @@
                 "Coils": "线圈"
             },
             "Zetogeki": {
-                "TiltScalesChannelEnergy": "Kinetic Energy Channeled",
-                "TiltScalesTilted": "Scales Tilted"
+                "TiltScalesChannelEnergy": "已储存动能",
+                "TiltScalesTilted": "已倾斜鳞片"
             },
             "HehShanBao": {
                 "UrbanLegend": {
