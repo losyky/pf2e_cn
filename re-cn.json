@@ -518,15 +518,44 @@
         "SpecificRule": {
             "Thaumaturge": {
                 "Implement": {
-                    "Weapon": "兵",
-                    "Chalice": "杯",
-                    "Lantern": "灯",
+                    "Weapon": {
+                        "Adept": {
+                            "Note": "你造成@Damage[1[@item.system.damage.damageType]]伤害，可能能触发任何因为目标的弱点而产生的额外伤害。"
+                        }
+                    },
+                    "Chalice": {
+                        "Adept": {
+                            "Note": "如果你或一个30尺内的盟友从一个敌人的重击中承受了穿刺伤害或挥砍伤害、或承受了持续流血伤害，在你下一回合结束前进行饮杯能为受伤的生物提供更强的复原力以弥补其损失的活力。小啜时，提供给该生物的临时生命提升至2+你的魅力调整值+你的等级。豪饮时，你每有一个等级，杯都会治疗该生物5点生命值。@UUID[Compendium.pf2e.feat-effects.Item.Sq558879cgEc1lGC]"
+                        }
+                    },
+                    "Lantern": {
+                        "BonusToggle": "目标处于灯的明亮光照内",
+                        "LightToggle": "点亮灯奇具"
+                    },
                     "Mirror": "镜",
-                    "Regalia": "帜",
-                    "Tome": "典",
+                    "Regalia": {
+                        "UnflankableToggle": "帜的所有者正被夹击。"
+                    },
+                    "Tome": {
+                        "FirstSkillDropdown": "典——第一个技能",
+                        "Paragon": {
+                            "InitiativeBonusLabel": "典（模范）",
+                            "InitiativeToggle": "典——对生物或作祟的先攻"
+                        },
+                        "SecondSkillDropdown": "典——第二个技能"
+                    },
                     "Wand": "杖",
                     "Bell": "铃",
-                    "Amulet": "符"
+                    "Amulet": {
+                        "Adept": {
+                            "Prompt": "选择由触发的攻击造成的一种伤害类型。",
+                            "Description": "当你使用符止，你或你的盟友选择由触发的攻击造成的一种伤害类型，并获得针对该伤害类型的5点抗力，直到你的下一回合开始。在15级，这个延时抗力从5提升至10。"
+                        }
+                    },
+                    "Adept": {
+                        "Label": "奇具行家"
+                    },
+                    "Prompt": "选择一个奇具。"
                 },
                 "TalismanEsoterica": "护符秘藏"
             },
@@ -652,7 +681,8 @@
                     "MentalBalm": "你或一个30尺内的盟友在对抗情绪效果的意志豁免上获得+2状态加值，持续1分钟。你也可以尝试利用这个增幅过的心能戏法反制对你或你所选盟友施加惊惧或呆滞状态的效果，只要该呆滞状态的持续时间在1小时或以内。如果你反制成功，你终止了惊惧和呆滞状态，但你不能终止效果可能存在的其他任何部分。",
                     "WarpSpace": "选择30尺内一个你有视线和效果线的方格。从该位置决定法术的效果线和视线，也决定生物相对该法术是否具有掩蔽。该法术可以超过根据你原本位置测量的常规射程，只要法术目标到你选择的方格的距离在其常规射程内。",
                     "AlternateAmp": "额外增幅",
-                    "DistortionLens": "透镜不仅可以干涉攻击，还可以干涉生物行动。当一个中体型或更小的盟友生物移动时，它可以移入或移出透镜所在方格而不将该方格计算在总移动距离中。同时，透镜所在方格对你的敌人成为困难地形。"
+                    "DistortionLens": "透镜不仅可以干涉攻击，还可以干涉生物行动。当一个中体型或更小的盟友生物移动时，它可以移入或移出透镜所在方格而不将该方格计算在总移动距离中。同时，透镜所在方格对你的敌人成为困难地形。",
+                    "MindsLightCirclet": "你将一些来自心灵之光头环的魔法光辉转移给一只生物。选择一个被法术目标的生物或在其范围内的生物。直到你下个回合开始之前，该生物在20尺半径内散发出明亮光照（并在下一个20英尺内散发昏暗光照），并且无法@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]。如果该生物处于@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]状态，它在发光时被视为隐蔽状态，而不是@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]状态。"
                 },
                 "PsiCantripLabels": {
                     "DistortionLens": "曲折透镜",
@@ -1578,6 +1608,9 @@
                 },
                 "ClandestineCloak": {
                     "RollOptionLabel": "隐秘斗篷 - 拉上斗篷的头罩"
+                },
+                "MindsLightCirclet": {
+                    "LightToggle": "心灵之光头环——你有至少1点聚能点"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -3034,7 +3067,9 @@
                 "PlusOne": "+1",
                 "PlusThree": "+3",
                 "NegativeOne": "-1",
-                "PlusFour": "+4"
+                "PlusFour": "+4",
+                "NegativeThree": "-3",
+                "NegativeTwo": "-2"
             },
             "AquaticCombat": {
                 "FireNote": "你不能在水下施放火焰法术或使用带火焰特征的动作。",
@@ -3822,7 +3857,7 @@
                     "Label": "蝠化人"
                 },
                 "YouDontSmellRight": {
-                    "Label": "设法确定一个生物是否伪装。"
+                    "Label": "设法确定一个生物是否伪装"
                 },
                 "Werebear": {
                     "Label": "熊化人",
@@ -4685,6 +4720,9 @@
                 "FiendEternal": {
                     "RollOptionLabel": "不朽魔神 – 回忆知识或搜集信息"
                 }
+            },
+            "Disarm": {
+                "WeakenedGraspBonusLabel": "卸武（对抗削弱握持力后的状态）"
             }
         },
         "RuleElement": {
@@ -5881,7 +5919,7 @@
             },
             "Poison1d4": {
                 "criticalSuccess": "@Damage[(2*1d4)[persistent,poison]]",
-                "success": "@Damage[1d4[persistent,poison]]]"
+                "success": "@Damage[1d4[persistent,poison]]"
             },
             "Poison2d4": {
                 "criticalSuccess": "@Damage[(2*2d4)[persistent,poison]]",
