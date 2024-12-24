@@ -531,20 +531,27 @@
                     "Weapon": {
                         "Adept": {
                             "Note": "你造成@Damage[1[@item.system.damage.damageType]]伤害，可能能触发任何因为目标的弱点而产生的额外伤害。"
-                        }
+                        },
+                        "Label": "兵"
                     },
                     "Chalice": {
                         "Adept": {
-                            "Note": "如果你或一个30尺内的盟友从一个敌人的重击中承受了穿刺伤害或挥砍伤害、或承受了持续流血伤害，在你下一回合结束前进行饮杯能为受伤的生物提供更强的复原力以弥补其损失的活力。小啜时，提供给该生物的临时生命提升至2+你的魅力调整值+你的等级。豪饮时，你每有一个等级，杯都会治疗该生物5点生命值。@UUID[Compendium.pf2e.feat-effects.Item.Sq558879cgEc1lGC]"
-                        }
+                            "Note": "如果你或一个30尺内的盟友从一个敌人的重击中承受了穿刺伤害或挥砍伤害、或承受了持续流血伤害，在你下一回合结束前进行饮杯能为受伤的生物提供更强的复原力以弥补其损失的活力。小啜时，提供给该生物的临时生命提升至2+你的魅力调整值+你的等级。豪饮时，你每有一个等级，杯都会治疗该生物5点生命值。@UUID[Compendium.pf2e.feat-effects.Item.Sq558879cgEc1lGC]",
+                            "DescriptionAlteration": "小啜时，提供给该生物的临时生命提升至2+你的魅力调整值+你的等级。豪饮时，杯会治疗该生物你每个等级5点生命值。"
+                        },
+                        "Label": "杯"
                     },
                     "Lantern": {
                         "BonusToggle": "目标处于灯的明亮光照内",
-                        "LightToggle": "点亮灯奇具"
+                        "LightToggle": "点亮灯奇具",
+                        "Label": "灯"
                     },
-                    "Mirror": "镜",
+                    "Mirror": {
+                        "Label": "镜"
+                    },
                     "Regalia": {
-                        "UnflankableToggle": "帜的所有者正被夹击。"
+                        "UnflankableToggle": "帜的所有者正被夹击。",
+                        "Label": "帜"
                     },
                     "Tome": {
                         "FirstSkillDropdown": "典——第一个技能",
@@ -552,20 +559,39 @@
                             "InitiativeBonusLabel": "典（模范）",
                             "InitiativeToggle": "典——对生物或作祟的先攻"
                         },
-                        "SecondSkillDropdown": "典——第二个技能"
+                        "SecondSkillDropdown": "典——第二个技能",
+                        "Label": "典"
                     },
-                    "Wand": "杖",
-                    "Bell": "铃",
+                    "Wand": {
+                        "Adept": {
+                            "Cold": "目标豁免失败并承受伤害时颤抖，其速度承受-10尺状态减值，持续1轮。",
+                            "RangeIncrease": "杖掷的射程增加到120尺。",
+                            "Electricity": "目标豁免失败并承受伤害时遭到电击，陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下一回合结束。",
+                            "Fire": "目标豁免失败并承受伤害时被点燃，承受@Damage[1d10[persistent,fire]]（在大失败时为@Damage[2d10[persistent,fire]]）。",
+                            "FireParagon": "目标豁免失败并承受伤害时被点燃，承受@Damage[2d10[persistent,fire]]（在大失败时为@Damage[4d10[persistent,fire]]）。"
+                        },
+                        "Label": "杖",
+                        "Paragon": {
+                            "Description": "杖掷动作的射程提升至180尺。当你使用杖掷动作，你可以选择瞄准一个单一生物，或影响@Template[burst|distance:20]内的全部生物。"
+                        }
+                    },
+                    "Bell": {
+                        "Label": "铃"
+                    },
                     "Amulet": {
                         "Adept": {
                             "Prompt": "选择由触发的攻击造成的一种伤害类型。",
                             "Description": "当你使用符止，你或你的盟友选择由触发的攻击造成的一种伤害类型，并获得针对该伤害类型的5点抗力，直到你的下一回合开始。在15级，这个延时抗力从5提升至10。"
-                        }
+                        },
+                        "Label": "符"
                     },
                     "Adept": {
                         "Label": "奇具行家"
                     },
-                    "Prompt": "选择一个奇具。"
+                    "Prompt": "选择一个奇具。",
+                    "Paragon": {
+                        "Label": "奇具模范"
+                    }
                 },
                 "TalismanEsoterica": "护符秘藏"
             },
@@ -1097,6 +1123,9 @@
                     "Mutagenist": {
                         "FieldVials": {
                             "Description": "你可以喝下你的万用制剂来压制当前正在生效的一种突变药剂的缺陷，持续到你的下个回合开始。如此使用的制剂会失去酸特征、炸弹特征和溅射特征，并获得灵药特征。如果由于@UUID[Compendium.pf2e.feats-srd.Item.jSkJIWPfSZZzvYzq]或类似能力同时有不止一个缺陷正在影响你，喝下万用制剂会压制你所选的一项缺陷。"
+                        },
+                        "FieldBenefit": {
+                            "Description": "当你使用一瓶突变药剂时，你会获得等同你的智力调整值（最低为0）加上你等级一半的临时生命值。这些临时生命值持续一分钟或者直到突变药剂持续结束，取其先者。你在接下来1分钟内无法再度通过这一方式获得临时生命值。"
                         }
                     },
                     "Toxicologist": {
@@ -1106,7 +1135,8 @@
                         "FieldBenefit": {
                             "RollOptionLabel": "毒理学家 — 课题增益"
                         }
-                    }
+                    },
+                    "FieldBenefit": "课题增益"
                 },
                 "AlchemicalCrossbow": {
                     "Prompt": "选择装填到弩上的炸弹"
@@ -1313,7 +1343,8 @@
                 "StoneFistLabel": "石拳"
             },
             "AllowedDrops": {
-                "DeityOrPantheon": "神祇或信仰"
+                "DeityOrPantheon": "神祇或信仰",
+                "OneHandedWeapon": "单手武器"
             },
             "AncestralParagon": {
                 "AllowedDrops": "1级族裔专长",
@@ -1735,7 +1766,10 @@
                 "EquipmentVariety": "选择一个物品变体。",
                 "Penalty": "选择一种减值。",
                 "Attribute": "选择一个属性。",
-                "Level": "选择等级。"
+                "Level": "选择等级。",
+                "RangedWeapon": "选择一把远程武器。",
+                "Effect": "选择一个效果。",
+                "ClassFeat": "选择一项职业专长。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -2261,7 +2295,8 @@
                 "AgainstDemons": "对抗恶魔",
                 "AgainstDevils": "对抗魔鬼",
                 "AgainstHumanoids": "对抗类人生物",
-                "Metal": "目标穿着金属护甲或由金属制成"
+                "Metal": "目标穿着金属护甲或由金属制成",
+                "AgainstAnimals": "对抗动物"
             },
             "TrinityGeodeLabel": "三一晶洞",
             "SkillMastery": {
@@ -2383,10 +2418,11 @@
                         "RollOptionLabel": "你连续两次指甲打击命中同一目标"
                     },
                     "IronTeeth": {
-                        "Note": "被你的颚打击重击的生物必须成功通过一次@Check[fortitude|against:witch]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
+                        "Note": "被你的颚打击重击的生物必须成功通过一次@Check[fortitude|against:class-spell]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                     },
                     "LivingHair": {
-                        "SrikeLabel": "棘刺 Quill"
+                        "SrikeLabel": "棘刺 Quill",
+                        "StrikeLabel": "棘刺"
                     }
                 }
             },
@@ -3089,7 +3125,7 @@
             },
             "AquaticCombat": {
                 "FireNote": "你不能在水下施放火焰法术或使用带火焰特征的动作。",
-                "RangedNote": "当攻击者或是目标在水下时，造成钝击或挥砍伤害的远程攻击会自动失手，造成穿刺伤害的远程攻击的射程增量减半。"
+                "RangedNote": "非穿刺远程攻击的射程增量减半。"
             },
             "Actions": {
                 "ThreeActions": "3动作",
@@ -3333,7 +3369,12 @@
             },
             "WeaponInfusion": {
                 "Ranged": "远程注能",
-                "Melee": "近战注能"
+                "Melee": "近战注能",
+                "RangedSuboptions": {
+                    "100Volley": "100尺，远射30尺",
+                    "50Propulsive": "50尺，助进",
+                    "20Thrown": "20尺，投掷"
+                }
             },
             "SpellEffectThermalRemedy": {
                 "FireResistance": "火焰抗力",
@@ -3812,7 +3853,7 @@
                 "BizzareTransformation": "若你的下个动作是施放@UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]，则可以改变 <em>无羁形态</em>所赋予的单个无武装攻击的伤害类型，使其变为后述类型中的一种：酸蚀、钝击、寒冷、电击、火焰、毒素、穿刺、或挥砍。被选取的攻击会获得相应的特征。",
                 "GarlandSpell": "一道由植物交织成的花环会在法术范围内的@Template[burst|distance:10]区域生长出来。该区域变为困难地形和有害地形，根据你的选择覆盖有荆棘或毒藤。任何进入该区域中方格或在其中结束自己回合的生物受到2d6伤害（对于荆棘为@Damage[2d6[piercing]]伤害，对于毒藤为@Damage[2d6[poison]]伤害）。每个生物每轮只能从中受到一次伤害。你和你的魔宠对此伤害免疫。这些植物持续1分钟或直到你再次施放花环法术，取决于何者为先。该伤害在16级时提高至3d6，20级时提高至4d6。",
                 "OstentatiousArrivalSummonSpell": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
-                "OstentatiousArrivalManifestEidolon": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrayDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
+                "OstentatiousArrivalManifestEidolon": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物（除了你）会承受@Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrayDamage]]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
                 "ExplosiveArrival": "如果你下个动作是施放法术，并且法术具有召唤特征，在你召唤生物的周围@Template[emanation|distance:10]区域中的所有生物受到@Damage[(@item.level)d4[fire]|traits:area-damage]伤害。如果被召唤的生物具有@Damage[(@item.level)d4[acid]|traits:area-damage]{酸蚀}、 , @Damage[(@item.level)d4[electricity]|traits:area-damage]{寒冷}、@Damage[(@item.level)d4[electricity]|traits:area-damage]{电击}、@Damage[(@item.level)d4[sonic]|traits:area-damage]{音波}、@Damage[(@item.level)d4[spirit]|traits:area-damage]{精魂}特征，你可取而代之造成对应类型伤害。",
                 "FamiliarsResolve": "如果你接下来的行动是施展法术，那么你或你30尺范围内的任意一名盟友在1轮内对抗那些会使你或盟友陷入毁灭或惊惧状态的豁免检定获得+2状态加值。在14级时，你或盟友在针对这些效果的豁免检定将获得+3状态加值。@UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{效果：魔宠决意}",
                 "GoldenDragonsBounty": "如果你接下来的动作是施展一个造成钝击、穿刺或挥砍伤害的法术，那么该伤害的类型可以由你选择为寒铁、银或钢，用于弱点、抗力、易伤等。在14级时，将精金加入到金属选择列表中。该法术获得金特征。",
@@ -3881,7 +3922,10 @@
                 },
                 "Werecrocodile": {
                     "Label": "鳄化人",
-                    "Description": "你获得25尺的速度和15尺的游泳速度，并且拥有1d8穿刺噬咬无武装攻击，附带擒抱特质。在动物形态或混合形态下，你可以屏息2小时。"
+                    "Description": "你获得25尺的速度和15尺的游泳速度，并且拥有1d8穿刺噬咬无武装攻击，附带擒抱特质。在动物形态或混合形态下，你可以屏息2小时。",
+                    "DeathRoll": {
+                        "ToggleLabel": "死亡翻滚 — 在水中"
+                    }
                 },
                 "Weretiger": {
                     "Label": "虎化人",
@@ -3987,7 +4031,7 @@
                     "Plains": "你获得临时生命值，数值等同于法术环级，持续1轮。",
                     "Sky": "你能够飞行至多10尺。若你在回合结束时位于空中，而且你并不具有飞行速度，则会坠落。",
                     "Swamp": "受影响的敌人进行@Check[fortitude|basic]豁免，失败则承受@Damage[(max(1,floor(@item.level/2)))[persistent,poison]]伤害，数值等同于法术环级的一半（最低1点伤害）。",
-                    "Aquatic": "若你在水中，则获得等同于你的陆上速度的游泳速度。若你在地面上，则暂时会有水浪跟随你移动，允许你用自己的游泳速度——若你有的话——作为你的陆上速度来移动。"
+                    "Aquatic": "若你在水中，则获得等同于你的陆上速度的游泳速度。若你在地面上，则暂时会有水浪跟随你移动，允许你用自己的游泳速度——若你有的话——作为你的陆上速度来移动。此效果持续1轮。"
                 },
                 "AttunementShift": "转换同调"
             },
@@ -4257,7 +4301,7 @@
                     "sorcerer": {
                         "Legendary": "你在施法上展现出了卓越的天赋。你在法术攻击调整值和法术DC上的熟练等级提升至传奇。",
                         "Master": "你已经完全驾驭住了流淌在血液中的魔力。你在法术攻击调整值和法术DC上的熟练等级提升至大师。",
-                        "Expert": "你内在的魔力能够更为简单有效地回应你的命令。你在血统所对应的魔法根源的法术攻击骰和法术DC上的熟练等级提升至专家。"
+                        "Expert": "你内在的魔力能够更为简单有效地回应你的命令。你在血统所对应的魔法根源的法术攻击调整值和法术DC上的熟练等级提升至专家。"
                     },
                     "oracle": {
                         "Expert": "你在神术力量上的感悟日益明晰。你在法术攻击调整和法术DC上的熟练度提升至专家。",
@@ -4270,8 +4314,8 @@
                         "Master": "原能魔法遵从你的指令。你在法术攻击调整和法术DC上的熟练度提升至大师。"
                     },
                     "summoner": {
-                        "Expert": "在你深化与幻灵的联结之时，你的法术强度也得到了提升。你在幻灵决定的根源上的法术攻击骰和法术DC的熟练度提升至专家。",
-                        "Master": "你与幻灵之间的联结极其强大，能够让你掌握联结法术的精髓。你在幻灵决定的魔法根源的法术攻击骰和法术DC上的熟练度提升至大师。"
+                        "Expert": "在你深化与幻灵的联结之时，你的法术强度也得到了提升。你在幻灵决定的根源上的法术攻击调整值和法术DC的熟练度提升至专家。",
+                        "Master": "你与幻灵之间的联结极其强大，能够让你掌握联结法术的精髓。你在幻灵决定的魔法根源的法术攻击调整值和法术DC上的熟练度提升至大师。"
                     },
                     "bard": {
                         "Expert": "你的魔法技艺愈加强大。你在法术攻击调整和法术DC上的熟练度提升至专家。",
@@ -4739,6 +4783,44 @@
             },
             "Disarm": {
                 "WeakenedGraspBonusLabel": "卸武（对抗削弱握持力后的状态）"
+            },
+            "Godling": {
+                "DivineInvulnerability": {
+                    "IncreasedResistanceToggle": "神性无瑕 — 增加抗力"
+                },
+                "DomainDamageDropdown": "神种 — 领域伤害类型",
+                "StymieTheGods": {
+                    "BonusToggle": "绝地天通 — 对抗跨位面生物"
+                }
+            },
+            "Mythic": {
+                "PointSpentPrompt": "此能力是否消耗了神话点？"
+            },
+            "BrokenChain": {
+                "UltimatumOfLiberation": {
+                    "BonusIncreaseToggle": "解放通牒 — 豁免增益增加到+3"
+                },
+                "YouCantKillAnIdea": {
+                    "IdeaformToggle": "变为理念形态"
+                },
+                "ReleaseMe": {
+                    "BonusToggle": "给我放手！ — 启用近战打击加值"
+                }
+            },
+            "EternalLegend": {
+                "Dedication": {
+                    "AdjustmentToggle": "万古英名 — 针对特定状态的调整"
+                },
+                "DeathFromAbove": {
+                    "Note": "受到打击伤害的目标必须通过一次@Check[fortitude|against:class]豁免对抗你的职业DC，否则会@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "Label": "死从天降"
+                },
+                "FinishTheirStory": {
+                    "Note": "目标立刻死亡。"
+                }
+            },
+            "SkilledClimber": {
+                "Label": "攀爬树木或洞壁"
             }
         },
         "RuleElement": {
