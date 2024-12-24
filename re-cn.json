@@ -1090,7 +1090,7 @@
                     },
                     "Chirurgeon": {
                         "FieldVials": {
-                            "Description": "你的万用制剂可以被用于治疗活物，为其恢复@Damage[(ternary(gte(@actor.level,18),4,ternary(gte(@actor.level,12),3,ternary(gte(@actor.level,4),2,1))))d6[healing]]的生命值。任一生物都可以通过喝下制剂来获得这一效果，或者你可以用一个交互动作将它投掷在任一20尺内的自愿生物上来为其进行治疗。不论哪种情况，如此使用的制剂会失去酸特征和溅射特征并获得凝血特征和治疗特征，如果是喝下的情况还会获得灵药特征。"
+                            "Description": "你的万用制剂可以被用于治疗活物，为其恢复@Damage[(ternary(gte(@item.level,18),4,ternary(gte(@item.level,12),3,ternary(gte(@item.level,4),2,1))))d6[healing]]的生命值。任一生物都可以通过喝下制剂来获得这一效果，或者你可以用一个交互动作将它投掷在任一20尺内的自愿生物上来为其进行治疗。不论哪种情况，如此使用的制剂会失去酸特征和溅射特征并获得凝血特征和治疗特征，如果是喝下的情况还会获得灵药特征。"
                         }
                     },
                     "FieldVials": "课题制剂",
