@@ -1136,7 +1136,8 @@
                             "RollOptionLabel": "毒理学家 — 课题增益"
                         }
                     },
-                    "FieldBenefit": "课题增益"
+                    "FieldBenefit": "课题增益",
+                    "AdvancedVials": "进阶制剂"
                 },
                 "AlchemicalCrossbow": {
                     "Prompt": "选择装填到弩上的炸弹"
@@ -1658,6 +1659,13 @@
                 },
                 "MindsLightCirclet": {
                     "LightToggle": "心灵之光头环——你有至少1点聚能点"
+                },
+                "PreyMutagen": {
+                    "TimelyDodge": {
+                        "GreaterDescription": "你纵身向侧面闪开，AC获得+3环境加值，然后在打击判定之后进行快步。",
+                        "MajorDescription": "你纵身向侧面闪开，AC获得+4环境加值，然后在打击判定之后进行快步。",
+                        "ModerateDescription": "你纵身向侧面闪开，AC获得+2环境加值，然后在打击判定之后进行快步。"
+                    }
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1769,7 +1777,8 @@
                 "Level": "选择等级。",
                 "RangedWeapon": "选择一把远程武器。",
                 "Effect": "选择一个效果。",
-                "ClassFeat": "选择一项职业专长。"
+                "ClassFeat": "选择一项职业专长。",
+                "Bonus": "选择一种加值。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -1969,6 +1978,9 @@
                 },
                 "StrongBloodedDwarf": {
                     "Note": "对抗毒素苦难时，你每次成功的豁免检定都会使苦难阶段降低2阶，恶性毒素则降低1阶。对抗毒素的每次大成功都会使苦难阶段降低3阶，恶性毒素则为2阶。"
+                },
+                "HeroesCall": {
+                    "DescriptionAlteration": "假如你在生命值一半或以下时使用此法术，你还会获得两倍于你等级的临时生命。"
                 }
             },
             "Fleshwarp": {
@@ -2910,6 +2922,9 @@
                 },
                 "DazingBlow": {
                     "Note": "<p>如果击中，该生物需进行一次@Check[fortitude|against:class|traits:incapacitation]豁免对抗你的职业DC，这是一个失能效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
+                },
+                "BrutalFinish": {
+                    "Note": "你造成@Damage[(ternary(gte(@actor.level,18),2,1))@item.system.damage.die[@item.system.damage.damageType]]伤害。"
                 }
             },
             "DivineAlly": {
@@ -3423,7 +3438,11 @@
                 "EvergreenVitality": "常青活力",
                 "OverwhelmingPerfume": "强烈芳香",
                 "ToweringTrunk": "巍峨巨木",
-                "GraspingBranch": "不屈意志"
+                "GraspingBranch": "不屈意志",
+                "RollOptionLabel": {
+                    "First": "木躯韧心 — 第一个能力",
+                    "Second": "木躯韧心 — 第二个能力"
+                }
             },
             "ArtokussFire": {
                 "Note": "你的炽火胶造成额外1d4 持续火焰伤害，并且生物必须通过两次纯骰检定才能停止持续伤害（若受到能将纯骰DC降至10的协助恢复，则只需要一次成功）。真火胶就算在水下也能燃烧，任何用水来停止持续伤害的手段没有任何效果。"
@@ -3495,8 +3514,8 @@
                     "Oracle": "你抽取法术能量注入你握持的一件武器，或是你的一项无武装攻击，比如拳头。直到你回合结束，武器或无武装攻击造成一个额外的 1d6 力场伤害，并且如果其未拥有神术特征，则会获得此特征。如果法术造成不同类型伤害，则打击取而代之造成此类型伤害（如果法术造成多种类型伤害，则由你选择其中之一）。"
                 },
                 "YoureNext": {
-                    "Swashbuckler": "在你击倒敌人后，你可以恐吓另外一个敌人你即将把他选择为下个目标。尝试一次有+2环境加值的威吓检定来对一个与你互相可见的敌人进行@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]。如果你的威吓熟练度为传奇，你能以一个触发条件相同的自由动作来使用此专长。",
-                    "Rogue": "在你放倒一个敌人后，你威胁另一个。你对60尺内的一个生物尝试@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]，这次检定获得+2环境加值。你和该目标必须能看见彼此。如果你有传奇熟练度的威吓技能，你能以一个相同触发条件的自由动作来使用此能力。",
+                    "Swashbuckler": "在你击倒敌人后，你可以恐吓另外一个敌人你即将把他选择为下个目标。尝试一次有+2环境加值的威吓检定来对一个与你互相可见的敌人进行[[/act demoralize options=youre-next]]。如果你的威吓熟练度为传奇，你能以一个触发条件相同的自由动作来使用此专长。",
+                    "Rogue": "在你放倒一个敌人后，你威胁另一个。你对60尺内的一个生物尝试[[/act demoralize options=youre-next]]，这次检定获得+2环境加值。你和该目标必须能看见彼此。如果你有传奇熟练度的威吓技能，你能以一个相同触发条件的自由动作来使用此能力。",
                     "Trigger": "你将一个敌人的HP降至0。"
                 },
                 "ThlipitContestantDedication": {
@@ -4766,6 +4785,18 @@
                         "First": "寒心披风 — 第一个能力",
                         "Second": "寒心披风 — 第二个能力"
                     }
+                },
+                "MagmaHeart": {
+                    "RollOptionLabel": {
+                        "First": "熔心披风 — 第一个能力",
+                        "Second": "熔心披风 — 第二个能力"
+                    },
+                    "Label": {
+                        "EnlargingEruption": "身发熔浆",
+                        "FieryGrasp": "拳握炽焰",
+                        "HeartOfFire": "烈火焚心",
+                        "WarmingFlames": "温暖飞焰"
+                    }
                 }
             },
             "ApocalypseRider": {
@@ -4821,6 +4852,11 @@
             },
             "SkilledClimber": {
                 "Label": "攀爬树木或洞壁"
+            },
+            "MartialArtist": {
+                "GrievousBlow": {
+                    "Note": "这次攻击可以忽略相当于你的等级数值的物理伤害抗力（包括对某种具体类型的物理伤害抗力）。"
+                }
             }
         },
         "RuleElement": {
@@ -5089,7 +5125,8 @@
                 "DescriptionMajor": "每当你使用法术位施放一个至少需要2动作的5环或更高环法术时，溢散出的命能对@Template[burst|distance:30]范围造成一个3动作@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]效果，该治疗术等效环级为你所施放法术的环级-4。这次治疗在你@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]完毕后立刻生效。你不会从这次治疗中获得恢复，相反，你会失去该次治疗术治疗量双倍的HP。"
             },
             "Time": {
-                "ACLabel": "移动时不会触发反应或自由动作"
+                "ACLabel": "移动时不会触发反应或自由动作",
+                "DefendAgainstLabel": "湍流时光诅咒 — 防御减值"
             }
         },
         "RuleEditor": {
@@ -6234,7 +6271,8 @@
                 "Label": "需求"
             },
             "Trigger": {
-                "Label": "触发"
+                "Label": "触发",
+                "TargetedByAStrike": "你成为一次打击的目标"
             },
             "Special": {
                 "Label": "特殊"
@@ -6252,7 +6290,7 @@
             },
             "ItemVs": {
                 "Fear": "{item} vs 恐惧",
-                "DeathVoid": "{Item}对抗死亡和虚能效果"
+                "DeathVoid": "{item}对抗死亡和虚能效果"
             },
             "StrikeCount": {
                 "Second": "第二次打击",
@@ -6260,6 +6298,12 @@
             },
             "Resist": {
                 "ForcedMovement": "对抗受迫移动"
+            },
+            "Check": {
+                "SavingThrow": "豁免检定",
+                "Skill": "技能检定",
+                "Attack": "攻击检定",
+                "Perception": "察觉检定"
             }
         }
     }
