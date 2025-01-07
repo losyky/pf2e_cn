@@ -5304,7 +5304,7 @@
         "TraitDescriptionGood": "善良效果通常会操作来自善良阵营外层界域的能量，是邪恶阵营的圣仆或邪恶神祇的圣仆相对立。具有此特征的生物在阵营上是善良的。",
         "TraitDescriptionGrapple": "即使你没有空手，仍然能以此武器用运动技能对敌人进行擒拿。此时使用武器的触及范围（若其与你的触及范围不同），并将武器给予攻击的物品加值（若有）加至运动检定上。若你在使用该武器时，擒拿检定大失败，你可以抛弃该武器，视之为普通失败。",
         "TraitDescriptionGrimoire": "对于大部分施法者来说，法术书是用来记录法术和符文的最有用的工具，但大多数法术书不过是羊皮纸上写着墨水文字。魔典则不同，它吸收了书中咒语的魔力，知识渊博的执法者可以用它来增强自己的法术。",
-        "TraitDescriptionGrippli": "树蛙人是一个类似青蛙的人形生物种族",
+        "TraitDescriptionGrippli": "树蛙人是一个类似青蛙的人形生物种族。",
         "TraitDescriptionGunslinger": "这表示枪手职业的能力。",
         "TraitDescriptionHalfElf": "具有该特征的生物同时具有人类和精灵的部分。具有该特征的能力只能由半精灵使用或选择。",
         "TraitDescriptionHalfOrc": "具有该特征的生物同时具由人类和兽人的部分。具有该特征的能力只能由半兽人使用或选择。",
@@ -6704,14 +6704,14 @@
             "astral": {
                 "Name": "星魂",
                 "Note": {
-                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:26]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:26]豁免，失败则被驱逐，并在[[/gmr 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
                     "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用星魂武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。"
                 }
             },
             "greaterAstral": {
                 "Note": {
                     "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用此武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。",
-                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:36]豁免，失败则被驱逐，并在[[/br 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:36]豁免，失败则被驱逐，并在[[/gmr 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
                 },
                 "Name": "高等星魂"
             },
