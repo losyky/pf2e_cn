@@ -165,7 +165,12 @@
             },
             "Unrest": "动乱",
             "Vacant": "空缺",
-            "ArmyConsumption": "军队损耗"
+            "ArmyConsumption": "军队损耗",
+            "FeatSlot": {
+                "Features": "王国特性",
+                "Feats": "王国专长",
+                "Bonus": "奖励专长"
+            }
         },
         "Skills": {
             "arts": "艺术",
