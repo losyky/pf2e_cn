@@ -926,9 +926,9 @@
                 },
                 "AccursedTouch": {
                     "Note": {
-                        "TwentiethLevel": "若你用拳头造成了重击，你对敌人造成@Damage[4d6[persistent,void]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
-                        "FourteenthLevel": "若你用拳头造成了重击，你对敌人造成@Damage[3d6[persistent,void]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
-                        "Base": "若你用拳头造成了重击，你对敌人造成@Damage[2d6[persistent,void]]伤害，持续伤害持续时的敌人还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
+                        "TwentiethLevel": "当生物正承受此持续伤害时，其还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
+                        "FourteenthLevel": "当生物正承受此持续伤害时，其还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。",
+                        "Base": "当生物正承受此持续伤害时，其还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
                     }
                 }
             },
