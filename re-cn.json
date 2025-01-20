@@ -913,7 +913,7 @@
                     "Note": "当你在对抗恐惧效果的豁免检定中掷出成功时，可用大成功替代它。当你在此检定中投掷出失败时，则用大失败替代它。"
                 },
                 "DragonsBreath": {
-                    "DescriptionAlteration": "你引导龙血典范中的力量形成一股能量冲击，吐息的形状为@Template[line|distance:60]或@Template[cone|distance:30]，造成@Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|traits:area-damage]伤害。每个区域内的生物都必须尝试一次基础豁免检定对抗你的职业DC或法术DC（取其中较高者）。你在接下来的1小时内无法再次使用该能力。"
+                    "DescriptionAlteration": "你引导龙血典范中的力量形成一股能量冲击，吐息的形状为@Template[line|distance:60]或@Template[cone|distance:30]，造成@Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|options:area-damage]伤害。每个区域内的生物都必须尝试一次基础豁免检定对抗你的职业DC或法术DC（取其中较高者）。你在接下来的1小时内无法再次使用该能力。"
                 }
             },
             "Mummy": {
