@@ -6600,7 +6600,7 @@
             "unholy": {
                 "Name": "邪秽",
                 "Note": {
-                    "criticalSuccess": "堕邪喋血 Unholy Bloodshed <span class='pf2-icon'>R</span> (专注)</p><p><strong>频率</strong> 每天一次</p><p><strong>触发</strong> 你用该武器对一圣洁生物的攻击骰重击</p><hr /><p><strong>效果</strong> 目标受到蚀刻武器每颗武器骰1d8的持续流血伤害。"
+                    "criticalSuccess": "堕邪喋血 Unholy Bloodshed <span class='pf2-icon'>R</span> （专注）</p><p><strong>频率</strong> 每天一次</p><p><strong>触发</strong> 你用该武器对一圣洁生物的攻击骰重击</p><hr /><p><strong>效果</strong> 目标受到蚀刻武器每颗武器骰1d8的持续流血伤害。"
                 }
             },
             "vorpal": {
