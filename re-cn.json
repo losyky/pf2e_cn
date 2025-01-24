@@ -2200,6 +2200,9 @@
             "Fetchling": {
                 "DeepFetchling": {
                     "Prompt": "选择要抵抗的伤害类型"
+                },
+                "LightlessLitheness": {
+                    "Note": "你可以进行快步，取代原本行走最多5尺的效果。"
                 }
             },
             "FollowTheExpert": {
