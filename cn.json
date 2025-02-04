@@ -2130,7 +2130,8 @@
                     "FreeCraftingTooltip": "启用时，立刻生成物品而不花费金币",
                     "PrepareHint": "选择你想要准备的物品（还剩{remaining}）",
                     "Action": {
-                        "Hint": "选择一项使用{resource}制作的物品 ({value}/{max})"
+                        "Hint": "选择一项使用{resource}制作的物品 ({value}/{max})",
+                        "HintResourceless": "选择要制作的道具"
                     },
                     "Search": "搜索配方",
                     "Create": "创建",
@@ -3196,7 +3197,11 @@
                     "Exceptions4DoubleVs1": "{type} {value} (除{exception1}、{exception2}、{exception3}或{exception4}; 此抗力对抗{doubleVs1}时翻倍)",
                     "Exceptions4DoubleVs2": "{type} {value} (除{exception1}、{exception2}、{exception3}或{exception4}; 此抗力对抗{doubleVs1}或{doubleVs2}时翻倍)",
                     "Exceptions4DoubleVs3": "{type} {value} (除{exception1}、{exception2}、{exception3}或{exception4}; 此抗力对抗{doubleVs1}、{doubleVs2}或{doubleVs3}时翻倍)",
-                    "Exceptions4DoubleVs4": "{type} {value} (除{exception1}、{exception2}、{exception3}或{exception4}; 此抗力对抗{doubleVs1}、{doubleVs2}、{doubleVs3}或{doubleVs4}时翻倍)"
+                    "Exceptions4DoubleVs4": "{type} {value} (除{exception1}、{exception2}、{exception3}或{exception4}; 此抗力对抗{doubleVs1}、{doubleVs2}、{doubleVs3}或{doubleVs4}时翻倍)",
+                    "DoubleVs": "{type} {value} （对抗{doubleVs}时抗力翻倍）",
+                    "Exceptions": "{type} {value} （除了{exceptions}）",
+                    "Simple": "{type} {value}",
+                    "ExceptionsDoubleVs": "{type} {value} （除了{exceptions}；对抗{doubleVs}时抗力翻倍）"
                 },
                 "Type": {
                     "illusion": "幻术系",
@@ -7089,7 +7094,8 @@
             "stupefied": {
                 "name": "呆滞",
                 "rules": "<p>你是思绪和本能被蒙蔽住。呆滞状态拥有状态值。你所有基于智力、感知和魅力的检定与DC获得等同于呆滞状态值的状态减值，包括意志豁免、法术攻击骰、法术Dc、使用这些属性调整值的技能检定。呆滞时若你尝试施放法术行动，你必须通过DC=5+呆滞值的纯骰检定，否则法术会被打断。</p>",
-                "summary": "你无法进行完整的心智思考，难以施法。"
+                "summary": "你无法进行完整的心智思考，难以施法。",
+                "note": "呆滞时若你尝试@UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]行动，你必须通过@Check[flat|showDC:all|dc:resolve(5+@actor.conditions.stupefied.value)]检定，否则法术会被打断。"
             },
             "unconscious": {
                 "name": "失去意识",
@@ -8127,7 +8133,10 @@
         "ConditionTypeCursebound": "咒缚",
         "TraitJoustingD4": "骑战 d4",
         "TraitJoustingD8": "骑战 d8",
-        "TraitJoustingD10": "骑战 d10"
+        "TraitJoustingD10": "骑战 d10",
+        "ModeOfBeing": {
+            "Living": "活物"
+        }
     },
     "DOCUMENT": {
         "Combat": "遭遇",
