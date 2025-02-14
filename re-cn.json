@@ -827,7 +827,7 @@
                     "FlatCheck": {
                         "Label": "不稳定检定",
                         "Failure": "大发明无法继续使用不稳定动作。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]",
-                        "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[@actor.level[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]"
+                        "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[(floor(@actor.level / 2))[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]"
                     },
                     "Stable": "稳定",
                     "Note": "当你进行一个不稳定动作，在应用效果之后立刻尝试一次@Check[flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]检定。",
