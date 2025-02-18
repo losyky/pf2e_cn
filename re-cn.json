@@ -5784,6 +5784,11 @@
             },
             "WeaverOfWebs": {
                 "InBrightLight": "在明亮光中"
+            },
+            "AbstalarZantus": {
+                "CommunalHealingHands": {
+                    "Note": "当阿布斯塔拉施放<em>治疗术</em>为除自己以外的单个生物治疗时，他恢复@Damage[@item.rank[vitality,healing]|shortLabel]生命值。"
+                }
             }
         },
         "UI": {
