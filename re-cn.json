@@ -178,16 +178,16 @@
             },
             "FrostVial": {
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[cold]]{4点寒冷溅射伤害}，并且目标会受到15尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.4G9qnI0oRyL6eKFQ]{效果：上等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 目标受到15尺速度减值直至其下回合结束（@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]）。"
                 },
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(3[splash])[cold]]{3点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{效果：高等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 目标受到10尺速度减值直至其下回合结束（@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]）。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[cold]]{2点寒冷溅射伤害}，并且目标会受到10尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.dv0IKm5syOdP759w]{效果：中等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 目标受到10尺速度减值直至其下回合结束（@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]）。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[cold]]{1点寒冷溅射伤害}，并且目标会受到5尺速度减值直至下回合结束(@UUID[Compendium.pf2e.equipment-effects.Item.RLsdvhmTh64Mmty9]{效果：次等霜冻瓶 })。"
+                    "success": "<strong>效果</strong> 目标受到5尺速度减值直至其下回合结束（@UUID[Compendium.pf2e.equipment-effects.Item.LdmzgBOTjCete4F7]）。"
                 }
             },
             "BlightBomb": {
@@ -235,38 +235,38 @@
             },
             "DreadAmpoule": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[mental]]{3点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[mental]]{1点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[mental]]{4点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[mental]]{2点心灵溅射伤害}以及目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧1} (重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧2} )。"
+                    "success": "<strong>效果</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。"
                 }
             },
             "DwarvenDaisy": {
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[fire]]伤害，并且目标必须通过成功的@Check[fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。"
+                    "success": "目标必须成功通过@Check[fortitude|dc:16|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[fire]]伤害，并且目标必须通过成功的@Check[fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。"
+                    "success": "目标必须成功通过@Check[fortitude|dc:18|traits:damaging-effect|showDC:all]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮。"
                 }
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[vitality]]{3点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。"
+                    "success": "受到伤害的目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[vitality]]{1点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
+                    "success": "受到伤害的目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(2[splash])[vitality]]{2点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
+                    "success": "受到伤害的目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[vitality]]{4点命能溅射伤害}，并且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
+                    "success": "受到伤害的目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。"
                 }
             },
             "JunkBomb": {
@@ -830,7 +830,7 @@
                         "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[(floor(@actor.level / 2))[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]"
                     },
                     "Stable": "稳定",
-                    "Note": "当你进行一个不稳定动作，在应用效果之后立刻尝试一次@Check[flat|dc:15|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label]检定。",
+                    "Note": "当你进行一个不稳定动作时，在应用效果之后立刻尝试一次@Check[flat|dc:resolve(ternary(lt(@actor.skills.crafting.rank,4),15,13))|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label|showDC:all]检定。",
                     "FailureNote": "大发明无法继续使用不稳定动作。作为大发明的创造者，你可以花费10分钟再调校你的大发明，让它能够正常工作，之后你就可以使用大发明再次进行不稳定动作。",
                     "UnstableFunction": {
                         "Label": "启用不稳定功能"
