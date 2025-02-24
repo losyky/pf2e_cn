@@ -224,14 +224,15 @@
             },
             "CrystalShards": {
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(6[splash])[piercing]]{6点穿刺溅射伤害}，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+3的物品加值。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成6点穿刺溅射伤害，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+3的物品加值。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[piercing]]{4点穿刺溅射伤害}，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+1的物品加值。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成4点穿刺溅射伤害，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+1的物品加值。"
                 },
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(5[splash])[piercing]]{5点穿刺溅射伤害}，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+2的物品加值。"
-                }
+                    "success": "<strong>效果</strong> 这颗炸弹造成5点穿刺溅射伤害，并且飞溅物会在水平面上形成@UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{铁蒺藜}一样的晶体，并在垂直面上创造立足点，为下一次用于攀爬的运动检定提供+2的物品加值。"
+                },
+                "Note": "目标会受到1点持续流血伤害，这是由于晶体嵌入其血肉中造成的。只要持续流血伤害存在，目标的速度就会受到-5尺的减益。@UUID[Compendium.pf2e.equipment-effects.Item.HKC4IZOzbvtjsp77]{Effect: Crystal Shards}"
             },
             "DreadAmpoule": {
                 "Greater": {
@@ -245,6 +246,10 @@
                 },
                 "Moderate": {
                     "success": "<strong>效果</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（重击时为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。"
+                },
+                "Note": {
+                    "criticalSuccess": "命中时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 2}",
+                    "success": "命中时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 1}"
                 }
             },
             "DwarvenDaisy": {
@@ -523,6 +528,20 @@
             },
             "BioluminescenceBomb": {
                 "success": "<p>炸弹落点@Template[emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮，然后再目眩1轮。</p>"
+            },
+            "SkunkBomb": {
+                "Greater": {
+                    "success": "<strong>效果</strong> 被炸弹直接命中或处于溅射范围内的生物必须进行一次@Check[fortitude|dc:28]豁免检定。处于溅射范围内的生物在判定豁免结果时，其效果提升一级。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。</p><p><strong>失败</strong> 目标陷入恶心 1且在恶心状态下陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 1}。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲}持续1轮，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}，且在恶心状态下陷入缓慢 1。</p>"
+                },
+                "Lesser": {
+                    "success": "<strong>效果</strong> 被炸弹直接命中或处于溅射范围内的生物必须进行一次@Check[fortitude|dc:15]豁免检定。处于溅射范围内的生物在判定豁免结果时，其效果提升一级。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。</p><p><strong>失败</strong> 目标陷入恶心 1且在恶心状态下陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 1}。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲}持续1轮，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}，且在恶心状态下陷入缓慢 1。</p>"
+                },
+                "Major": {
+                    "success": "<strong>效果</strong> 被炸弹直接命中或处于溅射范围内的生物必须进行一次@Check[fortitude|dc:37]豁免检定。处于溅射范围内的生物在判定豁免结果时，其效果提升一级。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。</p><p><strong>失败</strong> 目标陷入恶心 1且在恶心状态下陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 1}。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲}持续1轮，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}，且在恶心状态下陷入缓慢 1。</p>"
+                },
+                "Moderate": {
+                    "success": "<strong>效果</strong> 被炸弹直接命中或处于溅射范围内的生物必须进行一次@Check[fortitude|dc:17]豁免检定。处于溅射范围内的生物在判定豁免结果时，其效果提升一级。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。</p><p><strong>失败</strong> 目标陷入恶心 1且在恶心状态下陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 1}。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲}持续1轮，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}，且在恶心状态下陷入缓慢 1。</p>"
+                }
             }
         },
         "SpecificRule": {
