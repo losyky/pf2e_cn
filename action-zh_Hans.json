@@ -61,7 +61,10 @@
                     "Master": "有抓手处的天花板，普通石墙",
                     "Legendary": "光可鉴人的墙壁"
                 },
-                "Description": "<p><strong>需求</strong> 你的双手都空着。</p><hr><p>你可以通过一个运动检定，在一个非地平表面上爬上、爬下或左右爬，最大距离为5尺。除非你本身就拥有攀爬速度，否则在攀爬时你处于 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。GM会根据这个攀爬平面的特性和环境因素来决定攀爬检定的DC；对于轻而易举就能攀爬的斜坡，检定可能会自动获得大成功。如果你的陆地速度是40尺或更高，超过20尺的部分每增加20尺，最大距离就会增加5尺。</p><p><strong>大成功</strong>你沿着斜坡移动，最大距离会增加5尺。<br><strong>成功</strong>你沿着斜坡移动。<br><strong>大失败</strong>你掉了下来。如果你是在从平地上开始攀爬，你摔倒并处于@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 prone}状态。</p>"
+                "Description": "<p><strong>需求</strong> 你的双手都空着。</p><hr><p>你可以通过一个运动检定，在一个非地平表面上爬上、爬下或左右爬，最大距离为5尺。除非你本身就拥有攀爬速度，否则在攀爬时你处于 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。GM会根据这个攀爬平面的特性和环境因素来决定攀爬检定的DC；对于轻而易举就能攀爬的斜坡，检定可能会自动获得大成功。如果你的陆地速度是40尺或更高，超过20尺的部分每增加20尺，最大距离就会增加5尺。</p><p><strong>大成功</strong>你沿着斜坡移动，最大距离会增加5尺。<br><strong>成功</strong>你沿着斜坡移动。<br><strong>大失败</strong>你掉了下来。如果你是在从平地上开始攀爬，你摔倒并处于@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 prone}状态。</p>",
+                "Modifier": {
+                    "ClimbSpeed": "攀爬速度"
+                }
             },
             "Coerce": {
                 "Notes": {
@@ -159,7 +162,7 @@
                 "EffectLabel": "使用握不稳的武器",
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong> 你将该物品从目标手中击落。它会掉落在目标占据空间的地面上。",
-                    "success": "<strong>成功</strong> 你震得目标虎口发麻。你接下来对该目标的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定时承受-2环境减值。该生物可以用交互动作握紧物品来结束此效果；否则只要该生物还握持着该物品，效果就一直持续。<br>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{效果：卸武（成功）}",
+                    "success": "<strong>成功</strong> 你震得目标虎口发麻。你接下来对该目标的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定时承受-2环境减值。该生物可以用交互动作握紧物品来结束此效果；否则只要该生物还握持着该物品，效果就一直持续。<br>@UUID[Compendium.pf2e.other-effects.Item.PuDS0DEq0CnaSIFV]",
                     "criticalFailure": "<strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态 。"
                 },
                 "Title": "卸武",
@@ -522,6 +525,9 @@
                     "Expert": "湍急河流",
                     "Master": "惊涛骇浪",
                     "Legendary": "旋涡、瀑布"
+                },
+                "Modifier": {
+                    "SwimSpeed": "游泳速度"
                 }
             },
             "Tamper": {
@@ -912,12 +918,12 @@
             },
             "GrabAnEdge": {
                 "Notes": {
-                    "criticalFailure": "<strong>大失败</strong> 你继续坠落，如果你在使用该反应动作前已经坠落了20尺或更远，那么你每坠落20尺就会因冲击而受到@Damage[10[bludgeoning]]伤害。",
+                    "criticalFailure": "<strong>大失败</strong> 你继续坠落，如果你在使用该反应动作前已经坠落了20尺或更远，那么你每坠落20尺就会因冲击而受到@Damage[10[bludgeoning]|options:fall-damage]伤害。",
                     "success": "<strong>成功</strong> 若你至少有一只空闲手，你就抓住了边缘或把手，阻止了坠落。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少20尺来计算。若你没有空闲手，你会如同检定失败一般继续坠落。",
                     "criticalSuccess": "<strong>大成功</strong> 无论你是否有空闲手，你都抓住了边缘或把手，典型的比如用合适的持握物品挂住了你自己（例如用战斧卡在了横栏上）。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少30尺来计算。"
                 },
                 "Title": "抓住边缘 Grab An Edge",
-                "Description": "<p><strong>触发</strong> 你处于坠落中时经过一个边缘或把手。</p><p><strong>需求</strong> 你的手没有绑在背后或处于束缚状态中。</p><hr><p>当你坠落的过程中经过一个边缘或把手时，你可以尝试抓住它，阻止自己坠落。你必须选择进行特技检定或反射豁免检定，通常使用攀爬DC。当你抓住边缘或把手后，你就可以使用运动技能向上@UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{攀爬 Climb}。</p><hr /><p><strong>大成功</strong> 无论你是否有空闲手，你都抓住了边缘或把手，典型的比如用合适的持握物品挂住了你自己（例如用战斧卡在了横栏上）。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少30尺来计算。</p><p><strong>成功</strong> 若你至少有一只空闲手，你就抓住了边缘或把手，阻止了坠落。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少20尺来计算。若你没有空闲手，你会如同检定失败一般继续坠落。</p><p><strong>大失败</strong> 你继续坠落，如果你在使用该反应动作前已经坠落了20尺或更远，那么你每坠落20尺就会因冲击而受到@Damage[10[bludgeoning]]伤害。</p>"
+                "Description": "<p><strong>触发</strong> 你处于坠落中时经过一个边缘或把手。</p><p><strong>需求</strong> 你的手没有绑在背后或处于束缚状态中。</p><hr><p>当你坠落的过程中经过一个边缘或把手时，你可以尝试抓住它，阻止自己坠落。你必须选择进行特技检定或反射豁免检定，通常使用攀爬DC。当你抓住边缘或把手后，你就可以使用运动技能向上@UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]。</p><hr /><p><strong>大成功</strong> 无论你是否有空闲手，你都抓住了边缘或把手，典型的比如用合适的持握物品挂住了你自己（例如用战斧卡在了横栏上）。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少30尺来计算。</p><p><strong>成功</strong> 若你至少有一只空闲手，你就抓住了边缘或把手，阻止了坠落。你仍然会受到已坠落距离导致的伤害，但视为坠落距离减少20尺来计算。若你没有空闲手，你会如同检定失败一般继续坠落。</p><p><strong>大失败</strong> 你继续坠落，如果你在使用该反应动作前已经坠落了20尺或更远，那么你每坠落20尺就会因冲击而受到@Damage[10[bludgeoning]|options:fall-damage]伤害。</p>"
             },
             "IdentifyMagic": {
                 "Notes": {
