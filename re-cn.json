@@ -2001,6 +2001,9 @@
                 },
                 "HeroesCall": {
                     "DescriptionAlteration": "假如你在生命值一半或以下时使用此法术，你还会获得两倍于你等级的临时生命。"
+                },
+                "BlastResistance": {
+                    "RollOptionLabel": "轰鸣抗性 — 对抗目眩或耳聋的豁免"
                 }
             },
             "Fleshwarp": {
@@ -2065,6 +2068,9 @@
                 },
                 "UnifiedMagicalTheory": {
                     "Prompt": "选择一个1级法师专长"
+                },
+                "ExplosiveArrival": {
+                    "Label": "爆炸登场：生物特征"
                 }
             },
             "Rogue": {
@@ -4331,6 +4337,9 @@
                     },
                     "swashbuckler": {
                         "Description": "你的冒险生涯令你对于细节有了敏锐的认知和关注。你在察觉上的熟练等级提升至大师。"
+                    },
+                    "gunslinger": {
+                        "Description": "你对细节之处有了更加敏锐的觉察力与注意力。你在察觉上的熟练度提升至大师。"
                     }
                 },
                 "Spellcaster": {
@@ -4659,6 +4668,9 @@
                 "Sunwrecker": {
                     "Label": "熄日者",
                     "Note": "当使用该武器造成重击时，它会以目标为中心创造一个2环黑暗术效果。"
+                },
+                "ShiftImmanence": {
+                    "Note": "你投掷先攻时，你可以用一个自由动作使用固有转移。"
                 }
             },
             "PlayingItem": "演奏 {item}",
@@ -4888,6 +4900,9 @@
                 "GrievousBlow": {
                     "Note": "这次攻击可以忽略相当于你的等级数值的物理伤害抗力（包括对某种具体类型的物理伤害抗力）。"
                 }
+            },
+            "SpellEffectBoneFlense": {
+                "Label": "剥皮去骨"
             }
         },
         "RuleElement": {
@@ -5109,7 +5124,8 @@
             "Balance": "保持平衡",
             "Fly": "飞行",
             "RockyOrBarren": "在岩石或贫瘠地形中",
-            "Wilderness": "在野外"
+            "Wilderness": "在野外",
+            "SevereCold": "在严寒区域中"
         },
         "OracleCurses": {
             "Label": {
@@ -5603,7 +5619,9 @@
                     "Tiger": "虎",
                     "SnappingFlytrap": "猛咬捕蝇草",
                     "CaveWorm": "洞穴蠕虫",
-                    "SeaSerpent": "大海蛇"
+                    "SeaSerpent": "大海蛇",
+                    "Fungus": "真菌",
+                    "Wasp": "黄蜂"
                 },
                 "Label": "当前形态",
                 "AlterationNotes": {
