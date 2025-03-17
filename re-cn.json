@@ -4903,6 +4903,18 @@
             },
             "SpellEffectBoneFlense": {
                 "Label": "剥皮去骨"
+            },
+            "Elementalist": {
+                "Wizard": {
+                    "ElementalSchool": {
+                        "Prompt": "选择你的元素学派。"
+                    }
+                },
+                "Philosophy": {
+                    "InnerSea": "内海元素论",
+                    "ElementalCycle": "五行循环",
+                    "Prompt": "选择一种元素哲学。"
+                }
             }
         },
         "RuleElement": {
@@ -5834,6 +5846,12 @@
                 "CommunalHealingHands": {
                     "Note": "当阿布斯塔拉施放<em>治疗术</em>为除自己以外的单个生物治疗时，他恢复@Damage[@item.rank[vitality,healing]|shortLabel]生命值。"
                 }
+            },
+            "AlchemicalGrenades": {
+                "Label": "炼金手雷"
+            },
+            "FatedDoom": {
+                "RollOptionLabel": "当天第一次遭遇"
             }
         },
         "UI": {
@@ -6266,7 +6284,11 @@
                 "DamageFromSwornCreatures": "誓约生物类型造成的伤害",
                 "IncorporealCreatures": "虚体生物",
                 "BludgeoningPiercingSlashingFromFrightenedStrikes": "惊惧生物造成的钝击、穿刺和挥砍打击伤害",
-                "FallDamage": "坠落伤害"
+                "FallDamage": "坠落伤害",
+                "CalistriasBane": "卡莉丝翠的诅咒",
+                "Treerazer": "毁木者",
+                "AlchemicalItems": "炼金物品",
+                "GasInhaled": "瓦斯和其他吸入类效果"
             }
         },
         "Color": {
