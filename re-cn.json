@@ -2667,7 +2667,7 @@
             },
             "Goblin": {
                 "ExtraSquishy": {
-                    "Note": "在挤入空间时，若你的检定成功，改为获得大成功。"
+                    "Note": "在挤入时，若你的检定成功，改为获得大成功。"
                 },
                 "RecklessAbandon": {
                     "Note": "若你对抗有害效果的豁免检定失败或大失败，改为获得成功。"
@@ -2728,7 +2728,7 @@
                     "Note": "在你下一回合开始前，你指定的盟友对该生物的下一次攻击，该生物对盟友视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
                 },
                 "CertainStratagem": {
-                    "Note": "你对目标造成@Damage[(floor((@actor.level+3)/4)d6[precision])[@item.system.damage.damageType]|traits:certain-stratagem]{策士之击一半的伤害}"
+                    "Note": "你对目标造成@Damage[(floor((@actor.level+3)/4)d6[precision])[@item.system.damage.damageType]|options:certain-stratagem]{策士之击一半的伤害}"
                 },
                 "DeviseAStratagem": {
                     "Defensive": "防御策略",
@@ -5057,7 +5057,7 @@
             "Shove": "推撞",
             "StonyOrIcyAreas": "在岩石或冰块地区",
             "StringedInstruments": "演奏弦乐器",
-            "Squeeze": "挤入空间",
+            "Squeeze": "挤入",
             "Subsist": "求生",
             "VsDarknessLightShadow": "对抗黑暗、光亮或阴影效果",
             "VsDiseases": "对抗疾病",
