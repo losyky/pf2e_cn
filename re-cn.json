@@ -1686,6 +1686,9 @@
                         "MajorDescription": "你纵身向侧面闪开，AC获得+4环境加值，然后在打击判定之后进行快步。",
                         "ModerateDescription": "你纵身向侧面闪开，AC获得+2环境加值，然后在打击判定之后进行快步。"
                     }
+                },
+                "HeadbandsOfTranslocation": {
+                    "ToggleLabel": "易位发带—援助另一个穿戴者"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -1798,7 +1801,8 @@
                 "RangedWeapon": "选择一把远程武器。",
                 "Effect": "选择一个效果。",
                 "ClassFeat": "选择一项职业专长。",
-                "Bonus": "选择一种加值。"
+                "Bonus": "选择一种加值。",
+                "Defense": "选择一种防御。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -2443,6 +2447,9 @@
                         "SwarmsHeart": {
                             "Description": "当你施放或维持一个巫术时，昆虫会蜂拥而至保护你和你的盟友。直到你的下个回合开始，你的魔宠为你或任何与其共享空间的盟友提供隐蔽。",
                             "Title": "虫心魔宠 Familiar of Swarm's Heart"
+                        },
+                        "InsightfulObservation": {
+                            "Title": "洞见魔宠"
                         }
                     }
                 },
@@ -2507,6 +2514,11 @@
                     "GaleBlossom": "风花打击",
                     "RammingHorn": "角撞攻击",
                     "ShatteringEarth": "碎地攻击"
+                },
+                "Note": {
+                    "CraneStance": "减少跳高和跳远的DC5点，当你跳跃时，可额外水平移动5尺或垂直移动2尺。",
+                    "GorillaStance": "如果你在攀爬的运动检定上骰出成功，你获得大成功作为替代。",
+                    "StokedFlameStance": "如果你发动了烁焰攻击的重击专精效果，你可以使用另一种效果：若你的重击造成伤害，目标额外受到@Damage[1d6[persistent,fire]]伤害。"
                 }
             },
             "CriticalDeck": {
@@ -4914,6 +4926,17 @@
                     "InnerSea": "内海元素论",
                     "ElementalCycle": "五行循环",
                     "Prompt": "选择一种元素哲学。"
+                }
+            },
+            "SpellEffectTheFourHunters": {
+                "East": "东",
+                "North": "北",
+                "South": "南",
+                "West": "西"
+            },
+            "Yaoguai": {
+                "AwakenedYaoguai": {
+                    "Prompt": "选择一种妖怪传承。"
                 }
             }
         },
