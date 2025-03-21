@@ -1981,7 +1981,7 @@
                     "MassiveDamage": "这一巨额伤害会立即杀死它们。",
                     "FinePowder": "他们被还原成细粉末；他们的装备仍然存在。",
                     "DeathEffect": "死亡效果立即杀死了他们。",
-                    "Destroyed": "它们被摧毁了。"
+                    "Destroyed": "它被摧毁了。"
                 }
             },
             "Character": {
