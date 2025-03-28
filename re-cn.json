@@ -1098,7 +1098,9 @@
                 "MartialSurkiWeapons": "军用瑟基虫人武器",
                 "AdvancedAthamaruWeapons": "进阶阿萨鱼人武器",
                 "MartialMerfolkWeapons": "军用人鱼武器",
-                "MartialOniWeapons": "军用恶鬼武器"
+                "MartialOniWeapons": "军用恶鬼武器",
+                "MartialStudentOfArchery": "军用习箭学徒武器",
+                "AdvancedStudentOfArchery": "进阶习箭学徒武器"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -1689,6 +1691,24 @@
                 },
                 "HeadbandsOfTranslocation": {
                     "ToggleLabel": "易位发带—援助另一个穿戴者"
+                },
+                "DrakeRifle": {
+                    "Note": {
+                        "Cold": "命中时，目标在其速度上承受-10尺状态减值，持续1分钟（@UUID[Compendium.pf2e.equipment-effects.Item.s79LDAwEZex6sy14]）",
+                        "Electricity": "命中时，目标获得@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，持续[[/r 1d4 #rounds]]{1d4轮}",
+                        "Acid": "命中时，目标获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}",
+                        "Fire": "命中时，目标被退离你10尺，并且如果其在地上，其陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]",
+                        "Poison": "命中时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续1分钟"
+                    },
+                    "CriticalSpecialization": "龙兽步枪不会附加重击专精效果。"
+                },
+                "PharasminVisor": {
+                    "RevealTheUnseen": "揭示无形之物",
+                    "PierceTheNight": "看穿黑夜",
+                    "SeeThroughDeath": "看透死亡"
+                },
+                "BloodDrinkerBlade": {
+                    "Label": "饮血者 — 饮血"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -2075,6 +2095,15 @@
                 },
                 "ExplosiveArrival": {
                     "Label": "爆炸登场：生物特征"
+                },
+                "Runelord": {
+                    "ArcaneBond": {
+                        "Label": "奥术连结与私人符文",
+                        "DescriptionAddendum": "在符文领主的时代，即使是学者也被要求在必要时能够用武器保护自己，这也导致了在传统的法师法杖上附加刀刃的做法。你必须选择长武或矛作为你的奥术连结物品。作为奥术论题的替代，你有一枚私人符文，它会出现在你连结的武器上。这件武器就像一件法杖，拥有等同于你能施放的最高法术环级的充能，并包含有至多到此环级的你的原罪法术（包括你的戏法）。你的私人符文不属于性能符文，也不计入武器的符文上限。如果你准备了一件法杖，它就会与你的连结物品融合，直到你的下一次日常准备，加入它的充能和法术列表。融合时，武器的杖柄具有法杖的美学特征。"
+                    },
+                    "Sin": {
+                        "Prompt": "选择一种原罪进行专攻。"
+                    }
                 }
             },
             "Rogue": {
@@ -2518,7 +2547,8 @@
                 "Note": {
                     "CraneStance": "减少跳高和跳远的DC5点，当你跳跃时，可额外水平移动5尺或垂直移动2尺。",
                     "GorillaStance": "如果你在攀爬的运动检定上骰出成功，你获得大成功作为替代。",
-                    "StokedFlameStance": "如果你发动了烁焰攻击的重击专精效果，你可以使用另一种效果：若你的重击造成伤害，目标额外受到@Damage[1d6[persistent,fire]]伤害。"
+                    "StokedFlameStance": "如果你发动了烁焰攻击的重击专精效果，你可以使用另一种效果：若你的重击造成伤害，目标额外受到@Damage[1d6[persistent,fire]]伤害。",
+                    "WaterfowlStance": "你对该生物造成@Damage[1d6[slashing]]伤害。如果武器上有高等强击符文，伤害会增加到@Damage[2d6[slashing]]，如果有上等强击符文，伤害会增加到@Damage[3d6[slashing]]。"
                 }
             },
             "CriticalDeck": {
@@ -3932,7 +3962,8 @@
                     "Failure": "生物目眩1分钟。",
                     "Description": "若你的下个动作是施放@UUID[Compendium.pf2e.spells-srd.Item.Yph1UqZU8vMc9bJG]，你能让该精魂对你为中心的@Template[type:emanation|distance:10]区域释放出多彩、明亮、且具有声响的灿烂表象。区域内的每个生物必须尝试@Check[fortitude|against:class-spell]豁免对抗你的职业DC或法术DC且具有后述结果。"
                 },
-                "HeraldicProclamation": "30尺射程内的所有盟友都会获得@Damage[(2*@item.rank)[healing,vitality]|shortLabel]生命值，并且30尺射程内的所有敌人都会承受@Damage[(2*@item.rank)[spirit]|traits:sanctified]伤害，数值等同于法术环级的两倍（@Check[will|basic]豁免对抗你的法术DC）。"
+                "HeraldicProclamation": "30尺射程内的所有盟友都会获得@Damage[(2*@item.rank)[healing,vitality]|shortLabel]生命值，并且30尺射程内的所有敌人都会承受@Damage[(2*@item.rank)[spirit]|traits:sanctified]伤害，数值等同于法术环级的两倍（@Check[will|basic]豁免对抗你的法术DC）。",
+                "SinbladedSpell": "如果你的攻击成功或目标对该法术的豁免失败，你对目标造成@Damage[(@item.rank)[bleed]]伤害。"
             },
             "AwakenedAnimal": {
                 "LateAwakener": {
@@ -4938,6 +4969,22 @@
                 "AwakenedYaoguai": {
                     "Prompt": "选择一种妖怪传承。"
                 }
+            },
+            "RemainingAir": {
+                "LoseOneRound": "你失去1轮份的空气。",
+                "Label": "剩余空气",
+                "AttackOrSpells": "如果你攻击或施放任意法术，你回合结束时减少2剩余空气而非1。",
+                "Speak": "如果你说话（包括施法），你失去所有剩余空气。"
+            },
+            "SwallowWhole": {
+                "RuptureDamage": "如果怪物于单次攻击或法术中受到的穿刺或挥砍伤害等于或超过所列的破裂值，那个被吞的生物便重获自由。",
+                "InvalidAttack": "被吞下的生物可以攻击那只活吞它的怪物，但是仅能以无武装攻击或是轻负载及更小的武器进行攻击。"
+            },
+            "SpellEffectUnravelKnowledge": {
+                "ToggleLabel": "拆解知识 — 检定或DC应用减值"
+            },
+            "SpellEffectMentalMap": {
+                "ToggleLabel": "心灵地图 — 启用生存和回忆知识加值"
             }
         },
         "RuleElement": {
