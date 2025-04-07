@@ -1100,7 +1100,8 @@
                 "MartialMerfolkWeapons": "军用人鱼武器",
                 "MartialOniWeapons": "军用恶鬼武器",
                 "MartialStudentOfArchery": "军用习箭学徒武器",
-                "AdvancedStudentOfArchery": "进阶习箭学徒武器"
+                "AdvancedStudentOfArchery": "进阶习箭学徒武器",
+                "MartialPolearmsAndSpears": "军用长武&矛"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -1155,7 +1156,7 @@
                             "Description": "你可以将万用制剂作为一种伤口型毒素涂抹在武器或者弹药上。将万用制剂的初始伤害添加在使用该武器或弹药的第一次成功的打击上。这一效果会在你当前回合结束时失效。"
                         },
                         "FieldBenefit": {
-                            "RollOptionLabel": "毒理学家 — 课题增益"
+                            "RollOptionLabel": "毒理学家 — 造成酸蚀而非毒素伤害"
                         }
                     },
                     "FieldBenefit": "课题增益",
@@ -1709,6 +1710,10 @@
                 },
                 "BloodDrinkerBlade": {
                     "Label": "饮血者 — 饮血"
+                },
+                "SashOfBooks": {
+                    "Note": "论结果如何，你在对该生物的攻击掷骰上，以及在对来自该生物的攻击和效果的AC和豁免上，获得+1环境加值，持续1分钟。@UUID[Compendium.pf2e.equipment-effects.Item.P3lpqXMd5FbUF57c]",
+                    "Label": "书之腰带"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -2862,8 +2867,8 @@
                 },
                 "ExaltedReaction": {
                     "Justice": "若触发反应的敌人处于盟友的触及内，且这些盟友都身处你神卫灵光范围内，他们可以花费一个反应动作以-5的减值对该名敌人进行打击。",
-                    "Grandeur": "除了受到辉煌闪耀影响的敌人之外，身处你神卫灵光范围内的其他敌人也会在1轮内受到显光尘法术的影响。",
-                    "Obedience": "除了触发反应的生物之外，所有身处你神卫灵光范围内的敌人同样必须选择@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]或者承受心灵伤害（每个敌人分别选择）。这些生物只会受到最小值的伤害（通常为@Damage[ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,11),3)[mental]]伤害），并且其承受的效果不会被任何针对你严酷铁律的改变所影响。举例而言，除了触发反应的生物外，残酷回响专长无法将其他生物受到的伤害转变为持续心灵伤害。",
+                    "Grandeur": "除了受到辉煌闪耀影响的敌人之外，身处你神卫灵光范围内的其他敌人也会在1轮内受到_显光尘_法术的影响。",
+                    "Obedience": "除了触发反应的生物之外，所有身处你神卫灵光范围内的敌人同样必须选择@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]或者承受心灵伤害（每个敌人分别选择）。这些生物只会受到最小值的伤害（通常为@Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,11),3)))))[mental]]伤害），并且其承受的效果不会被任何针对你严酷铁律的改变所影响。举例而言，除了触发反应的生物外，残酷回响专长无法将其他生物受到的伤害转变为持续心灵伤害。",
                     "Iniquity": "除了触发反应的生物外，你同时对神卫灵光范围内的其他敌人造成伤害，数值等同于对触发反应的生物造成伤害的一半。",
                     "Liberation": "除了受到解放踏步影响的盟友之外，你和其他身处你神卫灵光范围内的盟友也能以一个自由动作进行快步。即使受益于解放踏步的盟友无法移动，你和其他盟友依然能获得上述增益。",
                     "Redemption": "如果敌人选择抗拒，你可以选择给予自身以及身处你神卫灵光范围内的所有盟友（包括触发反应的盟友）抗力。如果你这样做，所有人获得的抗力减少2点。@UUID[Compendium.pf2e.feat-effects.Item.GFLiTESBmoyQ3sLx]{效果：激昂反应 (救赎)}",
@@ -2891,10 +2896,14 @@
                     }
                 },
                 "RelentlessReaction": {
-                    "Grandeur": "触发反应的敌人同时受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害，在受到来自于辉煌闪耀的显光尘影响期间，其无法从该持续伤害中恢复。",
-                    "Iniquity": "受到该反应动作初始伤害的敌人也会受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
+                    "Grandeur": "触发反应的敌人同时受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:holy]伤害，在受到来自于辉煌闪耀的_显光尘_影响期间，其无法从该持续伤害中恢复。",
+                    "Iniquity": "受到该反应动作初始伤害的敌人也会受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:unholy]伤害。",
                     "Liberation": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
-                    "ObedienceRedemption": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。"
+                    "ObedienceRedemption": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
+                    "LiberationHoly": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:holy]伤害",
+                    "LiberationUnholy": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:unholy]伤害",
+                    "ObedienceRedemptionHoly": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:holy]伤害",
+                    "ObedienceUnholy": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:unholy]伤害"
                 },
                 "BlessedSwiftness": {
                     "RollOptionLabel": "针对一个被你的移动触发的反应动作进行防御"
@@ -3276,7 +3285,8 @@
                     "Reduce": {
                         "criticalSuccess": "当你以大成功通过强韧豁免检定来减少你的@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心}值时，你将其减少3点。",
                         "success": "当你以成功通过强韧豁免检定来减少你的@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心}值时，你将其减少2点。"
-                    }
+                    },
+                    "AllowEatOrDrink": "你可以在恶心状态下进食和饮水。"
                 }
             },
             "Label": {
@@ -3649,7 +3659,7 @@
             },
             "SaveCriticalFailureToFailure": {
                 "FailureHalfDamage": {
-                    "Will": "当你在意志豁免中获得大失败时，你转而获得失败作为结果。若你在抵御造成伤害的效果时，意志豁免获得失败，你只收到一半伤害。"
+                    "Will": "若你在造成伤害的效果的意志豁免上骰出失败时，你只会受到一半伤害。"
                 }
             },
             "ActivatedItem": "{item} 已启动",
@@ -4985,6 +4995,12 @@
             },
             "SpellEffectMentalMap": {
                 "ToggleLabel": "心灵地图 — 启用生存和回忆知识加值"
+            },
+            "LepidstadtSurgeon": {
+                "Dedication": {
+                    "StabilizeNote": "当你成功使用急救稳定一个尚未处于@UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]状态的濒死生物时，它会恢复@Damage[(2d8 + 10*max(0,(@actor.system.skills.medicine.rank - 2)))[healing]]生命值。",
+                    "StopBleedingNote": "当你成功使用急救止血时，目标可以进行两次恢复检定（在协助恢复的情况下，检定难度降低）并取较高的结果；这是一个幸运效果。@UUID[Compendium.pf2e.feat-effects.Item.45nzYsMBTP6PIxDN]"
+                }
             }
         },
         "RuleElement": {
@@ -5922,6 +5938,11 @@
             },
             "FatedDoom": {
                 "RollOptionLabel": "当天第一次遭遇"
+            },
+            "TroffFrostknuckles": {
+                "IcicleStance": {
+                    "AboveTarget": "冰凌架势 — 在目标上方"
+                }
             }
         },
         "UI": {
