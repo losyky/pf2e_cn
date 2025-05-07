@@ -6379,7 +6379,10 @@
                 "CalistriasBane": "卡莉丝翠的诅咒",
                 "Treerazer": "毁木者",
                 "AlchemicalItems": "炼金物品",
-                "GasInhaled": "瓦斯和其他吸入类效果"
+                "GasInhaled": "瓦斯和其他吸入类效果",
+                "NonMagicalAttacks": "非魔法攻击",
+                "PhysicalWeaponsOnly": "物理（只限武器）",
+                "MagicalWood": "魔法木"
             }
         },
         "Color": {
