@@ -8160,7 +8160,9 @@
         "TraitAffixedToArmorShieldOrWeapon": "附着在护甲，盾牌或武器上",
         "TraitAffixedToNMArmorOrAWeapon": "附着在非金属护甲或一把武器上",
         "TraitAffixedToMetalArmorOrAWeapon": "附着在金属护甲或一把武器上",
-        "TraitAffixedToWall": "附着在墙上"
+        "TraitAffixedToWall": "附着在墙上",
+        "TraitOther": "其他",
+        "HeldInOneHandHungOnACordOrAttachedToClothing": "单手持握，用绳子悬挂，或附着在衣物上"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
