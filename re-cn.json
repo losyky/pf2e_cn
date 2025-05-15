@@ -3453,6 +3453,9 @@
                 "Overflow": {
                     "Title": "满溢",
                     "Description": "当你使用带有满溢特征的涌动时，你的御能灵光会失效，直到你再次启动它（通常是通过@UUID[Compendium.pf2e.actionspf2e.Item.g8QrV39TmZfkbXgE]{引导元素 Channel Elements}动作）。如此驱使你的元素是非常耗费心力的，因此你每轮只能进行一次满溢涌动，哪怕你已经重新启动了你的元门。"
+                },
+                "ConductiveSphere": {
+                    "RollOptionLabel": "使用金属物体进行打击"
                 }
             },
             "Genie": {
