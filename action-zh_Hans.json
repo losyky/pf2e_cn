@@ -546,7 +546,7 @@
                     "criticalSuccess": "<strong>大成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹。"
                 },
                 "Title": "追踪",
-                "Description": "<p>你可以以一半的@UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{旅行速度 Travel Speed}移动来追寻踪迹。如果追踪的掷骰成功，你可以继续以半速追寻踪迹，在1小时内无需额外进行检定。</p><p>一些情况下，你可能需要在遭遇中进行追踪。此时你的追踪是一个单动作，不具有探索特征，但由于情况紧急，所以你可能需要更频繁地掷骰。GM会决定你进行检定的频率。</p><p>当你开始追踪时，你需要进行生存检定，每隔一小时或者踪迹出现明显变化的时候重新追踪一次。GM会根据踪迹的新鲜程度、天气和地面材质决定该检定的DC。</p><p><strong>成功</strong> 你成功追寻到了踪迹，或者能够继续追踪之前跟随的踪迹。</p><p><strong>失败</strong> 你跟丢了，但可以在1小时后重新尝试。</p><p><strong>大失败</strong> 你跟丢了，24小时内无法重试。</p>",
+                "Description": "<p>你可以以一半的@UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{旅行速度 Travel Speed}移动来追寻踪迹。如果追踪的掷骰成功，你可以继续以半速追寻踪迹，在1小时内无需额外进行检定。</p><p>一些情况下，你可能需要在遭遇中进行追踪。此时你的追踪是一个单动作，不具有探索特征，但由于情况紧急，所以你可能需要更频繁地掷骰。GM会决定你进行检定的频率。</p><p>当你开始追踪时，你需要进行生存检定，每隔一小时或者踪迹出现明显变化的时候重新追踪一次。GM会根据踪迹的新鲜程度、天气和地面材质决定该检定的DC。</p><p><strong>成功</strong> 你成功追寻到了踪迹，或者能够继续追踪之前跟随的踪迹。</p><p><strong>失败</strong> 你跟丢了，但可以在1小时后重新尝试。</p><p><strong>大失败</strong> 你跟丢了，24小时内无法重试。</p>",
                 "SampleTasks": {
                     "Trained": "一头熊在平原上横冲直撞留下的相对较新的痕迹",
                     "Untrained": "沿着道路行进的军队留下的踪迹",
@@ -889,7 +889,7 @@
             },
             "CoverTracks": {
                 "Title": "掩盖行踪 Cover Tracks",
-                "Description": "<p>你可以以一半的@UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.YVLMgNxXTUQuDJgp]{旅行速度 Travel Speed}移动来掩盖自己的行踪。掩盖行踪时你不需要进行生存检定，但如果你的生存DC高于追踪你所需要的标准DC，那么任何试图追踪你的生物都需要进行生存检定对抗你的生存DC。</p><p>一些情况下，你可能需要在遭遇中掩盖行踪。此时你的掩盖行踪是一个单动作，不具有探索特征。</p>"
+                "Description": "<p>你可以以一半的@UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{旅行速度 Travel Speed}移动来掩盖自己的行踪。掩盖行踪时你不需要进行生存检定，但如果你的生存DC高于追踪你所需要的标准DC，那么任何试图追踪你的生物都需要进行生存检定对抗你的生存DC。</p><p>一些情况下，你可能需要在遭遇中掩盖行踪。此时你的掩盖行踪是一个单动作，不具有探索特征。</p>"
             },
             "Dismiss": {
                 "Title": "解消 Dismiss",
