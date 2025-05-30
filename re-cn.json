@@ -1294,6 +1294,9 @@
                 },
                 "Decay": {
                     "ToggleLabel": "腐烂狂暴"
+                },
+                "RenewedVigor": {
+                    "Prompt": "你这回合进行过攻击动作了吗？"
                 }
             },
             "Bard": {
@@ -1464,7 +1467,7 @@
                 },
                 "ScapularOfShields": {
                     "ResistAllLabel": "激活盾肩披风，获得对所有伤害的抗力。",
-                    "CriticalImmunityLabel": "Activate Scapular of Shields to gain critical immunity."
+                    "CriticalImmunityLabel": "激活盾肩披风，获得重击免疫。"
                 },
                 "DeckOfDestiny": {
                     "WealOrWoePrompt": "选择吉或凶。",
@@ -1714,6 +1717,15 @@
                 "SashOfBooks": {
                     "Note": "论结果如何，你在对该生物的攻击掷骰上，以及在对来自该生物的攻击和效果的AC和豁免上，获得+1环境加值，持续1分钟。@UUID[Compendium.pf2e.equipment-effects.Item.P3lpqXMd5FbUF57c]",
                     "Label": "书之腰带"
+                },
+                "ThreePillaredYangNa": {
+                    "ToggleLabel": "Three-Pillared Yang Na — Third Blessing"
+                },
+                "TalentedTapShoes": {
+                    "Note": "当你通过反射豁免避免伤害效果（无论成功或大成功），都可以使用一个反应动作半速行走。"
+                },
+                "SpellguardShield": {
+                    "RollOptionLabel": "格挡以你为目标的法术"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -2547,13 +2559,15 @@
                     "Stonestrike": "石之击",
                     "GaleBlossom": "风花打击",
                     "RammingHorn": "角撞攻击",
-                    "ShatteringEarth": "碎地攻击"
+                    "ShatteringEarth": "碎地攻击",
+                    "FloodedRiver": "洪流"
                 },
                 "Note": {
                     "CraneStance": "减少跳高和跳远的DC5点，当你跳跃时，可额外水平移动5尺或垂直移动2尺。",
                     "GorillaStance": "如果你在攀爬的运动检定上骰出成功，你获得大成功作为替代。",
                     "StokedFlameStance": "如果你发动了烁焰攻击的重击专精效果，你可以使用另一种效果：若你的重击造成伤害，目标额外受到@Damage[1d6[persistent,fire]]伤害。",
-                    "WaterfowlStance": "你对该生物造成@Damage[1d6[slashing]]伤害。如果武器上有高等强击符文，伤害会增加到@Damage[2d6[slashing]]，如果有上等强击符文，伤害会增加到@Damage[3d6[slashing]]。"
+                    "WaterfowlStance": "你对该生物造成@Damage[1d6[slashing]]伤害。如果武器上有高等强击符文，伤害会增加到@Damage[2d6[slashing]]，如果有上等强击符文，伤害会增加到@Damage[3d6[slashing]]。",
+                    "WildWindStance": "风袭打击忽视@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]和所有的掩蔽。"
                 }
             },
             "CriticalDeck": {
@@ -3470,6 +3484,11 @@
                 "WeaponFamiliarity": {
                     "Prompt1": "从剑武器组中选择一个武器。",
                     "Prompt2": "从剑武器组中选择第二件武器。"
+                },
+                "TenguFan": {
+                    "GustOfWind": "你可以通过启动你的天狗羽扇来释放1环级的@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]。豁免为@Check[fortitude|against:class-spell|traits:air]。",
+                    "LightningBolt": "你可以通过启动你的天狗羽扇来释放5环级的@UUID[Compendium.pf2e.spells-srd.Item.9AAkVUCwF6WVNNY2]。豁免为@Check[reflex|against:class-spell|basic|traits:electricity]。",
+                    "WallOfWind": "你可以通过启动你的天狗羽扇来释放3环级的@UUID[Compendium.pf2e.spells-srd.Item.it4ZsAi6XgvGcodc]。豁免为@Check[fortitude|against:class-spell|traits:air]。"
                 }
             },
             "WeaponInfusion": {
@@ -3662,7 +3681,9 @@
             },
             "SaveCriticalFailureToFailure": {
                 "FailureHalfDamage": {
-                    "Will": "若你在造成伤害的效果的意志豁免上骰出失败时，你只会受到一半伤害。"
+                    "Will": "若你在造成伤害的效果的意志豁免上骰出失败时，你只会受到一半伤害。",
+                    "Fortitude": "当你在对抗一个伤害效果的强韧豁免投出失败时，你承受一半伤害。",
+                    "Reflex": "当你在对抗一个伤害效果的反射豁免投出失败时，你承受一半伤害。"
                 }
             },
             "ActivatedItem": "{item} 已启动",
@@ -3924,7 +3945,7 @@
                 "HeroicRecovery": "目标还会获得三项加值直到其下回合结束：在其速度上获得+5尺状态加值，在攻击骰上获得+1状态加值，以及在伤害骰上获得+1状态加值。此外，若目标处于倒地，其可以立即使用一个不会触发反应动作的自由动作重新站立。",
                 "IntoTheFuture": "如果你的下一个动作是施放一个需要1或2动作的法术，那么该法术的效果不是立即发生，而是会在一轮后，你的下一个回合开始时发生。法术要求的选择与目标必须在施放法术时决定，而某些需求，例如视线与效果线，则是必须在你施放和效果出现时都成立。施放法术这个行动本身所产生的后果，如反应打击或者@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]状态的判定，并不会延迟。",
                 "MelodiousSpell": "法术会获得晦匿特征。晦匿特征只会隐藏该法术的施法动作与表征，但不会改变其效果。作为使用旋律法术的一部分，你可以进行一次@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]，@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]，@UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]或请求动作。若你如此做，仅当你下一个法术是具有听觉，情绪，音波或视觉特征的情况下才会因此获得晦匿特征。",
-                "SecondaryDetonationArray": "如果你下个动作是施放法术，并且法术会造成伤害、没有持续时间、影响一个区域，则一个发光的魔法环印出现在区域内的一个@Template[burst|distance:5]区域中。在你下个回合开始时，环印爆炸，对圆形区域内所有生物造成@Damage[(@item.level)d6[force]]伤害，基础反射豁免对抗你的法术 DC。如果法术造成不同类型的伤害，环印取而代之造成@Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]]{对应伤害类型的伤害}（如果法术造成多种伤害类型，则由你选择其一）。",
+                "SecondaryDetonationArray": "如果你下个动作是施放法术，并且法术会造成伤害、没有持续时间、影响一个区域，则一个发光的魔法环印出现在区域内的一个@Template[burst|distance:5]区域中。在你下个回合开始时，环印爆炸，对圆形区域内所有生物造成@Damage[(@item.level)d6[force]|options:area-damage]伤害，@Check[reflex|against:spell|options:area-effect,damaging-effect]豁免对抗你的法术 DC。如果法术造成不同类型的伤害，环印取而代之造成@Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]|options:area-damage]{对应伤害类型的伤害}（如果法术造成多种伤害类型，则由你选择其一）",
                 "SnowdriftSpell": "如果你的下一个动作是施放具有气，水或寒冷特征，且没有火焰特征的法术，选择地面上一个受该法术影响的生物。与该生物邻接的每格地面会积起及膝深的雪。这些区域变为困难地形直到你的下回合开始。一个生物可以通过交互动作清除一格积雪，且当积雪受到具有火焰特征的效果影响时就会融化。",
                 "SowSpell": "如果你下一个动作是使用1或2个动作施法，法术会转而根植在一个邻接方格里。你必须在施放时决定关于该法术的所有可选项。之后的10分钟内，你能以一个反应动作指挥你播种的法术发芽并产生该法术的效果，该反应的触发条件是有一个生物进入播种法术的方格或其邻接方格。同一时间你只能有一个播种法术，如果你在10分钟内没有触发播种法术，法术会消散并失去。成功通过一次察觉检定来对抗你的法术DC的生物可以注意到播种法术。",
                 "SpellShroud": "如果你的下一个动作是施放一个以你为目标的法术，你将自己笼罩在一股@Template[emanation|distance:15]范围的魔法浓雾之中，浓雾持续至你的下一轮开始。所有云雾中的生物都被视为@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，同样云雾外的生物对云雾内的生物而言也视为隐蔽。",
@@ -4141,9 +4162,16 @@
                     "Plains": "你获得临时生命值，数值等同于法术环级，持续1轮。",
                     "Sky": "你能够飞行至多10尺。若你在回合结束时位于空中，而且你并不具有飞行速度，则会坠落。",
                     "Swamp": "受影响的敌人进行@Check[fortitude|basic]豁免，失败则承受@Damage[(max(1,floor(@item.level/2)))[persistent,poison]]伤害，数值等同于法术环级的一半（最低1点伤害）。",
-                    "Aquatic": "若你在水中，则获得等同于你的陆上速度的游泳速度。若你在地面上，则暂时会有水浪跟随你移动，允许你用自己的游泳速度——若你有的话——作为你的陆上速度来移动。此效果持续1轮。"
+                    "Aquatic": "若你在水中，则获得等同于你的陆上速度的游泳速度。若你在地面上，则暂时会有水浪跟随你移动，允许你用自己的游泳速度——若你有的话——作为你的陆上速度来移动。此效果持续1轮。",
+                    "Gravelands": "你在对抗作祟和不死生物能力和法术的豁免骰上获得+1状态加值，持续1轮。"
                 },
-                "AttunementShift": "转换同调"
+                "AttunementShift": "转换同调",
+                "Dedication": {
+                    "Label": "地卜师入门"
+                },
+                "SpeakForTheGravelands": {
+                    "GravelandsLabel": "死坟末土"
+                }
             },
             "Surki": {
                 "BreakerSurki": {
@@ -4396,6 +4424,9 @@
                     },
                     "gunslinger": {
                         "Description": "你对细节之处有了更加敏锐的觉察力与注意力。你在察觉上的熟练度提升至大师。"
+                    },
+                    "investigator": {
+                        "Description": "随着你的冒险，你发展出对细节的敏锐感知和关注。你的察觉熟练等级提升至大师。"
                     }
                 },
                 "Spellcaster": {
@@ -4981,6 +5012,20 @@
             "Yaoguai": {
                 "AwakenedYaoguai": {
                     "Prompt": "选择一种妖怪传承。"
+                },
+                "UnleashYaoguaiMight": {
+                    "UsedMoveAction": "使用过了带有移动特征的动作。",
+                    "Effect": "@UUID[Compendium.pf2e.feat-effects.Item.OBsItGQScxHyUcmR]",
+                    "Frequency": "**频率** 每天一次"
+                },
+                "LegendaryMonster": {
+                    "Effect": "@UUID[Compendium.pf2e.feat-effects.Item.ELCODoiGDBEqRAtT]",
+                    "Options": {
+                        "Damage": "额外精魂伤害",
+                        "Fly": "飞行速度",
+                        "Enlarge": "4环级变巨术"
+                    },
+                    "Prompt": "选择一个增益"
                 }
             },
             "RemainingAir": {
@@ -5004,7 +5049,31 @@
                     "StabilizeNote": "当你成功使用急救稳定一个尚未处于@UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]状态的濒死生物时，它会恢复@Damage[(2d8 + 10*max(0,(@actor.system.skills.medicine.rank - 2)))[healing]]生命值。",
                     "StopBleedingNote": "当你成功使用急救止血时，目标可以进行两次恢复检定（在协助恢复的情况下，检定难度降低）并取较高的结果；这是一个幸运效果。@UUID[Compendium.pf2e.feat-effects.Item.45nzYsMBTP6PIxDN]"
                 }
-            }
+            },
+            "SpellEffectFieryBody": {
+                "Note": "攻击者承受@Damage[(ternary(gte(@item.level,9),4,3))d6[fire]]伤害。"
+            },
+            "RevealingLight": {
+                "Description": "受_显光尘_影响的生物会陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]。 若该生物@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]，它就会变为@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]作为替代。 若生物已经由于其他原因而处于隐蔽状态，它便会不再处于隐蔽状态。",
+                "Label": "显光尘"
+            },
+            "SpellEffectFurnaceForm": {
+                "Note": "攻击者承受@Damage[3d6[fire]]伤害。"
+            },
+            "CampfireChronicler": {
+                "OfferStory": {
+                    "ChoiceLabels": {
+                        "BaseBenefit": "护甲等级和意志豁免",
+                        "FlickeringStories": "获得隐蔽状态",
+                        "IlluminatingStories": "回忆知识检定加值",
+                        "RagingStories": "额外近战火焰伤害"
+                    }
+                }
+            },
+            "SpellEffectKgalaserkesAxes": {
+                "ToggleLabel": "加菈瑟克之斧—被目标伤害过"
+            },
+            "Driving": "驾驶"
         },
         "RuleElement": {
             "Aura": "灵光",
