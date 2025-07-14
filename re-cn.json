@@ -5791,7 +5791,8 @@
                     "CaveWorm": "洞穴蠕虫",
                     "SeaSerpent": "大海蛇",
                     "Fungus": "真菌",
-                    "Wasp": "黄蜂"
+                    "Wasp": "黄蜂",
+                    "Ghost": "幽灵"
                 },
                 "Label": "当前形态",
                 "AlterationNotes": {
@@ -6014,6 +6015,16 @@
             "TroffFrostknuckles": {
                 "IcicleStance": {
                     "AboveTarget": "冰凌架势 — 在目标上方"
+                }
+            },
+            "AeonStoneSwarm": {
+                "AeonResonance": {
+                    "Defensive": "防御",
+                    "DefensiveResistance": "防御共鸣",
+                    "Illumination": "照明",
+                    "IlluminationColor": "照明共鸣",
+                    "Sensory": "感观",
+                    "Subterfuge": "诡计"
                 }
             }
         },
