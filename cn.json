@@ -8165,7 +8165,9 @@
         "TraitOther": "其他",
         "HeldInOneHandHungOnACordOrAttachedToClothing": "单手持握，用绳子悬挂，或附着在衣物上",
         "PreciousMaterialSloughstoneDescription": "用蜕石制造的武器利用了维瑞克斯之骸对自己不情愿转化的憎恨，让其自身的肉体与自身作对。加工蜕石既困难又令人不快，使用这种材料制作物品的DC会增加4。构造物不能使用蜕石建造。",
-        "PreciousMaterialSloughstone": "蜕石"
+        "PreciousMaterialSloughstone": "蜕石",
+        "PreciousMaterialDreamweb": "梦网",
+        "PreciousMaterialDreamwebDescription": "由织网者本体胸节所吐出的蛛丝所制，梦网赋予若干神秘效果。由梦网制成的布质物品与绳索具有如下属性：硬度 4，生命值每英寸 12，破坏DC16。以梦网制成的轻甲比常规布甲或皮甲更轻：其负载减少1（若原为轻负载则不变，对已为轻负载的物品无影响）。梦网轻甲给予穿戴者毒素抗力，数值等于3加上该护甲的护甲潜能符文数值。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
