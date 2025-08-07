@@ -3146,7 +3146,7 @@
         "CreateSpellTitle": "创建法术",
         "CritFailure": "<strong>大失败</strong>",
         "CritSuccess": "<strong>大成功</strong>",
-        "CriticalDamageLabel": "特殊骰",
+        "CriticalDamageLabel": "重击",
         "CriticalHitCardButtonTitle": "抽一张大成功卡",
         "CriticalFumbleCardButtonTitle": "抽一张大失败卡",
         "CurrencyAbbreviations": {
