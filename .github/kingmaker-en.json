@@ -155,7 +155,7 @@
                 "Government": "Government",
                 "AbilityScores": "Ability Scores"
             },
-            "Title": "Start Building Kingdom"
+            "Title": "Build your Kingdom"
         },
         "Kingdom": {
             "Activities": "Kingdom Activities",
@@ -175,9 +175,8 @@
             "CollectDialog": {
                 "Title": "Collect Resources",
                 "Header": "Upkeep: Resource Collection",
-                "Description": "Roll {dice} resource dice and also generate the following?",
-                "Disclaimer": "This will replace your current resource points (which should have been converted into experience points). Excess commodities will be lost. Only the game master can collect resources.",
-                "NewResourcePoints": "New Resource Points"
+                "Description": "Roll {dice} resource dice and generate the following?",
+                "Disclaimer": "This will replace your current resource points (which should have been converted into experience points). Excess commodities will be lost. Only the game master can collect resources."
             },
             "Commodity": {
                 "food": "Food",
