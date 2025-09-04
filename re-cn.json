@@ -5792,7 +5792,8 @@
                     "SeaSerpent": "大海蛇",
                     "Fungus": "真菌",
                     "Wasp": "黄蜂",
-                    "Ghost": "幽灵"
+                    "Ghost": "幽灵",
+                    "Zombie": "丧尸"
                 },
                 "Label": "当前形态",
                 "AlterationNotes": {
