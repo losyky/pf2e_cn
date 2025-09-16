@@ -834,7 +834,10 @@
                 "Interact": "交互",
                 "Cast": "施放法术",
                 "Effect": "效果",
-                "Activate": "启动"
+                "Activate": "启动",
+                "Warning": {
+                    "ItemDoesNotExist": "要激活的物品不存在"
+                }
             },
             "ABC": {
                 "InvalidDrop": "{badType} 不能丢弃 (必须在 {goodType})",
@@ -913,7 +916,10 @@
                         "Add": "赋予持续伤害",
                         "Title": "持续伤害 ({actor})",
                         "Remove": "移除持续伤害",
-                        "Invalid": "该配方无效。"
+                        "Invalid": "该配方无效。",
+                        "Edit": "编辑持续伤害",
+                        "DamageType": "伤害类型",
+                        "Formula": "配方"
                     },
                     "Name": "持续伤害 ({formula} {damageType})",
                     "NameWithDC": "持续伤害({formula} DC{dc})",
@@ -1549,6 +1555,24 @@
                         "Success": "{attachable}现在附着在{target}上。"
                     },
                     "Label": "附着"
+                },
+                "FIELDS": {
+                    "grade": {
+                        "label": "品质"
+                    }
+                },
+                "ChangeEquipmentSystem": {
+                    "ToPathfinder": "移除{removedTrait}特性会将此{type}从寻星者（Starfinder）更改为开拓者（Pathfinder）。您的等级将会丢失。你确定吗？或者，你可以将其替换为{otherTrait}。",
+                    "Title": "变换系统",
+                    "ToStarfinder": "添加{newTrait}特质会将此{type}从开拓者(Pathfinder)更改为寻星者(Starfinder)。所有符文将丢失。你确定吗？"
+                },
+                "Grade": {
+                    "advanced": "进阶",
+                    "tactical": "战术",
+                    "commercial": "商业",
+                    "ultimate": "终极",
+                    "elite": "精英",
+                    "superior": "卓越"
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1663,7 +1687,15 @@
                 "Staff": {
                     "Label": "法杖法术",
                     "DefaultEffect": "你消耗一定充能数从法杖的法术列表中施法。"
-                }
+                },
+                "FIELDS": {
+                    "expend": {
+                        "label": "消耗",
+                        "hint": "这表明每次你用该武器进行远程攻击时消耗多少弹药。其他能力可能会引用\"消耗\"作为完成该动作所需的弹药量。"
+                    }
+                },
+                "GradeOption": "{grade} (+{tracking}; {dice} 伤害骰)",
+                "Tracking": "追踪"
             },
             "Rules": {
                 "Apply": "应用",
@@ -1709,7 +1741,8 @@
                 },
                 "MeasuredTemplate": {
                     "Place": "放置{area}",
-                    "Clear": "清除放置的盖板"
+                    "Clear": "清除放置的盖板",
+                    "PlacementTooltip": "<strong>左键点击</strong>锁定画布上的位置并启用旋转。再次点击以放置。.<br><strong>右键点击</strong>解锁或取消。<br>按住<strong>Shift键</strong>直接放置而不旋转。<br>按住<strong>Ctrl键</strong>在旋转时禁用网格对齐。"
                 },
                 "Rank": {
                     "Label": "环级",
@@ -1729,7 +1762,10 @@
                     "BasicDefense": "基础 {save}"
                 },
                 "Cost": "消耗",
-                "Cast": "施法",
+                "Cast": {
+                    "Verb": "施放",
+                    "Noun": "施放"
+                },
                 "Plural": "法术",
                 "Sustained": {
                     "Label": "维持",
@@ -1763,7 +1799,8 @@
                 "Linked": {
                     "Title": "如果设置，在苦难持续期间不会移除该状态"
                 },
-                "OnsetActive": "潜伏期生效"
+                "OnsetActive": "潜伏期生效",
+                "Plural": "苦难"
             },
             "GMNotes": {
                 "Add": "添加GM日志",
@@ -1934,7 +1971,67 @@
                 "Plural": "背景"
             },
             "Class": {
-                "Plural": "职业"
+                "Plural": "职业",
+                "FIELDS": {
+                    "attacks": {
+                        "simple": {
+                            "label": "简易武器"
+                        },
+                        "unarmed": {
+                            "label": "无武装攻击"
+                        },
+                        "advanced": {
+                            "label": "进阶武器"
+                        },
+                        "martial": {
+                            "label": "军用武器"
+                        }
+                    },
+                    "savingThrows": {
+                        "reflex": {
+                            "label": "反射"
+                        },
+                        "fortitude": {
+                            "label": "强韧"
+                        },
+                        "will": {
+                            "label": "意志"
+                        }
+                    },
+                    "perception": {
+                        "label": "察觉"
+                    },
+                    "hp": {
+                        "label": "生命值"
+                    },
+                    "defenses": {
+                        "light": {
+                            "label": "轻甲"
+                        },
+                        "unarmored": {
+                            "label": "无甲防御"
+                        },
+                        "heavy": {
+                            "label": "重甲"
+                        },
+                        "medium": {
+                            "label": "中甲"
+                        }
+                    },
+                    "trainedSkills": {
+                        "additional": {
+                            "label": "额外技能"
+                        }
+                    },
+                    "spellcasting": {
+                        "label": "法术攻击调整值与DC"
+                    }
+                }
+            },
+            "Equipment": {
+                "Category": {
+                    "upgrade": "升级"
+                }
             }
         },
         "ActionsCheck": {
@@ -2429,11 +2526,11 @@
                 },
                 "Identification": {
                     "Skills": {
-                        "Tooltip": "“用来辨识某生物的技能，通常取决于该生物的特征，如辨识生物表格，但你也可放宽技能的应用范围。”——《主持人核心》54-55页",
+                        "Tooltip": "“用来辨识某生物的技能，通常取决于该生物的特征，如辨识生物表格，但你也可放宽技能的应用范围。”—《主持人核心》54-55页",
                         "Label": "{skills}: DC {dc} ({adjustment})"
                     },
                     "Lore": {
-                        "Tooltip": "“使用可用学识通常具有一个简单或非常简单的DC（在调整稀有度之前）。”–《主持人核心》54页",
+                        "Tooltip": "“使用可用学识通常具有一个简单或非常简单的DC（在调整稀有度之前）。”—《主持人核心》54页",
                         "Label": "可用学识：DC {dc1} ({adjustment1}) 或者 DC {dc2} ({adjustment2})"
                     }
                 },
@@ -2449,7 +2546,8 @@
                     },
                     "AddSpecial": "添加特殊"
                 },
-                "SpecialSkill": "+{mod} {label}"
+                "SpecialSkill": "+{mod} {label}",
+                "LevelN": "生物 {level}"
             },
             "Plural": "角色",
             "IWREditor": {
@@ -2526,7 +2624,8 @@
                     "SetDC": "设定DC",
                     "SecretCheck": "秘密检定",
                     "PromptTitle": "提示标题"
-                }
+                },
+                "NewName": "新队伍"
             },
             "Familiar": {
                 "Master": {
@@ -2584,7 +2683,7 @@
                 },
                 "Label": "速度",
                 "Plural": "速度",
-                "BaseLabel": "基础{type}速度"
+                "BaseLabel": "{value}-尺 {type}速度"
             },
             "AttackEffects": {
                 "PlusList": "(加 {list})"
@@ -2856,7 +2955,8 @@
             "worn-in-slot": "穿戴(槽位中)",
             "stowed": "装载",
             "dropped": "拖挂",
-            "attached": "附着"
+            "attached": "附着",
+            "implanted": "植入"
         },
         "CastLabel": "施法",
         "CharacterDetails": "角色详情",
@@ -3011,7 +3111,8 @@
             "TraitsComponent": {
                 "NoMatch": "无符合条件的结果",
                 "Empty": "无结果"
-            }
+            },
+            "TabAbilities": "属性"
         },
         "Condition": {
             "ActiveLabel": "有效的",
@@ -3328,7 +3429,8 @@
                     "arcane": "奥术",
                     "axes": "斧",
                     "fortune-effects": "幸运效果",
-                    "mythic": "神话"
+                    "mythic": "神话",
+                    "time": "时间"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -3521,7 +3623,7 @@
                         "Singular": "1个队伍成员",
                         "Plural": "{xpPerFour} × 4 / {recipients}个队伍成员"
                     },
-                    "Label": "奖励：{xp} XP"
+                    "Label": "奖励：<award>{xp} XP</award>"
                 },
                 "Threat": "威胁：<threat>{threat}</threat>",
                 "Budget": "预算：{spent}/{max} XP (队伍等级 {partyLevel})"
@@ -3773,6 +3875,10 @@
             "PlaceWaypoint": {
                 "Label": "锚定路径点(拖拽量尺)",
                 "Hint": "在使用拖拽量尺时放置一个路径点。"
+            },
+            "OpenCompendiumBrowser": {
+                "Label": "切换合集包浏览器",
+                "Hint": "打开或关闭合集包浏览器。"
             }
         },
         "KitItems": "物品",
@@ -4185,7 +4291,7 @@
             "KeepNew": "重骰并接受最后一次的结果",
             "KeepWorst": "重骰并取最差结果",
             "MessageKeep": {
-                "new": "重骰后保留最新结果",
+                "new": "已重骰后保留最新结果",
                 "best": "重骰后保留最好结果",
                 "worst": "重骰后保留最差结果",
                 "lower": "已重骰，并取较低结果",
@@ -4194,7 +4300,11 @@
             "MessageHeroPoint": "重骰后消耗英雄点",
             "WarnNoHeroPoint": "{name} 无可用英雄点",
             "KeepHigher": "重骰并使用较高结果",
-            "KeepLower": "重骰并使用较低结果"
+            "KeepLower": "重骰并使用较低结果",
+            "WarnNoResource": "{name} 没有 {resource}",
+            "MythicPoint": "使用神话点重骰",
+            "MessageMythicPoints": "已使用神话点重骰",
+            "MessageHeroPoints": "已使用英雄点重骰"
         },
         "ResiliencyRuneLabel": "韧性符文",
         "ResistancesLabel": "抗力",
@@ -4355,7 +4465,7 @@
                 "RulesBasedVision": {
                     "Name": "基于规则的视野",
                     "Hint": "使用符合Pathfinder 2e规则的视觉机制。启用此设置将无法使用配置不受限全局视野以及角色视野半径的功能。",
-                    "ManagedBy": "受控于<rbv>基础规则视野</rbv>.",
+                    "ManagedBy": "受控于基础规则视野。",
                     "ViewWorldSetting": "浏览世界设置"
                 },
                 "EffectExpiration": {
@@ -4389,6 +4499,14 @@
                 "Encumbrance": {
                     "Hint": "自动对携带超过其自身负载的生物应用超载状态。",
                     "Name": "超载"
+                },
+                "ReachEnforcement": {
+                    "Hint": "当玩家试图与画布上的某些对象交互时，强制限定触及范围。",
+                    "Doors": "门",
+                    "Corpses": "尸体",
+                    "Name": "严谨触及范围",
+                    "Merchants": "商人",
+                    "Loot": "战利品"
                 }
             },
             "Homebrew": {
@@ -4491,7 +4609,8 @@
                     "Hint": "PF2e护甲的底层分类（ 如全身甲、链甲）"
                 },
                 "ClassTraits": {
-                    "Name": "职业特征"
+                    "Name": "职业特征",
+                    "Hint": "指某一职业的特征"
                 }
             },
             "Metagame": {
@@ -7417,13 +7536,14 @@
                     "ThrowRock": "<p>怪物从触及范围内捡起一块石头、或是干脆取出一块被收好的石头，然后扔出去，进行一次远程打击。</p>",
                     "Trample": "<p>怪物以其两倍的速度行走，并且可以在移动中穿越所列体型的生物所占据的空间，并且对这些被其进入占据空间的生物发动践踏。在每次使用践踏时，怪物只能对同一名生物尝试一次践踏。怪物造成所列的打击伤害，并且被践踏的生物可以尝试一次基础反射豁免对抗所列DC（大成功不受伤，成功伤害减半，大失败两倍伤害）。</p>",
                     "Tremorsense": "<p>震颤感知允许怪物感受到那些因为移动而引起的固体表面的振动。这是一种在（能力所列出的）有限范围内的模糊感官。只有当怪物位于同一物体的表面、且仅在对象沿着表面移动（或是钻入）时，震颤感知才会生效。</p>",
-                    "TroopDefenses": "<p>部队是由多个单独个体组成的，在经过多次攻击和战损之后，部队的规模就会缩减。大部分部队在初始状态下的规模有16个方格（4*4），并且它们的生命值后面会列出两个阈值，第一个阈值大约是最大生命值的2/3，第二个阈值大约是最大生命值的1/3。一旦部队的生命值减少到第一个阈值以下，它的规模缩减4个方格，还剩下12个方格，并且第一个阈值会成为新的最大生命值。当部队的生命值减少到第二个阈值以下时，它的规模再缩减4个方格，只剩下8个方格，第二个阈值会成为新的最大生命值。为了恢复它的规模和最大生命值，部队需要花费很长时间来治疗伤员并补充新兵。当生命值为0时，部队规模会减为4个方格，这不足以维持部队，所以部队会溃散，剩下的少数幸存者会投降、逃跑或解散，这取决于它们自身的天性。</p>\n<p>伤害性效果，若针对单一目标，例如打击，则无法让部队的生命值一次跨过多个阈值。举例来说，如果一个部队拥有60点生命值，阈值分别为40和20，那么一次造成50点伤害的打击将使部队生命减少至21，刚好在第二个阈值之上。区域性的伤害效果或瞄准多个目标的伤害性效果可以一次跨过多个阈值，甚至可能一击毁灭整个部队。</p>\n<p>非伤害性效果若拥有区域范围或能针对一定范围内的所有生物，并且能覆盖部队占据的整个空间，则能正常对部队生效；如果效果的范围比部队占据的方格少，或可瞄准的目标数量小于部队人数，那么一般而言对部队就没有影响。但例外是：如果一个效果至少能瞄准四个目标，或者至少能覆盖4个方格，并且该效果能够阻止目标行动、导致目标逃跑、或让他们在1轮或更长时间内无法作为部队的一部分发生作用，则部队自动失去下一档阈值之上的全部生命值，并缩减4个方格。如果一个效果既能对部队造成伤害，又会导致部分成员失能从而自动损失生命值，则应先结算伤害；如果伤害没有跨过阈值，那就再结算失能效果：扣除剩余生命值来跨过阈值。</p>",
+                    "TroopDefenses": "<p>部队是由多个单独个体组成的，在战斗网格上用四个\"段\"来表示。每段都是10英尺见方，高度与部队中个体成员的身高相同。段之间必须保持连续，每个段都必须至少有5英尺的边缘与另一个段相邻——仅对角相邻是不够的！你可以使用任意段的中心来测量夹击、掩蔽等效果。</p>\n<p>部队在其生命值条目中有两个生命值阈值，当跨越阈值时会失去段。通常，较高的阈值是部队最大生命值的2/3，较低的阈值是最大生命值的1/3。一旦部队降到较高阈值以下，它会失去一个段，剩余三个段（12个方格），并将第一个阈值设为部队的新最大生命值。当部队降到较低阈值以下时会重复这一过程，剩余两个段（8个方格）。在0生命值时，部队完全溃散，少数剩余成员会投降、@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{逃跑}或轻易被击败，由GM决定。通常造成部队失去段的生物决定移除哪个段，或者当没有特定生物负责时由GM决定。要恢复失去的段和最大生命值，部队需要花费休整时间对伤员进行长期治疗或招募新成员来替换阵亡者。</p>\n<p>部队通常免疫针对单个生物的非伤害效果，如@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{魅惑}法术或@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{威吓}动作。能够目标5个或更多生物的能力可以目标整个段，如果能目标10个或更多生物则增加到两个段，如果能目标20个或更多生物则能目标整个部队。影响特定范围内所有生物的能力会影响范围内的所有段（对每个段分别进行检定或豁免）。例如，8阶魅惑法术（10个目标）可以影响两个段，而威吓你30英尺内所有生物的能力会影响完全在该范围内的所有段。阻止段行动、使其逃跑或以其他方式使其无法作为部队一部分运作一轮或更长时间的非伤害能力会完全移除该段。部队失去将其降至下一个阈值所需的生命值。如果能力既造成伤害又有非伤害效果，先应用伤害然后应用其余效果 。</p>",
                     "Wavesense": "<p>这种感知允许怪物感受到那些因为在液体中移动而产生的振波。这是一种在（能力所列出的）有限范围内的模糊感官imprecise sense。只有当怪物位于同一液体中、且仅在对象在此液体中移动时，水波感知才会生效。</p>",
                     "ReactiveStrike": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
                     "Stench": "<p>任何生物若进入此灵光范围或在灵光范围内开始其回合的话，则必须进行一次强韧豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心1 Sickened 1}（大失败时额外再加上@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢1 Slowed 1}）。豁免成功或从状态中恢复的生物会在一分钟内临时免疫尸臭。</p>",
                     "Pull": "<p><strong>需求</strong> 怪物的最后一个动作是成功的打击并且在伤害条目中列出了拉拽（Pull）</p><hr /><p><strong>效果</strong> 怪物尝试对生物进行@UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{移位 Reposition}，将其拉向怪物。这次尝试既不适用于也不计入怪物的多重攻击惩罚。如果拉拽列出了距离，在成功时变为生物被拉拽至该距离。</p>",
                     "GolemAntimagic": "<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p><ul><li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li><li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li><li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/gmr 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li><li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li></ul>",
-                    "ChangeFormation": "<p>部队重新编队以采用他们所知的以下其中一种阵型。再次使用此动作将结束之前的阵型效果，部队还可以使用此动作恢复到默认阵型，避免任何优势和劣势的影响。</p>\n<ul><li><strong>松散阵型</strong> 部队成员分散开来覆盖更多地面。\n<strong>优势</strong> 部队对区域和溅射伤害的弱点被压制。\n<strong>劣势</strong> 敌对单位对部队伤害效果的豁免掷骰成功度比他们掷出的骰子高一阶。</li><li><strong>行军纵队</strong> 此阵型可以更快地穿越长距离。\n<strong>优势</strong> 部队获得对所有速度的+10尺环境加值。\n<strong>劣势</strong> 部队处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]状态，反射豁免获得-2减值。</li><li><strong>龟壳阵型</strong> 部队将盾牌相互锁定。只有拥有盾牌的群体才能使用此阵型。\n<strong>优势</strong> 部队在对远程攻击的AC和对反射豁免上获得+2的环境加值。\n<strong>劣势</strong> 部队所有速度减10尺。</li><li><strong>楔形阵型</strong> 部队将自己排列在一位强大的指挥官身后。\n<strong>优势</strong> 部队可以选择一个相邻的没有部队特性的盟友生物跟在后面。每次所选生物行进时，部队作为一个免费动作跟随，行进以保持所选生物相邻。\n<strong>劣势</strong> 部队失去一些自主性。他们受到缓慢1，且不能自愿离开他们的领导者。</li></ul>"
+                    "ChangeFormation": "<p>部队重新编队以采用他们所知的以下其中一种阵型。再次使用此动作将结束之前的阵型效果，部队还可以使用此动作恢复到默认阵型，避免任何优势和劣势的影响。</p>\n<ul><li><strong>松散阵型</strong> 部队成员分散开来覆盖更多地面。\n<strong>优势</strong> 部队对区域和溅射伤害的弱点被压制。\n<strong>劣势</strong> 敌对单位对部队伤害效果的豁免掷骰成功度比他们掷出的骰子高一阶。</li><li><strong>行军纵队</strong> 此阵型可以更快地穿越长距离。\n<strong>优势</strong> 部队获得对所有速度的+10尺环境加值。\n<strong>劣势</strong> 部队处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]状态，反射豁免获得-2减值。</li><li><strong>龟壳阵型</strong> 部队将盾牌相互锁定。只有拥有盾牌的群体才能使用此阵型。\n<strong>优势</strong> 部队在对远程攻击的AC和对反射豁免上获得+2的环境加值。\n<strong>劣势</strong> 部队所有速度减10尺。</li><li><strong>楔形阵型</strong> 部队将自己排列在一位强大的指挥官身后。\n<strong>优势</strong> 部队可以选择一个相邻的没有部队特性的盟友生物跟在后面。每次所选生物行进时，部队作为一个免费动作跟随，行进以保持所选生物相邻。\n<strong>劣势</strong> 部队失去一些自主性。他们受到缓慢1，且不能自愿离开他们的领导者。</li></ul>",
+                    "TroopMovement": "<p>每当一支部队移动时，你都会移动其中一个部分，其他部分则跟随其后。移动结束后，你可以根据自己的喜好，将其他部分聚集到与你移动的部分相邻，前提是这些部分的移动距离都不能超过移动的部分。如果你选择不将部队移动任何距离，你可以改为重新调整所有部分的位置，只要其中一个部分保持不动即可。</p>"
                 }
             },
             "ActionsList": {
@@ -7508,7 +7628,7 @@
         "AreaSize25": "25尺",
         "InventoryArmorHeader": "护甲",
         "BrowseLabel": "搜索",
-        "LevelRange": "等级 {minLevel} - {level}",
+        "LevelRange": "等级 {minLevel} — {level}",
         "OK": "OK",
         "ResistancesExceptionLabel": "除了:",
         "QuantityLabel": "数量",
@@ -7907,7 +8027,7 @@
             "Foundry": "Foundry",
             "FoundryOld": "0.7或以下",
             "Document": "文档",
-            "LockedTooltip": "无法迁移-集合包已锁定",
+            "LockedTooltip": "无法迁移—合集包已锁定",
             "Invalid": "无效",
             "UpToDate": "至今",
             "Title": "迁移状态",
@@ -8154,6 +8274,10 @@
                     }
                 },
                 "Label": "环境特征"
+            },
+            "DifficultTerrain": {
+                "GreaterDifficultTerrain": "高等困难地形",
+                "DifficultTerrain": "困难地形"
             }
         },
         "TraitVenomous": "毒性",
@@ -8278,7 +8402,12 @@
         "TraitTracking2": "追踪 +2",
         "TraitTracking1": "追踪 +1",
         "TraitCommander": "统帅",
-        "TraitDescriptionTroop": "部队是有组织的生物聚集而成，组建部队的生物体型通常为小型或中型，他们相互协作宛如一个整体。部队的体型会占据16个方格，在HP一栏会标注2个生命值阈值，生命值下降至第一个阈值会使其体型下降至12个方格，第二个时下降至8个方格。部队具有部队防御，重整队列和部队移动（Troop Movement）能力。大多数部队都具有区域伤害的弱点。由于部队是由复数个分离的个体组成的，所以它无法被召唤。"
+        "TraitDescriptionTroop": "部队是有组织的生物聚集而成，组建部队的生物体型通常为小型或中型，他们相互协作宛如一个整体。部队的体型会占据16个方格，在HP一栏会标注2个生命值阈值，生命值下降至第一个阈值会使其体型下降至12个方格，第二个时下降至8个方格。部队具有部队防御，重整队列和部队移动（Troop Movement）能力。大多数部队都具有区域伤害的弱点。由于部队是由复数个分离的个体组成的，所以它无法被召唤。",
+        "LegalNotice": {
+            "Text": "此Foundry Virtual Tabletop系统使用了Paizo Inc.拥有的商标和版权，根据Paizo的社区使用政策(<a href=\"https://paizo.com/community/communityuse\" target=\"_blank\">paizo.com/communityuse</a>)使用。我们被明确禁止向您收取使用或访问此内容的费用。此FoundryVTT系统并非由Paizo发布、认可或特别批准。有关Paizo Inc.和Paizo产品的更多信息，请访问<a href=\"https://paizo.com/\" target=\"_blank\">paizo.com</a>。",
+            "Title": "合法公告"
+        },
+        "ArmorPropertyRuneSpellwatch": "斥咒"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
