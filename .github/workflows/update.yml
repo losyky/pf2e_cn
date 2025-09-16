@@ -18,10 +18,10 @@ jobs:
 
       - name: Update Projects Source Json
         run: |
-          wget https://raw.githubusercontent.com/foundryvtt/pf2e/master/static/lang/en.json -O ./.github/en.json
-          wget https://raw.githubusercontent.com/foundryvtt/pf2e/master/static/lang/re-en.json -O ./.github/re-en.json
-          wget https://raw.githubusercontent.com/foundryvtt/pf2e/master/static/lang/action-en.json -O ./.github/action-en.json
-          wget https://raw.githubusercontent.com/foundryvtt/pf2e/master/static/lang/kingmaker-en.json -O ./.github/kingmaker-en.json
+          wget https://raw.githubusercontent.com/foundryvtt/pf2e/refs/heads/v13-dev/static/lang/en.json -O ./.github/en.json
+          wget https://raw.githubusercontent.com/foundryvtt/pf2e/refs/heads/v13-dev/static/lang/re-en.json -O ./.github/re-en.json
+          wget https://raw.githubusercontent.com/foundryvtt/pf2e/refs/heads/v13-dev/static/lang/action-en.json -O ./.github/action-en.json
+          wget https://raw.githubusercontent.com/foundryvtt/pf2e/refs/heads/v13-dev/static/lang/kingmaker-en.json -O ./.github/kingmaker-en.json
         
       - name: Add & Commit
         uses: EndBug/add-and-commit@v7.2.1
