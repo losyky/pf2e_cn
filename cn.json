@@ -4250,7 +4250,13 @@
                 "Unlimited": "无限制",
                 "Name": "听觉范围（英尺）",
                 "Hint": "限制生物在这个场景中听觉的范围*以此来模拟“混淆听觉的环境，例如嘈杂的房间”（PC第432页）。需要启用基于规则的感官。",
-                "Caveat": "*出于性能原因，半径是真实的测量值，而不是基于网格的测量值。"
+                "Caveat": "*出于性能原因，半径是真实的测量值，而不是基于网格的测量值。",
+                "Label": "听觉范围 (ft.)"
+            },
+            "SyncDarkness": {
+                "Label": "根据时间同步黑暗",
+                "Hint": "当此场景中的时间变化时，自动调整黑暗等级以匹配（傍晚时变暗，白天时变亮）。",
+                "ManagedBy": "与<wt>世界时间</wt>同步。"
             }
         },
         "SETTINGS": {
@@ -4483,6 +4489,9 @@
                 "BaseArmors": {
                     "Name": "护甲基本类型",
                     "Hint": "PF2e护甲的底层分类（ 如全身甲、链甲）"
+                },
+                "ClassTraits": {
+                    "Name": "职业特征"
                 }
             },
             "Metagame": {
@@ -4586,9 +4595,42 @@
                         "Question": "你确定要重置时间吗？",
                         "Warning1": "基于时间的游戏效果会因此受到影响。",
                         "Warning2": "这一操作不能被撤销。"
+                    },
+                    "Label": "重置世界日期/时间"
+                },
+                "DeferredToModule": "这一设置由日历/天气模块管理。",
+                "FIELDS": {
+                    "dateTheme": {
+                        "label": "日期主题",
+                        "hint": "设置世界时钟应用的主题。"
+                    },
+                    "timeConvention": {
+                        "label": "时间公约",
+                        "hint": "显示 24 小时制或 12 小时制时钟。"
+                    },
+                    "syncDarkness": {
+                        "label": "同步黑暗",
+                        "hint": "设置场景的黑暗等级是否会反映一天中的时间。"
+                    },
+                    "showClockButton": {
+                        "label": "显示时钟按钮",
+                        "hint": "设置是否显示时钟按钮（需要刷新）。"
+                    },
+                    "playersCanView": {
+                        "label": "玩家访问权限",
+                        "hint": "设置玩家是否可以查看世界时钟。"
                     }
                 },
-                "DeferredToModule": "这一设置由日历/天气模块管理。"
+                "TimeConventions": {
+                    "24": "24小时制",
+                    "12": "12小时制"
+                },
+                "DateThemes": {
+                    "IC": "格拉利昂 (帝王历)",
+                    "CE": "未定义 (公历纪年法)",
+                    "AR": "格拉利昂 (艾巴萨罗姆纪元)",
+                    "AD": "地球 (公历纪年法)"
+                }
             },
             "CampaignFeats": {
                 "Name": "战役专长",
@@ -5052,10 +5094,16 @@
             },
             "Flanking": "夹击",
             "SecretDisposition": {
-                "Hint": "激活\"秘密\"配置，所有者将会显示一个紫色信息框，而对于其他人则无任何显示变化。",
+                "Hint": "激活\"秘密\"配置，所有者将会显示一个紫色信息框，而对于其他人则无任何显示变化。具有此特征的标记也无法被非所有者作为目标。",
                 "Label": "秘密配置"
             },
-            "ActorLinkForced": "{type} 类型的角色无法被解除链接。"
+            "ActorLinkForced": "{type} 类型的角色无法被解除链接。",
+            "OutOfReach": "{token}在触及之外。",
+            "Mystified": {
+                "TheObject": "对象",
+                "TheCreature": "生物"
+            },
+            "Distance": "距离：{distance} {unit}"
         },
         "TotalTreasure": "全部宝物",
         "TotalCoinage": "货币总计",
@@ -5223,10 +5271,10 @@
         "TraitDescriptionAphorite": "公理裔是起源于守序位面都市轴心城的位面族裔。",
         "TraitDescriptionArcane": "这个魔法源于奥术法术根源，是建立在逻辑和合理性上的特征，拥有此特征的法术称作魔法。拥有此特征的生物基本是由奥术魔法构成，或与奥术魔法有强烈联系。",
         "TraitDescriptionArchetype": "这个专长属于一个变体.",
-        "TraitDescriptionAttached": "附着武器必须和另一件装备结合才能使用。此特性会列出它必须与哪种类型的物品附着。你必须持用或穿戴这个武器附着的物品才能用它进行攻击。举例来说，附着盾牌的盾刺允许你用盾刺而非盾击进行攻击，不过只有在你持用盾牌时才能如此做。附着武器往往被固定或内建在它所附着的物品上，而且通常来说，一个物品只能安装一件附着武器。一件附着武器可以花费10分钟，通过@Check[crafting|dc:10]技能检定来安装，如果需要这还包括从上一件物品上拆卸的时间。若物品被破坏，仍有机会救回它上头附着的武器。",
+        "TraitDescriptionAttached": "附着武器必须和另一件装备结合才能使用。此特性会列出它必须与哪种类型的物品附着。你必须持用或穿戴这个武器附着的物品才能用它进行攻击。举例来说，附着盾牌的盾刺允许你用盾刺而非盾击进行攻击。附着武器往往被固定或内建在它所附着的物品上，而且通常来说，一个物品只能安装一件附着武器。一件附着武器可以花费10分钟，通过DC 10 的手艺技能检定来安装，如果需要这还包括从上一件物品上拆卸的时间。若物品被破坏，仍有机会救回它上头附着的武器。",
         "TraitDescriptionAttack": "如果你在同一轮中使用攻击特性的动作超过一次，第一次之后的攻击都要承受多次攻击减值。",
         "TraitDescriptionAuditory": "听觉动作和效果依赖于声音。具有听觉特征的动作只有在使用动作的生物能说话或发声时才可以成功生效。听觉法术依赖于声音。具有听觉特征的法术只有当目标能够听到它时才会生效。这与音波效果不同，目标即使无法听见音波效果（例如耳聋的目标），音波效果也会生效，只要该效果能发出音波。",
-        "TraitDescriptionAura": "灵光由你周身持续散发，影响一定辐射范围内的生物。灵光同时也出现在一些强大的魔法物品或较强的阵营倾向上.",
+        "TraitDescriptionAura": "灵光由你周身持续散发，影响一定辐射范围内的生物。灵光同时也出现在一些强大的魔法物品上.",
         "TraitDescriptionAutomaton": "具有这种特征的生物是灵导械种族中的一员。",
         "TraitDescriptionAzarketi": "在内海区域的海洋中生活的两栖类人生物，据说是阿兹兰特的后裔。阿扎克缇是适应水下社区生活的人类分支。它们有鳃、带蹼的手指和短小的鳍，能够在水中或者水域之外生存。",
         "TraitDescriptionBackstabber": "当你命中措手不及的生物时，此武器会造成额外1点精准伤害。若是一件+3武器，则此伤害增加至2点。",
@@ -5274,7 +5322,7 @@
         "TraitDescriptionDarkness": "黑暗效果会消除区域中非魔法的光，并能够反制比该效果更弱魔法光。通常来说，你必须指定光魔法为目标，用你的黑暗魔法直接反制光，但有些黑暗法术能自动对光进行反制。",
         "TraitDescriptionDeadly": "重击时，此武器加上一颗武器伤害骰，骰面大小如表格所列。翻倍武器伤害后再投掷这颗骰子。若武器刻有上等强击符文，则此伤害增加为两颗骰子。若武器刻有上等强击符文，则此伤害增加为三颗骰子。举例来说，刻有高等强击符文的细剑在重击时造成额外的2d8穿刺伤害。改变武器正常伤害骰骰面的能力不影响致命骰。",
         "TraitDescriptionDeath": "一个具有死亡特征的效果如果使你的生命值降低到0，它会立即杀死你。一些死亡效果可以让你更接近死亡或者直接杀死你而不降低你的生命。",
-        "TraitDescriptionDedication": "你必须选择一个具有此特征的专长以将对应的变体应用到你的角色上。",
+        "TraitDescriptionDedication": "每个变体的入门专长代表你的角色专注学习一套新能力的努力，这使得你无法分散注意力同时追寻另一个变体。一旦你选择了入门专长，你就不能选择不同的入门专长，直到你通过从当前变体中选择其他两个专长来完成你的入门。只要你拥有该变体的任何其他专长，你就不能重训入门专长。",
         "TraitDescriptionDetection": "具有这种特征的效果试图确定一个人、物体或光环的存在或位置。",
         "TraitDescriptionDhampir": "具有该特征的生物具有吸血裔多用传承。这些类人生物是吸血鬼与其他族裔成员的后代。",
         "TraitDescriptionDisarm": "即使你并没有空着的手，仍然能以此武器用运动技能对敌人进行卸武。此时使用武器的触及范围（若其与你的触及范围不同），并将武器给予攻击的物品加值（若有）加至运动检定上。若你在使用该武器时，卸武检定大失败，你可以抛弃该武器，视之为普通失败。大成功时，若你想夺过对手的武器，你仍须有一只手是空着的。",
@@ -6306,7 +6354,9 @@
                 "war-javelin": "作战标枪",
                 "orc-skewermaul": "兽人矛锤",
                 "fangs": "尖牙",
-                "nails": "钉"
+                "nails": "钉",
+                "bladesweeper": "刃帚",
+                "maul-spade": "锤铲"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -6686,7 +6736,7 @@
             },
             "greaterRooting": {
                 "Note": {
-                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"28\">逃脱 DC 28</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=28]]），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 },
                 "Name": "高等生根"
             },
@@ -6699,13 +6749,13 @@
             },
             "rooting": {
                 "Note": {
-                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"23\">逃脱 DC 23</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=23]]），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 },
                 "Name": "生根"
             },
             "majorRooting": {
                 "Note": {
-                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"34\">逃脱 DC 34</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=34]]），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 },
                 "Name": "上等生根"
             },
@@ -6717,7 +6767,7 @@
             },
             "trueRooting": {
                 "Note": {
-                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-dc=\"41\">逃脱 DC 41</span>），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=41]]），并在禁足持续期间 @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 },
                 "Name": "真实生根"
             },
@@ -6760,6 +6810,24 @@
             "quickstrike": {
                 "Name": "迅击",
                 "Note": "当持用一把迅击武器时，你获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，但你只能使用其赋予的额外动作用蚀刻武器进行一次打击。"
+            },
+            "greaterBolkasBlessing": {
+                "Name": "高等波络卡的祝福"
+            },
+            "greaterKolssOath": {
+                "Name": "高等寇司的誓言"
+            },
+            "greaterTruddsStrength": {
+                "Name": "高等杜鲁德之力"
+            },
+            "kolssOath": {
+                "Name": "寇司的誓言"
+            },
+            "truddsStrength": {
+                "Name": "杜鲁德之力"
+            },
+            "bolkasBlessing": {
+                "Name": "波络卡的祝福"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -6940,14 +7008,14 @@
             },
             "concealed": {
                 "name": "隐蔽",
-                "rules": "<p>例如处在薄雾中的你难以被某生物看到，即说你对该生物处于隐蔽状态。你依然可见，但很难被瞄准。你对其隐蔽的生物因攻击、法术或其它效果而试图瞄准你时，需要成功通过@Check[flat|dc:5]检定。</p>\n<p>区域效果无需进行此纯骰检定。若检定失败，该次攻击、法术或效果不会影响你。</p>",
+                "rules": "<p>例如处在薄雾中的你难以被某生物看到，即说你对该生物处于隐蔽状态。你依然可见，但很难被瞄准。你对其隐蔽的生物因攻击、法术或其它效果而试图瞄准你时，需要成功通过@Check[flat|dc:5|name:Concealed|showDC:all] 检定。</p>\n<p>区域效果无需进行此纯骰检定。若检定失败，该次攻击、法术或效果不会影响你。</p>",
                 "summary": "雾气或类似障碍物让你不能被轻易看到和瞄准。"
             },
             "confused": {
                 "name": "困惑",
-                "rules": "<p>你失去了冷静，攻击变得大开大合。你进入措手不及状态，你不能将任何单位视为盟友（他们依然能将你视为盟友），你无法进行延迟、准备，也无法使用反应动作。</p><p>你必须使用所有动作进行打击或施放进攻性戏法，GM可以允许你使用其它辅助攻击的动作，例如拔出武器，移动靠近使敌人进入自己的触及内，等等。你的目标由GM随机决定。若你无可视的目标，就会瞄准自己，自动命中自己，但不会造成重击。若对你而言攻击或施法无法完成，你会口出狂言喋喋不休，浪费自己的动作。</p>\n<p>每当你因攻击或法术受到伤害时，可进行一次@Check[flat|dc:11]检定，成功则从困惑中恢复，终止该状态。</p>",
+                "rules": "<p>你失去了冷静，攻击变得大开大合。你进入措手不及状态，你不能将任何单位视为盟友（他们依然能将你视为盟友），你无法进行延迟、准备，也无法使用反应动作。</p><p>你必须使用所有动作进行打击或施放进攻性戏法，GM可以允许你使用其它辅助攻击的动作，例如拔出武器，移动靠近使敌人进入自己的触及内，等等。你的目标由GM随机决定。若你无可视的目标，就会瞄准自己，自动命中自己，但不会造成重击。若对你而言攻击或施法无法完成，你会口出狂言喋喋不休，浪费自己的动作。</p>\n<p>每当你因攻击或法术受到伤害时，可进行一次@Check[flat|dc:11|name:Confusion Recovery|showDC:all]检定，成功则从困惑中恢复，终止该状态。</p>",
                 "summary": "你的攻击漫无目的。",
-                "note": "每当你受到攻击或法术伤害时，你可以尝试一次@Check[flat|showDC:all|dc:11]来从你的困惑状态中恢复并结束该状态。"
+                "note": "每当你受到攻击或法术伤害时，你可以尝试一次@Check[flat|dc:11|name:Confused|showDC:all] 来从你的困惑状态中恢复并结束该状态。"
             },
             "controlled": {
                 "name": "被控制",
@@ -6961,9 +7029,9 @@
             },
             "deafened": {
                 "name": "耳聋",
-                "rules": "<p>你听不到声音。你在需要你听的察觉检定上自动大失败。你在用察觉进行的先攻检定，和包括声音但也依赖其它感官的察觉检定上都获得-2状态减值。若你进行拥有听觉特征的动作，你必须通过@Check[flat|dc:5]检定，失败则失去该动作；该检定在消耗动作后，在动作生效前。你免疫听觉效果。</p>",
+                "rules": "<p>你听不到声音。你在需要你听的察觉检定上自动大失败。你在用察觉进行的先攻检定，和包括声音但也依赖其它感官的察觉检定上都获得-2状态减值。若你进行拥有听觉特征的动作，你必须通过@Check[flat|dc:5|name:Deafened|showDC:all] 检定，失败则失去该动作；该检定在消耗动作后，在动作生效前。你免疫听觉效果。</p>",
                 "summary": "你的耳旁一片寂静。",
-                "note": "如果你进行具有听觉特性的动作，你必须在@Check[flat|dc:5|showDC:all]中成功，否则该动作会失败。"
+                "note": "如果你进行具有听觉特性的动作，你必须在@Check[flat|dc:5|name:Deafened|showDC:all]中成功，否则该动作会失败。"
             },
             "doomed": {
                 "name": "毁灭",
@@ -7022,9 +7090,9 @@
             },
             "grabbed": {
                 "name": "擒抱",
-                "rules": "<p>你被其它生物固定在原处，使你获得措手不及状态和禁足状态。被擒抱时若你尝试使用拥有操作特征的动作，你必须通过@Check[flat|dc:5]检定，失败则失去该动作；该检定在消耗动作后，效果生效前进行。</p>",
+                "rules": "<p>你被其它生物固定在原处，使你获得措手不及状态和禁足状态。被擒抱时若你尝试使用拥有操作特征的动作，你必须通过@Check[flat|dc:5|name:Grabbed|showDC:all]检定，失败则失去该动作；该检定在消耗动作后，效果生效前进行。</p>",
                 "summary": "生物、物体或魔法让你被定在原地。",
-                "note": "如果你在被擒抱时尝试进行一个操作动作，你必须成功通过 @Check[flat|dc:5|showDC:all]检定，否则该动作会失败。"
+                "note": "如果你在被擒抱时尝试进行一个操作动作，你必须成功通过 @Check[flat|dc:5|name:Grabbed|showDC:all]检定，否则该动作会失败。"
             },
             "helpful": {
                 "name": "乐于帮助",
@@ -7033,7 +7101,7 @@
             },
             "hidden": {
                 "name": "藏匿",
-                "rules": "<p>当你对某生物处于藏匿状态时，该生物大致知道你的位置，但无法精确定位你在哪里。通常你会因使用隐秘技能的躲藏动作而进入藏匿状态。若只用不精确的感官搜索你，则你依然能保持藏匿状态，而不会变成可见状态。你对其为藏匿状态的生物，对你也为措手不及状态，且其攻击、法术或其它效果瞄准你时，必须通过@Check[flat|dc:11] ，失败则无法影响到你。区域效果无需进行该纯骰检定。</p>\n<p>生物可以使用搜索动作尝试观察到你 。</p>",
+                "rules": "<p>当你对某生物处于藏匿状态时，该生物大致知道你的位置，但无法精确定位你在哪里。通常你会因使用隐秘技能的躲藏动作而进入藏匿状态。若只用不精确的感官搜索你，则你依然能保持藏匿状态，而不会变成可见状态。你对其为藏匿状态的生物，对你也为措手不及状态，且其攻击、法术或其它效果瞄准你时，必须通过@Check[flat|dc:11|name:Hidden|showDC:all] ，失败则无法影响到你。区域效果无需进行该纯骰检定。</p>\n<p>生物可以使用搜索动作尝试观察到你 。</p>",
                 "summary": "生物知道你在哪但没法看到你。"
             },
             "hostile": {
@@ -7112,7 +7180,7 @@
                 "name": "呆滞",
                 "rules": "<p>你是思绪和本能被蒙蔽住。呆滞状态拥有状态值。你所有基于智力、感知和魅力的检定与DC获得等同于呆滞状态值的状态减值，包括意志豁免、法术攻击骰、法术Dc、使用这些属性调整值的技能检定。呆滞时若你尝试施放法术行动，你必须通过DC=5+呆滞值的纯骰检定，否则法术会被打断。</p>",
                 "summary": "你无法进行完整的心智思考，难以施法。",
-                "note": "呆滞时若你尝试@UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]行动，你必须通过@Check[flat|showDC:all|dc:resolve(5+@actor.conditions.stupefied.value)]检定，否则法术会被打断。"
+                "note": "呆滞时若你尝试@UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]行动，你必须通过@Check[flat|dc:resolve(5+@actor.conditions.stupefied.value)|name:Stupefied|showDC:all]检定，否则法术会被打断。"
             },
             "unconscious": {
                 "name": "失去意识",
@@ -7121,7 +7189,7 @@
             },
             "undetected": {
                 "name": "无踪",
-                "rules": "<p>当你对某生物处于无踪状态时，该生物完全无法看到你，也不知道你所在的位置，更无法瞄准你，不过你依然能被区域效果覆盖到。当你对某生物处于无踪状态时，该生物对你措手不及。</p>\n<p>你对其无踪的生物可以猜测你处于什么位置并尝试瞄准你。她必须选择一个方格然后尝试一次攻击。这和瞄准藏匿状态下的生物类似（需要@Check[flat|dc:11]），但纯骰检定和攻击骰都由GM进行暗骰，并不会揭示攻击结果，到底是纯骰失败、攻击骰失败或选择错了方格。</p>\n<p>生物可用搜索动作尝试找到你。</p>",
+                "rules": "<p>当你对某生物处于无踪状态时，该生物完全无法看到你，也不知道你所在的位置，更无法瞄准你，不过你依然能被区域效果覆盖到。当你对某生物处于无踪状态时，该生物对你措手不及。</p>\n<p>你对其无踪的生物可以猜测你处于什么位置并尝试瞄准你。她必须选择一个方格然后尝试一次攻击。这和瞄准藏匿状态下的生物类似（需要@Check[flat|dc:11|name:Undetected|traits:secret|showDC:all]），但纯骰检定和攻击骰都由GM进行暗骰，并不会揭示攻击结果，到底是纯骰失败、攻击骰失败或选择错了方格。</p>\n<p>生物可用搜索动作尝试找到你。</p>",
                 "summary": "对方生物不知道你在哪。"
             },
             "unfriendly": {
@@ -7251,7 +7319,8 @@
             "Purchase": "购买",
             "PurchasePrice": "购买价格",
             "Give": "给予",
-            "SendToPartyStash": "送到小队储物箱"
+            "SendToPartyStash": "送到小队储物箱",
+            "LootUnknownNPCMessage": "未知生物"
         },
         "vehicle": {
             "VehicleString": "载具",
@@ -7533,7 +7602,7 @@
         "LanguageAncientOsiriani": "古奥斯利昂语",
         "TraitMetal": "金",
         "TraitAttached": "附着",
-        "TraitDescriptionTech": "具有此特性的物品与纽梅利亚的技术相关。",
+        "TraitDescriptionTech": "具有科技特性的物品可以由任何人制作，但如果它们同时具有魔法特性，则它们是混合物品，需要机械魔法专长才能制作。",
         "MagicTraditionUseSpellLabel": "使用魔法根源",
         "TraitTech": "科学",
         "TraitDescriptionGhoran": "一种依靠从种子中不断复生而长生的智能植物族裔。",
@@ -8169,7 +8238,47 @@
         "PreciousMaterialSloughstone": "蜕石",
         "PreciousMaterialDreamweb": "梦网",
         "PreciousMaterialDreamwebDescription": "由织网者本体胸节所吐出的蛛丝所制，梦网赋予若干神秘效果。由梦网制成的布质物品与绳索具有如下属性：硬度 4，生命值每英寸 12，破坏DC16。以梦网制成的轻甲比常规布甲或皮甲更轻：其负载减少1（若原为轻负载则不变，对已为轻负载的物品无影响）。梦网轻甲给予穿戴者毒素抗力，数值等于3加上该护甲的护甲潜能符文数值。",
-        "TraitDescriptionBravado": "具有此特征的动作会根据检定结果赋予派头。如果你在一个虚势动作的检定中成功，你获得派头，如果你在检定中失败（但不是大失败），你同样获得派头，但仅持续到你的下个回合结束。即使该动作不具有其它失败效果或因免疫而不产生效果时，你也可以应用这一失败效果。"
+        "TraitDescriptionBravado": "具有此特征的动作会根据检定结果赋予派头。如果你在一个虚势动作的检定中成功，你获得派头，如果你在检定中失败（但不是大失败），你同样获得派头，但仅持续到你的下个回合结束。即使该动作不具有其它失败效果或因免疫而不产生效果时，你也可以应用这一失败效果。",
+        "TraitBlight": "荒疫",
+        "TraitDescriptionEnvironmental": "具有此特征的危害是大自然危险的一部分，例如流沙和害菌。",
+        "TraitResilient3": "韧性 +3",
+        "TraitDescriptionMortic": "死灵裔是与亡灵有着密切联系的活体类人生物。他们拥有黑暗视觉、负能量治疗能力，对地上神国有弱点，并且可以通过屏住呼吸变成不死生物。",
+        "TraitAffixedOrHeldInOneHand": "附着或握持在单手",
+        "TraitDescriptionShade": "残影是凡人的灵魂，他们被审判，然后转化为其他层面的生物。残影们能够在其故乡位面的基础环境效果中生存。",
+        "TraitBrandish": "挥旗",
+        "TraitDescriptionKami": "神灵是物质位面的灵魂，与特定的物体或地点联结。",
+        "TraitDescriptionTanggal": "这一族系的异怪是由各种类人形状的部件所组成的生物，它们在捕猎时可以将身体一分为二。",
+        "TraitDescriptionUrdefhan": "透肌魔人是与恶魔订立契约的类人生物，拥有透明皮肤，以血液为食。",
+        "TraitDescriptionWyrwood": "木灵是一种小型、有智慧的活体构装体，由木材制作而成，并由万古石或类似的魔法石提供动力。",
+        "TraitDescriptionWayang": "来自影界的小型类人生物，因星陨之灾而移民到格拉利昂。",
+        "TraitDescriptionVigilante": "你的职业专长和侠客专长与侠客身份相关，在你的社交身份中使用它们可能会让你的侠客身份有暴露的风险。如果你的身份被公之于众，你将失去侠客入门专长所带来的伪装好处，但你可以花费1周的空闲时间来建立一个新的社交身份。",
+        "TraitInstalledInOneHandedWeaponGrip": "安装在单手武器（握柄）",
+        "TraitInstalledInAWeaponWithTheKickbackTrait": "安装在具有反冲特性的武器中",
+        "TraitInstalledInAWeaponSight": "安装在武器上（瞄准镜）",
+        "TraitInstalledInAWeapon": "安装在武器上",
+        "TraitInstalledInArmorWithTheExposedTrait": "安装在具有暴露特质的护甲中",
+        "TraitInstalledInArmorWithTheEnergyShieldingUpgrade": "安装在具有能量护盾升级的护甲中",
+        "TraitInstalledInArmor": "安装在护甲中",
+        "TraitInstalledInAGrenadeLauncherOrTwoHandedWeaponWithAnUndermoundedGrenadeLauncher": "安装在榴弹发射器或带有下挂式榴弹发射器的双手武器中",
+        "TraitGuardian": "守护者",
+        "TraitGigas": "吉伽斯",
+        "TraitJotunborn": "巨人裔",
+        "TraitInstalledOnAWeaponWithoutASilencer": "安装在没有消音器的武器上",
+        "TraitInstalledInTwoHandedWeapon": "安装在双手武器上",
+        "TraitResilient2": "韧性 +2",
+        "TraitResilient1": "韧性 +1",
+        "TraitTactic": "战术",
+        "Wall": {
+            "Door": {
+                "OutOfReach": "此门在触及之外。"
+            }
+        },
+        "TraitWhetstone": "磨刀石",
+        "TraitTracking3": "追踪 +3",
+        "TraitTracking2": "追踪 +2",
+        "TraitTracking1": "追踪 +1",
+        "TraitCommander": "统帅",
+        "TraitDescriptionTroop": "部队是有组织的生物聚集而成，组建部队的生物体型通常为小型或中型，他们相互协作宛如一个整体。部队的体型会占据16个方格，在HP一栏会标注2个生命值阈值，生命值下降至第一个阈值会使其体型下降至12个方格，第二个时下降至8个方格。部队具有部队防御，重整队列和部队移动（Troop Movement）能力。大多数部队都具有区域伤害的弱点。由于部队是由复数个分离的个体组成的，所以它无法被召唤。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
@@ -8212,6 +8321,33 @@
             "spellcastingEntry": "法术列表",
             "campaignFeature": "战役特征",
             "shield": "盾牌"
+        },
+        "RegionBehavior": {
+            "modifyMovementCost": "困难地形"
+        }
+    },
+    "TOKEN": {
+        "MOVEMENT": {
+            "ACTIONS": {
+                "walk": {
+                    "label": "行走"
+                },
+                "travel": {
+                    "label": "旅行"
+                },
+                "blink": {
+                    "label": "传送"
+                },
+                "jump": {
+                    "label": "跳跃"
+                },
+                "drive": {
+                    "label": "驾驶"
+                },
+                "deploy": {
+                    "label": "部署"
+                }
+            }
         }
     }
 }
