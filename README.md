@@ -3,7 +3,7 @@
 ![downloads](https://img.shields.io/github/downloads/fvtt-cn/pf2_cn/total)<br/>
 现模组下载量<br/>
 ![Downloads](https://img.shields.io/github/downloads/losyky/pf2e_cn/total.svg)<br/>
-本模组为 FVTT 的 [PF2e 系统](https://gitlab.com/hooking/foundry-vtt---pathfinder-2e)提供了中文翻译。
+本模组为 FVTT 的 [PF2e 系统](https://github.com/foundryvtt/pf2e)提供了中文翻译。
 **建议配合 [Foundry VTT PF2e 合集包中文化](https://github.com/AlphaStarguide/pf2e_compendium_chn)一同使用**。
 
 ## 安装
