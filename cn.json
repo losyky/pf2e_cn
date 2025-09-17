@@ -919,7 +919,8 @@
                         "Invalid": "该配方无效。",
                         "Edit": "编辑持续伤害",
                         "DamageType": "伤害类型",
-                        "Formula": "配方"
+                        "Formula": "配方",
+                        "DC": "DC"
                     },
                     "Name": "持续伤害 ({formula} {damageType})",
                     "NameWithDC": "持续伤害({formula} DC{dc})",
@@ -1530,7 +1531,9 @@
                     "PotencyFundamental2ThreePropertiesMaterial": "+{potency} {fundamental2} {property1} {property2} {property3} {material} {base}",
                     "Hint": "这是基础武器的名称。对大多数武器来说，基础武器被用于生成完整名称，加上材料成分和/或符文。给武器取一个自定义名称或将其标记为“特殊”武器可以阻止系统自动生成名称。",
                     "Reinforcing": "{reinforcing} {base}",
-                    "ReinforcingMaterial": "{reinforcing} {material} {base}"
+                    "ReinforcingMaterial": "{reinforcing} {material} {base}",
+                    "Grade": "{grade} {base}",
+                    "GradeMaterial": "{grade} {material} {base}"
                 },
                 "BrokenThreshold": {
                     "ShortLabel": "BT",
@@ -5385,7 +5388,7 @@
         "TraitDescriptionAlchemical": "炼金物品由炼金试剂反应来提供力量。除非另有说明，炼金物品不具有魔力，也不会散发魔法灵光。炼金生物的部分动力来自炼金反应。",
         "TraitDescriptionAlchemist": "指炼金术士职业能力。",
         "TraitDescriptionAmphibious": "两栖生物能够在水下和空气中呼吸，即便离开自身偏好的生活环境也不会受到影响，它们通常可以无限制地进行呼吸，即便受限也至少可以维持1小时。这些生物通常会具有游泳速度。它们使用的钝击和挥砍无武装打击不会由于身处水下而承受常规的-2减值。",
-        "TraitDescriptionAnadi": "来自加伦德的一个隐居民族，形似蜘蛛，可以模仿人形。",
+        "TraitDescriptionAnadi": "来自伽伦德的一个隐居民族，形似蜘蛛，可以模仿人形。",
         "TraitDescriptionAnroid": "人工创造的类人种族。最常见于纽梅利亚。",
         "TraitDescriptionAphorite": "公理裔是起源于守序位面都市轴心城的位面族裔。",
         "TraitDescriptionArcane": "这个魔法源于奥术法术根源，是建立在逻辑和合理性上的特征，拥有此特征的法术称作魔法。拥有此特征的生物基本是由奥术魔法构成，或与奥术魔法有强烈联系。",
@@ -8407,7 +8410,9 @@
             "Text": "此Foundry Virtual Tabletop系统使用了Paizo Inc.拥有的商标和版权，根据Paizo的社区使用政策(<a href=\"https://paizo.com/community/communityuse\" target=\"_blank\">paizo.com/communityuse</a>)使用。我们被明确禁止向您收取使用或访问此内容的费用。此FoundryVTT系统并非由Paizo发布、认可或特别批准。有关Paizo Inc.和Paizo产品的更多信息，请访问<a href=\"https://paizo.com/\" target=\"_blank\">paizo.com</a>。",
             "Title": "合法公告"
         },
-        "ArmorPropertyRuneSpellwatch": "斥咒"
+        "ArmorPropertyRuneSpellwatch": "斥咒",
+        "PreciousMaterialKeepStone": "护石",
+        "PreciousMaterialKeepStoneDescription": "高盔堡上千年的冶金发展和工程的最高成就是名为护石的优秀合金。尽管它名为护石，但生产护石并不需要使用任何石材。高盔堡最伟大的工匠们通过一种高度保密的冶金工艺将精金与铅熔炼在一起，开发出了一种外观看起来更像是大理石而非金属的材料。护石的强度仅比精金稍弱一点，但却具有着极佳的抗魔性质。以未经加工的护石为目标的任何法术或魔法效果必须成功通过DC 5的纯骰检定，失败会导致效果失效。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
