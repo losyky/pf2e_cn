@@ -361,10 +361,10 @@
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong> 你直接解打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了两次成功结果。你不会留下你曾经撬过过这把锁的痕迹。",
                     "success": "<strong>成功</strong> 你直接解打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了一次成功结果。",
-                    "criticalFailure": "<strong>大失败</strong> 你弄坏了工具包，留下了明显的损坏痕迹。用手艺技能可以@UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{修理 Repair}破损的工具包，或者换一副@UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{替换开锁器 Replacement Picks}。"
+                    "criticalFailure": "<strong>大失败</strong> 你弄坏了工具包，留下了明显的损坏痕迹。用手艺技能可以@UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{修理 Repair}破损的工具包，或者换一副@UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{替换开锁器 replacement picks}。"
                 },
                 "Title": "撬锁",
-                "Description": "<p>在没有钥匙的情况下开锁和解除装置非常类似，但检定的DC取决于你尝试开启的锁的复杂性和结构（锁及对应DC可在其描述中找到）。较高质量的锁可能需要多次成功才能开启。如果你缺少合适工具，GM可能允许你使用临时挑选的工具，这些工具可视作劣质工具包。</p><p><strong>大成功</strong> 你打开了这把锁，或者你在打开一把需要多次成功的锁时取得了两次成功。你没有留下任何改动痕迹。</p><p><strong>成功</strong> 你打开了这把锁，或者你在打开一把需要多次成功的锁时取得了一次成功。你没有留下任何改动痕迹。仔细检查会发现你留下的撬锁痕迹。</p><p><strong>大失败</strong> 你弄坏了工具包，留下了明显的损坏痕迹。用手艺技能可以@UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{修理 Repair}破损的工具包，或者换一副@UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{替换开锁器 Replacement Picks}。</p>"
+                "Description": "<p>在没有钥匙的情况下开锁和解除装置非常类似，但检定的DC取决于你尝试开启的锁的复杂性和结构。较高质量的锁可能需要多次成功才能开启。如果你缺少合适工具，GM可能允许你使用临时挑选的工具，这些工具可视作劣质工具包。</p><p><strong>大成功</strong> 你打开了这把锁，或者你在打开一把需要多次成功的锁时取得了两次成功。你没有留下任何改动痕迹。</p><p><strong>成功</strong> 你打开了这把锁，或者你在打开一把需要多次成功的锁时取得了一次成功。仔细检查会发现你留下的撬锁痕迹。</p><p><strong>大失败</strong> 你弄坏了工具包，留下了明显的损坏痕迹。用手艺技能可以@UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{修理 Repair}破损的工具包，或者换一副@UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{替换开锁器 replacement picks}。</p>"
             },
             "RaiseAShield": {
                 "SingleActionTitle": "举起盾牌",
@@ -594,8 +594,8 @@
             },
             "WhirlingThrow": {
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong> 你将生物扔至所需距离并使其@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。",
-                    "success": "<strong>成功</strong>你将生物扔至所需距离。",
+                    "criticalSuccess": "<strong>大成功</strong> 你将该生物投掷[[/r 10+(5*@actor.abilities.str.mod)]]尺，造成@Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]]伤害，并使其@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。",
+                    "success": "<strong>成功</strong> 你投掷该生物[[/r 10+(5*@actor.abilities.str.mod)]]尺，并造成@Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]]伤害。",
                     "failure": "<strong>失败</strong> 你没能投掷生物。",
                     "criticalFailure": "<strong>大失败</strong> 你没能投掷生物， 并且对方不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed} 或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。"
                 },
