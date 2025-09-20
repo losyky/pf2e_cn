@@ -86,7 +86,8 @@
                 "LittleClaw": "小爪",
                 "FlameHair": "炎发",
                 "HurledDebris": "投掷碎片",
-                "FlamingSword": "炽焰长剑"
+                "FlamingSword": "炽焰长剑",
+                "CarapaceFist": "硬壳拳击"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -100,26 +101,57 @@
                 "CeustodaemonDamageNote": "任何成功的噬咬或爪击都会造成额外的@Damage[1d6[untyped]]伤害，并且你会受到等量伤害",
                 "Note": {
                     "CeustodaemonDamage": "任何成功的颚咬或爪抓打击都额外造成@Damage[1d6[untyped]]伤害，你也承受同额伤害"
+                },
+                "ChoiceSet": {
+                    "Lacridaemon": "孤独邪魔",
+                    "Leukodaemon": "疫病邪魔",
+                    "Meladaemon": "饥馑邪魔",
+                    "Venedaemon": "秘法邪魔"
                 }
             },
             "MonstrosityForm": {
-                "ShroudOfFlame": "火焰护罩"
+                "ShroudOfFlame": "火焰护罩",
+                "ChoiceSet": {
+                    "CaveWorm": "洞穴蠕虫",
+                    "Phoenix": "凤凰",
+                    "SeaSerpent": "大海蛇"
+                }
             },
             "AngelForm": {
-                "DeafenedNote": "重击时@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋}一轮"
+                "DeafenedNote": "重击时@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋}一轮",
+                "ChoiceSet": {
+                    "Balisse": "巴利斯",
+                    "Choral": "科洛",
+                    "Kuribu": "基路伯",
+                    "Tennin": "天人"
+                }
             },
             "CosmicForm": {
                 "MoonNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1轮。",
-                "SunNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩Dazzled}，持续一轮。"
+                "SunNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩Dazzled}，持续一轮。",
+                "Moon": "月亮",
+                "Sun": "太阳"
             },
             "OozeForm": {
-                "GelatinousCubeNote": "你的面触打击命中的生物必须成功通过一次@Check[fortitude|against:spell|traits:incapacitation]豁免，对抗你的法术DC，否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（或者大失败时@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]持续1轮）；该豁免具有失能特征。"
+                "GelatinousCubeNote": "你的面触打击命中的生物必须成功通过一次@Check[fortitude|against:spell|traits:incapacitation]豁免，对抗你的法术DC，否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（或者大失败时@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]持续1轮）；该豁免具有失能特征。",
+                "ChoiceSet": {
+                    "BlackPudding": "黑布丁",
+                    "GelatinousCube": "胶质怪",
+                    "GrayOoze": "灰泥怪",
+                    "OchreJelly": "赭冻怪"
+                }
             },
             "InsectForm": {
                 "SpiderWebNote": "一次成功的蛛网攻击会纠缠目标1轮，但不会造成伤害"
             },
             "AberrantForm": {
-                "GugSqueezeNote": "你的多关节可以让你适应狭小的空间，如同一个中型生物一样。"
+                "GugSqueezeNote": "你的多关节可以让你适应狭小的空间，如同一个中型生物一样。",
+                "ChoiceSet": {
+                    "Chuul": "甲伏怪",
+                    "Gogiteth": "高基特斯",
+                    "Gug": "古革巨人",
+                    "Otyugh": "食腐怪"
+                }
             },
             "ElementEmbodied": {
                 "WaterPushPullNote": "附加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离}或拉近10尺",
@@ -136,7 +168,33 @@
             "DemonForm": {
                 "Note": {
                     "AbrikandiluCritical": "重击时，目标还陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续1分钟。"
-                }
+                },
+                "ChoiceSet": {
+                    "Abrikandilu": "憎美魔",
+                    "Brimorak": "爆燃魔",
+                    "Kithangian": "扼豸魔",
+                    "Vloriak": "食魂厉魔"
+                },
+                "Prompt": "选择一种恶魔。"
+            },
+            "DevilForm": {
+                "ChoiceSet": {
+                    "Coarti": "堕天魔",
+                    "Levaloch": "好战魔",
+                    "Sarglagon": "丧沦魔",
+                    "Vordine": "军团魔"
+                },
+                "Prompt": "选择一种魔鬼。"
+            },
+            "FeyForm": {
+                "ChoiceSet": {
+                    "Dryad": "木林仙女",
+                    "Elananx": "林焰猞猁",
+                    "Naiad": "水泽仙女",
+                    "Redcap": "红帽精",
+                    "Unicorn": "独角兽"
+                },
+                "Prompt": "选择一种精类。"
             }
         },
         "BombNotes": {
@@ -452,20 +510,20 @@
             },
             "TanglefootBag": {
                 "Greater": {
-                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15尺速度减值}，并且目标还陷入持续一回合的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。",
-                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.csA4UAD2tQq7RjT8]{-15尺速度减值}，持续一分钟。"
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-15尺速度减值}，并且目标还陷入持续一回合的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]。",
+                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-15尺速度减值}，持续一分钟。"
                 },
                 "Major": {
-                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。",
-                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.ITAFsW3dQPupJ3DW]{-20速度减值}，持续一分钟。"
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-20尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]。",
+                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-20尺速度减值}，持续一分钟。"
                 },
                 "Moderate": {
-                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15尺速度减值}，持续一分钟。",
-                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.MEreOgnjoRiXPEuq]{-15尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。"
+                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-15尺速度减值}，持续一分钟。",
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-15尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]。"
                 },
                 "Lesser": {
-                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10尺速度减值}，持续一分钟。",
-                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.fYZIanbYu0Vc4JEL]{-10尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。"
+                    "success": "命中时，生物承受@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-10尺速度减值}，持续一分钟。",
+                    "criticalSuccess": "重击时，生物承受持续一分钟的@UUID[Compendium.pf2e.equipment-effects.Item.sgQknR94qDt5ILBx]{-10尺速度减值}，并且目标还会陷入持续一轮的@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]。"
                 }
             },
             "TwigjackSack": {
@@ -1134,7 +1192,7 @@
                         "FieldBenefit": "当投掷带有溅射特征的炼金炸弹时，你可以放弃通常的溅射区域，只对你的主要目标造成溅射伤害。",
                         "GreaterFieldDiscovery": "你可以提升炸弹的溅射范围，让它对周围10尺的生物造成溅射伤害，或者如果你具有溅射扩展专长，则为15尺。",
                         "FieldVials": {
-                            "RollOptionLabel": "万用制剂伤害"
+                            "RollOptionLabel": "课题制剂 - 变种万用制剂伤害"
                         }
                     },
                     "Chirurgeon": {
@@ -1199,9 +1257,9 @@
                 "AdvancedAlchemy": "高阶炼金术",
                 "VersatileVials": "万用制剂",
                 "DebilitatingBomb": {
-                    "AttackRollNote": "目标必须成功通过@Check[fortitude|against:class]，否则便陷入以下效果之一：目眩、耳聋、措手不及或全速度-5尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.VTJ8D23sOIfApEt3]",
+                    "AttackRollNote": "目标必须成功通过@Check[fortitude|against:alchemist]，否则便陷入以下效果之一：目眩、耳聋、措手不及或全速度-5尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.VTJ8D23sOIfApEt3]",
                     "SpeedPenalty": {
-                        "Label": "-5尺速度减值"
+                        "Label": "速度的状态减值"
                     }
                 }
             },
@@ -2202,7 +2260,7 @@
                 "Bloodline": {
                     "Prompt": "选择血统",
                     "BloodMagicDescription": {
-                        "Diabolic": "一个目标受到@Damage[@item.level[fire]]伤害（如果法术已经能造成初始火焰伤害，将此伤害与初始伤害合计后再计算弱点和抗力），或者你于1轮内在欺骗检定上获得+2状态加值。",
+                        "Diabolic": "一个目标受到@Damage[@item.level[fire]]{每法术环级1点火焰伤害}（如果法术已经能造成初始火焰伤害，将此伤害与初始伤害合计后再计算弱点和抗力），或者你于1轮内在欺骗检定上获得+2状态加值。",
                         "Genie": "你的施法能够扭曲现实，从而分散敌人的注意力。你于1轮内在欺骗检定上获得+1状态加值，或者目标于1轮内在察觉上承受-1状态减值。",
                         "Shadow": {
                             "PerceptionPenalty": "察觉上承受-1减值",
@@ -3670,7 +3728,7 @@
                     "Fighter": "你练习过快速切换战斗风格和所需装备。你可以通过交动作将手中任意数量的物品收起，然后最多拿出两把武器或一面盾牌一把武器。"
                 },
                 "CavaliersBanner": {
-                    "Label": "骑兵旗帜——对抗恐惧效果"
+                    "Label": "骑兵旗帜 - 对抗恐惧效果"
                 },
                 "QuickClimb": {
                     "Note": "你获得成功结果时多移动5尺，大成功时多移动10尺，最多不超过你的速度。"
@@ -3927,7 +3985,7 @@
                 "SplitHex": "如果你接下来的动作是施放一个以单一目标为对象的伤害法术，将其环级降低2级（使其比你能施放的最高环级低2级）。如果你如此，你可以选择第二个目标来受到该法术的影响。",
                 "WidenSpell": "如果你接下来的动作是施放一个具有爆发、锥形或直线范围且没有持续时间的法术，则扩展法术的作用区域。对于通常有至少10尺半径爆发影响区域的法术来说，爆发区域半径增加5尺；对于通常长度为15尺或更低的锥形和线形法术，区域长度增加5尺；对于更大的锥形和线形法术则区域长度增加10尺。",
                 "OverwhelmingBreath": "如果你下一个动作是施放一个有武僧特征并且没有持续时间的法术，此法术以及因为法术而进行的任何打击，皆可忽视敌人在物理伤害的抗力，忽视的数值与你的等级相同。",
-                "QuickenedCasting": "如果你下个动作是施放一个吟游诗人戏法、或是一个比你拥有的最高环级吟游诗人法术位至少低2环的吟游诗人法术，则减少1施法动作数量（最小1动作）。",
+                "QuickenedCasting": "如果你下个动作是施放一个吟游诗人戏法、或是一个比你拥有的最高环级法术位至少低2环的法术，则减少1施法动作数量（最小1动作）。",
                 "GrowthSpell": "增大该法术的区域。对于爆发，增加5尺半径；对于锥形，增大锥形10尺；对于线形，增加15尺长度。法术获得木特征。",
                 "BondConservation": "你获得一次额外机会使用汲取连结物品。你可以使用它来施放一个法术，此法术的环级低于先前法术2级及以上，并且必须在你下一轮结束前使用它，否则你会失去这个机会。",
                 "BurningSpell": "除了该法术的其他效果之外，它还会造成@Damage[(@item.rank)[persistent,fire]]伤害。该专长对原本就能够造成持续火焰伤害的法术无效。该法术获得火特征。",
@@ -3996,7 +4054,7 @@
                     "Failure": "生物目眩1分钟。",
                     "Description": "若你的下个动作是施放@UUID[Compendium.pf2e.spells-srd.Item.Yph1UqZU8vMc9bJG]，你能让该精魂对你为中心的@Template[type:emanation|distance:10]区域释放出多彩、明亮、且具有声响的灿烂表象。区域内的每个生物必须尝试@Check[fortitude|against:class-spell]豁免对抗你的职业DC或法术DC且具有后述结果。"
                 },
-                "HeraldicProclamation": "30尺射程内的所有盟友都会获得@Damage[(2*@item.rank)[healing,vitality]|shortLabel]生命值，并且30尺射程内的所有敌人都会承受@Damage[(2*@item.rank)[spirit]|traits:sanctified]伤害，数值等同于法术环级的两倍（@Check[will|basic]豁免对抗你的法术DC）。",
+                "HeraldicProclamation": "30尺射程内的所有盟友都会获得@Damage[(2 * @item.rank)[healing,vitality]|shortLabel]生命值，并且30尺射程内的所有敌人都会承受@Damage[(2 * @item.rank)[spirit]|traits:sanctified]伤害，数值等同于法术环级的两倍（@Check[will|basic]豁免对抗你的法术DC）。",
                 "SinbladedSpell": "如果你的攻击成功或目标对该法术的豁免失败，你对目标造成@Damage[(@item.rank)[bleed]]伤害。"
             },
             "AwakenedAnimal": {
@@ -5501,8 +5559,8 @@
                 "Demoralize": "目标位于迷障术中或类似难以导向的构造中"
             },
             "PoltergeistTelekineticStorm": {
-                "SingleAttackLabel": "心灵风暴-单个目标",
-                "MultiAttackLabel": "心灵风暴-多个目标",
+                "SingleAttackLabel": "心灵风暴 - 单个目标",
+                "MultiAttackLabel": "心灵风暴 - 多个目标",
                 "SingleAttackEffect": "攻击失手时造成@Damage[1d12[untyped]]伤害。",
                 "SingleTarget": "单目标",
                 "MultipleTargets": "多目标"
@@ -5517,8 +5575,8 @@
                 "InspireEnvoyEffectPercWillCha": "意志、察觉以及基于魅力的技能检定加值"
             },
             "SkyDragon": {
-                "DivineLightningGood": "神圣雷霆-精魂伤害",
-                "DivineLightningPositive": "神圣雷霆-命能伤害"
+                "DivineLightningGood": "神圣雷霆 - 精魂伤害",
+                "DivineLightningPositive": "神圣雷霆 - 命能伤害"
             },
             "LemureSubservience": {
                 "Defend": "防守",
@@ -5793,7 +5851,11 @@
                     "Fungus": "真菌",
                     "Wasp": "黄蜂",
                     "Ghost": "幽灵",
-                    "Zombie": "丧尸"
+                    "Zombie": "丧尸",
+                    "Skeleton": "骷髅",
+                    "Coyote": "郊狼",
+                    "Raven": "渡鸦",
+                    "SublimeBreath": "崇高之息"
                 },
                 "Label": "当前形态",
                 "AlterationNotes": {
@@ -5863,8 +5925,8 @@
             },
             "Hadrinnex": {
                 "RapidEvolution": {
-                    "EnergyGland": "Rapid Evolution - Energy Gland",
-                    "Husk": "Rapid Evolution - Husk"
+                    "EnergyGland": "Rapid Evolution — Energy Gland",
+                    "Husk": "Rapid Evolution — Husk"
                 }
             },
             "SoulfiredPot": {
@@ -6026,6 +6088,11 @@
                     "IlluminationColor": "照明共鸣",
                     "Sensory": "感观",
                     "Subterfuge": "诡计"
+                }
+            },
+            "Flynkett": {
+                "KettleUp": {
+                    "BoilingEffect": "@UUID[Compendium.pf2e.bestiary-effects.Item.zNdEXVVMbC9i4Yox]"
                 }
             }
         },
@@ -6374,11 +6441,11 @@
                 },
                 "Major": {
                     "Title": "上等放血弹药",
-                    "Text": "在你用启动的放血弹药对一个生物造成伤害后的1分钟内，该生物获得对持续流血伤害的5点弱点。此外在过程中，终止持续流血伤害的任何纯骰检定的DC都从15增加到17（在接受特别有效的帮助时从10增加到12）。@UUID[Compendium.pf2e.equipment-effects.Item.mrwg2XftLtSLj197]{Effect: 上等放血弹药 Exsanguinating Ammunition (Major)}"
+                    "Text": "在你用启动的放血弹药对一个生物造成伤害后的1分钟内，该生物获得对持续流血伤害的5点弱点。此外在过程中，终止持续流血伤害的任何纯骰检定的DC都从15增加到17（在接受特别有效的帮助时从10增加到12）。@UUID[Compendium.pf2e.equipment-effects.Item.Fz3cSffzDAxhCh2D]"
                 },
                 "Greater": {
                     "Title": "高等放血弹药",
-                    "Text": "在你用启动的放血弹药对一个生物造成伤害后的1分钟内，该生物获得对持续流血伤害的3点弱点。此外在过程中，终止持续流血伤害的任何纯骰检定的DC都从15增加到17（在接受特别有效的帮助时从10增加到12）。@UUID[Compendium.pf2e.equipment-effects.Item.5lZWAvm0oGxvF4bm]{Effect:高等放血弹药 Exsanguinating Ammunition (Greater)}"
+                    "Text": "在你用启动的放血弹药对一个生物造成伤害后的1分钟内，该生物获得对持续流血伤害的3点弱点。此外在过程中，终止持续流血伤害的任何纯骰检定的DC都从15增加到17（在接受特别有效的帮助时从10增加到12）。@UUID[Compendium.pf2e.equipment-effects.Item.Fz3cSffzDAxhCh2D]"
                 }
             },
             "MeteorShot": {
@@ -6403,19 +6470,19 @@
             "OozeAmmunition": {
                 "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}一轮。",
                 "Greater": {
-                    "Text": "生物会受到-10尺速度减值和@Damage[3d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping}(DC 29)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.6Pwdim01PH447CeS]{效果：高等泥怪弹药}",
+                    "Text": "生物会受到-10尺速度减值和@Damage[3d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC29）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
                     "Title": "高等泥怪弹药"
                 },
                 "Lesser": {
-                    "Text": "生物会受到-5尺速度减值和@Damage[1d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping} (DC 16)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.FPvMbKX8sXM9fGJT]{效果：次等泥怪弹药}",
+                    "Text": "生物会受到-5尺速度减值和@Damage[1d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC16）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
                     "Title": "次等泥怪弹药 Ooze Ammunition (Lesser)"
                 },
                 "Moderate": {
                     "Title": "中等泥怪弹药",
-                    "Text": "生物会受到-10尺速度减值和@Damage[2d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping}(DC 20)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.6c4o7ypWWnZKPy5b]{效果：中等泥怪弹药}"
+                    "Text": "生物会受到-10尺速度减值和@Damage[2d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC20）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]"
                 },
                 "Major": {
-                    "Text": "生物会受到-15尺速度减值和@Damage[4d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escaping} (DC 38)粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.UjAJUFMfH0OWWwQS]{Effect: 上等泥怪弹药}",
+                    "Text": "生物会受到-15尺速度减值和@Damage[4d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC38）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
                     "Title": "上等泥怪弹药"
                 }
             }
@@ -6466,7 +6533,10 @@
                 "GasInhaled": "瓦斯和其他吸入类效果",
                 "NonMagicalAttacks": "非魔法攻击",
                 "PhysicalWeaponsOnly": "物理（只限武器）",
-                "MagicalWood": "魔法木"
+                "MagicalWood": "魔法木",
+                "AllDamageFromDivineSpells": "所有来自神术法术的伤害",
+                "Bronze": "青铜",
+                "SpellsFromAllTraditions": "所有根源的法术"
             }
         },
         "Color": {
