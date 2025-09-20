@@ -300,6 +300,15 @@
                 },
                 "Draw": {
                     "Title": "拔出"
+                },
+                "GiveItem": {
+                    "AnItem": "一个物品",
+                    "Description": "{actor}把{item}交给了{other}。",
+                    "Title": "给予物品"
+                },
+                "ExchangeItems": {
+                    "Description": "{actor}和{other}交换了物品。",
+                    "Title": "交换物品"
                 }
             },
             "Impersonate": {
@@ -360,7 +369,7 @@
             "PickALock": {
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong> 你直接解打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了两次成功结果。你不会留下你曾经撬过过这把锁的痕迹。",
-                    "success": "<strong>成功</strong> 你直接解打开了面前的锁，或是在尝试打开结构精良的锁时视为获得了一次成功结果。",
+                    "success": "<strong>成功</strong> 你打开了这把锁，或者你在打开一把需要多次成功的锁时取得了一次成功。你没有留下任何改动痕迹。仔细检查会发现你留下的撬锁痕迹。",
                     "criticalFailure": "<strong>大失败</strong> 你弄坏了工具包，留下了明显的损坏痕迹。用手艺技能可以@UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{修理 Repair}破损的工具包，或者换一副@UUID[Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44]{替换开锁器 replacement picks}。"
                 },
                 "Title": "撬锁",
