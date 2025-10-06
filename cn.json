@@ -850,7 +850,18 @@
                     "Normal": "正常视野"
                 },
                 "DropFeatures": "将族裔特性拖拽于此处。",
-                "Plural": "族裔"
+                "Plural": "族裔",
+                "FIELDS": {
+                    "hands": {
+                        "label": "手"
+                    },
+                    "reach": {
+                        "label": "触及"
+                    },
+                    "speed": {
+                        "label": "速度"
+                    }
+                }
             },
             "Armor": {
                 "Base": {
@@ -906,7 +917,8 @@
                     "Resilient": {
                         "Label": "韧性符文"
                     }
-                }
+                },
+                "GradeOption": "{grade}（+{bonus}； 韧性+{resilient}）"
             },
             "CannotAddType": "无法将{type}物品添加到此角色。",
             "Condition": {
@@ -1575,7 +1587,8 @@
                     "commercial": "商业",
                     "ultimate": "终极",
                     "elite": "精英",
-                    "superior": "卓越"
+                    "superior": "卓越",
+                    "paragon": "典范"
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1695,10 +1708,22 @@
                     "expend": {
                         "label": "消耗",
                         "hint": "这表明每次你用该武器进行远程攻击时消耗多少弹药。其他能力可能会引用\"消耗\"作为完成该动作所需的弹药量。"
+                    },
+                    "ammo": {
+                        "baseType": {
+                            "label": "弹药类型"
+                        },
+                        "builtIn": {
+                            "label": "内建式弹药"
+                        },
+                        "capacity": {
+                            "label": "弹容"
+                        }
                     }
                 },
                 "GradeOption": "{grade} (+{tracking}; {dice} 伤害骰)",
-                "Tracking": "追踪"
+                "Tracking": "追踪",
+                "AnyBasicAmmo": "任意基础弹药"
             },
             "Rules": {
                 "Apply": "应用",
@@ -1921,6 +1946,115 @@
                     "Remove": "移除伤害/治疗",
                     "Add": "添加伤害/治疗",
                     "Label": "伤害/治疗"
+                },
+                "FIELDS": {
+                    "ammo": {
+                        "categories": {
+                            "label": "弹药分类",
+                            "hint": "该物品可被制作成的弹药类型，如果省略则为任意"
+                        },
+                        "baseType": {
+                            "label": "弹药类型"
+                        }
+                    }
+                },
+                "AmmoCategory": {
+                    "arrow": "箭",
+                    "battery": "电池",
+                    "blowgun-dart": "吹箭矢",
+                    "bolt": "弩矢",
+                    "chem": "化学",
+                    "cutlery": "餐具",
+                    "magazine": "弹匣",
+                    "projectile": "投射物",
+                    "round": "枪弹",
+                    "sling-bullet": "投石索弹丸",
+                    "spray-pellet": "弹丸袋",
+                    "weapon": "武器",
+                    "wooden-taw": "投射器木弹"
+                },
+                "AmmoType": {
+                    "arrow": "箭",
+                    "backpack-catapult-stone": "背包投石器用石头",
+                    "blowgun-dart": "吹箭矢",
+                    "battery": "电池",
+                    "bolt": "弩矢",
+                    "chem": "化学",
+                    "cutlery": "餐具",
+                    "magazine-air-repeater": "弹匣（连发气枪）",
+                    "magazine-barricade-buster": "弹匣（破障炮）",
+                    "magazine-long-air-repeater": "弹匣（长连发气枪）",
+                    "magazine-repeating-crossbow": "弹匣（连发弩）",
+                    "magazine-repeating-hand-crossbow": "弹匣（连发手弩）",
+                    "magazine-repeating-heavy-crossbow": "弹匣（连发重弩）",
+                    "magazine": "弹匣",
+                    "projectile": "投射物",
+                    "round": "枪弹（非特定）",
+                    "round-arquebus": "枪弹（火绳枪）",
+                    "round-alicorn-trigger": "枪弹（天角扳机）",
+                    "round-axe-musket": "枪弹（滑膛枪斧）",
+                    "round-black-powder-knuckle-dusters": "枪弹（黑火药指虎）",
+                    "round-blunderbuss": "枪弹（喇叭枪）",
+                    "round-breath-blaster": "枪弹（龙息枪）",
+                    "round-cane-pistol": "枪弹（手杖枪）",
+                    "round-clan-pistol": "枪弹（氏族手枪）",
+                    "round-coat-pistol": "枪弹（袖枪）",
+                    "round-dagger-pistol": "枪弹（匕手枪）",
+                    "round-double-barreled-musket": "枪弹（双管滑膛枪）",
+                    "round-double-barreled-pistol": "枪弹（双管手枪）",
+                    "round-dragon-mouth-pistol": "枪弹（龙口铳）",
+                    "round-drake-rifle": "枪弹（龙兽步枪）",
+                    "round-dueling-pistol": "枪弹（决斗手枪）",
+                    "round-dwarven-scattergun": "枪弹（矮人霰弹枪）",
+                    "round-explosive-dogslicer": "枪弹（爆炸屠狗刀）",
+                    "round-fire-lance": "枪弹（突火矛）",
+                    "round-flingflenser": "枪弹（碎肉枪）",
+                    "round-flintlock-musket": "枪弹（燧发滑膛枪）",
+                    "round-fulmination-fang": "枪弹（雷鸣之牙）",
+                    "round-gnome-amalgam-musket": "枪弹（侏儒混合滑膛枪）",
+                    "round-gun-sword": "枪弹（枪剑）",
+                    "round-hammer-gun": "枪弹（锤枪）",
+                    "round-hand-cannon": "枪弹（手炮）",
+                    "round-harmona-gun": "枪弹（和声鸟枪）",
+                    "round-howler-pistol": "枪弹（啸叫手枪）",
+                    "round-jezail": "枪弹（杰撒伊火枪）",
+                    "round-mace-multipistol": "枪弹（硬头锤多管手枪）",
+                    "round-mithral-tree": "枪弹（朝银之树）",
+                    "round-nightmares-lament": "枪弹（梦魇的挽歌）",
+                    "round-pepperbox": "枪弹（胡椒罐手枪）",
+                    "round-petrification-cannon": "枪弹（石化炮）",
+                    "round-piercing-wind": "枪弹（刺风）",
+                    "round-screech-shooter": "枪弹（尖啸枪）",
+                    "round-shield-pistol": "枪弹（护盾手枪）",
+                    "round-shobhad-longrifle": "枪弹（绍贝德长步枪）",
+                    "round-slide-pistol": "枪弹（排琴手枪）",
+                    "round-tentacle-cannon": "枪弹（触手炮）",
+                    "round-three-peaked-tree": "枪弹（三杈树）",
+                    "round-triggerbrand": "枪弹（扳机剑）",
+                    "sling-bullet": "投石索弹药",
+                    "spray-pellet": "弹丸袋",
+                    "weapon": "武器（任何可以用作弹药的）",
+                    "weapon-dart": "武器（镖）",
+                    "wooden-taw": "投射器木弹",
+                    "round-flintlock-pistol": "枪弹（燧发手枪）",
+                    "round-leydroth-spellbreaker": "枪弹（莱卓斯破法者）",
+                    "round-rapier-pistol": "枪弹（细剑手枪）",
+                    "round-spider-gun": "枪弹（蜘蛛枪）",
+                    "round-spike-launcher": "枪弹（尖刺发射器）"
+                },
+                "IsSpecialAmmo": {
+                    "label": "是特殊弹药",
+                    "hint": "魔法弹药和炼金弹药这样的特殊弹药可以视为一种特殊的弹药类型来制作"
+                },
+                "SpecialAmmoPicker": {
+                    "Prompt": "选择这个物品的弹药类型",
+                    "WeaponSpecific": "武器特有",
+                    "OwnWeapons": "拥有的武器",
+                    "General": "通用"
+                },
+                "Spell": {
+                    "Empty": "空",
+                    "Label": "嵌入的法术"
                 }
             },
             "Container": {
@@ -2490,7 +2624,18 @@
                     "surki": "瑟基虫人语",
                     "wayang": "剪影人",
                     "yaksha": "夜叉",
-                    "aishmayar": "艾什玛雅语"
+                    "aishmayar": "艾什玛雅语",
+                    "mahwek": "马赫韦克",
+                    "tang": "Tang",
+                    "kovintal": "Kovintal",
+                    "ratajin": "Ratajin",
+                    "lashunta": "拉申塔",
+                    "okaiyan": "Okaiyan",
+                    "khattibi": "Khattibi",
+                    "ninshaburian": "Ninshaburian",
+                    "old-keleshite": "Old Keleshite",
+                    "thokol": "Thokol",
+                    "tidespeech": "Tidespeech"
                 }
             },
             "Dead": "死亡",
@@ -2550,7 +2695,11 @@
                     "AddSpecial": "添加特殊"
                 },
                 "SpecialSkill": "+{mod} {label}",
-                "LevelN": "生物 {level}"
+                "LevelN": "生物 {level}",
+                "BonusLabel": {
+                    "modifier": "攻击调整值",
+                    "save": "豁免DC"
+                }
             },
             "Plural": "角色",
             "IWREditor": {
@@ -2686,7 +2835,8 @@
                 },
                 "Label": "速度",
                 "Plural": "速度",
-                "BaseLabel": "{value}-尺 {type}速度"
+                "BaseLabel": "{value}-尺 {type}速度",
+                "BaseWithSource": "{value}尺{type}速度（{source}）"
             },
             "AttackEffects": {
                 "PlusList": "(加 {list})"
@@ -3755,7 +3905,8 @@
                 "40": "40尺",
                 "50": "50尺",
                 "60": "60尺"
-            }
+            },
+            "Abbreviation": "尺"
         },
         "FormulaKnownTitle": "已知配方",
         "FormulaListEmpty": "空（拖放配方/物品至此）",
@@ -4509,7 +4660,11 @@
                     "Corpses": "尸体",
                     "Name": "严谨触及范围",
                     "Merchants": "商人",
-                    "Loot": "战利品"
+                    "Loot": "战利品",
+                    "corpses": "Corpses",
+                    "merchants": "商人",
+                    "doors": "门",
+                    "loot": "战利品"
                 }
             },
             "Homebrew": {
@@ -4791,20 +4946,28 @@
                     "Name": "自动成长加值",
                     "Hint": "启用自动成长加值变体规则。技能效力需要手动管理。",
                     "Choices": {
-                        "noABP": "不使用ABP规则",
+                        "noABP": "禁用",
                         "ABPFundamentalPotency": "ABP：适用基础符文",
                         "ABPRulesAsWritten": "ABP: 不适用基础符文"
                     }
                 },
                 "Proficiency": {
                     "Title": "无关等级的熟练",
-                    "Name": "无关等级的熟练",
-                    "Hint": "使用GMC第85页中的无等级熟练变体进行游戏。",
+                    "Name": "启用",
+                    "Hint": "使用GM核心第85页中的无等级熟练变体进行游戏。启用后，可以自定义熟练加值（默认使用GM核心的数值）。",
                     "Choices": {
                         "ProficiencyWithLevel": "使用默认规则",
                         "ProficiencyWithoutLevel": "使用变体规则"
                     },
-                    "ModifiersHint": "设置每个熟练等级的调整值。"
+                    "ModifiersHint": "设置每个熟练等级的调整值。",
+                    "Legend": "无等级熟练",
+                    "Rank": {
+                        "Expert": "专家",
+                        "Legendary": "传奇",
+                        "Master": "大师",
+                        "Trained": "受训",
+                        "Untrained": "未受训"
+                    }
                 },
                 "UntrainedModifier": {
                     "Name": "未受训熟练调整值",
@@ -4889,6 +5052,13 @@
                 "Always": "总是",
                 "Encounters": "在遭遇中",
                 "Never": "永不"
+            },
+            "DistanceDisplay": {
+                "Name": "显示指示物距离",
+                "always": "总是",
+                "encounters": "在遭遇中",
+                "never": "永不",
+                "Hint": "在场景中显示受控指示物和鼠标悬停指示物之间的距离。"
             }
         },
         "SaveDCLabel": "豁免 <dc>DC {dc}</dc> {type}",
@@ -6478,7 +6648,8 @@
                 "fangs": "尖牙",
                 "nails": "钉",
                 "bladesweeper": "刃帚",
-                "maul-spade": "锤铲"
+                "maul-spade": "锤铲",
+                "backpack-catapult": "背包投石器"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -7722,7 +7893,7 @@
         "TraitKovintus": "Kovintus",
         "TraitDescriptionSubjectiveGravity": "在具有主观重力特征的位面上，所有具有质量的物体都拥有相同重力的重力中心，但只在一个非无心智的生物希望时才会如此。",
         "PreciousMaterialWarpglassDescription": "这种奇异的物质由漩涡的原始、混沌本质制成。它可以被制成武器和物品，但太不稳定，无法制成有用的盔甲或盾牌。原始的扭曲玻璃是一种乳白色的玻璃质材料，具有惊人的强度。加工时，它会改变外观——但不改变性质——呈现出其他金属和不同类型石材的随机条纹。",
-        "PreciousMaterialGrisantianPeltDescription": "",
+        "PreciousMaterialGrisantianPeltDescription": "This supernaturally tough animal skin is gold and shines in sunlight. It can be used to make any item usually made of cloth, leather, or hide. This material is immune to fire, and its Hardness is doubled against piercing or slashing damage. Up to 4 Bulk of grisantian pelt can be harvested from a single creature (this is usually more than enough for 4 suits of standard grade armor or 2 suit of high-grade armor).",
         "BrowserWarnPackNotLoaded": "合集包 \"{pack}\" 无法加载。",
         "PreparationTypeItems": "仅物品",
         "TraitWildHunt": "狂猎",
@@ -7890,7 +8061,7 @@
         "TraitDescriptionHefty": "沉重盾牌的重量非常大，需要花费更大的力气才能举起。举起具有沉重特征的盾牌是一个2动作的行动，除非你的力量等于或大于该特征关联的数值。",
         "TraitDescriptionIntegrated": "该盾牌的结构集成了一把武器，就如一把附着武器一样，但不可以从盾牌上拆下来。",
         "TraitDescriptionLaunching": "这面盾牌内的机构可以发射射弹，如一把远程武器一样运作。该特征后会列出武器的类型，例如“发射飞镖”。利用发射器进行打击和通常情况下需要的手的数量一致，只是持握盾牌的手也计算在内，所以单手远程武器只需要一只手。装填需要正常数量的交互（Interact）动作，最少是1动作，并且你不能使用持握盾牌的手来进行装填。",
-        "TraitDescriptionShieldThrow": "具有该特征的盾牌可以作为远程武器被投掷出去。",
+        "TraitDescriptionShieldThrow": "具有该特征的盾牌可以作为远程武器被投掷出去。当被投掷时，盾牌被视为军用投掷远程武器。它的伤害骰和类型和它的盾击攻击相同，但如果盾牌有附加武器和集成武器，你在投掷盾牌时可以选择用它来进行攻击。你将你的力量调整值加到伤害上，就如同通常的投掷武器那样。该特征后面通常还会注明射程增量。",
         "TraitFoldaway": "折叠",
         "TraitHarnessed": "挽具",
         "TraitLaunching": "发射",
@@ -8165,7 +8336,7 @@
         "TraitDescriptionWraith": "缚灵是一种无形的亡灵生物，充满虚空能量，并被对所有生命的仇恨所驱使。",
         "TraitDescriptionAberration": "异怪是来自位面彼岸、或从自然秩序崩溃中诞生的生物。",
         "TraitDescriptionAquatic": "水生生物住在水下。他们在水下进行的钝击和挥砍无武装攻击不承受通常的–2减值。水生生物可以在水下呼吸，但不能在空气中呼吸。",
-        "TraitDescriptionAthamaru": "Athamarus 是鱼形的水生人型生物。",
+        "TraitDescriptionAthamaru": "阿萨鱼人是鱼形的水生人型生物。",
         "TraitDescriptionBoggard": "沼蜍人是形似蛙类的类人生物。它们通常具有黑暗视觉。",
         "TraitDescriptionCentaur": "人马具有类人生物的上半身和马匹的下半身。",
         "TraitDescriptionDinosaur": "这些爬虫类动物从史前时代存活至今。",
@@ -8422,7 +8593,117 @@
         "TraitRatajin": "Ratajin",
         "TraitLilu": "Lilu",
         "TraitSporeborn": "Sporeborn",
-        "TraitDescriptionWhetstone": "磨刀石是用于提升武器效能的魔法增幅物品"
+        "TraitDescriptionWhetstone": "磨刀石是用于提升武器效能的魔法增幅物品",
+        "ActionWithDC": "{label}（DC{dc}）",
+        "TraitArea": "区域",
+        "TraitDescriptionPalinthanos": "When a cosmic event like Godsrain disturbs all that exists, the River of Souls sometimes flows backward for a brief moment, literally, from the shockwave. Unwilling and confused souls that are forced back far enough can have the agonizing experience of enduring death in reversed time. Some of these souls manage to re-enter the river once the flow returns to normal, but those who are stranded on the metaphorical shores of the living can become palinthanos: powerful undead born from their reversed demise who struggle futilely until their predestined banishment back to the River.",
+        "TraitDescriptionBlight": "Blights are corruptions of nature's wrath.",
+        "TraitDescriptionCertainKill": "The Lightkeeper can use a Certain Kill Art as long as they are within the Glass Lighthouse—these abilities, which have the certain kill trait, cause obvious distortions in the Lighthouse's fabric as the user calls upon their technique. However, as each technique requires one of the Lightkeepers to temporarily take command of the demiplane from the rest of their team, only one Certain Kill Art can be used by any of the Lightkeepers in a given round.",
+        "TraitAnalog": "Analog",
+        "TraitDescriptionAnalog": "This weapon eschews advanced electronics, computers systems, and electric power sources, but was manufactured and calibrated using advanced technology. This weapon is immune to abilities that target technology. Weapon runes don't function on this weapon unless this weapon also has the archaic trait.",
+        "TraitDescriptionAsura": "These lawful fiends are physical manifestations of divine accidents. Asuras typically have darkvision, immunity to curses, and a weakness to good.",
+        "TraitDescriptionCharauKa": "Mandrill-like humanoids that are brutal warriors. Many charau-ka live in Usaro.",
+        "TraitDescriptionDiv": "Divs are a family of fiends spawned from the spirits of evil genies within the desolation of Abaddon. Most divs are neutral evil. They typically have greater darkvision and weakness to cold iron and good damage.",
+        "TraitDescriptionDream": "Creatures native to the Dimension of Dreams can possess a diverse array of abilities, although those associated with the nightmare realm of Leng are almost always unholy and immune to that realm's freezing temperatures.",
+        "TraitDescriptionHerald": "Nearly all deities have a specific representative known as a herald; heralds are as diverse in their appearances and abilities as the gods themselves. A creature with the herald type is always unique.",
+        "TraitDescriptionKovintus": "Reclusive humanoids with an inborn talent for geomancy, kovintus have an intrinsic tie to nature and magic alike",
+        "TraitDescriptionInevitable": "These constructed aeons were created by the axiomites. Each type of inevitable is dedicated to a specific task. Most inevitables have weakness to chaotic damage.",
+        "TraitDescriptionPaaridar": "A paaridar is a humanoid who has gained physical aspects and abilities of a powerful beast through corrupted magical rituals.",
+        "TraitDescriptionSahkil": "Sahkils are fiends that delight in spreading fear and unease among mortal creatures. They typically have darkvision, immunity to fear, and weakness to good.",
+        "TraitDescriptionSamsaran": "Blue-skinned people native to Zi Ha, who reincarnate upon death and recall pieces of their past lives.",
+        "TraitDescriptionSpriggan": "Kin to gnomes, spriggans tend to be evil and can grow in size to resemble giants.",
+        "TraitDescriptionStheno": "Stheno are humanoids related to medusas, with snakes for hair.",
+        "TraitDescriptionTitan": "Titans are enormous, primordial creatures of neargodlike power who predate the mortal races.",
+        "TraitInstalledInRangedWeaponWithoutALoudener": "安装在一把没有增音器的远程武器上",
+        "ItemTransferDialog": {
+            "Button": {
+                "gift": "给予",
+                "move": "转移",
+                "purchase": "出售"
+            },
+            "Prompt": {
+                "gift": "将这个物品给予{actor}？",
+                "move": "将这个物品转移给{actor}？",
+                "purchase": "{actor}想要出售这个物品吗？"
+            },
+            "Title": {
+                "gift": "给予{item}",
+                "move": "转移{item}",
+                "purchase": "出售{item}"
+            }
+        },
+        "TradeDialog": {
+            "Acceptance": {
+                "Rescind": "撤销",
+                "Accept": "接受交易",
+                "NotAccepted": "{user}不同意你的报价。",
+                "Accepted": "{user}同意了你的报价。"
+            },
+            "Error": {
+                "Engaged": "{user}正在交易中。",
+                "LoggedOut": "结束交易：{user}已登出。",
+                "Unavailable": "结束交易：{user}变得不可用了。",
+                "NotTrading": "结束交易：{user}已结束交易。",
+                "OutOfReach": "{self}和{trader}不在彼此的触及范围内。",
+                "Timeout": "结束交易：{user}在{timeout}秒内无回应",
+                "SelectToken": "选择一个与PC或NPC指示物来代表你进行交易。"
+            },
+            "Gift": {
+                "Accepted": "{trader}已收到你的物品。",
+                "Declined": "{trader}已拒绝了你的物品。",
+                "Prompt": {
+                    "Content": "{trader}（{user}）想给{self}{quantity}个{item}。",
+                    "Title": "接受物品？"
+                },
+                "Received": "{self}收到了来自{trader}的物品。"
+            },
+            "Request": {
+                "Prompt": {
+                    "Title": "与{trader}交易？",
+                    "Content": "{trader}（{user}）想要与{self}进行交易。"
+                },
+                "MenuLabel": "请求交易",
+                "Timeout": "{user}没有在30秒内回复你的交易请求。",
+                "Declined": "{trader}（{user}）已拒绝你的交易邀请。",
+                "Requesting": "请求与{trader}进行交易……"
+            },
+            "Sending": "给出：{list}",
+            "Title": "与{trader}进行交易",
+            "You": "你",
+            "Quantity": {
+                "Increment": "增加物品数量",
+                "Label": "{item}数量",
+                "Decrement": "减少物品数量"
+            },
+            "ImgAlt": {
+                "Actor": "{actor}，代表{user}",
+                "Item": "{item}的图标"
+            },
+            "Receiving": "收到：{list}",
+            "Success": {
+                "Finished": "{self}完成了与{trader}的交易。",
+                "NoItems": "交易已完成，但是没有物品被交易。"
+            },
+            "Aborted": "{user}已结束交易：没有物品被交易。"
+        },
+        "TraitDescriptionMorlock": "Morlocks are a family of pale, underground-dwelling humanoids who, generations ago, were regular humans.",
+        "TraitDescriptionMunavri": "Amicable humanoids living in the Darklands, munavris have powerful telekinetic and psychic abilities.",
+        "TraitDescriptionSeaDevil": "Evil ocean-dwelling humanoids, sea devils usually have darkvision and wavesense.",
+        "TraitDescriptionVelstrac": "A family of fiends from the Shadow Plane that are associated with pain and agony. All velstracs possess some form of disturbing gaze.",
+        "TraitDescriptionGrioth": "A grioth is a batlike alien that wields occult powers and can exist in the dark vacuum of space. They have darkvision and echolocation.",
+        "TraitDescriptionShabti": "A shabti is a constructed humanoid originally meant to face judgment for a living creature's sins after death.",
+        "TraitDescriptionSkelm": "These creatures are monstrous, wrathful misanthropes who seek to control others through anger and spite.",
+        "TraitDescriptionSkulk": "Skulks are a family of humanoids whose skin can shift coloration to aid in stealth.",
+        "PreparationTypeFocus": "聚能",
+        "PreparationTypeRitual": "仪式",
+        "SpellcastingItemCreator": {
+            "CantripDeck5": "戏法卡组（5包）",
+            "ItemType": "物品类型",
+            "Label": "从{name}创建一个物品",
+            "NoValidRanks": "没有可用的环级",
+            "Title": "创建一个施法物品",
+            "ViewItem": "查看物品"
+        }
     },
     "DOCUMENT": {
         "Combat": "遭遇",
