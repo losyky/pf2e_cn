@@ -1017,6 +1017,14 @@
                 "ShortTitle": "格挡",
                 "Content": "{actor}开始格挡。",
                 "Title": "格挡"
+            },
+            "AreaFire": {
+                "Title": "Area Fire",
+                "Description": "You hit each creature in the designated area with a range equal to the weapon's range increment (for cone or line) or the designated radius of the explosion (for burst). For burst, you can position the center point anywhere within your first range increment. Any creatures in the area must succeed at a basic reflex save against your class DC plus the tracking value of the weapon. This damage is area damage. Creatures who critically fail this save are subject to effects that occur on a critical hit with this weapon, including the weapon's critical specialization effect. Area Fire has an expend equal to the value listed on the weapon."
+            },
+            "AutoFire": {
+                "Title": "Auto-Fire",
+                "Description": "You hit each creature in a cone with a range equal to half the weapon's range increment without making an attack roll. Any creatures in the area take damage equal to the weapon's damage (basic reflex save against your class DC plus the tracking value of the weapon). This damage is area damage. Creatures that critically fail this save are subject to effects that occur on a critical hit with this weapon, including the weapon's critical specialization effect. Automatic Fire has an expend equal to the number of targets in the area × 2."
             }
         },
         "ActionsCheck": {
