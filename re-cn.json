@@ -268,16 +268,16 @@
             },
             "BottledLightning": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(3[splash])[electricity]]{3点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(3[splash])[electricity]]{3点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[electricity]]{1点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(1[splash])[electricity]]{1点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。"
                 },
                 "Moderate": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[electricity]]{2点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(2[splash])[electricity]]{2点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。"
                 },
                 "Major": {
-                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[electricity]]{4点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "success": "<strong>效果</strong> 这颗炸弹造成@Damage[(4[splash])[electricity]]{4点电击溅射伤害}且目标直至你下回合开始陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。"
                 }
             },
             "CrystalShards": {
@@ -684,7 +684,7 @@
                     "DamageLabel": "通过心能者施法能力施法"
                 },
                 "Amp": {
-                    "ShatterSpace": "你或法术的一个目标被撕裂的空间漩涡所环绕。这是一个灵光，你选择其范围，最大20尺。在灵光内开始回合或在其回合内进入灵光范围的生物受到@Damage[(@item.level)d6[slashing]]伤害，使用基础反射豁免对抗你的法术DC。如果生物在豁免中大失败，它失去平衡并@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。灵光持续到你的下一回合开始。你可以选择灵光是否影响位于弥漫中心的生物。",
+                    "ShatterSpace": "你或法术的一个目标被撕裂的空间漩涡所环绕。这是一个灵光，你选择其范围，最大20尺。在灵光内开始回合或在其回合内进入灵光范围的生物受到@Damage[(@item.level)d6[slashing]]伤害，使用基础反射豁免对抗你的法术DC。如果生物在豁免中大失败，它失去平衡并@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。灵光持续到你的下一回合开始。你可以选择灵光是否影响位于弥漫中心的生物。",
                     "AmpHeightenedLabel": {
                         "AmpHeightenedSeventh": "增幅升阶（7环级）",
                         "AmpHeightenedNinth": "增幅升阶（9环级）",
@@ -791,7 +791,7 @@
                     "HologramCage": "构成监牢的力场墙壁获得了实质。监牢墙壁的每个10尺x10尺段落有10AC，两倍于法术等级的硬度以及4倍于法术等级的生命值。如果在你施法时墙壁的任何一段会穿过生物，施法失败。",
                     "PhaseBolt": {
                         "Heightened": "伤害提升2d4而非1d4。",
-                        "Base": "你的相位矢进入完全相移，变得无形无影，直到射入目标——仿佛它传送到了目标中一般。目标对此次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。此外，相位矢忽略数值等同法术等级一半的硬度与穿刺伤害抗性。大成功时，目标不能受到传送效果影响，直到你的下回合开始。"
+                        "Base": "你的相位矢进入完全相移，变得无形无影，直到射入目标——仿佛它传送到了目标中一般。目标对此次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。此外，相位矢忽略数值等同法术等级一半的硬度与穿刺伤害抗性。大成功时，目标不能受到传送效果影响，直到你的下回合开始。"
                     },
                     "ShatterMind": "你可以选择将法术区域改为@Template[cone|distance:30]或@Template[cone|distance:60]，伤害骰改为d10。豁免失败的生物在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（或在大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。",
                     "Figment": "当你增幅法术时，你可以在其正常效果的基础上创建一个特别分散注意力的幻术。选择法术范围内的一个未被占据的方格。该方格中的幻术为在你下一个回合开始前的单次近战攻击提供夹击。如果你维持法术，幻术的细节变化和转移，让你的敌人不安；夹击幻术的持续时间延长到你下一个回合开始，并且你可以将其移动到法术范围内的任何未被占据的方格。已经识破幻术的生物，夹击幻术不能提供其效果。",
@@ -2018,7 +2018,7 @@
                     "Spellshot": "魔弹射手之道（变体）"
                 },
                 "FinalShot": {
-                    "Note": "不管你的掷骰结果如何，在本次打击之后直到你的下个回合开始你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}并且获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "Note": "不管你的掷骰结果如何，在本次打击之后直到你的下个回合开始你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]并且获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
                     "NoteFailure": "该武器哑火。"
                 }
             },
@@ -2030,7 +2030,7 @@
                     "ModerateToMajor": "你在中阶诅咒生效的情况下施放启示法术后，你立即提升至高阶诅咒。",
                     "NoneToMinor": "在每日准备后，你第一次施放完启示法术完毕后，你的低阶诅咒便显现出来。",
                     "MinorToModerate": "如果你在低阶诅咒生效的情况下施放启示法术，则诅咒在你结束施放法术行动之后立即提升至中阶诅咒。",
-                    "MinorToOffGuard": "你在低阶诅咒的效果之外还陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。",
+                    "MinorToOffGuard": "你在低阶诅咒的效果之外还陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。",
                     "MajorToExtreme": "你在高阶诅咒生效的情况下施放启示法术后，你立即提升至极端诅咒。处于极端诅咒时，你获得@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 2}状态（若你已处于毁灭状态中，毁灭状态值增加2）。每10分钟一次，当你一次攻击骰、技能检定或察觉检定、豁免骰失败时，你可以重骰之并使用第二次的结果。这次重骰拥有幸运特征并且无需动作，意味着你可以在无法行动时重骰。",
                     "Overwhelmed": "在你施放启示法术后，你陷入过载状态。当你过载时，你无法施放和维持任何启示法术"
                 },
@@ -2096,7 +2096,7 @@
                     "ThreeActionLabel": "寸拳（3动作）"
                 },
                 "WolfDrag": {
-                    "Note": "打击成功时，你将目标击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+                    "Note": "打击成功时，你将目标击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
                 },
                 "DragonRoar": {
                     "Label": "第一次攻击惊惧的生物"
@@ -2351,7 +2351,7 @@
                     "Label": "衰弱",
                     "OffGuard": {
                         "Label": "措手不及",
-                        "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                        "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。"
                     }
                 },
                 "OverextendingFeint": {
@@ -2629,7 +2629,7 @@
                             "Description": "你的魔宠摸起来很冷，它的呼吸总是清晰可见。当你施放或维持一个巫术时，你能够以你的魔宠所在方格为中心的@Template[burst|distance:5]范围生成冰。这些方格成为困难地形，直到你下回合开始。"
                         },
                         "StalkingNight": {
-                            "Description": "当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
+                            "Description": "当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
                             "Title": "行夜魔宠"
                         },
                         "ParasiticMight": {
@@ -2984,7 +2984,7 @@
                     "Label": "追查方向 — 调查加值"
                 },
                 "SharedStratagem": {
-                    "Note": "在你下一回合开始前，你指定的盟友对该生物的下一次攻击，该生物对盟友视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。"
+                    "Note": "在你下一回合开始前，你指定的盟友对该生物的下一次攻击，该生物对盟友视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。"
                 },
                 "CertainStratagem": {
                     "Note": "你对目标造成@Damage[(floor((@actor.level+3)/4)d6[precision])[@item.system.damage.damageType]|options:certain-stratagem]{策士之击一半的伤害}"
@@ -3042,7 +3042,7 @@
             },
             "Gnome": {
                 "GrimInsight": {
-                    "SaveNote": "如果你在对抗恐惧效果的豁免检定中成功，你获得大成功作为代替，并且恐惧效果的来源对你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你的下个回合结束。"
+                    "SaveNote": "如果你在对抗恐惧效果的豁免检定中成功，你获得大成功作为代替，并且恐惧效果的来源对你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你的下个回合结束。"
                 }
             },
             "HouseOfPerfection": {
@@ -3200,7 +3200,7 @@
                 },
                 "TitanSwing": {
                     "NoteFifteenFeet": "目标被推离15尺。",
-                    "NoteProne": "目标被推离通常距离的两倍，并被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。",
+                    "NoteProne": "目标被推离通常距离的两倍，并被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                     "NoteTenFeet": "目标被推离10尺。",
                     "NoteFiveFeet": "目标被推离5尺。"
                 },
@@ -3372,7 +3372,7 @@
                     "ProtectionLabel": "获得对物理攻击的抗性",
                     "PhysicalAttackLabel": "防御一次物理攻击"
                 },
-                "SpiritualFlurryNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到你当前回合结束。"
+                "SpiritualFlurryNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你当前回合结束。"
             },
             "FanesFourberie": {
                 "Prompt": "将卡牌当作飞镖或匕首？"
@@ -3510,9 +3510,9 @@
                 }
             },
             "AerialPiledriver": {
-                "CriticalFailureText": "你陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}，目标不再被你擒抱或束缚。",
+                "CriticalFailureText": "你陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]，目标不再被你擒抱或束缚。",
                 "FailureText": "你失去了对目标的控制，它不再被你擒抱或束缚。",
-                "SuccessText": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+                "SuccessText": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
             },
             "AdoptedAncestry": {
                 "Prompt": "选择一个常见族裔。",
@@ -3688,7 +3688,7 @@
                     },
                     "CriticalBlast": {
                         "Fire": "目标受到1d6持续火焰伤害。这次持续伤害增加你涌动攻击骰上的物品加值（比如来自束门环）。",
-                        "Earth": "若目标站在地面，它陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}；若目标不在地面上，它下降最多20尺（你自选距离）。",
+                        "Earth": "若目标站在地面，它陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]；若目标不在地面上，它下降最多20尺（你自选距离）。",
                         "Air": "将目标推离最多10尺。",
                         "Wood": "若重击的目标与一个平面相邻，根茎将纠缠它。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]且必须花费一个交互动作通过@Check[athletics|dc:10]检定来使自己脱困。若目标为虚体、液体或可用其他手段轻易逃脱的生物，它不会被困。",
                         "Metal": "目标受到1d6持续流血伤害；若生物拥有金属性或由金属制成，它转成受到@Damage[1d6[persistent,untyped]]伤害（无类型的锈蚀伤害）。本次持续伤害增加你涌动攻击骰上的物品加值（例如来自束门环）。",
@@ -4042,7 +4042,7 @@
                     "Description": "当你施放念动之手时，你可以移除其持续时间，将其范围修改为20尺，并将其目标修改为在法术的负载限制内的一个有主物品，只要移除该物品不会很费时间。在该法术的标准效果上增加以下内容：如果该物品的主人愿意让你拿走该物品，念动之手将该物品带到你面前。如果该生物不愿意，你必须尝试用贼活检定来偷取目标物品。偷窃物品的通常限制适用，包括你不能偷窃那些非常明显或耗时的物品（如穿着的鞋子或盔甲或正被挥舞的物品），以及你不能从战斗中的生物或其他警戒状态下的生物身上偷窃。在贼活检定成功时，念动之手会把物品带到你面前，如果大失败，你在1小时内不能再使用这种修改。如果你在贼活上的熟练是大师，你可以尝试从战斗中的生物或其他处于警戒状态的生物身上偷窃，不过如果你这样做，该法术的施法时间会增加一个动作。"
                 },
                 "TopplingTentacles": {
-                    "Description": "当你施放黑触手时，用以下效果取代该法术的标准效果：触手沿着该区域的地面滑行，试图阻碍范围内的任何人。粘稠的黑色触手试图@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔绊 Trip}该区域内的每个生物。对每个受影响的生物进行法术攻击骰对抗反射DC。任何被击中的生物都会被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}，并受到@Damage[3d6[bludgeoning]]伤害。每当有生物在该区域内结束其回合时，如果该生物还没有倒地，触手就会试图摔绊它；如果他已经倒地了，就对他造成@Damage[1d6[bludgeoning]]伤害。生物将该法术的区域视为困难地形。"
+                    "Description": "当你施放黑触手时，用以下效果取代该法术的标准效果：触手沿着该区域的地面滑行，试图阻碍范围内的任何人。粘稠的黑色触手试图@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔绊 Trip}该区域内的每个生物。对每个受影响的生物进行法术攻击骰对抗反射DC。任何被击中的生物都会被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]，并受到@Damage[3d6[bludgeoning]]伤害。每当有生物在该区域内结束其回合时，如果该生物还没有倒地，触手就会试图摔绊它；如果他已经倒地了，就对他造成@Damage[1d6[bludgeoning]]伤害。生物将该法术的区域视为困难地形。"
                 },
                 "TracingSigil": {
                     "Description": "当你施放魔法印记时，你可以修改该法术，在其标准效果上添加以下内容：目标会留下一条魔法痕迹，你和其他生物可以尝试@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{追踪 Track}目标，用奥术、自然、神秘或宗教（这必须符合该法术的根源）代替生存检定。与使用生存进行追踪一样，这必须在目标去过的地方进行，并追踪其痕迹；它不允许任何人从远处找到目标。你只能对一个目标以这种方式标上修改过的魔法印记。如果你对第二个目标再次使用这个能力，第一个目标上的魔法印记就会结束，你的标记也会消失。"
@@ -4070,7 +4070,7 @@
                     "Description": "当你施放火墙时，你可以修改其标准效果如下：你可以将火墙术变成一个@Template[burst|distance:10]的火焰，而非5尺厚，10尺半径10尺高的环形火焰。"
                 },
                 "AnimateNet": {
-                    "Description": "当你施展活化绳时，你可以将其目标修改为1张@UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{网 Net}。如果你这样做了，你可以用以下效果取代该法术的标准效果：你使一张网活化起来，并将其丢向周围20尺内的一个中型或小型生物。尝试用法术攻击骰对抗目标的反射DC。如果成功，目标会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，并在其速度上受到-10尺的减值，直到它逃脱；如果大成功，它也会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，直到它逃脱。在法术持续期间逃脱的DC等于你的法术DC。一旦法术结束，逃脱的DC就会回到正常的网的DC（通常是16），并且目标相邻的生物可以通过交互动作来移除网。"
+                    "Description": "当你施展活化绳时，你可以将其目标修改为1张@UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{网 Net}。如果你这样做了，你可以用以下效果取代该法术的标准效果：你使一张网活化起来，并将其丢向周围20尺内的一个中型或小型生物。尝试用法术攻击骰对抗目标的反射DC。如果成功，目标会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，并在其速度上受到-10尺的减值，直到它逃脱；如果大成功，它也会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，直到它逃脱。在法术持续期间逃脱的DC等于你的法术DC。一旦法术结束，逃脱的DC就会回到正常的网的DC（通常是16），并且目标相邻的生物可以通过交互动作来移除网。"
                 },
                 "ScatteredFire": {
                     "Description": "当你施放火球术时，你可以将它的范围修改为两个不重叠的@Template[burst|distance:10]范围。"
@@ -4144,7 +4144,7 @@
                     "Note": "如果你检定依然失败，你陷入@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。"
                 },
                 "DesperateSwing": {
-                    "Note": "如果攻击失败，你的武器会掉落，或者如果你使用非武装攻击，或无法松开武器的情形下，你会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+                    "Note": "如果攻击失败，你的武器会掉落，或者如果你使用非武装攻击，或无法松开武器的情形下，你会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
                 },
                 "AncestralMight": {
                     "SkipChoice": "跳过",
@@ -4917,7 +4917,7 @@
                     },
                     "WhoseCryIsThunder": {
                         "Description": "当你神火解放时，你可以使自身充满电流，直到你下回合开始。在你充满电流时，任何触摸你，用无武装攻击或非触及近战武器伤害你的生物会受到@Damage[1d6[electricity]]伤害。",
-                        "CriticalSpecialization": "你在一次打击中大成功时会激发雷霆震响。目标必须通过@Check[fortitude|against:exemplar|traits:sonic]检定对抗你的职业DC，失败时，他会被击 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]并@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1分钟，这是个音波效果。"
+                        "CriticalSpecialization": "你在一次打击中大成功时会激发雷霆震响。目标必须通过@Check[fortitude|against:exemplar|traits:sonic]检定对抗你的职业DC，失败时，他会被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]并@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1分钟，这是个音波效果。"
                     },
                     "TheMournful": {
                         "Description": "在你进行神火解放时，你的行动有着辛酸的悲壮色彩，使30尺内的一个敌人由于眼中打转的泪水和闪现回忆而@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]；这一个是心灵和情绪效果，持续到你的下回合开始，该敌人在随后10分钟内免疫这一效果。"
@@ -6069,7 +6069,7 @@
             },
             "YetiNightmareGuardianRage": "噩梦守护者狂暴",
             "PunishingStrike": {
-                "Note": "鲁莽的攻击让使用者陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到下一回合开始。如果命中，可以在打击中添加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离Push}效果"
+                "Note": "鲁莽的攻击让使用者陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]直到下一回合开始。如果命中，可以在打击中添加@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离Push}效果"
             },
             "TreerazerPlantAttack": "攻击一个植物",
             "Vampire": {
@@ -6174,7 +6174,7 @@
                 "TargetFeintOrTraitorousBetrayal": "目标由于虚招或Traitorous Betrayal措手不及"
             },
             "CyclopsBully": {
-                "TerrorizingSwing": "如果一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]并受伤，它受到额外2d10点伤害并陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+                "TerrorizingSwing": "如果一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]并受伤，它受到额外2d10点伤害并陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
             },
             "NopperaBo": {
                 "Impersonator": {
