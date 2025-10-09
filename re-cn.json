@@ -782,7 +782,7 @@
                         "Base": "你投射纯净的热量，导致目标燃烧。初始伤害变为1d10火焰伤害加上1点火焰溅射伤害。使用增幅的产生火焰作为近战攻击时，将初始伤害的伤害骰从d10增加到d12。你不会受到增幅引火术的溅射伤害。",
                         "Heightened": "与引火术的正常升阶条目不同，初始伤害增加1d10（近战为1d12），溅射伤害增加1。大失败的持续火焰伤害增加1d4。"
                     },
-                    "HomingBeacon": "选择1个被法术命中的生物（如果法术有法术攻击骰）或1个在对抗法术的豁免中失败的生物（如果法术需要一个豁免）。心能信标释放出信号，让观察者自然注意到该生物，使该生物在1分钟内更容易被发现。如果该生物@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}，他在1分钟内变成隐蔽。如果该生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，他在1分钟内不再隐蔽。",
+                    "HomingBeacon": "选择1个被法术命中的生物（如果法术有法术攻击骰）或1个在对抗法术的豁免中失败的生物（如果法术需要一个豁免）。心能信标释放出信号，让观察者自然注意到该生物，使该生物在1分钟内更容易被发现。如果该生物@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}，他在1分钟内变成隐蔽。如果该生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，他在1分钟内不再隐蔽。",
                     "DetectMagic": {
                         "Base": "你侦测魔法的脉冲帮助你感觉到附近魔法的强项或弱点。当你探测到敌人或危害上有魔法存在时，你会在3个回合内获得对来自该敌人或危害的魔法的豁免+1状态加值。如果你在一次施放侦测魔法的过程中发现了多个魔法来源，你将获得对所有这些魔法的加值。",
                         "Heightened": "对魔法的豁免状态加值增加到+2。"
@@ -841,7 +841,7 @@
                     "TelekineticProjectile": "你的念动射弹能飞得更远。将念动射弹的距离增加到60尺。",
                     "Daze": "你可以在更远的距离上晕眩敌人，晕眩术距离增加到120尺。",
                     "WarpStep": "你能更大幅地跃过空间，当你使用跃迁步时，你获得10尺速度状态加值而非5尺。",
-                    "DeepRoots": "当你施展一个造成@UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{被控制 Controlled}状态或用其他方式强迫目标执行某些动作（例如@UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]）的法术时，你可以选择1个在豁免中大失败的目标。当这个目标完成了法术要求的任何命令之后，或当法术被解除或反制之后，他受到@Damage[(@item.level)d6[mental]]伤害。",
+                    "DeepRoots": "当你施展一个造成@UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]状态或用其他方式强迫目标执行某些动作（例如@UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]）的法术时，你可以选择1个在豁免中大失败的目标。当这个目标完成了法术要求的任何命令之后，或当法术被解除或反制之后，他受到@Damage[(@item.level)d6[mental]]伤害。",
                     "Shield": "你的护盾术可以施展在他人身上。当你施展护盾术，你可以选择30尺内的目标盟友取代你自己获得该法术增益。使用护盾术进行格挡的选择仍然取决于你并占用你的反应。",
                     "StrainMind": "即使你的心灵力量已经干涸，你也能让身体突破极限以使用增幅。你将你知道的消耗1点聚能的增幅应用在法术上。你不支付通常需花费的聚能点数，而是失去受增幅心能戏法环级4倍的生命值，同时你流出鼻血或产生其他可见的伤害表征。",
                     "ThoughtformSummoning": "你可以从你的想象力深处创造一个理想型生物，而非从其他地方召唤一个。每当你召唤一个生物时，你可以选择创造一个该生物的思念构造体。这将赋予它对相当于其等级一半的物理伤害的抵抗力，对力场和精神伤害的弱点5，以及通过敌人的空间而不需要@UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}通过的能力（尽管它不能在一个被占据的空间内结束其回合）。",
@@ -2137,7 +2137,7 @@
                     "Prompt": "选择元素之心的种类"
                 },
                 "ForgeBlessedShot": {
-                    "Note": "忽略目标的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}隐蔽状态，以及目标的次等、标准、高等掩蔽。"
+                    "Note": "忽略目标的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]隐蔽状态，以及目标的次等、标准、高等掩蔽。"
                 },
                 "KneelForNoGod": {
                     "Note": "当你对抗神术时，用失败代替大失败。"
@@ -2629,7 +2629,7 @@
                             "Description": "你的魔宠摸起来很冷，它的呼吸总是清晰可见。当你施放或维持一个巫术时，你能够以你的魔宠所在方格为中心的@Template[burst|distance:5]范围生成冰。这些方格成为困难地形，直到你下回合开始。"
                         },
                         "StalkingNight": {
-                            "Description": "当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
+                            "Description": "当你施放或维持一个巫术时，且你的魔宠与一个敌人相邻，并且你的魔宠对敌人@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，或无踪，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。",
                             "Title": "行夜魔宠"
                         },
                         "ParasiticMight": {
@@ -4070,7 +4070,7 @@
                     "Description": "当你施放火墙时，你可以修改其标准效果如下：你可以将火墙术变成一个@Template[burst|distance:10]的火焰，而非5尺厚，10尺半径10尺高的环形火焰。"
                 },
                 "AnimateNet": {
-                    "Description": "当你施展活化绳时，你可以将其目标修改为1张@UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{网 Net}。如果你这样做了，你可以用以下效果取代该法术的标准效果：你使一张网活化起来，并将其丢向周围20尺内的一个中型或小型生物。尝试用法术攻击骰对抗目标的反射DC。如果成功，目标会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，并在其速度上受到-10尺的减值，直到它逃脱；如果大成功，它也会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它逃脱。在法术持续期间逃脱的DC等于你的法术DC。一旦法术结束，逃脱的DC就会回到正常的网的DC（通常是16），并且目标相邻的生物可以通过交互动作来移除网。"
+                    "Description": "当你施展活化绳时，你可以将其目标修改为1张@UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{网 Net}。如果你这样做了，你可以用以下效果取代该法术的标准效果：你使一张网活化起来，并将其丢向周围20尺内的一个中型或小型生物。尝试用法术攻击骰对抗目标的反射DC。如果成功，目标会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，并在其速度上受到-10尺的减值，直到它逃脱；如果大成功，它也会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，直到它逃脱。在法术持续期间逃脱的DC等于你的法术DC。一旦法术结束，逃脱的DC就会回到正常的网的DC（通常是16），并且目标相邻的生物可以通过交互动作来移除网。"
                 },
                 "ScatteredFire": {
                     "Description": "当你施放火球术时，你可以将它的范围修改为两个不重叠的@Template[burst|distance:10]范围。"
@@ -6174,7 +6174,7 @@
                 "TargetFeintOrTraitorousBetrayal": "目标由于虚招或Traitorous Betrayal措手不及"
             },
             "CyclopsBully": {
-                "TerrorizingSwing": "如果一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}并受伤，它受到额外2d10点伤害并陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
+                "TerrorizingSwing": "如果一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]并受伤，它受到额外2d10点伤害并陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。"
             },
             "NopperaBo": {
                 "Impersonator": {
@@ -7100,7 +7100,7 @@
                 "Text": "这种冰冷的弹药是深蓝色的，而且摸起来感觉很冷。当启动的冰冻弹药命中了一个目标，目标必须通过一个@Check[fortitude|dc:19]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮（在大失败时则陷入缓慢1，持续1分钟）。"
             },
             "OozeAmmunition": {
-                "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}一轮。",
+                "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]一轮。",
                 "Greater": {
                     "Text": "生物会受到-10尺速度减值和@Damage[3d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC29）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
                     "Title": "高等泥怪弹药"
