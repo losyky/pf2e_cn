@@ -805,7 +805,7 @@
                     "criticalFailure": "<strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。"
                 },
                 "Title": "逃脱",
-                "Description": "<p>你尝试从@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{受擒 Grabbed}，@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态中逃脱出来。选择一个生物、物体、法术效果、危害或其他对你施加上述状态的事物。进行一次检定，使用你的无武装攻击调整值对抗效果DC。该DC通常是擒抱你的生物的运动DC，捆绑你的生物的贼活DC，法术效果的法术DC，物体、危害或事物列出的@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC等等。你可以选择进行特技或运动检定代替无武装攻击调整值（该动作依然保有攻击特征）。</p><p><strong>大成功</strong> 你获得自由，移除目标对你施加的擒抱、禁足或束缚状态。你还能立刻行走至多5尺。</p><p><strong>成功</strong> 你获得自由，移除目标对你施法的擒抱、禁足或束缚状态。</p><p><strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。</p>"
+                "Description": "<p>你尝试从@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{受擒 Grabbed}，@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态中逃脱出来。选择一个生物、物体、法术效果、危害或其他对你施加上述状态的事物。进行一次检定，使用你的无武装攻击调整值对抗效果DC。该DC通常是擒抱你的生物的运动DC，捆绑你的生物的贼活DC，法术效果的法术DC，物体、危害或事物列出的@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC等等。你可以选择进行特技或运动检定代替无武装攻击调整值（该动作依然保有攻击特征）。</p><p><strong>大成功</strong> 你获得自由，移除目标对你施加的擒抱、禁足或束缚状态。你还能立刻行走至多5尺。</p><p><strong>成功</strong> 你获得自由，移除目标对你施法的擒抱、禁足或束缚状态。</p><p><strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。</p>"
             },
             "Aid": {
                 "Notes": {
