@@ -2105,6 +2105,16 @@
                     "HeavensThunder": {
                         "RollOptionLabel": "天堂之雷 — 真气波"
                     }
+                },
+                "FiveGodsRam": {
+                    "FailureNote": "你陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "FirstStrike": {
+                        "Note": "你立即推离目标10尺。"
+                    },
+                    "RollOptionLabel": "五神羊",
+                    "SecondStrike": {
+                        "Note": "你立即将目标击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]"
+                    }
                 }
             },
             "Shisk": {
@@ -7325,6 +7335,36 @@
                     "uuid": {
                         "hint": "标记指示物的UUID：标记时自动填充。",
                         "label": "指示物UUID"
+                    }
+                }
+            },
+            "Note": {
+                "FIELDS": {
+                    "outcome": {
+                        "choices": {
+                            "criticalSuccess": "大成功",
+                            "criticalFailure": "大失败",
+                            "failure": "失败",
+                            "success": "成功"
+                        },
+                        "label": "结果"
+                    },
+                    "selector": {
+                        "label": "选择器"
+                    },
+                    "text": {
+                        "label": "文本"
+                    },
+                    "title": {
+                        "label": "标题"
+                    },
+                    "visibility": {
+                        "choices": {
+                            "gm": "仅GM",
+                            "owner": "物品所有者"
+                        },
+                        "hint": "当这个笔记被发送到聊天栏的时候，对谁可见？（默认对所有用户可见）",
+                        "label": "可见"
                     }
                 }
             }
