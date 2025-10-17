@@ -1739,7 +1739,8 @@
                 "Tab": "规则",
                 "Remove": "去除规则元素",
                 "Edit": "编辑JSON",
-                "ViewRollOptions": "查看掷骰选项"
+                "ViewRollOptions": "查看掷骰选项",
+                "CopyToClipboard": "复制到剪贴板"
             },
             "Spell": {
                 "PlaceMeasuredTemplate": "放置{size}-{unit} {shape}",
@@ -8703,7 +8704,8 @@
             "NoValidRanks": "没有可用的环级",
             "Title": "创建一个施法物品",
             "ViewItem": "查看物品"
-        }
+        },
+        "TraitDescriptionTime": "Time creatures are natives of the Dimension of Time. They don't age, and while some might be driven by supernatural hungers, they don't need to eat or drink to survive. They can survive the basic environmental effects of the Dimension of Time."
     },
     "DOCUMENT": {
         "Combat": "遭遇",
