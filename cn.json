@@ -6776,7 +6776,7 @@
             "flaming": {
                 "Name": "炽焰",
                 "Note": {
-                    "criticalSuccess": "当你用此武器的一次打击重击时，你额外造成@Damage[1d10[persistent,fire]]伤害。"
+                    "criticalSuccess": "当你用此武器的一次打击重击时，你额外造成1d10持续火焰伤害。"
                 }
             },
             "frost": {
@@ -6840,7 +6840,7 @@
             "greaterFlaming": {
                 "Name": "高等炽焰",
                 "Note": {
-                    "criticalSuccess": "重击时，你造成额外@Damage[2d10[persistent,fire]]伤害。该武器造成的火焰伤害（包括持续火焰伤害）忽略目标的火焰抗力。",
+                    "criticalSuccess": "重击时，你造成额外2d10持续火焰伤害。该武器造成的火焰伤害（包括持续火焰伤害）忽略目标的火焰抗力。",
                     "success": "该武器造成的火焰伤害忽略目标的火焰抗力。"
                 }
             },
@@ -7069,12 +7069,12 @@
                 "Name": "星魂",
                 "Note": {
                     "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:26]豁免，失败则被驱逐，并在[[/gmr 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
-                    "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用星魂武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。"
+                    "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]符文相同的效果。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。"
                 }
             },
             "greaterAstral": {
                 "Note": {
-                    "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}符文相同的效果，且用此武器进行的打击造成额外@Damage[1d6[spirit]]伤害。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。",
+                    "Note": "该符文拥有与@UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]符文相同的效果。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。",
                     "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:36]豁免，失败则被驱逐，并在[[/gmr 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。"
                 },
                 "Name": "高等星魂"
