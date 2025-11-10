@@ -1723,7 +1723,12 @@
                 },
                 "GradeOption": "{grade} (+{tracking}; {dice} 伤害骰)",
                 "Tracking": "追踪",
-                "AnyBasicAmmo": "任意基础弹药"
+                "AnyBasicAmmo": "任意基础弹药",
+                "Reloader": {
+                    "EmptyMessage": "库存中没有兼容弹药",
+                    "Reload1": "装填",
+                    "ReloadAll": "全部装填"
+                }
             },
             "Rules": {
                 "Apply": "应用",
@@ -2170,6 +2175,125 @@
                 "Category": {
                     "upgrade": "升级"
                 }
+            },
+            "NPCAttack": {
+                "FIELDS": {
+                    "range": {
+                        "increment": {
+                            "label": "射程增量"
+                        },
+                        "max": {
+                            "label": "最大射程"
+                        }
+                    }
+                },
+                "Tags": {
+                    "RangeN": "射程{n}尺",
+                    "RangeIncrementN": "射程增量{n}尺"
+                }
+            },
+            "Ammo": {
+                "FIELDS": {
+                    "baseItem": {
+                        "label": "弹药类型"
+                    },
+                    "craftableAs": {
+                        "label": "可制作为",
+                        "hint": "该物品可以制作成的弹药类型。如果留空，则可以制作任何非弹匣类型的弹药。"
+                    }
+                },
+                "Base": {
+                    "arrows": "箭",
+                    "battery": "电池",
+                    "blowgun-darts": "吹箭矢",
+                    "bolts": "弩矢",
+                    "cutlery": "餐具",
+                    "magazine": "弹匣",
+                    "rounds-gun-sword": "枪弹（枪剑）",
+                    "rounds-gnome-amalgam-musket": "枪弹（侏儒混合滑膛枪）",
+                    "rounds-hammer-gun": "枪弹（锤枪）",
+                    "rounds-hand-cannon": "枪弹（手炮）",
+                    "rounds-piercing-wind": "枪弹（刺风）",
+                    "sling-bullets": "投石索弹药",
+                    "spray-pellets": "弹丸袋",
+                    "rounds": "枪弹",
+                    "wooden-taws": "投射器木弹",
+                    "rounds-blunderbuss": "枪弹（喇叭枪）",
+                    "rounds-breath-blaster": "枪弹（龙息枪）",
+                    "rounds-alicorn-trigger": "枪弹（天角扳机）",
+                    "rounds-arquebus": "枪弹（火绳枪）",
+                    "rounds-axe-musket": "枪弹（滑膛枪斧）",
+                    "rounds-black-powder-knuckle-dusters": "枪弹（黑火药指虎）",
+                    "rounds-tentacle-cannon": "枪弹（触手炮）",
+                    "rounds-three-peaked-tree": "枪弹（三杈树）",
+                    "rounds-spike-launcher": "枪弹（尖刺发射器）",
+                    "rounds-triggerbrand": "枪弹（扳机剑）",
+                    "rounds-spider-gun": "枪弹（蜘蛛枪）",
+                    "magazine-with-6-pellets": "6发弹粒弹匣",
+                    "magazine-with-8-pellets": "8发弹粒弹匣",
+                    "repeating-hand-crossbow-magazine": "连发手弩弹匣",
+                    "repeating-heavy-crossbow-magazine": "连发重弩弹匣",
+                    "rounds-cane-pistol": "枪弹（手杖枪）",
+                    "rounds-clan-pistol": "枪弹（氏族手枪）",
+                    "rounds-coat-pistol": "枪弹（袖枪）",
+                    "rounds-dagger-pistol": "枪弹（匕手枪）",
+                    "rounds-double-barreled-musket": "枪弹（双管滑膛枪）",
+                    "rounds-dragon-mouth-pistol": "枪弹（龙口铳）",
+                    "rounds-drake-rifle": "枪弹（龙兽步枪）",
+                    "rounds-dueling-pistol": "枪弹（决斗手枪）",
+                    "rounds-dwarven-scattergun": "枪弹（矮人霰弹枪）",
+                    "rounds-explosive-dogslicer": "枪弹（爆炸屠狗刀）",
+                    "rounds-fire-lance": "弹药（突火矛） Rounds (Fire Lance)",
+                    "rounds-flingflenser": "枪弹（碎肉枪）",
+                    "rounds-flintlock-musket": "枪弹（燧发滑膛枪）",
+                    "rounds-flintlock-pistol": "枪弹（燧发手枪）",
+                    "rounds-fulmination-fang": "枪弹（雷鸣之牙）",
+                    "rounds-harmona-gun": "枪弹（和声鸟枪）",
+                    "rounds-howler-pistol": "枪弹（啸叫手枪）",
+                    "rounds-jezail": "枪弹（杰撒伊火枪）",
+                    "rounds-leydroth-spellbreaker": "枪弹（莱卓斯破法者）",
+                    "rounds-mace-multipistol": "枪弹（硬头锤多管手枪）",
+                    "rounds-mithral-tree": "枪弹（朝银之树）",
+                    "rounds-nightmares-lament": "枪弹（梦魇的挽歌）",
+                    "rounds-rapier-pistol": "枪弹（细剑手枪）",
+                    "rounds-pepperbox": "枪弹（胡椒罐手枪）",
+                    "rounds-petrification-cannon": "枪弹（石化炮）",
+                    "rounds-screech-shooter": "枪弹（尖啸枪）",
+                    "rounds-shield-pistol": "枪弹（护盾手枪）",
+                    "rounds-shobhad-longrifle": "枪弹（绍贝德长步枪）",
+                    "rounds-slide-pistol": "枪弹（排琴手枪）",
+                    "repeating-crossbow-magazine": "连发弩弹匣",
+                    "rounds-double-barreled-pistol": "枪弹（双管手枪）",
+                    "8-round-magazine": "8发弹匣",
+                    "backpack-catapult-stones": "背包投石器弹丸",
+                    "backpack-ballista-bolts": "背包重弩矢"
+                },
+                "Groups": {
+                    "OwnWeapons": "拥有的武器",
+                    "Weapons": "武器",
+                    "General": "通用",
+                    "WeaponSpecific": "武器特有"
+                },
+                "IsSpecialAmmo": {
+                    "hint": "魔法弹药和炼金弹药这样的特殊弹药可以视为一种特殊的弹药类型来制作",
+                    "label": "是特殊弹药"
+                },
+                "SpecialAmmoPicker": {
+                    "Prompt": "选择这个物品的弹药类型"
+                }
+            },
+            "Treasure": {
+                "FIELDS": {
+                    "category": {
+                        "label": "种类",
+                        "choices": {
+                            "art-object": "艺术品",
+                            "coin": "货币",
+                            "gem": "宝石",
+                            "material": "材料"
+                        }
+                    }
+                }
             }
         },
         "ActionsCheck": {
@@ -2419,7 +2543,9 @@
                     "MythicCallingPlaceholder": "神话感召",
                     "MythicTier": "阶",
                     "MythicCallingShort": "C"
-                }
+                },
+                "EmptyMultipleLabel": "{value}个空位",
+                "EmptyLabel": "空位"
             },
             "Creature": {
                 "Alliance": {
@@ -3409,7 +3535,8 @@
             "cp": "铜币",
             "gp": "金币",
             "pp": "白金币",
-            "sp": "银币"
+            "sp": "银币",
+            "credits": "制作人员"
         },
         "CurrencyCP": "铜币",
         "CurrencyGP": "金币",
@@ -3584,7 +3711,8 @@
                     "axes": "斧",
                     "fortune-effects": "幸运效果",
                     "mythic": "神话",
-                    "time": "时间"
+                    "time": "时间",
+                    "peachwood": "桃木"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -3837,7 +3965,8 @@
             "NoCreatureTokenSelected": "至少选择一个与生物相关联的指示物。",
             "WeaponNoDamage": "武器未造成伤害。",
             "ItemNotFoundByUUID": "未找到UUID为\"{uuid}\"的物品。",
-            "MissingStatisticSelected": "缺少所选角色的数据{statistic}。"
+            "MissingStatisticSelected": "缺少所选角色的数据{statistic}。",
+            "CantPurchaseContainerWithItems": "你不能购买包含物品的容器。"
         },
         "Ethnicity": "种族划分",
         "ExpendSpellTitle": "消耗法术",
@@ -4662,7 +4791,7 @@
                     "Name": "严谨触及范围",
                     "Merchants": "商人",
                     "Loot": "战利品",
-                    "corpses": "Corpses",
+                    "corpses": "尸体",
                     "merchants": "商人",
                     "doors": "门",
                     "loot": "战利品"
@@ -6650,7 +6779,9 @@
                 "nails": "钉",
                 "bladesweeper": "刃帚",
                 "maul-spade": "锤铲",
-                "backpack-catapult": "背包投石器"
+                "backpack-catapult": "背包投石器",
+                "grenade": "手雷",
+                "backpack-ballista": "背包弩炮"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -8747,7 +8878,8 @@
             "treasure": "宝物",
             "spellcastingEntry": "法术列表",
             "campaignFeature": "战役特征",
-            "shield": "盾牌"
+            "shield": "盾牌",
+            "ammo": "弹药"
         },
         "RegionBehavior": {
             "modifyMovementCost": "困难地形"
