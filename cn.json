@@ -1564,7 +1564,7 @@
                         "Label": "拆分物品",
                         "Prompt": "你确定要拆分{attachable}吗？"
                     },
-                    "CraftingCheck": "制作检定",
+                    "CraftingCheck": "手艺检定",
                     "Outcome": {
                         "Failure": "你无法附着{attachable}。",
                         "Success": "{attachable}现在附着在{target}上。"
@@ -3507,17 +3507,17 @@
             "CraftQuantityTitle": "数量",
             "ExpendFormula": "花费配方",
             "ToggleFreeCrafting": "切换免费制作",
-            "ToggleQuickAlchemy": "高速炼金术",
+            "ToggleQuickAlchemy": "高速炼金",
             "UndeletableTooltip": "这个制作配方是另一个物品的一部分，不能单独删除。",
             "QuickAddTitle": "添加此配方到一个或多个制造列表中",
             "NoEligibleEntry": "未找到符合条件的制造列表。",
             "RemoveFormulaDialogTitle": "删除配方",
             "UnprepareFormulaDialogQuestion": "是否确定要取消{name}准备的配方？",
-            "RemoveFormulaDialogQuestion": "是否确定要删除 {name}的配方？",
+            "RemoveFormulaDialogQuestion": "是否确定要删除{name}的配方？",
             "UnprepareFormulaDialogTitle": "取消准备的配方"
         },
         "CraftDCTitle": "DC",
-        "CraftItemTitle": "手艺",
+        "CraftItemTitle": "制作",
         "CreateActionTitle": "创建动作",
         "CreateAttackTitle": "创建攻击",
         "CreateFeatTitle": "创建专长",
