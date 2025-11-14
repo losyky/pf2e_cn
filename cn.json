@@ -4662,7 +4662,7 @@
                 "Remaster": "重制版改动"
             },
             "critFumbleCards": {
-                "hint": "特定骰时自动抽大成功或大失败卡.",
+                "hint": "特定骰时自动抽大成功或大失败卡牌。",
                 "name": "大成功和大失败卡"
             },
             "critFumbleCardButtons": {
@@ -8836,7 +8836,8 @@
             "Title": "创建一个施法物品",
             "ViewItem": "查看物品"
         },
-        "TraitDescriptionTime": "Time creatures are natives of the Dimension of Time. They don't age, and while some might be driven by supernatural hungers, they don't need to eat or drink to survive. They can survive the basic environmental effects of the Dimension of Time."
+        "TraitDescriptionTime": "Time creatures are natives of the Dimension of Time. They don't age, and while some might be driven by supernatural hungers, they don't need to eat or drink to survive. They can survive the basic environmental effects of the Dimension of Time.",
+        "TraitAutomatic": "全自动"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
