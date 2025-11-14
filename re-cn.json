@@ -7074,7 +7074,7 @@
             },
             "ShiningAmmunition": {
                 "Title": "闪光弹药",
-                "Text": "该弹药使半径20尺范围内成为明亮照明（并使更远的20尺范围内成为昏暗照明），持续10分钟。如果它命中了一个目标，它会固定在目标身上，使目标发出同样的光芒。@UUID[Compendium.pf2e.equipment-effects.Item.Sf6UO6vgCeicggOK]{Effect: Shining Ammunition}"
+                "Text": "该弹药使半径20尺范围内成为明亮光照（并使更远的20尺范围内成为昏暗光照），持续10分钟。如果它命中了一个目标，它会固定在目标身上，使目标发出同样的光芒。@UUID[Compendium.pf2e.equipment-effects.Item.Sf6UO6vgCeicggOK]{Effect: Shining Ammunition}"
             },
             "ExsanguinatingAmmunition": {
                 "Normal": {
