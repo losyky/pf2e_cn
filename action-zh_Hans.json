@@ -309,6 +309,10 @@
                 "ExchangeItems": {
                     "Description": "{actor}和{other}交换了物品。",
                     "Title": "交换物品"
+                },
+                "Reload": {
+                    "Description": "{actor}为{weapon}装填{ammo}。",
+                    "Title": "装填"
                 }
             },
             "Impersonate": {
