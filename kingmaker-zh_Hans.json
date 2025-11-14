@@ -440,7 +440,8 @@
                 "concealed": {
                     "name": "隐蔽"
                 }
-            }
+            },
+            "SendToChat": "发送至聊天"
         },
         "TraitDescription": {
             "cavalry": "骑兵主要由骑乘作战的部队组成。",
