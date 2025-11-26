@@ -1024,11 +1024,11 @@
             },
             "AreaFire": {
                 "Title": "区域射击 Area Fire",
-                "Description": "You hit each creature in the designated area with a range equal to the weapon's range increment (for cone or line) or the designated radius of the explosion (for burst). For burst, you can position the center point anywhere within your first range increment. Any creatures in the area must succeed at a basic reflex save against your class DC plus the tracking value of the weapon. This damage is area damage. Creatures who critically fail this save are subject to effects that occur on a critical hit with this weapon, including the weapon's critical specialization effect. Area Fire has an expend equal to the value listed on the weapon."
+                "Description": "你瞄准指定区域内的每个目标，该区域为武器的射程增量（对于锥形或线形）或指定爆炸的爆发范围（对于爆发）。对于爆发，你能将其中心放置在第一个射程增量内。区域内的所有生物都必须通过基础反射豁免，DC为你的职业DC+你武器的追踪值，你不必进行攻击骰。该伤害为区域伤害。豁免大失败的生物都会承受武器重击的附带效果，包括武器的重击专精效果。区域射击的耗弹量同武器列出的耗弹量相同。"
             },
             "AutoFire": {
-                "Title": "自动开火 Auto-Fire",
-                "Description": "You hit each creature in a cone with a range equal to half the weapon's range increment without making an attack roll. Any creatures in the area take damage equal to the weapon's damage (basic reflex save against your class DC plus the tracking value of the weapon). This damage is area damage. Creatures that critically fail this save are subject to effects that occur on a critical hit with this weapon, including the weapon's critical specialization effect. Automatic Fire has an expend equal to the number of targets in the area × 2."
+                "Title": "自动射击 Auto-Fire",
+                "Description": "你尝试攻击锥形区域内的每个目标，锥形的范围等于你武器射程增量的一半，不必进行攻击骰。区域内的所有生物都必须通过基础反射豁免，DC为你的职业DC+你武器的追踪值。该伤害为区域伤害。豁免大失败的生物都会承受武器重击的附带效果，包括武器的重击专精效果。自动射击会耗用目标数量×2的弹药量。"
             },
             "Reload": {
                 "ShortTitle": "装填"
