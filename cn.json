@@ -2514,7 +2514,7 @@
                 "Spellcasting": {
                     "Tab": {
                         "KnownSpells": "已知法术",
-                        "Activations": "启动",
+                        "Activations": "启动项",
                         "Rituals": "仪式"
                     }
                 },
