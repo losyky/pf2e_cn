@@ -8,7 +8,8 @@
             "IncreasedCriticalChance": "如果攻击命中，并且该生物在d20掷骰中掷出19，则该攻击视为一次暴击。但如果19的结果是失手，就不会产生任何效果。",
             "IncreasedReach5": "射程增加5尺",
             "InterruptAction": "命中时，目标的动作会被打断。",
-            "ReduceHiddenCheck": "对@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]生物的纯骰检定DC为@Check[flat|dc:5]。"
+            "ReduceHiddenCheck": "对@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]生物的纯骰检定DC为@Check[flat|dc:5]。",
+            "KnockProneCriticalHit": "重击时，目标被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
         },
         "BattleForm": {
             "Attack": {
@@ -2115,6 +2116,10 @@
                     "SecondStrike": {
                         "Note": "你立即将目标击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]"
                     }
+                },
+                "DodgingRoll": {
+                    "StepOut": "快步离开效果区域",
+                    "StepIn": "快步进入效果区域"
                 }
             },
             "Shisk": {
@@ -2187,6 +2192,9 @@
                 },
                 "BlastResistance": {
                     "RollOptionLabel": "轰鸣抗性 — 对抗目眩或耳聋的豁免"
+                },
+                "MountainStrategy": {
+                    "Note": "若任何生物在一次针对你的攻击中重击并对你造成了伤害，无论该生物是否具有上述列表中的特征之一，你都能够获得针对该生物的伤害加值，持续1分钟。@UUID[Compendium.pf2e.feat-effects.Item.O7OO1kWFEFv6vl3E]"
                 }
             },
             "Fleshwarp": {
@@ -4732,6 +4740,12 @@
                     },
                     "investigator": {
                         "Description": "随着你的冒险，你发展出对细节的敏锐感知和关注。你的察觉熟练等级提升至大师。"
+                    },
+                    "commander": {
+                        "Description": "你已经具备了从各个方面看待问题的能力。你的察觉熟练度提升至大师。"
+                    },
+                    "thaumaturge": {
+                        "Description": "经历冒险之后，你的感官变得锐利，注意力变得细致。你在察觉上的熟练度提升至大师。"
                     }
                 },
                 "Spellcaster": {
@@ -5492,6 +5506,9 @@
                 },
                 "GloriousBanner": {
                     "ToggleLabel": "光荣旗帜 - 指挥官旗帜在视野里"
+                },
+                "ObservationalAnalysis": {
+                    "RollOptionLabel": "观察分析 — 战力评估加成"
                 }
             },
             "DragonForm": {
@@ -5613,6 +5630,11 @@
             "UlfenGuard": {
                 "GuardsFury": {
                     "ToggleLabel": "卫士狂怒 - 与指定盟友相邻"
+                }
+            },
+            "TriangularTeeth": {
+                "Survival": {
+                    "Label": "三角齿 — 水中导航"
                 }
             }
         },
@@ -6736,6 +6758,14 @@
                     "ThrashingBarrageStance": "Thrashing Barrage Stance",
                     "ThrashingFist": "Thrashing Fist"
                 }
+            },
+            "AethusasPrison": {
+                "EnergyImmunity": {
+                    "Fire": "免疫火焰",
+                    "Cold": "免疫寒冷",
+                    "Electricity": "免疫电击",
+                    "Acid": "免疫酸蚀"
+                }
             }
         },
         "UI": {
@@ -7179,7 +7209,8 @@
                 "AllDamageFromDivineSpells": "所有来自神术法术的伤害",
                 "Bronze": "青铜",
                 "SpellsFromAllTraditions": "所有根源的法术",
-                "WispVulnerabilities": "wisp vulnerabilities"
+                "WispVulnerabilities": "wisp vulnerabilities",
+                "InhaledPoisons": "吸入毒素"
             }
         },
         "Color": {
