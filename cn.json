@@ -7823,7 +7823,7 @@
                     "GreaterConstrict": "<p>怪物对任意数量的被其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]的生物造成所列出的伤害。这些生物都可进行一次基础强韧豁免对抗所列出的DC。在豁免中失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，豁免成功的生物在1分钟内免疫高等紧勒的昏迷效果。</p>",
                     "GreaterDarkvision": "<p>拥有高等黑暗视觉的生物可以在黑暗和昏暗光照下正常视物，可惜这种视觉只能看见黑白两色。拥有高等黑暗视觉的生物甚至可以看穿魔法黑暗。</p>",
                     "ImprovedGrab": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通擒获，或者怪物已经使一个生物@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]</p><hr /><p><strong>效果</strong> 若在打击后使用，怪物以自由动作用攻击的身体部位对该生物尝试一次[[/act grapple]]。该尝试不适用也不累计生物的多重攻击减值。</p><p>怪物也可以使用一个动作来进行擒获，选择其正用肢体使之受擒或束缚的生物，并自动延长受擒或束缚时间，直到怪物下回合结束。</p>",
-                    "ImprovedKnockdown": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通击倒</p><hr /><p><strong>效果</strong> 怪物以自由动作对该生物尝试一次[[/act trip]]。该尝试不适用也不累计生物的多重攻击减值。</p>",
+                    "ImprovedKnockdown": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通击倒</p><hr /><p><strong>效果</strong> 怪物以自由动作对该生物尝试一次[[/act trip]]。该尝试不适用也不累计生物的多重攻击减值。</p>",
                     "ImprovedPush": "<p>怪物可以将@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离 Push}作为先制攻击命中后触发的自由动作</p>",
                     "Knockdown": "<p><strong>需求</strong>怪物的最后的动作是一次命中的打击，在其伤害条目中列列有“击倒”。</p><hr /><p><strong>效果</strong> 怪物尝试[[/act trip]]生物。该尝试不适用也不累计怪物的多重攻击减值。</p>",
                     "Lifesense": "<p>生命感知使得怪物能够感知所列范围内所有活物与不死生物的生命力。就如同视觉可以分辨不同的颜色那般，这种感觉可以区分驱使活物的命能和驱使不死生物的虚能。</p>",
