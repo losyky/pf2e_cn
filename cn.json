@@ -2290,7 +2290,8 @@
                             "art-object": "艺术品",
                             "coin": "货币",
                             "gem": "宝石",
-                            "material": "材料"
+                            "material": "材料",
+                            "credstick": "信用点棒"
                         }
                     }
                 }
@@ -3529,14 +3530,15 @@
         "CritFailure": "<strong>大失败</strong>",
         "CritSuccess": "<strong>大成功</strong>",
         "CriticalDamageLabel": "重击",
-        "CriticalHitCardButtonTitle": "抽一张大成功卡",
-        "CriticalFumbleCardButtonTitle": "抽一张大失败卡",
+        "CriticalHitCardButtonTitle": "抽一张大成功卡牌",
+        "CriticalFumbleCardButtonTitle": "抽一张大失败卡牌",
         "CurrencyAbbreviations": {
             "cp": "铜币",
             "gp": "金币",
             "pp": "白金币",
             "sp": "银币",
-            "credits": "制作人员"
+            "credits": "信用点",
+            "upb": "upb"
         },
         "CurrencyCP": "铜币",
         "CurrencyGP": "金币",
@@ -5528,7 +5530,7 @@
             "Distance": "距离：{distance} {unit}"
         },
         "TotalTreasure": "全部宝物",
-        "TotalCoinage": "货币总计",
+        "TotalCoinage": "全部硬币",
         "TotalWealth": "全部财产",
         "TrainedSkillsLabel": "受训技能选项",
         "Traits": "特征",
@@ -7749,7 +7751,9 @@
             "PurchasePrice": "购买价格",
             "Give": "给予",
             "SendToPartyStash": "送到小队储物箱",
-            "LootUnknownNPCMessage": "未知生物"
+            "LootUnknownNPCMessage": "未知生物",
+            "NoPlayerCharacters": "没有可供分发的玩家角色",
+            "AllowConversion": "允许转换铸币类型"
         },
         "vehicle": {
             "VehicleString": "载具",
@@ -7822,9 +7826,9 @@
                     "Grab": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“攫抓”，或怪物已经让一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]状态</p><hr /><p><strong>效果</strong> 如果在一次打击后使用，怪物尝试用发动攻击的部位[[/act grapple]]该生物。该尝试不适用也不累计怪物的多重攻击减值。</p><p>相对的，怪物可以使用攫抓动作，选择一个正被它擒抱或束缚的生物，拥有攫抓特征的肢体将自动将擒抱或束缚状态延长至怪物的下回合结束。</p>",
                     "GreaterConstrict": "<p>怪物对任意数量的被其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]的生物造成所列出的伤害。这些生物都可进行一次基础强韧豁免对抗所列出的DC。在豁免中失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，豁免成功的生物在1分钟内免疫高等紧勒的昏迷效果。</p>",
                     "GreaterDarkvision": "<p>拥有高等黑暗视觉的生物可以在黑暗和昏暗光照下正常视物，可惜这种视觉只能看见黑白两色。拥有高等黑暗视觉的生物甚至可以看穿魔法黑暗。</p>",
-                    "ImprovedGrab": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通擒获，或者怪物已经使一个生物@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]</p><hr /><p><strong>效果</strong> 若在打击后使用，怪物以自由动作用攻击的身体部位对该生物尝试一次[[/act grapple]]。该尝试不适用也不累计生物的多重攻击减值。</p><p>怪物也可以使用一个动作来进行擒获，选择其正用肢体使之受擒或束缚的生物，并自动延长受擒或束缚时间，直到怪物下回合结束。</p>",
+                    "ImprovedGrab": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通擒获，或者怪物已经使一个生物@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]</p><hr /><p><strong>效果</strong> 若在打击后使用，怪物以自由动作用攻击的身体部位对该生物尝试一次[[/act grapple]]。该尝试不适用也不累计生物的多重攻击减值。</p><p>怪物也可以选择一个正用肢体使之受擒或束缚的生物，再次使用一个动作进行精通擒获，将其状态延长至怪物的下个回合结束。</p>",
                     "ImprovedKnockdown": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通击倒</p><hr /><p><strong>效果</strong> 怪物以自由动作对该生物尝试一次[[/act trip]]。该尝试不适用也不累计生物的多重攻击减值。</p>",
-                    "ImprovedPush": "<p>怪物可以将@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{推离 Push}作为先制攻击命中后触发的自由动作</p>",
+                    "ImprovedPush": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“精通推离”</p><hr /><p><strong>效果</strong> 怪物尝试[[/act shove]]生物。该尝试既不应用也不累积怪物的多重攻击减值。如果精通推离列出了距离，则怪物成功推离时的距离改为所列出的距离。</p>",
                     "Knockdown": "<p><strong>需求</strong>怪物的最后的动作是一次命中的打击，在其伤害条目中列列有“击倒”。</p><hr /><p><strong>效果</strong> 怪物尝试[[/act trip]]生物。该尝试不适用也不累计怪物的多重攻击减值。</p>",
                     "Lifesense": "<p>生命感知使得怪物能够感知所列范围内所有活物与不死生物的生命力。就如同视觉可以分辨不同的颜色那般，这种感觉可以区分驱使活物的命能和驱使不死生物的虚能。</p>",
                     "LightBlindness": "<p>当初次暴露在明亮光照下时，该怪物将会@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{失明 Blinded} 直至其下一回合。在初次暴露后，亮光不再使怪物失明，除非其又在黑暗中呆了1小时。然而，只要怪物还处于明亮光照下，它就会保持@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>",
@@ -8731,7 +8735,7 @@
         "TraitDescriptionPalinthanos": "When a cosmic event like Godsrain disturbs all that exists, the River of Souls sometimes flows backward for a brief moment, literally, from the shockwave. Unwilling and confused souls that are forced back far enough can have the agonizing experience of enduring death in reversed time. Some of these souls manage to re-enter the river once the flow returns to normal, but those who are stranded on the metaphorical shores of the living can become palinthanos: powerful undead born from their reversed demise who struggle futilely until their predestined banishment back to the River.",
         "TraitDescriptionBlight": "Blights are corruptions of nature's wrath.",
         "TraitDescriptionCertainKill": "The Lightkeeper can use a Certain Kill Art as long as they are within the Glass Lighthouse—these abilities, which have the certain kill trait, cause obvious distortions in the Lighthouse's fabric as the user calls upon their technique. However, as each technique requires one of the Lightkeepers to temporarily take command of the demiplane from the rest of their team, only one Certain Kill Art can be used by any of the Lightkeepers in a given round.",
-        "TraitAnalog": "Analog",
+        "TraitAnalog": "非电子",
         "TraitDescriptionAnalog": "This weapon eschews advanced electronics, computers systems, and electric power sources, but was manufactured and calibrated using advanced technology. This weapon is immune to abilities that target technology. Weapon runes don't function on this weapon unless this weapon also has the archaic trait.",
         "TraitDescriptionAsura": "These lawful fiends are physical manifestations of divine accidents. Asuras typically have darkvision, immunity to curses, and a weakness to good.",
         "TraitDescriptionCharauKa": "Mandrill-like humanoids that are brutal warriors. Many charau-ka live in Usaro.",
@@ -8751,17 +8755,20 @@
             "Button": {
                 "gift": "给予",
                 "move": "转移",
-                "purchase": "出售"
+                "purchase": "出售",
+                "credits": "转账"
             },
             "Prompt": {
                 "gift": "将这个物品给予{actor}？",
                 "move": "将这个物品转移给{actor}？",
-                "purchase": "{actor}想要出售这个物品吗？"
+                "purchase": "{actor}想要出售这个物品吗？",
+                "credits": "将信用点转给{actor}"
             },
             "Title": {
                 "gift": "给予{item}",
                 "move": "转移{item}",
-                "purchase": "出售{item}"
+                "purchase": "出售{item}",
+                "credits": "信用点转账"
             }
         },
         "TradeDialog": {
@@ -8837,7 +8844,18 @@
             "ViewItem": "查看物品"
         },
         "TraitDescriptionTime": "Time creatures are natives of the Dimension of Time. They don't age, and while some might be driven by supernatural hungers, they don't need to eat or drink to survive. They can survive the basic environmental effects of the Dimension of Time.",
-        "TraitAutomatic": "全自动"
+        "TraitAutomatic": "全自动",
+        "Currency": {
+            "cp": "铜币",
+            "credits": "信用点",
+            "gp": "金币",
+            "pp": "白金币",
+            "sp": "银币",
+            "upb": "通用聚合物基材（UPB）"
+        },
+        "CurrencyLabel": "货币",
+        "TotalCurrency": "全部货币",
+        "TraitDragonet": "微龙"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
