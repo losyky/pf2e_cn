@@ -1392,7 +1392,7 @@
             },
             "Bard": {
                 "Muse": {
-                    "Prompt": "选择缪斯",
+                    "Prompt": "选择一种缪斯",
                     "Enigma": "谜团 Enigma",
                     "Maestro": "大师 Maestro",
                     "Polymath": "博学 Polymath",
@@ -2910,8 +2910,8 @@
                     "Note": "目标在其下回合结束前的近战武器或无武装攻击造成额外1d6伤害。若你施放的是<em>伤害术</em>，则该伤害的类型为虚能，若是<em>治疗术</em>则为命能。@UUID[Compendium.pf2e.feat-effects.Item.eecIuD6sGPX0FJcT]{效果：神力灌注}"
                 },
                 "SacredGround": {
-                    "Harmful": "在10分钟内完全停留在区域内的生物恢复等同于你等级的@Damage[(@actor.level)[void,healing]]{生命值}。此行动会具有治疗与虚能特征并且治疗不死生物（或其它拥有虚能治疗的生物）。",
-                    "Healing": "在10分钟内完全停留在区域内的生物恢复等同于你等级的@Damage[(@actor.level)[void,healing]]{生命值}。此行动会具有治疗与命能特征并且治疗活着的生物。"
+                    "Harmful": "在10分钟内完全停留在区域内的生物恢复等同于你等级的@Damage[(@actor.level)[void,healing]|traits:healing,void]{生命值}。此行动会具有治疗与虚能特征并且治疗不死生物（或其它拥有虚能治疗的生物）。",
+                    "Healing": "在10分钟内完全停留在区域内的生物恢复等同于你等级的@Damage[(@actor.level)[vitality,healing]|traits:healing,vitality]{生命值}。此行动会具有治疗与命能特征并且治疗活着的生物。"
                 },
                 "EmblazonEnergy": {
                     "MatchingDomainPrompt": "相同特征的领域法术？"
@@ -3052,7 +3052,7 @@
                 "GoadingFeint": {
                     "Note": "虚招成功时，取代虚招的通常效果，直到目标的下个回合结束，其对你的下一次攻击骰受到-2环境减值。@UUID[Compendium.pf2e.feat-effects.Item.rflbFzV44Fd6aBLE]"
                 },
-                "PanacheFailure": "直到你的下回合结束为止你获得@UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]",
+                "PanacheFailure": "直到你的下回合结束为止你获得@UUID[Compendium.pf2e.feat-effects.Item.paKKHPds77fq5VTH]{效果：派头 Panache（临时）}",
                 "TheBiggerTheyAre": {
                     "CriticalSuccess": "大成功时，如果你成功穿过了目标占据的方格，目标获得对你的精准伤害弱点，持续到你的回合结束。@UUID[Compendium.pf2e.feat-effects.Item.SLXhPgaeKB0W3k1D]",
                     "Success": "成功时，如果你成功穿过了目标占据的方格，目标在你下次攻击时获得对你的精准伤害弱点。@UUID[Compendium.pf2e.feat-effects.Item.SLXhPgaeKB0W3k1D]"
@@ -7090,10 +7090,10 @@
             "ExplosiveAmmunition": {
                 "Greater": {
                     "Title": "高等爆炸弹药",
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[burst|distance:10]范围内的每个生物都造成@Damage[10d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:30|basic|name:Explosive Ammunition]豁免。"
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[burst|distance:10]范围内的每个生物都造成@Damage[10d6[fire]|options:area-damage]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:30|basic|name:Explosive Ammunition|options:area-effect]豁免。"
                 },
                 "Normal": {
-                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[burst|distance:10]范围内的每个生物都造成@Damage[6d6[fire]]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:25|basic|name:Explosive Ammunition]豁免。",
+                    "Text": "爆炸弹药命中了一个目标便会发生爆炸，对@Template[burst|distance:10]范围内的每个生物都造成@Damage[6d6[fire]|options:area-damage]伤害（包括目标）。每个生物都必须尝试一次@Check[reflex|dc:25|basic|name:Explosive Ammunition|options:area-effect]豁免。",
                     "Title": "爆炸弹药"
                 }
             },
@@ -7394,7 +7394,7 @@
                             "gm": "仅GM",
                             "owner": "物品所有者"
                         },
-                        "hint": "当这个笔记被发送到聊天栏的时候，对谁可见？（默认对所有用户可见）",
+                        "hint": "当这个笔记被发送到聊天栏时，对谁可见？（默认对所有用户可见）",
                         "label": "可见"
                     }
                 }
