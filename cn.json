@@ -3714,7 +3714,9 @@
                     "fortune-effects": "幸运效果",
                     "mythic": "神话",
                     "time": "时间",
-                    "peachwood": "桃木"
+                    "peachwood": "桃木",
+                    "prediction": "预测",
+                    "aging": "衰老"
                 },
                 "ActorIsImmune": "{actor} 对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
@@ -8855,7 +8857,9 @@
         },
         "CurrencyLabel": "货币",
         "TotalCurrency": "全部货币",
-        "TraitDragonet": "微龙"
+        "TraitDragonet": "微龙",
+        "TraitNightmare": "梦魇",
+        "TraitMaftet": "翼狮人"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
