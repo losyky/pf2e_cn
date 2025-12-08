@@ -592,7 +592,7 @@
                     "success": "<strong>成功</strong> 目标被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。",
                     "criticalFailure": "<strong>大失败</strong>你自己失去平衡摔倒了，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。"
                 },
-                "Title": "摔拌",
+                "Title": "摔绊",
                 "Description": "<p>你尝试将敌人摔倒在地上。尝试一个运动技能检定来对抗目标的反射DC。</p><p><strong>大成功</strong> 你的目标立刻被击倒至倒地状态，并承受1d6钝击伤害。<br><strong>成功</strong> 你的目标被击倒至倒地状态。<br><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
             },
             "TumbleThrough": {
