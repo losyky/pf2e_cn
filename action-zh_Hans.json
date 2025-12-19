@@ -1014,7 +1014,7 @@
                 }
             },
             "AffixATalisman": {
-                "Description": "<p><strong>需求</strong> 你必须使用一个@UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]</p><hr><p>你花费10分钟将一个护符附着到一个物品上，你需要将物品放在固定表面上并双手使用修理工具。你也可以使用这个行动来移除一个护符。如果将两个或以上的护符同时附着到一件物品上，护符的效果都会被压制；它们都无法被启动。</p>",
+                "Description": "<p><strong>需求</strong> 你必须使用一个@UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]</p><hr><p>你花费10分钟将一个护符附着到一件物品上，你需要将物品放在固定表面上并双手使用修理工具包。你也可以使用此行动来移除一个护符。将一个以上的护符同时附着到一件物品上会使所有护符失效。它们必须被移除然后重新附着才能被再次使用。</p>",
                 "Title": "附着护符"
             },
             "Parry": {
