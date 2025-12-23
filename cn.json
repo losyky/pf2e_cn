@@ -84,7 +84,7 @@
         "AbilityInt": "智力",
         "AbilityModifierLabel": "属性调整值",
         "AbilityScoresHeader": "属性值",
-        "AbilityFree": "自由点",
+        "AbilityFree": "自选",
         "AbilityId": {
             "cha": "Cha",
             "con": "Con",
@@ -2523,7 +2523,7 @@
                     "SearchPlaceholder": "搜索{items}",
                     "Tooltip": {
                         "ConfirmSelection": "确认选择",
-                        "ViewSheet": "查看表格"
+                        "ViewSheet": "查看角色卡"
                     },
                     "Title": "{type} 选择"
                 },
@@ -2810,7 +2810,7 @@
                         "Label": "可用学识：DC {dc1} ({adjustment1}) 或者 DC {dc2} ({adjustment2})"
                     }
                 },
-                "SimpleSheet": "简易NPC表",
+                "SimpleSheet": "简易NPC角色卡",
                 "SkillsEditor": {
                     "Title": "技能编辑器({actor})",
                     "LorePlaceholder": "木工学识",
@@ -2879,7 +2879,7 @@
                     "ActivateParty": "激活队伍",
                     "CreateMember": "创建新成员",
                     "CreateParty": "创建新队伍",
-                    "OpenSheet": "打开表格"
+                    "OpenSheet": "打开角色卡"
                 },
                 "Skills": "队伍技能",
                 "DefaultName": "队伍",
@@ -4562,7 +4562,7 @@
             "rollingDescription": "DC {dc} (濒死 {dying})",
             "success": "减少1层濒死状态。"
         },
-        "RemoveCoinsByValueLabel": "去除值, 无特定类型",
+        "RemoveCoinsByValueLabel": "按相应价值去除",
         "RemoveCoinsTitle": "去除钱币",
         "RemoveCombatProficiency": {
             "Title": "移除战斗熟练",
@@ -5147,7 +5147,7 @@
             },
             "TOTMToggles": {
                 "Name": "启用心灵剧场",
-                "Hint": "在人物卡上添加额外的开关，以播放心灵剧场。 此操作将允许启用某些功能而无需在Foundry中选定目标。"
+                "Hint": "在角色卡上添加额外的开关，以播放心灵剧场。 此操作将允许启用某些功能而无需在Foundry中选定目标。"
             },
             "CompendiumBrowserSources": {
                 "IgnoreAsGM": "令GM忽略这些设置并查看所有条目。",
@@ -5458,7 +5458,8 @@
             "Ranged": {
                 "Description": "你用你所持的一件武器攻击，选择一个射程内的生物。为你的这次攻击掷攻击骰并用该结果和目标生物的AC比较来决定效果。",
                 "Success": "你造成的伤害依据武器攻击的骰数，并加上全部伤害加值、调整值和减值.",
-                "NoAmmo": "没有足够的弹药去供给{weapon}。请检查{actor}人物卡中的行动栏。"
+                "NoAmmo": "没有足够的弹药去供给{weapon}。请检查{actor}角色卡中的动作栏。",
+                "InsufficientAmmo": "{weapon}中未剩余足够的弹药。请检查{actor}角色卡的动作栏。"
             },
             "Combined": {
                 "Description": "你使用你持用的一件武器攻击或无武装攻击。选择一个在你触及范围（近战攻击）或在射程内（远程攻击）的生物，为你的这次攻击骰攻击骰并将结果和该生物的AC比较来决定效果。",
@@ -6927,7 +6928,7 @@
             "greaterAnchoring": {
                 "Name": "高等锚定",
                 "Note": {
-                    "criticalSuccess": "当你用锚定武器重击一个目标时, 武器对目标施放8环级的@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]（@Check[will|dc:38|name:Greater Anchoring Rune]，反制调整值为[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}），除非目标的意志豁免检定大成功， <em>次元拴绳</em>至少会持续一轮，而不是没有效果。",
+                    "criticalSuccess": "当你用锚定武器重击一个目标时, 武器对目标施放8环@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]（@Check[will|dc:38|name:Greater Anchoring Rune]，反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}），如果目标的意志豁免检定大成功， <em>次元拴绳</em>至少会持续一轮，而不是没有效果。",
                     "success": "当你用该武器命中一个目标但没有重击时，目标受到四环@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]效果影响一轮且没有豁免(反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})。"
                 }
             },
@@ -7714,7 +7715,7 @@
             "LootNamePlaceholder": "战利品",
             "LootNPCsPopupHeader": "选择要获取战利品的指示物",
             "LootNPCsLabel": "从选定指示物中获得战利品",
-            "MerchantDescription": "允许玩家跟商人卡进行交易",
+            "MerchantDescription": "允许玩家与商人卡进行交易",
             "MerchantLabel": "商人",
             "MoveLoot": "移动物品",
             "MoveLootMessage": "你想移动几件物品?",
@@ -8166,7 +8167,7 @@
         "TraitCapacity2": "弹容 2",
         "TraitDescriptionBrace": "迎击武器可以有效伤害移动的目标。当你进行准备以打击一个移动至你触及范围内的敌人时，直到你的下个回合开始，使用迎击武器进行打击时，武器每有一个武器伤害骰，就能造成额外2点精准伤害。",
         "TraitDescriptionCoda": "<p>具有尾声特征的乐器在工作机理上类似于法杖，并且拥有法杖特征。尾声乐器与法杖之间的不同主要有以下两点：一、尾声乐器以音乐器具的形式存在，并且只有吟游诗人才能预备它们。二、由于尾声乐器在物理形态上并非杖，所以你不能使用尾声乐器进行攻击，也不能在其上蚀刻武器符文。</p><p>预备尾声乐器需要演奏部分乐曲的重点章节，这些乐曲与尾声乐器内所蕴含的法术紧密相关——无论它们是来自古老的注解，还是你自己的独家创造。演奏将会在乐器内留下魔法回响，如此一来，你便能利用它们在接下来的一天内，仅仅通过演奏乐曲章节的结尾片段——也就是“尾声”，来完成整首歌谣。</p>",
-        "TraitDescriptionMissive": "信函是一种魔法信件，在启动前必须精心制作和撰写。所有信函都带有[信函]和[消耗品]特征。信函通常由纸张、羊皮纸或牛皮纸制成，但其他任何薄的、可携带的、能在上面写字或压印的材料都可以被制成信函。在制作完成之后，信函是一张空白的纸，直到在上面编制信息之后，才能让它具有魔力。",
+        "TraitDescriptionMissive": "信函是一种魔法信件，在启动前必须精心制作和撰写。所有信函都带有信函和消耗品特征。信函通常由纸张、羊皮纸或牛皮纸制成，但其他任何薄的、可携带的、能在上面写字或压印的材料都可以被制成信函。在制作完成之后，信函是一张空白的纸，直到在上面编制信息之后，才能让它具有魔力。",
         "TraitDescriptionRecovery": "回旋武器是设计成在丢失目标时能返回投掷者手中的投掷武器。当你使用该武器进行了一次不成功的投掷打击时，它在打击完成后会飞回你的手上，让你可以再次尝试。如果当武器返回时，你的手全被占用，它会掉在你所在空间的地上。",
         "TraitDescriptionRazing": "拆毁武器特别擅长伤害物体、构造体、和载具。当你使用拆毁武器对一个物体（包括盾牌和活化物体）、构造体、或载具造成伤害时，每有1个武器伤害骰，该物体就会承受2点额外伤害。",
         "TraitDescriptionTraining": "驯兽武器是用来在训练一个动物参与战斗时帮助动物识别攻击的目标的。使用驯兽武器打击一个生物会为你的动物伙伴或你的动物朋友对该目标进行的下一次攻击骰提供+1环境加值。",
@@ -8322,7 +8323,7 @@
         "ArmorPropertyRuneMisleading": "假象",
         "ArmorPropertyRuneTrueQuenching": "真实钝化",
         "ArmorPropertyRuneLesserDread": "次等恐惧",
-        "Pathfinder": "寻路者",
+        "Pathfinder": "开拓者",
         "InitiativeIsNow": "{name}的先攻值现在为{value}!",
         "ArmorPropertyRuneMalleable": "锻型",
         "TraitVersatileVoid": "多用虚能",
@@ -8735,17 +8736,17 @@
         "ActionWithDC": "{label}（DC{dc}）",
         "TraitArea": "区域",
         "TraitDescriptionPalinthanos": "When a cosmic event like Godsrain disturbs all that exists, the River of Souls sometimes flows backward for a brief moment, literally, from the shockwave. Unwilling and confused souls that are forced back far enough can have the agonizing experience of enduring death in reversed time. Some of these souls manage to re-enter the river once the flow returns to normal, but those who are stranded on the metaphorical shores of the living can become palinthanos: powerful undead born from their reversed demise who struggle futilely until their predestined banishment back to the River.",
-        "TraitDescriptionBlight": "Blights are corruptions of nature's wrath.",
+        "TraitDescriptionBlight": "荒疫是自然之怒的扭曲先兆。",
         "TraitDescriptionCertainKill": "The Lightkeeper can use a Certain Kill Art as long as they are within the Glass Lighthouse—these abilities, which have the certain kill trait, cause obvious distortions in the Lighthouse's fabric as the user calls upon their technique. However, as each technique requires one of the Lightkeepers to temporarily take command of the demiplane from the rest of their team, only one Certain Kill Art can be used by any of the Lightkeepers in a given round.",
         "TraitAnalog": "非电子",
-        "TraitDescriptionAnalog": "This weapon eschews advanced electronics, computers systems, and electric power sources, but was manufactured and calibrated using advanced technology. This weapon is immune to abilities that target technology. Weapon runes don't function on this weapon unless this weapon also has the archaic trait.",
+        "TraitDescriptionAnalog": "此类武器摒弃了先进电子设备、计算机系统和电力能源，完全采用最新尖端技术与现代材料制造校准。此类武器免疫针对科技装备的特殊能力，且除非同时具备古早特征，否则无法蚀刻符文。",
         "TraitDescriptionAsura": "These lawful fiends are physical manifestations of divine accidents. Asuras typically have darkvision, immunity to curses, and a weakness to good.",
         "TraitDescriptionCharauKa": "Mandrill-like humanoids that are brutal warriors. Many charau-ka live in Usaro.",
         "TraitDescriptionDiv": "Divs are a family of fiends spawned from the spirits of evil genies within the desolation of Abaddon. Most divs are neutral evil. They typically have greater darkvision and weakness to cold iron and good damage.",
-        "TraitDescriptionDream": "Creatures native to the Dimension of Dreams can possess a diverse array of abilities, although those associated with the nightmare realm of Leng are almost always unholy and immune to that realm's freezing temperatures.",
-        "TraitDescriptionHerald": "Nearly all deities have a specific representative known as a herald; heralds are as diverse in their appearances and abilities as the gods themselves. A creature with the herald type is always unique.",
+        "TraitDescriptionDream": "这些梦境维度的原住民具有多样的能力，不过那些与名为冷原的噩梦领域有关的生物通常是邪秽的，且他们会免疫此领域的极端低温。",
+        "TraitDescriptionHerald": "几乎所有的神祇都有某种特定的代理人，被称为神使；神使的外观和能力和神祇一样多元。具备神使特征的生物稀有度总是独特。",
         "TraitDescriptionKovintus": "Reclusive humanoids with an inborn talent for geomancy, kovintus have an intrinsic tie to nature and magic alike",
-        "TraitDescriptionInevitable": "These constructed aeons were created by the axiomites. Each type of inevitable is dedicated to a specific task. Most inevitables have weakness to chaotic damage.",
+        "TraitDescriptionInevitable": "这些构装体御衡者是由奇匠族创造的。每种制裁者都专门用于某种特定任务。绝大多数制裁者都具有混乱伤害的弱点。",
         "TraitDescriptionPaaridar": "A paaridar is a humanoid who has gained physical aspects and abilities of a powerful beast through corrupted magical rituals.",
         "TraitDescriptionSahkil": "Sahkils are fiends that delight in spreading fear and unease among mortal creatures. They typically have darkvision, immunity to fear, and weakness to good.",
         "TraitDescriptionSamsaran": "Blue-skinned people native to Zi Ha, who reincarnate upon death and recall pieces of their past lives.",
@@ -8845,7 +8846,7 @@
             "Title": "创建一个施法物品",
             "ViewItem": "查看物品"
         },
-        "TraitDescriptionTime": "Time creatures are natives of the Dimension of Time. They don't age, and while some might be driven by supernatural hungers, they don't need to eat or drink to survive. They can survive the basic environmental effects of the Dimension of Time.",
+        "TraitDescriptionTime": "此类生物是时间次元的原住民。他们不会衰老，尽管其中一部分生物会受到超自然饥饿的驱使，但他们并不需要进食或饮水便能存活。他们能够在时间次元的基础环境效果中存活下来。",
         "TraitAutomatic": "全自动",
         "Currency": {
             "cp": "铜币",
