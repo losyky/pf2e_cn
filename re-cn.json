@@ -6633,12 +6633,12 @@
             },
             "IruxiMaskedMummer": {
                 "DonMask": {
-                    "Akkarok": "Fiery Akkarok",
-                    "Hazi": "Hazi Zephyr-Borne",
-                    "KingOfStorms": "King of Storms",
-                    "Nessek": "Nessek, the Wave Dancer",
-                    "Prompt": "Select an ancestral spirit.",
-                    "Zalok": "Zalok, Who was Called to Black Harbor"
+                    "Akkarok": "炽焰阿卡洛克 Fiery Akkarok",
+                    "Hazi": "流风之子哈兹 Hazi Zephyr-Borne",
+                    "KingOfStorms": "风暴君王 King of Storms",
+                    "Nessek": "浪舞者尼赛克 Nessek, the Wave Dancer",
+                    "Prompt": "选择一个先祖精魂。",
+                    "Zalok": "黑港召唤者扎洛克 Zalok, Who was Called to Black Harbor"
                 }
             },
             "ChangeFormation": {
@@ -6742,7 +6742,7 @@
                 "DescriptionAddendum": "When the despot casts <em>charm</em>, <em>diabolic edict</em>, <em>enthrall</em>, or <em>floating flame</em>, either a target takes @Damage[(@item.rank)[fire]] damage, or the despot gains a +2 status bonus to Deception checks for 1 round."
             },
             "KeepUpWithMe": {
-                "RollOptionLabel": "Keep Up With Me! — Increase DC of an ability"
+                "RollOptionLabel": "跟上我！—增加一项能力的DC"
             },
             "ModularProstheses": {
                 "GaffHook": "Gaff Hook",
@@ -6752,10 +6752,10 @@
             "MixedMartialArtist": {
                 "StanceShift": {
                     "CrossElbow": "Cross Elbow",
-                    "ElbowKnockoutStance": "Elbow Knockout Stance",
+                    "ElbowKnockoutStance": "金刚架肘势 Elbow Knockout Stance",
                     "GrapplingLimb": "Grappling Limb",
-                    "SecureGrappleStance": "Secure Grapple Stance",
-                    "ThrashingBarrageStance": "Thrashing Barrage Stance",
+                    "SecureGrappleStance": "银丝锁蛟势 Secure Grapple Stance",
+                    "ThrashingBarrageStance": "刚风摧山势 Thrashing Barrage Stance",
                     "ThrashingFist": "Thrashing Fist"
                 }
             },
