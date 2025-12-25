@@ -685,7 +685,7 @@
                     "DamageLabel": "通过心能者施法能力施法"
                 },
                 "Amp": {
-                    "ShatterSpace": "你或法术的一个目标被撕裂的空间漩涡所环绕。这是一个灵光，你选择其范围，最大20尺。在灵光内开始回合或在其回合内进入灵光范围的生物受到@Damage[(@item.level)d6[slashing]]伤害，使用基础反射豁免对抗你的法术DC。如果生物在豁免中大失败，它失去平衡并@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。灵光持续到你的下一回合开始。你可以选择灵光是否影响位于弥漫中心的生物。",
+                    "ShatterSpace": "你或法术的一个目标被撕裂的空间漩涡所环绕。这是一个灵光，你选择其范围，最大20尺。在灵光内开始回合或在其回合内进入灵光范围的生物受到Damage[(@item.level)d6[slashing]|options:area-damage]伤害，@Check[reflex|against:occult|basic|options:area-effect,inflicts:prone]豁免对抗你的法术DC。如果生物在豁免中大失败，它失去平衡并@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。灵光持续到你的下一回合开始。你可以选择灵光是否影响位于弥漫中心的生物。",
                     "AmpHeightenedLabel": {
                         "AmpHeightenedSeventh": "增幅升阶（7环级）",
                         "AmpHeightenedNinth": "增幅升阶（9环级）",
@@ -797,7 +797,7 @@
                     "ShatterMind": "你可以选择将法术区域改为@Template[cone|distance:30]或@Template[cone|distance:60]，伤害骰改为d10。豁免失败的生物在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（或在大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。",
                     "Figment": "当你增幅法术时，你可以在其正常效果的基础上创建一个特别分散注意力的幻术。选择法术范围内的一个未被占据的方格。该方格中的幻术为在你下一个回合开始前的单次近战攻击提供夹击。如果你维持法术，幻术的细节变化和转移，让你的敌人不安；夹击幻术的持续时间延长到你下一个回合开始，并且你可以将其移动到法术范围内的任何未被占据的方格。已经识破幻术的生物，夹击幻术不能提供其效果。",
                     "ForeseeThePath": "法术在失败时的结果与成功时相同（但在大失败时仍无效果）。每次你维持法术时，你可以选择一个额外的盟友作为目标，给予他们与初始目标盟友相同的增益。",
-                    "TargetOfPsychicIre": "选择法术的一个目标。种种精神现象向这一目标发难——例如，物件忽然撞向生物。在目标的每个回合开始时，它将受到@Damage[(@item.level)d4[bludgeoning]]伤害，适用基础反射豁免。目标将在3个回合中持续受到心怒聚焦的标记。即使你@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或离开该区域，该效果也会持续。",
+                    "TargetOfPsychicIre": "选择法术的一个目标。种种精神现象向这一目标发难——例如，物件忽然撞向生物。在目标的每个回合开始时，它将受到@Damage[(@item.level)d4[bludgeoning]]伤害，@Check[reflex|against:occult|basic]豁免。目标将在3个回合中持续受到心怒聚焦的标记。即使你@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]或离开该区域，该效果也会持续。",
                     "InertialBarrier": "你或法术的1个目标获得对物理伤害的抗力，数值等于2+法术环级，直到你的下一回合开始。",
                     "MentalBalm": "你或一个30尺内的盟友在对抗情绪效果的意志豁免上获得+2状态加值，持续1分钟。你也可以尝试利用这个增幅过的心能戏法反制对你或你所选盟友施加惊惧或呆滞状态的效果，只要该呆滞状态的持续时间在1小时或以内。如果你反制成功，你终止了惊惧和呆滞状态，但你不能终止效果可能存在的其他任何部分。",
                     "WarpSpace": "选择30尺内一个你有视线和效果线的方格。从该位置决定法术的效果线和视线，也决定生物相对该法术是否具有掩蔽。该法术可以超过根据你原本位置测量的常规射程，只要法术目标到你选择的方格的距离在其常规射程内。",
@@ -5583,7 +5583,7 @@
                 "Note": "若你失败，你可以在一周后或提升一级后再次尝试，以先发生的情况为准。"
             },
             "Parry": {
-                "Prompt": "你正持握一把有格挡特征的武器？"
+                "Prompt": "你的武器有格挡特征吗？"
             },
             "SpectralDagger": {
                 "InstrumentOfDeath": {
@@ -7210,7 +7210,9 @@
                 "Bronze": "青铜",
                 "SpellsFromAllTraditions": "所有根源的法术",
                 "WispVulnerabilities": "wisp vulnerabilities",
-                "InhaledPoisons": "吸入毒素"
+                "InhaledPoisons": "吸入毒素",
+                "ElementalInstinct": "damage dealt by instinct element creatures",
+                "HarvestBlood": "damage dealt by last Harvest Blood target"
             }
         },
         "Color": {
@@ -7258,7 +7260,29 @@
             "Sky": "天龙",
             "Sovereign": "君龙",
             "Umbral": "影龙",
-            "Underworld": "伏藏龙"
+            "Underworld": "伏藏龙",
+            "Bog": "沼泽龙",
+            "Barrage": "弹幕龙",
+            "Delight": "狂欢龙",
+            "Coral": "珊瑚龙",
+            "Despair": "绝望龙",
+            "Cinder": "灰烬龙",
+            "Executor": "执裁龙",
+            "Mocking": "诳嘲龙",
+            "Oath": "誓约龙",
+            "Phase": "相位龙",
+            "Resurrection": "复生龙",
+            "Rime": "霜龙",
+            "Rune": "符文龙",
+            "Sage": "贤者龙",
+            "Stormcrown": "风冠龙",
+            "Wish": "祈愿龙",
+            "Time": "时光龙",
+            "Vizier": "执政龙",
+            "Vorpal": "锋锐龙",
+            "Wailing": "哀嚎龙",
+            "Whisper": "低语龙",
+            "Requiem": "安魂龙"
         },
         "FeatDescription": {
             "Frequency": {
@@ -7305,6 +7329,10 @@
                 "Skill": "技能检定",
                 "Attack": "攻击检定",
                 "Perception": "察觉检定"
+            },
+            "TargetNumber": {
+                "Single": "单个目标",
+                "Multiple": "多个目标"
             }
         },
         "RULES": {
@@ -7398,6 +7426,11 @@
                         "label": "可见"
                     }
                 }
+            }
+        },
+        "HazardAbility": {
+            "HauntedForge": {
+                "StrikeNote": "目标@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。"
             }
         }
     }
