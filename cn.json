@@ -902,7 +902,12 @@
                     "power-suit": "力量套装",
                     "subterfuge-suit": "隐秘套装",
                     "kilted-breastplate": "裙装胸甲",
-                    "rattan-armor": "藤甲"
+                    "rattan-armor": "藤甲",
+                    "abadarcorp-travel-suit": "阿巴达尔集团旅行服装",
+                    "aegis-series": "神盾套装",
+                    "carbon-skin": "碳素皮肤",
+                    "defiance-series": "反抗套装",
+                    "defrex-hide": "裂爪兽革甲"
                 },
                 "Category": {
                     "light-barding": "轻型坐骑护甲",
@@ -2797,7 +2802,9 @@
                         "Content": "该武器已生成攻击。你想换替换它吗？",
                         "Title": "重新生成攻击"
                     },
-                    "Notification": "生成NPC攻击: {attack}",
+                    "Notification": {
+                        "New": "生成NPC攻击：{attack}"
+                    },
                     "Label": "生成攻击"
                 },
                 "Identification": {
@@ -8861,7 +8868,25 @@
         "TraitDragonet": "微龙",
         "TraitNightmare": "梦魇",
         "TraitMaftet": "翼狮人",
-        "PropertyRuneLabel5": "性能符文 (5th)"
+        "PropertyRuneLabel5": "性能符文 (5th)",
+        "TraitAnchoring": "锚定",
+        "TraitArchaic": "古早",
+        "TraitArc": "电弧",
+        "ArmorGroupPolymer": "聚合甲",
+        "Starfinder": "寻星者",
+        "TraitBarathu": "飞螅族",
+        "TraitAreaCone": "区域（锥形）",
+        "TraitAreaLine": "区域（线形）",
+        "TraitAttuned": "调谐",
+        "TraitAreaBurst10Ft": "区域（爆发10尺）",
+        "TraitAreaBurst15Ft": "区域（爆发15尺）",
+        "TraitAreaBurst20Ft": "区域（爆发20尺）",
+        "TraitAreaBurst25Ft": "区域（爆发25尺）",
+        "TraitAreaBurst30Ft": "区域（爆发30尺）",
+        "TraitAreaBurst5Ft": "区域（爆发5尺）",
+        "TraitAstrazoan": "星蛸族",
+        "ArmorGroupCeramic": "陶瓷甲",
+        "SystemNameShort": "开拓者"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
