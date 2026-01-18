@@ -907,7 +907,20 @@
                     "aegis-series": "神盾套装",
                     "carbon-skin": "碳素皮肤",
                     "defiance-series": "反抗套装",
-                    "defrex-hide": "裂爪兽革甲"
+                    "defrex-hide": "裂爪兽革甲",
+                    "flight-suit": "飞行服",
+                    "freebooter-armor": "掠夺者护甲",
+                    "hardlight-series": "实光套装",
+                    "hidden-soldier-armor": "隐匿士兵护甲",
+                    "kyokor-plating": "狂寇壳甲",
+                    "microcord-armor": "微纤护甲",
+                    "second-skin": "第二皮肤",
+                    "shotalashu-armor": "念力巨蜥护甲",
+                    "skyfire-armor": "天火护甲",
+                    "swarmsuit": "集群服",
+                    "tempweave": "保温织服",
+                    "thinplate": "薄板甲",
+                    "veskarium-imperial-plate": "维斯卡里姆帝国板甲"
                 },
                 "Category": {
                     "light-barding": "轻型坐骑护甲",
@@ -1496,9 +1509,10 @@
                     "AlchemicalFood": "炼金食物"
                 },
                 "FromSpell": {
-                    "Scroll": "{name} 卷轴 ({level}环级)",
-                    "Wand": "{name} 魔杖 ({level}环级)",
-                    "CantripDeck5": "{name}戏法套牌（5卡包）"
+                    "Scroll": "{name} 卷轴（{level}环级）",
+                    "Wand": "{name} 魔杖（{level}环级）",
+                    "CantripDeck5": "{name}戏法套牌（5卡包）",
+                    "spell-gem": "{name} 法术宝石（{level}环级）"
                 },
                 "Bulk": {
                     "Light": {
@@ -1909,7 +1923,14 @@
                     "steel-shield": "钢盾",
                     "swordstealer-shield": "盗剑盾",
                     "tower-shield": "塔盾",
-                    "wooden-shield": "木盾"
+                    "wooden-shield": "木盾",
+                    "irising-shield": "虹圈盾",
+                    "carbon-shield": "碳素盾",
+                    "mobile-bulwark": "移动壁垒",
+                    "compact-shield": "袖珍盾",
+                    "deflecting-field": "偏斜力场",
+                    "phase-shield": "相位盾",
+                    "riot-shield": "镇暴盾"
                 },
                 "Specific": {
                     "Hint": "将此盾牌标记为<i>特殊魔法盾牌</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
@@ -1951,7 +1972,8 @@
                     "scroll": "卷轴",
                     "snare": "圈套",
                     "talisman": "护符",
-                    "toolkit": "工具包"
+                    "toolkit": "工具包",
+                    "spell-gem": "法术宝石"
                 },
                 "Damage": {
                     "Remove": "移除伤害/治疗",
@@ -2195,7 +2217,8 @@
                 "Tags": {
                     "RangeN": "射程{n}尺",
                     "RangeIncrementN": "射程增量{n}尺"
-                }
+                },
+                "LinkedWeapon": "已链接武器"
             },
             "Ammo": {
                 "FIELDS": {
@@ -2768,7 +2791,26 @@
                     "ninshaburian": "Ninshaburian",
                     "old-keleshite": "Old Keleshite",
                     "thokol": "Thokol",
-                    "tidespeech": "Tidespeech"
+                    "tidespeech": "Tidespeech",
+                    "aballonian": "阿巴隆语",
+                    "brethedan": "布雷瑟达语",
+                    "castrovelian": "卡斯卓韦语",
+                    "diasporan": "流散带语",
+                    "eoxian": "伊奥克斯语",
+                    "jinsul": "烬蛛语",
+                    "kalo": "卡洛语",
+                    "kasatha": "卡萨斯语",
+                    "khizar": "奇植语",
+                    "kothama": "科萨玛语",
+                    "morandomandranan": "莫兰朵曼德拉南语",
+                    "pact-common": "协约世界通用语",
+                    "pahtra": "趴爪语",
+                    "prelurian": "普雷卢里亚语",
+                    "sarcesian": "萨瑟蝶人语",
+                    "sarcesian-signed": "萨瑟蝶人手语",
+                    "vercite": "威瑟斯语",
+                    "vesk": "维斯克语",
+                    "vlaka": "弗拉卡语"
                 }
             },
             "Dead": "死亡",
@@ -2803,7 +2845,8 @@
                         "Title": "重新生成攻击"
                     },
                     "Notification": {
-                        "New": "生成NPC攻击：{attack}"
+                        "New": "生成NPC攻击：{attack}",
+                        "Relinked": "已重连NPC攻击：{attack}"
                     },
                     "Label": "生成攻击"
                 },
@@ -5650,7 +5693,7 @@
         "TraitComplex": "复杂",
         "TraitCompanion": "伙伴",
         "TraitComposition": "组曲",
-        "TraitConcealable": "隐蔽",
+        "TraitConcealable": "易藏",
         "TraitConcentrate": "专注",
         "TraitConcussive": "震荡",
         "TraitConfusion": "困惑",
@@ -5738,7 +5781,7 @@
         "TraitDescriptionCompanion": "具有此特征的物品可供动物伙伴或类似生物佩戴。一个伙伴最多可以绑定两个物品。",
         "TraitDescriptionComplex": "具有这种特性的危害会在遭遇模式中轮流发生。",
         "TraitDescriptionComposition": "要施放一个组曲戏法或聚能法术，你须先进行某一种类的表演。若该法术需要某种听觉类表演，你可以吟诵诗篇，引吭高歌，或是表演一段夸张的独角戏。若该法术需要某种视觉类表演，则你可能会翩翩起舞或是上演哑剧。你每一回合只能施放一次组曲法术，且同时只能有一种组曲法术生效。若你施放了一个新的组曲法术，先前组曲法术的任何现存效果都会立即终止。",
-        "TraitDescriptionConcealable": "该武器设计地非常不起眼，或是能够轻易被隐藏起来。你在隐藏或伪装具有隐蔽特征的武器时所使用的隐秘检定以及隐秘DC上获得+2环境加值。",
+        "TraitDescriptionConcealable": "该武器设计得非常不起眼，或是能够轻易被隐藏起来。你在隐藏或伪装具有易藏特征的武器时所使用的隐秘检定以及隐秘DC上获得+2环境加值。",
         "TraitDescriptionConcentrate": "具有该特征的动作需要精神在一定程度上保持专注和自制。",
         "TraitDescriptionConcussive": "这些武器的冲击力和穿透力一样强。当决定某个生物对此武器的伤害适用何种抗力或免疫时，选择目标对穿刺或钝击伤害更弱的抗力或免疫。例如，如果生物对穿刺伤害免疫，并且对钝击伤害没有抗力或免疫，它将受到来自震荡武器的全部伤害。对所有物理伤害的抗力或免疫，或对全伤害的抗力或免疫都正常生效。",
         "TraitDescriptionConjuration": "具有该特征的效果和魔法物品与魔法的咒法学派相关联，通常包含召唤、创造、传送或移动物品的效果。",
