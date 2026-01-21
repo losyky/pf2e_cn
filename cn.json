@@ -2788,7 +2788,7 @@
                     "lashunta": "拉申塔语",
                     "okaiyan": "Okaiyan",
                     "khattibi": "Khattibi",
-                    "ninshaburian": "Ninshaburian",
+                    "ninshaburian": "宁沙巴语",
                     "old-keleshite": "Old Keleshite",
                     "thokol": "Thokol",
                     "tidespeech": "Tidespeech",
@@ -4763,7 +4763,7 @@
             },
             "WorldSchemaVersion": {
                 "Name": "角色表格格式",
-                "Hint": "记录PF2e系统中文档的耐力值版本（除非你知道自己在做什么，否则不要修改）。"
+                "Hint": "记录系统中文档的耐力值版本（除非你知道自己在做什么，否则不要修改）。"
             },
             "IgnoreCoinBulk": {
                 "Name": "硬币是无重量的",
@@ -4802,7 +4802,7 @@
                 "Hint": "自定义你的游戏世界所引用的自动化模块。",
                 "RulesBasedVision": {
                     "Name": "基于规则的视野",
-                    "Hint": "使用符合开拓者二版规则的视觉机制。启用此设置将无法使用配置不受限全局视野以及角色视野半径的功能。",
+                    "Hint": "使用符合游戏规则的视觉机制。启用此设置将无法使用配置不受限全局视野以及指示物视野半径的功能。",
                     "ManagedBy": "受控于基础规则视野。",
                     "ViewWorldSetting": "浏览世界设置"
                 },
@@ -4901,15 +4901,15 @@
                 },
                 "WeaponCategories": {
                     "Name": "武器类别",
-                    "Hint": "PF2e武器的主要分类（例如，简易、军事）"
+                    "Hint": "武器的主要分类（例如，简易、军事）"
                 },
                 "WeaponGroups": {
                     "Name": "武器组",
-                    "Hint": "PF2e武器的次级分类（例如，弩、剑）"
+                    "Hint": "武器的次级分类（例如，弩、剑）"
                 },
                 "BaseWeapons": {
                     "Name": "武器基本类型",
-                    "Hint": "PF2e武器的底层分类（例如，重弩，长剑）"
+                    "Hint": "武器的底层分类（例如，重弩，长剑）"
                 },
                 "WeaponTraits": {
                     "Name": "武器特征",
@@ -4943,12 +4943,12 @@
                     "Hint": "可应用于盾牌的特征"
                 },
                 "ArmorGroups": {
-                    "Hint": "PF2e护甲的次级分类（例如，板甲、链甲）",
+                    "Hint": "护甲的次级分类（例如，板甲、链甲）",
                     "Name": "护甲组"
                 },
                 "BaseArmors": {
                     "Name": "护甲基本类型",
-                    "Hint": "PF2e护甲的底层分类（ 如全身甲、链甲）"
+                    "Hint": "护甲的底层分类（ 如全身甲、链甲）"
                 },
                 "ClassTraits": {
                     "Name": "职业特征",
@@ -6836,7 +6836,82 @@
                 "maul-spade": "锤铲",
                 "backpack-catapult": "背包投石器",
                 "grenade": "手雷",
-                "backpack-ballista": "背包弩炮"
+                "backpack-ballista": "背包弩炮",
+                "arc-rifle": "电弧步枪",
+                "artillery-laser": "激光炮",
+                "arc-pistol": "电弧手枪",
+                "force-needle": "强力注射器",
+                "grenade-launcher": "榴弹发射器",
+                "grindblade": "断切刃",
+                "gyrojet-pistol": "爆弹手枪",
+                "knife": "短刀",
+                "acid-dart-rifle": "酸镖步枪",
+                "thermal-dynafan": "热动能扇",
+                "vertebralis-thorn": "脊刺",
+                "crossbolter": "弩弹枪",
+                "zero-pistol": "零度手枪",
+                "breaching-gun": "破障枪",
+                "pulse-gauntlet": "脉冲护手",
+                "rotating-pistol": "转轮手枪",
+                "pulsecaster-pistol": "脉冲手枪",
+                "reaction-breacher": "破障反冲炮",
+                "reality-ripper": "现实撕裂者",
+                "replica-zo-microphone": "复刻版丧氏麦克风",
+                "starfall-pistol": "流星手枪",
+                "stellar-cannon": "恒星炮",
+                "streetsweeper": "除垒炮",
+                "tailblade": "尾刃",
+                "talon": "爪刃",
+                "sonic-rifle": "音波步枪",
+                "aeon-rifle": "万古步枪",
+                "arc-emitter": "电弧发射器",
+                "baton": "警棍",
+                "battle-ribbon": "战斗丝带",
+                "battleglove": "战斗手套",
+                "bio-cannon": "生物炮",
+                "assassin-rifle": "刺客步枪",
+                "aucturnite-chakram": "奥克腾岩飞轮",
+                "autotarget-rifle": "自瞄步枪",
+                "laser-pistol": "激光手枪",
+                "laser-rifle": "激光步枪",
+                "machine-gun": "机枪",
+                "blockthrower": "冰块投掷器",
+                "bone-scepter": "骸骨权杖",
+                "boom-pistol": "音爆手枪",
+                "card-slinger": "射牌器",
+                "coil-rifle": "线圈步枪",
+                "cryopike": "冻寒长矛",
+                "disintegration-lash": "解离鞭",
+                "doshko": "多什斧",
+                "dueling-sword": "决斗剑",
+                "fangblade": "链锯剑",
+                "flamethrower": "喷火器",
+                "ivory-chompers": "象牙牙套",
+                "nano-edge-rapier": "纳米锋刃刺剑",
+                "neural-lash": "心神鞭",
+                "painglaive": "苦痛大砍刀",
+                "plasma-cannon": "等离子炮",
+                "plasma-caster": "等离子爆能枪",
+                "plasma-doshko": "等离子多什斧",
+                "plasma-sword": "等离子长剑",
+                "polyglove": "聚合手套",
+                "rotolaser": "转轮激光枪",
+                "scattergun": "霰弹枪",
+                "screamer": "尖声炮",
+                "seeker-rifle": "追猎者步枪",
+                "semi-auto-pistol": "半自动手枪",
+                "shooting-starknife": "弹射星刃",
+                "shuriken-drone": "手里剑无人机",
+                "shirren-eye-rifle": "复眼步枪",
+                "shock-pad": "震击垫",
+                "shock-truncheon": "震击警棍",
+                "singing-coil": "击音线圈",
+                "singing-spear": "击音矛",
+                "skyfire-sword": "天火剑",
+                "zero-cannon": "零度炮",
+                "zero-knife": "零度短刃",
+                "magnetar-rifle": "磁星步枪",
+                "quantum-reaver": "量子掠夺者"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -8988,7 +9063,32 @@
         "TraitThought": "思维",
         "TraitTracking": "追踪",
         "TraitPrismeni": "棱光裔",
-        "TraitProfessionalComputers": "专业（计算机）"
+        "TraitProfessionalComputers": "专业（计算机）",
+        "TraitSpectra": "光谱族",
+        "TraitSuppressed": "被压制",
+        "TraitRobot": "机器人",
+        "WeaponGroupFlame": "燃焰",
+        "WeaponGroupLaser": "激光",
+        "WeaponGroupMental": "心灵",
+        "WeaponGroupSonic": "声波",
+        "WeaponGroupSniper": "狙击",
+        "TraitSkittermander": "轻灵兽",
+        "TraitSolarian": "恒星武士",
+        "TraitRyphorian": "雷弗瑞亚人",
+        "TraitSarcesian": "萨瑟蝶人",
+        "TraitSerum": "血清",
+        "TraitShirren": "希伦虫人",
+        "TraitVlaka": "弗拉卡狼人",
+        "WeaponGroupCorrosive": "腐蚀",
+        "WeaponGroupCryo": "冻寒",
+        "WeaponGroupProjectile": "射弹",
+        "WeaponGroupShock": "电震",
+        "TraitVesk": "维斯克蜥人",
+        "TraitWitchwarper": "织维巫师",
+        "TraitUnwieldy": "粗笨",
+        "TraitSoldier": "士兵",
+        "TraitTraversal": "穿梭",
+        "TraitZone": "划界"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
