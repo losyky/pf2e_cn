@@ -77,7 +77,8 @@
                 "Title": "收集资源",
                 "Header": "维护：资源收集",
                 "Description": "扔 {dice} 资源骰并生成以下内容？",
-                "Disclaimer": "这将取代你当前的资源点（应该已经转化为经验值），多余的资源点将会消失，只有GM才能收集资源。"
+                "Disclaimer": "这将取代你当前的资源点（应该已经转化为经验值），多余的资源点将会消失，只有GM才能收集资源。",
+                "NewResourcePoints": "新资源点"
             },
             "Phases": {
                 "commerce": {
