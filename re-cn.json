@@ -905,7 +905,7 @@
                 },
                 "Overdrive": {
                     "DamageTypePrompt": "利用超载造成火焰伤害？",
-                    "CriticalFailure": "哇哦！有什么东西爆炸了！你受到@Damage[(ceil(@actor.level / 2))[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害，并且[[/r 1d4 #Recharge Overdrive]]{1d4轮}内你不能再使用超载，因为你的装置需要冷却和重置。",
+                    "CriticalFailure": "哇哦！有什么东西爆炸了！你受到@Damage[(ceil(@actor.level / 2))[@actor.flags.system.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害，并且[[/r 1d4 #Recharge Overdrive]]{1d4轮}内你不能再使用超载，因为你的装置需要冷却和重置。",
                     "FireDamage": "超载：火焰伤害",
                     "CriticalSuccess": "你的装置进入了一种叫做@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]的高效状态，给你的攻击提供巨大加成。",
                     "Success": "你的装置进入了@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]状态，给你的攻击提供威力加成。",
@@ -915,7 +915,7 @@
                     "FlatCheck": {
                         "Label": "不稳定检定",
                         "Failure": "大发明无法继续使用不稳定动作。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]",
-                        "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[(floor(@actor.level / 2))[@actor.flags.pf2e.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]"
+                        "CriticalFailure": "大发明无法继续使用不稳定动作，你也会承受@Damage[(floor(@actor.level / 2))[@actor.flags.system.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害。@UUID[Compendium.pf2e.feat-effects.Item.olpkQDGDzmYZCvQH]"
                     },
                     "Stable": "稳定",
                     "Note": "当你进行一个不稳定动作时，在应用效果之后立刻尝试一次@Check[flat|dc:resolve(ternary(lt(@actor.skills.crafting.rank,4),15,13))|options:unstable-check|name:PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Label|showDC:all]检定。",
@@ -1000,7 +1000,7 @@
                     "Dracomancer": "龙学家",
                     "VenomtailKobold": "毒尾狗头人",
                     "KoboldBreath": {
-                        "Note": "对抗狗头人之息大失败的生物承受@Damage[3d4[@actor.flags.pf2e.draconicExemplar.damageType,persistent]]伤害。",
+                        "Note": "对抗狗头人之息大失败的生物承受@Damage[3d4[@actor.flags.system.draconicExemplar.damageType,persistent]]伤害。",
                         "Label": "狗头人之息"
                     },
                     "StrongjawKobold": "壮颚狗头人"
@@ -1009,7 +1009,7 @@
                     "Note": "当你在对抗恐惧效果的豁免检定中掷出成功时，可用大成功替代它。当你在此检定中投掷出失败时，则用大失败替代它。"
                 },
                 "DragonsBreath": {
-                    "DescriptionAlteration": "你引导龙血典范中的力量形成一股能量冲击，吐息的形状为@Template[line|distance:60]或@Template[cone|distance:30]，造成@Damage[ceil(@actor.level/2)d8[@actor.flags.pf2e.draconicExemplar.damageType]|options:area-damage]伤害。每个区域内的生物都必须尝试一次基础豁免检定对抗你的职业DC或法术DC（取其中较高者）。你在接下来的1小时内无法再次使用该能力。"
+                    "DescriptionAlteration": "你引导龙血典范中的力量形成一股能量冲击，吐息的形状为@Template[line|distance:60]或@Template[cone|distance:30]，造成@Damage[ceil(@actor.level/2)d8[@actor.flags.system.draconicExemplar.damageType]|options:area-damage]伤害。每个区域内的生物都必须尝试一次基础豁免检定对抗你的职业DC或法术DC（取其中较高者）。你在接下来的1小时内无法再次使用该能力。"
                 }
             },
             "Mummy": {
@@ -2249,7 +2249,7 @@
                 "MasterfulHunter": {
                     "Label": "大师猎手",
                     "Flurry": "如果你对武器的熟练等级为大师，你对于猎物的回合内第二次攻击的多重攻击减值变为-2（使用灵巧攻击为-1），你同轮的第三次或更多攻击的多重攻击减值变为-4（使用灵巧攻击为-2）。",
-                    "Precision": "你的武器掌控允许你多次击中猎杀目标的致命部位。你在一轮中第二次你的猎物时也会造成1d8精准伤害。19级时第二次击中目标会造成2d8精准伤害，第三次击中目标会造成1d8精准伤害。",
+                    "Precision": "你在一轮中第二次命中你的猎物时也会造成1d8精准伤害。19级时第二次击中目标会造成2d8精准伤害，第三次击中目标会造成1d8精准伤害。",
                     "Outwit": "如果你在欺骗、威吓、隐秘或者你用来回忆关于猎物知识的技能上拥有大师熟练，你针对猎物使用该技能时获得的环境加值从+2提升到+4。如果你对你的护甲拥有大师熟练，你对抗猎物的攻击的AC的环境加值从+1提升到+2。"
                 },
                 "TheHarderTheyFall": {
@@ -2376,7 +2376,7 @@
                     "Note": "在虚招成功时，你可以使目标在他的下个回合结束前，对你的攻击检定受到-2状态减值，而不是在虚招的任何其他效果。@UUID[Compendium.pf2e.feat-effects.Item.x7CjbOQZUgZKW16M]{效果：自大虚招}"
                 },
                 "TheHarderTheyFall": {
-                    "CriticalSuccess": "大成功时，你的目标承受@Damage[1d6[bludgeoning],(((@actor.flags.pf2e.sneakAttackDamage.number)d(@actor.flags.pf2e.sneakAttackDamage.faces))[precision])[bludgeoning]]伤害。",
+                    "CriticalSuccess": "大成功时，你的目标承受@Damage[1d6[bludgeoning],(((@actor.flags.system.sneakAttackDamage.number)d(@actor.flags.system.sneakAttackDamage.faces))[precision])[bludgeoning]]伤害。",
                     "Success": "成功时，你的目标承受@Damage[1d6[bludgeoning]]伤害。"
                 }
             },
@@ -2397,7 +2397,7 @@
                         "Aberrant": "目标于1轮内在意志豁免上获得-1状态减值，或者你于1轮内在意志豁免上获得+2状态加值。",
                         "Angelic": "你或是一个目标在豁免骰上获得+1状态加值，持续1轮。",
                         "Phoenix": "原能的生命与死亡之火在你或单个目标间流转。选择你或一个法术目标获得等同于法术环级的临时生命值持续1轮，或则使得法术目标受到@Damage[@item.level[fire]]伤害（如果法术本身就造成火焰伤害，在计算弱点与抗力之前加上此额外伤害）。",
-                        "Elemental": "你于1轮内在威吓检定上获得+2状态加值，或者目标受到@Damage[@item.level[@actor.flags.pf2e.elementalBloodline.damageType]]伤害。伤害类型由你的元素影响决定。如果法术已能造成这一类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
+                        "Elemental": "你于1轮内在威吓检定上获得+2状态加值，或者目标受到@Damage[@item.level[@actor.flags.system.elementalBloodline.damageType]]伤害。伤害类型由你的元素影响决定。如果法术已能造成这一类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
                         "Fey": "你于1轮内在表演检定上获得+2状态加值，或者在1轮内获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]。如此显而易见的遮蔽无法被用于@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]。",
                         "AncestralBloodMagic": "施放一个先祖法术",
                         "Imperial": "直到你的下一个回合开始，你可以选择在AC或是在豁免骰上获得+1状态加值。",
@@ -3040,8 +3040,8 @@
                     "Label": "终结",
                     "Unbalancing": "失衡",
                     "Targeting": "狙击",
-                    "PreciseNote": "当稳妥终结普通失败时，你造成@Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{完整的精准打击伤害}而非一半。",
-                    "ConfidentNote": "你向目标造成一半的@Damage[((@actor.flags.pf2e.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{精准打击伤害}。此伤害的伤害类型与发动打击的武器或无武装攻击的伤害类型相同。",
+                    "PreciseNote": "当稳妥终结普通失败时，你造成@Damage[((@actor.flags.system.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{完整的精准打击伤害}而非一半。",
+                    "ConfidentNote": "你向目标造成一半的@Damage[((@actor.flags.system.swashbuckler.preciseStrike)d6[precision])[@item.system.damage.damageType]]{精准打击伤害}。此伤害的伤害类型与发动打击的武器或无武装攻击的伤害类型相同。",
                     "Retreating": "重整",
                     "RetreatingNote": "你使用自由动作快步。",
                     "Revitalizing": "赋生",
@@ -3409,7 +3409,7 @@
                 }
             },
             "SmokingSword": {
-                "StokeFlames": "燃火"
+                "StokeFlames": "冒烟的剑—燃火"
             },
             "SaveSuccessToCriticalSuccess": {
                 "Reflex": "当你反射豁免成功时，会变为大成功。",
@@ -4218,7 +4218,7 @@
                 "HeroicRecovery": "目标还会获得三项加值直到其下回合结束：在其速度上获得+5尺状态加值，在攻击骰上获得+1状态加值，以及在伤害骰上获得+1状态加值。此外，若目标处于倒地，其可以立即使用一个不会触发反应动作的自由动作重新站立。",
                 "IntoTheFuture": "如果你的下一个动作是施放一个需要1或2动作的法术，那么该法术的效果不是立即发生，而是会在一轮后，你的下一个回合开始时发生。法术要求的选择与目标必须在施放法术时决定，而某些需求，例如视线与效果线，则是必须在你施放和效果出现时都成立。施放法术这个行动本身所产生的后果，如反应打击或者@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]状态的判定，并不会延迟。",
                 "MelodiousSpell": "法术会获得晦匿特征。晦匿特征只会隐藏该法术的施法动作与表征，但不会改变其效果。作为使用旋律法术的一部分，你可以进行一次@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]，@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]，@UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]或请求动作。若你如此做，仅当你下一个法术是具有听觉，情绪，音波或视觉特征的情况下才会因此获得晦匿特征。",
-                "SecondaryDetonationArray": "如果你下个动作是施放法术，并且法术会造成伤害、没有持续时间、影响一个区域，则一个发光的魔法环印出现在区域内的一个@Template[burst|distance:5]区域中。在你下个回合开始时，环印爆炸，对圆形区域内所有生物造成@Damage[(@item.level)d6[force]|options:area-damage]伤害，@Check[reflex|against:spell|options:area-effect,damaging-effect]豁免对抗你的法术 DC。如果法术造成不同类型的伤害，环印取而代之造成@Damage[(@item.level)d6[@actor.flags.pf2e.spellshape.arrayDamage]|options:area-damage]{对应伤害类型的伤害}（如果法术造成多种伤害类型，则由你选择其一）",
+                "SecondaryDetonationArray": "如果你下个动作是施放法术，并且法术会造成伤害、没有持续时间、影响一个区域，则一个发光的魔法环印出现在区域内的一个@Template[burst|distance:5]区域中。在你下个回合开始时，环印爆炸，对圆形区域内所有生物造成@Damage[(@item.level)d6[force]|options:area-damage]伤害，@Check[reflex|against:spell|options:area-effect,damaging-effect]豁免对抗你的法术 DC。如果法术造成不同类型的伤害，环印取而代之造成@Damage[(@item.level)d6[@actor.flags.system.spellshape.arrayDamage]|options:area-damage]{对应伤害类型的伤害}（如果法术造成多种伤害类型，则由你选择其一）",
                 "SnowdriftSpell": "如果你的下一个动作是施放具有气，水或寒冷特征，且没有火焰特征的法术，选择地面上一个受该法术影响的生物。与该生物邻接的每格地面会积起及膝深的雪。这些区域变为困难地形直到你的下回合开始。一个生物可以通过交互动作清除一格积雪，且当积雪受到具有火焰特征的效果影响时就会融化。",
                 "SowSpell": "如果你下一个动作是使用1或2个动作施法，法术会转而根植在一个邻接方格里。你必须在施放时决定关于该法术的所有可选项。之后的10分钟内，你能以一个反应动作指挥你播种的法术发芽并产生该法术的效果，该反应的触发条件是有一个生物进入播种法术的方格或其邻接方格。同一时间你只能有一个播种法术，如果你在10分钟内没有触发播种法术，法术会消散并失去。成功通过一次察觉检定来对抗你的法术DC的生物可以注意到播种法术。",
                 "SpellShroud": "如果你的下一个动作是施放一个以你为目标的法术，你将自己笼罩在一股@Template[emanation|distance:15]范围的魔法浓雾之中，浓雾持续至你的下一轮开始。所有云雾中的生物都被视为@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，同样云雾外的生物对云雾内的生物而言也视为隐蔽。",
@@ -4255,9 +4255,9 @@
                 "TimelineSplittingSpell": "你施放两道需要1或2动作的法术。他们不能是同一种但是用不同环位施放的法术。你为这两道法术分别花费资源，如法术位，聚能点与材料成分。确定这两道法术会产生的即时效果，包括攻击骰、豁免、伤害以及其他需要的掷骰。然后，选择两道法术之一产生效果，并使用预先掷骰的结果。另一道法术仍然会花费资源，但不会产生任何效果，因为它已经消失到了其他时间线。",
                 "BizzareTransformation": "若你的下个动作是施放@UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]，则可以改变 <em>无羁形态</em>所赋予的单个无武装攻击的伤害类型，使其变为后述类型中的一种：酸蚀、钝击、寒冷、电击、火焰、毒素、穿刺、或挥砍。被选取的攻击会获得相应的特征。",
                 "GarlandSpell": "一道由植物交织成的花环会在法术范围内的@Template[burst|distance:10]区域生长出来。该区域变为困难地形和有害地形，根据你的选择覆盖有荆棘或毒藤。任何进入该区域中方格或在其中结束自己回合的生物受到2d6伤害（对于荆棘为@Damage[2d6[piercing]]伤害，对于毒藤为@Damage[2d6[poison]]伤害）。每个生物每轮只能从中受到一次伤害。你和你的魔宠对此伤害免疫。这些植物持续1分钟或直到你再次施放花环法术，取决于何者为先。该伤害在16级时提高至3d6，20级时提高至4d6。",
-                "OstentatiousArrivalSummonSpell": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]|options:area-damage]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
-                "OstentatiousArrivalManifestEidolon": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物（除了你）会承受@Damage[(@actor.level)d4[@actor.flags.pf2e.spellshape.arrivalDamage]|options:area-damage]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
-                "ExplosiveArrival": "在你召唤生物的周围@Template[emanation|distance:10]区域中的所有生物受到@Damage[(@item.level)d4[@actor.flags.pf2e.spellshape.explosiveArrivalDamage]|options:area-damage]伤害。如果被召唤的生物具有酸蚀、寒冷、电击、音波或精魂特征，你可取而代之造成对应类型伤害。",
+                "OstentatiousArrivalSummonSpell": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物会承受@Damage[(@item.level)d4[@actor.flags.system.spellshape.arrivalDamage]|options:area-damage]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
+                "OstentatiousArrivalManifestEidolon": "所有你召唤或显现生物周围@Template[type:emanation|distance:10]范围内的生物（除了你）会承受@Damage[(@actor.level)d4[@actor.flags.system.spellshape.arrivalDamage]|options:area-damage]伤害。如果你召唤或显现的生物具有酸蚀、寒冷、电击、火焰、音波或水特征，用特征对应的伤害类型替换（水特征对应寒冷伤害）。如果生物具有不止一个这种特征，你选择造成哪种伤害类型。",
+                "ExplosiveArrival": "在你召唤生物的周围@Template[emanation|distance:10]区域中的所有生物受到@Damage[(@item.level)d4[@actor.flags.system.spellshape.explosiveArrivalDamage]|options:area-damage]伤害。如果被召唤的生物具有酸蚀、寒冷、电击、音波或精魂特征，你可取而代之造成对应类型伤害。",
                 "FamiliarsResolve": "如果你接下来的行动是施展法术，那么你或你30尺范围内的任意一名盟友在1轮内对抗那些会使你或盟友陷入毁灭或惊惧状态的豁免检定获得+2状态加值。在14级时，你或盟友在针对这些效果的豁免检定将获得+3状态加值。@UUID[Compendium.pf2e.feat-effects.Item.6I4qWkHzxj4MAt6g]{效果：魔宠决意}",
                 "GoldenDragonsBounty": "如果你接下来的动作是施展一个造成钝击、穿刺或挥砍伤害的法术，那么该伤害的类型可以由你选择为寒铁、银或钢，用于弱点、抗力、易伤等。在14级时，将精金加入到金属选择列表中。该法术获得金特征。",
                 "PitchPerfectProjection": "若你本轮的下一个动作是施法或使用一个拥有射程的听觉效果，则射程增加30尺。",
@@ -4380,35 +4380,38 @@
             "Dragonblood": {
                 "BreathOfTheDragon": {
                     "Line": {
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
                     },
                     "Cone": {
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:15]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d4[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
                     }
                 },
                 "FormidableBreath": {
                     "Line": {
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[line|distance:60]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
                     },
                     "Cone": {
-                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
-                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.pf2e.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
+                        "Fortitude": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[fortitude|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Will": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[will|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。",
+                        "Reflex": "利用你龙类祖先的生理机能，你可以在@Template[cone|distance:30]范围内吐出一股能量洪流，造成@Damage[ceil(@actor.level/2)d6[@actor.flags.system.dragonblood.damageType]|options:area-damage]伤害。区域内的每个生物都必须尝试一次@Check[reflex|against:class-spell|basic]豁免。你在[[/r 1d4 #Recharge this ability]]{1d4轮}内无法再次使用此能力。"
                     }
                 },
                 "LingeringBreath": {
-                    "Description": "当你使用龙息时，你吐息的区域会在1分钟内变成困难地形。此外，豁免失败或大失败的生物会受到@Damage[2d6[persistent,@actor.flags.pf2e.dragonblood.damageType]]伤害"
+                    "Description": "当你使用龙息时，你吐息的区域会在1分钟内变成困难地形。此外，豁免失败或大失败的生物会受到@Damage[2d6[persistent,@actor.flags.system.dragonblood.damageType]]伤害"
                 },
                 "ScalyHide": {
                     "BracersOfArmor": "复鳞皮肤 w/ 力场手环",
                     "ExplorersClothing": "复鳞皮肤 w/ 探险者服装",
                     "MageArmor": "复鳞皮肤 w/ 法术护甲"
+                },
+                "HeartOfEarth": {
+                    "RollOptionLabel": "大地之心—使用精确震颤感知"
                 }
             },
             "TempestForm": {
@@ -4606,11 +4609,11 @@
                 "Shape": {
                     "Cone": {
                         "Label": "锥形",
-                        "Description": "你的幻灵喷出破坏性的能量波。幻灵对@Template[cone|distance:30]区域内的所有生物造成@Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage]伤害，这需要对抗你的法术DC的基础反射豁免。"
+                        "Description": "你的幻灵喷出破坏性的能量波。幻灵对@Template[cone|distance:30]区域内的所有生物造成@Damage[((ceil(@actor.level/2))d6)[@actor.flags.system.breathweapon.breathDamage]|options:area-damage]伤害，这需要对抗你的法术DC的基础反射豁免。"
                     },
                     "Line": {
                         "Label": "线型",
-                        "Description": "你的幻灵喷出破坏性的能量波。幻灵对@Template[line|distance:60]区域内的所有生物造成@Damage[((ceil(@actor.level/2))d6)[@actor.flags.pf2e.breathweapon.breathDamage]|options:area-damage]伤害，这需要对抗你的法术DC的基础反射豁免。"
+                        "Description": "你的幻灵喷出破坏性的能量波。幻灵对@Template[line|distance:60]区域内的所有生物造成@Damage[((ceil(@actor.level/2))d6)[@actor.flags.system.breathweapon.breathDamage]|options:area-damage]伤害，这需要对抗你的法术DC的基础反射豁免。"
                     }
                 },
                 "Cooldown": "你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。",
@@ -4940,7 +4943,7 @@
                         "Description": "在你神火解放后，你可以用自由动作对30尺内的一个敌人进行一次[[/act steal]]或者[[/act palm-an-object]]偷走一件物品。被偷走的物品会直接消失并出现在你的手中。"
                     },
                     "WhoseCryIsThunder": {
-                        "Description": "当你神火解放时，你可以使自身充满电流，直到你下回合开始。在你充满电流时，任何触摸你，用无武装攻击或非触及近战武器伤害你的生物会受到@Damage[1d6[electricity]]伤害。",
+                        "Description": "当你神火解放时，你可以使自身充满电流，直到你下回合开始。在你充满电流时，任何触摸你，用无武装攻击或非触及近战武器伤害你的生物会受到@Damage[1d6[electricity]]伤害。@UUID[Compendium.pf2e.feat-effects.Item.nP3k4N52NzrR3KKf]",
                         "CriticalSpecialization": "你在一次打击中大成功时会激发雷霆震响。目标必须通过@Check[fortitude|against:exemplar|traits:sonic]检定对抗你的职业DC，失败时，他会被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]并@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1分钟，这是个音波效果。"
                     },
                     "TheMournful": {
@@ -5159,8 +5162,8 @@
             "ObjectMemory": "触物回想",
             "BlinkCharge": {
                 "Note": {
-                    "CriticalFailure": "大失败时，打击不造成伤害且你承受@Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]]伤害。",
-                    "Failure": "失败时，打击不造成伤害，但目标承受@Damage[(ceil((@actor.flags.pf2e.blinkCharge - 4)/2))d8[force]]伤害。"
+                    "CriticalFailure": "大失败时，打击不造成伤害且你承受@Damage[(ceil((@actor.flags.system.blinkCharge - 4)/2))d8[force]]伤害。",
+                    "Failure": "失败时，打击不造成伤害，但目标承受@Damage[(ceil((@actor.flags.system.blinkCharge - 4)/2))d8[force]]伤害。"
                 }
             },
             "BodyParts": {
@@ -6363,7 +6366,7 @@
                     "Raven": "渡鸦",
                     "SublimeBreath": "崇高之息",
                     "Miastrilek": "Miastrilek",
-                    "RacoonDog": "Raccoon Dog"
+                    "RacoonDog": "狸猫"
                 },
                 "Label": "当前形态",
                 "AlterationNotes": {
@@ -6658,7 +6661,7 @@
             },
             "FalsePriest": {
                 "SneakAttack": {
-                    "DeceiversSurprise": "Target is Off-Guard due to a Feint or Deceiver's Surprise"
+                    "DeceiversSurprise": "目标因虚招或欺骗奇袭而措手不及"
                 }
             },
             "ImmortalTrickster": {
@@ -6765,6 +6768,24 @@
                     "Cold": "免疫寒冷",
                     "Electricity": "免疫电击",
                     "Acid": "免疫酸蚀"
+                }
+            },
+            "PhaseDragon": {
+                "SecondGlance": {
+                    "Label": "幻视一瞥"
+                }
+            },
+            "AmbushCopse": {
+                "RollOptionLabel": "Ambush Copse is hiding in Forests"
+            },
+            "Grandmaster": {
+                "SuperQiBlast": {
+                    "FirstCastQiBlast": "第一次施放真气波"
+                }
+            },
+            "FortuneDragon": {
+                "ChimericNature": {
+                    "Label": "嵌合体质—伤害类型"
                 }
             }
         },
@@ -7212,7 +7233,11 @@
                 "WispVulnerabilities": "wisp vulnerabilities",
                 "InhaledPoisons": "吸入毒素",
                 "ElementalInstinct": "damage dealt by instinct element creatures",
-                "HarvestBlood": "damage dealt by last Harvest Blood target"
+                "HarvestBlood": "damage dealt by last Harvest Blood target",
+                "AttacksFromSuppressed": "来自被压制目标的攻击",
+                "RadiationPoison": "辐射毒素",
+                "Radiation": "辐射",
+                "PrimalSpells": "原能法术"
             }
         },
         "Color": {
@@ -7333,7 +7358,8 @@
             "TargetNumber": {
                 "Single": "单个目标",
                 "Multiple": "多个目标"
-            }
+            },
+            "NoSanctification": "无祝佑"
         },
         "RULES": {
             "Common": {
