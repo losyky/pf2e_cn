@@ -22,12 +22,12 @@
     {
       "lang": "cn",
       "name": "动作元素（中文）",
-      "path": "./cn/action-zh_Hans.json"
+      "path": "./cn/action-cn.json"
     },
     {
       "lang": "cn",
       "name": "拥王者元素（中文）",
-      "path": "./cn/kingmaker-zh_Hans.json"
+      "path": "./cn/kingmaker-cn.json"
     },
     {
       "lang": "cn",
