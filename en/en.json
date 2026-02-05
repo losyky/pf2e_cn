@@ -1,4 +1,5 @@
 {
+    "test":"test",
     "COMBAT": {
         "Begin": "Begin Encounter",
         "CombatantNotInScene": "The participant {name} is not present in your currently viewed scene.",
