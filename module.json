@@ -17,22 +17,22 @@
     {
       "lang": "cn",
       "name": "系统主体（中文）",
-      "path": "./cn/cn.json"
+      "path": "./zh_Hans/zh_Hans.json"
     },
     {
       "lang": "cn",
       "name": "动作元素（中文）",
-      "path": "./cn/action-cn.json"
+      "path": "./zh_Hans/action-zh_Hans.json"
     },
     {
       "lang": "cn",
       "name": "拥王者元素（中文）",
-      "path": "./cn/kingmaker-cn.json"
+      "path": "./zh_Hans/kingmaker-zh_Hans.json"
     },
     {
       "lang": "cn",
       "name": "规则元素（中文）",
-      "path": "./cn/re-cn.json"
+      "path": "./zh_Hans/re-zh_Hans.json"
     }
   ],
   "relationships": {
