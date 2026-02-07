@@ -6,7 +6,7 @@ on:
 
 env:
   ZIP_FILENAME: "pf2_cn"
-  PACKAGE_CONTENT: "./zh_Hans/module.json ./zh_Hans/zh_Hans.json ./zh_Hans/re-zh_Hans.json ./zh_Hans/kingmaker-zh_Hans.json ./zh_Hans/action-zh_Hans.json"
+  PACKAGE_CONTENT: "./module.json ./zh_Hans/module.json ./zh_Hans/zh_Hans.json ./zh_Hans/re-zh_Hans.json ./zh_Hans/kingmaker-zh_Hans.json ./zh_Hans/action-zh_Hans.json"
   PACKAGE_ID: 827
 
 jobs:
