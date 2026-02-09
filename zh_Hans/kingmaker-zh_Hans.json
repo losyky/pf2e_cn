@@ -406,7 +406,7 @@
             "Alliance": {
                 "Enemy": "敌军",
                 "Kingdom": "王国",
-                "Linked": "这只军队的token目前已经链接，更新应该能够正确保存"
+                "Linked": "这只军队的指示物目前已经链接，更新应该能够正确保存"
             },
             "Potions": {
                 "UsedPotionContent": "军队恢复+1生命值，可以作为机动动作的一个部分。",
