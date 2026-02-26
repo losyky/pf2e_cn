@@ -5571,7 +5571,7 @@
                 "Taunt": {
                     "Label": "嘲讽",
                     "Note": "如果你采取一个敌对动作，且影响至少一名守护者的盟友却又不影响守护者，你在下一回合开始前陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。",
-                    "ToggleLabel": "嘲讽 - 不包含守护者的敌对动作"
+                    "ToggleLabel": "嘲讽 - 应用DC减值"
                 }
             },
             "HumanoidForm": {
