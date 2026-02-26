@@ -1000,8 +1000,8 @@
                     "Dracomancer": "龙学家",
                     "VenomtailKobold": "毒尾狗头人",
                     "KoboldBreath": {
-                        "Note": "对抗狗头人之息大失败的生物承受@Damage[3d4[@actor.flags.system.draconicExemplar.damageType,persistent]]伤害。",
-                        "Label": "狗头人之息"
+                        "Note": "对抗狗头人吐息大失败的生物承受@Damage[3d4[@actor.flags.system.draconicExemplar.damageType,persistent]]伤害。",
+                        "Label": "狗头人吐息"
                     },
                     "StrongjawKobold": "壮颚狗头人"
                 },
@@ -1010,6 +1010,11 @@
                 },
                 "DragonsBreath": {
                     "DescriptionAlteration": "你引导龙血典范中的力量形成一股能量冲击，吐息的形状为@Template[line|distance:60]或@Template[cone|distance:30]，造成@Damage[ceil(@actor.level/2)d8[@actor.flags.system.draconicExemplar.damageType]|options:area-damage]伤害。每个区域内的生物都必须尝试一次基础豁免检定对抗你的职业DC或法术DC（取其中较高者）。你在接下来的1小时内无法再次使用该能力。"
+                },
+                "DraconicParagon": {
+                    "KoboldBreath": {
+                        "Addendum": "对抗你的狗头人吐息的豁免大失败的生物承受@Damage[3d4[persistent,damage]]伤害。"
+                    }
                 }
             },
             "Mummy": {
@@ -5641,6 +5646,11 @@
             "TriangularTeeth": {
                 "Survival": {
                     "Label": "三角齿 — 水中导航"
+                }
+            },
+            "DraconicAcolyte": {
+                "ChannelDraconicEssence": {
+                    "InSpace": "龙类精魂位于你所在空间"
                 }
             }
         },
