@@ -1632,6 +1632,15 @@
                     }
                 }
             },
+            "VizierDragon": {
+                "Dragontongue": {
+                    "ImmunityLabel": "dragontongue"
+                },
+                "PowerfulUtterance": 
+                {
+                    "ImmunityLabel": "powerful utterance"
+                }
+            },
             "Vordine": {
                 "TridentOfDis": {
                     "NoAlly": "No Ally",
