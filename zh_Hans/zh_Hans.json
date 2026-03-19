@@ -7894,7 +7894,9 @@
             "SendToPartyStash": "送到小队储物箱",
             "LootUnknownNPCMessage": "未知生物",
             "NoPlayerCharacters": "没有可供分发的玩家角色",
-            "AllowConversion": "允许转换铸币类型"
+            "AllowConversion": "允许转换铸币类型",
+            "NothingToDistribute": "没有物品可供分发",
+            "DistributeMessage": "{share}已从{container}分发给{recipients}。"
         },
         "vehicle": {
             "VehicleString": "载具",
@@ -9117,7 +9119,14 @@
         "Rank8": "8环",
         "Rank9": "9环",
         "Rank10": "10环",
-        "TraitBoost2d10": "过充能2d10"
+        "TraitBoost2d10": "过充能2d10",
+        "TraitDescriptionMagitech": "魔法科技殖装是机械与魔法零件的结合，其包括以下要素：秘法充能的水晶、星铁合金以及刻有符文的微晶片等。魔法科技殖装具有魔法特征，但除非效果或攻击特别指明会影响殖装，否则它无法被解除魔法。",
+        "TraitDescriptionManifestation": "具有此特征的专长能够增强或改变你的恒星显象（耀斑，光晕，以及武器），亦或是允许你创造一种新类型的显象。",
+        "TraitResilient": "韧性",
+        "TraitRetractable": "可折叠",
+        "TraitSoulrider": "溯魂鳗",
+        "TraitGravity": "重力",
+        "TraitJinsul": "烬蛛族"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
