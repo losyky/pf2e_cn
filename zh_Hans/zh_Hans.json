@@ -936,7 +936,8 @@
                         "Label": "韧性符文"
                     }
                 },
-                "GradeOption": "{grade}（+{bonus}； 韧性+{resilient}）"
+                "GradeOption": "{grade}（+{bonus}； 韧性+{resilient}）",
+                "Resilient": "韧性"
             },
             "CannotAddType": "无法将{type}物品添加到此角色。",
             "Condition": {
@@ -6913,7 +6914,11 @@
                 "zero-cannon": "零度炮",
                 "zero-knife": "零度短刃",
                 "magnetar-rifle": "磁星步枪",
-                "quantum-reaver": "量子掠夺者"
+                "quantum-reaver": "量子掠夺者",
+                "hammer": "锤子",
+                "launcher": "发射器",
+                "phase-cutlass": "相位弯刀",
+                "puzzleblade": "拼装刃"
             }
         },
         "WeaponAbilityLabel": "武器能力",
@@ -9137,7 +9142,9 @@
         "TraitExpend1": "耗弹 1",
         "TraitExpend10": "耗弹 10",
         "TraitExpend2": "耗弹 2",
-        "TraitExpend5": "耗弹 5"
+        "TraitExpend5": "耗弹 5",
+        "WeaponGroupGrenade": "手雷",
+        "WeaponGroupPlasma": "等离子"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
