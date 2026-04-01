@@ -3648,7 +3648,7 @@
                     "ExceptionsDoubleVs": "{type} {value} （除了{exceptions}；对抗{doubleVs}时抗力翻倍）"
                 },
                 "Type": {
-                    "illusion": "幻术系",
+                    "illusion": "幻术",
                     "immobilized": "禁足",
                     "inhaled": "吸入",
                     "light": "光亮",
@@ -6107,7 +6107,7 @@
         "TraitHumanoid": "类人",
         "TraitIfrit": "火元素裔",
         "TraitIkeshti": "异客蜥人",
-        "TraitIllusion": "幻术系",
+        "TraitIllusion": "幻术",
         "TraitIncapacitation": "失能",
         "TraitIncarnate": "化身",
         "TraitIncorporeal": "虚体",
