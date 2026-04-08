@@ -5675,6 +5675,14 @@
                 "FeyDragonet": {
                     "WingColor": "妖精微龙 — 翅膀与环境匹配"
                 }
+            },
+            "NidaleseHorselord": {
+                "DefyChains": {
+                    "DamageNote": {
+                        "Level14": "你承受的伤害增加@Damage[4d6[untyped]]，并对触发魔族造成@Damage[4d6[spirit]]伤害。",
+                        "Level18": "你承受的伤害增加@Damage[5d6[untyped]]，并对触发魔族造成@Damage[5d6[spirit]]伤害。"
+                    }
+                }
             }
         },
         "RuleElement": {
@@ -6186,7 +6194,7 @@
             },
             "KallasDevil": {
                 "DisguisedAsChild": "正伪装成孩子",
-                "LyingAboutLoathsomeStench": "Lying about Loathsome Stench"
+                "LyingAboutLoathsomeStench": "说谎掩盖恶臭熏天"
             },
             "RaptorGuardWight": {
                 "TerrorMaster": "尸妖猛禽精卫正戴着它的恐龙头骨头盔。"
