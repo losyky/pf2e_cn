@@ -607,8 +607,8 @@
             },
             "WhirlingThrow": {
                 "Notes": {
-                    "criticalSuccess": "<strong>大成功</strong> 你将该生物投掷[[/r 10+(5*@actor.abilities.str.mod)]]尺，造成@Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]]伤害，并使其@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。",
-                    "success": "<strong>成功</strong> 你投掷该生物[[/r 10+(5*@actor.abilities.str.mod)]]尺，并造成@Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]]伤害。",
+                    "criticalSuccess": "<strong>大成功</strong> 你将该生物投掷至多[[/r 10+(5*@actor.abilities.str.mod)]]尺，造成@Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]]伤害，并使其@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]。",
+                    "success": "<strong>成功</strong> 你投掷该生物至多[[/r 10+(5*@actor.abilities.str.mod)]]尺，并造成@Damage[((floor((10+(5*@actor.abilities.str.mod))/10))d6 + @actor.abilities.str.mod)[bludgeoning]]伤害。",
                     "failure": "<strong>失败</strong> 你没能投掷生物。",
                     "criticalFailure": "<strong>大失败</strong> 你没能投掷生物， 并且对方不再被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{受擒 Grabbed} 或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。"
                 },
