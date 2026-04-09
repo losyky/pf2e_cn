@@ -5683,6 +5683,12 @@
                         "Level18": "你承受的伤害增加@Damage[5d6[untyped]]，并对触发魔族造成@Damage[5d6[spirit]]伤害。"
                     }
                 }
+            },
+            "SisterOfTheGoldenErinys": {
+                "FiendishBrand": {
+                    "EffectNote": "你必须成功通过@Check[flat|dc:5]检定否则法术被打断。",
+                    "StrikeNote": "当持续流血伤害存在时，你每次施放圣洁法术时都需成功通过一次DC5的纯骰检定，否则法术被打断。@UUID[Compendium.pf2e.feat-effects.Item.vG11WE95sDmDcip4]"
+                }
             }
         },
         "RuleElement": {
