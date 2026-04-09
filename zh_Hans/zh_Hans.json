@@ -1525,7 +1525,7 @@
                         "ShortLabel": "—"
                     },
                     "NLight": "{light}L",
-                    "WithLight": "{bulk}, {light}L",
+                    "WithLight": "{bulk}，{light}L",
                     "Label": "重量",
                     "HeldOrStowed": "负载（持握/储存）"
                 },
@@ -2364,7 +2364,7 @@
                 "AtFullHealth": "<actor>{actor}</actor>已经恢复至满血。",
                 "DamagedForN": "<actor>{actor}</actor>受到{hpDamage}点伤害。",
                 "ShieldAbsorbsAll": "<actor>{actor}</actor>毫发无伤，他的盾牌完全吸收了{absorbedDamage}点伤害。",
-                "DamagedForNShield": "<actor>{actor}</actor>的盾牌抵挡了{absorbedDamage}点伤害, 并且自身受到{hpDamage}点穿透伤害。",
+                "DamagedForNShield": "<actor>{actor}</actor>的盾牌抵挡了{absorbedDamage}点伤害，并且自身受到{hpDamage}点穿透伤害。",
                 "HealedForN": "<actor>{actor}</actor>受到了{hpDamage}点治疗。",
                 "ShieldDamagedForN": "他们的盾牌也受到 {shieldDamage}点伤害。",
                 "ShieldDamagedForNBroken": "他们的盾牌也受到 {shieldDamage}点伤害，并破损。",
@@ -2781,7 +2781,7 @@
                     "tanuki": "化狸语",
                     "surki": "瑟基虫人语",
                     "wayang": "剪影人",
-                    "yaksha": "夜叉",
+                    "yaksha": "夜叉语",
                     "aishmayar": "艾什玛雅语",
                     "mahwek": "马赫韦克",
                     "tang": "Tang",
@@ -2894,7 +2894,7 @@
                 "BlankSlate": "这个队伍没有任何成员。从角色边栏中拖入一个生物。",
                 "Coin": "货币",
                 "Languages": "队伍语言",
-                "MembersLabel": "成员: ",
+                "MembersLabel": "成员： ",
                 "NoSpecialSenses": "无特殊感官",
                 "Tabs": {
                     "Overview": "总览",
@@ -2921,7 +2921,7 @@
                 "SlotAvailable": "可用槽位",
                 "ClearActivities": {
                     "Label": "清除",
-                    "Complete": "队伍的探索期动作已被清除"
+                    "Complete": "队伍的探索行动已被清除"
                 },
                 "ClownCar": {
                     "Deposit": "放出PC指示物",
@@ -3033,11 +3033,11 @@
                 }
             },
             "Resource": {
-                "Resolve": "决意",
+                "Resolve": "决心点",
                 "MythicPoints": "神话点",
                 "Focus": "聚能点",
                 "HeroPoints": "英雄点",
-                "Investiture": "绑定"
+                "Investiture": "绑定位"
             },
             "Resources": "资源",
             "ResourceRatio": "{value}/{max} {resource}"
@@ -3128,7 +3128,7 @@
         "ArmorPotencyRune4": "护甲潜能（+4）",
         "ArmorPropertyRuneAcidResistant": "抗能-酸蚀",
         "ArmorPropertyRuneAntimagic": "抗魔",
-        "ArmorPropertyRuneBitter": "苦味 Bitter",
+        "ArmorPropertyRuneBitter": "苦涩",
         "ArmorPropertyRuneColdResistant": "抗能-寒冷",
         "ArmorPropertyRuneDeathless": "拒亡",
         "ArmorPropertyRuneDread": "次等恐惧 Dread",
@@ -3163,7 +3163,7 @@
         "ArmorPropertyRuneTrueStanching": "真实止血",
         "ArmorPropertyRuneWinged": "插翅",
         "ArmorResilientRune": "韧性",
-        "ArmorSpeedLabel": "速度 减值",
+        "ArmorSpeedLabel": "速度减值",
         "ArmorStrengthLabel": "力量需求",
         "ArmorStrengthRequiredLabel": "力量需求",
         "ArmorStrikingRune": "强击",
@@ -3171,15 +3171,15 @@
         "ArmorTypeLight": "轻甲",
         "ArmorTypeMedium": "中甲",
         "ArmorTypeShield": "盾牌",
-        "ArmorTypeUnarmored": "无护甲",
+        "ArmorTypeUnarmored": "无甲",
         "AttackEffectConstrict": "紧勒",
-        "AttackEffectGrab": "擒抱",
+        "AttackEffectGrab": "擒获",
         "AttackEffectGreaterConstrict": "精通紧勒",
         "AttackEffectImprovedGrab": "精通擒获",
         "AttackEffectImprovedKnockdown": "精通击倒",
         "AttackEffectImprovedPush": "精通推离",
         "AttackEffectKnockdown": "击倒",
-        "AttackEffectPush": "击退",
+        "AttackEffectPush": "推离",
         "AttackEffectTrip": "摔绊",
         "AttackLabel": "攻击",
         "AttitudeLabel": "态度",
@@ -3191,17 +3191,17 @@
             "Helpful": "乐于帮助"
         },
         "AutomaticBonusProgression": {
-            "attackPotency": "攻击潜力",
-            "defensePotency": "防御潜力",
-            "devastatingAttacks": "毁灭性攻击",
-            "perceptionPotency": "察觉潜力",
-            "savePotency": "豁免潜力"
+            "attackPotency": "攻击潜能",
+            "defensePotency": "防御潜能",
+            "devastatingAttacks": "毁灭攻击",
+            "perceptionPotency": "察觉潜能",
+            "savePotency": "豁免潜能"
         },
         "Background": "背景",
         "BackgroundSkillFeats": "技能专长",
         "BackgroundTitle": "你的 角色 背景",
         "BaseModifier": "基础调整值",
-        "BaseWeapons": "基本武器",
+        "BaseWeapons": "基础武器",
         "BestiaryBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "Biography": "笔记",
         "BiographyAllies": "盟友",
@@ -3241,7 +3241,7 @@
             "ability": "属性加值",
             "proficiency": "熟练加值",
             "circumstance": "环境加值",
-            "item": "物品 加值",
+            "item": "物品加值",
             "status": "状态加值",
             "untyped": "无名加值"
         },
@@ -3356,7 +3356,7 @@
             "Specific": {
                 "Perception": {
                     "Label": "察觉检定",
-                    "Secret": "察觉检定（暗骰）"
+                    "Secret": "察觉检定（秘密）"
                 },
                 "Recovery": "复苏检定",
                 "Counteract": "反制检定"
@@ -3396,7 +3396,7 @@
             "TabHazard": "危害",
             "TabSpell": "法术",
             "TabSettings": "设置",
-            "TakeLabel": "拿取道具",
+            "TakeLabel": "拿取物品",
             "BuyLabel": "购买物品",
             "Title": "浏览合集包",
             "Settings": {
@@ -3456,7 +3456,7 @@
             "DurationTextLabel": "持续时间",
             "DurationNumberLabel": "轮",
             "HasValueLabel": "存在值",
-            "ValueLabel": "价值",
+            "ValueLabel": "状态值",
             "ImmutableLabel": "不变的",
             "ImmutableTitle": "不可减少的值。"
         },
@@ -3480,7 +3480,7 @@
         "ConditionTypeFleeing": "逃跑",
         "ConditionTypeFriendly": "友善",
         "ConditionTypeFrightened": "惊惧",
-        "ConditionTypeGrabbed": "擒抱",
+        "ConditionTypeGrabbed": "受擒",
         "ConditionTypeHelpful": "乐于帮助",
         "ConditionTypeHidden": "藏匿",
         "ConditionTypeHostile": "敌对",
@@ -3526,8 +3526,8 @@
         "ConsumableTypeWand": "魔杖",
         "ConsumableUseLabel": "使用",
         "ConsumableMessage": {
-            "UseSingle": "{name}使用",
-            "UseMulti": "使用{name}, 还剩{current}",
+            "UseSingle": "使用{name}",
+            "UseMulti": "使用{name}，还剩{current}",
             "UseExhausted": "{name}耗尽"
         },
         "ConsumableCompatibleLabel": "兼容",
@@ -3604,7 +3604,7 @@
         "CurrentStaminaTitle": "你拥有的耐力池",
         "Damage": {
             "Base": "基础",
-            "NoDamageFormulaLabel": "无伤",
+            "NoDamageFormulaLabel": "无伤害",
             "IWR": {
                 "ApplicationBreakdown": {
                     "immunity": "免疫{type}: {adjustment}",
@@ -3698,7 +3698,7 @@
                     "flat-footed": "措手不及",
                     "fleeing": "逃跑",
                     "ghost-touch": "幽冥",
-                    "grabbed": "擒抱",
+                    "grabbed": "受擒",
                     "healing": "治疗",
                     "hidden": "藏匿",
                     "olfactory": "嗅觉",
@@ -3976,31 +3976,31 @@
         "EditNPCLabel": "编辑NPC?",
         "EffectsLabel": "效果",
         "EffectPanel": {
-            "AppliedBy": "应用于: {condition-list}",
-            "DecrementToolTip": "[右键单击]减少数值",
+            "AppliedBy": "应用于：{condition-list}",
+            "DecrementToolTip": "[右键单击] 减少状态值",
             "Expired": "过期",
-            "IncrementToolTip": "[左键单击]增加数值",
+            "IncrementToolTip": "[左键单击] 增加状态值",
             "RemainingDuration": {
-                "MultipleYears": "剩余 {years} 年",
+                "MultipleYears": "剩余{years}年",
                 "SingleYear": "剩余1年",
-                "MultipleWeeks": "剩余 {weeks} 周",
+                "MultipleWeeks": "剩余{weeks}周",
                 "SingleWeek": "剩余1周",
-                "MultipleDays": "剩余 {days} 天",
-                "MultipleHours": "剩余 {hours} 小时",
-                "MultipleMinutes": "剩余 {minutes} 分钟",
-                "MultipleRounds": "剩余{turns} 轮",
+                "MultipleDays": "剩余{days}日",
+                "MultipleHours": "剩余{hours}小时",
+                "MultipleMinutes": "剩余{minutes}分钟",
+                "MultipleRounds": "剩余{turns}轮",
                 "SingleRound": "剩余1轮",
-                "MultipleSeconds": "剩余 {seconds} 秒",
+                "MultipleSeconds": "剩余{seconds}秒",
                 "SingleSecond": "剩余1秒",
-                "ZeroRoundsExpireTurnEnd": "剩余0轮, 将在先攻 {Initiative}结束时到期",
-                "ZeroRoundsExpireTurnStart": "剩余0轮, 将在先攻 {Initiative}开始时到期"
+                "ZeroRoundsExpireTurnEnd": "剩余0轮，将在先攻 {Initiative}结束时到期",
+                "ZeroRoundsExpireTurnStart": "剩余0轮，将在先攻{Initiative}开始时到期"
             },
-            "RemoveToolTip": "[右键单击]移除效果",
+            "RemoveToolTip": "[右键单击] 移除效果",
             "Sustained": "持续的？",
             "UnlimitedDuration": "无限持续",
             "UntilEncounterEnds": "直到遭遇结束",
             "Unidentified": "不明",
-            "RollDamageToolTip": "[左键单击]伤害掷骰"
+            "RollDamageToolTip": "[左键单击] 伤害掷骰"
         },
         "EmptySlot": "空位",
         "EquipmentEquippedLabel": "已装备",
@@ -4352,9 +4352,9 @@
         },
         "ListPartsOr": {
             "two": "{first} 或者 {second}",
-            "start": "{first}, {second}",
-            "middle": "{first}, {second}",
-            "end": "{first}, 或者 {second}"
+            "start": "{first}，{second}",
+            "middle": "{first}，{second}",
+            "end": "{first}，或者 {second}"
         },
         "Lore": "学识",
         "LoreProficiencyDisclaimer": "仅供参考。不会改变技能调整值。",
@@ -5790,7 +5790,7 @@
         "TraitDescriptionConcentrate": "具有该特征的动作需要精神在一定程度上保持专注和自制。",
         "TraitDescriptionConcussive": "这些武器的冲击力和穿透力一样强。当决定某个生物对此武器的伤害适用何种抗力或免疫时，选择目标对穿刺或钝击伤害更弱的抗力或免疫。例如，如果生物对穿刺伤害免疫，并且对钝击伤害没有抗力或免疫，它将受到来自震荡武器的全部伤害。对所有物理伤害的抗力或免疫，或对全伤害的抗力或免疫都正常生效。",
         "TraitDescriptionConjuration": "具有该特征的效果和魔法物品与魔法的咒法学派相关联，通常包含召唤、创造、传送或移动物品的效果。",
-        "TraitDescriptionConrasu": "一个宇宙力量的碎片被赋予意识所产生的的民族，生活在一种独特的外骨骼中。",
+        "TraitDescriptionConrasu": "一个宇宙力量的碎片被赋予意识所产生的民族，生活在一种独特的外骨骼中。",
         "TraitDescriptionConsecration": "加护法术会在一段时间内强化一个区域。一个区域同一时间内只能拥有一个加护效果。新的效果需要成功反制已经存在的效果才能覆盖上去。",
         "TraitDescriptionConsumable": "具有此特征的物品只能使用一次。除非另有说明，否则启动后会被销毁。消耗品包括炼金物品和魔法消耗品，如卷轴和护身符。当一个角色创建消耗品时，他们可以一批四个地制造它们。",
         "TraitDescriptionContingency": "具有此特征的法术在法术效果期间会给予你一个动作，通常是一个带有特定触发方式的反应动作。它们通常持续时间较长（例如24小时）。你只能同时具有一个拥有触发特征的法术或者一个触发术处于启动状态。如果你施放了另一个触发术或带有触发特征的法术，新法术会将其取代。",
@@ -7062,7 +7062,7 @@
             "greaterAnchoring": {
                 "Name": "高等锚定",
                 "Note": {
-                    "criticalSuccess": "当你用锚定武器重击一个目标时, 武器对目标施放8环@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]（@Check[will|dc:38|name:Greater Anchoring Rune]，反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}），如果目标的意志豁免检定大成功， <em>次元拴绳</em>至少会持续一轮，而不是没有效果。",
+                    "criticalSuccess": "当你用锚定武器重击一个目标时，武器对目标施放8环@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]（@Check[will|dc:38|name:Greater Anchoring Rune]，反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}），如果目标的意志豁免检定大成功， <em>次元拴绳</em>至少会持续一轮，而不是没有效果。",
                     "success": "当你用该武器命中一个目标但没有重击时，目标受到四环@UUID[Compendium.pf2e.spells-srd.Item.ksLCg62cLOojw3gN]效果影响一轮且没有豁免（反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}）。"
                 }
             },
@@ -7072,7 +7072,7 @@
             "greaterBrilliant": {
                 "Name": "高等辉煌",
                 "Note": {
-                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。重击时, 目标必须成功通过一个@Check[fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]一轮。",
+                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。重击时，目标必须成功通过一个@Check[fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]一轮。",
                     "success": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。"
                 }
             },
@@ -7665,10 +7665,10 @@
                 "summary": "让你的攻防变得缺少效率。"
             },
             "grabbed": {
-                "name": "擒抱",
-                "rules": "<p>你被其它生物固定在原处，使你获得措手不及状态和禁足状态。被擒抱时若你尝试使用拥有操作特征的动作，你必须通过@Check[flat|dc:5|name:Grabbed|showDC:all]检定，失败则失去该动作；该检定在消耗动作后，效果生效前进行。</p>",
+                "name": "受擒",
+                "rules": "<p>你被其它生物固定在原处，使你获得措手不及状态和禁足状态。受擒时若你尝试使用拥有操作特征的动作，你必须通过@Check[flat|dc:5|name:Grabbed|showDC:all]检定，失败则失去该动作；该检定在消耗动作后，效果生效前进行。</p>",
                 "summary": "生物、物体或魔法让你被定在原地。",
-                "note": "如果你在被擒抱时尝试进行一个操作动作，你必须成功通过 @Check[flat|dc:5|name:Grabbed|showDC:all]检定，否则该动作会失败。"
+                "note": "如果你在受擒时尝试进行一个操作动作，你必须成功通过 @Check[flat|dc:5|name:Grabbed|showDC:all]检定，否则该动作会失败。"
             },
             "helpful": {
                 "name": "乐于帮助",
@@ -7732,7 +7732,7 @@
             },
             "restrained": {
                 "name": "束缚",
-                "rules": "<p>你被绑住几乎无法动弹，或某生物压制住了你。你获得措手不及状态和禁足状态，且你无法使用任何拥有攻击或操纵特征的动作，除了逃脱和破拆（Force Open）束缚这俩动作。束缚状态覆盖擒抱状态。</p>",
+                "rules": "<p>你被绑住几乎无法动弹，或某生物压制住了你。你获得措手不及状态和禁足状态，且你无法使用任何拥有攻击或操纵特征的动作，除了逃脱和破拆（Force Open）束缚这俩动作。束缚状态覆盖受擒状态。</p>",
                 "summary": "你被捆住无法移动，或缠斗中的生物压制住了你。",
                 "note": "你不能使用任何攻击或操作动作，除非尝试逃脱或强行挣开你的束缚。"
             },
@@ -7855,7 +7855,7 @@
             "EditLootLabel": "设置战利品？",
             "GMSettings": "GM设置",
             "PermissionError": "必须有一个GM在线，以便获得或安置战利品。",
-            "InsufficientCurrencyError": "货币不足,无法购买{buyer}",
+            "InsufficientCurrencyError": "货币不足，无法购买{buyer}",
             "LootDescription": "允许玩家之间交易货币",
             "LootLabel": "战利品",
             "LootNamePlaceholder": "战利品",
@@ -7894,12 +7894,12 @@
             "Stack": "创建新的战利品堆？",
             "PurchaseLootMessage": "你希望购买多少道具？",
             "PurchaseLoot": "购买道具",
-            "PartyStash": "队伍藏匿处",
+            "PartyStash": "队伍储物箱",
             "PurchaseLootPrompt": "{buyer}想要购买这个物品吗?",
             "Purchase": "购买",
             "PurchasePrice": "购买价格",
             "Give": "给予",
-            "SendToPartyStash": "送到小队储物箱",
+            "SendToPartyStash": "送到队伍储物箱",
             "LootUnknownNPCMessage": "未知生物",
             "NoPlayerCharacters": "没有可供分发的玩家角色",
             "AllowConversion": "允许转换铸币类型",
@@ -7974,7 +7974,7 @@
                     "Ferocity": "<p><strong>触发</strong> 怪物的生命值降低至0点。</p>\n<hr />\n<p><strong>效果</strong> 怪物免于被打倒，并且余留1点HP，其@UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{受伤 Wounded}值增加1。当其受伤3的时候，它无法再使用此能力。</p>",
                     "FormUp": "<p>部队选择它当前占据的一格空间，重新分配其所占据的方格，新的方格可以是任何形状，但是所有方格必须连续，并且位于被选择的方格的15尺之内。部队不能和其他生物共享空间。</p>",
                     "FrightfulPresence": "<p>首次进入灵光的生物必须进行一次意志豁免。</p>\n<p>无论结果如何，该生物都将在1分钟内免疫此怪物的气势凶猛。</p>\n<hr />\n<p><strong>大成功</strong>该生物不受气势凶猛的影响。</p>\n<p><strong>成功</strong>该生物受到@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}.</p>\n<p><strong>失败</strong> 该生物受到 @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}.</p>\n<p><strong>大失败</strong>该生物受到 @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}.</p>",
-                    "Grab": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“攫抓”，或怪物已经让一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]状态</p><hr /><p><strong>效果</strong> 如果在一次打击后使用，怪物尝试用发动攻击的部位[[/act grapple]]该生物。该尝试不适用也不累计怪物的多重攻击减值。</p><p>相对的，怪物可以使用攫抓动作，选择一个正被它擒抱或束缚的生物，拥有攫抓特征的肢体将自动将擒抱或束缚状态延长至怪物的下回合结束。</p>",
+                    "Grab": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“擒获”，或怪物已经让一个生物陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]状态</p><hr /><p><strong>效果</strong> 如果在一次打击后使用，怪物尝试用发动攻击的部位[[/act grapple]]该生物。该尝试不适用也不累计怪物的多重攻击减值。</p><p>相对的，怪物可以使用擒获动作，选择一个正受擒或束缚于它的生物，具备擒获能力的肢体将自动将受擒或束缚状态延长至怪物的下回合结束。</p>",
                     "GreaterConstrict": "<p>怪物对任意数量的被其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]的生物造成所列出的伤害。这些生物都可进行一次基础强韧豁免对抗所列出的DC。在豁免中失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，豁免成功的生物在1分钟内免疫高等紧勒的昏迷效果。</p>",
                     "GreaterDarkvision": "<p>拥有高等黑暗视觉的生物可以在黑暗和昏暗光照下正常视物，可惜这种视觉只能看见黑白两色。拥有高等黑暗视觉的生物甚至可以看穿魔法黑暗。</p>",
                     "ImprovedGrab": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通擒获，或者怪物已经使一个生物@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]</p><hr /><p><strong>效果</strong> 若在打击后使用，怪物以自由动作用攻击的身体部位对该生物尝试一次[[/act grapple]]。该尝试不适用也不累计生物的多重攻击减值。</p><p>怪物也可以选择一个正用肢体使之受擒或束缚的生物，再次使用一个动作进行精通擒获，将其状态延长至怪物的下个回合结束。</p>",
@@ -7994,7 +7994,7 @@
                     "Scent": "<p>灵敏嗅觉通过气味感应生物或物品，并且这是一种朦胧感官。其作用范围已在能力中列出，并且仅能在侦测散发出气味的生物或物品时起效（例如，无生命的生物通常都不会发出气味）。</p>\n<p>如果一个生物散发出浓郁的气味或是出于上风处，GM可将灵敏嗅觉用于侦测此生物的范围加倍或加至三倍，而当生物出于下风处时GM则可减小作用范围。</p>",
                     "ShieldBlock": "<p><strong>触发</strong> 怪物已经举起了盾牌，并且受到一次物理攻击的伤害。</p>\n<hr />\n<p><strong>效果</strong>怪物挺起盾牌格挡了攻击。盾牌使得怪物所受的伤害减少最多等同于盾牌硬度的数值。怪物和盾牌同时承受剩余的伤害，并且这也可能损坏或摧毁盾牌。</p>",
                     "SneakAttack": "<p>当怪物用灵巧或娴熟近战武器、灵巧或娴熟的无武装攻击、或是远距攻击来对@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]的生物进行打击，它还会造成所列出的精准伤害。用投掷武器来远距攻击的场合，该武器必须为灵巧或娴熟。 </p>",
-                    "SwallowWhole": "<p>怪物尝试吞下一只已被其口嘴所受擒或束缚的体型等于或小于所列体型的生物。如果被吞下的生物的体型已经达到了所列体型的最大值，怪物便无法再次使用活吞。如果生物的体型比最大值要小，则怪物通常而言便还能吞下更多的生物；其具体的极限由GM判断。怪物尝试一次@Check[athletics|defense:reflex]检定对抗被擒抱生物的反射DC。如果检定成功，则能吞下该生物。怪物的口嘴不再擒抱被其吞下的生物，所以怪物能够用其再次进行打击或擒获。怪物无法攻击被其吞下的生物。</p>\n<p>被活吞的生物视为被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]，且获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，同时必须屏住呼吸，否则便会开始窒息。被吞下的生物在初次被吞以及被吞后的每一轮结束时受到所列出的伤害。如果受害者从这一能力的擒抱状态中@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9] ，则他会从怪物的嘴里钻出来。这会同时解放怪物口嘴中所擒抱的其他任何生物。被吞下的生物可以攻击那只吞食它的怪物，但是仅能以无武装攻击或是轻负载及更小的武器进行攻击。吞食中的生物在对抗此攻击时@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。如果怪物于单次攻击或法术中受到的穿刺或挥砍伤害等于或超过所列的破裂Rupture值，那个被吞的生物便重获自由。通过这些法脱困的生物可以立即开始呼吸，并且离开吞食他们的怪物的占据空间。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1cbIe569UD6paXad]</p>\n<p>如果怪物死亡，邻近尸体的生物们可以花费总计3个动作使用武器或者无武装攻击对怪物造成穿刺或挥砍伤害，以此切开怪物并且解放被活吞的生物。</p>",
+                    "SwallowWhole": "<p>怪物尝试吞下一只已被其口嘴所受擒或束缚的体型等于或小于所列体型的生物。如果被吞下的生物的体型已经达到了所列体型的最大值，怪物便无法再次使用活吞。如果生物的体型比最大值要小，则怪物通常而言便还能吞下更多的生物；其具体的极限由GM判断。怪物尝试一次@Check[athletics|defense:reflex]检定对抗受擒生物的反射DC。如果检定成功，则能吞下该生物。怪物的口嘴不再擒获被其吞下的生物，所以怪物能够用其再次进行打击或擒获。怪物无法攻击被其吞下的生物。</p>\n<p>被活吞的生物视为被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]，且获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，同时必须屏住呼吸，否则便会开始窒息。被吞下的生物在初次被吞以及被吞后的每一轮结束时受到所列出的伤害。如果受害者从这一能力的受擒状态中@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9] ，则他会从怪物的嘴里钻出来。这会同时解放怪物口嘴中所受擒的其他任何生物。被吞下的生物可以攻击那只吞食它的怪物，但是仅能以无武装攻击或是轻负载及更小的武器进行攻击。吞食中的生物在对抗此攻击时@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。如果怪物于单次攻击或法术中受到的穿刺或挥砍伤害等于或超过所列的破裂Rupture值，那个被吞的生物便重获自由。通过这些法脱困的生物可以立即开始呼吸，并且离开吞食他们的怪物的占据空间。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.1cbIe569UD6paXad]</p>\n<p>如果怪物死亡，邻近尸体的生物们可以花费总计3个动作使用武器或者无武装攻击对怪物造成穿刺或挥砍伤害，以此切开怪物并且解放被活吞的生物。</p>",
                     "SwarmMind": "<p>该怪物并没有一个单一的心智（通常是因为它是一个小型生物的集群），并且免疫以特定数量生物为目标的心灵效果。它仍然会受到那些对范围内所有生物起效的心灵效果。</p>",
                     "Telepathy": "<p>具有心灵感应能力的怪物可以与所列半径内任意生物进行心灵交流，然而它们必须能够使用同种语言。这并没有给他们的思维提供特殊的渠道，也无法比正常的开口交流传递更多的信息。</p>",
                     "Thoughtsense": "<p>思维感知允许怪物感知所列范围内的所有心智生物。</p>",
@@ -8126,7 +8126,7 @@
         "TraitThrown80": "投掷80尺",
         "DamageButton": {
             "Full": "[Click] 对选定目标施加完整伤害。",
-            "FullContext": "施加伤害",
+            "FullContext": "应用伤害",
             "FullShort": "伤害",
             "Half": "[Click] 对选定目标施加半数伤害。",
             "HalfContext": "半数伤害",
@@ -8134,14 +8134,14 @@
             "Double": "[Click] 对选定目标施加双倍伤害。",
             "DoubleContext": "双倍伤害",
             "DoubleShort": "双倍",
-            "Triple": "[点击] 对目标施加三倍伤害。",
-            "TripleContext": "施加三倍伤害",
+            "Triple": "[点击] 对目标应用三倍伤害。",
+            "TripleContext": "应用三倍伤害",
             "TripleShort": "三倍",
             "ShieldBlock": "[点击]在应用伤害前切换所选角色的盾牌格挡状态。",
             "ShieldBlockContext": "盾牌格挡",
             "ShieldBlockShort": "格挡",
-            "Healing": "[点击]对选定目标施加完整治疗。",
-            "HealingContext": "施加治疗",
+            "Healing": "[点击]对选定目标应用完整治疗。",
+            "HealingContext": "应用治疗",
             "HealingShort": "治疗",
             "Adjust": "[Shift-点击]在应用前调整数值。"
         },
@@ -8371,9 +8371,9 @@
         "SellItemConfirmHeader": "出售确认",
         "ListPartsAnd": {
             "two": "{first}和{second}",
-            "end": "{first}, 和{second}",
-            "middle": "{first}, {second}",
-            "start": "{first}, {second}"
+            "end": "{first}，和{second}",
+            "middle": "{first}，{second}",
+            "start": "{first}，{second}"
         },
         "TraitTouched": "接触",
         "TraitAppliedToAWeapon": "添加到一把武器上",
@@ -8476,7 +8476,7 @@
         "ArmorPropertyRuneMalleable": "锻型",
         "TraitVersatileVoid": "多用虚能",
         "TraitVersatileVitality": "多用命能",
-        "DeleteQuestion": "你确定要删掉{name}吗？",
+        "DeleteQuestion": "你确定要删除{name}吗？",
         "Publication": {
             "Title": "标题",
             "Remaster": "重置版？",
@@ -8498,7 +8498,7 @@
             "Title": "迁移状态",
             "Size": "大小",
             "Schema": "概要",
-            "MigrateCompendium": "迁移集合包"
+            "MigrateCompendium": "迁移合集包"
         },
         "TraitTea": "茶",
         "InlineDamage": {
@@ -8566,7 +8566,7 @@
                 "UnresolvableAction": "无法执行动作：{slug}"
             }
         },
-        "ArmorPropertyRuneSizeChanging": "更改体型",
+        "ArmorPropertyRuneSizeChanging": "缩放",
         "TraitDescriptionReincarnated": "这个族裔专长适用于至少经历过一次转生的角色，无论是作为他们背景故事的一部分，还是因为在游戏过程中发生了转生。",
         "TraitReincarnated": "转生",
         "TraitExperiment": "实验",
@@ -8891,7 +8891,7 @@
         "TraitAnalog": "非电子",
         "TraitDescriptionAnalog": "此类武器摒弃了先进电子设备、计算机系统和电力能源，完全采用最新尖端技术与现代材料制造校准。此类武器免疫针对科技装备的特殊能力，且除非同时具备古早特征，否则无法蚀刻符文。",
         "TraitDescriptionAsura": "These lawful fiends are physical manifestations of divine accidents. Asuras typically have darkvision, immunity to curses, and a weakness to good.",
-        "TraitDescriptionCharauKa": "Mandrill-like humanoids that are brutal warriors. Many charau-ka live in Usaro.",
+        "TraitDescriptionCharauKa": "查咯猿人是形似山魈的类人生物，皆为凶残的战士。许多查咯猿人栖居于乌萨罗。",
         "TraitDescriptionDiv": "Divs are a family of fiends spawned from the spirits of evil genies within the desolation of Abaddon. Most divs are neutral evil. They typically have greater darkvision and weakness to cold iron and good damage.",
         "TraitDescriptionDream": "这些梦境维度的原住民具有多样的能力，不过那些与名为冷原的噩梦领域有关的生物通常是邪秽的，且他们会免疫此领域的极端低温。",
         "TraitDescriptionHerald": "几乎所有的神祇都有某种特定的代理人，被称为神使；神使的外观和能力和神祇一样多元。具备神使特征的生物稀有度总是独特。",
@@ -9152,7 +9152,9 @@
         "TraitGfolian": "火蟹族",
         "TraitKucharn": "虫族",
         "TraitNovian": "新星族",
-        "TraitXenometricAndroid": "异种仿生人"
+        "TraitXenometricAndroid": "异种仿生人",
+        "TraitDescriptionBrandish": "挥旗特征表示一种需要你挥动或以其他方式主动展示旗帜的能力。要使用具有挥旗特征的能力，你必须用一只手持握旗帜，或持用附着有旗帜的武器。由于在使用具有挥旗特征的战术时，你必须主动用旗帜向队友发出信号以指挥他们，因此除非特别注明，否则你无法使用被赋予的自由动作或反应动作作为挥旗战术的一部分。",
+        "TraitDescriptionCompact": "你可以在持盾手为空手或者持握一件轻型的非武器物体时，使用举起盾牌动作来举起具有袖珍特征的盾牌。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
@@ -9174,12 +9176,12 @@
             "feat": "专长/特征",
             "equipment": "装备",
             "effect": "效果",
-            "deity": "神祗",
+            "deity": "神祇",
             "consumable": "消耗品",
             "condition": "状态",
             "class": "职业",
             "book": "书",
-            "backpack": "背包",
+            "backpack": "容器",
             "background": "背景",
             "armor": "护甲",
             "ancestry": "种族",
