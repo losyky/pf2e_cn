@@ -140,7 +140,7 @@
             "Strike": {
                 "MeleeLabel": "近战打击：{weapon}",
                 "RangedLabel": "远程打击：{weapon}",
-                "OutOfRange": "目标超出范围。"
+                "OutOfRange": "该目标在射程范围之外。"
             },
             "Type": {
                 "Activity": "行动",
@@ -1306,7 +1306,7 @@
                     "Philosophy": "信条",
                     "Covenant": "誓盟"
                 },
-                "Spellcasting": "法术书",
+                "Spellcasting": "施法",
                 "Sanctification": {
                     "Must": {
                         "Unholy": "必须选择邪秽",
@@ -3398,7 +3398,7 @@
             "TabSettings": "设置",
             "TakeLabel": "拿取物品",
             "BuyLabel": "购买物品",
-            "Title": "浏览合集包",
+            "Title": "合集包浏览器",
             "Settings": {
                 "SourcesLabel": "来源",
                 "PacksLabel": "合集包",
@@ -5471,7 +5471,7 @@
         "SpellCategoryRitual": "仪式",
         "SpellCategoryFocusCantrip": "聚能戏法",
         "SpellCategoryLabel": "法术类别",
-        "SpellcastingTypeLabel": "法术施法方式",
+        "SpellcastingTypeLabel": "施法类型",
         "SpellsActionHeader": "动作",
         "SpellsSchoolHeader": "学派",
         "StackGroupArrows": "箭",
@@ -7964,7 +7964,7 @@
                     "Buck": "<hr />\n<p>大多数充当坐骑的怪物都会尝试甩脱那些讨厌恼人的骑手，不过除非是收到了惊吓或是虐待，否则大多数坐骑不会对被信任的生物使用这种反应动作。</p>\n<p><strong>触发</strong> 一个生物在骑在怪物上时使用@UUID[Compendium.pf2e.actionspf2e.Item.PM5jvValFkbFH3TV]{骑乘 Mounts}或是@UUID[Compendium.pf2e.actionspf2e.Item.q9nbyIF0PEBqMtYe]{指挥怪物 Command an Animal}动作。</p>\n<hr />\n<p><strong>效果</strong>触发的生物必须成功通过一次所列DC的反射豁免检定，否则被摔落且@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。如果豁免结果是大失败，触发的生物还会在正常的坠落伤害外额外承受@Damage[1d6[bludgeoning]]伤害。</p>",
                     "CatchRock": "<p><strong>要求</strong> 怪物必须有一只空闲手，但是能够@UUID[Compendium.pf2e.actionspf2e.Item.wQYmDStjdjn0I26t]{松开}手上握持的物品作为此反应动作的一部分。</p>\n<p><strong>触发</strong> 怪物成为一次投石打击的目标，或是石块将要掉落到怪物上。</p>\n<hr />\n<p><strong>效果</strong> 怪物在对抗此次攻击的AC或是任何对抗落石的防御上获得+4环境加值。如果攻击未命中或是怪物成功避免了落石，怪物接住了石头，避免了伤害。现在，是这只怪物握住了石头。</p>",
                     "ChangeShape": "<p>怪物无限期地改变了其形态。它能够使用此动作恢复原形或是改为一个新的形态。除非另有说明，否则怪物无法使用变身能力呈现出某个特定个体。使用变身也被视为使用欺骗技能的@UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{乔装 Impersonate}来伪装自身。在判别所变化形态的生物族裔或是生物类型时，怪物的变形将自动成功对抗察觉DC，并且在防止从其他方面识破其伪装的欺骗DC上获得+4状态加值。变身能力指定了怪物能够变化的形态。怪物仅能变化其生理形态，并不会获得新形态的特殊能力。例如，在每个形态下，它都会替换其正常速度与打击，并且可能改变其感官或体型。所有变更都会在数据栏中列出。</p>",
-                    "ConstantSpells": "<p>一个恒定法术将持续对怪物生效而无需怪物施放之，并且法术的持续时间为永久。如果一个恒定法术被反制，则怪物可以花费此法术正常情况下所要求的施法动作来将其重新激活。</p>",
+                    "ConstantSpells": "<p>一个常驻法术将持续对怪物生效而无需怪物施放之，并且法术的持续时间为永久。如果一个常驻法术被反制，则怪物可以花费此法术正常情况下所要求的施法动作来将其重新激活。</p>",
                     "Constrict": "<p>怪物对任意数量的被其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]的生物造成所列出的伤害。这些生物都可进行一次基础强韧豁免对抗所列出的DC。</p>",
                     "Coven": "<p>此怪物能够与两个或是更多同样拥有巫团能力的生物组成巫团。这要求所有的准巫团成员举行一个8小时的仪式。当结成巫团之后，所有成员都将获得精英进化，并且随之调整其等级。巫团成员能够以一个带有专注特征的单动作感知其他成员的位置和状态，或是以一个同样带有专注特征的双动作感受到另一名巫团成员的感官。</p>\n<p>巫团还会赋予其成员法术和仪式，但是只有三名巫团成员彼此位于30尺之内时才能合作施展这些法术或仪式。一名巫团成员可以通过一个有专注特征的单动作为巫团法术作出贡献。如果两名巫团成员在上一轮内以此方法作出了贡献，那么第三名成员可以在她自己的回合花费正常的施法动作施放巫团法术。一个巫团能够无限次地施放巫团法术，但是每轮只能施放一次巫团法术。所有巫团都会赋予8环@UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]，巫团还将获得以下法术并且可以将其升环至5环：@UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]，@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]，@UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]，@UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]，@UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]，@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]，@UUID[Compendium.pf2e.spells-srd.Item.Ucf8eynbZMfUucjE]，@UUID[Compendium.pf2e.spells-srd.Item.Ek5XI0aEdZhBgm21]以及@UUID[Compendium.pf2e.spells-srd.Item.FM3SmEW8N1FCRjqt]。个别拥有巫团能力的生物还会为她们所加入的巫团带来额外的法术。一个巫团还能够施展@UUID[Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05]，使用DC23代替标准DC。</p>\n<p>如果一名巫团成员的脱离或是死亡使得巫团的成员数量少于三名，则其余成员保留其精英进化24小时，但是因为没有足够的成员贡献必要的动作，她们无法施放巫团法术。</p>",
                     "Darkvision": "<p>拥有黑暗视觉的怪物可以在黑暗和昏暗光照下正常视物，可惜这种视觉只能看见黑白两色。某些形式的黑暗魔法，例如4环@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]，会阻碍普通的黑暗视觉。然而，拥有@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr]{高等黑暗视觉 Greater Darkvision}的怪物甚至可以看穿这类形式的魔法黑暗。 </p>",
