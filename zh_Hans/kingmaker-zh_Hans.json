@@ -21,7 +21,7 @@
             "BoostsLabel": "属性提升",
             "FinalizeHeader": "最终王国",
             "FlawLabel": "属性缺陷",
-            "Free": "自由",
+            "Free": "自选",
             "ManualToggle": "使用手动修正",
             "None": "无",
             "SaveAndContinue": "保存并继续",
@@ -84,10 +84,10 @@
                 "commerce": {
                     "Header": "商贸阶段",
                     "Description": "商贸阶段是指王国创造收入或签订贸易协议的阶段。",
-                    "Step1": "<strong>收集税款:</strong> 可以在每个王国回合进行一次。如果你不执行收集税款行动，你可以选择尝试一次 DC 11纯骰检定；如果成功，则减少 1 点动荡",
-                    "Step2": "<strong>批准支出:</strong> 你可以尝试改善生活（Improve Lifestyle）活动，利用王国的支出来提高公民的生活水平，或者你可以尝试挪用国库（Tap Treasury）行动，从国库中提取资金。",
-                    "Step4": "<strong>管理贸易协定:</strong> 如果你已建立贸易协定，可以使用管理贸易协定（Manage Trade Agreements）行动。",
-                    "Step3": "<strong>出售商品:</strong> 如果你的王国有商品库存，你可以尝试交易商品（Trade Commodities）行动，来增加本回合的可用 RP。"
+                    "Step1": "<strong>收集税款：</strong> 可以在每个王国回合进行一次。如果你不执行收集税款行动，你可以选择尝试一次 DC 11纯骰检定；如果成功，则减少 1 点动荡",
+                    "Step2": "<strong>批准支出：</strong> 你可以尝试改善生活（Improve Lifestyle）活动，利用王国的支出来提高公民的生活水平，或者你可以尝试挪用国库（Tap Treasury）行动，从国库中提取资金。",
+                    "Step4": "<strong>管理贸易协定：</strong> 如果你已建立贸易协定，可以使用管理贸易协定（Manage Trade Agreements）行动。",
+                    "Step3": "<strong>出售商品：</strong> 如果你的王国有商品库存，你可以尝试交易商品（Trade Commodities）行动，来增加本回合的可用 RP。"
                 },
                 "leadership": {
                     "Description": "如果你的王国首都里有城堡、宫殿或市政厅，则每个担任领导职务的 PC 最多可以尝试三项领导行动。如果你的首都没有这些建筑，则每个 PC 在本步骤中最多可以尝试两项领导行动。你的队伍在进行领导行动时可以自行决定顺序。除非行动另有说明，否则每个领袖在每个王国回合中不能多次尝试相同的领导行动。",
@@ -138,7 +138,7 @@
             "Invested": "聚焦",
             "InvestedBonus": "{ability}的属性调整值",
             "NamePlaceholder": "王国名称",
-            "VacantRole": "空缺({role})",
+            "VacantRole": "空缺（{role}）",
             "Ruin": {
                 "strife": "冲突",
                 "decay": "衰退",
@@ -300,7 +300,7 @@
             },
             "luxuries": {
                 "Description": "非常少见的工地。在维护阶段提供奢侈品。",
-                "Name": "矿井 (宝石)"
+                "Name": "矿井（宝石）"
             },
             "food": {
                 "Name": "农田",
@@ -357,7 +357,7 @@
             "Gear": {
                 "MagicWeapons": {
                     "Description": "军队拥有魔法武器。如果军队同时具有近战和远程武器，选择当武器升级时需要选择其中一种。你能为军队升级两次武器，一次给近战一次给远程。如果你配发了更强的版本，它会取代旧装备，并且新装备的 RP 成本要扣除旧装备的。",
-                    "Name": "({type}) 魔法武器",
+                    "Name": "（{type}）魔法武器",
                     "rank1": {
                         "Name": "魔法武器",
                         "Description": "该装备能让军队使用该武器进行打击时的攻击调整值+1。"
@@ -401,7 +401,7 @@
                 "Label": "装备"
             },
             "Label": "军队",
-            "TacticsFree": "战术 (自由)",
+            "TacticsFree": "战术（自由）",
             "TacticalWarActions": "战术战争动作",
             "Alliance": {
                 "Enemy": "敌军",
@@ -416,7 +416,7 @@
                 "FullHP": "军队的生命值已经满了",
                 "Label": "药水",
                 "OutOfPotions": "没有更多的药水可用",
-                "UsePotion": "使用药水 (+1 生命值)",
+                "UsePotion": "使用药水（+1 生命值）",
                 "UsedPotionHeader": "药水消耗"
             },
             "Toggles": {
