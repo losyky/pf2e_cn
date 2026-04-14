@@ -1197,7 +1197,7 @@
             },
             "AncientElf": {
                 "AllowedDrops": "兼职入门专长",
-                "Prompt": "选择一个兼职入门专长"
+                "Prompt": "选择一个兼职入门专长。"
             },
             "Beastkin": {
                 "Senses": {
@@ -1208,12 +1208,12 @@
                     "TremorsensePrecise": "将震颤感知提升为精确感官"
                 },
                 "AnimalSenses": {
-                    "Prompt": "选择一种你的本源动物具有的感官"
+                    "Prompt": "选择一种你的本源动物具有的感官。"
                 }
             },
             "Alchemist": {
                 "ResearchField": {
-                    "Prompt": "选择一个研究课题",
+                    "Prompt": "选择一个研究课题。",
                     "Bomber": {
                         "FieldBenefit": "当投掷带有溅射特征的炼金炸弹时，你可以放弃通常的溅射区域，只对你的主要目标造成溅射伤害。",
                         "GreaterFieldDiscovery": "你可以提升炸弹的溅射范围，让它对周围10尺的生物造成溅射伤害，或者如果你具有溅射扩展专长，则为15尺。",
@@ -1247,7 +1247,7 @@
                     "AdvancedVials": "进阶制剂"
                 },
                 "AlchemicalCrossbow": {
-                    "Prompt": "选择装填到弩上的炸弹"
+                    "Prompt": "选择装填到弩上的炸弹。"
                 },
                 "Alchemy": {
                     "IdentifyAlchemy": "你可以自动辨识出掌握了配方的炼金物品。"
@@ -1292,16 +1292,16 @@
                 }
             },
             "Aid": {
-                "Prompt": "选择协助带来的加值"
+                "Prompt": "选择协助带来的加值。"
             },
             "Barbarian": {
                 "Dragon": {
-                    "Prompt": "选择一种龙",
+                    "Prompt": "选择一种龙类。",
                     "NormalRageDamage": "造成正常的狂暴伤害",
                     "ToggleLabel": "龙类狂暴"
                 },
                 "Animal": {
-                    "Prompt": "选择一种动物",
+                    "Prompt": "选择一种动物。",
                     "Frog": "蛙",
                     "Deer": "鹿",
                     "Cat": "猫",
@@ -1327,7 +1327,7 @@
                     "Crocodile": "鳄鱼"
                 },
                 "Instinct": {
-                    "Prompt": "选择一种本能",
+                    "Prompt": "选择一种本能。",
                     "Drops": "1级野蛮人职业特性"
                 },
                 "Giant": {
@@ -1397,7 +1397,7 @@
             },
             "Bard": {
                 "Muse": {
-                    "Prompt": "选择一种缪斯",
+                    "Prompt": "选择一种缪斯。",
                     "Enigma": "谜团 Enigma",
                     "Maestro": "大师 Maestro",
                     "Polymath": "博学 Polymath",
@@ -1412,7 +1412,7 @@
             },
             "Automaton": {
                 "ArcaneLocomotion": {
-                    "Prompt": "选择一种移动类型"
+                    "Prompt": "选择一种移动类型。"
                 },
                 "HunterAutomaton": {
                     "ToggleLabel": "四足奔跑"
@@ -1442,13 +1442,13 @@
                     "CriticalHit": "重击时，目标受到等于武器伤害骰数的持续火焰伤害。你的眼部射线不会添加重击专精效果。"
                 },
                 "MagicalResistance": {
-                    "Prompt": "选择一种能量类型"
+                    "Prompt": "选择一种能量伤害类型。"
                 },
                 "AutomatonArmament": {
                     "Prompt": "选择一种无武装打击。"
                 },
                 "CoreCannon": {
-                    "AttackNote": "你需要将最高的潜能符文加成手动加成到此次攻击检定上",
+                    "AttackNote": "你需要将最高的潜能符文加成手动应用至此次攻击检定上。",
                     "CriticalHit": "重击时，目标受到@Damage[10[persistent,fire]]伤害。你的核心火炮不会添加重击专精效果。</p>"
                 },
                 "Enhancement": {
@@ -1472,7 +1472,7 @@
             },
             "AncestralParagon": {
                 "AllowedDrops": "1级族裔专长",
-                "Prompt": "选择一个1级族裔专长"
+                "Prompt": "选择一个1级族裔专长。"
             },
             "AnimalSkin": {
                 "BracersOfArmor": "野兽之肤w/盔甲护腕",
@@ -2738,7 +2738,7 @@
                 }
             },
             "CelestialResistance": {
-                "Prompt": "选择一种和你的血统关联的能量"
+                "Prompt": "选择一种和你的血统关联的能量。"
             },
             "SoulWarden": {
                 "SafeguardSoul": {
@@ -2858,7 +2858,7 @@
                 "Note": "当你使用震慑拳时，取代豁免造成震慑，你可以选择改为让目标进行一次@Check[fortitude|against:class]豁免对抗你的职业DC，对照下列结果。你必须在目标掷豁免骰之前选择。</p><hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标的肌肉会暂时变弱1轮，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且它在尝试使用具有操作特征的动作时，除非成功通过一次DC为5+力竭状态值的纯骰检定，否则被打断。</p><p><strong>失败</strong> 同成功，但持续时间为1分钟。</p><p><strong>大失败</strong> 同成功，但持续时间为1分钟，纯骰DC为11，且目标在持续时间内所有速度承受-10尺状态减值。</p>"
             },
             "BlessingOfDefiance": {
-                "Prompt": "选择一种豁免"
+                "Prompt": "选择一种豁免。"
             },
             "ClanWeapon": {
                 "Label": "氏族武器",
@@ -3331,7 +3331,7 @@
                     "Fervor": "你的情绪焦点对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，并且在对抗你的法术时豁免检定受到 –2 状态减值。你也对自己的情绪焦点措手不及，且对抗他的豁免检定也承受 –2 状态减值。法术：@UUID[Compendium.pf2e.spells-srd.Item.TaaMEYdZXQXF0Sks]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.0H1ozccQGGFLUwFI]",
                     "Label": "仇恨",
-                    "Trigger": "在与你的情绪焦点，或是他的一个追随者的遭遇中，开始你的第一个回合。如果遭遇中包括多个符合条件的追随者，但不包括你真正的情绪焦点，请选择其中一个追随者作为这次遭遇的情绪焦点（或直到你真正的情绪焦点出现）。"
+                    "Trigger": "在与你的情绪焦点，或是他的一个追随者的遭遇中，开始你的第一个回合。如果遭遇中包括多个符合条件的追随者，但不包括你真正的情绪焦点，请选择其中一个追随者作为这次遭遇的情绪焦点（或直到你真正的情绪焦点出现）"
                 },
                 "Joy": {
                     "Activation": "你现有的任何@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]或@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied}的状态值降低 1，并结束现正遭受的任何持续心灵伤害。",
@@ -6127,8 +6127,8 @@
             "SovereignDragon": {
                 "InspireEnvoyDragonChoice": "龙赐予的效果",
                 "InspireEnvoyEffectAttack": "攻击加值",
-                "InspireEnvoyDragonAdult": "成年龙王",
-                "InspireEnvoyDragonAncient": "古龙王",
+                "InspireEnvoyDragonAdult": "成年君龙",
+                "InspireEnvoyDragonAncient": "古君龙",
                 "InspireEnvoyEffectAC": "AC加值",
                 "InspireEnvoyEffectChoice": "赐予效果",
                 "InspireEnvoyEffectPercWillCha": "意志、察觉以及基于魅力的技能检定加值"
@@ -6837,6 +6837,12 @@
                 "ChimericNature": {
                     "Label": "嵌合体质—伤害类型"
                 }
+            },
+            "FangwoodSentinel": {
+                "ThusAlwaysToTyrants": {
+                    "Enemy": "敌人",
+                    "Ally": "盟友"
+                }
             }
         },
         "UI": {
@@ -7251,7 +7257,7 @@
                 "PhysicalRangedAttacks": "物理远程攻击",
                 "MagicalDuskwood": "魔法夕木",
                 "VoidZonKuthonFollowers": "宗-库山信徒造成的虚能伤害",
-                "ImpulseFireFrom": "从{origin}来源涌动火焰",
+                "ImpulseFireFrom": "来自{origin}的涌动火焰",
                 "AllDamageFromSpells": "来自法术的全部伤害",
                 "AllDamageFromArcaneSpells": "所有奥术法术造成的伤害",
                 "AllStrikeDamageFromUndeadCreatures": "所有不死生物的打击造成的伤害",
@@ -7281,7 +7287,7 @@
                 "Bronze": "青铜",
                 "SpellsFromAllTraditions": "所有根源的法术",
                 "WispVulnerabilities": "wisp vulnerabilities",
-                "InhaledPoisons": "吸入毒素",
+                "InhaledPoisons": "吸入型毒素",
                 "ElementalInstinct": "damage dealt by instinct element creatures",
                 "HarvestBlood": "damage dealt by last Harvest Blood target",
                 "AttacksFromSuppressed": "来自被压制目标的攻击",
@@ -7433,7 +7439,7 @@
                         "label": "模式"
                     },
                     "predicate": {
-                        "label": "谓词"
+                        "label": "谓语"
                     },
                     "selector": {
                         "label": "选择器"
