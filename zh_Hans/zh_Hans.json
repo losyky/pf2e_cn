@@ -2870,9 +2870,9 @@
                     "LorePlaceholder": "木工学识",
                     "Special": "特殊",
                     "Note": "笔记",
-                    "Predicate": "谓词",
+                    "Predicate": "谓语",
                     "Error": {
-                        "PredicateArray": "谓词必须是一个数组"
+                        "PredicateArray": "谓语必须是一个数组"
                     },
                     "AddSpecial": "添加特殊"
                 },
