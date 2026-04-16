@@ -872,7 +872,7 @@
                 "Modification": {
                     "Initial": {
                         "AllowedDrops": "1级发明家职业特性",
-                        "Prompt": "选择一种初始改装"
+                        "Prompt": "选择一种初始改进。"
                     },
                     "NonlethalBluntShot": "非致命钝头弹射击",
                     "NonlethalModularHead": "非致命模块化头部",
@@ -881,7 +881,7 @@
                     "Breakthrough": {
                         "Prompt": "选择一个突破性改进。",
                         "AllowedDrops": "7级或者更低的发明家职业特性",
-                        "EnhancedResistancePrompt": "选择要增强的初始改修。"
+                        "EnhancedResistancePrompt": "选择要增强的初始改进。"
                     },
                     "Revolutionary": {
                         "Prompt": "选择一种革命性改进。",
@@ -950,7 +950,7 @@
                 "Standard": "标准",
                 "Greater": "高等",
                 "Prone": "倒地",
-                "Prompt": "选择掩蔽等级"
+                "Prompt": "选择掩蔽等级。"
             },
             "PreciseStrike": {
                 "Finisher": "终结技"
@@ -1480,7 +1480,7 @@
                 "MageArmor": "野兽之肤w/法术护甲"
             },
             "DancingShield": {
-                "Prompt": "选择盾牌AC加值"
+                "Prompt": "选择盾牌AC加值。"
             },
             "DeityAndCause": {
                 "AllowedDrops": "1级神卫职业特性",
@@ -2011,7 +2011,7 @@
             "ChromaticArmor": {
                 "Force": "紫(力场)",
                 "Mental": "靛(心灵)",
-                "Prompt": "选择一种颜色",
+                "Prompt": "选择一种颜色。",
                 "Acid": "橙(酸)",
                 "Electricity": "黄(电击)",
                 "Fire": "红(火焰)",
@@ -2492,10 +2492,10 @@
                     "SaveNote": "你在对抗诅咒与由女巫或鬼婆施放的法术而进行的豁免骰中成功时，结果变为大成功。"
                 },
                 "SaocAstrology": {
-                    "Prompt": "选择你通过索克占星术动作获得的环境减值或加值"
+                    "Prompt": "选择你通过索克占星术动作获得的环境减值或加值。"
                 },
                 "VikingShieldbearer": {
-                    "Prompt": "选择你要获得受训熟练度的武器"
+                    "Prompt": "选择你要获得受训熟练度的武器。"
                 }
             },
             "HuntPrey": {
@@ -2750,7 +2750,7 @@
                 "UndeadNearby": "附近有不死生物"
             },
             "ToggleProperty": {
-                "GourdHead": "Gourd Head: 增加察觉DC",
+                "GourdHead": "Gourd Head：增加察觉DC",
                 "TagTeam": "和另一个秘密结社成员夹击",
                 "Triangulate": "观察手能看到目标"
             },
@@ -2863,18 +2863,18 @@
             "ClanWeapon": {
                 "Label": "氏族武器",
                 "ClanPistol": "氏族手枪（族裔专长）",
-                "Prompt": "选择一种氏族武器"
+                "Prompt": "选择一种氏族武器。"
             },
             "Cleric": {
                 "Doctrine": {
-                    "Prompt": "选择一种信条",
+                    "Prompt": "选择一种信条。",
                     "AllowedDrops": "1级牧师职业特性"
                 },
                 "SharedReplenishment": {
                     "Note": "你可以将战时补给赋予的临时生命值给予10尺内的一个盟友，代替自己获得。"
                 },
                 "ReplenishmentOfWar": {
-                    "Note": "当你使用你的神祇的偏好武器，通过普通攻击伤害一个生物，你获得等于你的等级一半的临时生命值，如果普通攻击重击，则等于你的等级。@UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{Effect: 战时补给}"
+                    "Note": "当你使用你的神祇的偏好武器，通过普通攻击伤害一个生物，你获得等于你的等级一半的临时生命值，如果普通攻击重击，则等于你的等级。@UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{Effect：战时补给}"
                 },
                 "DivineRebuttal": {
                     "Note": "若你的打击命中，你所有盟友对触发的豁免检定中获得+2环境加值（重击时获得+3环境加值）。@UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{效果：神力抗驳}"
@@ -3001,7 +3001,7 @@
             },
             "Investigator": {
                 "Methodology": {
-                    "Prompt": "选择一种方法论"
+                    "Prompt": "选择一种方法论。"
                 },
                 "PursueALead": {
                     "Label": "追查方向 — 调查加值"
@@ -3080,7 +3080,7 @@
                 "DivineSmite": {
                     "Label": "神圣制裁"
                 },
-                "BladeAllyRune": "为利刃盟友选择一个性能符文",
+                "BladeAllyRune": "为利刃盟友选择一个性能符文。",
                 "TargetReaction": "目标触发了你的神卫反应",
                 "EvilDamage": "精魂伤害",
                 "NegativeDamage": "虚能伤害",
@@ -3108,7 +3108,7 @@
                     "Grandeur": "除了受到辉煌闪耀影响的敌人之外，身处你神卫灵光范围内的其他敌人也会在1轮内受到_显光尘_法术的影响。",
                     "Obedience": "除了触发反应的生物之外，所有身处你神卫灵光范围内的敌人同样必须选择@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]或者承受心灵伤害（每个敌人分别选择）。这些生物只会受到最小值的伤害（通常为@Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,11),3)))))[mental]]伤害），并且其承受的效果不会被任何针对你严酷铁律的改变所影响。举例而言，除了触发反应的生物外，残酷回响专长无法将其他生物受到的伤害转变为持续心灵伤害。",
                     "Iniquity": "除了触发反应的生物外，你同时对神卫灵光范围内的其他敌人造成伤害，数值等同于对触发反应的生物造成伤害的一半。",
-                    "Liberation": "除了受到解放踏步影响的盟友之外，你和其他身处你神卫灵光范围内的盟友也能以一个自由动作进行快步。即使受益于解放踏步的盟友无法移动，你和其他盟友依然能获得上述增益。",
+                    "Liberation": "除了受到解放踏步影响的盟友之外，你和其他身处你神卫灵光范围内的盟友也能以一个自由动作进行快步。即使受益于解放踏步的盟友无法移动，你和其他盟友依然能获得上述增益",
                     "Redemption": "如果敌人选择抗拒，你可以选择给予自身以及身处你神卫灵光范围内的所有盟友（包括触发反应的盟友）抗力。如果你这样做，所有人获得的抗力减少2点。@UUID[Compendium.pf2e.feat-effects.Item.GFLiTESBmoyQ3sLx]{效果：激昂反应 (救赎)}",
                     "Desecration": "直到你下一轮开始为止，所有身处你神卫灵光范围内的敌人在针对你的攻击投骰上获得-1状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ef63SlxSKlZmHosM]{效果：激昂反应 (亵渎)}"
                 },
@@ -3136,8 +3136,8 @@
                 "RelentlessReaction": {
                     "Grandeur": "触发反应的敌人同时受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:holy]伤害，在受到来自于辉煌闪耀的_显光尘_影响期间，其无法从该持续伤害中恢复。",
                     "Iniquity": "受到该反应动作初始伤害的敌人也会受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:unholy]伤害。",
-                    "Liberation": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
-                    "ObedienceRedemption": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害。",
+                    "Liberation": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害",
+                    "ObedienceRedemption": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]]伤害",
                     "LiberationHoly": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:holy]伤害",
                     "LiberationUnholy": "你惩戒那些使你的盟友陷入困境的敌人。如果触发反应的敌人在你启动解放踏步时，通过任何效果使你的盟友陷入受擒、束缚、禁足或麻痹，这名敌人受到@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:unholy]伤害",
                     "ObedienceRedemptionHoly": "如果这名敌人抗命，其承受@Damage[(@actor.abilities.cha.mod)[persistent,spirit]|traits:holy]伤害",
@@ -3161,31 +3161,31 @@
             },
             "DeviantAbilities": {
                 "AwakenedPower": {
-                    "BoneSpikesPoison": "骨刺: 毒液",
-                    "ConsumeEnergyRange": "吞噬能量: 增加范围",
-                    "ConsumeEnergyStrikes": "吞噬能量: 增强打击",
-                    "DistantWanderingFly": "神游: 飞行",
-                    "DistantWanderingQuick": "神游: 迅捷",
-                    "EerieFlickerTerrify": "怪异闪烁: 可怕影子",
-                    "EerieFlickerCompress": "怪异闪烁: 凝聚闪烁",
-                    "TectonicStompStun": "地震重踏: 震慑敌人",
-                    "BlastingBeamsLine": "爆炸射线: 60尺线形",
-                    "BlastingBeamsAgile": "爆炸射线: 灵巧打击",
-                    "BoneSpikesReach": "骨刺: 长触及",
-                    "EnervatingWailSilent": "衰弱哭嚎: 无声哭嚎",
-                    "PropulsiveLeapWeapon": "助推飞跃: 推进武器",
-                    "StormingBreathProne": "风暴吐息: 击倒",
-                    "EnervatingWailEnfeebling": "衰弱哭嚎: 削弱哭嚎",
-                    "GhostlyGraspGrab": "幽冥鬼爪: 擒抱",
-                    "GhostlyGraspPush": "幽冥鬼爪: 推离",
+                    "BoneSpikesPoison": "骨刺：毒液",
+                    "ConsumeEnergyRange": "吞噬能量：增加范围",
+                    "ConsumeEnergyStrikes": "吞噬能量：增强打击",
+                    "DistantWanderingFly": "神游：飞行",
+                    "DistantWanderingQuick": "神游：迅捷",
+                    "EerieFlickerTerrify": "怪异闪烁：可怕影子",
+                    "EerieFlickerCompress": "怪异闪烁：凝聚闪烁",
+                    "TectonicStompStun": "地震重踏：震慑敌人",
+                    "BlastingBeamsLine": "爆炸射线：60尺线形",
+                    "BlastingBeamsAgile": "爆炸射线：灵巧打击",
+                    "BoneSpikesReach": "骨刺：长触及",
+                    "EnervatingWailSilent": "衰弱哭嚎：无声哭嚎",
+                    "PropulsiveLeapWeapon": "助推飞跃：推进武器",
+                    "StormingBreathProne": "风暴吐息：击倒",
+                    "EnervatingWailEnfeebling": "衰弱哭嚎：削弱哭嚎",
+                    "GhostlyGraspGrab": "幽冥鬼爪：擒抱",
+                    "GhostlyGraspPush": "幽冥鬼爪：推离",
                     "HighSpeedRegenerationDeath": "高速再生: 紧急再生",
-                    "HighSpeedRegenerationSpeed": "高速再生: 速度增加",
+                    "HighSpeedRegenerationSpeed": "高速再生：速度增加",
                     "Prompt": "为特异专长选择一种觉醒能力。",
-                    "PropulsiveLeapSpeed": "助推飞跃: 速度增加",
-                    "StormingBreathEscape": "风暴吐息: 快速逃脱",
-                    "TectonicStompStone": "地震重踏: 石块掩护",
-                    "TitanSwingProne": "泰坦挥击: 推离",
-                    "TitanSwingBleed": "泰坦挥击: 流血",
+                    "PropulsiveLeapSpeed": "助推飞跃：速度增加",
+                    "StormingBreathEscape": "风暴吐息：快速逃脱",
+                    "TectonicStompStone": "地震重踏：石块掩护",
+                    "TitanSwingProne": "泰坦挥击：推离",
+                    "TitanSwingBleed": "泰坦挥击：流血",
                     "AwakenedLabel": "觉醒",
                     "HighSpeedRegenerationRecovery": "高速再生：紧急再生",
                     "VineLashCone": "藤蔓鞭打：30尺锥形",
@@ -4559,7 +4559,7 @@
                     "Description": "你可以以 8 环内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.4MOew29Z1oCX8O28]（仅自身），并恢复 1 聚能点。"
                 },
                 "ReflectionOfLife": {
-                    "Description": "你获得快速治疗 3， 持续1分钟。 超过 5 级后，你每升 2 级，快速治疗量就增加 1。</p>\n<p>@UUID[Compendium.pf2e.campaign-effects.Item.DOxl0FDd21VMDOMP]{效果: 生命共鸣 (快速治疗)}.",
+                    "Description": "你获得快速治疗 3， 持续1分钟。 超过 5 级后，你每升 2 级，快速治疗量就增加 1。</p>\n<p>@UUID[Compendium.pf2e.campaign-effects.Item.DOxl0FDd21VMDOMP]{效果：生命共鸣 (快速治疗)}.",
                     "Title": "生命共鸣"
                 },
                 "ReflectionOfLight": {
@@ -4866,7 +4866,7 @@
                 "Success": "器官视域 — 医疗检定成功"
             },
             "FrenziedRevelry": {
-                "Note": "每当从该加值中受益者对抗敌方心灵效果时在豁免骰上取得大成功，其疯狂加剧，在攻击和伤害骰获得+1状态加值，持续1轮。@UUID[Compendium.pf2e.spell-effects.Item.ldl1aU5ovTQMUHJ2]{法术效果: 迷乱狂欢 (大成功)}"
+                "Note": "每当从该加值中受益者对抗敌方心灵效果时在豁免骰上取得大成功，其疯狂加剧，在攻击和伤害骰获得+1状态加值，持续1轮。@UUID[Compendium.pf2e.spell-effects.Item.ldl1aU5ovTQMUHJ2]{法术效果：迷乱狂欢 (大成功)}"
             },
             "WingedWarrior": {
                 "Dedication": {
@@ -5133,7 +5133,7 @@
             },
             "SixthPillar": {
                 "SixthPillarMastery": {
-                    "AttackNote": "当你在对敌人的一次无武装攻击成功时，在你的下回合开始前他们对抗你的法术的豁免受到-1状态减值。@UUID[Compendium.pf2e.feat-effects.Item.DX6v0lcI2uA99Yjv]{效果: 第六柱精通}",
+                    "AttackNote": "当你在对敌人的一次无武装攻击成功时，在你的下回合开始前他们对抗你的法术的豁免受到-1状态减值。@UUID[Compendium.pf2e.feat-effects.Item.DX6v0lcI2uA99Yjv]{效果：第六柱精通}",
                     "SpellNote": "当你使用法术位施放一个法术时，你在下回合开始前无武装攻击的攻击骰获得+1状态加值。"
                 }
             },
@@ -6267,9 +6267,9 @@
                     "AttackOfOpportunity": "反应打击",
                     "AbilityPrompt": "选择乔装变形能力",
                     "Armored": "着甲 Armored",
-                    "Commander": "指挥者 Commander",
-                    "ElementalAttack": "元素攻击 Elemental Attack",
-                    "ShieldCarrier": "持盾者 Shield Carrier",
+                    "Commander": "指挥者",
+                    "ElementalAttack": "元素攻击",
+                    "ShieldCarrier": "持盾者",
                     "WeaponPerk": "武器提升 Weapon Perk",
                     "WeaponPerkPrompt": "选择一种武器提升"
                 }
@@ -6444,7 +6444,7 @@
                         "Label": "猛击符文",
                         "Text": "该武器命中时，巨人能@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{击退 Push}目标10尺（重击则击退20尺）。"
                     },
-                    "Prompt": "选择一种符文"
+                    "Prompt": "选择一种符文。"
                 }
             },
             "ShockerLizard": {
@@ -6805,10 +6805,10 @@
             "MixedMartialArtist": {
                 "StanceShift": {
                     "CrossElbow": "Cross Elbow",
-                    "ElbowKnockoutStance": "金刚架肘势 Elbow Knockout Stance",
+                    "ElbowKnockoutStance": "金刚架肘势",
                     "GrapplingLimb": "Grappling Limb",
-                    "SecureGrappleStance": "银丝锁蛟势 Secure Grapple Stance",
-                    "ThrashingBarrageStance": "刚风摧山势 Thrashing Barrage Stance",
+                    "SecureGrappleStance": "银丝锁蛟势",
+                    "ThrashingBarrageStance": "刚风摧山势",
                     "ThrashingFist": "Thrashing Fist"
                 }
             },
@@ -6873,7 +6873,7 @@
                     "AlreadyHasItem": "{actor} 已有 {item}，因此没有再次添加。"
                 },
                 "EffectTarget": {
-                    "Prompt": "选择此效果的目标"
+                    "Prompt": "选择此效果的目标。"
                 },
                 "TokenMark": {
                     "TargetToken": "鼠标悬浮在某个指示物上，按T选定该指示物为目标，按Esc取消。",
@@ -7504,7 +7504,7 @@
                             "gm": "仅GM",
                             "owner": "物品所有者"
                         },
-                        "hint": "当这个笔记被发送到聊天栏时，对谁可见？（默认对所有用户可见）",
+                        "hint": "当这个笔记被发送至聊天时，对谁可见？（默认对所有用户可见）。",
                         "label": "可见"
                     }
                 }
