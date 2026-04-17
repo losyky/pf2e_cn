@@ -4956,7 +4956,8 @@
                     },
                     "WhoseCryIsThunder": {
                         "Description": "当你神火解放时，你可以使自身充满电流，直到你下回合开始。在你充满电流时，任何触摸你，用无武装攻击或非触及近战武器伤害你的生物会受到@Damage[1d6[electricity]]伤害。@UUID[Compendium.pf2e.feat-effects.Item.nP3k4N52NzrR3KKf]",
-                        "CriticalSpecialization": "你在一次打击中大成功时会激发雷霆震响。目标必须通过@Check[fortitude|against:exemplar|traits:sonic]检定对抗你的职业DC，失败时，他会被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]并@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1分钟，这是个音波效果。"
+                        "CriticalSpecialization": "你在一次打击中大成功时会激发雷霆震响。目标必须通过@Check[fortitude|against:exemplar|traits:sonic]检定对抗你的职业DC，失败时，他会被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]并@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1分钟，这是个音波效果。",
+                        "DamageNote": "攻击者承受@Damage[1d6[electricity]]伤害"
                     },
                     "TheMournful": {
                         "Description": "在你进行神火解放时，你的行动有着辛酸的悲壮色彩，使30尺内的一个敌人由于眼中打转的泪水和闪现回忆而@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]；这一个是心灵和情绪效果，持续到你的下回合开始，该敌人在随后10分钟内免疫这一效果。"
