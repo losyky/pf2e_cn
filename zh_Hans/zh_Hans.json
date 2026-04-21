@@ -8195,7 +8195,7 @@
         "DeleteSpellcastEntryTitle": "删除施法能力",
         "TraitDeadly": "致命",
         "TraitCapacity": "弹容",
-        "TraitDescriptionJousting": "这种武器适用于骑乘战斗。当你上马时，如果你在攻击动作前移动了至少10英尺，那么该攻击的伤害增加一个等于武器的伤害骰子数量的环境加值。此外，当骑乘时，你可以单手使用武器，将伤害骰更改所列值。",
+        "TraitDescriptionJousting": "这种武器适用于骑乘战斗。当你上马时，如果你在攻击动作前移动了至少10尺，那么该攻击的伤害增加一个等于武器的伤害骰子数量的环境加值。此外，当骑乘时，你可以单手使用武器，将伤害骰更改所列值。",
         "TraitReload": "装填",
         "SpellNonCantripLabel": "非戏法",
         "TraitFatalAim": "夺命瞄准",
