@@ -3286,7 +3286,7 @@
                     "Fervor": "你在意志豁免上获得 +1 状态加值。如果你施展一个法术让你的情绪焦点获得好处，这个加值会增加到 +3，直到你的下一个回合开始。法术：@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.YGRpHU5yxw73mls8]",
                     "Label": "爱",
-                    "Trigger": "你的情绪焦点在距离你 30 尺的范围内受到敌人伤害。"
+                    "Trigger": "你的情绪焦点在距离你30尺的范围内受到敌人伤害。"
                 },
                 "Anger": {
                     "Activation": "如果你@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]、@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]，你可以尝试@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]。如果成功，对你施加状态的生物或危害（若适用）会受到等同于你角色等级的力场伤害。",
@@ -4040,7 +4040,7 @@
                 },
                 "DiskRider": {
                     "Description": "当你施放浮碟术时，你可以将其持续时间修改为维持，最多10分钟。如果你这样做，在它的效果上增加以下的升阶条目。",
-                    "DescriptionHeightened": "该盘可以承载最多10负载。如果你骑在浮碟上，法术不再结束（但如果任何其他生物骑在浮碟上，包括该生物骑在你身上，法术仍会结束）。如果你骑在浮碟上，它就会改变其载重力以承载你，再加上相当于你可以携带并不被超载的最大额外负载。当你骑在浮碟上，每次你维持法术时可以指示它沿着地面移动，最多 30 尺或你的速度，以较慢者为准。当你骑在它上面，只要它在坚实的地面上结束其运动，圆盘就可以穿过液体表面移动。如果它在不能支撑它的表面上结束运动，则法术结束。"
+                    "DescriptionHeightened": "该盘可以承载最多10负载。如果你骑在浮碟上，法术不再结束（但如果任何其他生物骑在浮碟上，包括该生物骑在你身上，法术仍会结束）。如果你骑在浮碟上，它就会改变其载重力以承载你，再加上相当于你可以携带并不被超载的最大额外负载。当你骑在浮碟上，每次你维持法术时可以指示它沿着地面移动，最多30尺或你的速度，以较慢者为准。当你骑在它上面，只要它在坚实的地面上结束其运动，圆盘就可以穿过液体表面移动。如果它在不能支撑它的表面上结束运动，则法术结束。"
                 },
                 "DrenchingMist": {
                     "Description": "当你施放隐雾术时，你可以对它进行修改，使其效果上增加以下的升阶条目。",
@@ -4568,7 +4568,7 @@
                 },
                 "ReflectionOfWater": {
                     "Title": "水之反射",
-                    "Description": "你以一个 5 环内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.zfn5RqAdF63neqpP]。在 10 级后你每拥有 2 级等级，你控制的水域的长度和宽度就增加 10 尺。"
+                    "Description": "你以一个 5 环内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.zfn5RqAdF63neqpP]。在 10 级后你每拥有 2 级等级，你控制的水域的长度和宽度就增加10尺。"
                 }
             },
             "Summoner": {
