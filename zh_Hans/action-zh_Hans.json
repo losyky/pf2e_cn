@@ -927,14 +927,16 @@
                 "Result": {
                     "DaysSpent": {
                         "one": "1日",
-                        "other": "{days}日"
+                        "other": "{days}日",
+                        "Label": "花费天数"
                     },
                     "IncomeEarned": "赚取收入",
                     "PerDay": "每日 {income}",
                     "TaskLevel": "任务等级",
                     "Title": "赚取收入结果"
                 },
-                "Submit": "掷骰"
+                "Submit": "掷骰",
+                "ShortDescription": "你使用一项技能在休整期尝试赚钱。GM会设定一个代表最有利可图的工作的任务等级。你可以寻找较低级别的任务，由GM决定能否找到。"
             },
             "Fly": {
                 "Description": "<p><strong>需求</strong> 你有飞行速度。</p>\n<hr />\n<p>你在空中飞行至多等于飞行速度的距离。向上飞行（垂直向上或斜向上）使用在困难地形移动的规则。每消耗5尺速度可以垂直向下移动10尺距离。若你飞行到地面上，你不会受到坠落伤害。你可以使用该动作飞行0尺来保持悬停在空中。若你在回合结束时处于空中而本回合没有使用过飞行动作，你会坠落。</p>",
@@ -1068,59 +1070,127 @@
                     "Description": "<p>（鲁莽）载具沿当前朝向，直线移动至多其两倍速度的距离。</p>",
                     "Title": "驱动（2动作）",
                     "Notes": {
-                        "success": "<strong>成功</strong> 载具沿当前朝向，直线移动至多其两倍速度的距离。"
+                        "success": "<strong>成功</strong> 载具沿当前朝向，直线移动至多其两倍速度的距离。",
+                        "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled."
                     }
                 },
                 "Drive3": {
                     "Description": "<p>（鲁莽）你在保持对载具控制的驾驶检定上承受-5减值。载具沿当前朝向，直线移动至多其三倍速度的距离。</p>",
-                    "Title": "驱动（3动作）"
+                    "Title": "驱动（3动作）",
+                    "Notes": {
+                        "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled.",
+                        "success": "<strong>成功</strong> 载具沿当前朝向，直线移动至多其三倍速度的距离"
+                    }
                 },
                 "Title": "驱动"
             },
             "Hack": {
-                "Title": "骇入"
+                "Title": "骇入",
+                "Description": "<p>You try to access, control, or make changes to an active, secured system. In most cases, this is going to be an attempt made against a local computer system that you access directly or indirectly through the use of a hacking toolkit. Attempt a Computers check to determine if you can access the targeted system. Computers with improved systems might require multiple successes to access.</p><p><strong>Critical Success</strong> You access the system, or you achieve two successes toward accessing a system requiring more than one success. You leave no trace of your tampering.<br><strong>Success</strong> You access the system, or you achieve one success toward accessing a system that requires more than one success.<br><strong>Failure</strong> You fail to access the system or achieve any success toward accessing a system that requires more than one success. Some computerized systems might have security measures that activate on a failure.<br><strong>Critical Failure</strong> You activate specially ingrained security protocols or completely lock yourself out of the system. Being locked out of a system prevents you from attempting another check to access it for the next hour.</p>",
+                "Notes": {
+                    "criticalFailure": "<strong>Critical Failure</strong> You activate specially ingrained security protocols or completely lock yourself out of the system. Being locked out of a system prevents you from attempting another check to access it for the next hour.",
+                    "criticalSuccess": "<strong>Critical Success</strong> You access the system, or you achieve two successes toward accessing a system requiring more than one success. You leave no trace of your tampering.",
+                    "failure": "<strong>Failure</strong> You fail to access the system or achieve any success toward accessing a system that requires more than one success. Some computerized systems might have security measures that activate on a failure.",
+                    "success": "<strong>Success</strong> You access the system, or you achieve one success toward accessing a system that requires more than one success."
+                }
             },
             "Navigate": {
-                "Title": "导航"
+                "Title": "导航",
+                "Description": "<p>You plan a short journey. While this is most often used when traveling with a mech, vehicle, or starship, the same skill can be used to determine the optimal route to take while traveling on foot. This lets you plan a general heading on a planetoid or guide your starship on an in-system voyage. If you are navigating a short journey, you typically attempt a Piloting check only once per day, but some environments or changes might necessitate rolling more often. The GM determines the DC and how long this activity takes (usually just a minute or so). More unusual locales or those you're unfamiliar with might require you to have a minimum proficiency rank to Navigate.</p><p><strong>Critical Success</strong> You get an excellent sense of where you are. If you are in an environment with cardinal directions, you know them exactly.<br><strong>Success</strong> You gain enough orientation to avoid becoming hopelessly lost. If you are in an environment with cardinal directions, you have a sense of those directions.</p>",
+                "Notes": {
+                    "criticalSuccess": "<strong>Critical Success</strong> You get an excellent sense of where you are. If you are in an environment with cardinal directions, you know them exactly.",
+                    "success": "<strong>Success</strong> You gain enough orientation to avoid becoming hopelessly lost. If you are in an environment with cardinal directions, you have a sense of those directions."
+                }
             },
             "OperateDevice": {
-                "Title": "操作设备"
+                "Title": "操作设备",
+                "Description": "<p>You perform a basic task using a digital device, such as operating a basic program or playing a vidgame. You might also use this if the device you're using has a physical component, such as 3D-tracking or requiring specific motions to activate features. The GM determines the DC based on the action you're taking.</p>",
+                "Notes": {
+                    "criticalFailure": "<strong>Critical Failure</strong> You fail to access the game or make a mistake that prevents you from accessing the program (such as forgetting a password and locking yourself out of the program) for the next day.",
+                    "criticalSuccess": "<strong>Critical Success</strong> You excel at what you are doing, learning secrets from the program or advanced functionality. If it's a game, then you win it with record timing based on average completion rates.",
+                    "failure": "<strong>Failure</strong> You can't understand the program or game and take a –2 circumstance penalty to further attempts to access or play it for the next day.",
+                    "success": "<strong>Success</strong> You manage to operate the device in the necessary manner, including getting basic functionality. You gain general information from the program."
+                }
             },
             "PlotCourse": {
-                "Title": "制定航线"
+                "Title": "制定航线",
+                "Description": "<p>You prepare for a longer journey into the stars, likely making use of your starship's Drift Engine (or similar FTL device). Attempt a Piloting check to determine if you can chart a suitable path to your ultimate destination. The GM determines how long this activity takes and the DC.</p><p><strong>Critical Success</strong> You manage to reach your destination in half the expected time (minimum 1 day).<br><strong>Success</strong> You create a usable navigational plan that gets you to your intended destination on time.<br><strong>Failure</strong> Your plan has several problems, and you end up reaching your destination late.<br><strong>Critical Failure</strong> You arrive in an unfamiliar star system, requiring you to plot a new course to your destination (likely at an increased DC due to the unfamiliar starting point).</p>",
+                "Notes": {
+                    "criticalFailure": "<strong>Critical Failure</strong> You arrive in an unfamiliar star system, requiring you to plot a new course to your destination (likely at an increased DC due to the unfamiliar starting point).",
+                    "criticalSuccess": "<strong>Critical Success</strong> You manage to reach your destination in half the expected time (minimum 1 day).",
+                    "failure": "<strong>Failure</strong> Your plan has several problems, and you end up reaching your destination late.",
+                    "success": "<strong>Success</strong> You create a usable navigational plan that gets you to your intended destination on time."
+                }
             },
             "RunOver": {
-                "Title": "冲撞"
+                "Title": "冲撞",
+                "Description": "<p><strong>Requirements</strong> You are piloting a vehicle.</p>\n<p>(reckless) You try to run over creatures with your vehicle, possibly also ramming one larger creature or object. If you maintain control of your vehicle, the vehicle moves up to twice its Speed in a straight line at the vehicle's current heading. You attempt to run over any creatures in your path two sizes smaller than the vehicle or smaller, and you can attempt to ram one target creature or object in your path one size smaller than the vehicle or larger.</p>\n<p>Each creature in your path, including a rammed target, takes the vehicle's collision damage (basic Reflex save at vehicle's collision DC). If the rammed target is a vehicle, its pilot can attempt a piloting check in place of this Reflex save, with the same results. If the target of your ram takes damage, you and your vehicle each take collision damage (no save) and your movement ends.</p>",
+                "Notes": {
+                    "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled."
+                }
             },
             "Stop": {
-                "Title": "停止"
+                "Title": "停止",
+                "Description": "<p><strong>Requirements</strong> You are piloting a vehicle in motion.</p>\n<p>You bring the vehicle to a stop.</p>"
             },
             "Stunt": {
                 "BackOff": {
-                    "Title": "后退"
+                    "Title": "后退",
+                    "Notes": {
+                        "success": "<strong>Success</strong> Move half Speed backwards."
+                    }
                 },
                 "BarrelRoll": {
-                    "Title": "滚筒"
+                    "Title": "滚筒",
+                    "Notes": {
+                        "success": "<strong>Success</strong> Move half Speed to gain a +2 status bonus to AC."
+                    }
                 },
                 "Drift": {
-                    "Title": "漂移"
+                    "Title": "漂移",
+                    "Notes": {
+                        "success": "<strong>Success</strong> Move half Speed sideways without turning."
+                    }
                 },
                 "Evade": {
-                    "Title": "闪避"
+                    "Title": "闪避",
+                    "Notes": {
+                        "success": "<strong>Success</strong> Move half Speed to gain a +1 status bonus to AC."
+                    }
                 },
                 "FlipAndBurn": {
-                    "Title": "翻滚推进"
+                    "Title": "翻滚推进",
+                    "Notes": {
+                        "success": "<strong>Success</strong> Move half Speed, then turn any direction."
+                    }
                 },
                 "Flyby": {
-                    "Title": "飞越"
+                    "Title": "飞越",
+                    "Notes": {
+                        "success": "<strong>Success</strong> Move half Speed through an enemy square."
+                    }
                 },
                 "Title": "特技驾驶",
                 "TurnInPlace": {
-                    "Title": "原地转向"
+                    "Title": "原地转向",
+                    "Notes": {
+                        "success": "<strong>Success</strong> Turn, then move full Speed."
+                    }
+                },
+                "Description": "<p>You perform a stunt while Driving your vehicle, temporarily improving its effective capabilities at the risk of losing control. Drive your vehicle and choose a stunt. All Piloting checks attempted as part of your Stunt receive the listed penalty, including Piloting checks made to take a reckless action. If the Drive action and Stunt are both reckless, you must attempt the Piloting check to keep control of the vehicle twice.</p>\n<table class=\"pf2e\"><caption>Stunts</caption><thead><tr><th>Stunt</th><th>Penalty</th><th>Benefit</th></tr></thead><tbody><tr><td>Back Off</td><td>–1</td><td>Move half Speed backwards.</td></tr><tr><td>Evade</td><td>–1</td><td>Move half Speed to gain a +1 status bonus to AC.</td></tr><tr><td>Flip and Burn</td><td>–1</td><td>Move half Speed, then turn any direction.</td></tr><tr><td>Barrel Roll</td><td>–2</td><td>Move half Speed to gain a +2 status bonus to AC.</td></tr><tr><td>Flyby</td><td>–2</td><td>Move half Speed through an enemy square.</td></tr><tr><td>Drift</td><td>–2</td><td>Move half Speed sideways without turning.</td></tr><tr><td>Turn in Place</td><td>–2</td><td>Turn, then move full Speed.</td></tr></tbody></table>",
+                "Modifiers": {
+                    "RecklessPiloting": "Reckless Piloting"
+                },
+                "Notes": {
+                    "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled."
                 }
             },
             "TakeControl": {
-                "Title": "接管"
+                "Title": "接管",
+                "Description": "<p><strong>Requirements</strong> You are aboard the vehicle and adjacent to its controls.</p>\n<p>You grab the reins, the wheel, or some other mechanism to control the vehicle. Attempt a piloting check; on a success, you become the vehicle's pilot, or regain control of the vehicle if it was uncontrolled. Some vehicles have complicated controls that cause this action to become a multi-action activity.</p>",
+                "Notes": {
+                    "success": "<strong>Success</strong> You become the vehicle's pilot, or regain control of the vehicle if it was uncontrolled."
+                }
             }
         },
         "ActionsCheck": {
