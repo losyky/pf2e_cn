@@ -9226,7 +9226,7 @@
         "TraitCeramic": "陶瓷",
         "TraitDescriptionArchaic": "此武器采用传统工艺与材料制作，但无法有效对抗现代护甲。所有源自《开拓者角色扮演游戏》的武器均具有\"陈旧\"特征。武器符文在陈旧武器上可正常生效。",
         "TraitDescriptionCritical": "该武器使用所列武器类型的重击专精特性，而非其自身的重击专精特性。",
-        "TraitDescriptionCycle": "",
+        "TraitDescriptionCycle": "Actions with the cycle trait change your current stellar attunement to its opposite state. When you take such an action with this trait, you benefit from the additional effect of your current attunement if the action had the attuned trait, but once you complete the action, your attunement changes to its counterpart (so graviton-attuned if you were photon-attuned before taking the action, or vice versa).",
         "TraitAffixedToASlashingWeapon": "附着在一把挥砍武器上",
         "TraitBantrid": "Bantrid",
         "TraitBrenneri": "Brenneri",
