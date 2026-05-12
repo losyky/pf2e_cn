@@ -5159,7 +5159,8 @@
                     "IC": "格拉利昂（帝王历）",
                     "CE": "未定义（公历纪年法）",
                     "AR": "格拉利昂（艾巴萨罗姆纪元）",
-                    "AD": "地球（公历纪年法）"
+                    "AD": "地球（公历纪年法）",
+                    "AG": "Pact Standard (After Gap)"
                 }
             },
             "CampaignFeats": {
@@ -9221,11 +9222,15 @@
         "TraitXenometricAndroid": "异种仿生人",
         "TraitDescriptionBrandish": "挥旗特征表示一种需要你挥动或以其他方式主动展示旗帜的能力。要使用具有挥旗特征的能力，你必须用一只手持握旗帜，或持用附着有旗帜的武器。由于在使用具有挥旗特征的战术时，你必须主动用旗帜向队友发出信号以指挥他们，因此除非特别注明，否则你无法使用被赋予的自由动作或反应动作作为挥旗战术的一部分。",
         "TraitDescriptionCompact": "你可以在持盾手为空手或者持握一件轻型的非武器物体时，使用举起盾牌动作来举起具有袖珍特征的盾牌。",
-        "TraitCaster": "",
+        "TraitCaster": "Caster",
         "TraitCeramic": "陶瓷",
         "TraitDescriptionArchaic": "此武器采用传统工艺与材料制作，但无法有效对抗现代护甲。所有源自《开拓者角色扮演游戏》的武器均具有\"陈旧\"特征。武器符文在陈旧武器上可正常生效。",
         "TraitDescriptionCritical": "该武器使用所列武器类型的重击专精特性，而非其自身的重击专精特性。",
-        "TraitDescriptionCycle": ""
+        "TraitDescriptionCycle": "",
+        "TraitAffixedToASlashingWeapon": "附着在一把挥砍武器上",
+        "TraitBantrid": "Bantrid",
+        "TraitBrenneri": "Brenneri",
+        "TraitCopaxi": "Copaxi"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
