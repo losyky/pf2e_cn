@@ -920,7 +920,8 @@
                     "swarmsuit": "集群服",
                     "tempweave": "保温织服",
                     "thinplate": "薄板甲",
-                    "veskarium-imperial-plate": "维斯卡里姆帝国板甲"
+                    "veskarium-imperial-plate": "维斯卡里姆帝国板甲",
+                    "estex-suit": "Estex Suit"
                 },
                 "Category": {
                     "light-barding": "轻型坐骑护甲",
@@ -1948,7 +1949,8 @@
                     "compact-shield": "袖珍盾",
                     "deflecting-field": "偏斜力场",
                     "phase-shield": "相位盾",
-                    "riot-shield": "镇暴盾"
+                    "riot-shield": "镇暴盾",
+                    "fiendsbane-shield": "Fiendsbane Shield"
                 },
                 "Specific": {
                     "Hint": "将此盾牌标记为<i>特殊魔法盾牌</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
@@ -2230,11 +2232,16 @@
                         "max": {
                             "label": "最大射程"
                         }
+                    },
+                    "subjectToMAP": {
+                        "label": "MAP相关？",
+                        "hint": "这次攻击会增加MAP或受到MAP影响吗？"
                     }
                 },
                 "Tags": {
                     "RangeN": "射程{n}尺",
-                    "RangeIncrementN": "射程增量{n}尺"
+                    "RangeIncrementN": "射程增量{n}尺",
+                    "MagN": "Mag {n}"
                 },
                 "LinkedWeapon": "已链接武器"
             },
@@ -2312,7 +2319,9 @@
                     "rounds-double-barreled-pistol": "枪弹（双管手枪）",
                     "8-round-magazine": "8发弹匣",
                     "backpack-catapult-stones": "背包投石器弹丸",
-                    "backpack-ballista-bolts": "背包重弩矢"
+                    "backpack-ballista-bolts": "背包重弩矢",
+                    "chem-tank": "Chem Tank",
+                    "projectile-ammo": "投射物弹药"
                 },
                 "Groups": {
                     "OwnWeapons": "拥有的武器",
@@ -2667,7 +2676,8 @@
                         "MotionSense": "动态感知",
                         "InfraredVision": "红外线视觉",
                         "Magicsense": "魔法感知",
-                        "Bloodsense": "血液感知"
+                        "Bloodsense": "血液感知",
+                        "ElectromagneticSense": "Electromagnetic Sense"
                     },
                     "Label": "感官",
                     "RangeLabel": "距离",
@@ -2843,7 +2853,30 @@
                     "first-one": "先驱语",
                     "gfolian": "火蟹语",
                     "kucharn": "虫族语",
-                    "shirren": "希伦语"
+                    "shirren": "希伦语",
+                    "bantridi": "Bantridi",
+                    "brenneri": "Brenneri",
+                    "copaxi": "Copaxi",
+                    "elindrian": "Elindrian",
+                    "embri": "Embri",
+                    "entu": "Entu",
+                    "garaggakal": "Garaggakal",
+                    "izalguun": "Izalguun",
+                    "madrosarai": "Madrosarai",
+                    "maratan": "Maratan",
+                    "nchaki": "Nchaki",
+                    "orbian": "Orbian",
+                    "osharu": "Osharu",
+                    "primacy": "Primacy",
+                    "raxi": "Raxi",
+                    "rodnarthian": "Rodnarthian",
+                    "starsong": "Starsong",
+                    "szandite": "Szandite",
+                    "talphirian": "Talphirian",
+                    "triaxian": "Triaxian",
+                    "trinary": "Trinary",
+                    "urog": "Urog",
+                    "worlanisi": "Worlanisi"
                 }
             },
             "Dead": "死亡",
@@ -2910,7 +2943,9 @@
                 "BonusLabel": {
                     "modifier": "攻击调整值",
                     "save": "豁免DC"
-                }
+                },
+                "SegmentsN": "{n}部分",
+                "Thresholds": "阈值"
             },
             "Plural": "角色",
             "IWREditor": {
