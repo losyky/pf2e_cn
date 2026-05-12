@@ -351,7 +351,7 @@
                 "melee": "近战",
                 "ranged": "远程",
                 "proficiency": "熟练",
-                "Label": "攻击"
+                "Label": "打击"
             },
             "BasicWarActions": "基础战争动作",
             "Gear": {
