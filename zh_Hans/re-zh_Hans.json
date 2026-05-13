@@ -616,8 +616,9 @@
                     },
                     "Chalice": {
                         "Adept": {
-                            "Note": "如果你或一个30尺内的盟友从一个敌人的重击中承受了穿刺伤害或挥砍伤害、或承受了持续流血伤害，在你下一回合结束前进行饮杯能为受伤的生物提供更强的复原力以弥补其损失的活力。小啜时，提供给该生物的临时生命提升至2+你的魅力调整值+你的等级。豪饮时，你每有一个等级，杯都会治疗该生物5点生命值。@UUID[Compendium.pf2e.feat-effects.Item.Sq558879cgEc1lGC]",
-                            "DescriptionAlteration": "小啜时，提供给该生物的临时生命提升至2+你的魅力调整值+你的等级。豪饮时，杯会治疗该生物你每个等级5点生命值。"
+                            "Note": "如果你或一个30尺内的盟友从一个敌人的重击中承受了穿刺伤害或挥砍伤害、或承受了持续流血伤害，在你下一回合结束前进行饮杯能为受伤的生物提供更强的复原力以弥补其损失的活力。<p>小啜时，提供给该生物的临时生命提升至2+你的魅力调整值+你的等级。豪饮时，你每有一个等级，杯都会治疗该生物5点生命值。</p>",
+                            "DescriptionAlteration": "如果你或一个30尺内的盟友从一个敌人的重击中承受了穿刺伤害或挥砍伤害、或承受了持续流血伤害，在你下一回合结束前进行饮杯能为受伤的生物提供更强的复原力以弥补其损失的活力。小啜时，提供给该生物的临时生命提升至@Damage[(5 * @actor.level)[healing,vitality]|shortLabel|traits:healing,vitality]（虚能治疗则为@Damage[(5 * @actor.level)[healing,void]|traits:healing,void]）。",
+                            "Prompt": "杯的行家增益生效吗？"
                         },
                         "Label": "杯"
                     },
@@ -2359,6 +2360,11 @@
                     "ShieldingFormation": {
                         "ResistanceToggle": "防御阵型- 终止AC加值来获得抗力"
                     }
+                },
+                "ImprovedFamiliarAttunement": {
+                    "Description": "你吸取存储在你魔宠身上的魔法力量。这个回合内，你无需消耗法术位就能施放一个你今天准备过并且已经施放过的法术。你仍然需要进行施法动作并且满足该法术的其他要求。",
+                    "Name": "汲取魔宠",
+                    "Requirements": "你的魔宠在你身上。"
                 }
             },
             "Rogue": {
@@ -2684,7 +2690,7 @@
                     "FamiliarAbility": {
                         "OngoingMisery": {
                             "Title": "长痛魔宠",
-                            "Description": "你的魔宠似乎对除你之外的所有生物充满敌意，如果他们靠近就会对他们嘶吼。当你施放或维持巫术时，你的魔宠可以诅咒其15尺内的一个生物，延长其受到的任何负面状态持续时间1轮。这是一个诅咒效果。这只会延长具有持续时间的状态（例如“1轮”或“直到你下回合结束”），且不会阻止状态被其他方式移除。"
+                            "Description": "当你施放或维持一个巫术时，你的魔宠可以诅咒其15尺内的一个生物，延长其受到的一个由你选择的负面状态的持续时间1轮。这是一个诅咒效果。这只会延长具有持续时间的状态（例如“1轮”或“直到你下回合结束”），且不会阻止状态被其他方式移除。"
                         },
                         "KeenSenses": {
                             "Title": "锐感魔宠",
@@ -2890,7 +2896,8 @@
                 "Percussion": "打击乐",
                 "Singing": "歌唱",
                 "Strings": "弦乐",
-                "Winds": "管乐"
+                "Winds": "管乐",
+                "Synths": "合成器"
             },
             "UndeadSlayer": {
                 "SlayersBlessing": {
@@ -3107,7 +3114,8 @@
                     "Revitalizing": "赋生",
                     "Stumbling": "踉跄",
                     "TwirlingThrow": "回旋投掷",
-                    "TwirlingThrowNote": "该武器会在攻击后飞回你的手上"
+                    "TwirlingThrowNote": "该武器会在攻击后飞回你的手上",
+                    "DualSecondAttackLabel": "双发终结 — 第二次攻击"
                 },
                 "GoadingFeint": {
                     "Note": "虚招成功时，取代虚招的通常效果，直到目标的下个回合结束，其对你的下一次攻击骰受到-2环境减值。@UUID[Compendium.pf2e.feat-effects.Item.rflbFzV44Fd6aBLE]"
@@ -3116,6 +3124,12 @@
                 "TheBiggerTheyAre": {
                     "CriticalSuccess": "大成功时，如果你成功穿过了目标占据的方格，目标获得对你的精准伤害弱点，持续到你的回合结束。@UUID[Compendium.pf2e.feat-effects.Item.SLXhPgaeKB0W3k1D]",
                     "Success": "成功时，如果你成功穿过了目标占据的方格，目标在你下次攻击时获得对你的精准伤害弱点。@UUID[Compendium.pf2e.feat-effects.Item.SLXhPgaeKB0W3k1D]"
+                },
+                "ElegantBuckler": {
+                    "RollOptionLabel": "优雅圆盾 — 正使用小圆盾"
+                },
+                "ExtravagantParry": {
+                    "Prompt": "你有空闲手或正持握一把有格挡特征的武器吗？"
                 }
             },
             "Gnome": {
@@ -5809,6 +5823,26 @@
             },
             "SpellEffectLevitate": {
                 "RollOptionLabel": "浮空术 — 本回合已稳定自身"
+            },
+            "SpellEffectMindSwap": {
+                "RollOptionLabel": "交换思维 — 乔装成彼此"
+            },
+            "SpellEffectPrismaticShield": {
+                "RollOptionLabel": "虹光护盾 — 被大的远程武器攻击时"
+            },
+            "SpellEffectSparkleskin": {
+                "DamageNote": "当你受到伤害时，伤口会发出闪光，@Template[emanation|distance:5]范围内的生物必须尝试强韧豁免。\n失败时该生物在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]。\n大失败时3轮内陷入目眩。"
+            },
+            "SpellEffectSpiritOfTheBeast": {
+                "AspectOfInsight": "内省之相",
+                "AspectOfMight": "威猛之相",
+                "AspectOfSwiftness": "迅捷之相"
+            },
+            "StormHammer": {
+                "Electrify": "风暴锤 — 电击"
+            },
+            "UnderseaPrivateer": {
+                "RollOptionLabel": "正在水中或水下战斗"
             }
         },
         "RuleElement": {
@@ -7341,7 +7375,8 @@
             "Desert": "沙漠",
             "Forest": "林地",
             "Mountain": "山脉",
-            "Plains": "平原"
+            "Plains": "平原",
+            "Space": "太空"
         },
         "AmmunitionNotes": {
             "ExplosiveAmmunition": {
@@ -7704,6 +7739,240 @@
         "HazardAbility": {
             "HauntedForge": {
                 "StrikeNote": "目标@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。"
+            }
+        }
+    },
+    "SF2E": {
+        "NPCAbility": {
+            "AeonGuard": {
+                "Commander": {
+                    "RallyTheTroops": {
+                        "Prompt": "Did the aeon guard end their movement adjacent to another aeon guard?"
+                    }
+                },
+                "Trooper": {
+                    "CoordinatedFire": {
+                        "Note": "Your target becomes @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of your next turn."
+                    }
+                }
+            },
+            "Arqsheth": {
+                "ArmamentOfTheArchons": {
+                    "StrikeLabel": "Arqsheth"
+                }
+            },
+            "Atlapak": {
+                "AerialBuoyancy": {
+                    "Atmosphere": "Atmosphere",
+                    "None": "None",
+                    "Normal": "Normal",
+                    "Thick": "Thick",
+                    "Thin": "Thin"
+                }
+            },
+            "Coposirix": {
+                "SeepIn": {
+                    "MaterialPrompt": "伤害由一把特殊材质的武器造成？"
+                }
+            },
+            "CorpseFleet": {
+                "LeadSalvo": {
+                    "RollOptionLabel": "Lead Salvo — Additional number of d4s"
+                },
+                "JuniorOfficer": {
+                    "RallyTheTroops": {
+                        "Prompt": "Did your movement end next to the officer?"
+                    }
+                }
+            },
+            "Hardlight": {
+                "TouchingProjectorLabel": "Touching Projector"
+            },
+            "Ignurso": {
+                "Lavaproof": {
+                    "ImmunityLabel": "lavaproof"
+                }
+            },
+            "Illumantula": {
+                "RelativityField": {
+                    "WeaknessLabel": "fortune"
+                }
+            },
+            "Paradox17": {
+                "NaturalInvisibility": {
+                    "ResistanceException": "from creatures observing it"
+                }
+            },
+            "ParadoxicalSolipsist": {
+                "PerceiveUnreality": {
+                    "ResistanceException": "source of damage is hidden to them"
+                }
+            },
+            "RallyTheTroops": {
+                "Ally": "Next to Ally",
+                "Commander": "Next to Commander"
+            },
+            "SihedronGuardThunderstriker": {
+                "NavigationalSpellshape": {
+                    "Alteration": "If the next action the aeon guard uses is to Cast a Spell that has a range, increase that spell's range by 30 feet. In addition, if the spell requires an attack roll or a Reflex save, any targets of the spell that have lesser cover reduce the bonuses they gain from cover by 1 against the spell."
+                }
+            },
+            "Vorthuul": {
+                "QuantumDuality": {
+                    "AbsoluteTranquility": "Absolute Tranquility",
+                    "EverburningAgony": "Everburning Agony"
+                }
+            },
+            "WaywardWarp": {
+                "WarpField": {
+                    "Cosmic": "Cosmic",
+                    "Earth": "Earth",
+                    "Frozen": "Frozen",
+                    "Inferno": "Inferno",
+                    "Storm": "Storm",
+                    "Water": "Water"
+                }
+            }
+        },
+        "SpecificRule": {
+            "Android": {
+                "MachineSaboteur": {
+                    "Note": "The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}."
+                }
+            },
+            "Astrazoan": {
+                "DigestiveOutburst": {
+                    "Label": "Stomach"
+                }
+            },
+            "Barathu": {
+                "AdaptativeLocomotion": {
+                    "Flippers": "Flippers",
+                    "HookedPseudopods": "Hooked Pseudopods",
+                    "Prompt": "Select an adaptation"
+                },
+                "ConvergentEvolution": {
+                    "Prompt": "Select a 5th-level or lower ancestry feat."
+                },
+                "ManifoldEvolution": {
+                    "Prompt": "Select a 17th-level or lower ancestry feat."
+                }
+            },
+            "CairnForm": {
+                "CriticalHit": "The target must succeed at a @Check[fortitude|against:class] or become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} for 1 round."
+            },
+            "Contemplative": {
+                "IntensifiedPsychicShock": {
+                    "ExtendedShock": "Extended Shock",
+                    "MindCrusher": "Mind Crusher",
+                    "PeerPressure": {
+                        "Label": "Peer Pressure",
+                        "Note": "Your psychic shock gains the arc trait, but it deals mental damage rather than electricity damage."
+                    },
+                    "PsychicWave": "Psychic Wave"
+                },
+                "Mindrender": {
+                    "Label": "Psychic Shock"
+                },
+                "OverwhelmingEgo": {
+                    "Label": "First Psychic Shock strike this round"
+                },
+                "Telepredict": {
+                    "Toggle": "Telepredict — Dealt mental damage"
+                }
+            },
+            "Corpsefolk": {
+                "BoneShards": {
+                    "Label": "Bone Shards"
+                }
+            },
+            "Dragonkin": {
+                "DragonkinBreath": {
+                    "Acid": "Acid (Corrosive)",
+                    "Bludgeoning": "Bludgeoning (Hammer)",
+                    "Cold": "Cold (Cryo)",
+                    "Electricity": "Electricity (Shock)",
+                    "Fire": "Fire (Flame)",
+                    "Piercing": "Piercing (Spear)",
+                    "Slashing": "Slashing (Knife)",
+                    "Sonic": "Sonic (Sonic)"
+                },
+                "DragonsTenacity": {
+                    "InflictsParalyzed": "Dragon's Tenacity — Effect makes you Paralyzed",
+                    "MagicEffect": "Dragon's Tenacity — Magic effect makes you Paralyzed"
+                },
+                "Moodscales": {
+                    "Modifier": "Moodscales — Against emotion effects",
+                    "Note": "If you roll a success on a saving throw against an emotion effect, you get a critical success instead."
+                },
+                "WeaponFamiliarity": {
+                    "AdvancedWeapons": "Advanced Dragonkin Weapons",
+                    "MartialWeapons": "Martial Dragonkin Weapons"
+                }
+            },
+            "Envoy": {
+                "CutEmDeep": {
+                    "Note": "When you successfully Demoralize the target of your @UUID[Compendium.sf2e.actions.Item.cmCtfURzpbzkxWsy]{Get 'Em!}, the target doesn't become immune to your further attempts to Demoralize them."
+                },
+                "Directive": {
+                    "LeadByExample": {
+                        "DescriptionAlteration": "When you use an act of leadership after issuing one or more envoy directives earlier that turn, you can choose one envoy directive you activated. You grant the lead by example benefits for that directive even if you didn't meet the usual requirements to lead by example. You can do this once per turn.",
+                        "Prompt": "Lead by Example?"
+                    }
+                },
+                "EffortlessInfluencer": {
+                    "Note": "<p>When you succeed at a check with Deception, Diplomacy, or Intimidation, allies within 60 feet who witnessed your success gain a +1 status bonus to the next check they attempt with that skill within 1 minute (or a +2 bonus if your check was a critical success).</p><p>@UUID[Compendium.sf2e.feat-effects.Item.ZQM4vfHEKgxvNJik]{Effect: Effortless Influencer}</p>"
+                },
+                "GetEm": {
+                    "LeadByExample": {
+                        "ToggleLabel": "Get Em! — Initial Lead by Example Strike"
+                    }
+                },
+                "HangInThere": {
+                    "CriticalSuccess": "The target gains temporary Hit Points equal to double their level plus your Charisma modifier. @UUID[Compendium.sf2e.feat-effects.Item.B4JhFkbk5WHmWcOZ]{Effect: Hang In There!}",
+                    "Prompt": "What proficiency DC was used?",
+                    "Success": "The target gains temporary Hit Points their level plus your Charisma modifier. @UUID[Compendium.sf2e.feat-effects.Item.B4JhFkbk5WHmWcOZ]{Effect: Hang In There!}"
+                },
+                "HiddenAgenda": {
+                    "ToggleLabel": "Save against thought-or-emotion-revealing effect"
+                },
+                "LeadershipStyle": {
+                    "Prompt": "Select a leadership style."
+                },
+                "PardonMe": {
+                    "Note": "When you successfully Tumble Through using Deception, the foe whose space you passed through is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of its next turn."
+                },
+                "SavvyInfluencer": {
+                    "Note": "<p>The first time per day when you roll a natural 1 on a Deception, Diplomacy, or Intimidation check, you don't automatically reduce your degree of success (you get a critical failure only if your result is 10 lower than the DC).</p>"
+                },
+                "SmoothDiversions": {
+                    "Failure": "Creatures only become aware you were trying to trick them if you critically fail to Create a Diversion. Otherwise the creature assumes that your diversion was part of your regular bravado.",
+                    "Success": "When you succeed at an attempt to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion}, you can immediately @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} or Step as a free action."
+                },
+                "TakeEmAlive": {
+                    "ToggleLabel": "Take 'Em Alive — Add charisma to Strike damage"
+                }
+            },
+            "Equipment": {
+                "Augmentations": {
+                    "VenomSpur": {
+                        "Label": "Venom Spur"
+                    }
+                },
+                "CommUnit": {
+                    "Flashlight": "Comm Unit — Flashlight"
+                },
+                "Flashlight": {
+                    "Lit": "Flashlight Lit"
+                },
+                "ForceField": {
+                    "Advanced": "尝试一次@Check[flat|dc:19]检定。成功时，该重击变为普通命中。",
+                    "Elite": "尝试一次@Check[flat|dc:17]检定。成功时，该重击变为普通命中。",
+                    "Paragon": "尝试一次@Check[flat|dc:15]检定。成功时，该重击变为普通命中。",
+                    "Superior": "尝试一次@Check[flat|dc:18]检定。成功时，该重击变为普通命中。",
+                    "Tactical": "尝试一次@Check[flat|dc:20]检定。成功时，该重击变为普通命中。",
+                    "Ultimate": "尝试一次@Check[flat|dc:16]检定。成功时，该重击变为普通命中。"
+                }
             }
         }
     }
