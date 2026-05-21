@@ -1879,7 +1879,7 @@
                     "TumbleThroughLabel": "{item}（翻滚）"
                 },
                 "DragonEye": {
-                    "Addendum": "当你施放3环级或更高环阶的_燃烧之息_法术时，法术区域内的生物必须进行@Check[will|basic]豁免而非基础反射豁免；若豁免失败，除承受法术正常伤害外，还会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。这会为法术添加情绪、恐惧和心灵特性。"
+                    "Addendum": "当你施放3环级或更高环级的_燃烧之息_法术时，法术区域内的生物必须进行@Check[will|basic]豁免而非基础反射豁免；若豁免失败，除承受法术正常伤害外，还会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。这会为法术添加情绪、恐惧和心灵特性。"
                 },
                 "ScaldingGauntlet": {
                     "Basic": "你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[fortitude|dc:26|options:damaging-effect,inflicts:sickened|showDC:all]豁免，否则承受@Damage[2d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>灼热铁手套</em>的恶心。",
@@ -3056,7 +3056,7 @@
                     "GuidingLuck": "如果你拥有幸运指引专长，你不能在使用共享幸运为盟友增益时使用幸运指引来重投盟友的攻击检定或是察觉检定。"
                 },
                 "IncredibleLuck": {
-                    "Base": "你可以每小时使用1次半身人幸运，而不是1天1次。",
+                    "Base": "你可以每小时使用一次半身人幸运，而不是每日一次。",
                     "GuidingLuck": "如果你有幸运指引专长，你依旧只能以每日一次的频率在察觉检定或攻击检定失败时使用半身人幸运。（不过你可以在你使用半身人幸运的同一个小时里使用幸运指引）",
                     "SharedLuck": "如果你有分享幸运专长，你依旧只能以每日一次的频率给你的盟友使用半身人幸运。"
                 }
@@ -4634,7 +4634,7 @@
                 "Label": "启动共鸣反射",
                 "ReflectionOfStone": {
                     "Title": "石之反射",
-                    "Description": "你以一个内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.2BV2yYPfVJ5zirZt]，将法术环阶升高到等同于你等级一半（向上取整）。"
+                    "Description": "你以一个内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.2BV2yYPfVJ5zirZt]，将法术环级升高到等同于你等级一半（向上取整）。"
                 },
                 "ReflectionOfStorm": {
                     "Title": "风暴反射",
@@ -4646,7 +4646,7 @@
                 },
                 "ReflectionOfLight": {
                     "Title": "光之反射",
-                    "Description": "你以一个内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.DyiD239dNS7RIxZE]，将法术环阶升高到等同于你等级一半（向上取整）。"
+                    "Description": "你以一个内在神术法术的形式施放@UUID[Compendium.pf2e.spells-srd.Item.DyiD239dNS7RIxZE]，将法术环级升高到等同于你等级一半（向上取整）。"
                 },
                 "ReflectionOfWater": {
                     "Title": "水之反射",
