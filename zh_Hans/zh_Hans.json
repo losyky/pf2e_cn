@@ -3027,8 +3027,8 @@
             },
             "Familiar": {
                 "Master": {
-                    "Perception": "大师察觉",
-                    "ArmorClass": "防护等级熟练"
+                    "Perception": "主人察觉",
+                    "ArmorClass": "主人护甲等级"
                 },
                 "Blurb": "{master}的魔宠",
                 "NoAttribute": "无（宠物）",
@@ -3172,8 +3172,8 @@
         "ArmorBaseLabel": "基础",
         "ArmorCheckLabel": "检定减值",
         "ArmorCheckPenalty": "护甲检定减值",
-        "ArmorClassBase": "基础防护等级 10",
-        "ArmorClassLabel": "防护等级",
+        "ArmorClassBase": "基础护甲等级 10",
+        "ArmorClassLabel": "护甲等级",
         "ArmorClassShortLabel": "AC",
         "ArmorDexLabel": "敏捷调整值上限",
         "ArmorGreaterResilientRune": "高等韧性",
@@ -4449,20 +4449,20 @@
         "MartialUnarmed": "无武装",
         "MartialUnarmored": "无护甲",
         "MasterAbility": {
-            "cha": "魅力熟练",
-            "con": "体质熟练",
-            "dex": "敏捷熟练",
-            "int": "智力熟练",
-            "str": "力量熟练",
-            "wis": "感知熟练"
+            "cha": "主人魅力",
+            "con": "主人体质",
+            "dex": "主人敏捷",
+            "int": "主人智力",
+            "str": "主人力量",
+            "wis": "主人感知"
         },
-        "MasterArmorClass": "防护等级熟练 {base}",
-        "MasterLevel": "熟练等级",
+        "MasterArmorClass": "主人护甲等级 {base}",
+        "MasterLevel": "主人等级",
         "MasterLevelHP": "熟练等级",
         "MasterSavingThrow": {
-            "fortitude": "强韧熟练",
-            "reflex": "反射熟练",
-            "will": "意志熟练"
+            "fortitude": "主人强韧",
+            "reflex": "主人反射",
+            "will": "主人意志"
         },
         "MaxHPTitle": "你的最大生命值将自动计算。",
         "MaxHPTitleNPC": "最大生命值.",
@@ -8015,7 +8015,7 @@
             "CreatureType": "生物种类",
             "Perception": "察觉",
             "Defenses": "防御",
-            "ArmorClass": "防护等级",
+            "ArmorClass": "护甲等级",
             "Offenses": "进攻",
             "AttackRoll": "攻击骰",
             "Skills": "技能",
