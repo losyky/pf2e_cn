@@ -1759,7 +1759,7 @@
                 "Tracking": "追踪",
                 "AnyBasicAmmo": "任意基础弹药",
                 "Reloader": {
-                    "EmptyMessage": "库存中没有兼容弹药",
+                    "EmptyMessage": "物品栏中没有兼容弹药",
                     "Reload1": "装填",
                     "ReloadAll": "全部装填"
                 },
@@ -5598,7 +5598,7 @@
         "TabDetailsLabel": "详情",
         "TabEffectsLabel": "效果",
         "TabFeatsLabel": "专长",
-        "TabInventoryLabel": "物品",
+        "TabInventoryLabel": "物品栏",
         "TabManageTabsLabel": "管理标签",
         "TabPathfinderSociety": "开拓者协会",
         "TabSkillsLabel": "技能",
@@ -8139,7 +8139,7 @@
                     "QuantityLabel": "数量"
                 }
             },
-            "InventoryTab": "物品",
+            "InventoryTab": "物品栏",
             "SavesExtraInfoLabelPlaceholder": "附加在所有豁免...",
             "SensesLabel": "感官",
             "SpeedExtraInfoLabelPlaceholder": "速度详细...",
