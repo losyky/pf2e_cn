@@ -8804,13 +8804,13 @@
             "EnvironmentFeature": {
                 "Terrain": {
                     "Difficult": {
-                        "Greater": "危害",
+                        "Greater": "高等困难",
                         "None": "无",
                         "Label": "困难地形",
                         "Difficult": "困难"
                     }
                 },
-                "Label": "环境特征"
+                "Label": "环境特性"
             },
             "DifficultTerrain": {
                 "GreaterDifficultTerrain": "高等困难地形",
