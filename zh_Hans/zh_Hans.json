@@ -3366,7 +3366,7 @@
         "ChatRollDetails": {
             "Select": "检查掷骰",
             "Title": "掷骰检查器",
-            "RollOptions": "掷骰设定",
+            "RollOptions": "掷骰选项",
             "ModifiersEmpty": "无调整值",
             "FlatCheckNoModifiers": "措手不及判定不会包括任何调整值、加值或减值。",
             "ModifiersAndDice": "调整值和骰子",
