@@ -7033,10 +7033,10 @@
             },
             "OrtMob": {
                 "Subservience": {
-                    "Hustle": "Hustle",
-                    "Kill": "Kill",
-                    "Rally": "Rally",
-                    "Work": "Work"
+                    "Hustle": "急行军",
+                    "Kill": "杀戮",
+                    "Rally": "集结",
+                    "Work": "工作"
                 }
             },
             "PeacockPhoenix": {
