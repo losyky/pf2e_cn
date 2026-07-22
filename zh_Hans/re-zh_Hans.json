@@ -721,7 +721,7 @@
                     },
                     "TesseractTunnel": "你不再需要物理移动以连接空间中的两点。当你施展超维隧道时，你直接创造一条隧道，其终点是在与你速度相等的射程内的一个方格；你可以选择立即传送到隧道另一端的空间。此外，隧道可以双向穿越，而非只从入口到出口。你可以解消该法术。",
                     "WarpStep": {
-                        "Heightened": "你完全扭曲了空间而不需要再走过其间的距离。你可以选择传送到一个在你视线和效果范围内的位置，最大距离等于你速度的两倍（在应用了跃迁步的状态加值后）。这将赋予该法术以传送特性。",
+                        "Heightened": "你完全扭曲了空间而不需要再走过其间的距离。你可以选择传送到一个在你视线和效果范围内的位置，最大距离等于你速度的两倍（在应用了跃迁步的状态加值后）。这将赋予该法术以传送特征。",
                         "Base": "空间在瞬息之间收缩，你能用单动作施展该法术。"
                     },
                     "VectorScreen": "你的屏障持续时间更长，并且你可以引爆它进行一次爆炸性的反击。法术的持续时间增加到1分钟。你可以解除该法术。如果有任何弹丸被困在屏障中，你可以作为解消法术的一部分施展念动射弹将它们射向一个生物。从屏障而非你的位置开始判断念动射弹的射程。",
@@ -1879,7 +1879,7 @@
                     "TumbleThroughLabel": "{item}（翻滚）"
                 },
                 "DragonEye": {
-                    "Addendum": "当你施放3环级或更高环级的_燃烧之息_法术时，法术区域内的生物必须进行@Check[will|basic]豁免而非基础反射豁免；若豁免失败，除承受法术正常伤害外，还会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。这会为法术添加情绪、恐惧和心灵特性。"
+                    "Addendum": "当你施放3环级或更高环级的_燃烧之息_法术时，法术区域内的生物必须进行@Check[will|basic]豁免而非基础反射豁免；若豁免失败，除承受法术正常伤害外，还会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。这会为法术添加情绪、恐惧和心灵特征。"
                 },
                 "ScaldingGauntlet": {
                     "Basic": "你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[fortitude|dc:26|options:damaging-effect,inflicts:sickened|showDC:all]豁免，否则承受@Damage[2d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>灼热铁手套</em>的恶心。",
@@ -3370,7 +3370,7 @@
                     "Activation": "如果你处于@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]或@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]，而且该效果允许豁免的话，你可以多尝试一次豁免来结束这个效果。",
                     "Description": "你那强烈的赞叹足以感染或妨碍周遭的人。",
                     "Fallout": "在你安顿情绪前，你会处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。",
-                    "Fervor": "施展法术时，选择一个被你的法术攻击检定击中或是豁免失败的生物（如果有的话）。该生物对你迷魂，直到它的下一个回合结束。接着它牠会在1小时内暂时免疫这种个炽情效果。法术：@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]",
+                    "Fervor": "施展法术时，选择一个被你的法术攻击检定击中或是豁免失败的生物（如果有的话）。该生物对你迷魂，直到它的下一个回合结束。接着它牠会在1小时内临时免疫这种个炽情效果。法术：@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.zul5cBTfr7NXHBZf]（无需圣徽）",
                     "Label": "惊叹",
                     "Trigger": "你或30尺内盟友在对敌人AC的攻击检定，或是在对抗敌人DC的的技能检定上得到大成功。"
@@ -3646,7 +3646,7 @@
             },
             "ExemplaryFinisher": {
                 "Wit": "敌人在对你进行攻击骰时会受到-2的环境减值，直到你下一个回合开始。@UUID[Compendium.pf2e.feat-effects.Item.cu10OjQUdY0a9gpj]",
-                "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]具有暂时免疫能力，则他们的暂时免疫效果结束。",
+                "Braggart": "如果敌人对你的@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]具有临时免疫能力，则他们的临时免疫效果结束。",
                 "Battledancer": "你可以在完成终结后立即以一个自由动作进行一次快步。",
                 "Name": "惩戒终结",
                 "Fencer": "敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，直到你下一回合。",
@@ -4134,7 +4134,7 @@
                     "Description": "当你施展吸血鬼之触时，你可以修改其标准效果如下。你可以将临时生命给予30尺范围内的一个盟友，而不是让自己获得临时生命。1分钟后，该盟友将失去任何剩余的临时生命。"
                 },
                 "SummonEnsemble": {
-                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。随后目标在24小时内暂时免疫该效果。"
+                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。随后目标在24小时内临时免疫该效果。"
                 },
                 "UneasyRest": {
                     "Description": "当你施展睡眠术时，你可以修改该法术，在其标准效果上增加以下内容：你施法的目标会经历可怕的梦境。当一个豁免失败或大失败的目标醒来时，它将获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
@@ -4143,7 +4143,7 @@
                     "Description": "当你施放光亮术时，你可以将其持续时间修改为1分钟，并修改其标准效果，以创造一个形如超小型生物的漂浮光源，而不是至多四个光源。这个生物会在你的头上盘旋，除非你花费一个具有专注特征的单动作来引导光源移动最多30尺，在这种情况下，它会一直留在那里直到你再次引导它。如果你引导它回到你的头上，它就会在你头上盘旋并再次跟随你，直到你把它引导到其他地方。如果该生物移动到你的120尺以外，它就会立即消失。"
                 },
                 "BeaconMark": {
-                    "DescriptionHeightened": "你将自己与被标记的目标相调谐。在法术持续期间，你可以花费一个具有专注、侦测和预言特性的行动来尝试定位目标，只要你在目标的1英里范围内，就可以知道通往目标的方向。如果目标是一个生物或一个生物拥有目标物体，该生物可以尝试对你的法术DC进行@Check[will]豁免。如果它成功了，你定位目标的尝试就会失败，而且你在1天内不能再尝试这个动作。你只能让一个目标以这种方式被标记。如果你对第二个目标施展这个法术，第一个目标上的魔法印记法术就会结束，你的魔法印记也会消失。",
+                    "DescriptionHeightened": "你将自己与被标记的目标相调谐。在法术持续期间，你可以花费一个具有专注、侦测和预言特征的行动来尝试定位目标，只要你在目标的1英里范围内，就可以知道通往目标的方向。如果目标是一个生物或一个生物拥有目标物体，该生物可以尝试对你的法术DC进行@Check[will]豁免。如果它成功了，你定位目标的尝试就会失败，而且你在1天内不能再尝试这个动作。你只能让一个目标以这种方式被标记。如果你对第二个目标施展这个法术，第一个目标上的魔法印记法术就会结束，你的魔法印记也会消失。",
                     "Description": "当你施展魔法印记时，你可以修改该法术以增加以下的升阶条目。"
                 },
                 "ConfoundingImage": {
@@ -4288,7 +4288,7 @@
             },
             "Spellshape": {
                 "VigorousAnthem": "你和所有受影响的盟友获得等同3+你魅力调整值的临时生命值，持续1分钟 @UUID[Compendium.pf2e.feat-effects.Item.7AzGhIOx4Df5Cicr]{Effect: Vigorous Anthem}",
-                "UnusualComposition": "如果你的下一个动作是施放一个具有听觉或视觉特征的复合法术，你可以让它影响任何能用感官察觉法术的生物，而不仅仅是特性所指出的感官，甚至包括特殊感官如震颤感应。你可以选择排除任何你选择的感官。",
+                "UnusualComposition": "如果你的下一个动作是施放一个具有听觉或视觉特征的复合法术，你可以让它影响任何能用感官察觉法术的生物，而不仅仅是特征所指出的感官，甚至包括特殊感官如震颤感知。你可以选择排除任何你选择的感官。",
                 "GustingSpell": "如果你接下来的动作是施放具有气或电特征的法术，你可以在施法前或施法后飞行最多10尺。",
                 "ThunderclapSpell": "如果你的下一个动作是施放一个具有电特征或造成电击伤害、没有持续时间并要求生物尝试豁免的法术，那么该法术的闪电力量除了其原本效果外还会产生雷鸣。每个在该法术的反射豁免中失败的生物会被@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]1轮，而大失败的生物还会被@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                 "SplitHex": "如果你接下来的动作是施放一个以单一目标为对象的伤害法术，将其环级降低2级（使其比你能施放的最高环级低2级）。如果你如此，你可以选择第二个目标来受到该法术的影响。",
@@ -4434,7 +4434,7 @@
                     "Description": "你获得25尺的速度，一个带有娴熟特征的1d6穿刺噬咬无武装攻击，以及一个带有灵巧和娴熟特征的1d4挥砍爪击无武装攻击。你的动物形态为小型。"
                 },
                 "Wereshark": {
-                    "Description": "你获得15尺的速度和25尺的游泳速度，以及1d8穿刺噬咬的无武装攻击，并带有擒抱特性。你的混合形态获得两栖游泳25尺的特征。在你的动物形态中，你失去陆地移动速度，游泳速度增加到35尺，并且获得水生特征。",
+                    "Description": "你获得15尺速度和25尺游泳速度，以及1d8穿刺噬咬的无武装攻击，并带有擒拿特征。你的混合形态获得两栖游泳25尺的特征。在你的动物形态中，你失去陆地移动速度，游泳速度增加到35尺，并且获得水栖特征。",
                     "Label": "鲨化人"
                 },
                 "Werebat": {
@@ -4446,7 +4446,7 @@
                 },
                 "Werebear": {
                     "Label": "熊化人",
-                    "Description": "你获得25尺的速度，一个1d8穿刺噬咬无武装攻击，以及一个带有灵巧特性的1d6挥砍爪击无武装攻击。"
+                    "Description": "你获得25尺速度，一个1d8穿刺噬咬无武装攻击，以及一个带有灵巧特征的1d6挥砍爪击无武装攻击。"
                 },
                 "Werecrocodile": {
                     "Label": "鳄化人",
@@ -4457,10 +4457,10 @@
                 },
                 "Weretiger": {
                     "Label": "虎化人",
-                    "Description": "你获得25尺的速度，1d8穿刺伤害的爪子无武装攻击，以及一个带有灵巧特性的1d6挥砍伤害的爪子无武装攻击。"
+                    "Description": "你获得25尺速度，1d8点穿刺伤害的爪子无武装攻击，以及一个带有灵巧特征的1d6点挥砍伤害的爪子无武装攻击。"
                 },
                 "Werewolf": {
-                    "Description": "你获得30尺的速度和一个带有摔绊特性以及1d8穿刺伤害的无武装攻击。",
+                    "Description": "你获得30尺速度和一个带有摔绊特征以及1d8点穿刺伤害的无武装攻击。",
                     "Label": "狼化人"
                 },
                 "ChangeShape": {
@@ -5037,7 +5037,7 @@
                         "Description": "在你神火解放后，你可以吸引30尺内一个敌人的注意，这个效果有听觉，心灵、情绪、预言特征。直到你下回合开始，目标在对你以外的生物进行攻击、伤害、技能检定上获得-1状态减值，但对你进行这些检定时获得+1状态加值。"
                     },
                     "TheRadiant": {
-                        "Description": "在你进行神火解放时，你激励30尺内的一个盟友继续前进，为他恢复@Damage[(2*(1+@actor.level))[healing]]{2+你等级两倍的HP}；这是心灵和情绪效果。然后该盟友暂时免疫10分钟。"
+                        "Description": "在你进行神火解放时，你激励30尺内的一个盟友继续前进，为他恢复@Damage[(2*(1+@actor.level))[healing]]{2+你等级两倍的HP}；这是心灵和情绪效果。然后该盟友临时免疫10分钟。"
                     },
                     "ThiefOfMoonlight": {
                         "Description": "在你神火解放后，你可以用自由动作对30尺内的一个敌人进行一次[[/act steal]]或者[[/act palm-an-object]]偷走一件物品。被偷走的物品会直接消失并出现在你的手中。"
@@ -5760,7 +5760,7 @@
                         "FeyDragonet": "**妖精微龙** （奥术，毒素） 你喷出一道@Template[type:cone|distance:15]的致幻气体。区域内的每个生物必须成功通过@Check[fortitude|against:class-spell|options:area-effect,inflicts:stupefied|traits:arcane,poison]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮。",
                         "HomingDrake": "**归巢龙** （酸蚀） 你喷出一道@Template[type:line|distance:30]的腐蚀唾液，造成@Damage[(ceil(@actor.level/2))d4[acid]|options:area-damage]伤害，@Check[reflex|against:class-spell|basic|options:area-effect,damage:material:silver|traits:acid]豁免。在3级及之后每2级，伤害增加1d4。",
                         "HouseDrake": "**小巢龙** （奥术，心灵） 你喷出一团@Template[type:cone|distance:15]的银色迷雾，造成@Damage[(ceil(@actor.level/2))d4[mental]|options:area-damage]伤害，@Check[will|against:class-spell|options:area-effect|traits:arcane,mental]豁免。针对弱点时它视为银。在3级及之后每2级，伤害增加1d4。",
-                        "PearlDragonet": "**珍珠微龙** （奥术，诅咒） 你喷出一道@Template[type:cone|distance:15]的金色迷雾，改变陷入其中的生物的运气。每次你使用微龙吐息时，决定它是给予好运还是厄运。任何受你微龙吐息影响的生物在1小时内暂时免疫它。如果你的吐息给予好运，区域内的每个生物在你的下个回合开始前的下一次攻击检定或技能检定中获得+1状态加值。如果你的吐息给予厄运，区域内的每个生物必须尝试一次@Check[will|against:class-spell|options:area-effect|traits:arcane,curse]豁免。豁免失败的生物在你的下个回合开始前的下一次攻击检定或技能检定中受到-1状态减值。在大失败时，该生物必须在该检定中投掷两次并取较差的结果；这是一个厄运效果。",
+                        "PearlDragonet": "**珍珠微龙** （奥术，诅咒） 你喷出一道@Template[type:cone|distance:15]的金色迷雾，改变陷入其中的生物的运气。每次你使用微龙吐息时，决定它是给予好运还是厄运。任何受你微龙吐息影响的生物在1小时内临时免疫它。如果你的吐息给予好运，区域内的每个生物在你的下个回合开始前的下一次攻击检定或技能检定中获得+1状态加值。如果你的吐息给予厄运，区域内的每个生物必须尝试一次@Check[will|against:class-spell|options:area-effect|traits:arcane,curse]豁免。豁免失败的生物在你的下个回合开始前的下一次攻击检定或技能检定中受到-1状态减值。在大失败时，该生物必须在该检定中投掷两次并取较差的结果；这是一个厄运效果。",
                         "TidepoolDragonet": "**潮池微龙** （火焰） 你喷出一道@Template[type:line|distance:15]的过热气体，造成@Damage[(ceil(@actor.level/2))d4[fire]|options:area-damage]伤害，@Check[reflex|against:class-spell|basic|options:area-effect|traits:fire]豁免。在3级及之后每2级，伤害增加1d4。即使它具有火焰特征，你也可以在水下使用你的吐息。如果你这样做，它获得水特征并表现为一道@Template[type:cone|distance:20]的沸水。"
                     },
                     "PearlDragonet": {
