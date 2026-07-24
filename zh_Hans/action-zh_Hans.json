@@ -313,6 +313,10 @@
                 "Reload": {
                     "Description": "{actor}为{weapon}装填{ammo}。",
                     "Title": "装填"
+                },
+                "Boost": {
+                    "Description": "{actor}使其{weapon}充能。",
+                    "Title": "充能"
                 }
             },
             "Impersonate": {
@@ -1071,14 +1075,14 @@
                     "Title": "驱动（2动作）",
                     "Notes": {
                         "success": "<strong>成功</strong> 载具沿当前朝向，直线移动至多其两倍速度的距离。",
-                        "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled."
+                        "failure": "<strong>失败</strong> 载具顺着最新航向直线移动等同其速度的距离，由GM指定至多45度的偏斜，并陷入失控。"
                     }
                 },
                 "Drive3": {
                     "Description": "<p>（鲁莽）你在保持对载具控制的驾驶检定上承受-5减值。载具沿当前朝向，直线移动至多其三倍速度的距离。</p>",
                     "Title": "驱动（3动作）",
                     "Notes": {
-                        "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled.",
+                        "failure": "<strong>失败</strong> 载具顺着最新航向直线移动等同其速度的距离，由GM指定至多45度的偏斜，并陷入失控。",
                         "success": "<strong>成功</strong> 载具沿当前朝向，直线移动至多其三倍速度的距离"
                     }
                 },
@@ -1086,110 +1090,110 @@
             },
             "Hack": {
                 "Title": "骇入",
-                "Description": "<p>You try to access, control, or make changes to an active, secured system. In most cases, this is going to be an attempt made against a local computer system that you access directly or indirectly through the use of a hacking toolkit. Attempt a Computers check to determine if you can access the targeted system. Computers with improved systems might require multiple successes to access.</p><p><strong>Critical Success</strong> You access the system, or you achieve two successes toward accessing a system requiring more than one success. You leave no trace of your tampering.<br><strong>Success</strong> You access the system, or you achieve one success toward accessing a system that requires more than one success.<br><strong>Failure</strong> You fail to access the system or achieve any success toward accessing a system that requires more than one success. Some computerized systems might have security measures that activate on a failure.<br><strong>Critical Failure</strong> You activate specially ingrained security protocols or completely lock yourself out of the system. Being locked out of a system prevents you from attempting another check to access it for the next hour.</p>",
+                "Description": "<p>你尝试访问、控制或更改一个活跃且受保护的系统。在大多数情况下，此操作针对本地计算机系统实施（通过黑客工具包直接或间接接入）。进行一次计算机检定，以确定你是否可以访问目标系统。具有强化系统的计算机可能需要多次成功才能访问。</p><p><strong>大成功</strong> 你成功访问系统，若系统需多次成功则计为两次成功。而且你没有留下任何操作痕迹。<br><strong>成功</strong> 你成功访问系统，若系统需多次成功则计为一次成功。<br><strong>失败</strong> 你未能访问系统，若系统需多次成功则未获得任何成功计数。部分计算机化系统可能在失败时触发安全机制。<br><strong>大失败</strong> 你激活了特别内置的安全协议，或者彻底被系统锁定。被系统锁定意味着你在接下来的一个小时内无法再次尝试检定以访问它。</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Critical Failure</strong> You activate specially ingrained security protocols or completely lock yourself out of the system. Being locked out of a system prevents you from attempting another check to access it for the next hour.",
-                    "criticalSuccess": "<strong>Critical Success</strong> You access the system, or you achieve two successes toward accessing a system requiring more than one success. You leave no trace of your tampering.",
-                    "failure": "<strong>Failure</strong> You fail to access the system or achieve any success toward accessing a system that requires more than one success. Some computerized systems might have security measures that activate on a failure.",
-                    "success": "<strong>Success</strong> You access the system, or you achieve one success toward accessing a system that requires more than one success."
+                    "criticalFailure": "<strong>大失败</strong> 你激活了特别内置的安全协议，或者彻底被系统锁定。被系统锁定意味着你在接下来的一个小时内无法再次尝试检定以访问它。",
+                    "criticalSuccess": "<strong>大成功</strong> 你成功访问系统，若系统需多次成功则计为两次成功。而且你没有留下任何操作痕迹。",
+                    "failure": "<strong>失败</strong> 你未能访问系统，若系统需多次成功则未获得任何成功计数。部分计算机化系统可能在失败时触发安全机制。",
+                    "success": "<strong>成功</strong> 你成功访问系统，若系统需多次成功则计为一次成功。"
                 }
             },
             "Navigate": {
                 "Title": "导航",
-                "Description": "<p>You plan a short journey. While this is most often used when traveling with a mech, vehicle, or starship, the same skill can be used to determine the optimal route to take while traveling on foot. This lets you plan a general heading on a planetoid or guide your starship on an in-system voyage. If you are navigating a short journey, you typically attempt a Piloting check only once per day, but some environments or changes might necessitate rolling more often. The GM determines the DC and how long this activity takes (usually just a minute or so). More unusual locales or those you're unfamiliar with might require you to have a minimum proficiency rank to Navigate.</p><p><strong>Critical Success</strong> You get an excellent sense of where you are. If you are in an environment with cardinal directions, you know them exactly.<br><strong>Success</strong> You gain enough orientation to avoid becoming hopelessly lost. If you are in an environment with cardinal directions, you have a sense of those directions.</p>",
+                "Description": "<p>你计划一次短途旅行。尽管这通常用于驾驶机甲、载具或星舰时，但同样的技能也可以用来确定徒步旅行时的最佳路线。这让你能够在一个小行星上规划大致的前进方向，或者指导你的星舰进行恒星系内的航行。如果你尝试导航短途旅行，你通常每日只需进行一次驾驶检定，但某些环境或变化可能需要更频繁的检定。GM决定DC以及这项活动所需的时间（通常只需一分钟左右）。对于不太寻常的地点或你不熟悉的地方，可能需要你具备一定的熟练度才能进行导航。</p><p><strong>大成功</strong> 你对自己所处的位置有极好的感知。如果你处在一个有方位的环境中，你能准确地知道方位。<br><strong>成功</strong> 你获得足够的方向感以避免迷路。如果你处在一个有方位的环境中，你能有一些基本的方位感。</p>",
                 "Notes": {
-                    "criticalSuccess": "<strong>Critical Success</strong> You get an excellent sense of where you are. If you are in an environment with cardinal directions, you know them exactly.",
-                    "success": "<strong>Success</strong> You gain enough orientation to avoid becoming hopelessly lost. If you are in an environment with cardinal directions, you have a sense of those directions."
+                    "criticalSuccess": "<strong>大成功</strong> 你对自己所处的位置有极好的感知。如果你处在一个有方位的环境中，你能准确地知道方位。",
+                    "success": "<strong>成功</strong> 你获得足够的方向感以避免迷路。如果你处在一个有方位的环境中，你能有一些基本的方位感。"
                 }
             },
             "OperateDevice": {
                 "Title": "操作设备",
-                "Description": "<p>You perform a basic task using a digital device, such as operating a basic program or playing a vidgame. You might also use this if the device you're using has a physical component, such as 3D-tracking or requiring specific motions to activate features. The GM determines the DC based on the action you're taking.</p>",
+                "Description": "<p>你通过数字设备执行基础操作，例如运行基本程序或游玩电子游戏。若设备包含物理交互组件（如需要3D追踪或特定动作启动的功能），也可使用此技能。GM将根据你执行的操作设定DC。</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Critical Failure</strong> You fail to access the game or make a mistake that prevents you from accessing the program (such as forgetting a password and locking yourself out of the program) for the next day.",
-                    "criticalSuccess": "<strong>Critical Success</strong> You excel at what you are doing, learning secrets from the program or advanced functionality. If it's a game, then you win it with record timing based on average completion rates.",
-                    "failure": "<strong>Failure</strong> You can't understand the program or game and take a –2 circumstance penalty to further attempts to access or play it for the next day.",
+                    "criticalFailure": "<strong>大失败</strong> 你未能成功登录游戏，或因操作失误（如忘记密码导致程序锁定）致使24小时内无法访问该程序。",
+                    "criticalSuccess": "<strong>大成功</strong> 你出色完成操作，从程序中发掘秘密或高级功能。如果你是在玩游戏，则以超过平均记录时长的速度通关。",
+                    "failure": "<strong>失败</strong> 你未能理解程序或游戏，后续24小时内尝试访问或游玩该程序时承受-2环境减值。",
                     "success": "<strong>Success</strong> You manage to operate the device in the necessary manner, including getting basic functionality. You gain general information from the program."
                 }
             },
             "PlotCourse": {
                 "Title": "制定航线",
-                "Description": "<p>You prepare for a longer journey into the stars, likely making use of your starship's Drift Engine (or similar FTL device). Attempt a Piloting check to determine if you can chart a suitable path to your ultimate destination. The GM determines how long this activity takes and the DC.</p><p><strong>Critical Success</strong> You manage to reach your destination in half the expected time (minimum 1 day).<br><strong>Success</strong> You create a usable navigational plan that gets you to your intended destination on time.<br><strong>Failure</strong> Your plan has several problems, and you end up reaching your destination late.<br><strong>Critical Failure</strong> You arrive in an unfamiliar star system, requiring you to plot a new course to your destination (likely at an increased DC due to the unfamiliar starting point).</p>",
+                "Description": "<p>你为一次更长的星际旅行做准备，可能需要使用你的星舰的漂流引擎（Drift Engine，或类似的超光速设备）。进行一次驾驶检定，以确定你是否能绘制出一条合适的路径到达最终目的地。GM决定这项活动所需的时间和DC。</p><p><strong>大成功</strong> 你花费了预期时间的一半到达目的地（最少为1天）<br><strong>成功</strong> 你制定了一个可用的导航计划，使你按时到达预定目的地。<br><strong>失败</strong> 你的计划有几个问题，导致你迟到了。<br><strong>大失败</strong> 你到达了一个陌生的星系，需要你重新制定一条到目的地的新航线（由于陌生的起点，DC可能会增加）。</p>",
                 "Notes": {
-                    "criticalFailure": "<strong>Critical Failure</strong> You arrive in an unfamiliar star system, requiring you to plot a new course to your destination (likely at an increased DC due to the unfamiliar starting point).",
-                    "criticalSuccess": "<strong>Critical Success</strong> You manage to reach your destination in half the expected time (minimum 1 day).",
-                    "failure": "<strong>Failure</strong> Your plan has several problems, and you end up reaching your destination late.",
-                    "success": "<strong>Success</strong> You create a usable navigational plan that gets you to your intended destination on time."
+                    "criticalFailure": "<strong>大失败</strong> 你到达了一个陌生的星系，需要你重新制定一条到目的地的新航线（由于陌生的起点，DC可能会增加）。",
+                    "criticalSuccess": "<strong>大成功</strong> 你花费了预期时间的一半到达目的地（最少为1天）",
+                    "failure": "<strong>失败</strong> 你的计划有几个问题，导致你迟到了。",
+                    "success": "<strong>成功</strong> 你制定了一个可用的导航计划，使你按时到达预定目的地。"
                 }
             },
             "RunOver": {
                 "Title": "冲撞",
-                "Description": "<p><strong>Requirements</strong> You are piloting a vehicle.</p>\n<p>(reckless) You try to run over creatures with your vehicle, possibly also ramming one larger creature or object. If you maintain control of your vehicle, the vehicle moves up to twice its Speed in a straight line at the vehicle's current heading. You attempt to run over any creatures in your path two sizes smaller than the vehicle or smaller, and you can attempt to ram one target creature or object in your path one size smaller than the vehicle or larger.</p>\n<p>Each creature in your path, including a rammed target, takes the vehicle's collision damage (basic Reflex save at vehicle's collision DC). If the rammed target is a vehicle, its pilot can attempt a piloting check in place of this Reflex save, with the same results. If the target of your ram takes damage, you and your vehicle each take collision damage (no save) and your movement ends.</p>",
+                "Description": "<p><strong>需求</strong> 你正驾驶一辆载具</p>\n<p>你尝试以你的载具辗压生物或撞击其他载具。若你维持载具控制，其将沿当前朝向以最多两倍速度的距离进行直线移动。你尝试碾压载具移动路径上，体型比载具小两个体型或更小的任意数量生物，并且你可以尝试冲撞载具移动路径上，体型比载具小一个体型或更大的生物或物品。</p>\n<p>每个载具移动路径上的生物，包括冲撞目标，承受碰撞伤害（对抗载具碰撞DC的基础反射豁免）。若冲撞目标是载具，其驾驶员可以用驾驶检定替代反射豁免，使用相同的结果。若冲撞目标承受伤害，则你与你操作的载具承受碰撞伤害（无豁免），且你的移动结束。</p>",
                 "Notes": {
-                    "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled."
+                    "failure": "<strong>失败</strong> 载具顺着最新航向直线移动等同其速度的距离，由GM指定至多45度的偏斜，并陷入失控。"
                 }
             },
             "Stop": {
                 "Title": "停止",
-                "Description": "<p><strong>Requirements</strong> You are piloting a vehicle in motion.</p>\n<p>You bring the vehicle to a stop.</p>"
+                "Description": "<p><strong>需求</strong> 你正驾驶一台移动中的载具</p>\n<p>你使载具停止。</p>"
             },
             "Stunt": {
                 "BackOff": {
                     "Title": "后退",
                     "Notes": {
-                        "success": "<strong>Success</strong> Move half Speed backwards."
+                        "success": "<strong>成功</strong> 以半速向后移动。"
                     }
                 },
                 "BarrelRoll": {
                     "Title": "滚筒",
                     "Notes": {
-                        "success": "<strong>Success</strong> Move half Speed to gain a +2 status bonus to AC."
+                        "success": "<strong>成功</strong> 以一半速度移动，AC获得+2状态加值。"
                     }
                 },
                 "Drift": {
                     "Title": "漂移",
                     "Notes": {
-                        "success": "<strong>Success</strong> Move half Speed sideways without turning."
+                        "success": "<strong>成功</strong> 以一半速度侧向移动而不转弯。"
                     }
                 },
                 "Evade": {
                     "Title": "闪避",
                     "Notes": {
-                        "success": "<strong>Success</strong> Move half Speed to gain a +1 status bonus to AC."
+                        "success": "<strong>成功</strong> 以半速移动，获得 AC+1 状态加值。"
                     }
                 },
                 "FlipAndBurn": {
                     "Title": "翻滚推进",
                     "Notes": {
-                        "success": "<strong>Success</strong> Move half Speed, then turn any direction."
+                        "success": "<strong>成功</strong> 以半速移动，然后转向。"
                     }
                 },
                 "Flyby": {
                     "Title": "飞越",
                     "Notes": {
-                        "success": "<strong>Success</strong> Move half Speed through an enemy square."
+                        "success": "<strong>成功</strong> 以一半速度穿过敌人所在的格子。"
                     }
                 },
                 "Title": "特技驾驶",
                 "TurnInPlace": {
                     "Title": "原地转向",
                     "Notes": {
-                        "success": "<strong>Success</strong> Turn, then move full Speed."
+                        "success": "<strong>成功</strong> 转向，然后以全速移动。"
                     }
                 },
-                "Description": "<p>You perform a stunt while Driving your vehicle, temporarily improving its effective capabilities at the risk of losing control. Drive your vehicle and choose a stunt. All Piloting checks attempted as part of your Stunt receive the listed penalty, including Piloting checks made to take a reckless action. If the Drive action and Stunt are both reckless, you must attempt the Piloting check to keep control of the vehicle twice.</p>\n<table class=\"pf2e\"><caption>Stunts</caption><thead><tr><th>Stunt</th><th>Penalty</th><th>Benefit</th></tr></thead><tbody><tr><td>Back Off</td><td>–1</td><td>Move half Speed backwards.</td></tr><tr><td>Evade</td><td>–1</td><td>Move half Speed to gain a +1 status bonus to AC.</td></tr><tr><td>Flip and Burn</td><td>–1</td><td>Move half Speed, then turn any direction.</td></tr><tr><td>Barrel Roll</td><td>–2</td><td>Move half Speed to gain a +2 status bonus to AC.</td></tr><tr><td>Flyby</td><td>–2</td><td>Move half Speed through an enemy square.</td></tr><tr><td>Drift</td><td>–2</td><td>Move half Speed sideways without turning.</td></tr><tr><td>Turn in Place</td><td>–2</td><td>Turn, then move full Speed.</td></tr></tbody></table>",
+                "Description": "<p>你在驾驶车辆时进行特技驾驶，暂时提高其有效能力，但有失去控制的风险。驱动（Drive）你的车辆并选择一个特技驾驶动作。所有作为特技驾驶一部分尝试的驾驶检定都会受到列出的惩罚，包括进行鲁莽行动的驾驶检定。如果驾驶行动和特技驾驶都是鲁莽的，你必须尝试两次驾驶检定来保持对车辆的控制。</p>\n<table class=\"pf2e\"><caption>特技驾驶</caption><thead><tr><th>特技</th><th>减值</th><th>好处</th></tr></thead><tbody><tr><td>后退 Back Off</td><td>–1</td><td>以半速向后移动。</td></tr><tr><td>闪避 Evade</td><td>–1</td><td>以半速移动，获得 AC+1 状态加值。</td></tr><tr><td>翻滚推进 Flip and Burn</td><td>–1</td><td>以半速移动，然后转向。</td></tr><tr><td>滚筒 Barrel Roll</td><td>–2</td><td>以一半速度移动，获得 AC+2 状态加值。</td></tr><tr><td>飞越 Flyby</td><td>–2</td><td>以一半速度穿过敌人所在的格子。</td></tr><tr><td>漂移 Drift</td><td>–2</td><td>以一半速度侧向移动而不转弯。</td></tr><tr><td>原地转向 Turn in Place</td><td>–2</td><td>转向，然后以全速移动。</td></tr></tbody></table>",
                 "Modifiers": {
-                    "RecklessPiloting": "Reckless Piloting"
+                    "RecklessPiloting": "鲁莽驾驶"
                 },
                 "Notes": {
-                    "failure": "<strong>Failure</strong> The vehicle moves its Speed in a straight line along its most recent heading, drifting up to 45 degrees at the GM's discretion, and becomes uncontrolled."
+                    "failure": "<strong>失败</strong> 载具顺着最新航向直线移动等同其速度的距离，由GM指定至多45度的偏斜，并陷入失控。"
                 }
             },
             "TakeControl": {
                 "Title": "接管",
-                "Description": "<p><strong>Requirements</strong> You are aboard the vehicle and adjacent to its controls.</p>\n<p>You grab the reins, the wheel, or some other mechanism to control the vehicle. Attempt a piloting check; on a success, you become the vehicle's pilot, or regain control of the vehicle if it was uncontrolled. Some vehicles have complicated controls that cause this action to become a multi-action activity.</p>",
+                "Description": "<p><strong>需求</strong> 你搭乘载具，且与其操控装置相邻。</p>\n<p>你抓住方向盘或其他操控装置，以控制该载具。尝试驾驶检定，成功则你成为载具的驾驶员，或是在载具处于失控状态时，取回其控制。有的载具的控制装置极其复杂，可能使此动作变成多动作的行动。</p>",
                 "Notes": {
-                    "success": "<strong>Success</strong> You become the vehicle's pilot, or regain control of the vehicle if it was uncontrolled."
+                    "success": "<strong>成功</strong> 你成为载具的驾驶员，或是在载具处于失控状态时，取回其控制。"
                 }
             }
         },
