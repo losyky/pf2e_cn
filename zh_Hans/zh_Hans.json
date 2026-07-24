@@ -8606,7 +8606,8 @@
             "Size": "大小",
             "Schema": "概要",
             "MigrateCompendium": "迁移合集包",
-            "OutOfDate": "已过时"
+            "OutOfDate": "已过时",
+            "FailedDocuments": "失败的文档"
         },
         "TraitTea": "茶",
         "InlineDamage": {
