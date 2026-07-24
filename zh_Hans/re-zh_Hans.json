@@ -90,7 +90,16 @@
                 "FlamingSword": "炽焰长剑",
                 "CarapaceFist": "硬壳拳击",
                 "Beam": "射线",
-                "Spit": "呕吐"
+                "Spit": "呕吐",
+                "BodySlam": "身体投掷",
+                "BurningTendril": "Burning Tendril",
+                "FootOrb": "Foot Orb",
+                "PhasicBlade": "Phasic Blade",
+                "Proboscis": "长吻",
+                "ProjectileVomit": "喷射性呕吐",
+                "SolarFlare": "太阳耀斑",
+                "TailScourgeDischarge": "Tail Scourge Discharge",
+                "Tusks": "獠牙"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -117,7 +126,18 @@
                 "ChoiceSet": {
                     "CaveWorm": "洞穴蠕虫",
                     "Phoenix": "凤凰",
-                    "SeaSerpent": "大海蛇"
+                    "SeaSerpent": "大海蛇",
+                    "DustManta": "沙鲼",
+                    "Nyssholora": "相位兽",
+                    "SpaceWorm": "太空蠕虫"
+                },
+                "PhasicStrike": {
+                    "Label": "相位打击",
+                    "Note": "你的相位刃打击将物体或构装体的硬度视为通常的一半。"
+                },
+                "TongueGrab": {
+                    "Label": "舌头攫抓",
+                    "Note": "被你长舌击中的生物将@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]于你。生物并未被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，但无法移动至长舌触及范围外。敌人可通过一次针对你AC的攻击（至少造成30挥砍伤害）切断长舌。此伤害不影响你，但会禁用长舌攻击直到你重新生长舌头（如再次施法）。"
                 }
             },
             "AngelForm": {
@@ -145,7 +165,15 @@
                 }
             },
             "InsectForm": {
-                "SpiderWebNote": "一次成功的蛛网攻击会纠缠目标1轮，但不会造成伤害"
+                "SpiderWebNote": "一次成功的蛛网攻击会使目标@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]1轮或至其[[/act escape]]",
+                "ChoiceSet": {
+                    "Ant": "蚁",
+                    "Beetle": "甲虫",
+                    "Centipede": "蜈蚣",
+                    "Mantis": "螳螂",
+                    "Scorpion": "蝎",
+                    "Spider": "蜘蛛"
+                }
             },
             "AberrantForm": {
                 "GugSqueezeNote": "你的多关节可以让你适应狭小的空间，如同一个中型生物一样。",
@@ -198,6 +226,14 @@
                     "Unicorn": "独角兽"
                 },
                 "Prompt": "选择一种精类。"
+            },
+            "AerialForm": {
+                "ChoiceSet": {
+                    "Bat": "蝙蝠",
+                    "Bird": "鸟类",
+                    "Pterosaur": "翼龙",
+                    "Wasp": "黄蜂"
+                }
             }
         },
         "BombNotes": {
@@ -603,6 +639,9 @@
                 "Moderate": {
                     "success": "<strong>效果</strong> 被炸弹直接命中或处于溅射范围内的生物必须进行一次@Check[fortitude|dc:17]豁免检定。处于溅射范围内的生物在判定豁免结果时，其效果提升一级。<hr><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。</p><p><strong>失败</strong> 目标陷入恶心 1且在恶心状态下陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 1}。</p><p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲}持续1轮，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 2}，且在恶心状态下陷入缓慢 1。</p>"
                 }
+            },
+            "BoulderSeed": {
+                "criticalSuccess": "<strong>效果</strong> 重击时，主要目标@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
             }
         },
         "SpecificRule": {
@@ -6448,7 +6487,44 @@
             },
             "ChangeShape": {
                 "Form": {
-                    "Animal": "动物",
+                    "Animal": {
+                        "Aerial": "飞行动物",
+                        "Animal": "动物",
+                        "Aquatic": "水生动物",
+                        "Medium": "中型动物",
+                        "Small": "小型动物",
+                        "Specific": {
+                            "Ape": "猿",
+                            "Bat": "蝙蝠",
+                            "BatGiant": "巨蝙蝠",
+                            "Boar": "野猪",
+                            "Centipede": "蜈蚣",
+                            "Cobra": "眼镜蛇",
+                            "Coyote": "郊狼",
+                            "Dog": "狗",
+                            "Dove": "鸽子",
+                            "Fish": "鱼",
+                            "Fox": "狐狸",
+                            "Lizard": "蜥蜴",
+                            "Mantis": "螳螂",
+                            "Moose": "驼鹿",
+                            "Octopus": "章鱼",
+                            "PorcupineGiant": "巨豪猪",
+                            "RacoonDog": "貉",
+                            "Rat": "鼠",
+                            "Raven": "渡鸦",
+                            "Scorpion": "蝎",
+                            "Shark": "鲨鱼",
+                            "Spider": "蜘蛛",
+                            "Tiger": "虎",
+                            "Toad": "蟾蜍",
+                            "Wolf": "狼",
+                            "WolfDire": "恐狼",
+                            "Wasp": "黄蜂",
+                            "WormCave": "洞穴蠕虫"
+                        },
+                        "Tiny": "超小型动物"
+                    },
                     "AnimalMedium": "中型动物",
                     "AnimalSmall": "小型动物",
                     "AnimalTiny": "超小型动物",
@@ -6515,7 +6591,13 @@
                     "Gosreg": "高斯瑞格",
                     "Gourd": "葫芦",
                     "HumanoidLarge": "大型类人生物",
-                    "Humanoid": "类人生物",
+                    "Humanoid": {
+                        "Humanoid": "类人生物",
+                        "Large": "大型类人生物",
+                        "Medium": "中型类人生物",
+                        "Small": "小型类人生物",
+                        "Winged": "带翼类人生物"
+                    },
                     "Ifrit": "火元素裔",
                     "Keketar": "科科塔尔",
                     "HumanoidMedium": "中型类人生物",
@@ -6543,7 +6625,9 @@
                     "RajaKrodha": "忿怒罗刹",
                     "Owlbear": "枭熊",
                     "Unicorn": "独角兽",
-                    "Nymph": "宁芙",
+                    "Nymph": {
+                        "DryadQueen": "木林仙后"
+                    },
                     "Ape": "猿",
                     "Boar": "野猪",
                     "Cobra": "眼镜蛇",
@@ -6573,7 +6657,11 @@
                     "Miastrilek": "Miastrilek",
                     "RacoonDog": "狸猫",
                     "Devil": {
-                        "Insidiator": "Insidiator"
+                        "Insidiator": "Insidiator",
+                        "Gylou": "仆魔",
+                        "Imp": "小鬼",
+                        "Nessari": "深狱炼魔",
+                        "Ochiastis": "Ochiastis"
                     },
                     "Drude": "Drude",
                     "Object": {
@@ -6582,6 +6670,30 @@
                     },
                     "Swarm": {
                         "Flies": "蝇群"
+                    },
+                    "Ancestry": {
+                        "Human": "人类",
+                        "Orc": "兽人"
+                    },
+                    "Angel": {
+                        "Cassisian": "卡塞申"
+                    },
+                    "Azata": {
+                        "Gancanagh": "爱语者"
+                    },
+                    "Daemon": {
+                        "Cacodaemon": "狂躁邪魔"
+                    },
+                    "Demon": {
+                        "Miastrilek": "秽肉魔",
+                        "Succubus": "魅魔"
+                    },
+                    "Genie": {
+                        "Faydhaan": "水巨灵",
+                        "Ifrit": "火巨灵",
+                        "Jaathoom": "气巨灵",
+                        "Jabali": "土巨灵",
+                        "Jann": "小巨灵"
                     }
                 },
                 "Label": "当前形态",
@@ -7057,6 +7169,108 @@
                 "PowerfulUtterance": {
                     "ImmunityLabel": "强力言辞"
                 }
+            },
+            "AdamantineDragon": {
+                "CrateringSmash": {
+                    "Name": "陨坑猛击"
+                },
+                "MagneticRoar": {
+                    "Name": "磁力咆哮"
+                },
+                "PetrifyingBlow": {
+                    "Name": "石化打击"
+                },
+                "RepellingBlast": {
+                    "Name": "斥力迸发"
+                },
+                "ScythingWings": {
+                    "Name": "镰割双翼"
+                }
+            },
+            "Alendreu": {
+                "ChoppingFrenzy": {
+                    "ToggleLabel": "Chopping Frenzy — Second Strike"
+                }
+            },
+            "AugstenArudora": {
+                "BullyTheBully": {
+                    "BullyingCommand": "Augsten can't use Bullying Command due to Bully the Bully."
+                }
+            },
+            "Beheaded": {
+                "Bleeding": {
+                    "Name": "血流满面"
+                },
+                "Entangling": {
+                    "Name": "缠结长发"
+                },
+                "Fiendish": {
+                    "Name": "青面獠牙"
+                },
+                "FuriousHeadbutt": {
+                    "Name": "狂怒头槌"
+                },
+                "Giant": {
+                    "Name": "巨人之颅"
+                },
+                "Lifesense60Feet": {
+                    "Name": "生命感知60尺"
+                },
+                "Whispering": {
+                    "Name": "窃窃私语"
+                }
+            },
+            "BastardhallPhantom": {
+                "SupportRank": {
+                    "RequirementAddendum": {
+                        "RankOne": "This ability requires support rank 1."
+                    },
+                    "Label": "Support Rank"
+                }
+            },
+            "BlackfrostDead": {
+                "Blackfrost": {
+                    "Name": "Blackfrost"
+                },
+                "BlackfrostBreath": {
+                    "Name": "Blackfrost Breath"
+                },
+                "IceClimb": {
+                    "Name": "Ice Climb"
+                },
+                "MindburningGaze": {
+                    "Name": "Mindburning Gaze"
+                },
+                "ShatteringDeath": {
+                    "Name": "Shattering Death"
+                }
+            },
+            "Blight": {
+                "BlightDomination": {
+                    "Name": "荒疫支配"
+                },
+                "CursedDomain": {
+                    "Name": "Cursed Domain"
+                },
+                "OverseeDomain": {
+                    "Name": "Oversee Domain"
+                },
+                "Rejuvenation": {
+                    "Name": "Rejuvenation"
+                }
+            },
+            "Bulwark": {
+                "SerpentstoneBreath": {
+                    "Name": "蛇石吐息"
+                }
+            },
+            "Castrovelian": {
+                "ExtraLarge": {
+                    "Name": "Extra Large"
+                },
+                "GaseousAdaptation": {
+                    "Name": "Gaseous Adaptation"
+                }
             }
         },
         "UI": {
@@ -7513,7 +7727,9 @@
                 "RadiationPoison": "辐射毒素",
                 "Radiation": "辐射",
                 "PrimalSpells": "原能法术",
-                "Decapitation": "斩首"
+                "Decapitation": "斩首",
+                "MagicalSlashing": "魔法挥砍",
+                "StrikesCreatureSheddingBrightLight": "被一个发出明亮光照的生物打击命中"
             }
         },
         "Color": {
@@ -7584,10 +7800,10 @@
             "Wailing": "哀嚎龙",
             "Whisper": "低语龙",
             "Requiem": "安魂龙",
-            "Abysium": "Abysium Dragon",
-            "Akashic": "Akashic Dragon",
-            "Cosmic": "Cosmic Dragon",
-            "Host": "Host Dragon"
+            "Abysium": "渊铀龙",
+            "Akashic": "阿卡西龙",
+            "Cosmic": "宇宙龙",
+            "Host": "宿主龙"
         },
         "FeatDescription": {
             "Frequency": {
@@ -7641,7 +7857,15 @@
                 "Single": "单个目标",
                 "Multiple": "多个目标"
             },
-            "NoSanctification": "无祝佑"
+            "NoSanctification": "无祝佑",
+            "CoinFlip": {
+                "Heads": "正面",
+                "Tails": "反面"
+            },
+            "Time": {
+                "Daytime": "日间",
+                "Nighttime": "夜间"
+            }
         },
         "RULES": {
             "Common": {
@@ -7739,6 +7963,14 @@
         "HazardAbility": {
             "HauntedForge": {
                 "StrikeNote": "目标@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。"
+            },
+            "TelekineticSwarmTrap": {
+                "ObjectsDamage": {
+                    "Four": "4d12+10",
+                    "Label": "物体伤害",
+                    "Three": "3d12+10",
+                    "Two": "2d12+10"
+                }
             }
         }
     },
