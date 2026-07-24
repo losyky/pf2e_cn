@@ -865,7 +865,7 @@
             },
             "Armor": {
                 "Base": {
-                    "explorers-clothing": "探险家服装",
+                    "explorers-clothing": "探险者服装",
                     "padded-armor": "护垫甲",
                     "leather-armor": "皮甲",
                     "studded-leather-armor": "镶嵌皮甲",
@@ -1814,7 +1814,7 @@
                 "MeasuredTemplate": {
                     "Place": "放置{area}",
                     "Clear": "清除放置的盖板",
-                    "PlacementTooltip": "<strong>左键点击</strong>锁定画布上的位置并启用旋转。再次点击以放置。.<br><strong>右键点击</strong>解锁或取消。<br>按住<strong>Shift键</strong>直接放置而不旋转。<br>按住<strong>Ctrl键</strong>在旋转时禁用网格对齐。"
+                    "PlacementTooltip": "左键点击锁定画布上的位置并启用旋转。再次点击以放置。右键点击解锁或取消。按住Shift键直接放置而不旋转。按住Ctrl键在旋转时禁用网格对齐。"
                 },
                 "Rank": {
                     "Label": "环级",
@@ -2614,7 +2614,7 @@
                     "MythicFeatPlaceholder": "神话专长",
                     "MythicCallingPlaceholder": "神话感召",
                     "MythicTier": "阶",
-                    "MythicCallingShort": "C"
+                    "MythicCallingShort": "感召"
                 },
                 "EmptyMultipleLabel": "{value}个空位",
                 "EmptyLabel": "空位"
@@ -2888,7 +2888,7 @@
                     "trinary": "Trinary",
                     "urog": "Urog",
                     "worlanisi": "Worlanisi",
-                    "acsie": "Acsie",
+                    "acsie": "阿克塞语",
                     "coshyco": "Coshyco",
                     "tripkee": "树蛙人语"
                 }
@@ -2932,8 +2932,8 @@
                 },
                 "Identification": {
                     "Skills": {
-                        "Tooltip": "“用来辨识某生物的技能，通常取决于该生物的特征，如辨识生物表格，但你也可放宽技能的应用范围。”—《主持人核心》54-55页",
-                        "Label": "{skills}: DC {dc}（{adjustment}）"
+                        "Tooltip": "“用来辨识某生物的技能，通常取决于该生物的特征，如辨识生物表格，但你也可放宽技能的应用范围。”—《主持人核心》第54-55页",
+                        "Label": "{skills}：DC {dc}（{adjustment}）"
                     },
                     "Lore": {
                         "Tooltip": "“使用可用学识通常具有一个简单或非常简单的DC（在调整稀有度之前）。”—《主持人核心》54页",
@@ -3166,7 +3166,7 @@
         "AncestryFeatures": "族裔特性",
         "AncestryHP": "族裔 HP",
         "AncestryTitle": "角色族裔",
-        "AncestryFeatLevels": "族裔 专长 等级",
+        "AncestryFeatLevels": "族裔专长等级",
         "AreaLabel": "区域",
         "AreaSize10": "10 尺",
         "AreaSize100": "100尺",
@@ -3334,7 +3334,7 @@
             "untyped": "无名加值"
         },
         "BonusSPLabel": "加值 SP",
-        "BonusSPperLevel": "每等级P加值",
+        "BonusSPperLevel": "每等级SP加值",
         "BonusSPperLevelTitle": "每等级应用一次 (此后计算体质调整值)",
         "BrowserClearFilter": "清除过滤项",
         "BrowserClearFilters": "清除所有过滤项",
@@ -3403,10 +3403,10 @@
         "Check": {
             "DC": {
                 "Label": {
-                    "AdjustedTarget": "<opposer>目标: {opposer}</opposer> <dc>（{dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>）</dc>",
-                    "NoChangeTarget": "<opposer>目标: {opposer}</opposer> <dc>（{dcType} <adjusted>{adjusted}</adjusted>）</dc>",
+                    "AdjustedTarget": "<opposer>目标：{opposer}</opposer> <dc>（{dcType} <preadjusted>{preadjusted}</preadjusted> <adjusted>{adjusted}</adjusted>）</dc>",
+                    "NoChangeTarget": "<opposer>目标：{opposer}</opposer> <dc>（{dcType} <adjusted>{adjusted}</adjusted>）</dc>",
                     "NoTarget": "<dc>{dcType} {dc}</dc>",
-                    "WithTarget": "<opposer>目标: {opposer}</opposer> <dc>（{dcType} {dc}）</dc>",
+                    "WithTarget": "<opposer>目标：{opposer}</opposer> <dc>（{dcType} {dc}）</dc>",
                     "WithOrigin": "<opposer>来源：{opposer}</opposer> <dc>（{dcType} {dc}）</dc>"
                 },
                 "Specific": {
@@ -3429,7 +3429,7 @@
                         "criticalSuccess": "重击",
                         "success": "命中",
                         "failure": "失手",
-                        "criticalFailure": "致命失误"
+                        "criticalFailure": "致命失手"
                     },
                     "Check": {
                         "criticalSuccess": "大成功",
@@ -3438,8 +3438,8 @@
                         "criticalFailure": "大失败"
                     }
                 },
-                "Label": "结果: <unadjusted>{unadjusted}</unadjusted> <offset>by {offset}</offset>",
-                "AdjustedLabel": "结果: <unadjusted>{unadjusted}</unadjusted> <adjusted>{adjusted}</adjusted> <offset>by {offset}</offset>"
+                "Label": "结果：<unadjusted>{unadjusted}</unadjusted> <offset>by {offset}</offset>",
+                "AdjustedLabel": "结果：<unadjusted>{unadjusted}</unadjusted> <adjusted>{adjusted}</adjusted> <offset>by {offset}</offset>"
             },
             "Specific": {
                 "Perception": {
@@ -3457,7 +3457,7 @@
         "ClassDCBase": "基础职业 DC 10",
         "ClassDCHeader": "职业 DC",
         "ClassDCLabel": "职业 DC",
-        "ClassFeatLevels": "职业 专长 等级",
+        "ClassFeatLevels": "职业专长等级",
         "ClassFeatures": "职业特性",
         "ClassHP": "职业 HP",
         "ClassTitle": "角色职业",
@@ -4504,18 +4504,23 @@
             "OutsideSchemaRange": "指定的范围超出系统架构的版本范围（介于{minimum}和{maximum}之间）。",
             "Summary": {
                 "Documents": "文档",
-                "HelpResources": "迁移某些参与者或项目时遇到意外错误。如果您需要进一步的帮助，请随时在<a href=\"https://github.com/foundryvtt/pf2e/issues\">系统数据库上反映问题</a> 或者在 <a href=\"https://discord.gg/SajryVzCyf\">Discord</a> 上和我们交流。",
-                "Migrated": "迁移",
-                "Remigrate": "再迁移",
+                "HelpResources": "在迁移部分角色或项目时遇到意外错误。如果您需要进一步的帮助，请随时在<a href=\"https://github.com/foundryvtt/pf2e/issues\">系统仓库</a>反馈问题或者在 <a href=\"https://discord.gg/pf2e\">Discord</a> 上和我们交流。使用下载按钮保存问题报告附件。",
+                "Migrated": "已迁移",
+                "Remigrate": "重新迁移",
                 "Title": "迁移一览",
                 "Total": "合计",
                 "Troubleshoot": {
                     "Title": "系统捉虫",
                     "Hint": "在这里，你可以进行重新迁移，这会尝试自动修复角色和物品的问题。"
-                }
+                },
+                "Status": "状态",
+                "Complete": "完成",
+                "Download": "下载",
+                "Incomplete": "未完成"
             },
             "Troubleshooting": "疑难解答",
-            "Running": "正在系统迁移中..."
+            "Running": "正在系统迁移中...",
+            "StillOutdated": "迁移已完成，但仍有{count}份文档留存于旧模式中"
         },
         "ModifierTitle": "调整值",
         "ModifiersTitle": "调整值",
@@ -4777,7 +4782,12 @@
                     "OverrideLabel": "覆盖"
                 },
                 "ShowDefaultHint": "如果启用，除非你按住Shift键否则始终显示此对话框。如果禁用，你可以通过按住Shift键来打开此对话框。",
-                "ShowDefault": "始终显示对话框"
+                "ShowDefault": "始终显示对话框",
+                "ModifierDamageCategory": "伤害分类",
+                "ModifierDamageType": "伤害类型",
+                "ModifierName": "调整值名称",
+                "ModifierType": "调整值类型",
+                "ModifierValue": "调整值"
             }
         },
         "RollTable": {
@@ -5494,7 +5504,7 @@
         "SpellComponentShortV": "V",
         "SpellComponentsLabel": "成分",
         "SpellSlotEmpty": "空位（拖入法术）",
-        "SpellSlotNotEnoughError": "无法在{rank}上施放 {spell} :没有足够的法术位。",
+        "SpellSlotNotEnoughError": "无法施放{rank}环{spell}：没有足够的法术位。",
         "SpellSlotExpendedError": "无法施放{spell}，法术位已耗尽。",
         "SpellPrimaryCheckLabel": "主要检定",
         "SpellSecondaryChecksLabel": "次要检定",
@@ -6040,7 +6050,7 @@
         "TraitDescriptionSecret": "GM秘密地对此能力进行了检定。",
         "TraitDescriptionShadow": "这种魔法包括阴影或阴影位面的能量。",
         "TraitDescriptionShoony": "具有这种特征的生物是舒尼族裔的成员。",
-        "TraitDescriptionShove": "即使你并没有空着的手，仍然能以此武器用运动技能对敌人进行猛推。此时使用武器的触及范围（若其与你的触及范围不同），并将武器给予攻击的物品加值（若有）加至运动检定上。若你在使用该武器时，猛推检定大失败，你可以抛弃该武器，视之为普通失败。",
+        "TraitDescriptionShove": "即使你并没有空着的手，仍然能以此武器用运动技能对敌人进行推撞。此时使用武器的触及范围（若其与你的触及范围不同），并将武器给予攻击的物品加值（若有）加至运动检定上。若你在使用该武器时，推撞检定大失败，你可以抛弃该武器，视之为普通失败。",
         "TraitDescriptionSkill": "具有该特征的通用专长能够强化你的技能和技能动作，或为你的技能提供新的动作。具有该特征的专长能够在你的职业提供一个技能专长或通用专长时选取。具有技能特征的变体专长可以替换你正常选取的一个技能专长，只要你已经拥有对应的变体入门专长。",
         "TraitDescriptionSleep": "这种效果会导致生物入睡或昏昏欲睡。",
         "TraitDescriptionSonic": "具有音波特征的效果只在它发出声音时才会生效，这意味着在沉默区域或真空中不产生任何效果。这与听觉法术不同，后者只在目标能听见法术时才会生效。音波效果可能会造成音波伤害。",
@@ -6398,7 +6408,7 @@
         "TraitShisk": "希斯克",
         "TraitShobhad": "绍贝德人",
         "TraitShoony": "舒尼",
-        "TraitShove": "猛推",
+        "TraitShove": "推撞",
         "TraitSimple": "简单",
         "TraitSkeleton": "骷髅",
         "TraitSkill": "技能",
@@ -9050,13 +9060,17 @@
             },
             "Request": {
                 "Prompt": {
-                    "Title": "与{trader}交易？",
+                    "Title": "是否与{trader}交易？",
                     "Content": "{trader}（{user}）想要与{self}进行交易。"
                 },
                 "MenuLabel": "请求交易",
                 "Timeout": "{user}没有在30秒内回复你的交易请求。",
-                "Declined": "{trader}（{user}）已拒绝你的交易邀请。",
-                "Requesting": "请求与{trader}进行交易……"
+                "Declined": "{trader}（{user}）已拒绝你的交易请求。",
+                "Requesting": "请求与{trader}进行交易……",
+                "Expired": {
+                    "Initiator": "{user}未在30秒内对你的交易请求作出回应。",
+                    "Receiver": "您未在30秒内回复{trader}（{user}）的交易请求。"
+                }
             },
             "Sending": "给出：{list}",
             "Title": "与{trader}进行交易",
@@ -9280,11 +9294,11 @@
         "TraitDescriptionRetractable": "This shield can collapse into a smaller form attached to an armguard, gauntlet, glove, or jewelry for ease of travel and to free up hands. You can use an Interact action to deploy or retract the shield. You can't Raise a Shield if the shield is retracted. While the shield is deployed, it has the compact trait.",
         "TraitDescriptionSerum": "These are pharmaceutical serums; they are technological, or perhaps hybrid in some cases, but can be crafted using a laboratory and don't incorporate significant magic. You can activate a serum with an Interact action as you drink it or feed it to another creature. You can feed a serum only to a creature that is within reach and willing or otherwise so helpless that it can't resist. You usually need only one appendage to activate a serum.",
         "TraitDescriptionSuppressed": "Creatures a soldier suppresses might receive additional conditions and other negative effects using feats with the suppressed trait; a soldier can only apply one such feat each time they use an action that confers the suppressed trait",
-        "TraitDescriptionTactic": "Tactics are special abilities that involve you signaling your allies to perform predetermined maneuvers. To use a tactic ability, you must have one or more willing allies you have instructed beforehand during your daily preparations, called squadmates. Your squadmates must also be able to perceive your signal, either when you speak or shout it (in which case the tactic action gains the auditory trait), or by physically signaling them, typically by waving your banner (in which case it gains the visual trait). While you can use multiple tactic actions in a round, a character cannot respond to more than one tactic per round, regardless of source. You can't Ready a tactic. Tactics often grant actions or abilities that can be used as a free action; these can be used outside the squadmate's turn just like reactions.",
+        "TraitDescriptionTactic": "战术是一种特殊能力，用于示意盟友执行预定的行为。要使用战术能力，你必须事先在每日准备时指派一个或多个自愿盟友，这些盟友称作队友（squadmates）。你的队友也必须能够感知到你的信号，无论你是说出来还是喊出来（这种情况下战术动作获得听觉特征），或则通过身体向它们发出信号，通常是挥舞你的旗帜（这种情况下它获得视觉特征）。虽然你每轮可以使用多个战术动作，但一个角色每轮不会回应超过一个战术，无论来源如何。你不能准备使用战术。战术通常会赋予可作为自由动作使用的动作或能力；这些动作或能力可以像反应动作一样在队友回合之外使用。",
         "TraitDescriptionThought": "Weapons with this trait are living creatures that can be communicated with using telepathy. When you wield this weapon and are capable of communicating with it, you can ignore any of the other traits the weapon normally has; this only applies to the other traits listed in the weapon entry, not traits the weapon or actions receive from the use of other abilities or effects. If you can communicate with this weapon, your proficiency with this weapon is equal to your proficiency with simple weapons.",
-        "TraitDescriptionTracking": "This weapon has been developed with several integrated targeting, stabilizing, and homing systems. Attack rolls with this weapon gain an item bonus equal to the listed value. Area attacks with this weapon gain an item bonus equal to the listed value to the class DCs of saves.",
+        "TraitDescriptionTracking": "该武器具有多个综合瞄准、稳定以及制导系统。使用该武器的攻击骰获得和追踪值相同的物品加值。使用该武器进行区域射击的豁免DC亦获得和追踪值相同的物品加值。",
         "TraitDescriptionTransfer": "These actions reduce Hit Points from your vitality network. You must have Hit Points in your vitality network equal to or greater than the transfer cost to use these actions. If you can't pay the cost, the action is disrupted.",
-        "TraitDescriptionUnwieldy": "Weapons with this trait are large and awkward, can't be fired without cooling down first, or are otherwise difficult to use with repeated attacks. You can't use an unwieldy weapon more than once per round and can't use it to Strike as part of a reaction, such as Reactive Strike.",
+        "TraitDescriptionUnwieldy": "具有此特征的武器是巨大而笨重的，在未冷却的情况下无法发射，或者很难连续攻击。你每轮不能使用粗笨武器攻击超过一次，也不能作为反应动作的一部分使用它进行打击，例如反应打击。",
         "TraitDescriptionUpgrade": "Weapons can be customized with upgrades, which include technological weapon modifications and weapon fusions. This indicates how many upgrades the weapon can utilize.",
         "TraitDescriptionVirtual": "Items with the virtual trait are programs that must be installed on other computers, such as comm units. They require the Programmer feat to craft.",
         "TraitEntuColony": "Entu Colony",
@@ -9309,7 +9323,17 @@
         "TraitVirtual": "Virtual",
         "TraitWorlanisi": "Worlanisi",
         "WeaponGroupPoison": "Poison",
-        "TraitTripkee": "树蛙人"
+        "TraitTripkee": "树蛙人",
+        "SpellList": {
+            "Search": "搜索法术",
+            "SearchResults": "匹配的法术：{count}个",
+            "SortAscending": "升序排列",
+            "SortDescending": "降序排列"
+        },
+        "TraitKholo": "鬣狗人",
+        "TraitSkirmish": "尖兵",
+        "TraitDescriptionSkirmish": "该特征表示相关能力仅能在尖兵作战中使用。",
+        "TraitDescriptionTripkee": "树蛙人是一种类蛙的类人生物。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
