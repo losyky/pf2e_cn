@@ -4107,7 +4107,7 @@
             "NotEnoughCoins": "硬币不足",
             "SubV9Module": "{module}处于未维护状态，可能会给游戏带来稳定性问题。",
             "WeaponQuantityZero": "你已经没有更多这种武器装备了。",
-            "RuleElementSyntax": "规则要素定义中存在语法错误：{message}",
+            "RuleElementSyntax": "规则元素定义中存在语法错误：{message}",
             "NoCreatureTokenSelected": "至少选择一个与生物相关联的指示物。",
             "WeaponNoDamage": "武器未造成伤害。",
             "ItemNotFoundByUUID": "未找到UUID为\"{uuid}\"的物品。",
@@ -7441,7 +7441,10 @@
                 "Name": "高等星魂"
             },
             "decaying": {
-                "Name": "腐败"
+                "Name": "腐败",
+                "Note": {
+                    "criticalSuccess": "若造成重击，目标受到2d4点持续虚能伤害；若目标举起盾牌，盾牌也会受到相同数值的持续伤害（其持用者掷纯骰检定来决定持续伤害何时终止，或当盾牌不为某人所有时由GM代为投掷）。与通常的虚能伤害不同，由腐败符文造成的虚能伤害具有腐蚀性，从而能够伤害物品，构装体和类似的无生命目标。"
+                }
             },
             "greaterDecaying": {
                 "Name": "高等腐败"
@@ -8033,8 +8036,8 @@
             "MasterLevel": "所属等级",
             "SelectMaster": "选择一个主人...",
             "MasterSpellcastingAbility": "主人施法能力",
-            "TotalNumberFamiliarAbilities": "总计 # 仆从能力",
-            "Familiar": "仆从",
+            "TotalNumberFamiliarAbilities": "总计 # 魔宠能力",
+            "Familiar": "魔宠",
             "Creature": "生物",
             "CreatureType": "生物种类",
             "Perception": "察觉",
@@ -8592,7 +8595,8 @@
             "Title": "迁移状态",
             "Size": "大小",
             "Schema": "概要",
-            "MigrateCompendium": "迁移合集包"
+            "MigrateCompendium": "迁移合集包",
+            "OutOfDate": "已过时"
         },
         "TraitTea": "茶",
         "InlineDamage": {
@@ -8675,7 +8679,8 @@
                 "cylinder": "圆柱体",
                 "emanation": "弥漫",
                 "line": "线形",
-                "square": "方格"
+                "square": "方格",
+                "ring": "环形"
             },
             "Size": {
                 "Quarter": "四分之一",
@@ -9303,7 +9308,8 @@
         "TraitUrog": "Urog",
         "TraitVirtual": "Virtual",
         "TraitWorlanisi": "Worlanisi",
-        "WeaponGroupPoison": "Poison"
+        "WeaponGroupPoison": "Poison",
+        "TraitTripkee": "树蛙人"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
