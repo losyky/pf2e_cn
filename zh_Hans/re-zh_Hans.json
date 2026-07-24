@@ -1199,10 +1199,10 @@
                 "AdvancedGnollWeapons": "进阶鬣狗人武器",
                 "AdvancedGnomeWeapons": "进阶侏儒武器",
                 "AdvancedGrippliWeapons": "进阶树蛙人武器",
-                "MartialVishkanyaWeapons": "军用蝮蛇武器",
-                "MartialVanaraWeapons": "军用灵猴武器",
-                "AdvancedVishkanyaWeapons": "进阶蝮蛇武器",
-                "AdvancedVanaraWeapons": "进阶灵猴武器",
+                "MartialVishkanyaWeapons": "军用蝮血裔武器",
+                "MartialVanaraWeapons": "军用灵猴裔武器",
+                "AdvancedVishkanyaWeapons": "进阶蝮血裔武器",
+                "AdvancedVanaraWeapons": "进阶灵猴裔武器",
                 "MinotaurWeapons": "牛头人武器",
                 "MartialCentaurWeapons": "军用半人马武器",
                 "AdvancedSurkiWeapons": "进阶瑟基虫人武器",
@@ -1236,7 +1236,14 @@
                 "MartialPolearmsAndSpears": "军用长武&矛",
                 "AdvancedJotunbornWeapons": "进阶巨人裔武器",
                 "HandCrossbowGauntletBow": "手弩&臂弩",
-                "MartialJotunbornWeapons": "军用巨人裔武器"
+                "MartialJotunbornWeapons": "军用巨人裔武器",
+                "AdvancedLashuntaWeapons": "进阶拉申塔人武器",
+                "AdvancedPahtraWeapons": "进阶趴爪族武器",
+                "AdvancedTalphiWeapons": "进阶鼹鼠人武器",
+                "AquaticElfWeapons": "水栖精灵武器",
+                "MartialLashuntaWeapons": "军用拉申塔人武器",
+                "MartialPahtraWeapons": "军用趴爪族武器",
+                "MartialTalphiWeapons": "军用鼹鼠人武器"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -2078,14 +2085,14 @@
                 "Success": "你暂时恢复一个从你最高的三个环位随机决定恢复的已消耗法术位。这个暂时恢复的临时法术位将会持续3回合，如果你不在一分钟内使用它，你将在法术位过期时产生@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{泉源涌动 Wellspring Surge}。"
             },
             "ChromaticArmor": {
-                "Force": "紫(力场)",
-                "Mental": "靛(心灵)",
+                "Force": "紫（力场）",
+                "Mental": "靛（心灵）",
                 "Prompt": "选择一种颜色。",
-                "Acid": "橙(酸)",
-                "Electricity": "黄(电击)",
-                "Fire": "红(火焰)",
-                "Poison": "绿(毒素)",
-                "Sonic": "蓝(音波)"
+                "Acid": "橙（酸蚀）",
+                "Electricity": "黄（电击）",
+                "Fire": "红（火焰）",
+                "Poison": "绿（毒素）",
+                "Sonic": "蓝（音波）"
             },
             "Gunslinger": {
                 "Way": {
@@ -2107,7 +2114,7 @@
             },
             "Oracle": {
                 "Mystery": {
-                    "Prompt": "选择一种秘示域"
+                    "Prompt": "选择一种秘示域。"
                 },
                 "CurseSeverity": {
                     "ModerateToMajor": "你在中阶诅咒生效的情况下施放启示法术后，你立即提升至高阶诅咒。",
@@ -2616,9 +2623,9 @@
             "Orc": {
                 "HoldMark": {
                     "Axe": "斧（斧或镐）",
-                    "Shield": "盾牌（锤或盾牌）",
-                    "Torch": "火把（炸弹或短刃）",
-                    "Prompt": "选择你的部族印记纹章",
+                    "Shield": "盾牌（锤或盾牌）。",
+                    "Torch": "火把（炸弹或短刃）。",
+                    "Prompt": "选择你的部族印记纹章。",
                     "BurningSun": "燃日",
                     "DeathsHead": "死颅",
                     "DefiledCorpse": "渎骸",
@@ -6490,7 +6497,7 @@
                     "Animal": {
                         "Aerial": "飞行动物",
                         "Animal": "动物",
-                        "Aquatic": "水生动物",
+                        "Aquatic": "水栖动物",
                         "Medium": "中型动物",
                         "Small": "小型动物",
                         "Specific": {
@@ -6577,7 +6584,7 @@
                             "Medium": "中型木元素"
                         }
                     },
-                    "Gimmerling": "屁孩精",
+                    "Gimmerling": "恶童精",
                     "HumanoidSmall": "小型类人生物",
                     "Hybrid": "混合形态",
                     "Imp": "小恶魔",
@@ -6601,7 +6608,7 @@
                     "Ifrit": "火元素裔",
                     "Keketar": "科科塔尔",
                     "HumanoidMedium": "中型类人生物",
-                    "Pukwudgie": "魒骻吉",
+                    "Pukwudgie": "毒棘精",
                     "Gancanagh": "爱语者",
                     "LamiaMatriarch": "拉米亚女族长",
                     "Leshy": "莱西",
@@ -6609,7 +6616,7 @@
                     "Oni": "恶鬼",
                     "PorcupineGiant": "巨豪猪",
                     "Vampire": "吸血鬼",
-                    "Vidileth": "幕后尊主",
+                    "Vidileth": "维迪勒斯（幕后尊主）",
                     "Vilderavn": "黑鸦爵",
                     "Voidworm": "虚空虫",
                     "Wolf": "狼",
@@ -6626,7 +6633,12 @@
                     "Owlbear": "枭熊",
                     "Unicorn": "独角兽",
                     "Nymph": {
-                        "DryadQueen": "木林仙后"
+                        "DryadQueen": "木林仙后",
+                        "HesperidQueen": "夕照仙后",
+                        "LampadQueen": "冥灯仙后",
+                        "NaiadQueen": "水泽仙后",
+                        "Nymph": "宁芙",
+                        "Queen": "宁芙仙后"
                     },
                     "Ape": "猿",
                     "Boar": "野猪",
@@ -6634,7 +6646,13 @@
                     "Mantis": "螳螂",
                     "Shark": "鲨鱼",
                     "Moose": "麋鹿",
-                    "Plant": "植物",
+                    "Plant": {
+                        "Fungus": "真菌",
+                        "Gourd": "葫芦",
+                        "Leshy": "莱西",
+                        "Plant": "植物",
+                        "SnappingFlytrap": "猛咬捕蝇草"
+                    },
                     "LeshyMob": "莱西暴徒",
                     "Fox": "狐狸",
                     "Human": "人类",
@@ -6666,7 +6684,9 @@
                     "Drude": "Drude",
                     "Object": {
                         "Inanimate": "无生命物品",
-                        "InanimateTiny": "超小型无生命物品"
+                        "InanimateTiny": "超小型无生命物品",
+                        "Small": "小型无生命物体",
+                        "Tiny": "超小型无生命物体"
                     },
                     "Swarm": {
                         "Flies": "蝇群"
@@ -6694,6 +6714,18 @@
                         "Jaathoom": "气巨灵",
                         "Jabali": "土巨灵",
                         "Jann": "小巨灵"
+                    },
+                    "Protean": {
+                        "Azuretzi": "阿偕提兹",
+                        "Keketar": "科科塔尔",
+                        "Voidworm": "虚空虫"
+                    },
+                    "Psychopomp": {
+                        "Morrigna": "摩莉甘猎魂使"
+                    },
+                    "Rakshasa": {
+                        "RajaKrodha": "忿怒罗刹",
+                        "Raktavarna": "化物罗刹"
                     }
                 },
                 "Label": "当前形态",
@@ -7270,6 +7302,220 @@
                 },
                 "GaseousAdaptation": {
                     "Name": "Gaseous Adaptation"
+                }
+            },
+            "CinderDragon": {
+                "CloudOfAshes": {
+                    "Name": "灰烬云"
+                },
+                "InextinguishableAura": {
+                    "Name": "不熄灵光"
+                },
+                "InflameEmotions": {
+                    "Name": "煽动情绪"
+                }
+            },
+            "ClockworkCreature": {
+                "MalfunctionBackfire": {
+                    "Name": "故障 - 回火"
+                },
+                "MalfunctionDamagedPropulsion": {
+                    "Name": "故障 - 动力受损"
+                },
+                "MalfunctionLooseScrews": {
+                    "Name": "故障 - 螺钉松动"
+                },
+                "WindUp": {
+                    "Name": "上发条"
+                }
+            },
+            "ConspiratorDragon": {
+                "ApexParanoids": {
+                    "Name": "极端偏执"
+                },
+                "MentalFeedback": {
+                    "Name": "心灵反噬"
+                },
+                "ObscureRevelations": {
+                    "Name": "隐匿启示"
+                },
+                "OccultWhisperers": {
+                    "Name": "异能低语者"
+                }
+            },
+            "CoralDragon": {
+                "GraspingWaves": {
+                    "Name": "纠缠波浪"
+                },
+                "Palytoxin": {
+                    "Name": "海葵毒素"
+                },
+                "PrimalTide": {
+                    "Name": "原能潮汐"
+                }
+            },
+            "Cryptid": {
+                "Augmented": {
+                    "Name": "人工增强"
+                },
+                "BrokenArsenal": {
+                    "Name": "破碎军械"
+                },
+                "BurningEyes": {
+                    "Name": "双目如炬"
+                },
+                "Clobber": {
+                    "Name": "痛击"
+                },
+                "CreatureObscura": {
+                    "Name": "生物怪谈"
+                },
+                "EnergyWave": {
+                    "Name": "能量波"
+                },
+                "ExplosiveEnd": {
+                    "Name": "自爆终局"
+                },
+                "GraspForLife": {
+                    "Name": "生命之握"
+                },
+                "Howl": {
+                    "Name": "嚎叫"
+                },
+                "HybridForm": {
+                    "Name": "混种形态"
+                },
+                "Marrowlance": {
+                    "Name": "骨枪"
+                },
+                "ObscuraVulnerability": {
+                    "Name": "揭秘易伤"
+                },
+                "OperationalFlaw": {
+                    "Name": "构造缺陷"
+                },
+                "PowerSurge": {
+                    "Name": "力量涌动"
+                },
+                "ShiftingForm": {
+                    "Name": "形态变换"
+                },
+                "ShiftingIridescence": {
+                    "Name": "虹光偏折"
+                },
+                "Shockwave": {
+                    "Name": "震荡波"
+                },
+                "Stench": {
+                    "Name": "恶臭"
+                },
+                "UnusualBane": {
+                    "Name": "罕见灾厄"
+                },
+                "VanishingEscape": {
+                    "Name": "突然消失"
+                }
+            },
+            "CultistOfTorment": {
+                "AmplifyTorment": {
+                    "Label": "目标的生命值：",
+                    "UnderFull": "低于100%",
+                    "UnderHalf": "低于50%"
+                }
+            },
+            "DespairDragon": {
+                "CursedMemories": {
+                    "Name": "受诅记忆"
+                },
+                "LightsOut": {
+                    "Name": "熄灯"
+                },
+                "ManifestFear": {
+                    "Name": "具现恐惧"
+                }
+            },
+            "DiabolicDragon": {
+                "DiabolicDisguise": {
+                    "Name": "炼狱伪装"
+                },
+                "InfernalRift": {
+                    "Name": "炼狱裂隙"
+                },
+                "InterceptSummons": {
+                    "Name": "拦截召唤"
+                }
+            },
+            "Graveknight": {
+                "BetrayedRevivification": {
+                    "Name": "被辜负者"
+                },
+                "ChannelMagic": {
+                    "Name": "引导魔法"
+                },
+                "ClutchingArmor": {
+                    "Name": "缠结护甲"
+                },
+                "CreateGraveSquire": {
+                    "Name": "创造死墓侍从"
+                },
+                "DarkDeliverance": {
+                    "Name": "暗之救赎"
+                },
+                "DevastatingBlast": {
+                    "Name": "毁灭爆震"
+                },
+                "EagerForBattle": {
+                    "Name": "渴求战斗"
+                },
+                "EmptySaveForDust": {
+                    "Name": "只余尘土"
+                },
+                "GraveknightSCurse": {
+                    "Name": "死墓骑士诅咒"
+                },
+                "GraveknightSShield": {
+                    "Name": "死墓骑士盾牌"
+                },
+                "PhantomMount": {
+                    "Name": "魅影坐骑"
+                },
+                "PortentousGlare": {
+                    "Name": "不祥怒视"
+                },
+                "Rejuvenation": {
+                    "Name": "复生"
+                },
+                "RuinousWeapons": {
+                    "Name": "破灭武器"
+                },
+                "SacrilegiousAura": {
+                    "Name": "亵渎灵光"
+                },
+                "WeaponMaster": {
+                    "Name": "武器大师"
+                }
+            },
+            "DivineWarden": {
+                "DivineDestruction": {
+                    "Name": "神圣毁灭"
+                },
+                "DivineDomainSpells": {
+                    "Name": "神术领域法术"
+                },
+                "DivineInnateSpells": {
+                    "Name": "神术内在法术"
+                },
+                "FaithBound": {
+                    "Name": "信仰束缚"
+                },
+                "FaithfulWeapon": {
+                    "Name": "信仰武器"
+                },
+                "InstrumentOfFaith": {
+                    "Name": "信仰道标"
+                },
+                "Sanctification": {
+                    "Name": "祝佑"
                 }
             }
         },
@@ -8138,8 +8384,8 @@
                     "Note": "If you roll a success on a saving throw against an emotion effect, you get a critical success instead."
                 },
                 "WeaponFamiliarity": {
-                    "AdvancedWeapons": "Advanced Dragonkin Weapons",
-                    "MartialWeapons": "Martial Dragonkin Weapons"
+                    "AdvancedWeapons": "进阶龙人武器",
+                    "MartialWeapons": "军用龙人武器"
                 }
             },
             "Envoy": {
@@ -8204,6 +8450,30 @@
                     "Superior": "尝试一次@Check[flat|dc:18]检定。成功时，该重击变为普通命中。",
                     "Tactical": "尝试一次@Check[flat|dc:20]检定。成功时，该重击变为普通命中。",
                     "Ultimate": "尝试一次@Check[flat|dc:16]检定。成功时，该重击变为普通命中。"
+                }
+            },
+            "Sarcesian": {
+                "WeaponFamiliarity": {
+                    "AdvancedWeapons": "进阶萨瑟蝶人武器",
+                    "MartialWeapons": "军用萨瑟蝶人武器"
+                }
+            },
+            "Shobhad": {
+                "WeaponFamiliarity": {
+                    "AdvancedWeapons": "进阶绍贝德人武器",
+                    "MartialWeapons": "军用绍贝德人武器"
+                }
+            },
+            "Vesk": {
+                "WeaponFamiliarity": {
+                    "AdvancedWeapons": "进阶维斯克蜥人武器",
+                    "MartialWeapons": "军用维斯克蜥人武器"
+                }
+            },
+            "Kasatha": {
+                "WeaponFamiliarity": {
+                    "AdvancedWeapons": "进阶卡萨斯人武器",
+                    "MartialWeapons": "军用卡萨斯人武器"
                 }
             }
         }
