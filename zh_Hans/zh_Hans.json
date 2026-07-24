@@ -2404,7 +2404,12 @@
                     "DeathEffect": "死亡效果立即杀死了他们。",
                     "Destroyed": "它被摧毁了。"
                 },
-                "TroopThresholdReached": "部队已抵达下一个阈值（剩余 {segments} 个部分）。"
+                "TroopThresholdReached": "部队已抵达下一个阈值（剩余 {segments} 个部分）。",
+                "PersistentEntry": {
+                    "bleed": "{formula}{damageType}",
+                    "default": "{formula}持续{damageType}伤害"
+                },
+                "StartsTakingDamage": "<actor>{actor}</actor>开始承受{persistentDamages}。"
             },
             "Character": {
                 "AbilityBuilder": {
@@ -2624,9 +2629,15 @@
                 "CriticalSpecialization": "重击专精",
                 "SpellPreparation": {
                     "Title": "{actor}：法术准备",
-                    "Hint": "想要准备一个法术，请将其从列表中拖至角色卡的一个法术空位上。",
-                    "HintFlexible": "要准备法术，请在此处启用。要准备戏法，请从该列表中将一个戏法拖动到角色卡上的空位中。",
-                    "Search": "搜索法术"
+                    "Hint": "想要准备一个法术，请使用准备按钮或将其拖至角色卡的一个法术位上。",
+                    "HintFlexible": "要准备法术，请在此处启用。要准备戏法，请使用准备按钮或从列表中将一个戏法拖动到角色卡上的法术位中。",
+                    "Search": "搜索法术",
+                    "CantripPrepared": "戏法仅需准备一次",
+                    "EmptyGroup": "无已知法术",
+                    "NoFreeSlots": "对应环位上无可用法术位",
+                    "NotPrepared": "未准备",
+                    "Prepare": "准备法术",
+                    "RemovePreparation": "移除准备"
                 },
                 "Configure": {
                     "Alliance": {
@@ -2876,7 +2887,10 @@
                     "triaxian": "Triaxian",
                     "trinary": "Trinary",
                     "urog": "Urog",
-                    "worlanisi": "Worlanisi"
+                    "worlanisi": "Worlanisi",
+                    "acsie": "Acsie",
+                    "coshyco": "Coshyco",
+                    "tripkee": "树蛙人语"
                 }
             },
             "Dead": "死亡",
@@ -2936,7 +2950,10 @@
                     "Error": {
                         "PredicateArray": "谓语必须是一个数组"
                     },
-                    "AddSpecial": "添加特殊"
+                    "AddSpecial": "添加特殊",
+                    "AddLore": "添加学识",
+                    "LoreAlreadyExists": "已拥有该学识",
+                    "RemoveSpecial": "移除特殊"
                 },
                 "SpecialSkill": "+{mod} {label}",
                 "LevelN": "生物 {level}",
@@ -3009,19 +3026,26 @@
                 "Bulk": "总容积: {bulk}",
                 "TravelHeader": "队伍旅程与六角格探索",
                 "CheckPrompt": {
-                    "ChooseSaves": "选择豁免",
-                    "ChooseLores": "选择学识",
+                    "ChooseSaves": "豁免骰",
+                    "ChooseLores": "学识技能",
                     "AdjustDifficulty": "调整难度",
                     "TitleShort": "检定提示",
                     "Post": "生成提示",
                     "LevelDC": "基于等级的DC",
                     "ChooseSkills": "选择技能/察觉",
-                    "Title": "生成检定提示",
+                    "Title": "检定命令生成器",
                     "SkillsPerception": "技能/察觉",
                     "SimpleDC": "简单DC",
                     "SetDC": "设定DC",
                     "SecretCheck": "秘密检定",
-                    "PromptTitle": "提示标题"
+                    "PromptTitle": "提示标题",
+                    "DCTabs": {
+                        "level": "基于等级的DC",
+                        "simple": "简单DC",
+                        "static": "标准DC"
+                    },
+                    "PreviewPlaceholder": "Raw Output",
+                    "Submit": "Generate Prompt"
                 },
                 "NewName": "新队伍"
             },
@@ -9283,7 +9307,12 @@
     },
     "DOCUMENT": {
         "Combat": "遭遇",
-        "Combats": "遭遇"
+        "Combats": "遭遇",
+        "FIELDS": {
+            "z": {
+                "label": "Z"
+            }
+        }
     },
     "TYPES": {
         "Actor": {
