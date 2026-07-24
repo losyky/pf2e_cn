@@ -165,7 +165,7 @@
                 }
             },
             "InsectForm": {
-                "SpiderWebNote": "一次成功的蛛网攻击会使目标@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]1轮或至其[[/act escape]]",
+                "SpiderWebNote": "一次成功的蛛网攻击会使目标@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]1轮或至其[[/act escape]]。",
                 "ChoiceSet": {
                     "Ant": "蚁",
                     "Beetle": "甲虫",
@@ -1027,7 +1027,7 @@
                     "WealAndWoe": "吉且凶",
                     "Woe": "凶",
                     "Label": "呼唤光明",
-                    "Prompt": "选择卜筮术的结果"
+                    "Prompt": "选择卜筮术的结果。"
                 },
                 "Woodcraft": {
                     "Note": "当处于森林或丛林环境时，如果你在为辨别方向，求生或是掩盖行踪而进行的生存技能检定中骰出大失败，你会获得失败；而如果你骰出了成功，你会获得大成功。"
@@ -1040,7 +1040,7 @@
                 },
                 "Atavism": {
                     "AllowedDrops": "精灵族裔传承",
-                    "Prompt": "选择一个精灵族裔传承"
+                    "Prompt": "选择一个精灵族裔传承。"
                 },
                 "AgelessPatience": {
                     "Note": "若你在该检定上骰出了天然1，你的结果不会因此下降一个成功等级（因此你只有在掷骰结果比检定DC低10的情况下才会大失败）。"
@@ -1980,33 +1980,33 @@
                 "DeceiveMark": "用欺骗检定对标记目标进行虚招"
             },
             "Prompt": {
-                "AdvancedMulticlassFeat": "选择一个等级为最多你角色等级一半的职业专长",
-                "Material": "选择一种材质",
-                "EnergyType": "选择一种能量类型",
-                "CantripOrNonCantrip": "选择戏法或非戏法法术",
+                "AdvancedMulticlassFeat": "选择一个等级为最多你角色等级一半的职业专长。",
+                "Material": "选择一种材质。",
+                "EnergyType": "选择一种能量类型。",
+                "CantripOrNonCantrip": "选择戏法或非戏法法术。",
                 "ConsciousMind": "选择显意识。",
-                "CreatureSize": "选择生物体型",
-                "Deity": "选择一个神祇",
-                "DamageType": "选择一种伤害类型",
-                "Element": "选择一种元素",
-                "Feat": "选择一个专长",
+                "CreatureSize": "选择生物体型。",
+                "Deity": "选择一个神祇。",
+                "DamageType": "选择一种伤害类型。",
+                "Element": "选择一种元素。",
+                "Feat": "选择一个专长。",
                 "FirstImplement": "选择一个第一奇具。",
-                "Lesson": "选择教诲",
+                "Lesson": "选择教诲。",
                 "SecondImplement": "选择一个第二奇具。",
-                "DeitysDomain": "选择神祇的一个领域",
+                "DeitysDomain": "选择神祇的一个领域。",
                 "EvolutionFeat": "选择第一个进化专长。",
-                "Shillelagh": "选择一根棍棒或杖",
-                "Skill": "选择一个技能",
+                "Shillelagh": "选择一根棍棒或杖。",
+                "Skill": "选择一个技能。",
                 "SubconsciousMind": "选择潜意识。",
-                "SkillFeat": "选择一个技能专长",
+                "SkillFeat": "选择一个技能专长。",
                 "ThirdImplement": "选择一个第三奇具。",
-                "Weapon": "选择一个武器",
+                "Weapon": "选择一个武器。",
                 "WildShape": "选择变化形态",
-                "UnarmedAttack": "选择一种无武装打击",
-                "WeaponGroup": "选择一个武器组",
-                "LevelOneClassFeat": "选择一个1级职业专长",
-                "LevelOneOrTwoClassFeat": "选择一个1或2级职业专长",
-                "PathToPerfection": "选择一种完美之道",
+                "UnarmedAttack": "选择一种无武装打击。",
+                "WeaponGroup": "选择一个武器组。",
+                "LevelOneClassFeat": "选择一个1级职业专长。",
+                "LevelOneOrTwoClassFeat": "选择一个1或2级职业专长。",
+                "PathToPerfection": "选择一种完美之道。",
                 "DragonBreathWeapon": "选择一种龙类吐息。",
                 "WeaponOrUnarmed": "选择一把武器或无武装打击。",
                 "ClassDCAbilityScore": "选择职业DC的关键属性。",
@@ -2015,11 +2015,11 @@
                 "Alignment": "选择一个阵营。",
                 "Rune": "选择一个符文。",
                 "Sanctification": "选择一个加护。",
-                "Tradition": "选择根源",
-                "Shield": "选择盾牌",
-                "LevelOneAncestryFeat": "选择一个1级族裔专长",
-                "UntamedForm": "选择一种无羁形态效果",
-                "Trait": "选择特征",
+                "Tradition": "选择一种根源。",
+                "Shield": "选择盾牌。",
+                "LevelOneAncestryFeat": "选择一个1级族裔专长。",
+                "UntamedForm": "选择一种无羁形态效果。",
+                "Trait": "选择一个特征。",
                 "Color": "选择颜色。",
                 "Form": "选择形态。",
                 "Feature": "选择一种特性。",
@@ -2081,7 +2081,7 @@
             "WellspringMage": {
                 "CriticalSuccess": "你暂时恢复一个由你选择的任何环级的已消耗法术位。这个暂时恢复的临时法术位将会持续一分钟，如果你不在一分钟内使用它，你将在法术位过期时产生@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{泉源涌动 Wellspring Surge}。",
                 "Initiative": "当你为一场非不重要的战斗骰先攻和由GM选择的其它高压情形时，你的魔力将开始涌动。进行一个@Check[flat|dc:6|traits:wellspring-magic]。",
-                "Failure": "你立刻产生@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{泉源涌动 Wellspring Surge}，法术环位将从你最高的三个环位随机决定（或者你全部的法术环位，如果你的最高环位小于三）。",
+                "Failure": "你立刻产生@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]，法术环位将从你最高的三个环位随机决定（或者你全部的法术环位，如果你的最高环位小于三）",
                 "Success": "你暂时恢复一个从你最高的三个环位随机决定恢复的已消耗法术位。这个暂时恢复的临时法术位将会持续3回合，如果你不在一分钟内使用它，你将在法术位过期时产生@UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{泉源涌动 Wellspring Surge}。"
             },
             "ChromaticArmor": {
@@ -2096,7 +2096,7 @@
             },
             "Gunslinger": {
                 "Way": {
-                    "Prompt": "选择道途",
+                    "Prompt": "选择道途。",
                     "Spellshot": "魔弹射手之道（变体）"
                 },
                 "FinalShot": {
@@ -2153,7 +2153,7 @@
             },
             "Magus": {
                 "HybridStudy": {
-                    "Prompt": "选择一种融汇研究"
+                    "Prompt": "选择一种融汇研究。"
                 },
                 "SparklingTarge": {
                     "DefendingLabel": "防御魔法"
@@ -2250,7 +2250,7 @@
                     "Note": "当你在由石头或泥土构成的狭窄表面或不稳地面上使用特技技能来保持平衡时，你不会措手不及，且将这些特技检定的成功视为大成功。"
                 },
                 "VengefulHatred": {
-                    "Prompt": "选择一种世代仇敌"
+                    "Prompt": "选择一种世代仇敌。"
                 },
                 "SparkFist": {
                     "Note": "每次你用拳头命中时，你承受@Damage[(1+@weapon.system.runes.striking)[fire]]伤害。"
@@ -2295,7 +2295,7 @@
                 },
                 "MutateWeapon": {
                     "Bonus": "选择加值。",
-                    "Target": "选择一个你的肢体武器",
+                    "Target": "选择一个你的肢体武器。",
                     "Reach": "获得长触及10",
                     "Accuracy": "获得攻击检定+1加值"
                 }
@@ -2307,7 +2307,7 @@
             },
             "Ranger": {
                 "HuntersEdge": {
-                    "Prompt": "选择一种猎手优势",
+                    "Prompt": "选择一种猎手优势。",
                     "FirstAttack": "这一轮首次攻击猎杀目标",
                     "Flurry": {
                         "Label": "连击",
@@ -2365,7 +2365,7 @@
                 }
             },
             "TOTMToggle": {
-                "FirstRangeIncrement": "需求目标位于第一射程增量内的能力正在生效",
+                "FirstRangeIncrement": "需求目标位于第一射程增量内的能力正在生效。",
                 "Vampire": "需求目标是吸血鬼的能力正在生效",
                 "FlatFooted": "需求目标措手不及的能力正在生效",
                 "Undead": "需求目标是不死生物的能力正在生效",
@@ -2376,19 +2376,19 @@
             },
             "Wizard": {
                 "ArcaneSchool": {
-                    "Prompt": "选择奥术学派"
+                    "Prompt": "选择一个奥术学派。"
                 },
                 "ArcaneThesis": {
-                    "Prompt": "选择一个奥术论题"
+                    "Prompt": "选择一个奥术论题。"
                 },
                 "Metamagic1": {
                     "Prompt": "选择一个1级法师超魔专长"
                 },
                 "Spellshape1": {
-                    "Prompt": "选择一个1级法师塑法专长"
+                    "Prompt": "选择一个1级法师塑法专长。"
                 },
                 "UnifiedMagicalTheory": {
-                    "Prompt": "选择一个1级法师专长"
+                    "Prompt": "选择一个1级法师专长。"
                 },
                 "ExplosiveArrival": {
                     "Label": "爆炸登场：生物特征"
@@ -2418,10 +2418,10 @@
                     "Prompt": "选择一个施法兼职变体。"
                 },
                 "Racket": {
-                    "Prompt": "选择一种诡术"
+                    "Prompt": "选择一种诡术。"
                 },
                 "TrainSkill": {
-                    "Prompt": "选择一个你要受训的技能"
+                    "Prompt": "选择一个你要受训的技能。"
                 },
                 "DistractingFeint": {
                     "Text": "当一个生物被你虚招而陷入措手不及时，它同时在察觉检定和反射豁免上获得-2环境减值。@UUID[Compendium.pf2e.feat-effects.Item.7hRgBo0fRQBxMK7g]{效果：分身虚招}"
@@ -2494,9 +2494,9 @@
             },
             "Sorcerer": {
                 "Bloodline": {
-                    "Prompt": "选择血统",
+                    "Prompt": "选择一个血统。",
                     "BloodMagicDescription": {
-                        "Diabolic": "一个目标受到@Damage[@item.level[fire]]{每法术环级1点火焰伤害}（如果法术已经能造成初始火焰伤害，将此伤害与初始伤害合计后再计算弱点和抗力），或者你于1轮内在欺骗检定上获得+2状态加值。",
+                        "Diabolic": "一个目标受到@Damage[@item.level[fire]]{每法术环级1点火焰伤害}（如果法术已经能造成初始火焰伤害，将此伤害与初始伤害合计后再计算弱点和抗力），或者你于1轮内在欺骗检定上获得+2状态加值",
                         "Genie": "你的施法能够扭曲现实，从而分散敌人的注意力。你于1轮内在欺骗检定上获得+1状态加值，或者目标于1轮内在察觉上承受-1状态减值。",
                         "Shadow": {
                             "PerceptionPenalty": "察觉上承受-1减值",
@@ -2507,10 +2507,10 @@
                         "Wyrmblessed": "你的声音传递巨龙之威。你在1个回合内获得威吓检定上的+1状态加值，或者目标在1个回合内意志豁免受到-1状态减值。",
                         "Draconic": "你或是一个目标在AC上获得+1状态加值，持续1轮。",
                         "Aberrant": "目标于1轮内在意志豁免上获得-1状态减值，或者你于1轮内在意志豁免上获得+2状态加值。",
-                        "Angelic": "你或是一个目标在豁免骰上获得+1状态加值，持续1轮。",
+                        "Angelic": "你或是一个目标在豁免骰上获得+1状态加值，持续1轮",
                         "Phoenix": "原能的生命与死亡之火在你或单个目标间流转。选择你或一个法术目标获得等同于法术环级的临时生命值持续1轮，或则使得法术目标受到@Damage[@item.level[fire]]伤害（如果法术本身就造成火焰伤害，在计算弱点与抗力之前加上此额外伤害）。",
                         "Elemental": "你于1轮内在威吓检定上获得+2状态加值，或者目标受到@Damage[@item.level[@actor.flags.system.elementalBloodline.damageType]]伤害。伤害类型由你的元素影响决定。如果法术已能造成这一类型的伤害，将此伤害与初始伤害合计后再计算弱点和抗力。",
-                        "Fey": "你于1轮内在表演检定上获得+2状态加值，或者在1轮内获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]。如此显而易见的遮蔽无法被用于@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]。",
+                        "Fey": "你于1轮内在表演检定上获得+2状态加值，或者在1轮内获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]。如此显而易见的遮蔽无法被用于@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]",
                         "AncestralBloodMagic": "施放一个先祖法术",
                         "Imperial": "直到你的下一个回合开始，你可以选择在AC或是在豁免骰上获得+1状态加值。",
                         "Demonic": "目标于1轮内在AC上受到-1状态减值，或者你于1轮内在威吓检定上获得+2状态加值。",
@@ -2575,14 +2575,14 @@
             },
             "Fetchling": {
                 "DeepFetchling": {
-                    "Prompt": "选择要抵抗的伤害类型"
+                    "Prompt": "选择要抵抗的伤害类型。"
                 },
                 "LightlessLitheness": {
                     "Note": "你可以进行快步，取代原本行走最多5尺的效果。"
                 }
             },
             "FollowTheExpert": {
-                "Prompt": "选择专家的技能熟练度"
+                "Prompt": "选择专家的技能熟练度。"
             },
             "GameHunterDedication": {
                 "TargetHuntedPrey": "目标是你的猎杀目标（仅限动物、魔兽或龙）",
@@ -2622,7 +2622,7 @@
             },
             "Orc": {
                 "HoldMark": {
-                    "Axe": "斧（斧或镐）",
+                    "Axe": "斧（斧或镐）。",
                     "Shield": "盾牌（锤或盾牌）。",
                     "Torch": "火把（炸弹或短刃）。",
                     "Prompt": "选择你的部族印记纹章。",
@@ -2674,11 +2674,11 @@
             },
             "Suli": {
                 "Dualborn": {
-                    "SecondElement": "选择你的第二传承",
-                    "FirstElement": "选择你的第一传承"
+                    "SecondElement": "选择你的第二传承。",
+                    "FirstElement": "选择你的第一传承。"
                 },
                 "ElementalAssault": {
-                    "Prompt": "选择一种元素"
+                    "Prompt": "选择一种元素。"
                 }
             },
             "Target": {
@@ -2692,8 +2692,8 @@
             "TrinityGeodeLabel": "三一晶洞",
             "SkillMastery": {
                 "AllowedDrops": "技能专长",
-                "MasterPrompt": "选择获得大师熟练度的技能",
-                "ExpertPrompt": "选择要获得专家熟练度的技能"
+                "MasterPrompt": "选择获得大师熟练度的技能。",
+                "ExpertPrompt": "选择要获得专家熟练度的技能。"
             },
             "Hobgoblin": {
                 "AgonizingRebuke": {
@@ -2703,7 +2703,7 @@
                     "Note": "当你在一个抵抗疾病或毒素的豁免骰中获得成功，你的苦难阶段降低2（对于恶性疾病或毒素则降低1），当你获得大成功，阶段降低3（对于恶性的疾病或毒素则降低2）。"
                 },
                 "WarConditioning": {
-                    "Prompt": "选择一种移动类型"
+                    "Prompt": "选择一种移动类型。"
                 }
             },
             "LitTorch": "火把已点燃",
@@ -2712,7 +2712,7 @@
                     "Note": "每当你针对疾病的豁免检定成功时, 都会使其降低2阶段，恶性疾病则降低1阶段。每个对抗持续疾病的大成功会使其降低3阶段，恶性疾病则降低2阶段。"
                 },
                 "GuidedByTheStars": {
-                    "Prompt": "选择豁免或技能"
+                    "Prompt": "选择豁免或技能。"
                 }
             },
             "BrevicNoble": {
@@ -2732,7 +2732,7 @@
             },
             "Witch": {
                 "Patron": {
-                    "Prompt": "选择一个庇护主",
+                    "Prompt": "选择一个庇护主。",
                     "FamiliarAbility": {
                         "OngoingMisery": {
                             "Title": "长痛魔宠",
@@ -2901,14 +2901,14 @@
                 }
             },
             "Multitalented": {
-                "Prompt": "选择一种兼职入门专长",
+                "Prompt": "选择一种兼职入门专长。",
                 "AllowedDrops": "2级兼职入门专长"
             },
             "SnipersAim": {
                 "Note": "忽略目标的隐蔽状态。"
             },
             "SpellmastersResilience": {
-                "Prompt": "选择要获得抗性的法术根源"
+                "Prompt": "选择要获得抗性的法术根源。"
             },
             "Leshy": {
                 "ThornedSeedpod": {
@@ -3044,7 +3044,7 @@
             },
             "Conrasu": {
                 "CeremonyEvenedHand": {
-                    "Prompt": "选择一种无武装打击"
+                    "Prompt": "选择一种无武装打击。"
                 },
                 "RiteOfPassage": {
                     "Note": "当你在森林中的狭窄地表和不平整地表使用特技技能进行保持平衡动作时，并在检定中成功时，能得到大成功的结果。"
@@ -3052,7 +3052,7 @@
             },
             "Druid": {
                 "DruidicOrder": {
-                    "Prompt": "选择德鲁伊教派"
+                    "Prompt": "选择德鲁伊教派。"
                 }
             },
             "Goblin": {
@@ -3067,7 +3067,7 @@
                 },
                 "ChosenOfLamashtu": {
                     "AllowedDrops": "地精族裔传承",
-                    "Prompt": "选择一个地精族裔传承"
+                    "Prompt": "选择一个地精族裔传承。"
                 },
                 "ScaldingSpit": {
                     "BoilingSpit": "沸腾喷吐"
@@ -3133,11 +3133,11 @@
                 }
             },
             "SpellEffectProtection": {
-                "Prompt": "选择防护术对抗的阵营"
+                "Prompt": "选择防护术对抗的一个阵营。"
             },
             "Swashbuckler": {
                 "Style": {
-                    "Prompt": "选择一种风格"
+                    "Prompt": "选择一种风格。"
                 },
                 "Panache": "你获得@UUID[Compendium.pf2e.feat-effects.Item.uBJsxCzNhje8m8jj]。",
                 "Finisher": {
@@ -3188,7 +3188,7 @@
                 "UnfoldingWind": "刚风宗",
                 "UntwistingIron": "坚铁宗",
                 "Label": "完美学社",
-                "Prompt": "选择一个完美学社",
+                "Prompt": "选择一个完美学社。",
                 "UnblinkingFlame": "静焰宗"
             },
             "Champion": {
@@ -3382,7 +3382,7 @@
             },
             "DivineAlly": {
                 "AllowedDrops": "神卫职业特性",
-                "Prompt": "选择神圣盟友"
+                "Prompt": "选择神圣盟友。"
             },
             "CatharticMage": {
                 "EmotionalState": {
@@ -3961,7 +3961,7 @@
             "SpellEffectSweetDream": {
                 "Insight": "洞察之梦",
                 "Glamor": "浪漫之梦",
-                "Prompt": "选择一种美梦",
+                "Prompt": "选择一种美梦。",
                 "Voyaging": "远航之梦"
             },
             "UntamedShift": {
@@ -3969,10 +3969,10 @@
                 "UntamedJaws": "无羁颚咬 Untamed Jaws",
                 "Wings": "双翼 Wings",
                 "LongVines": "长藤 Long Vines",
-                "Prompt": "选择一种变形",
+                "Prompt": "选择一种变形。",
                 "ElementalMatter": "元素之形",
-                "PromptTwo": "选择第二种变形",
-                "PromptThree": "选择第三种变形"
+                "PromptTwo": "选择第二种变形。",
+                "PromptThree": "选择第三种变形。"
             },
             "SpiritPower": {
                 "Love": {
@@ -4343,7 +4343,7 @@
                 "QuickenedCasting": "如果你下个动作是施放一个吟游诗人戏法、或是一个比你拥有的最高环级法术位至少低2环的法术，则减少1施法动作数量（最小1动作）。",
                 "GrowthSpell": "增大该法术的区域。对于爆发，增加5尺半径；对于锥形，增大锥形10尺；对于线形，增加15尺长度。法术获得木特征。",
                 "BondConservation": "你获得一次额外机会使用汲取连结物品。你可以使用它来施放一个法术，此法术的环级低于先前法术2级及以上，并且必须在你下一轮结束前使用它，否则你会失去这个机会。",
-                "BurningSpell": "除了该法术的其他效果之外，它还会造成@Damage[(@item.rank)[persistent,fire]]伤害。该专长对原本就能够造成持续火焰伤害的法术无效。该法术获得火特征。",
+                "BurningSpell": "除了该法术的其他效果之外，它还会造成@Damage[(@item.rank)[persistent,fire]]伤害。该专长对原本就能够造成持续火焰伤害的法术无效。该法术获得火特征",
                 "CastDown": "目标只要从该法术中受到伤害就会陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。若目标在对抗该法术的豁免中掷出大失败，其还会在1分钟内于速度上受到-10尺状态减值。@UUID[Compendium.pf2e.feat-effects.Item.Ve1CRFI8ikL6dqcL]",
                 "ScintillatingSpell": "如果你下个动作是施放法术，并且法术不具有黑暗特征、不具有持续时间、需要生物尝试反射豁免，则法术除了其他效果以外，还会爆发出一阵耀眼光芒。每个在其对抗法术的反射豁免中失败的生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]1轮，大失败则改为@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮。",
                 "CourageousAdvance": "你任选一位从该法术获得状态加值的盟友，其可以立即使用一个反应动作进行一次行走。",
@@ -4371,7 +4371,7 @@
                 "OverwhelmingEnergy": "如果你的下一个动作是施放法术，该法术可以忽视目标对酸蚀、寒冷、电击、火焰或音波伤害数量等同于你等级的抗性。该效果会应用在所有由此法术造成的伤害上，包含来自该法术的持续伤害以及后续效果所造成的伤害，例如火墙术所创造出的火墙。生物的免疫效果不受此影响。",
                 "WindTossedSpell": "你能忽略目标的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]状态以及任何他们对你具有的掩蔽。法术获得气特征。",
                 "BloodlineConduit": "你不会在施放这个法术时消耗法术位。",
-                "EchoingChannel": "选择射程内的另一名生物。以该生物为目标再次施放一个1动作版本的相同法术。此法术与你施放的2环级伤害术或治疗术具有相同环级且无需消耗法术位。",
+                "EchoingChannel": "选择射程内的另一名生物。以该生物为目标再次施放一个1动作版本的相同法术。此法术与你施放的2环级伤害术或治疗术具有相同环级且无需消耗法术位",
                 "SurgingMight": "若你下一个动作是施放法术，该法术在下列伤害类型中，忽略目标等同于你等级数的抗力：精魂，命能，虚能。该效果对所有因该法术造成的伤害生效，包括持续伤害或法术持续效果造成的伤害。该专长不会使法术克服免疫，只克服抗力。",
                 "NonLethal": "如果你下个动作是施放法术，并且法术可以造成伤害且没有死亡或虚能特征，那么该法术会获得非致命特征。",
                 "Remediate": "如果你的下一个动作是使用神力源泉来施放3动作版本的伤害术或治疗术法术，你可以控制残余的能量抵消对立的力量。除其通常效果之外，你还可以使用你的伤害术或治疗术法术来尝试反制法术区域内的一个神术效果。",
@@ -4701,7 +4701,7 @@
             },
             "Summoner": {
                 "OstentatiousArrival": {
-                    "Label": "华丽降临：生物特征"
+                    "Label": "华丽降临：生物特征。"
                 }
             },
             "Modifier": {
@@ -6698,7 +6698,7 @@
                     "Miastrilek": "Miastrilek",
                     "RacoonDog": "狸猫",
                     "Devil": {
-                        "Insidiator": "Insidiator",
+                        "Insidiator": "Indsidiator",
                         "Gylou": "仆魔",
                         "Imp": "小鬼",
                         "Nessari": "深狱炼魔",
@@ -6777,7 +6777,10 @@
                         "Label": "猛击符文",
                         "Text": "该武器命中时，巨人能@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]{击退 Push}目标10尺（重击则击退20尺）。"
                     },
-                    "Prompt": "选择一种符文。"
+                    "Prompt": "选择一种符文。",
+                    "RuneOfPride": {
+                        "Label": "Rune of Pride"
+                    }
                 }
             },
             "ShockerLizard": {
@@ -7159,7 +7162,14 @@
             },
             "PhaseDragon": {
                 "SecondGlance": {
-                    "Label": "幻视一瞥"
+                    "Label": "幻视一瞥",
+                    "Name": "幻视一瞥"
+                },
+                "AfterimageJumps": {
+                    "Name": "残像跳跃"
+                },
+                "Dematerialize": {
+                    "Name": "虚体化"
                 }
             },
             "AmbushCopse": {
@@ -7807,6 +7817,427 @@
                 },
                 "ColdBeyondCold": {
                     "Name": "刺骨深寒"
+                },
+                "DarkDeliverance": {
+                    "Name": "暗之救赎"
+                },
+                "DrainSoulCage": {
+                    "Name": "汲取命匣"
+                },
+                "FamiliarSoul": {
+                    "Name": "魔宠之魂"
+                },
+                "MaskDeath": {
+                    "Name": "掩饰死亡"
+                },
+                "MetamagicAlteration": {
+                    "Name": "超魔变易"
+                },
+                "ParalyzingTouch": {
+                    "Name": "麻痹之触"
+                },
+                "PillageMind": {
+                    "Name": "掠夺心智"
+                },
+                "Rejuvenation": {
+                    "Name": "复生"
+                },
+                "SiphonLife": {
+                    "Name": "生命虹吸"
+                },
+                "StealSoul": {
+                    "Name": "窃取灵魂"
+                },
+                "UnholyTouch": {
+                    "Name": "不洁之触"
+                },
+                "VoidShroud": {
+                    "Name": "虚无寿衣"
+                }
+            },
+            "Loblobi": {
+                "UnflappableSelfImportance": {
+                    "Flattery": "镇定自负—马屁"
+                }
+            },
+            "ManaWastesMutant": {
+                "CausticPustules": {
+                    "Name": "Caustic Pustules"
+                },
+                "ChameleonSkin": {
+                    "Name": "变色皮肤"
+                },
+                "EldritchAttraction": {
+                    "Name": "Eldritch Attraction"
+                },
+                "EnergyBlast": {
+                    "Name": "能量爆发"
+                },
+                "EnergyResistance": {
+                    "Name": "能量抗力"
+                },
+                "GraspingTentacle": {
+                    "Name": "Grasping Tentacle"
+                },
+                "HulkingForm": {
+                    "Name": "Hulking Form"
+                },
+                "HungryMaw": {
+                    "Name": "Hungry Maw"
+                },
+                "IncreasedSpeed": {
+                    "Name": "增加速度"
+                },
+                "MagicHunger": {
+                    "Name": "Magic Hunger"
+                },
+                "MirrorThing": {
+                    "Name": "Mirror Thing"
+                },
+                "RevoltingAppearance": {
+                    "Name": "Revolting Appearance"
+                },
+                "SproutedLimb": {
+                    "Name": "Sprouted Limb"
+                },
+                "TooManyEyes": {
+                    "Name": "Too Many Eyes"
+                },
+                "VengefulBite": {
+                    "Name": "Vengeful Bite"
+                }
+            },
+            "MartialArtist": {
+                "BlazingGate": {
+                    "Name": "Blazing Gate"
+                },
+                "CompetitiveTaunt": {
+                    "Name": "战啸裂胆"
+                },
+                "ConcealedSpikes": {
+                    "Name": "Concealed Spikes"
+                },
+                "ConstantFeintStance": {
+                    "Name": "Constant Feint Stance"
+                },
+                "ContrabandSubstance": {
+                    "Name": "十全大补丸"
+                },
+                "DefensiveSideKick": {
+                    "Name": "Defensive Side Kick"
+                },
+                "IllegalBite": {
+                    "Name": "恶狗扑食"
+                },
+                "Kiai": {
+                    "Name": "Kiai!"
+                },
+                "LifeBurnAura": {
+                    "Name": "Life Burn Aura"
+                },
+                "SandInYourEye": {
+                    "Name": "Sand in Your Eye"
+                },
+                "SolarSurge": {
+                    "Name": "Solar Surge"
+                },
+                "SuperQiBlast": {
+                    "Name": "Super Qi Blast"
+                }
+            },
+            "MelfeshMonster": {
+                "BurrowingGrasp": {
+                    "Name": "掘地之手"
+                },
+                "CorpseBomb": {
+                    "Name": "尸体炸弹"
+                },
+                "DeathThroes": {
+                    "Name": "垂死挣扎"
+                },
+                "FalseSynapses": {
+                    "Name": "虚假突触"
+                },
+                "FlameLash": {
+                    "Name": "火焰鞭笞"
+                },
+                "MycelialTomb": {
+                    "Name": "菌丝坟墓"
+                },
+                "Smolderstench": {
+                    "Name": "闷烧恶臭"
+                },
+                "Swell": {
+                    "Name": "膨胀"
+                },
+                "TorrentialAdvance": {
+                    "Name": "倾泻突进"
+                },
+                "VentFlames": {
+                    "Name": "喷发火焰"
+                }
+            },
+            "MirageDragon": {
+                "Afterimage": {
+                    "Name": "残像"
+                },
+                "PhantasmalTerror": {
+                    "Name": "幻影惊骇"
+                },
+                "ReshapeTerrain": {
+                    "Name": "重塑地形"
+                }
+            },
+            "Mythic": {
+                "AmbushExcellence": {
+                    "Name": "卓越伏击"
+                },
+                "BrutishAthleticism": {
+                    "Name": "野蛮体魄"
+                },
+                "DeadlyStriker": {
+                    "Name": "致命一击"
+                },
+                "DevastatingMagic": {
+                    "Name": "毁灭魔法"
+                },
+                "HazardImmunity": {
+                    "Name": "危害免疫"
+                },
+                "MythicDefenses": {
+                    "Name": "神话防御"
+                },
+                "MythicFerocity": {
+                    "Name": "神话凶猛"
+                },
+                "MythicImmunity": {
+                    "Name": "神话免疫"
+                },
+                "MythicKnowledge": {
+                    "Name": "神话知识"
+                },
+                "MythicMobility": {
+                    "Name": "神话机动"
+                },
+                "MythicPower": {
+                    "Name": "神话之力"
+                },
+                "MythicResilience": {
+                    "Name": "神话韧性"
+                },
+                "MythicResilienceMythicAmbusher": {
+                    "Name": "神话韧性（神话伏兵）"
+                },
+                "MythicResistance": {
+                    "Name": "神话抗力"
+                },
+                "MythicSkill": {
+                    "Name": "神话技能"
+                },
+                "MythicWeaknessExtremeFrailty": {
+                    "Name": "神话弱点（极度衰弱）"
+                },
+                "MythicWeaknessFrailty": {
+                    "Name": "神话弱点（衰弱）"
+                },
+                "MythicWeaknessWeakWilled": {
+                    "Name": "神话弱点（意志弱点）"
+                },
+                "Recharge": {
+                    "Name": "再充能"
+                },
+                "RechargeSpell": {
+                    "Name": "法术再充能"
+                },
+                "RemoveACondition": {
+                    "Name": "移除状态"
+                },
+                "Reroll": {
+                    "Name": "重骰"
+                },
+                "TitanicMight": {
+                    "Name": "泰坦之威"
+                },
+                "UndyingMyth": {
+                    "Name": "不灭神话"
+                },
+                "Unimpeded": {
+                    "Name": "畅通无阻"
+                }
+            },
+            "Nemesis": {
+                "AdditionalDamage": {
+                    "Name": "额外伤害"
+                },
+                "EnhancedSense": {
+                    "Name": "Enhanced Sense"
+                },
+                "ExplosiveBlast": {
+                    "Name": "Explosive Blast"
+                },
+                "FastHealing": {
+                    "Name": "快速治疗"
+                },
+                "GhostlyFlicker": {
+                    "Name": "Ghostly Flicker"
+                },
+                "Immunity": {
+                    "Name": "Immunity"
+                },
+                "RavageMind": {
+                    "Name": "Ravage Mind"
+                },
+                "Resilient": {
+                    "Name": "Resilient"
+                }
+            },
+            "NymphQueen": {
+                "ChangeShape": {
+                    "Name": "变身"
+                },
+                "FocusBeauty": {
+                    "Name": "美之焦点"
+                },
+                "Inspiration": {
+                    "Name": "启迪灵感"
+                },
+                "NymphSBeauty": {
+                    "Name": "宁芙之美"
+                },
+                "TiedToTheLand": {
+                    "Name": "大地纽带"
+                }
+            },
+            "OmenDragon": {
+                "ForewarnedAndForearmed": {
+                    "Name": "有备无患"
+                },
+                "LinkFates": {
+                    "Name": "连接命运"
+                }
+            },
+            "PathMaiden": {
+                "ApostateSShroud": {
+                    "Name": "Apostate's Shroud"
+                },
+                "BlasphemousAura": {
+                    "Name": "Blasphemous Aura"
+                },
+                "CorruptingDoubt": {
+                    "Name": "Corrupting Doubt"
+                },
+                "ImprisoningGrave": {
+                    "Name": "Imprisoning Grave"
+                },
+                "LimitedFlight": {
+                    "Name": "Limited Flight"
+                },
+                "ScornFate": {
+                    "Name": "Scorn Fate"
+                },
+                "SourVictory": {
+                    "Name": "Sour Victory"
+                },
+                "VengefulFrenzy": {
+                    "Name": "Vengeful Frenzy"
+                }
+            },
+            "PathRiverPeeler": {
+                "SensitiveEars": {
+                    "Note": "Whenever the Peeler takes sonic damage, it must succeed at a @Check[will|dc:16|options:inflicts:frightened] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure)."
+                }
+            },
+            "PlanarAdaptationsSpawningSoulrider": {
+                "CelestialFlare": {
+                    "Name": "天界之火"
+                },
+                "FiendishLunge": {
+                    "Name": "邪性猛冲"
+                },
+                "MonitorEscape": {
+                    "Name": "观察者逃脱"
+                }
+            },
+            "Protean": {
+                "ProteanAnatomy": {
+                    "Name": "幻蛇体质"
+                },
+                "Warpwave": {
+                    "Name": "扭曲波"
+                }
+            },
+            "PureLegionSquad": {
+                "CloakOfPurity": {
+                    "Label": "统帅可以施放神术法术"
+                }
+            },
+            "Ravener": {
+                "ConsumeSoul": {
+                    "Name": "吞噬灵魂"
+                },
+                "CoweringFear": {
+                    "Name": "恐惧畏缩"
+                },
+                "Discorporate": {
+                    "Name": "化整为零"
+                },
+                "Soulsense": {
+                    "Name": "探知灵魂"
+                },
+                "SoulWard": {
+                    "Name": "护体之魂"
+                },
+                "ViciousCriticals": {
+                    "Name": "恶毒重击"
+                }
+            },
+            "RequiemDragon": {
+                "DieTogether": {
+                    "Name": "同归于尽"
+                },
+                "SoulRoar": {
+                    "Name": "灵魂咆哮"
+                }
+            },
+            "ResurrectionDragon": {
+                "DeathlessServant": {
+                    "Name": "不灭侍从"
+                },
+                "HarmfulClaw": {
+                    "Name": "伤害之爪"
+                },
+                "ShredSouls": {
+                    "Name": "撕碎灵魂"
+                }
+            },
+            "Retired": {
+                "Rusty": {
+                    "Name": "Rusty"
+                },
+                "StillGotIt": {
+                    "Name": "Still Got It!"
+                }
+            },
+            "RisenNemesis": {
+                "EuphoricCackle": {
+                    "Name": "Euphoric Cackle"
+                },
+                "FixatedObsession": {
+                    "Name": "Fixated Obsession"
+                },
+                "IndignantCurse": {
+                    "Name": "Indignant Curse"
+                },
+                "PainedRetribution": {
+                    "Name": "Pained Retribution"
+                }
+            },
+            "RuneDragon": {
+                "CatalyzingRune": {
+                    "Name": "催化符文"
+                },
+                "RunicJail": {
+                    "Name": "符文监牢"
                 }
             }
         },
@@ -7818,9 +8249,9 @@
                     "NoLabel": "否",
                     "SkillLabel": "技能",
                     "YesLabel": "是",
-                    "DragHomebrewItem": "将自定义物品拖到这里，以替换以上选项",
+                    "DragHomebrewItem": "将自定义物品拖到这里，以替换以上选项。",
                     "HomebrewItem": "自定义物品",
-                    "Prompt": "进行选择",
+                    "Prompt": "进行选择。",
                     "ViewItem": {
                         "Disabled": "所选选项没有物品表",
                         "Tooltip": "浏览物品"
