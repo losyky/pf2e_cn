@@ -1083,7 +1083,7 @@
                     "Title": "驱动（3动作）",
                     "Notes": {
                         "failure": "<strong>失败</strong> 载具顺着最新航向直线移动等同其速度的距离，由GM指定至多45度的偏斜，并陷入失控。",
-                        "success": "<strong>成功</strong> 载具沿当前朝向，直线移动至多其三倍速度的距离"
+                        "success": "<strong>成功</strong> 载具沿当前朝向，直线移动至多其三倍速度的距离。"
                     }
                 },
                 "Title": "驱动"
@@ -1121,7 +1121,7 @@
                 "Description": "<p>你为一次更长的星际旅行做准备，可能需要使用你的星舰的漂流引擎（Drift Engine，或类似的超光速设备）。进行一次驾驶检定，以确定你是否能绘制出一条合适的路径到达最终目的地。GM决定这项活动所需的时间和DC。</p><p><strong>大成功</strong> 你花费了预期时间的一半到达目的地（最少为1天）<br><strong>成功</strong> 你制定了一个可用的导航计划，使你按时到达预定目的地。<br><strong>失败</strong> 你的计划有几个问题，导致你迟到了。<br><strong>大失败</strong> 你到达了一个陌生的星系，需要你重新制定一条到目的地的新航线（由于陌生的起点，DC可能会增加）。</p>",
                 "Notes": {
                     "criticalFailure": "<strong>大失败</strong> 你到达了一个陌生的星系，需要你重新制定一条到目的地的新航线（由于陌生的起点，DC可能会增加）。",
-                    "criticalSuccess": "<strong>大成功</strong> 你花费了预期时间的一半到达目的地（最少为1天）",
+                    "criticalSuccess": "<strong>大成功</strong> 你花费了预期时间的一半到达目的地（最少为1天）。",
                     "failure": "<strong>失败</strong> 你的计划有几个问题，导致你迟到了。",
                     "success": "<strong>成功</strong> 你制定了一个可用的导航计划，使你按时到达预定目的地。"
                 }
