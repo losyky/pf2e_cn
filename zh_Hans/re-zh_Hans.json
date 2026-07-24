@@ -6400,7 +6400,28 @@
             },
             "KallasDevil": {
                 "DisguisedAsChild": "正伪装成孩子",
-                "LyingAboutLoathsomeStench": "说谎掩盖恶臭熏天"
+                "LyingAboutLoathsomeStench": "说谎掩盖恶臭熏天",
+                "Blameless": {
+                    "Name": "无辜伪装"
+                },
+                "ColdCurrents": {
+                    "Name": "寒流"
+                },
+                "FreezingTouch": {
+                    "Name": "冰寒之触"
+                },
+                "InfectiousWater": {
+                    "Name": "污染水源"
+                },
+                "SufferTheChildren": {
+                    "Name": "容忍孩童"
+                },
+                "UnderwaterViews": {
+                    "Name": "水下风景"
+                },
+                "WaterfallTorrent": {
+                    "Name": "瀑布激流"
+                }
             },
             "RaptorGuardWight": {
                 "TerrorMaster": "尸妖猛禽精卫正戴着它的恐龙头骨头盔。"
@@ -6651,7 +6672,9 @@
                         "Gourd": "葫芦",
                         "Leshy": "莱西",
                         "Plant": "植物",
-                        "SnappingFlytrap": "猛咬捕蝇草"
+                        "SnappingFlytrap": "猛咬捕蝇草",
+                        "LeshyMob": "Leshy Mob",
+                        "Mushroom": "蘑菇"
                     },
                     "LeshyMob": "莱西暴徒",
                     "Fox": "狐狸",
@@ -7149,7 +7172,14 @@
             },
             "FortuneDragon": {
                 "ChimericNature": {
-                    "Label": "嵌合体质—伤害类型"
+                    "Label": "嵌合体质—伤害类型",
+                    "Name": "嵌合体质"
+                },
+                "HiddenWealth": {
+                    "Name": "藏入宝藏"
+                },
+                "ShieldOfFortune": {
+                    "Name": "福宝之盾"
                 }
             },
             "FangwoodSentinel": {
@@ -7414,11 +7444,14 @@
                 },
                 "VanishingEscape": {
                     "Name": "突然消失"
+                },
+                "Stalk": {
+                    "Name": "偷偷接近"
                 }
             },
             "CultistOfTorment": {
                 "AmplifyTorment": {
-                    "Label": "目标的生命值：",
+                    "Label": "目标生命值：",
                     "UnderFull": "低于100%",
                     "UnderHalf": "低于50%"
                 }
@@ -7516,6 +7549,264 @@
                 },
                 "Sanctification": {
                     "Name": "祝佑"
+                }
+            },
+            "Coshyco": {
+                "AdjustShape": {
+                    "Flexible": "Flexible",
+                    "Lanky": "Lanky",
+                    "Squat": "Squat"
+                }
+            },
+            "Coven": {
+                "ContributeSpell": {
+                    "Name": "贡献法术"
+                },
+                "LocateCoven": {
+                    "Name": "定位巫团"
+                },
+                "ShareSenses": {
+                    "Name": "共享感官"
+                }
+            },
+            "Dragon": {
+                "ChangeShape": {
+                    "Name": "变身"
+                }
+            },
+            "EmpyrealDragon": {
+                "RestorativeHalo": {
+                    "Name": "复原光环"
+                },
+                "SacrificialShield": {
+                    "Name": "牺牲护盾"
+                },
+                "WreathOfHolyLight": {
+                    "Name": "圣光花环"
+                }
+            },
+            "FailedProphet": {
+                "BrokenMindscape": {
+                    "Name": "破碎思维空间"
+                },
+                "GreedyGrab": {
+                    "Name": "贪婪擒获"
+                },
+                "Taboos": {
+                    "Name": "Taboos"
+                },
+                "ThisIsMyReality": {
+                    "Name": "This Is My Reality!"
+                },
+                "Wealthsense": {
+                    "Name": "财富感知"
+                }
+            },
+            "Floodslain": {
+                "DrowningTouch": {
+                    "Name": "溺水之触"
+                },
+                "FloodslainSpawn": {
+                    "Name": "溺亡衍体"
+                },
+                "HardToBurn": {
+                    "Name": "Hard to Burn"
+                },
+                "SoddenGround": {
+                    "Name": "浸湿地面"
+                },
+                "VomitFlotsam": {
+                    "Name": "呕吐碎流"
+                }
+            },
+            "FlotsamTerror": {
+                "Attacks": {
+                    "FloatsamLabel": "Floatsam",
+                    "SharpEdgeLabel": "Sharp Edge"
+                }
+            },
+            "Ghast": {
+                "ConsumeFlesh": {
+                    "Name": "啃食尸体"
+                },
+                "GhastFever": {
+                    "Name": "妖鬼热"
+                },
+                "Paralysis": {
+                    "Name": "麻痹"
+                },
+                "Stench": {
+                    "Name": "恶臭"
+                }
+            },
+            "Ghost": {
+                "BeatificAppearance": {
+                    "Name": "安详外貌"
+                },
+                "ColdSpot": {
+                    "Name": "寒冷点"
+                },
+                "CorporealManifestation": {
+                    "Name": "实体显现"
+                },
+                "CorruptingGaze": {
+                    "Name": "腐化凝视"
+                },
+                "DrainingTouch": {
+                    "Name": "抽魂之触"
+                },
+                "Dreamwalker": {
+                    "Name": "梦境行者"
+                },
+                "Fade": {
+                    "Name": "淡化"
+                },
+                "Fetch": {
+                    "Name": "双身"
+                },
+                "FrightfulMoan": {
+                    "Name": "骇人悲叹"
+                },
+                "GhostStorm": {
+                    "Name": "幽灵风暴"
+                },
+                "HauntedHouse": {
+                    "Name": "鬼屋"
+                },
+                "InhabitObject": {
+                    "Name": "占据物体"
+                },
+                "Lynchpin": {
+                    "Name": "群体核心"
+                },
+                "MalevolentPossession": {
+                    "Name": "恶意占据"
+                },
+                "MementoMori": {
+                    "Name": "死亡回放"
+                },
+                "Phantasmagoria": {
+                    "Name": "幻觉效应"
+                },
+                "PyreSMemory": {
+                    "Name": "燃火回忆"
+                },
+                "Rejuvenation": {
+                    "Name": "复生"
+                },
+                "Revenant": {
+                    "Name": "回归人世"
+                },
+                "SiteBound": {
+                    "Name": "束缚之地"
+                },
+                "TelekineticAssault": {
+                    "Name": "念力袭击"
+                }
+            },
+            "Ghoul": {
+                "ConsumeFlesh": {
+                    "Name": "啃食尸体"
+                },
+                "GhoulFever": {
+                    "Name": "食尸鬼热"
+                },
+                "GhoulWhispers": {
+                    "Name": "食尸鬼低语"
+                },
+                "GraveKnowledge": {
+                    "Name": "坟墓知识"
+                },
+                "Paralysis": {
+                    "Name": "麻痹"
+                },
+                "SwiftLeap": {
+                    "Name": "迅捷跳跃"
+                }
+            },
+            "Golem": {
+                "GolemAntimagic": {
+                    "Name": "魔像抗魔"
+                },
+                "InexorableMarch": {
+                    "Name": "势不可挡"
+                }
+            },
+            "GreaterBarghest": {
+                "MutationPoisonFangs": {
+                    "Name": "突变—毒牙"
+                },
+                "MutationToxicBreath": {
+                    "Name": "突变—毒气吐息"
+                },
+                "MutationVestigialArmStrike": {
+                    "Name": "突变—增生副肢打击"
+                },
+                "MutationWings": {
+                    "Name": "突变—翅膀"
+                }
+            },
+            "Halfling": {
+                "KeenEyes": {
+                    "Name": "锐眼"
+                }
+            },
+            "Harrowkin": {
+                "DefensiveSuit": {
+                    "Name": "Defensive Suit"
+                },
+                "HarrowkinSuit": {
+                    "Name": "Harrowkin Suit"
+                },
+                "ReadTheCards": {
+                    "Name": "Read the Cards"
+                },
+                "ShuffleTheDeck": {
+                    "Name": "Shuffle the Deck"
+                }
+            },
+            "HornedDragon": {
+                "ApexDominance": {
+                    "Name": "巅峰支配"
+                },
+                "HornProjectile": {
+                    "Name": "角弹射击"
+                },
+                "InvigoratingSpores": {
+                    "Name": "振奋孢子"
+                }
+            },
+            "Kuworsys": {
+                "CarelessBlock": {
+                    "Name": "草率格挡"
+                },
+                "RainBlows": {
+                    "Name": "乱击如雨"
+                },
+                "RapidBombardment": {
+                    "Name": "快速轰炸"
+                },
+                "SmashAndGrab": {
+                    "Name": "猛砸攫抓"
+                }
+            },
+            "Leshy": {
+                "VerdantBurst": {
+                    "Name": "翠绿爆发"
+                }
+            },
+            "Lich": {
+                "AnimateCage": {
+                    "Name": "活化命匣"
+                },
+                "AuraOfRot": {
+                    "Name": "腐坏灵光"
+                },
+                "BlasphemousUtterances": {
+                    "Name": "亵渎之语"
+                },
+                "ColdBeyondCold": {
+                    "Name": "刺骨深寒"
                 }
             }
         },
