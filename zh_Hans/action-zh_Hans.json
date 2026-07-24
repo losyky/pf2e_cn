@@ -494,7 +494,7 @@
                     "success": "<strong>成功</strong> 你成功将目标推撞至5尺外。你可以立刻跟随它行走，但必须在同一方向上移动相同的距离。",
                     "criticalFailure": "<strong>大失败</strong> 你自己失去平衡摔倒了，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态 。"
                 },
-                "Title": "猛推",
+                "Title": "推撞",
                 "Description": "<p><strong>需求</strong> 你至少有一只空闲手，目标的体型不超过你一级以上。</p><hr /><p>你将一个生物从你身边推开。尝试一次[[/act shove]]{运动}检定对抗目标的强韧DC。</p><hr /><p><strong>大成功</strong> 你成功将目标推撞至10尺外。你可以立刻跟随它行走，但必须在同一方向上移动相同的距离。</p>\n<p><strong>成功</strong> 你成功将目标推撞至5尺外。你可以立刻跟随它行走，但必须在同一方向上移动相同的距离。</p>\n<p><strong>大失败</strong> 你失去平衡，坠落且在落地时@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。</p>"
             },
             "Sneak": {
