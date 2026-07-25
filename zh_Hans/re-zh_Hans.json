@@ -1714,7 +1714,7 @@
                     }
                 },
                 "BlackScorpionStingmace": {
-                    "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong> （毒素）</p>\n<p><strong>豁免检定</strong> @Check[fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}（1轮）</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（1轮）</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}（1轮）</p>"
+                    "BlackScorpionVenomNote": "<p>在造成重击时，目标暴露于黑蝎毒液的影响下。</p>\n<p><strong>黑蝎毒液 </strong>（毒素）</p>\n<p><strong>豁免检定</strong> @Check[fortitude|dc:36]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[2d12[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}（1轮）</p>\n<p><strong>阶段2</strong> @Damage[3d12[poison]]伤害，笨拙2和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（1轮）</p>\n<p><strong>阶段3</strong> @Damage[4d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}（1轮）</p>"
                 },
                 "LionsShield": {
                     "LionsBiteLabel": "雄狮撕咬",
@@ -3397,7 +3397,7 @@
                     "Toggle": "施展一个法术让你的情绪焦点获得好处",
                     "Activation": "如果你或你的情绪焦点陷入@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]或是@UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]，其中一人可以尝试对一个困惑或控制效果进行一次新的豁免检定（如果可以豁免），若新的豁免成功，则状态结束。如果你们两人都符合条件，则由你的情绪焦点得到这次新的豁免。",
                     "Description": "爱的牵绊联系着你，没有什么可以打破它，但爱也会分散你对生活中其他事物的注意力。你的情绪焦点是你爱的人；但他们不一定要爱你。",
-                    "Fallout": "你对自己的情绪焦点@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]1 分钟。",
+                    "Fallout": "你对自己的情绪焦点@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]1分钟。",
                     "Fervor": "你在意志豁免上获得 +1 状态加值。如果你施展一个法术让你的情绪焦点获得好处，这个加值会增加到 +3，直到你的下一个回合开始。法术：@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.YGRpHU5yxw73mls8]",
                     "Label": "爱",
@@ -3433,7 +3433,7 @@
                 "Fear": {
                     "Activation": "你的惊惧值增加 1，最大到达@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}。",
                     "Description": "你让恐惧成为你的燃料而非负担，但这也会燃烧你的耐力。",
-                    "Fallout": "你会从触发宣情的惊惧状态来源@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]，持续 2 轮。如果该来源不复存在，你会从情绪余波开始时的位置逃离。",
+                    "Fallout": "你会从触发宣情的惊惧状态来源@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]，持续2轮。如果该来源不复存在，你会从情绪余波开始时的位置逃离。",
                     "Fervor": "你的法术 DC 或法术攻击加值不须承受惊惧状态的状态减值。取而代之的是，你的法术攻击检定上获得状态加值，数值等同你原本要承受的减值；你的敌人在对抗你的法术的豁免检定中也会受到相等的状态减值。其他数据都像平常一样承受状态减值。法术：@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.DU5daB09xwfE1y38]",
                     "Label": "恐惧",
@@ -3458,7 +3458,7 @@
                     "Trigger": "你在一次攻击检定或豁免检定中得到大成功，或是一个敌人在对抗你的豁免检定中大失败。"
                 },
                 "Misery": {
-                    "Activation": "你获得与角色等级相等的临时生命值，持续 1 分钟。",
+                    "Activation": "你获得与角色等级相等的临时生命值，持续1分钟。",
                     "Description": "受苦让你知道自己还活着；让你的敌人感受一样的痛苦，可以缓解你的痛苦。",
                     "Fallout": "在你安顿情绪前施放任何法术，所造成的任何伤害都会受到无类型减值。减值为每法术环级 –1。",
                     "Fervor": "你可以选择不进行纯骰检定来结束你正在承受的持续伤害。当你施展伤害性法术时，可以选择一个豁免检定失败，或是被法术攻击检定命中的生物；该目标受到与法术相同类型的持续性伤害，数值等于你当前所承受最高的持续伤害。你不能选择已经遭受持续伤害的生物。法术：@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]",
