@@ -5170,7 +5170,7 @@
                     },
                     "timeConvention": {
                         "label": "时间公约",
-                        "hint": "显示 24 小时制或 12 小时制时钟。"
+                        "hint": "显示24小时制或 12 小时制时钟。"
                     },
                     "syncDarkness": {
                         "label": "同步黑暗",
