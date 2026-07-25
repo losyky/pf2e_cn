@@ -1644,7 +1644,7 @@
                     "projectile": "目标必须成功通过一次@Check[fortitude|against:class]检定，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 1}状态，持续至你的下一回合开始。",
                     "shock": "目标必须成功通过一次@Check[fortitude|against:class]检定，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 1}状态，持续至你的下一回合开始。",
                     "sniper": "目标每个武器伤害骰额外受到 2 点伤害。",
-                    "sonic": "目标必须成功通过一次@Check[fortitude|against:class]豁免，否则将@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋}1 分钟。"
+                    "sonic": "目标必须成功通过一次@Check[fortitude|against:class]豁免，否则将@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋}1分钟。"
                 },
                 "FromMaterialAndRunes": "此物品上的珍贵材料和符文的{property}调整为{value}。",
                 "GeneratedName": {
