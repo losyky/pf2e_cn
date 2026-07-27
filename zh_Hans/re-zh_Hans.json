@@ -745,7 +745,7 @@
                     },
                     "DancingBlade": {
                         "Push": {
-                            "Text": "（攻击） 该武器试图推撞其目标，使用你的法术攻击骰而非运动检定来决定推撞的结果。",
+                            "Text": "（攻击）该武器试图推撞其目标，使用你的法术攻击骰而非运动检定来决定推撞的结果。",
                             "Title": "推撞"
                         },
                         "Guard": {
@@ -812,7 +812,7 @@
                     "Shield": {
                         "Base": "你创造出三重护盾组成的多层屏障来增强你的防御力。持续时间变为到维持，至多1分钟。护盾在你每个回合开始时仍会撤下，但你可以在维持法术时自动再次举盾。",
                         "BaseTwo": "当你用此法术进行格挡时，三层盾牌中的一层会被打破，你将不再获得AC加成，但法术并没有结束。你可以继续使用该法术，直到最后一层被打破；一旦最后一层破裂，该法术结束，你在10分钟内不能再施放护盾术或增幅护盾术。当你用增幅护盾术进行格挡时，你可以选择破坏多层护盾以提高你的防御力。如果你破坏了两层而不是一层盾，那么盾的格挡硬度会增加到正常值的1.5倍（1级为7，3级为15，5级为22，7级为30，9级为37）。如果你破坏了所有三层，那么硬度将增加到正常值的两倍。",
-                        "RollOptionLabel": "护盾术（增幅） — 破坏盾牌格挡的层数"
+                        "RollOptionLabel": "护盾术（增幅）— 破坏盾牌格挡的层数"
                     },
                     "TelekineticProjectile": {
                         "Base": "你用更强的力量投掷物品，以飞雹般的射弹将敌人击退。成功时，你将目标从你的方向推离5尺。大成功时，你在造成双倍伤害之外还能将目标推离10尺。",
@@ -5803,11 +5803,11 @@
                 "DragonetBreath": {
                     "Description": {
                         "Base": "你已经开发出了你的魔法吐息。你喷出与你的传承相关的微龙吐息。微龙吐息获得列出的特征，其DC为你的职业DC或法术DC，取其高者。使用微龙吐息后，你在[[/r 1d4 #Recharge Dragonet Breath]]{1d4轮}内无法再次使用它。",
-                        "FeyDragonet": "**妖精微龙** （奥术，毒素） 你喷出一道@Template[type:cone|distance:15]的致幻气体。区域内的每个生物必须成功通过@Check[fortitude|against:class-spell|options:area-effect,inflicts:stupefied|traits:arcane,poison]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮。",
-                        "HomingDrake": "**归巢龙** （酸蚀） 你喷出一道@Template[type:line|distance:30]的腐蚀唾液，造成@Damage[(ceil(@actor.level/2))d4[acid]|options:area-damage]伤害，@Check[reflex|against:class-spell|basic|options:area-effect,damage:material:silver|traits:acid]豁免。在3级及之后每2级，伤害增加1d4。",
-                        "HouseDrake": "**小巢龙** （奥术，心灵） 你喷出一团@Template[type:cone|distance:15]的银色迷雾，造成@Damage[(ceil(@actor.level/2))d4[mental]|options:area-damage]伤害，@Check[will|against:class-spell|options:area-effect|traits:arcane,mental]豁免。针对弱点时它视为银。在3级及之后每2级，伤害增加1d4。",
-                        "PearlDragonet": "**珍珠微龙** （奥术，诅咒） 你喷出一道@Template[type:cone|distance:15]的金色迷雾，改变陷入其中的生物的运气。每次你使用微龙吐息时，决定它是给予好运还是厄运。任何受你微龙吐息影响的生物在1小时内临时免疫它。如果你的吐息给予好运，区域内的每个生物在你的下个回合开始前的下一次攻击检定或技能检定中获得+1状态加值。如果你的吐息给予厄运，区域内的每个生物必须尝试一次@Check[will|against:class-spell|options:area-effect|traits:arcane,curse]豁免。豁免失败的生物在你的下个回合开始前的下一次攻击检定或技能检定中受到-1状态减值。在大失败时，该生物必须在该检定中投掷两次并取较差的结果；这是一个厄运效果。",
-                        "TidepoolDragonet": "**潮池微龙** （火焰） 你喷出一道@Template[type:line|distance:15]的过热气体，造成@Damage[(ceil(@actor.level/2))d4[fire]|options:area-damage]伤害，@Check[reflex|against:class-spell|basic|options:area-effect|traits:fire]豁免。在3级及之后每2级，伤害增加1d4。即使它具有火焰特征，你也可以在水下使用你的吐息。如果你这样做，它获得水特征并表现为一道@Template[type:cone|distance:20]的沸水。"
+                        "FeyDragonet": "**妖精微龙**（奥术，毒素）你喷出一道@Template[type:cone|distance:15]的致幻气体。区域内的每个生物必须成功通过@Check[fortitude|against:class-spell|options:area-effect,inflicts:stupefied|traits:arcane,poison]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮。",
+                        "HomingDrake": "**归巢龙**（酸蚀）你喷出一道@Template[type:line|distance:30]的腐蚀唾液，造成@Damage[(ceil(@actor.level/2))d4[acid]|options:area-damage]伤害，@Check[reflex|against:class-spell|basic|options:area-effect,damage:material:silver|traits:acid]豁免。在3级及之后每2级，伤害增加1d4。",
+                        "HouseDrake": "**小巢龙**（奥术，心灵）你喷出一团@Template[type:cone|distance:15]的银色迷雾，造成@Damage[(ceil(@actor.level/2))d4[mental]|options:area-damage]伤害，@Check[will|against:class-spell|options:area-effect|traits:arcane,mental]豁免。针对弱点时它视为银。在3级及之后每2级，伤害增加1d4。",
+                        "PearlDragonet": "**珍珠微龙**（奥术，诅咒）你喷出一道@Template[type:cone|distance:15]的金色迷雾，改变陷入其中的生物的运气。每次你使用微龙吐息时，决定它是给予好运还是厄运。任何受你微龙吐息影响的生物在1小时内临时免疫它。如果你的吐息给予好运，区域内的每个生物在你的下个回合开始前的下一次攻击检定或技能检定中获得+1状态加值。如果你的吐息给予厄运，区域内的每个生物必须尝试一次@Check[will|against:class-spell|options:area-effect|traits:arcane,curse]豁免。豁免失败的生物在你的下个回合开始前的下一次攻击检定或技能检定中受到-1状态减值。在大失败时，该生物必须在该检定中投掷两次并取较差的结果；这是一个厄运效果。",
+                        "TidepoolDragonet": "**潮池微龙**（火焰）你喷出一道@Template[type:line|distance:15]的过热气体，造成@Damage[(ceil(@actor.level/2))d4[fire]|options:area-damage]伤害，@Check[reflex|against:class-spell|basic|options:area-effect|traits:fire]豁免。在3级及之后每2级，伤害增加1d4。即使它具有火焰特征，你也可以在水下使用你的吐息。如果你这样做，它获得水特征并表现为一道@Template[type:cone|distance:20]的沸水。"
                     },
                     "PearlDragonet": {
                         "BadLuck": "厄运",
@@ -6780,6 +6780,9 @@
                     "Prompt": "选择一种符文。",
                     "RuneOfPride": {
                         "Label": "Rune of Pride"
+                    },
+                    "RuneOfSpace": {
+                        "Label": "空间符文"
                     }
                 }
             },
