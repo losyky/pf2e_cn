@@ -6371,6 +6371,111 @@
                             "Label": "销骨行尸架势"
                         }
                     }
+                },
+                "AirOfSickness": {
+                    "Name": "呕逆瘴气"
+                },
+                "Breathsense60Feet": {
+                    "Name": "呼吸感知60尺"
+                },
+                "BubonicPlague": {
+                    "Name": "黑死病"
+                },
+                "ChangeShape": {
+                    "Name": "变身"
+                },
+                "ChildrenOfTheNight": {
+                    "Name": "夜之子"
+                },
+                "CoffinRestoration": {
+                    "Name": "寝于棺木"
+                },
+                "CommandThrall": {
+                    "Name": "控制血奴"
+                },
+                "ControlComatose": {
+                    "Name": "控制昏迷者"
+                },
+                "CreateServitor": {
+                    "Name": "创造仆从"
+                },
+                "CreateSpawn": {
+                    "Name": "创造子嗣"
+                },
+                "DarkEnlightenment": {
+                    "Name": "黑暗启蒙"
+                },
+                "DistantSteps": {
+                    "Name": "虎跃"
+                },
+                "DivineInnateSpells": {
+                    "Name": "神术内在法术"
+                },
+                "DomainOfDusk": {
+                    "Name": "暮色之域"
+                },
+                "Dominate": {
+                    "Name": "支配"
+                },
+                "DominateAnimal": {
+                    "Name": "支配动物"
+                },
+                "DrainQi": {
+                    "Name": "吸纳阳气"
+                },
+                "DrainThoughts": {
+                    "Name": "汲取思绪"
+                },
+                "DrinkBlood": {
+                    "Name": "吸血"
+                },
+                "DrinkEssence": {
+                    "Name": "吸允精华"
+                },
+                "FastHealing": {
+                    "Name": "快速治疗"
+                },
+                "FeralPossession": {
+                    "Name": "侵蚀野兽"
+                },
+                "JiangShiVulnerabilities": {
+                    "Name": "僵尸弱点"
+                },
+                "Levitation": {
+                    "Name": "悬浮"
+                },
+                "MentalRebirth": {
+                    "Name": "心灵重生"
+                },
+                "Mindbound": {
+                    "Name": "心灵束缚"
+                },
+                "MistEscape": {
+                    "Name": "化雾脱身"
+                },
+                "MortalShield": {
+                    "Name": "人肉护盾"
+                },
+                "NosferatuVulnerabilities": {
+                    "Name": "诺斯费拉图弱点"
+                },
+                "OneMoreBreath": {
+                    "Name": "一息尚存"
+                },
+                "ParalyticFear": {
+                    "Name": "麻痹之惧"
+                },
+                "ParalyzingClaws": {
+                    "Name": "惊惶爪"
+                },
+                "PestilentialAura": {
+                    "Name": "瘟疫灵光"
+                },
+                "PlaguedCoffinRestoration": {
+                    "Name": "寝于疫土之棺"
+                },
+                "PlagueOfAncients": {
+                    "Name": "远古瘟疫"
                 }
             },
             "LegionArchon": {
@@ -6779,7 +6884,8 @@
                     },
                     "Prompt": "选择一种符文。",
                     "RuneOfPride": {
-                        "Label": "Rune of Pride"
+                        "Label": "傲慢符文",
+                        "Text": "被此武器击中的生物会坚信自己正在对抗一个不可战胜的敌人。该生物必须成功通过一次@Check[fortitude|dc:40|options:inflicts:frightened|traits:emotion,fear,mental]豁免，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。若为大失败，该生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}，且只要仍处于惊惧状态，便无法对Czaresia采取敌对行动。"
                     },
                     "RuneOfSpace": {
                         "Label": "空间符文"
@@ -6932,15 +7038,30 @@
             "StargutHydra": {
                 "SkymetalMetamorphosis": {
                     "Djezet": {
-                        "Label": "天金蜕变（血汞）"
+                        "Label": "天金蜕变（血汞）",
+                        "Name": "天金蜕变（血汞）"
                     },
                     "Siccatite": {
                         "Chilled": "冰冷",
                         "Superheated": "过热",
-                        "Label": "天金蜕变（漠石）"
+                        "Label": "天金蜕变（漠石）",
+                        "Name": "天金蜕变（漠石）"
                     },
                     "Noqual": {
-                        "Label": "天金蜕变（零晶）"
+                        "Label": "天金蜕变（零晶）",
+                        "Name": "天金蜕变（零晶）"
+                    },
+                    "Abysium": {
+                        "Name": "天金蜕变（渊铀）"
+                    },
+                    "Adamantine": {
+                        "Name": "天金蜕变（精金）"
+                    },
+                    "Inubrix": {
+                        "Name": "天金蜕变（虚铅）"
+                    },
+                    "Orichalcum": {
+                        "Name": "天金蜕变（山铜）"
                     }
                 }
             },
@@ -8241,6 +8362,210 @@
                 },
                 "RunicJail": {
                     "Name": "符文监牢"
+                }
+            },
+            "Sangrist": {
+                "BloodVigor": {
+                    "FastHealing": {
+                        "Details": "当邻近一个正承受持续流血伤害的生物时",
+                        "Toggle": "Blood Vigor — Fast Healing"
+                    }
+                }
+            },
+            "Scamp": {
+                "FastHealing": {
+                    "AirLabel": "在开阔空域中时",
+                    "EarthLabel": "在地下时",
+                    "FireLabel": "接触火焰时",
+                    "MetalLabel": "接触金属时",
+                    "ShadowLabel": "在阴影中时",
+                    "WaterLabel": "在水下时",
+                    "WoodLabel": "接触植物或树木时"
+                }
+            },
+            "SecretSociety": {
+                "Connected": {
+                    "Name": "关系"
+                },
+                "GetOutOfJail": {
+                    "Name": "出狱"
+                },
+                "NotToday": {
+                    "Name": "不是今天！"
+                },
+                "PreparedDiversion": {
+                    "Name": "准备分心"
+                },
+                "PreparedTrap": {
+                    "Name": "准备陷阱"
+                },
+                "Shibboleth": {
+                    "Name": "口令"
+                },
+                "SkillSavvy": {
+                    "Name": "精通技巧"
+                },
+                "TagTeam": {
+                    "Name": "组合双打"
+                }
+            },
+            "Siabrae": {
+                "BlightMastery": {
+                    "Name": "操纵朽恶"
+                },
+                "EarthGlide": {
+                    "Name": "潜地"
+                },
+                "Miasma": {
+                    "Name": "瘴疠"
+                },
+                "Rejuvenation": {
+                    "Name": "复生"
+                },
+                "StoneAntlers": {
+                    "Name": "石质鹿角"
+                },
+                "StonyShards": {
+                    "Name": "石质碎片"
+                }
+            },
+            "Skeleton": {
+                "AquaticBones": {
+                    "Name": "水族骨架"
+                },
+                "Blaze": {
+                    "Name": "烈火焚身"
+                },
+                "Bloody": {
+                    "Name": "血腥"
+                },
+                "BoneMissile": {
+                    "Name": "投掷肋骨"
+                },
+                "BonePowder": {
+                    "Name": "击骨扬灰"
+                },
+                "BoneStorm": {
+                    "Name": "白骨风暴"
+                },
+                "Collapse": {
+                    "Name": "崩塌"
+                },
+                "CrumblingBones": {
+                    "Name": "破碎骨架"
+                },
+                "ExplosiveDeath": {
+                    "Name": "爆裂而亡"
+                },
+                "Frozen": {
+                    "Name": "霜裹"
+                },
+                "GraveEruption": {
+                    "Name": "破坟"
+                },
+                "Lacquered": {
+                    "Name": "上漆"
+                },
+                "Nimble": {
+                    "Name": "轻捷"
+                },
+                "Rotten": {
+                    "Name": "腐臭"
+                },
+                "ScreamingSkull": {
+                    "Name": "尖啸之颅"
+                },
+                "SkeletonOfRoses": {
+                    "Name": "蔷薇骷骨"
+                }
+            },
+            "SpawnOfRovagug": {
+                "AbsoluteRegeneration": {
+                    "Name": "绝对再生"
+                },
+                "SlumberingArmageddon": {
+                    "Name": "沉眠末日"
+                }
+            },
+            "Sporeborn": {
+                "ConsumeBiomatter": {
+                    "Name": "Consume Biomatter"
+                },
+                "ContagiousSpores": {
+                    "Name": "Contagious Spores"
+                },
+                "FungalArmor": {
+                    "Name": "Fungal Armor"
+                },
+                "PotentPoison": {
+                    "Name": "Potent Poison"
+                },
+                "RancidSporePods": {
+                    "Name": "Rancid Spore Pods"
+                },
+                "SporebornInfestation": {
+                    "Name": "Sporeborn Infestation"
+                },
+                "SporeExplosion": {
+                    "Name": "Spore Explosion"
+                }
+            },
+            "SpringHeeledJack": {
+                "ChangeShape": {
+                    "Name": "变身"
+                },
+                "ResonantTerror": {
+                    "Name": "Resonant Terror"
+                },
+                "VanishingLeap": {
+                    "Name": "Vanishing Leap"
+                }
+            },
+            "SwarmStrider": {
+                "ClingingRemnants": {
+                    "Name": "黏附残虫"
+                },
+                "Discorporate": {
+                    "Name": "解体"
+                },
+                "DrawBugs": {
+                    "Name": "吸引虫群"
+                },
+                "SquirmingEmbrace": {
+                    "Name": "蠕虫之拥"
+                },
+                "SwarmShape": {
+                    "Name": "虫群形态"
+                }
+            },
+            "UlgremAxaan": {
+                "BefoulingOdor": {
+                    "Name": "污秽气味"
+                },
+                "CrocodileTears": {
+                    "Name": "鳄鱼的眼泪"
+                },
+                "CrushingWeight": {
+                    "Name": "碾压重量"
+                },
+                "FallenVictim": {
+                    "Name": "倒地受害者"
+                },
+                "IchorCoating": {
+                    "Name": "脓液涂层"
+                },
+                "IchorTrail": {
+                    "Name": "脓液轨迹"
+                }
+            },
+            "UnionOrganizer": {
+                "Solidarity": {
+                    "Name": "同心同德"
+                }
+            },
+            "ValkyrieTempest": {
+                "MountedTroop": {
+                    "Name": "骑乘部队"
                 }
             }
         },
