@@ -4112,7 +4112,8 @@
             "WeaponNoDamage": "武器未造成伤害。",
             "ItemNotFoundByUUID": "未找到UUID为\"{uuid}\"的物品。",
             "MissingStatisticSelected": "缺少所选角色的数据{statistic}。",
-            "CantPurchaseContainerWithItems": "你不能购买包含物品的容器。"
+            "CantPurchaseContainerWithItems": "你不能购买包含物品的容器。",
+            "ModuleTooOld": "{module}处于未维护状态，有可能导致你的游戏不稳定。"
         },
         "Ethnicity": "种族划分",
         "ExpendSpellTitle": "消耗法术",
