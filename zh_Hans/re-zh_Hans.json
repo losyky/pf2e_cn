@@ -99,15 +99,16 @@
                 "ProjectileVomit": "喷射性呕吐",
                 "SolarFlare": "太阳耀斑",
                 "TailScourgeDischarge": "Tail Scourge Discharge",
-                "Tusks": "獠牙"
+                "Tusks": "獠牙",
+                "VoidFrond": "Void Frond"
             },
             "Note": {
                 "GrabbingTrunk": {
                     "Text": "你的长鼻攻击命中中型或更小体型的生物后可以将其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]。如果你成功通过@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]检定对抗你长鼻所攫抓的生物，则可以带着该生物一起移动。",
                     "Title": "鼻卷"
                 },
-                "Grab": "击中后你可以立即花费一个动作@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{擒抱}目标",
-                "Shove": "你可以在攻击命中后立刻花费一个动作将目标推离5尺，如同成功的@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}动作一般"
+                "Grab": "击中后你可以立即花费一个动作@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]目标。",
+                "Shove": "你可以在攻击命中后立刻花费一个动作将目标推离5尺，如同成功的@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]动作一般。"
             },
             "DaemonForm": {
                 "CeustodaemonDamageNote": "任何成功的噬咬或爪击都会造成额外的@Damage[1d6[untyped]]伤害，并且你会受到等量伤害",
@@ -233,6 +234,14 @@
                     "Bird": "鸟类",
                     "Pterosaur": "翼龙",
                     "Wasp": "黄蜂"
+                }
+            },
+            "PlantForm": {
+                "ChoiceSet": {
+                    "Arboreal": "树精",
+                    "Flytrap": "捕蝇草",
+                    "Moonflower": "月光花",
+                    "VoidPalm": "Void Palm"
                 }
             }
         },
@@ -6331,7 +6340,8 @@
                 "InspireEnvoyDragonAncient": "古君龙",
                 "InspireEnvoyEffectAC": "AC加值",
                 "InspireEnvoyEffectChoice": "赐予效果",
-                "InspireEnvoyEffectPercWillCha": "意志、察觉以及基于魅力的技能检定加值"
+                "InspireEnvoyEffectPercWillCha": "意志、察觉以及基于魅力的技能检定加值",
+                "InspireEnvoyArchdragon": "至古君龙"
             },
             "SkyDragon": {
                 "DivineLightningGood": "神圣雷霆 - 精魂伤害",
@@ -6476,6 +6486,48 @@
                 },
                 "PlagueOfAncients": {
                     "Name": "远古瘟疫"
+                },
+                "Rally": {
+                    "Name": "Rally"
+                },
+                "RigorMortis": {
+                    "Name": "尸僵"
+                },
+                "ShadowEscape": {
+                    "Name": "影遁"
+                },
+                "ShadowForm": {
+                    "Name": "阴影形态"
+                },
+                "StrigoiWeaknesses": {
+                    "Name": "斯特里戈伊弱点"
+                },
+                "SwiftTracker": {
+                    "Name": "迅捷追踪"
+                },
+                "Thoughtsense100Feet": {
+                    "Name": "思维感知100尺"
+                },
+                "TumultOfTheBlood": {
+                    "Name": "尸血躁燃"
+                },
+                "TurnToMist": {
+                    "Name": "化雾"
+                },
+                "VampireVulnerabilities": {
+                    "Name": "吸血鬼易伤"
+                },
+                "VetalaranaVulnerabilities": {
+                    "Name": "毘陀罗逻那弱点"
+                },
+                "VrykolakasVulnerabilities": {
+                    "Name": "维克拉卡斯弱点"
+                },
+                "WarpedFulu": {
+                    "Name": "扭曲的符箓"
+                },
+                "Weakness": {
+                    "Name": "弱点"
                 }
             },
             "LegionArchon": {
@@ -7756,7 +7808,8 @@
             "FlotsamTerror": {
                 "Attacks": {
                     "FloatsamLabel": "Floatsam",
-                    "SharpEdgeLabel": "Sharp Edge"
+                    "SharpEdgeLabel": "Sharp Edge",
+                    "FlotsamLabel": "漂浮碎流"
                 }
             },
             "Ghast": {
@@ -8567,6 +8620,134 @@
                 "MountedTroop": {
                     "Name": "骑乘部队"
                 }
+            },
+            "Visitant": {
+                "NoxiousBreath": {
+                    "Name": "污秽吐息"
+                },
+                "Roar": {
+                    "Name": "咆哮"
+                },
+                "VengefulPresence": {
+                    "Name": "复仇气场"
+                },
+                "VisitantSpells": {
+                    "Name": "还魂怨兽的法术"
+                },
+                "Wrestle": {
+                    "Name": "角力"
+                }
+            },
+            "Voldrak": {
+                "FrightfulPresence": {
+                    "ToggleLabel": "恐怖威压—水下"
+                }
+            },
+            "Volodmyra": {
+                "OverhandSmash": {
+                    "Note": "如果攻击命中，对手必须成功通过@Check[fortitude|dc:17|options:inflicts:prone]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
+                }
+            },
+            "Vrolikai": {
+                "FocusedFlames": {
+                    "Four": "4把黑焰刃",
+                    "One": "1把黑焰刃",
+                    "Three": "3把黑焰刃",
+                    "Two": "2把黑焰刃"
+                }
+            },
+            "WardenOfTheWild": {
+                "VoiceOfNature": {
+                    "Name": "自然之声"
+                },
+                "WardenSCrown": {
+                    "Name": "守望者之冠"
+                }
+            },
+            "Werecreature": {
+                "AnimalEmpathy": {
+                    "Name": "动物认同"
+                },
+                "ChangeShape": {
+                    "Name": "变身"
+                },
+                "CurseOfTheWerecreature": {
+                    "Name": "化形诅咒"
+                },
+                "MoonFrenzy": {
+                    "Name": "满月狂乱"
+                }
+            },
+            "WhisperDragon": {
+                "ChangeShape": {
+                    "Name": "变身"
+                },
+                "DraftContract": {
+                    "Name": "起草契约"
+                },
+                "ShareSight": {
+                    "Name": "共享视域"
+                }
+            },
+            "Woodblessed": {
+                "ExplosiveEnd": {
+                    "Name": "自爆终局"
+                },
+                "LuminantAura": {
+                    "Name": "Luminant Aura"
+                },
+                "PrimalInnateSpells": {
+                    "Name": "原能内在法术"
+                },
+                "ReactiveFlare": {
+                    "Name": "Reactive Flare"
+                },
+                "TapPlanarGate": {
+                    "Name": "Tap Planar Gate"
+                }
+            },
+            "WormThatWalks": {
+                "Discorporate": {
+                    "Name": "解体"
+                },
+                "SquirmingEmbrace": {
+                    "Name": "蠕虫之拥"
+                },
+                "SwarmShape": {
+                    "Name": "虫群形态"
+                }
+            },
+            "Zombie": {
+                "AnkleBiter": {
+                    "Name": "啮踵专家"
+                },
+                "ArcingStrikes": {
+                    "Name": "电弧打击"
+                },
+                "BreathWeapon": {
+                    "Name": "吐息"
+                },
+                "DisgustingPustules": {
+                    "Name": "恶臭脓疱"
+                },
+                "ElectromechanicalPhasing": {
+                    "Name": "机电相位变换"
+                },
+                "Feast": {
+                    "Name": "食肉"
+                },
+                "InfestedZombie": {
+                    "Name": "虫染"
+                },
+                "LightningRod": {
+                    "Name": "避雷针"
+                },
+                "PersistentLimbs": {
+                    "Name": "顽强四肢"
+                },
+                "PlagueRidden": {
+                    "Name": "瘟疫缠身"
+                }
             }
         },
         "UI": {
@@ -9025,7 +9206,8 @@
                 "PrimalSpells": "原能法术",
                 "Decapitation": "斩首",
                 "MagicalSlashing": "魔法挥砍",
-                "StrikesCreatureSheddingBrightLight": "被一个发出明亮光照的生物打击命中"
+                "StrikesCreatureSheddingBrightLight": "被一个发出明亮光照的生物打击命中",
+                "SkeletonCrew": "骷髅船员"
             }
         },
         "Color": {
