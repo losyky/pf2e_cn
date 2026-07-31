@@ -1766,7 +1766,8 @@
                 "Modular": {
                     "Default": "B、P 或 S",
                     "Title": "模块化配置"
-                }
+                },
+                "ExpendN": "Expend {n}"
             },
             "Rules": {
                 "Apply": "应用",
@@ -4517,7 +4518,12 @@
                 "Status": "状态",
                 "Complete": "完成",
                 "Download": "下载",
-                "Incomplete": "未完成"
+                "Incomplete": "未完成",
+                "RemigrateFailed": "发生了一个错误导致操作终端，打开控制台（F12）获取更多细节。",
+                "ReportDownloaded": "合并报告已下载。",
+                "UnmigratedDocuments": "未合并文档",
+                "UnmigratedDocumentsHint": "点击一个文档以打开。悬停在警告图标上以查看为何合并失败。",
+                "UnmigratedDocumentsHintRemigrate": "点击一个文档以打开，或再合并来获取为什么文档合并失败的信息。"
             },
             "Troubleshooting": "疑难解答",
             "Running": "正在系统迁移中...",
