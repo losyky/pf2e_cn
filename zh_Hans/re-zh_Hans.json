@@ -1773,7 +1773,7 @@
                     "RollOptionLabel": "用炼金炸弹打击失败"
                 },
                 "UnholyPlate": {
-                    "Note": "用角重击成功时，目标必须通过@Check[fortitude|dc:30]检定，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2} ）。"
+                    "Note": "用角重击成功时，目标必须通过@Check[fortitude|dc:30|showDC:all|options:inflicts:drained]检定，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2} ）。"
                 },
                 "CloakOfWavesAndClouds": {
                     "CutAirAndSea": "裁气断海"
@@ -1941,6 +1941,15 @@
                     "Greater": "你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[fortitude|dc:28|options:damaging-effect,inflicts:sickened|showDC:all]豁免，否则承受@Damage[2d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>灼热铁手套</em>的恶心。",
                     "Major": "你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[fortitude|dc:32|options:damaging-effect,inflicts:sickened|showDC:all]豁免，否则承受@Damage[3d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>灼热铁手套</em>的恶心。",
                     "True": "你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[fortitude|dc:36|options:damaging-effect,inflicts:sickened|showDC:all]豁免，否则承受@Damage[4d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>灼热铁手套</em>的恶心。"
+                },
+                "GlacierHammer": {
+                    "ToggleLabel": "Glacier Hammer — Grow Icicles"
+                },
+                "HuntersBow": {
+                    "ToggleLabel": "猎人弓—目标无法看到你"
+                },
+                "IrisOfTheSky": {
+                    "RollOptionLabel": "空中虹光—灼烧天空"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -2060,7 +2069,8 @@
                 "Ability": "选择一个能力。",
                 "Rank": "选择一个环级。",
                 "SecondAbility": "选择一个第二能力。",
-                "WeaponDamageDice": "选择武器伤害骰数。"
+                "WeaponDamageDice": "选择武器伤害骰数。",
+                "Heritage": "选择一个传承。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -2293,6 +2303,9 @@
                 },
                 "MountainStrategy": {
                     "Note": "若任何生物在一次针对你的攻击中重击并对你造成了伤害，无论该生物是否具有上述列表中的特征之一，你都能够获得针对该生物的伤害加值，持续1分钟。@UUID[Compendium.pf2e.feat-effects.Item.O7OO1kWFEFv6vl3E]"
+                },
+                "SpacewyrmSlayer": {
+                    "Label": "Spacewyrm Slayer (Dragon)"
                 }
             },
             "Fleshwarp": {
@@ -2925,6 +2938,12 @@
                 },
                 "Seedpod": {
                     "Note": "当造成重击时，种子荚会爆裂，长出一堆杂乱的植物，并对目标的速度造成-10尺的环境减值，效果持续1回合。@UUID[Compendium.pf2e.feat-effects.Item.wQDHpOKY3GZqvS2v]"
+                },
+                "Inexorable": {
+                    "RollOptionLabel": "Inexorable — On home world"
+                },
+                "MoonflowerLeshy": {
+                    "ToggleLabel": "你散发亮光"
                 }
             },
             "Lich": {
@@ -3062,6 +3081,13 @@
             "Druid": {
                 "DruidicOrder": {
                     "Prompt": "选择德鲁伊教派。"
+                },
+                "PristineWeapon": {
+                    "DescriptionAlteration": "<p>你的苍翠武器能破除魔法生物的抗力。此武器视为寒铁和银制。如果你对有寒铁或银弱点的生物造成重击，目标会因为武器的原能能量侵蚀，削弱它的自愈能力，造成@Damage[1d6[bleed]]伤害。</p>",
+                    "Note": "如果目标有寒铁或银的弱点，其承受@Damage[1d6[bleed]]伤害。"
+                },
+                "VerdantWeapon": {
+                    "DescriptionAlteration": "<p>当手持这颗铭印种子时，你可以使用一个交互动作立刻让种子长成为武器，再花一个交互动作则可以把它变回种子形态。苍翠武器可以如常蚀刻符文或添加护符，但在种子形态下它们的效果会失效。</p>"
                 }
             },
             "Goblin": {
@@ -3087,6 +3113,46 @@
                 "Twitchy": {
                     "InitiativeToggle": "神经兮兮— 对手使用欺骗或交涉决定先攻",
                     "TOTMToggle": "神经兮兮 — 对抗危害"
+                },
+                "MutantGoblin": {
+                    "Prompt": "选择一种突变。",
+                    "Bioelectricity": {
+                        "Label": "Bioelectricity",
+                        "Description": "You gain a bioshock unarmed attack that deals 1d4 electricity damage. Your bioshock attack is in the shock group and has the finesse, nonlethal, and unarmed traits.",
+                        "Bioshock": "Bioshock"
+                    },
+                    "Chromatophores": {
+                        "Label": "Chromatophores",
+                        "Description": "You become trained in Stealth. If you would automatically become trained in Stealth (from your background or class, for example), you instead become trained in a skill of your choice. You gain the @UUID[Compendium.pf2e.feats-srd.Item.beyw5bdA5hkQbmaG]{Terrain Stalker} skill feat, except instead of a selected difficult terrain, you can use this feat while adjacent to or within areas of bright artificial light, such as a large neon sign or nightclub."
+                    },
+                    "ExtraLimbs": {
+                        "Label": "Extra Limbs",
+                        "Description": "You grow a second pair of arms. You can select the @UUID[Compendium.sf2e.feats.Item.EPeo604ByeeAx3AL]{All Hands on Deck} and @UUID[Compendium.sf2e.feats.Item.61txGmMLr22B93cU]{Double Draw} standardized ancestry feats."
+                    },
+                    "Flight": {
+                        "Label": "Flight",
+                        "Description": "You gain a fly Speed of 20 feet."
+                    },
+                    "Gills": {
+                        "Label": "Gills",
+                        "Description": "You gain a swim Speed of 25 feet and can breathe underwater for 1 minute at a time."
+                    },
+                    "LimitedTelepathy": {
+                        "Label": "Limited Telepathy",
+                        "Description": "You can communicate mentally with creatures within 15 feet. You can communicate only with creatures that share a language with you. This doesn't give you any access to their thoughts, and it communicates no more information than normal speech would."
+                    },
+                    "MutantMagic": {
+                        "Label": "Mutant Magic",
+                        "Description": "You gain the @UUID[Compendium.sf2e.feats.Item.IEQmMRA1uMPb0rJo]{Ancestral Cantrip} (primal; @UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]{Caustic Blast}) standardized ancestry feat, except the spell doesn't have the manipulate trait as you hock the glob of acid from your mouth."
+                    },
+                    "Suckers": {
+                        "Label": "Suckers",
+                        "Description": "You gain a climb Speed of 20 feet."
+                    }
+                },
+                "TankmeatGoblin": {
+                    "Doomed": "Tankmeat Goblin (Doomed)",
+                    "Wounded": "Tankmeat Goblin (Wounded)"
                 }
             },
             "HalfElf": {
@@ -4093,6 +4159,19 @@
                 },
                 "LegendaryCodebreaker": {
                     "Note": "若你花费通常解译文书所需的完整时间，并在检定中成功，则改为获得大成功。若你花费通常情况需要的完整时间，并获得大成功，则可几乎逐字逐句地细致理解文本。"
+                },
+                "Evangelize": {
+                    "CriticalSuccess": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1轮。",
+                    "Failure": "目标不受影响。",
+                    "Success": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮。"
+                },
+                "SkillMastery": {
+                    "Investigator": "将你的1个技能的熟练度从专家提升至大师，并且将另1个技能的熟练度从受训提升至专家。你可以获得1个技能专长，该专长要与上述你所选择的技能之一相关。",
+                    "Rogue": "将你的一个技能的熟练等级从专家提升至大师，另一个技能的熟练等级从受训提升至专家。你获得一个关联于其中一个所选技能的技能专长；你仍然必须满足此专长的所有先决条件。",
+                    "Special": {
+                        "Text": "你可以选择这个专长最多五次。",
+                        "Title": "特殊"
+                    }
                 }
             },
             "SaveCriticalFailureToFailure": {
@@ -4786,7 +4865,7 @@
                         "PartTwo": "当你升级时，你能在法术库中添加法术。每当你获得1个法术位（见召唤师每日法术表），你在法术库中添加1个同环级的法术。你每次升级，都能重新选择法术库中的法术。2级时，你选择另一个1环级法术。3级时，你在法术库中添加第一个2环级法术。4级时，你获得第二个2环级法术，然后你的法术库中的法术数量达到上限，即5个法术。",
                         "PartThree": "5级时，在法术库中添加2个3级法术之余，你失去你最低环级的法术位。每当你失去了某一环级的法术位，你同时失去法术库中的2个法术。这些可能来自于你已经知晓的法术，或者你正在学习的新法术。在你不会改变法术位的等级，你可以交换多个法术，见下文描述。",
                         "SpellSwapping": "当你在法术库中获得新的法术，你可能想要替换掉你已经学会的部分法术。每当你获得了1个等级并学习了新法术，你都可以将你的1个旧法术交换为同环级的不同法术。如果在该等级你会失去一组低环法术位，你可以按照任意顺序交换2个旧法术。你也可以改为交换1个戏法。你也可以通过重训在休整期时交换法术。",
-                        "PartOne": "你可以施展的法术集合被称为你的法术库。1级时，你学会两个你所选择的1环法术和5个戏法。你从幻灵相关根源中选择常见法术，或从该根源中选择你能够接触到的其他法术。你能够花费一个合适环级的法术位施展法术库中的法术。你的法术位和法术库中的法术是互相独立的。如果一个专长或其他能力给你的法术库中添加了一个法术，它不会给你额外的法术位；反之亦然。"
+                        "PartOne": "你可以施展的法术集合被称为你的法术库。1级时，你学会1个你所选择的1环级法术和5个戏法。你从幻灵相关根源中选择常见法术，或从该根源中选择你能够接触到的其他法术。你能够花费一个合适环级的法术位施展法术库中的法术。"
                     },
                     "psychic": {
                         "PartThree": "虽然你获得法术位和法术库中的法术的速度相同，但这两者是互相独立的。如果1个专长或其他能力在你的法术库中添加了法术，例如你通过显意识获得了法术，它不会为你提供额外的法术位，反之亦然。",
@@ -4864,6 +4943,9 @@
                     },
                     "psychic": {
                         "Description": "你的心灵塑造了身体的潜在图像。你强韧豁免的熟练度提升至专家。"
+                    },
+                    "commander": {
+                        "Description": "你的肉体在冒险途中变得愈发强壮。你在强韧豁免上的熟练度提升至专家。"
                     }
                 },
                 "SimpleWeaponExpertise": {
@@ -4913,8 +4995,8 @@
                         "Expert": "精魂的力量在你体内自由流淌。你的法术攻击和法术DC熟练度提升至专家。"
                     },
                     "magus": {
-                        "Master": "你凭借大师级造诣强化你的法术。你在奥术法术攻击骰和法术DC上的熟练度提升至大师等级。",
-                        "Expert": "你对魔法的基础理解得以提升，使你的法术更加难以抵抗。你在奥术法术攻击骰以及法术DC上的熟练度提升至专家等级。"
+                        "Master": "你凭借大师级造诣强化你的法术。你在法术攻击调整值和法术DC上的熟练度提升至大师。",
+                        "Expert": "你对魔法的基础理解得以提升，使你的法术更加难以抵抗。你在法术攻击调整值以及法术DC上的熟练度提升至专家。"
                     },
                     "psychic": {
                         "Legendary": "你感觉自己不仅理解了自己的心灵，还理解了作为一切心智力量源泉的集体无意识。你在异能法术上的法术攻击骰和法术DC的熟练等级提升至传奇。",
@@ -4937,8 +5019,8 @@
                         "Master": "原能魔法遵从你的指令。你在法术攻击调整和法术DC上的熟练度提升至大师。"
                     },
                     "summoner": {
-                        "Expert": "在你深化与幻灵的联结之时，你的法术强度也得到了提升。你在幻灵决定的根源上的法术攻击调整值和法术DC的熟练度提升至专家。",
-                        "Master": "你与幻灵之间的联结极其强大，能够让你掌握联结法术的精髓。你在幻灵决定的魔法根源的法术攻击调整值和法术DC上的熟练度提升至大师。"
+                        "Expert": "在你深化与幻灵的联结之时，你的法术强度也得到了提升。你的法术攻击调整值和法术DC熟练度提升至专家。",
+                        "Master": "你与幻灵之间的联结极其强大，能够让你掌握联结法术的精髓。你的法术攻击调整值和法术DC熟练度提升至大师。"
                     },
                     "bard": {
                         "Expert": "你的魔法技艺愈加强大。你在法术攻击调整和法术DC上的熟练度提升至专家。",
@@ -5224,7 +5306,7 @@
                         "Label": "末世天劫之雨"
                     },
                     "Label": "万刃天箭",
-                    "Note": "每当你以你的神迹武器成功打击一个敌人，至多两个相邻目标的敌人被复制出的投射物击中，受到等同于你的神迹武器伤害骰的@Damage[@item.system.damage.dice@item.system.damage.die[spirit]]伤害。"
+                    "Note": "每当你以你的神迹武器成功打击一个敌人，至多两个相邻目标的敌人被复制出的投射物击中，受到@Damage[@item.system.damage.dice@item.system.damage.die[spirit]|options:exemplar-spirit-damage]伤害。"
                 },
                 "MatedBirdsInPairedFlight": {
                     "Pair": "两种不同神迹。",
@@ -5720,7 +5802,8 @@
                     "Note": "当你成功对一名生物进行推撞时，该生物承受@Damage[(@actor.abilities.str.mod + @actor.skills.athletics.rank*(@actor.skills.athletics.rank - 1))[bludgeoning]]伤害（或者在你大成功时承受@Damage[(2*(@actor.abilities.str.mod + @actor.skills.athletics.rank*(@actor.skills.athletics.rank - 1)))[bludgeoning]]伤害）。"
                 },
                 "Bodyguard": {
-                    "ToggleLabel": "贴身护卫 - 对保护对象的敌对动作"
+                    "ToggleLabel": "贴身护卫—增加DC减值",
+                    "PenaltyNote": "效果来源在对抗你时因嘲讽而承受的DC减值变为-2。"
                 },
                 "EnergyInterceptor": {
                     "Addendum": "除了物理伤害外，你还能够在盟友承受酸蚀、寒冷、电击、火焰或音波伤害时使用拦截攻击。"
@@ -5898,6 +5981,66 @@
             },
             "UnderseaPrivateer": {
                 "RollOptionLabel": "正在水中或水下战斗"
+            },
+            "Copaxi": {
+                "AggressiveAntlersStrike": "Antlers",
+                "RepurposeMysticPower": {
+                    "Note": "Whenever you succeed at a saving throw against a spell or magical effect, you gain temporary Hit Points equal to double the spell's rank, or equal to the level of the magical effect if it isn't a spell. These temporary Hit Points last until the end of your next turn."
+                }
+            },
+            "EntuColony": {
+                "EntuSporeCaps": {
+                    "Note": "You deal @Damage[(ternary(gte(@actor.level,17),5,ternary(gte(@actor.level,13),4,ternary(gte(@actor.level,9),3,2))))[poison]] to any creature that has you grabbed or an adjacent creature that hits you with an attack."
+                },
+                "MyceliumArmor": {
+                    "RollOptionLabel": "Mycelium Armor — Extra poison damage"
+                }
+            },
+            "Formian": {
+                "Mageslayer": {
+                    "MageslayerClaw": "Mageslayer Claw",
+                    "Note": {
+                        "Title": "Mageslayer",
+                        "Text": "A creature you Strike with your mageslayer claw must attempt a @Check[will|against:class-spell] save against the higher of your class DC or spell DC. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure)."
+                    }
+                }
+            },
+            "GapTouched": {
+                "GlitchShot": {
+                    "Addendum": "You can use Glitching Memory at a range of 60 feet."
+                }
+            },
+            "Gfolian": {
+                "FlameBelch": "Flame Belch"
+            },
+            "Hellknight": {
+                "RevealBeasts": {
+                    "Note": "当你在对动物、魔兽、真菌或植物的回忆知识检定中得到大成功时，该生物会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
+                }
+            },
+            "Ijtikri": {
+                "AllGrabberStance": {
+                    "LashingLimb": "Lashing Limb"
+                },
+                "SacrificialShell": {
+                    "RollOptionLabel": "Sacrificial Shell — Block Damage"
+                }
+            },
+            "Izalgun": {
+                "IntimidatingAthlete": {
+                    "Note": "You can attempt an [[/act demoralize skill=athletics]]{Athletics} or Intimidation check to [[/act demoralize]] one creature within 30 feet."
+                }
+            },
+            "Lashunta": {
+                "AscendantPsychic": {
+                    "TelepathyRange": "Increase the range of your limited telepathy to 120 feet."
+                },
+                "DiplomaticRetreat": {
+                    "ToggleLabel": "Diplomatic Retreat Target — DCs"
+                },
+                "Glowsilk": {
+                    "LabelFungus": "Glowsilk Lashunta (fungus)"
+                }
             }
         },
         "RuleElement": {
@@ -6706,7 +6849,9 @@
                             "Wolf": "狼",
                             "WolfDire": "恐狼",
                             "Wasp": "黄蜂",
-                            "WormCave": "洞穴蠕虫"
+                            "WormCave": "洞穴蠕虫",
+                            "BatSmall": "小型蝙蝠",
+                            "InsectSmall": "小型昆虫"
                         },
                         "Tiny": "超小型动物"
                     },
@@ -8747,6 +8892,24 @@
                 },
                 "PlagueRidden": {
                     "Name": "瘟疫缠身"
+                },
+                "PutridStench": {
+                    "Name": "腐烂恶臭"
+                },
+                "RottingAura": {
+                    "Name": "腐败灵光"
+                },
+                "SpittingZombie": {
+                    "Name": "吐酸丧尸"
+                },
+                "TearingGrapple": {
+                    "Name": "撕裂擒拿"
+                },
+                "UnholySpeed": {
+                    "Name": "不洁之速"
+                },
+                "Unkillable": {
+                    "Name": "不灭"
                 }
             }
         },
