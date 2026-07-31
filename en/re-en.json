@@ -8467,6 +8467,17 @@
             "SpellEffectFieryBody": {
                 "Note": "The attacker takes @Damage[(ternary(gte(@item.level,9),4,3))d6[fire]] damage."
             },
+            "SpellEffectFishingSpot": {
+                "AggressivePerch": "Aggressive Perch",
+                "BurblingBarbel": "Burbling Barbel",
+                "DashingDace": "Dashing Dace",
+                "Ghoulfish": "Ghoulfish",
+                "MusicalTrout": "Musical Trout",
+                "PrimordialBass": "Primordial Bass",
+                "Prompt": "Select a fish.",
+                "ScholarSalmon": "Scholar Salmon",
+                "Vigocarp": "Vigocarp"
+            },
             "SpellEffectFurnaceForm": {
                 "Note": "The attacker takes @Damage[3d6[fire]] damage."
             },
@@ -9727,6 +9738,22 @@
                 "JuniorOfficer": {
                     "RallyTheTroops": {
                         "Prompt": "Did your movement end next to the officer?"
+                    }
+                }
+            },
+            "Feskagazar": {
+                "DeliverInjection": {
+                    "AxonPeeler": {
+                        "Note": "@Check[fortitude|dc:21]. On a failure, the target is @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1}.",
+                        "RollOptionLabel": "Axon Peeler"
+                    },
+                    "BloodBoiler": {
+                        "Note": "@Check[fortitude|dc:21]. On a failure, the target is @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1}.",
+                        "RollOptionLabel": "Blood Boiler"
+                    },
+                    "CryoSting": {
+                        "Note": "@Check[fortitude|dc:21]. On a failure, the target takes @Damage[1d6[persistent,bludgeoning]] damage.",
+                        "RollOptionLabel": "Cryo Sting"
                     }
                 }
             },
