@@ -4923,6 +4923,9 @@
                     },
                     "thaumaturge": {
                         "Description": "你学会了让武器更有效的秘密手段。你在无武装攻击、简易武器和军用武器上的熟练度提升至专家。"
+                    },
+                    "runesmith": {
+                        "Description": "你致力于学习武器的精妙之处。你在简易武器，军用武器和无武装攻击上的熟练度提升至专家。"
                     }
                 },
                 "FortitudeExpertise": {
