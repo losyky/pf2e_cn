@@ -7503,6 +7503,12 @@
             },
             "bolkasBlessing": {
                 "Name": "波络卡的祝福"
+            },
+            "deflecting": {
+                "Name": "偏折"
+            },
+            "energyVulnerability": {
+                "Name": "能量弱点"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
