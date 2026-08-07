@@ -856,7 +856,7 @@
                 "Title": "快步"
             },
             "Stride": {
-                "Description": "<p>你移动至多等于速度的距离。</p>",
+                "Description": "<p>你移动至多等于你速度的距离。</p>",
                 "Title": "行走"
             },
             "TakeCover": {
