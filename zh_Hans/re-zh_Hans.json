@@ -3068,6 +3068,9 @@
                 },
                 "CompetitiveEdge": {
                     "RollOptionLabel": "竞争优势 — 增加状态加值"
+                },
+                "VoidSiphon": {
+                    "Note": "任何活物在对抗你施放的<em>伤害术</em>的豁免大失败时，陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。"
                 }
             },
             "Conrasu": {
@@ -4528,7 +4531,8 @@
                     }
                 },
                 "EchoingSpell": "你可以在你下个回合的回合结束前第二次施放这一法术而无需消耗法术位。",
-                "SynergisticSpell": "你能够以自由动作再施放一个法术，该法术必须以调和法术位施放。"
+                "SynergisticSpell": "你能够以自由动作再施放一个法术，该法术必须以调和法术位施放。",
+                "VampiricSpell": "你获得等同于该法术对一个生物造成的初始伤害的一半的临时生命值；选用受到伤害最高的生物来计算此临时生命值。这些临时生命持续1分钟。"
             },
             "AwakenedAnimal": {
                 "LateAwakener": {
@@ -4943,6 +4947,9 @@
                     },
                     "runesmith": {
                         "Description": "你致力于学习武器的精妙之处。你在简易武器，军用武器和无武装攻击上的熟练度提升至专家。"
+                    },
+                    "necromancer": {
+                        "Description": "你全身心投入，钻研你的武器的奥妙之处。你在简易武器和无武装攻击上的熟练度提升至专家。"
                     }
                 },
                 "FortitudeExpertise": {
@@ -6099,6 +6106,29 @@
                     "Title": "易咒—负荷共御"
                 },
                 "RollOptionLabel": "易咒"
+            },
+            "Necromancer": {
+                "GrimFascination": {
+                    "ThrallEnhancement": {
+                        "Label": "奴仆增益"
+                    },
+                    "Prompt": "选择一种阴森痴迷。"
+                },
+                "FatalMethod": {
+                    "Reaper": {
+                        "ThrallTeamwork": {
+                            "Label": "奴仆协力",
+                            "Addendum": "每轮一次，在你施展创造奴仆后，你可以以自由动作、对位于你的触及范围内、且邻接至少一个你的奴仆的敌人发动一次近战打击。"
+                        }
+                    },
+                    "Puppeteer": {
+                        "ThrallProliferation": {
+                            "Label": "奴仆增生",
+                            "Addendum": "每轮一次，当你施展创造奴仆时，你可以在射程范围内创造额外一个奴仆。"
+                        }
+                    },
+                    "Prompt": "选择一种夺命手段。"
+                }
             }
         },
         "RuleElement": {
