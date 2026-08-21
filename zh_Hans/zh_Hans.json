@@ -9349,7 +9349,9 @@
         "TraitDescriptionSkirmish": "该特征表示相关能力仅能在尖兵作战中使用。",
         "TraitDescriptionTripkee": "树蛙人是一种类蛙的类人生物。",
         "TraitRunesmith": "符文工匠",
-        "TraitInvocation": "激发"
+        "TraitInvocation": "激发",
+        "TraitDescriptionThrall": "你身为死灵师能创造的无心智不死生物被称为奴仆。能创造奴仆的法术或能力会带有奴仆特征。",
+        "TraitThrall": "奴仆"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
