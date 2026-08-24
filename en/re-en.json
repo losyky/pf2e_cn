@@ -1180,6 +1180,9 @@
                     "Name": "Gaseous Adaptation"
                 }
             },
+            "CaydserrisArudora": {
+                "FearfulClaw": "Fearful Claw"
+            },
             "ChangeFormation": {
                 "Loose": {
                     "Drawback": "Enemies' saving throws against the troop's damaging effects are one degree of success better than they roll.",
@@ -8503,6 +8506,9 @@
                 "Prompt": "Select a fish.",
                 "ScholarSalmon": "Scholar Salmon",
                 "Vigocarp": "Vigocarp"
+            },
+            "SpellEffectForceFling": {
+                "RollOptionLabel": "Force Fling — Target is a creature you haven’t attacked yet this turn"
             },
             "SpellEffectFurnaceForm": {
                 "Note": "The attacker takes @Damage[3d6[fire]] damage."
