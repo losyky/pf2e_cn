@@ -142,7 +142,7 @@
                 }
             },
             "AngelForm": {
-                "DeafenedNote": "重击时@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋}一轮",
+                "DeafenedNote": "重击时@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]一轮",
                 "ChoiceSet": {
                     "Balisse": "巴利斯",
                     "Choral": "科洛",
@@ -182,7 +182,8 @@
                     "Chuul": "甲伏怪",
                     "Gogiteth": "高基特斯",
                     "Gug": "古革巨人",
-                    "Otyugh": "食腐怪"
+                    "Otyugh": "食腐怪",
+                    "Ofalth": "残渣怪"
                 }
             },
             "ElementEmbodied": {
@@ -6846,12 +6847,12 @@
             },
             "Ivarsa": {
                 "ArcaneCascade": {
-                    "Note": "在这种架势下，Ivarsa的近战攻击对她的目标周围的敌人造成@Damage[(4[splash])[fire]]{4点溅射火焰}伤害。"
+                    "Note": "在这种架势下，近战打击对她的目标周围的敌人造成@Damage[(4[splash])[fire]]伤害。"
                 }
             },
             "BladeMagus": {
                 "ArcaneCascade": {
-                    "Note": "在这种架势下， the Blade magi的近战攻击对她的目标周围的敌人造成@Damage[(4[splash])[force]]{4点溅射力场}伤害。"
+                    "Note": "在这种架势下，近战打击对她的目标周围的敌人造成@Damage[(4[splash])[force]]伤害。"
                 }
             },
             "AlchemicalGolem": {
