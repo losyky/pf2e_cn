@@ -2913,7 +2913,7 @@
                     "Title": "配置NPC",
                     "Lootable": {
                         "Label": "可搜刮？",
-                        "Hint": "设置此NPC在死亡后是否可被玩家搜刮。可以在<a>自动化配置</a>中设定全局默认值。",
+                        "Hint": "设置此NPC在死亡后是否可被玩家搜刮。可以在设置中设定全局默认值。",
                         "DefaultLootable": "全局默认（可搜刮）",
                         "DefaultNotLootable": "全局默认（不可搜刮）",
                         "Lootable": "可搜刮",
@@ -5379,7 +5379,7 @@
             "wand": "魔杖"
         },
         "SellAllTreasureTitle": "变卖所有宝物",
-        "SellAllTreasureQuestion": "将所有珍贵物品转换为货币",
+        "SellAllTreasureQuestion": "将所有珍贵物品转换为货币？",
         "Senses": "感官",
         "SensesDarkvision": "黑暗视觉",
         "SensesGreaterDarkvision": "高等黑暗视觉",
@@ -6450,7 +6450,7 @@
         "TraitSwashbuckler": "浪客",
         "TraitSwarm": "集群",
         "TraitSweep": "横扫",
-        "TraitSylph": "风元素裔",
+        "TraitSylph": "气元素裔",
         "TraitTalisman": "护符",
         "TraitTandem": "同步",
         "TraitTane": "天恩",
@@ -7839,7 +7839,7 @@
             },
             "prone": {
                 "name": "倒地",
-                "rules": "<p>你倒在地上。你获得措手不及状态，攻击骰获得-2环境减值。倒地状态你唯二能进行的移动动作是爬行和站立。站立会终止倒地状态。倒地时你可以使用寻找掩蔽动作趴好并对远程攻击获得掩蔽状态，这使得你对远程攻击的AC获得+4环境加值（但你依然措手不及中）。</p>\n<p>若你在攀爬或飞行中被击至倒地，你会坠落。游泳时你不会被击至倒地。</p>",
+                "rules": "<p>你倒在地上。你获得措手不及状态，攻击骰获得-2环境减值。倒地状态你唯二能进行的移动动作是爬行和站立。站立会终止倒地状态。倒地时你可以使用寻找掩蔽动作趴好并对远程攻击获得高等掩蔽状态，这使得你对远程攻击的AC获得+4环境加值（但你依然措手不及中）。</p>\n<p>若你在攀爬或飞行中被击至倒地，你会坠落。游泳时你不会被击至倒地。</p>",
                 "summary": "你倒在地面上，更容易被攻击到。"
             },
             "quickened": {
