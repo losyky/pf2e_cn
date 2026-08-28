@@ -152,7 +152,7 @@
             },
             "CosmicForm": {
                 "MoonNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1轮。",
-                "SunNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩Dazzled}，持续一轮。",
+                "SunNote": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]，持续一轮。",
                 "Moon": "月亮",
                 "Sun": "太阳"
             },
@@ -7089,7 +7089,7 @@
                     "Miastrilek": "Miastrilek",
                     "RacoonDog": "狸猫",
                     "Devil": {
-                        "Insidiator": "Indsidiator",
+                        "Insidiator": "构陷魔",
                         "Gylou": "仆魔",
                         "Imp": "小鬼",
                         "Nessari": "深狱炼魔",
@@ -9396,6 +9396,52 @@
             "GlueBullet": {
                 "Text": "当击中时，目标的速度承受-10尺环境减值，持续[[/r 2d4 #rounds]]{2d4轮}。如果大成功，目标还会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]。@UUID[Compendium.pf2e.equipment-effects.Item.dBjXvsLFezo2fGRa]。",
                 "Title": "粘胶子弹"
+            },
+            "DaybreakAmmunition": {
+                "Text": "当启动的破晓弹药命中目标时，弹头会在目标周围爆发出@Template[type:emanation|distance:10]的明亮光照，持续1轮。区域内的每个生物必须尝试@Check[fortitude|dc:18]豁免。拥有黑暗视觉的生物在此豁免中承受–2环境减值。",
+                "Title": "破晓弹药"
+            },
+            "DisruptionAmmunition": {
+                "Greater": {
+                    "Text": "当启动的破法弹药命中目标时，它会尝试反制目标正在维持的一个启动中的法术效果，反制检定调整值为+20（反制环级6）。",
+                    "Title": "高等破法弹药"
+                },
+                "Normal": {
+                    "Text": "当启动的破法弹药命中目标时，它会尝试反制目标正在维持的一个启动中的法术效果，反制检定调整值为+11（反制环级3）。",
+                    "Title": "破法弹药"
+                }
+            },
+            "EscalationAmmunition": {
+                "Text": "目标必须尝试@Check[fortitude|dc:30]豁免。若失败，目标在接下来一分钟内下一次对抗法术或魔法效果的豁免检定需投掷两次并取较差结果。",
+                "Title": "恶化弹药"
+            },
+            "GravebaneAmmunition": {
+                "Greater": {
+                    "Text": "打击成功命中时，攻击对具有虚能治疗的生物额外造成@Damage[2d10[vitality]]伤害。若目标承受了命能伤害，则必须成功通过@Check[fortitude|dc:27]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败则为@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续至你下回合开始。",
+                    "Title": "高等墓祸弹药"
+                },
+                "Normal": {
+                    "Text": "打击成功命中时，攻击对具有虚能治疗的生物额外造成@Damage[1d10[vitality]]伤害。若目标承受了命能伤害，则必须成功通过@Check[fortitude|dc:19]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败则为@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续至你下回合开始。",
+                    "Title": "墓祸弹药"
+                }
+            },
+            "MagekillerBullet": {
+                "Text": "在接下来一周内，受影响的目标每次施放法术时，必须尝试@Check[flat|dc:11]检定。若失败，则受到@Damage[2d12[force]]伤害。",
+                "Title": "弑法子弹"
+            },
+            "ShatterpointAmmunition": {
+                "Greater": {
+                    "Text": "若目标的硬度为8或更低，则弹药造成的伤害忽略其硬度。此外，目标因振动而受到@Damage[2d8[persistent,sonic]]伤害。",
+                    "Title": "高等碎点弹药"
+                },
+                "Major": {
+                    "Text": "若目标的硬度为12或更低，则弹药造成的伤害忽略其硬度。此外，目标因振动而受到@Damage[3d8[persistent,sonic]]伤害。",
+                    "Title": "上等碎点弹药"
+                },
+                "Normal": {
+                    "Text": "若目标的硬度为4或更低，则弹药造成的伤害忽略其硬度。此外，目标因振动而受到@Damage[1d8[persistent,sonic]]伤害。",
+                    "Title": "碎点弹药"
+                }
             }
         },
         "IWR": {
