@@ -9293,7 +9293,7 @@
         "TraitCopaxi": "Copaxi",
         "TraitDescriptionCaster": "This weapon can be modified by Casting a Spell (including a cantrip) with 2 or more actions. If you do, resolve the spell normally. Once the spell is cast, if it had the acid, cold, fire, electricity, sonic, spirit, vitality, or void trait, the weapon deals damage of that type instead of its usual damage until the end of your next turn. If the weapon has the aeon trait and a spell gem installed, this lasts 1 minute. If the spell deals more than one type of damage, choose one when you fire the weapon.",
         "TraitDescriptionCosmic": "具备此特征的生物可在星际间的严酷真空环境中存活，且不会在太空或真空中呼吸。此类生物能以飞行速度在真空或零重力环境下正常飞行。除非该生物拥有特殊能力（如无需呼吸），否则在常规大气环境中仍会受到以呼吸为前提的效果影响。",
-        "TraitDescriptionDirective": "Actions with this trait are special orders that provide benefits for your allies if they follow them. Your allies must be able to sense you to benefit from your directives. This action has the auditory or visual trait depending on how you inspire your allies.",
+        "TraitDescriptionDirective": "具有此特征的动作是一种特殊指令，你的盟友若依照指令行动即可获得增益。你的盟友必须能够感知到你，才能从指令中获益。根据你激励盟友的方式，该动作具有听觉或视觉特征。",
         "TraitDescriptionDisharmony": "Actions with the disharmony trait change your current stellar attunement to being unattuned. When you take such an action with this trait, you benefit from the additional effect of your current attunement if the action had the attuned trait, but once you complete the action, you become unattuned.",
         "TraitDescriptionExposed": "This armor doesn't come with environmental protections. All armor from Pathfinder has the exposed trait.",
         "TraitDescriptionGirtablilu": "Girtablilus have humanoid upper bodies and the lower bodies of massive scorpions.",
