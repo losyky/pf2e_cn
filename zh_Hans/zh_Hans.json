@@ -1767,7 +1767,7 @@
                     "Default": "B、P 或 S",
                     "Title": "模块化配置"
                 },
-                "ExpendN": "Expend {n}"
+                "ExpendN": "耗弹 {n}"
             },
             "Rules": {
                 "Apply": "应用",
@@ -1951,7 +1951,7 @@
                     "deflecting-field": "偏斜力场",
                     "phase-shield": "相位盾",
                     "riot-shield": "镇暴盾",
-                    "fiendsbane-shield": "Fiendsbane Shield"
+                    "fiendsbane-shield": "破魔盾"
                 },
                 "Specific": {
                     "Hint": "将此盾牌标记为<i>特殊魔法盾牌</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
@@ -9292,7 +9292,7 @@
         "TraitBrenneri": "Brenneri",
         "TraitCopaxi": "Copaxi",
         "TraitDescriptionCaster": "This weapon can be modified by Casting a Spell (including a cantrip) with 2 or more actions. If you do, resolve the spell normally. Once the spell is cast, if it had the acid, cold, fire, electricity, sonic, spirit, vitality, or void trait, the weapon deals damage of that type instead of its usual damage until the end of your next turn. If the weapon has the aeon trait and a spell gem installed, this lasts 1 minute. If the spell deals more than one type of damage, choose one when you fire the weapon.",
-        "TraitDescriptionCosmic": "Creatures with this trait can survive in the harsh vacuum of space and the vast distances between planets and stars. They don't breathe while in space or in a vacuum. Creatures with this trait can use their fly Speed to Fly normally in a vacuum or zero gravity environment. Unless the creature possesses a bespoke ability (such as No Breath), they remain susceptible to effects that require breathing while in normal atmosphere.",
+        "TraitDescriptionCosmic": "具备此特征的生物可在星际间的严酷真空环境中存活，且不会在太空或真空中呼吸。此类生物能以飞行速度在真空或零重力环境下正常飞行。除非该生物拥有特殊能力（如无需呼吸），否则在常规大气环境中仍会受到以呼吸为前提的效果影响。",
         "TraitDescriptionDirective": "Actions with this trait are special orders that provide benefits for your allies if they follow them. Your allies must be able to sense you to benefit from your directives. This action has the auditory or visual trait depending on how you inspire your allies.",
         "TraitDescriptionDisharmony": "Actions with the disharmony trait change your current stellar attunement to being unattuned. When you take such an action with this trait, you benefit from the additional effect of your current attunement if the action had the attuned trait, but once you complete the action, you become unattuned.",
         "TraitDescriptionExposed": "This armor doesn't come with environmental protections. All armor from Pathfinder has the exposed trait.",
