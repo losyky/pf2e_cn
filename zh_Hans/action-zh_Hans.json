@@ -1113,7 +1113,7 @@
                     "criticalFailure": "<strong>大失败</strong> 你未能成功登录游戏，或因操作失误（如忘记密码导致程序锁定）致使24小时内无法访问该程序。",
                     "criticalSuccess": "<strong>大成功</strong> 你出色完成操作，从程序中发掘秘密或高级功能。如果你是在玩游戏，则以超过平均记录时长的速度通关。",
                     "failure": "<strong>失败</strong> 你未能理解程序或游戏，后续24小时内尝试访问或游玩该程序时承受-2环境减值。",
-                    "success": "<strong>Success</strong> You manage to operate the device in the necessary manner, including getting basic functionality. You gain general information from the program."
+                    "success": "<strong>成功</strong> 你以必要方式成功操作设备，包括获取基本功能，并从程序中获得常规信息。"
                 }
             },
             "PlotCourse": {
