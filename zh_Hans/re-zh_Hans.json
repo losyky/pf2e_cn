@@ -1132,7 +1132,7 @@
             },
             "MartialProficiency": {
                 "AdvancedGhoranWeapons": "进阶蒿兰武器",
-                "MartialGhoranWeapons": "军用蒿兰武器",
+                "MartialGhoranWeapons": "军用蒿兰人武器",
                 "MartialGroup": {
                     "axe": "军用斧",
                     "bomb": "军用炸弹",
@@ -1253,7 +1253,10 @@
                 "AquaticElfWeapons": "水栖精灵武器",
                 "MartialLashuntaWeapons": "军用拉申塔人武器",
                 "MartialPahtraWeapons": "军用趴爪族武器",
-                "MartialTalphiWeapons": "军用鼹鼠人武器"
+                "MartialTalphiWeapons": "军用鼹鼠人武器",
+                "HellknightBreastplate": "地狱骑士胸甲",
+                "HellknightPlates": "地狱骑士半身甲&地狱骑士板甲",
+                "MarineCombat": "海洋战斗"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -1951,6 +1954,9 @@
                 },
                 "IrisOfTheSky": {
                     "RollOptionLabel": "空中虹光—灼烧天空"
+                },
+                "Manacles": {
+                    "WristsNote": "你在使用操作动作时必须成功通过@Check[flat|dc:5|name:Manacles|showDC:all]检定，否则该动作将失败。"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -2192,6 +2198,12 @@
                 },
                 "UnsheathingTheSwordLight": {
                     "Note": "由剑光凝聚而成的无数虚影在你周身浮现，对目标周围@Template[type:emanation|distance:10]内的，除你和法术打击目标之外的每个生物造成@Damage[(2*{item|flags.pf2e.rulesSelections.unsheathingTheSwordLight})[@item.system.damage.damageType]|options:area-damage,damage:material:cold-iron,damage:material:silver]的伤害。该伤害类型与你用剑进行打击的类型相同且视为寒铁和银制武器。"
+                },
+                "StarlitSpan": {
+                    "Note": "当你处于@UUID[Compendium.pf2e.actionspf2e.Item.HbejhIywqIufrmVM]{奥术奔涌}架势时，你的远程攻击无视盟友为目标提供的次等掩蔽。"
+                },
+                "StudiousSpells": {
+                    "Addendum": "当你施放精研法术时，你能紧接着以自由动作使用@UUID[Compendium.pf2e.actionspf2e.Item.HbejhIywqIufrmVM]{奥术奔涌}，将此作为你本回合的下个动作。"
                 }
             },
             "Monk": {
@@ -3072,6 +3084,10 @@
                 },
                 "VoidSiphon": {
                     "Note": "任何活物在对抗你施放的<em>伤害术</em>的豁免大失败时，陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。"
+                },
+                "SacredDefense": {
+                    "ReligionDCThirty": "DC 30宗教",
+                    "ReligionDCForty": "DC 40宗教"
                 }
             },
             "Conrasu": {
@@ -7622,7 +7638,7 @@
             },
             "Nasurgeth": {
                 "MidnightDepths": {
-                    "InWater": "Midnight Depths — In Water"
+                    "InWater": "午夜深渊 — 在水中"
                 }
             },
             "OrtMob": {
@@ -8320,40 +8336,40 @@
             },
             "MartialArtist": {
                 "BlazingGate": {
-                    "Name": "Blazing Gate"
+                    "Name": "雷殛焚窍"
                 },
                 "CompetitiveTaunt": {
                     "Name": "战啸裂胆"
                 },
                 "ConcealedSpikes": {
-                    "Name": "Concealed Spikes"
+                    "Name": "袖里藏针"
                 },
                 "ConstantFeintStance": {
-                    "Name": "Constant Feint Stance"
+                    "Name": "虚实无常势"
                 },
                 "ContrabandSubstance": {
                     "Name": "十全大补丸"
                 },
                 "DefensiveSideKick": {
-                    "Name": "Defensive Side Kick"
+                    "Name": "拒门截拳"
                 },
                 "IllegalBite": {
                     "Name": "恶狗扑食"
                 },
                 "Kiai": {
-                    "Name": "Kiai!"
+                    "Name": "看招！"
                 },
                 "LifeBurnAura": {
-                    "Name": "Life Burn Aura"
+                    "Name": "焚血燃命"
                 },
                 "SandInYourEye": {
-                    "Name": "Sand in Your Eye"
+                    "Name": "以沙蒙眼"
                 },
                 "SolarSurge": {
-                    "Name": "Solar Surge"
+                    "Name": "大日金轮"
                 },
                 "SuperQiBlast": {
-                    "Name": "Super Qi Blast"
+                    "Name": "气殒归真"
                 }
             },
             "MelfeshMonster": {
@@ -9505,7 +9521,10 @@
                 "Decapitation": "斩首",
                 "MagicalSlashing": "魔法挥砍",
                 "StrikesCreatureSheddingBrightLight": "被一个发出明亮光照的生物打击命中",
-                "SkeletonCrew": "骷髅船员"
+                "SkeletonCrew": "骷髅船员",
+                "PersistentAcid": "持续酸蚀",
+                "PersistentFire": "持续火焰",
+                "SpiritFromFiends": "来自魔族的精魂伤害"
             }
         },
         "Color": {
