@@ -419,15 +419,15 @@
             },
             "NecroticBomb": {
                 "Greater": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[void]]{3点虚能溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[void]]{3点虚能溅射伤害}，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 3}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[void]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(3[splash])[void]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 3}。"
                 },
                 "Lesser": {
-                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[void]]{1点虚能溅射伤害}。",
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[void]]{1点虚能溅射伤害}，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}。"
+                    "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[void]]伤害。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(1[splash])[void]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。"
                 },
                 "Major": {
-                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[void]]{4点虚能溅射伤害}，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 4}。",
+                    "criticalSuccess": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[void]]伤害，并目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 4}。",
                     "success": "<strong>效果</strong> 这颗炸弹同时造成@Damage[(4[splash])[void]]伤害。"
                 },
                 "Moderate": {
