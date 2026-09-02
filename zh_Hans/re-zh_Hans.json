@@ -94,13 +94,13 @@
                 "BodySlam": "身体投掷",
                 "BurningTendril": "Burning Tendril",
                 "FootOrb": "Foot Orb",
-                "PhasicBlade": "Phasic Blade",
+                "PhasicBlade": "相位刃",
                 "Proboscis": "长吻",
                 "ProjectileVomit": "喷射性呕吐",
                 "SolarFlare": "太阳耀斑",
-                "TailScourgeDischarge": "Tail Scourge Discharge",
+                "TailScourgeDischarge": "尾鞭放电",
                 "Tusks": "獠牙",
-                "VoidFrond": "Void Frond"
+                "VoidFrond": "虚空叶"
             },
             "Note": {
                 "GrabbingTrunk": {
@@ -242,7 +242,7 @@
                     "Arboreal": "树精",
                     "Flytrap": "捕蝇草",
                     "Moonflower": "月光花",
-                    "VoidPalm": "Void Palm"
+                    "VoidPalm": "虚空棕榈"
                 }
             }
         },
@@ -2011,20 +2011,20 @@
                 "CantripOrNonCantrip": "选择戏法或非戏法法术。",
                 "ConsciousMind": "选择显意识。",
                 "CreatureSize": "选择生物体型。",
-                "Deity": "选择一个神祇。",
+                "Deity": "选择一位神祇。",
                 "DamageType": "选择一种伤害类型。",
                 "Element": "选择一种元素。",
                 "Feat": "选择一个专长。",
-                "FirstImplement": "选择一个第一奇具。",
+                "FirstImplement": "选择第一奇具。",
                 "Lesson": "选择教诲。",
-                "SecondImplement": "选择一个第二奇具。",
+                "SecondImplement": "选择第二奇具。",
                 "DeitysDomain": "选择神祇的一个领域。",
                 "EvolutionFeat": "选择第一个进化专长。",
                 "Shillelagh": "选择一根棍棒或杖。",
                 "Skill": "选择一个技能。",
                 "SubconsciousMind": "选择潜意识。",
                 "SkillFeat": "选择一个技能专长。",
-                "ThirdImplement": "选择一个第三奇具。",
+                "ThirdImplement": "选择第三奇具。",
                 "Weapon": "选择一个武器。",
                 "WildShape": "选择变化形态",
                 "UnarmedAttack": "选择一种无武装打击。",
@@ -2036,7 +2036,7 @@
                 "WeaponOrUnarmed": "选择一把武器或无武装打击。",
                 "ClassDCAbilityScore": "选择职业DC的关键属性。",
                 "VersatileTrait": "选择一种多用伤害类型。",
-                "DegreeOfSuccess": "选择成功等级。",
+                "DegreeOfSuccess": "选择成功度。",
                 "Alignment": "选择一个阵营。",
                 "Rune": "选择一个符文。",
                 "Sanctification": "选择一个加护。",
@@ -2077,7 +2077,8 @@
                 "Rank": "选择一个环级。",
                 "SecondAbility": "选择一个第二能力。",
                 "WeaponDamageDice": "选择武器伤害骰数。",
-                "Heritage": "选择一个传承。"
+                "Heritage": "选择一个传承。",
+                "DifficultyClass": "选择DC。"
             },
             "SterlingDynamo": {
                 "Label": "纹银机铠士",
@@ -2517,6 +2518,14 @@
                     "OffGuard": {
                         "Label": "措手不及",
                         "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。"
+                    },
+                    "Frightened": {
+                        "Label": "惊惧",
+                        "Note": "目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
+                    },
+                    "WeaknessHeartless": {
+                        "Label": "弱点（无情衰弱）",
+                        "Note": "目标获得对流血与毒素伤害的5点弱点。@UUID[Compendium.pf2e.feat-effects.Item.6LnICchGZRKYDANK]"
                     }
                 },
                 "OverextendingFeint": {
@@ -6146,6 +6155,25 @@
                     },
                     "Prompt": "选择一种夺命手段。"
                 }
+            },
+            "Pahtra": {
+                "Oozebonded": {
+                    "LabelEscape": "粘液共生趴爪（逃脱）"
+                }
+            },
+            "Runesmith": {
+                "SeekTheHiddenGlyphs": {
+                    "SearchLabel": "探寻隐藏字符（发现魔法陷阱）"
+                },
+                "TracingTrance": {
+                    "Note": "本回合你不能使用任何激发动作。"
+                }
+            },
+            "SpellEffectBindHeroicSpirit": {
+                "CriticalHitNote": "每当你使用打击重击一个目标时，你可以在邻接目标的空间中创造一名奴仆。"
+            },
+            "SpellEffectFishingSpot": {
+                "AggressivePerch": "好斗鲈鱼"
             }
         },
         "RuleElement": {
@@ -9448,15 +9476,15 @@
             "ShatterpointAmmunition": {
                 "Greater": {
                     "Text": "若目标的硬度为8或更低，则弹药造成的伤害忽略其硬度。此外，目标因振动而受到@Damage[2d8[persistent,sonic]]伤害。",
-                    "Title": "高等碎点弹药"
+                    "Title": "高等裂构弹药"
                 },
                 "Major": {
                     "Text": "若目标的硬度为12或更低，则弹药造成的伤害忽略其硬度。此外，目标因振动而受到@Damage[3d8[persistent,sonic]]伤害。",
-                    "Title": "上等碎点弹药"
+                    "Title": "上等裂构弹药"
                 },
                 "Normal": {
                     "Text": "若目标的硬度为4或更低，则弹药造成的伤害忽略其硬度。此外，目标因振动而受到@Damage[1d8[persistent,sonic]]伤害。",
-                    "Title": "碎点弹药"
+                    "Title": "裂构弹药"
                 }
             }
         },
@@ -9524,7 +9552,9 @@
                 "SkeletonCrew": "骷髅船员",
                 "PersistentAcid": "持续酸蚀",
                 "PersistentFire": "持续火焰",
-                "SpiritFromFiends": "来自魔族的精魂伤害"
+                "SpiritFromFiends": "来自魔族的精魂伤害",
+                "Starvation": "饥饿",
+                "Thirst": "口渴"
             }
         },
         "Color": {
