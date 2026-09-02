@@ -2319,7 +2319,7 @@
                     "Note": "若任何生物在一次针对你的攻击中重击并对你造成了伤害，无论该生物是否具有上述列表中的特征之一，你都能够获得针对该生物的伤害加值，持续1分钟。@UUID[Compendium.pf2e.feat-effects.Item.O7OO1kWFEFv6vl3E]"
                 },
                 "SpacewyrmSlayer": {
-                    "Label": "Spacewyrm Slayer (Dragon)"
+                    "Label": "太空龙屠戮者（龙类）"
                 }
             },
             "Fleshwarp": {
@@ -6036,9 +6036,9 @@
                 "RollOptionLabel": "正在水中或水下战斗"
             },
             "Copaxi": {
-                "AggressiveAntlersStrike": "Antlers",
+                "AggressiveAntlersStrike": "顶角",
                 "RepurposeMysticPower": {
-                    "Note": "Whenever you succeed at a saving throw against a spell or magical effect, you gain temporary Hit Points equal to double the spell's rank, or equal to the level of the magical effect if it isn't a spell. These temporary Hit Points last until the end of your next turn."
+                    "Note": "每当你在对抗法术或魔法效果的豁免检定中成功时，你获得等同于该法术环级两倍的临时生命值；如果它不是法术，则获得等同于该魔法效果等级的临时生命值。这些临时生命值持续到你的下个回合结束。"
                 }
             },
             "EntuColony": {
@@ -6605,7 +6605,7 @@
             "PoltergeistTelekineticStorm": {
                 "SingleAttackLabel": "心灵风暴 - 单个目标",
                 "MultiAttackLabel": "心灵风暴 - 多个目标",
-                "SingleAttackEffect": "攻击失手时造成@Damage[1d12[untyped]]伤害。",
+                "SingleAttackEffect": "攻击失手时造成@Damage[1d12[untyped]]点伤害。",
                 "SingleTarget": "单目标",
                 "MultipleTargets": "多目标"
             },
@@ -6764,7 +6764,7 @@
                     "Name": "远古瘟疫"
                 },
                 "Rally": {
-                    "Name": "Rally"
+                    "Name": "集结"
                 },
                 "RigorMortis": {
                     "Name": "尸僵"
@@ -6920,11 +6920,11 @@
                     "SneakAttack": "偷袭",
                     "AttackOfOpportunity": "反应打击",
                     "AbilityPrompt": "选择乔装变形能力",
-                    "Armored": "着甲 Armored",
+                    "Armored": "着甲",
                     "Commander": "指挥者",
                     "ElementalAttack": "元素攻击",
                     "ShieldCarrier": "持盾者",
-                    "WeaponPerk": "武器提升 Weapon Perk",
+                    "WeaponPerk": "武器提升",
                     "WeaponPerkPrompt": "选择一种武器提升"
                 }
             },
@@ -7460,7 +7460,7 @@
                 }
             },
             "Pyrkaion": {
-                "AuraOfSophistryNote": "<p>You become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} and gain weakness 4 to mental damage for [[/gmr 1d4 #rounds]]{1d4 rounds}.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.Rr4stNn2zqzspjQu]</p>"
+                "AuraOfSophistryNote": "<p>你陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，并在[[/gmr 1d4 #rounds]]{1d4轮}内对心灵伤害获得4点弱点。</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.Rr4stNn2zqzspjQu]</p>"
             },
             "Warmonger": {
                 "SightPrey": {
@@ -7529,27 +7529,27 @@
                     "Label": "魔族"
                 },
                 "Poisoner": {
-                    "Label": "投毒者",
-                    "StrikeLabel": "Tiny Syringe"
+                    "Label": "毒师",
+                    "StrikeLabel": "微型毒针"
                 },
                 "Smart": {
-                    "Label": "Smart"
+                    "Label": "聪明"
                 },
                 "Strong": {
-                    "Label": "Strong",
-                    "Shield": "Tiny Shield",
-                    "StrikeLabel": "Tiny Sword"
+                    "Label": "强壮",
+                    "Shield": "超小型盾牌",
+                    "StrikeLabel": "超小型剑"
                 },
                 "Swift": {
-                    "Label": "Swift",
-                    "StrikeLabel": "Tiny Dagger",
-                    "AnotherPuppetHit": "Target hit by another puppet this round"
+                    "Label": "迅捷",
+                    "StrikeLabel": "超小型匕首",
+                    "AnotherPuppetHit": "此轮被另一个人偶命中过的目标"
                 },
                 "Undead": {
-                    "Label": "Undead",
+                    "Label": "亡灵",
                     "Note": {
-                        "CriticalSuccess": "On a critical hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.",
-                        "Success": "On a hit, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                        "CriticalSuccess": "重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。",
+                        "Success": "命中时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
                     }
                 }
             },
@@ -7678,12 +7678,12 @@
                 }
             },
             "PeacockPhoenix": {
-                "RadiantWing": "Radiant Wing"
+                "RadiantWing": "光翼"
             },
             "Sykever": {
-                "ArmSpike": "Arm Spike",
-                "Bipedal": "Bipedal",
-                "Quadrupedal": "Quadrupedal"
+                "ArmSpike": "臂钉",
+                "Bipedal": "双足",
+                "Quadrupedal": "四足"
             },
             "SwarmingBites": {
                 "Note": "如果你在感染时尝试一个专注或者操作动作，你必须成功通过一次@Check[flat|dc:5|name:Swarming Bites|showDC:all]检定否则丢失动作；在动作被花费后效果生效前骰检定。"
@@ -8074,7 +8074,7 @@
                     "Name": "溺亡衍体"
                 },
                 "HardToBurn": {
-                    "Name": "Hard to Burn"
+                    "Name": "难以燃烧"
                 },
                 "SoddenGround": {
                     "Name": "浸湿地面"
@@ -8086,8 +8086,8 @@
             "FlotsamTerror": {
                 "Attacks": {
                     "FloatsamLabel": "Floatsam",
-                    "SharpEdgeLabel": "Sharp Edge",
-                    "FlotsamLabel": "漂浮碎流"
+                    "SharpEdgeLabel": "锐利边缘",
+                    "FlotsamLabel": "漂浮物"
                 }
             },
             "Ghast": {
@@ -8537,7 +8537,7 @@
                     "Name": "Ghostly Flicker"
                 },
                 "Immunity": {
-                    "Name": "Immunity"
+                    "Name": "免疫"
                 },
                 "RavageMind": {
                     "Name": "Ravage Mind"
@@ -8599,7 +8599,7 @@
             },
             "PathRiverPeeler": {
                 "SensitiveEars": {
-                    "Note": "Whenever the Peeler takes sonic damage, it must succeed at a @Check[will|dc:16|options:inflicts:frightened] saving throw or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure)."
+                    "Note": "每当剥皮怪受到音波伤害时，必须成功通过一次@Check[will|dc:16|options:inflicts:frightened]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（若大失败则为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。"
                 }
             },
             "PlanarAdaptationsSpawningSoulrider": {
@@ -8667,10 +8667,10 @@
             },
             "Retired": {
                 "Rusty": {
-                    "Name": "Rusty"
+                    "Name": "久疏战阵"
                 },
                 "StillGotIt": {
-                    "Name": "Still Got It!"
+                    "Name": "宝刀未老！"
                 }
             },
             "RisenNemesis": {
@@ -8699,7 +8699,7 @@
                 "BloodVigor": {
                     "FastHealing": {
                         "Details": "当邻近一个正承受持续流血伤害的生物时",
-                        "Toggle": "Blood Vigor — Fast Healing"
+                        "Toggle": "鲜血活力 — 快速治疗"
                     }
                 }
             },
@@ -8820,25 +8820,25 @@
             },
             "Sporeborn": {
                 "ConsumeBiomatter": {
-                    "Name": "Consume Biomatter"
+                    "Name": "消耗生物质"
                 },
                 "ContagiousSpores": {
-                    "Name": "Contagious Spores"
+                    "Name": "传染性孢子"
                 },
                 "FungalArmor": {
-                    "Name": "Fungal Armor"
+                    "Name": "真菌铠甲"
                 },
                 "PotentPoison": {
-                    "Name": "Potent Poison"
+                    "Name": "强效毒素"
                 },
                 "RancidSporePods": {
-                    "Name": "Rancid Spore Pods"
+                    "Name": "腐坏孢子囊"
                 },
                 "SporebornInfestation": {
-                    "Name": "Sporeborn Infestation"
+                    "Name": "孢植感染"
                 },
                 "SporeExplosion": {
-                    "Name": "Spore Explosion"
+                    "Name": "孢子爆炸"
                 }
             },
             "SpringHeeledJack": {
@@ -8846,10 +8846,10 @@
                     "Name": "变身"
                 },
                 "ResonantTerror": {
-                    "Name": "Resonant Terror"
+                    "Name": "恐怖回响"
                 },
                 "VanishingLeap": {
-                    "Name": "Vanishing Leap"
+                    "Name": "消匿一跃"
                 }
             },
             "SwarmStrider": {
@@ -9043,6 +9043,11 @@
                 },
                 "Unkillable": {
                     "Name": "不灭"
+                }
+            },
+            "Kappa": {
+                "HeadBowl": {
+                    "Spilled": "头碗的水已洒出"
                 }
             }
         },
@@ -9540,8 +9545,8 @@
                 "SpellsFromAllTraditions": "所有根源的法术",
                 "WispVulnerabilities": "wisp vulnerabilities",
                 "InhaledPoisons": "吸入型毒素",
-                "ElementalInstinct": "damage dealt by instinct element creatures",
-                "HarvestBlood": "damage dealt by last Harvest Blood target",
+                "ElementalInstinct": "与本能元素相同的元素生物造成的伤害",
+                "HarvestBlood": "最后汲血的目标造成的伤害",
                 "AttacksFromSuppressed": "来自被压制目标的攻击",
                 "RadiationPoison": "辐射毒素",
                 "Radiation": "辐射",
