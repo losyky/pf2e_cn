@@ -2472,7 +2472,7 @@
                     "BackgroundMissingHelp": "选择背景以选择提升。",
                     "BackgroundBoostDescription": "两个提升：一个必须是{a}或{b}。",
                     "AlternateBoostsLabel": "替换提升",
-                    "AncestryMissingHelp": "选择传承以选择提升。",
+                    "AncestryMissingHelp": "选择族裔以选择提升。",
                     "InputMethod": {
                         "Manual": "手动输入",
                         "Title": "输入方式",
@@ -2493,8 +2493,8 @@
                         "AncestrySection": "{name}的族裔提升",
                         "BackgroundSection": "{name}的背景提升",
                         "ClassSection": "{name}的职业关键属性",
-                        "LevelSection": "{level}的自由提升",
-                        "Remaining": "剩余{count} 个选择"
+                        "LevelSection": "{level}的自选提升",
+                        "Remaining": "剩余{count}个选择"
                     }
                 },
                 "Attribute": {
@@ -2662,8 +2662,8 @@
                 },
                 "Sense": {
                     "Acuity": {
-                        "Label": "敏锐",
-                        "Precise": "精准",
+                        "Label": "精确度",
+                        "Precise": "精确",
                         "Imprecise": "模糊",
                         "Vague": "朦胧"
                     },
@@ -2767,7 +2767,7 @@
                     "iruxi": "蜥蜴人语",
                     "jistkan": "吉斯特卡语",
                     "jotun": "巨人语",
-                    "jyoti": "乔帝怪鸟人语",
+                    "jyoti": "焰刃使语",
                     "kholo": "鬣狗人语",
                     "kibwani": "基布伟语",
                     "kitsune": "狐妖语",
@@ -4058,7 +4058,8 @@
                     "Label": "奖励：<award>{xp} XP</award>"
                 },
                 "Threat": "威胁：<threat>{threat}</threat>",
-                "Budget": "预算：{spent}/{max} XP（队伍等级 {partyLevel}）"
+                "Budget": "预算：{spent}/{max} XP（队伍等级 {partyLevel}）",
+                "PartySize": "队伍规模：{size}"
             },
             "CalculateXP": "计算XP",
             "PartyInformation": "队伍信息"
@@ -4119,7 +4120,8 @@
             "ItemNotFoundByUUID": "未找到UUID为\"{uuid}\"的物品。",
             "MissingStatisticSelected": "缺少所选角色的数据{statistic}。",
             "CantPurchaseContainerWithItems": "你不能购买包含物品的容器。",
-            "ModuleTooOld": "{module}处于未维护状态，有可能导致你的游戏不稳定。"
+            "ModuleTooOld": "{module}处于未维护状态，有可能导致你的游戏不稳定。",
+            "NoOppositionTokenSelected": "至少选择一个敌对和/或危害指示物，并视需要在全体PC指示物中进行选择。"
         },
         "Ethnicity": "种族划分",
         "ExpendSpellTitle": "消耗法术",
@@ -5206,7 +5208,7 @@
                     "CE": "未定义（公历纪年法）",
                     "AR": "格拉利昂（艾巴萨罗姆纪元）",
                     "AD": "地球（公历纪年法）",
-                    "AG": "Pact Standard (After Gap)"
+                    "AG": "协约标准时间（后断层纪元）"
                 }
             },
             "CampaignFeats": {
@@ -6029,7 +6031,7 @@
         "TraitDescriptionOpen": "这些行动只能用于你回合内的第一次出击。你只有在本回合还未采用过有攻击或起手特征的行动时，才能采用一个起手行动。",
         "TraitDescriptionOracle": "这表示该能力来自先知职业。",
         "TraitDescriptionOread": "一种源于土元素位面的巨灵子嗣。",
-        "TraitDescriptionOrc": "具有此特征的生物时兽人族裔的一份子。这些绿皮人通常有黑暗视觉。具有此特征的能力只能由兽人使用或选择。具有此特征的物品是由兽人创造和使用的。",
+        "TraitDescriptionOrc": "具有此特征的生物是兽人族裔的一份子。这些绿皮人通常有黑暗视觉。具有此特征的能力只能由兽人使用或选择。具有此特征的物品是由兽人创造和使用的。",
         "TraitDescriptionParry": "此武器能够用来防御、格挡攻击。当你持用此武器时，你可以花费一个动作将武器摆在防守位置上，使AC获得+1环境加值，直到你下轮开始。",
         "TraitDescriptionPlant": "植物生物具有植物特征。它们不同于普通植物。具有这种特征的魔法效果以某种方式操纵或召唤植物或植物体。那些操纵植物的能力在没有植物的地区会失效。",
         "TraitDescriptionPoison": "具有该特征的效果能够传递毒素或造成毒素伤害。具有该特征的物品有毒，并可能造成苦难。",
@@ -6444,7 +6446,7 @@
         "TraitStamina": "耐力",
         "TraitStance": "架势",
         "TraitSteam": "蒸汽",
-        "TraitStrix": "鸮形人",
+        "TraitStrix": "枭鬼",
         "TraitStructure": "构造物",
         "TraitSuli": "巨灵裔",
         "TraitSummon": "召唤",
@@ -6459,7 +6461,7 @@
         "TraitTalisman": "护符",
         "TraitTandem": "同步",
         "TraitTane": "天恩",
-        "TraitTanggal": "残留妖",
+        "TraitTanggal": "分体怪",
         "TraitTattoo": "刺青",
         "TraitTechnological": "科技",
         "TraitTelepathy": "心灵感应",
@@ -6502,7 +6504,7 @@
         "TraitVanara": "灵猴裔",
         "TraitVelstrac": "链魔",
         "TraitVersatileAcid": "多用酸蚀",
-        "TraitVersatileB": "多用 B",
+        "TraitVersatileB": "多用B",
         "TraitVersatileChaotic": "多用混乱",
         "TraitVersatileCold": "多用寒冷",
         "TraitVersatileElectricity": "多用电击",
@@ -6513,9 +6515,9 @@
         "TraitVersatileHeritage": "多用传承",
         "TraitVersatileLawful": "多用秩序",
         "TraitVersatileNegative": "多用负能量",
-        "TraitVersatileP": "多用 P",
+        "TraitVersatileP": "多用P",
         "TraitVersatilePositive": "多用正能量",
-        "TraitVersatileS": "多用 S",
+        "TraitVersatileS": "多用S",
         "TraitVersatileSonic": "多用音波",
         "TraitVigilante": "侠客",
         "TraitVirulent": "恶性",
@@ -7514,6 +7516,9 @@
             },
             "energyVulnerability": {
                 "Name": "能量弱点"
+            },
+            "greaterEnergyVulnerability": {
+                "Name": "高等能量弱点"
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -7922,7 +7927,7 @@
             "weaponEquipped": "切换你持握的武器"
         },
         "UnitedPaizoWorkers": {
-            "Title": "公告: United Paizo Workers",
+            "Title": "公告：United Paizo Workers",
             "PFSNote": "给开拓者协会玩家的提示：为了支持UPW，从工会商店购买的商品将在Online PFS区域内计算为<span class=\"hover\" title=\"当你使用一个英雄点重新进行检定时，加上一个+1的环境加值\">推广服饰</a>的恩惠。",
             "ReleaseIntro": "雷德蒙德，华盛顿州（2021年10月14日）— 今天，Paizo, Inc的员工们 - 发布者为开拓者和寻星者角色扮演游戏 - 宣布他们组建了Paizo工作者联合工会（UPW），该联合工会隶属于美国通信行业工会的CODE-CWA项目。这个联合工会是桌面角色扮演游戏行业中的首个该类组织。"
         },
@@ -7971,7 +7976,11 @@
                 "Substance": "物质",
                 "Tool": "工具"
             },
-            "DisplayDetails": "显示详情"
+            "DisplayDetails": "显示详情",
+            "Breakdown": {
+                "Adjustment": "{adjustment} {value}",
+                "Base": "{level}级DC {dc}"
+            }
         },
         "loot": {
             "EditLootLabel": "设置战利品？",
@@ -8027,7 +8036,8 @@
             "AllowConversion": "允许转换铸币类型",
             "NothingToDistribute": "没有物品可供分发",
             "DistributeMessage": "{share}已从{container}分发给{recipients}。",
-            "DistributeEachMessage": "{share}从{container}分配至{recipients}。"
+            "DistributeEachMessage": "{share}从{container}分配至{recipients}。",
+            "LootNPCsTitle": "搜刮NPC"
         },
         "vehicle": {
             "VehicleString": "载具",
@@ -8328,7 +8338,7 @@
         "TraitVersatile": "多用",
         "TraitTwoHand": "双手",
         "TraitThrown200": "投掷200尺",
-        "TraitDescriptionAndroid": "通过人工手段创造的合成人形族裔。 在纽梅瑞亚最常见。",
+        "TraitDescriptionAndroid": "通过人工手段创造的合成人形族裔。在纽梅利亚最为常见。",
         "TraitDescriptionMetal": "具有金属特征的效果会操纵或召唤金属。操纵金属的效果在没有金属的区域无效。具有这种特征的生物主要由金属组成，或者与金魔法联系。",
         "TraitJousting": "骑战",
         "TraitScatter": "散射",
@@ -9436,7 +9446,7 @@
             "army": "军队"
         },
         "Item": {
-            "feat": "专长/特征",
+            "feat": "专长/特性",
             "equipment": "装备",
             "effect": "效果",
             "deity": "神祇",
@@ -9447,7 +9457,7 @@
             "backpack": "容器",
             "background": "背景",
             "armor": "护甲",
-            "ancestry": "种族",
+            "ancestry": "族裔",
             "affliction": "苦难",
             "action": "能力",
             "spell": "法术",
