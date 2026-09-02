@@ -7108,7 +7108,7 @@
                         "Leshy": "莱西",
                         "Plant": "植物",
                         "SnappingFlytrap": "猛咬捕蝇草",
-                        "LeshyMob": "Leshy Mob",
+                        "LeshyMob": "莱西群",
                         "Mushroom": "蘑菇"
                     },
                     "LeshyMob": "莱西暴徒",
@@ -7139,7 +7139,7 @@
                         "Nessari": "深狱炼魔",
                         "Ochiastis": "Ochiastis"
                     },
-                    "Drude": "Drude",
+                    "Drude": "萦惧影狐",
                     "Object": {
                         "Inanimate": "无生命物品",
                         "InanimateTiny": "超小型无生命物品",
@@ -7776,13 +7776,13 @@
                     "Name": "荒疫支配"
                 },
                 "CursedDomain": {
-                    "Name": "Cursed Domain"
+                    "Name": "诅咒领域"
                 },
                 "OverseeDomain": {
-                    "Name": "Oversee Domain"
+                    "Name": "监视领域"
                 },
                 "Rejuvenation": {
-                    "Name": "Rejuvenation"
+                    "Name": "复生"
                 }
             },
             "Bulwark": {
@@ -8057,10 +8057,10 @@
                     "Name": "贪婪擒获"
                 },
                 "Taboos": {
-                    "Name": "Taboos"
+                    "Name": "戒律"
                 },
                 "ThisIsMyReality": {
-                    "Name": "This Is My Reality!"
+                    "Name": "此乃吾之现实！"
                 },
                 "Wealthsense": {
                     "Name": "财富感知"
