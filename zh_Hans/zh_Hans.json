@@ -9423,7 +9423,9 @@
         "TraitGnarefuroid": "拾荒蜗族",
         "TraitNuar": "牛尔人",
         "TraitPhasorq": "相量族",
-        "TraitVulkarisu": "松鼠狐人"
+        "TraitVulkarisu": "松鼠狐人",
+        "PreciousMaterialThroneglass": "王座玻璃",
+        "PreciousMaterialThroneglassDescription": "王座玻璃是一种极其稀有的资源，形成于10,000年前星陨之灾的动乱中，当时坠星的冲击强化了阿兹兰特重要建筑中安装的某些破碎的绿色玻璃板——尤其是皇宫的。作为一种材料，王座玻璃坚如钢铁，但古代将其锻造为武器的方法早已失传。低品质的王座玻璃除了珍贵材料的装饰性和内在价值外，无法为锻造而成的武器提供额外好处，但标准品质和高品质的王座玻璃能够截留心灵能量，并通过打击释放出来。当持用标准品质或高品质王座玻璃武器的生物在对抗心灵效果的豁免中成功时，武器会储存部分能量以备未来攻击所用。标准品质武器可储存此能量1轮，随后无害地消散，而高品质武器可储存此能量1分钟。下次你使用储有能量的王座玻璃武器打击一个生物时，被击中的生物必须尝试一次意志豁免（标准品质王座玻璃DC 24，高品质王座玻璃DC 35），以避免陷入 @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮（大失败则为@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
