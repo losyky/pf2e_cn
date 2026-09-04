@@ -70,7 +70,7 @@
                 "Quill": "羽尖 Quill",
                 "Boulder": "巨岩 Boulder",
                 "Seed": "种子 Seed",
-                "AqueousFist": "水之拳 Aqueous Fist",
+                "AqueousFist": "水之拳",
                 "Leaves": "叶子",
                 "Fist": "拳头",
                 "Nectar": "甘露 Nectar",
@@ -142,11 +142,11 @@
                 }
             },
             "AngelForm": {
-                "DeafenedNote": "重击时@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]一轮",
+                "DeafenedNote": "重击时陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]一轮",
                 "ChoiceSet": {
                     "Balisse": "巴利斯",
                     "Choral": "科洛",
-                    "Kuribu": "基路伯",
+                    "Kuribu": "库利卜",
                     "Tennin": "天人"
                 }
             },
@@ -1256,7 +1256,10 @@
                 "MartialTalphiWeapons": "军用鼹鼠人武器",
                 "HellknightBreastplate": "地狱骑士胸甲",
                 "HellknightPlates": "地狱骑士半身甲&地狱骑士板甲",
-                "MarineCombat": "海洋战斗"
+                "MarineCombat": "海洋战斗",
+                "PeacekeeperHeavy": "和平卫士重甲",
+                "PeacekeeperMedium": "和平卫士中甲",
+                "PeakeeperWeapons": "和平卫士武器"
             },
             "GeneralTraining": {
                 "AllowedDrops": "1级通用专长",
@@ -1947,7 +1950,7 @@
                     "True": "你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[fortitude|dc:36|options:damaging-effect,inflicts:sickened|showDC:all]豁免，否则承受@Damage[4d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>灼热铁手套</em>的恶心。"
                 },
                 "GlacierHammer": {
-                    "ToggleLabel": "Glacier Hammer — Grow Icicles"
+                    "ToggleLabel": "冰川巨锤 — Grow Icicles"
                 },
                 "HuntersBow": {
                     "ToggleLabel": "猎人弓—目标无法看到你"
@@ -1957,6 +1960,11 @@
                 },
                 "Manacles": {
                     "WristsNote": "你在使用操作动作时必须成功通过@Check[flat|dc:5|name:Manacles|showDC:all]检定，否则该动作将失败。"
+                },
+                "ChimerasClaw": {
+                    "CatHead": "咆哮猫头",
+                    "DragonHead": "智角龙头",
+                    "GoatHead": "鼻息山羊头"
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -2498,7 +2506,7 @@
                     },
                     "Weakness": {
                         "Note": "由你选择，令目标获得5点钝击、穿刺或挥砍弱点。@UUID[Compendium.pf2e.feat-effects.Item.Rgt9hH3W1oh9dvku]{效果：恶毒衰弱}",
-                        "Label": "弱点"
+                        "Label": "弱点（恶毒衰弱）"
                     },
                     "Enfeebled": {
                         "Label": "力竭",
@@ -2962,7 +2970,7 @@
                     "Note": "当造成重击时，种子荚会爆裂，长出一堆杂乱的植物，并对目标的速度造成-10尺的环境减值，效果持续1回合。@UUID[Compendium.pf2e.feat-effects.Item.wQDHpOKY3GZqvS2v]"
                 },
                 "Inexorable": {
-                    "RollOptionLabel": "Inexorable — On home world"
+                    "RollOptionLabel": "势不可挡 — 在家园世界"
                 },
                 "MoonflowerLeshy": {
                     "ToggleLabel": "你散发亮光"
@@ -3097,6 +3105,9 @@
                 "SacredDefense": {
                     "ReligionDCThirty": "DC 30宗教",
                     "ReligionDCForty": "DC 40宗教"
+                },
+                "SelectiveEnergy": {
+                    "ItemAlterationNote": "你可以指定区域内的至多5名生物。这些生物不会成为该法术的目标。"
                 }
             },
             "Conrasu": {
@@ -3146,42 +3157,42 @@
                 "MutantGoblin": {
                     "Prompt": "选择一种突变。",
                     "Bioelectricity": {
-                        "Label": "Bioelectricity",
-                        "Description": "You gain a bioshock unarmed attack that deals 1d4 electricity damage. Your bioshock attack is in the shock group and has the finesse, nonlethal, and unarmed traits.",
-                        "Bioshock": "Bioshock"
+                        "Label": "生物电流",
+                        "Description": "你获得生化震击无武装攻击，造成1d4点电击伤害。你的生化震击攻击属于电震武器组，且具有娴熟、非致命与无武装特征。",
+                        "Bioshock": "生化震击"
                     },
                     "Chromatophores": {
-                        "Label": "Chromatophores",
-                        "Description": "You become trained in Stealth. If you would automatically become trained in Stealth (from your background or class, for example), you instead become trained in a skill of your choice. You gain the @UUID[Compendium.pf2e.feats-srd.Item.beyw5bdA5hkQbmaG]{Terrain Stalker} skill feat, except instead of a selected difficult terrain, you can use this feat while adjacent to or within areas of bright artificial light, such as a large neon sign or nightclub."
+                        "Label": "色素体",
+                        "Description": "你在隐秘上受训。若你本应自动在隐秘上受训（例如来自背景或职业），则你选择的另一项技能受训。你获得@UUID[Compendium.pf2e.feats-srd.Item.beyw5bdA5hkQbmaG]技能专长，但将该专长原本选择的困难地形替换为：当你位于大型霓虹招牌或夜店等明亮人造光源旁或区域内时，即可使用此专长。"
                     },
                     "ExtraLimbs": {
-                        "Label": "Extra Limbs",
-                        "Description": "You grow a second pair of arms. You can select the @UUID[Compendium.sf2e.feats.Item.EPeo604ByeeAx3AL]{All Hands on Deck} and @UUID[Compendium.sf2e.feats.Item.61txGmMLr22B93cU]{Double Draw} standardized ancestry feats."
+                        "Label": "额外肢体",
+                        "Description": "你长出第二对手臂。你可以选择@UUID[Compendium.sf2e.feats.Item.EPeo604ByeeAx3AL]与@UUID[Compendium.sf2e.feats.Item.61txGmMLr22B93cU]标准族裔专长。"
                     },
                     "Flight": {
-                        "Label": "Flight",
-                        "Description": "You gain a fly Speed of 20 feet."
+                        "Label": "飞行",
+                        "Description": "你获得20尺飞行速度。"
                     },
                     "Gills": {
-                        "Label": "Gills",
-                        "Description": "You gain a swim Speed of 25 feet and can breathe underwater for 1 minute at a time."
+                        "Label": "鳃",
+                        "Description": "你获得25尺游泳速度，且能够在水下呼吸，每次持续1分钟。"
                     },
                     "LimitedTelepathy": {
-                        "Label": "Limited Telepathy",
-                        "Description": "You can communicate mentally with creatures within 15 feet. You can communicate only with creatures that share a language with you. This doesn't give you any access to their thoughts, and it communicates no more information than normal speech would."
+                        "Label": "有限心灵感应",
+                        "Description": "你能与15尺内的生物进行心灵沟通，但你仅能与共享语言的生物如此交流。这无法让你读取其想法，传递的信息量也不会超过正常言语交谈范畴。"
                     },
                     "MutantMagic": {
-                        "Label": "Mutant Magic",
-                        "Description": "You gain the @UUID[Compendium.sf2e.feats.Item.IEQmMRA1uMPb0rJo]{Ancestral Cantrip} (primal; @UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]{Caustic Blast}) standardized ancestry feat, except the spell doesn't have the manipulate trait as you hock the glob of acid from your mouth."
+                        "Label": "突变魔法",
+                        "Description": "你获得@UUID[Compendium.sf2e.feats.Item.IEQmMRA1uMPb0rJo]（原能；@UUID[Compendium.pf2e.spells-srd.Item.thAHF1zxNplLCJPO]）标准族裔专长，但该戏法不具有操作特征，因为你是从嘴里啐出那团酸液。"
                     },
                     "Suckers": {
-                        "Label": "Suckers",
-                        "Description": "You gain a climb Speed of 20 feet."
+                        "Label": "吸盘",
+                        "Description": "你获得20尺攀爬速度。"
                     }
                 },
                 "TankmeatGoblin": {
-                    "Doomed": "Tankmeat Goblin (Doomed)",
-                    "Wounded": "Tankmeat Goblin (Wounded)"
+                    "Doomed": "炮灰地精（毁灭状态）",
+                    "Wounded": "炮灰地精（受伤状态）"
                 }
             },
             "HalfElf": {
@@ -3565,7 +3576,7 @@
                     "Activation": "你获得与角色等级相等的临时生命值，持续1分钟。",
                     "Description": "受苦让你知道自己还活着；让你的敌人感受一样的痛苦，可以缓解你的痛苦。",
                     "Fallout": "在你安顿情绪前施放任何法术，所造成的任何伤害都会受到无类型减值。减值为每法术环级 –1。",
-                    "Fervor": "你可以选择不进行纯骰检定来结束你正在承受的持续伤害。当你施展伤害性法术时，可以选择一个豁免检定失败，或是被法术攻击检定命中的生物；该目标受到与法术相同类型的持续性伤害，数值等于你当前所承受最高的持续伤害。你不能选择已经遭受持续伤害的生物。法术：@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]",
+                    "Fervor": "你可以选择不进行纯骰检定来结束你正在承受的持续伤害。当你施展伤害性法术时，可以选择一个豁免检定失败，或是被法术攻击检定命中的生物；该目标受到与法术相同类型的持续伤害，数值等于你当前所承受最高的持续伤害。你不能选择已经遭受持续伤害的生物。法术：@UUID[Compendium.pf2e.spells-srd.Item.R8bqnYiThB6MYTxD]",
                     "Focus": "@UUID[Compendium.pf2e.spells-srd.Item.xn0V2HDrmDWNzPEt]",
                     "Label": "苦痛",
                     "Trigger": "一个敌人对你造成持续伤害。"
@@ -5121,6 +5132,12 @@
                     "wizard": {
                         "Description": "魔力增强了你身体的韧性。你在强韧豁免上的熟练度提升至专家。"
                     }
+                },
+                "MediumArmorExpertise": {
+                    "GeneralDescription": "你已学会更好地抵御攻击。你在轻甲、中甲与无甲防御上的熟练度提升至专家。",
+                    "inventor": {
+                        "Description": "如果你有中甲或重甲大发明，你能使用护甲大发明的护甲专精效果。"
+                    }
                 }
             },
             "FamiliarSage": {
@@ -5998,7 +6015,7 @@
             },
             "OstilliHostDedication": {
                 "VersatileMutation": {
-                    "RollOptionLabel": "Split Ambient Damage Type"
+                    "RollOptionLabel": "环境魔法啐吐 - 伤害类型"
                 }
             },
             "SkillFeat": {
@@ -6043,28 +6060,28 @@
             },
             "EntuColony": {
                 "EntuSporeCaps": {
-                    "Note": "You deal @Damage[(ternary(gte(@actor.level,17),5,ternary(gte(@actor.level,13),4,ternary(gte(@actor.level,9),3,2))))[poison]] to any creature that has you grabbed or an adjacent creature that hits you with an attack."
+                    "Note": "每当生物使你受擒或相邻生物用攻击命中你时，你对该生物造成@Damage[(ternary(gte(@actor.level,17),5,ternary(gte(@actor.level,13),4,ternary(gte(@actor.level,9),3,2))))[poison]]伤害。"
                 },
                 "MyceliumArmor": {
-                    "RollOptionLabel": "Mycelium Armor — Extra poison damage"
+                    "RollOptionLabel": "菌丝护甲 — 额外毒素伤害"
                 }
             },
             "Formian": {
                 "Mageslayer": {
-                    "MageslayerClaw": "Mageslayer Claw",
+                    "MageslayerClaw": "法师杀手之爪",
                     "Note": {
-                        "Title": "Mageslayer",
-                        "Text": "A creature you Strike with your mageslayer claw must attempt a @Check[will|against:class-spell] save against the higher of your class DC or spell DC. On a failure, the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure)."
+                        "Title": "法师杀手",
+                        "Text": "被你使用法师杀手之爪打击的生物必须尝试一次@Check[will|against:class-spell]豁免，对抗你职业DC或法术DC中的较高值。失败时，该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟（大失败时则为@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。"
                     }
                 }
             },
             "GapTouched": {
                 "GlitchShot": {
-                    "Addendum": "You can use Glitching Memory at a range of 60 feet."
+                    "Addendum": "你能够在60尺射程内使用故障记忆。"
                 }
             },
             "Gfolian": {
-                "FlameBelch": "Flame Belch"
+                "FlameBelch": "烈焰喷射"
             },
             "Hellknight": {
                 "RevealBeasts": {
@@ -6073,10 +6090,10 @@
             },
             "Ijtikri": {
                 "AllGrabberStance": {
-                    "LashingLimb": "Lashing Limb"
+                    "LashingLimb": "鞭打肢体"
                 },
                 "SacrificialShell": {
-                    "RollOptionLabel": "Sacrificial Shell — Block Damage"
+                    "RollOptionLabel": "牺牲外壳 — 格挡伤害"
                 }
             },
             "Izalgun": {
@@ -6086,13 +6103,13 @@
             },
             "Lashunta": {
                 "AscendantPsychic": {
-                    "TelepathyRange": "Increase the range of your limited telepathy to 120 feet."
+                    "TelepathyRange": "你的有限心灵感应范围提升至120尺。"
                 },
                 "DiplomaticRetreat": {
-                    "ToggleLabel": "Diplomatic Retreat Target — DCs"
+                    "ToggleLabel": "外交撤退目标 — DC调整"
                 },
                 "Glowsilk": {
-                    "LabelFungus": "Glowsilk Lashunta (fungus)"
+                    "LabelFungus": "辉丝拉申塔人（真菌毒素）"
                 }
             },
             "Spellshifter": {
@@ -6154,6 +6171,12 @@
                         }
                     },
                     "Prompt": "选择一种夺命手段。"
+                },
+                "OsteoArmaments": {
+                    "Prompt": "你摧毁一个邻接的奴仆了吗？"
+                },
+                "PoisonDrinker": {
+                    "Note": "你花费一个反应动作，恢复等同于毒素等级（若毒素来源为法术则是该法术环级的两倍）的生命值，并获得等同于一餐的养分。"
                 }
             },
             "Pahtra": {
@@ -6173,7 +6196,34 @@
                 "CriticalHitNote": "每当你使用打击重击一个目标时，你可以在邻接目标的空间中创造一名奴仆。"
             },
             "SpellEffectFishingSpot": {
-                "AggressivePerch": "好斗鲈鱼"
+                "AggressivePerch": "好斗鲈鱼",
+                "Prompt": "选择一条魔鱼。",
+                "BurblingBarbel": "嘟哝鲃",
+                "DashingDace": "潇洒鲦鱼",
+                "Ghoulfish": "食尸鬼鱼",
+                "MusicalTrout": "舞乐鳟鱼",
+                "PrimordialBass": "原始鲈鱼",
+                "ScholarSalmon": "学者鲑鱼",
+                "Vigocarp": "活力鲤鱼"
+            },
+            "SpellEffectForceFling": {
+                "RollOptionLabel": "力刃掷击 — 目标为你本回合尚未攻击过的生物"
+            },
+            "SpellEffectOverstuff": {
+                "Addendum": "如果你花费一个动作来结束该状态，其会自动成功。"
+            },
+            "SpellEffectSynesthesia": {
+                "Note": "你每次使用具有专注特征的动作时，都必须成功通过@Check[flat|dc:5|name:Synesthesia|showDC:all]检定，否则动作失败并被浪费。"
+            },
+            "Trox": {
+                "FortifiedTrox": {
+                    "ChitinousPlates": "几丁质甲壳"
+                }
+            },
+            "Urog": {
+                "CrystalCarapace": {
+                    "Shell": "外壳"
+                }
             }
         },
         "RuleElement": {
@@ -7554,7 +7604,7 @@
                 }
             },
             "StreetMusician": {
-                "SneakAttackFeintDistractingDrone": "Target is Off-Guard from Feint or Distracting Drone"
+                "SneakAttackFeintDistractingDrone": "目标因虚招或干扰嗡鸣陷入措手不及"
             },
             "QuantiumGolem": {
                 "Type": {
@@ -9361,14 +9411,21 @@
         "Terrain": {
             "Sky": "空域",
             "Swamp": "沼泽",
-            "Underground": "地底",
+            "Underground": "地下",
             "Aquatic": "水域",
             "Arctic": "极地",
             "Desert": "沙漠",
             "Forest": "林地",
-            "Mountain": "山脉",
+            "Mountain": "山地",
             "Plains": "平原",
-            "Space": "太空"
+            "Space": "太空",
+            "LowGravity": "低重力",
+            "Sandy": "沙地",
+            "Muddy": "泥地",
+            "Rocky": "砾漠",
+            "Sloped": "斜坡",
+            "Undergrowth": "灌木丛",
+            "ZeroGravity": "零重力"
         },
         "AmmunitionNotes": {
             "ExplosiveAmmunition": {
@@ -9426,19 +9483,19 @@
             "OozeAmmunition": {
                 "CriticalHitText": "重击时，生物额外陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]一轮。",
                 "Greater": {
-                    "Text": "生物会受到-10尺速度减值和@Damage[3d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC29）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
+                    "Text": "生物会受到-10尺速度减值和@Damage[3d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC29）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
                     "Title": "高等泥怪弹药"
                 },
                 "Lesser": {
-                    "Text": "生物会受到-5尺速度减值和@Damage[1d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC16）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
+                    "Text": "生物会受到-5尺速度减值和@Damage[1d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC16）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
                     "Title": "次等泥怪弹药 Ooze Ammunition (Lesser)"
                 },
                 "Moderate": {
                     "Title": "中等泥怪弹药",
-                    "Text": "生物会受到-10尺速度减值和@Damage[2d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC20）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]"
+                    "Text": "生物会受到-10尺速度减值和@Damage[2d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC 20）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续酸蚀伤害。结束效果的生物依然会受到本回合的持续伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]"
                 },
                 "Major": {
-                    "Text": "生物会受到-15尺速度减值和@Damage[4d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC38）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续性伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
+                    "Text": "生物会受到-15尺速度减值和@Damage[4d4[persistent,acid]]伤害，直到效果结束。目标可以通过@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]（DC38）粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸蚀伤害。结束效果的生物依然会受到本回合的持续伤害。@UUID[Compendium.pf2e.equipment-effects.Item.m77YnEX1T7bdk7Qa]",
                     "Title": "上等泥怪弹药"
                 }
             },
@@ -9852,12 +9909,12 @@
             },
             "Ignurso": {
                 "Lavaproof": {
-                    "ImmunityLabel": "lavaproof"
+                    "ImmunityLabel": "熔岩防护"
                 }
             },
             "Illumantula": {
                 "RelativityField": {
-                    "WeaknessLabel": "fortune"
+                    "WeaknessLabel": "幸运"
                 }
             },
             "Paradox17": {
@@ -9900,6 +9957,9 @@
             "Android": {
                 "MachineSaboteur": {
                     "Note": "The target becomes @UUID[Compendium.sf2e.conditions.Item.6A2QDy8wRGCVQsSd]{Glitching 1}."
+                },
+                "Hellforged": {
+                    "HellforgedPlates": "狱铸板甲"
                 }
             },
             "Astrazoan": {
@@ -9979,7 +10039,7 @@
                 "Directive": {
                     "LeadByExample": {
                         "DescriptionAlteration": "When you use an act of leadership after issuing one or more envoy directives earlier that turn, you can choose one envoy directive you activated. You grant the lead by example benefits for that directive even if you didn't meet the usual requirements to lead by example. You can do this once per turn.",
-                        "Prompt": "Lead by Example?"
+                        "Prompt": "是否以身作则？"
                     }
                 },
                 "EffortlessInfluencer": {
@@ -9987,7 +10047,7 @@
                 },
                 "GetEm": {
                     "LeadByExample": {
-                        "ToggleLabel": "Get Em! — Initial Lead by Example Strike"
+                        "ToggleLabel": "干掉他！— 以身作则初始打击"
                     }
                 },
                 "HangInThere": {
@@ -10022,10 +10082,10 @@
                     }
                 },
                 "CommUnit": {
-                    "Flashlight": "Comm Unit — Flashlight"
+                    "Flashlight": "通讯单元 — 手电筒"
                 },
                 "Flashlight": {
-                    "Lit": "Flashlight Lit"
+                    "Lit": "手电筒点亮"
                 },
                 "ForceField": {
                     "Advanced": "尝试一次@Check[flat|dc:19]检定。成功时，该重击变为普通命中。",
@@ -10034,6 +10094,9 @@
                     "Superior": "尝试一次@Check[flat|dc:18]检定。成功时，该重击变为普通命中。",
                     "Tactical": "尝试一次@Check[flat|dc:20]检定。成功时，该重击变为普通命中。",
                     "Ultimate": "尝试一次@Check[flat|dc:16]检定。成功时，该重击变为普通命中。"
+                },
+                "RevealingFlashlight": {
+                    "Lit": "手电筒点亮"
                 }
             },
             "Sarcesian": {
