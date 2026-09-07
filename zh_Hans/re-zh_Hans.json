@@ -1890,7 +1890,7 @@
                     "Label": "书之腰带"
                 },
                 "ThreePillaredYangNa": {
-                    "ToggleLabel": "Three-Pillared Yang Na — Third Blessing"
+                    "ToggleLabel": "三柱海娜 — 第三种祝福"
                 },
                 "TalentedTapShoes": {
                     "Note": "当你通过反射豁免避免伤害效果（无论成功或大成功），都可以使用一个反应动作半速行走。"
@@ -2110,7 +2110,7 @@
                 "BattleLute": "双手使用战斗鲁特琴",
                 "Broom": "双手使用扫帚",
                 "OrcSkewermaul": "双手使用兽人矛锤",
-                "Tuskblade": "Use Tuskblade Two-Handed",
+                "Tuskblade": "双手使用牙刀",
                 "MusketStaff": "双手使用滑膛法杖"
             },
             "WellspringMage": {
@@ -2409,14 +2409,14 @@
                 }
             },
             "TOTMToggle": {
-                "FirstRangeIncrement": "需求目标位于第一射程增量内的能力正在生效。",
-                "Vampire": "需求目标是吸血鬼的能力正在生效",
+                "FirstRangeIncrement": "启用需求目标处于第一射程增量内的能力。",
+                "Vampire": "启用需求目标是吸血鬼的能力",
                 "FlatFooted": "需求目标措手不及的能力正在生效",
-                "Undead": "需求目标是不死生物的能力正在生效",
+                "Undead": "启用需求目标是不死生物的能力",
                 "Incorporeal": "启用需求目标为虚体的能力",
-                "OffGuard": "需求目标处于措手不及的能力正在生效",
-                "Prone": "启用需求目标状态为倒地的能力",
-                "Frightened": "Enable abilities that require a frightened target"
+                "OffGuard": "启用需求目标陷入措手不及的能力",
+                "Prone": "启用需求目标陷入倒地的能力",
+                "Frightened": "启用需求目标陷入惊惧的能力"
             },
             "Wizard": {
                 "ArcaneSchool": {
@@ -3434,22 +3434,22 @@
                     "SproutFruitPlentiful": "发芽果实：丰富",
                     "SproutFruitPotent": "发芽果实：强大",
                     "DefensiveGrowthExplodingShield": "防御性生长：爆炸盾牌",
-                    "BorrowedAbilityBorrowDefense": "Borrowed Ability: Borrow Defense",
-                    "BorrowedAbilityLingeringLink": "Borrowed Ability: Lingering Link",
-                    "DrainingTouchClumsyTouch": "Draining Touch: Clumsy Touch",
-                    "DrainingTouchDrainSpirit": "Draining Touch: Drain Spirit",
-                    "FeedTheVoidFeedOnHeat": "Feed the Void: Feed on Heat and Light",
-                    "LightspeedAssaultFlankingAssault": "Lightspeed Assault: Flanking Assault",
-                    "UnstableGearshiftBlur": "Unstable Gearshift: Blur",
-                    "UnstableGearshiftPhaseOut": "Unstable Gearshift: Phase Out",
-                    "FeedTheVoidFeedOnSpirit": "Feed the Void: Feed on Spirit",
-                    "KineticDampeningSafeHaven": "Kinetic Dampening: Safe Haven",
-                    "KineticDampeningWavelengthExpansion": "Kinetic Dampening: Wavelength Expansion",
-                    "LightspeedAssaultTeleport": "Lightspeed Assault: Teleport",
-                    "OverclockSensesFocus": "Overclock Senses: Focus",
-                    "OverclockSensesReact": "Overclock Senses: React",
-                    "SonicDashSlipstream": "Sonic Dash: Slipstream",
-                    "SonicDashSonicBoom": "Sonic Dash: Sonic Boom"
+                    "BorrowedAbilityBorrowDefense": "借取能力：借取防御",
+                    "BorrowedAbilityLingeringLink": "借取能力：持久联结",
+                    "DrainingTouchClumsyTouch": "汲取之触：笨拙之触",
+                    "DrainingTouchDrainSpirit": "汲取之触：汲取精魂",
+                    "FeedTheVoidFeedOnHeat": "饱饲虚空：吞噬热量与光线",
+                    "LightspeedAssaultFlankingAssault": "光速突袭：夹击突袭",
+                    "UnstableGearshiftBlur": "不稳换挡：模糊",
+                    "UnstableGearshiftPhaseOut": "不稳换挡：相位移动",
+                    "FeedTheVoidFeedOnSpirit": "饱饲虚空：吞噬精魂",
+                    "KineticDampeningSafeHaven": "动能抑制：安全庇护所",
+                    "KineticDampeningWavelengthExpansion": "动能抑制：波长拓展",
+                    "LightspeedAssaultTeleport": "光速突袭：传送",
+                    "OverclockSensesFocus": "超频感官：专注",
+                    "OverclockSensesReact": "超频感官：反应",
+                    "SonicDashSlipstream": "音速冲刺：气流",
+                    "SonicDashSonicBoom": "音速冲刺：音爆"
                 },
                 "TitanSwing": {
                     "NoteFifteenFeet": "目标被推离15尺。",
@@ -4080,10 +4080,10 @@
                 "Voyaging": "远航之梦"
             },
             "UntamedShift": {
-                "UntamedClaws": "无羁利爪 Untamed Claws",
-                "UntamedJaws": "无羁颚咬 Untamed Jaws",
-                "Wings": "双翼 Wings",
-                "LongVines": "长藤 Long Vines",
+                "UntamedClaws": "无羁利爪",
+                "UntamedJaws": "无羁颚咬",
+                "Wings": "双翼",
+                "LongVines": "长藤",
                 "Prompt": "选择一种变形。",
                 "ElementalMatter": "元素之形",
                 "PromptTwo": "选择第二种变形。",
@@ -4924,7 +4924,7 @@
                     },
                     "summoner": {
                         "PartTwo": "在你提升等级的时候也会扩充法术库。每当你获得一个法术位，你可以将一个同环级法术加入法术库。在2级时，你选择另一个1环法术；在3级时，你选择第一个2环法术，在4级时，你获得你的第二个2环法术，以此类推。当你添加法术时，你可以添加已有法术的高级版本，这样你就可以施展这个法术的升阶版本。",
-                        "PartThree": "尽管获取速度相同，但你的法术位与法术库中的法术是彼此独立的。如果某专长或其它能力将法术加入你的法术库中，它并不会同时赋予你对应的法术位，反之亦然。",
+                        "PartThree": "尽管获取速度相同，但你的法术位与法术库中的法术是彼此独立的。如果某专长或其它能力将法术加入你的法术库中，它并不会同时赋予你对应的法术位，反之亦然",
                         "SpellSwapping": "当你在法术库中获得新的法术时，你可能会想要替换之前学习的一些法术。每次你获得新的等级学习新的法术时，你可以将一个旧法术置换为一个同一环级的不同法术。被替换的法术可以是戏法，但你不能替换灵渠法术。你也可以通过休整期重训来替换法术。",
                         "PartOne": "你可以施展的法术集合被称为你的法术库。1级时，你学会1个你所选择的1环级法术和5个戏法。你从幻灵相关根源中选择常见法术，或从该根源中选择你能够接触到的其他法术。你能够花费一个合适环级的法术位施展法术库中的法术。"
                     },
@@ -5891,7 +5891,7 @@
                 }
             },
             "HumanoidForm": {
-                "RollOptionLabel": "Human Form — Pass as Humanoid"
+                "RollOptionLabel": "人类形态 — 假扮类人族裔"
             },
             "Jotunborn": {
                 "IivlarsBoundaryBreak": {
@@ -5951,7 +5951,7 @@
             },
             "UlfenGuard": {
                 "GuardsFury": {
-                    "ToggleLabel": "卫士狂怒 - 与指定盟友相邻"
+                    "ToggleLabel": "卫士狂怒 — 与指定盟友相邻"
                 }
             },
             "TriangularTeeth": {
@@ -6313,7 +6313,7 @@
             "SpecialStatistic": "特殊统计",
             "TokenMark": "指示物标记",
             "DamageAlteration": "改变伤害",
-            "EffectSpinoff": "Effect Spinoff",
+            "EffectSpinoff": "效果衍生",
             "CraftingAbility": "工艺能力",
             "SpecialResource": "特殊资源"
         },
@@ -7554,7 +7554,7 @@
             },
             "Warmonger": {
                 "SightPrey": {
-                    "Note": "Each time the warmonger hits the marked creature with a ranged Strike, the creature takes a –10-foot penalty to its Speeds for 1 minute and falls 20 feet if it's flying. @UUID[Compendium.pf2e.bestiary-effects.Item.WK55ybwI2Tn5OW5x]{Effect: Sight Prey (Speed Penalty)}"
+                    "Note": "每次战争贩子用远程打击命中被选为目标的生物，该生物的速度承受-10尺减值，持续1分钟，且如果正在飞行，则会坠落20尺。@UUID[Compendium.pf2e.bestiary-effects.Item.WK55ybwI2Tn5OW5x]"
                 }
             },
             "Inizkar": {
@@ -7564,7 +7564,7 @@
             },
             "ToothFairy": {
                 "ToothTug": {
-                    "Note": "You must succeed at a @Check[flat|dc:5|showDC:all] to Cast a Spell unless that spell has the subtle trait."
+                    "Note": "你在施法时必须成功通过一次@Check[flat|dc:5|showDC:all]，除非该法术具有晦匿特征。"
                 }
             },
             "IruxiMaskedMummer": {
@@ -7657,7 +7657,7 @@
             },
             "Tallusian": {
                 "Rubble": {
-                    "RollOptionLabel": "Tallusian is hiding in ruins"
+                    "RollOptionLabel": "塔砾兽藏身在废墟中"
                 }
             },
             "Troop": {
@@ -7675,7 +7675,7 @@
                 }
             },
             "TongueOfFlame": {
-                "DescriptionAddendum": "When the despot casts <em>charm</em>, <em>diabolic edict</em>, <em>enthrall</em>, or <em>floating flame</em>, either a target takes @Damage[(@item.rank)[fire]] damage, or the despot gains a +2 status bonus to Deception checks for 1 round."
+                "DescriptionAddendum": "当暴君施放<em>魅惑术</em>，<em>魔鬼律令</em>，<em>注目术</em>或<em>浮焰法球</em>时，要么一个目标受到@Damage[(@item.rank)[fire]]伤害，要么暴君在欺骗检定上获得+2状态加值，持续1轮。"
             },
             "KeepUpWithMe": {
                 "RollOptionLabel": "跟上我！—增加一项能力的DC"
@@ -7752,7 +7752,7 @@
                 }
             },
             "IllcaynaAlonnor": {
-                "ReapersSigh": "Illcayna was Critically Hit by a Slashing Weapon"
+                "ReapersSigh": "伊尔凯娜被挥砍武器重击"
             },
             "Nasurgeth": {
                 "MidnightDepths": {
@@ -10079,7 +10079,7 @@
             },
             "Envoy": {
                 "CutEmDeep": {
-                    "Note": "When you successfully Demoralize the target of your @UUID[Compendium.sf2e.actions.Item.cmCtfURzpbzkxWsy]{Get 'Em!}, the target doesn't become immune to your further attempts to Demoralize them."
+                    "Note": "当你成功对你@UUID[Compendium.sf2e.actions.Item.cmCtfURzpbzkxWsy]的目标挫败士气时，目标不会免疫于你后续对其尝试的挫败士气。"
                 },
                 "Directive": {
                     "LeadByExample": {
@@ -10088,7 +10088,7 @@
                     }
                 },
                 "EffortlessInfluencer": {
-                    "Note": "<p>When you succeed at a check with Deception, Diplomacy, or Intimidation, allies within 60 feet who witnessed your success gain a +1 status bonus to the next check they attempt with that skill within 1 minute (or a +2 bonus if your check was a critical success).</p><p>@UUID[Compendium.sf2e.feat-effects.Item.ZQM4vfHEKgxvNJik]{Effect: Effortless Influencer}</p>"
+                    "Note": "<p>当你在欺骗、交涉或威吓检定上成功时，在1分钟内，60尺范围内目睹你成功的盟友在下次尝试该技能检定时获得+1状态加值（若你的检定大成功，则为+2加值）。</p><p>@UUID[Compendium.sf2e.feat-effects.Item.ZQM4vfHEKgxvNJik]</p>"
                 },
                 "GetEm": {
                     "LeadByExample": {
@@ -10096,34 +10096,34 @@
                     }
                 },
                 "HangInThere": {
-                    "CriticalSuccess": "The target gains temporary Hit Points equal to double their level plus your Charisma modifier. @UUID[Compendium.sf2e.feat-effects.Item.B4JhFkbk5WHmWcOZ]{Effect: Hang In There!}",
-                    "Prompt": "What proficiency DC was used?",
-                    "Success": "The target gains temporary Hit Points their level plus your Charisma modifier. @UUID[Compendium.sf2e.feat-effects.Item.B4JhFkbk5WHmWcOZ]{Effect: Hang In There!}"
+                    "CriticalSuccess": "目标获得等同于其两倍等级外加你的魅力调整值的临时生命值。@UUID[Compendium.sf2e.feat-effects.Item.B4JhFkbk5WHmWcOZ]",
+                    "Prompt": "使用的熟练度DC为？",
+                    "Success": "目标获得等同于其等级外加你的魅力调整值的临时生命值。@UUID[Compendium.sf2e.feat-effects.Item.B4JhFkbk5WHmWcOZ]"
                 },
                 "HiddenAgenda": {
-                    "ToggleLabel": "Save against thought-or-emotion-revealing effect"
+                    "ToggleLabel": "对抗揭示想法或情绪的效果的豁免"
                 },
                 "LeadershipStyle": {
-                    "Prompt": "Select a leadership style."
+                    "Prompt": "选择一种领导风格。"
                 },
                 "PardonMe": {
-                    "Note": "When you successfully Tumble Through using Deception, the foe whose space you passed through is @UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{Suppressed} until the end of its next turn."
+                    "Note": "当你成功使用欺骗进行翻滚时，被你穿过空间的敌人陷入@UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]，直到其下个回合结束。"
                 },
                 "SavvyInfluencer": {
-                    "Note": "<p>The first time per day when you roll a natural 1 on a Deception, Diplomacy, or Intimidation check, you don't automatically reduce your degree of success (you get a critical failure only if your result is 10 lower than the DC).</p>"
+                    "Note": "<p>你每日第一次在欺骗、交涉或威吓检定中掷出自然1时，不会自动降低成功度（只有当结果比DC低10时才会获得大失败）。</p>"
                 },
                 "SmoothDiversions": {
-                    "Failure": "Creatures only become aware you were trying to trick them if you critically fail to Create a Diversion. Otherwise the creature assumes that your diversion was part of your regular bravado.",
-                    "Success": "When you succeed at an attempt to @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion}, you can immediately @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} or Step as a free action."
+                    "Failure": "只有当你的分神大失败时，生物才会意识到你在试图愚弄他们。否则，生物会认为你的分神只是你平时虚张声势的一部分。",
+                    "Success": "当你尝试@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]成功时，你可以立即用自由动作进行@UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]或快步。"
                 },
                 "TakeEmAlive": {
-                    "ToggleLabel": "Take 'Em Alive — Add charisma to Strike damage"
+                    "ToggleLabel": "抓活的！ — 打击伤害添加魅力调整值"
                 }
             },
             "Equipment": {
                 "Augmentations": {
                     "VenomSpur": {
-                        "Label": "Venom Spur"
+                        "Label": "毒刺"
                     }
                 },
                 "CommUnit": {
@@ -10164,7 +10164,11 @@
                     "Photon": {
                         "Note": {
                             "Commercial": "当你在与光量子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:23]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，持续1轮。"
-                        }
+                        },
+                        "Title": "光量子恒星武士水晶"
+                    },
+                    "WeaponPotency": {
+                        "Label": "武器潜能"
                     }
                 },
                 "Upgrades": {
@@ -10207,15 +10211,34 @@
                         },
                         "ShockModule": {
                             "LabelCommercial": "商用型电击模块",
-                            "LabelTactical": "战术型电击模块"
+                            "LabelTactical": "战术型电击模块",
+                            "CriticalNote": "重击时，电流会弧射而出，对目标10尺范围内你选择的另外两个生物造成等量的电击伤害。"
+                        },
+                        "Silencer": {
+                            "LabelTactical": "战术型消音器",
+                            "CriticalNoteTactical": "当打击造成重击时，目标将陷入失声状态：无法发动声波攻击，亦不能使用具备听觉特征的动作。由于施法所需的咒语吟诵与声响被阻断，目标同样无法施展法术，晦匿法术除外。目标可以通过一次成功的@Check[will|dc:27]豁免抵抗消音器的效果。"
                         }
                     }
+                },
+                "StunStick": {
+                    "AdvancedNote": "命中时，你改为造成电击伤害而非钝击伤害，且目标必须成功通过一次@Check[fortitude|dc:20]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，持续1轮；这是一个失能效果。",
+                    "EliteNote": "命中时，你改为造成电击伤害而非钝击伤害，且目标必须成功通过一次@Check[fortitude|dc:31]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，持续1轮；这是一个失能效果。",
+                    "ShortSharpShock": "短促电击",
+                    "SuperiorNote": "命中时，你改为造成电击伤害而非钝击伤害，且目标必须成功通过一次@Check[fortitude|dc:28]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，持续1轮；这是一个失能效果。",
+                    "UltimateNote": "命中时，你改为造成电击伤害而非钝击伤害，且目标必须成功通过一次@Check[fortitude|dc:36]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，持续1轮；这是一个失能效果。",
+                    "ParagonNote": "命中时，你改为造成电击伤害而非钝击伤害，且目标必须成功通过一次@Check[fortitude|dc:40]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，持续1轮；这是一个失能效果。"
+                },
+                "UltralightWings": {
+                    "WingsDeployed": "轻量化翅膀 — 翅膀已展开"
                 }
             },
             "Sarcesian": {
                 "WeaponFamiliarity": {
                     "AdvancedWeapons": "进阶萨瑟蝶人武器",
                     "MartialWeapons": "军用萨瑟蝶人武器"
+                },
+                "CoronalFlare": {
+                    "Note": "日冕火花"
                 }
             },
             "Shobhad": {
@@ -10234,6 +10257,293 @@
                 "WeaponFamiliarity": {
                     "AdvancedWeapons": "进阶卡萨斯人武器",
                     "MartialWeapons": "军用卡萨斯人武器"
+                },
+                "IgnoreRadiation": {
+                    "Poison": "辐射钝感（毒素）",
+                    "Radiation": "辐射钝感（辐射）"
+                }
+            },
+            "Gnarefuroid": {
+                "HullborneGnarefuroid": {
+                    "Carapace": "船体共生拾荒蜗族甲壳"
+                }
+            },
+            "Hellknight": {
+                "Order": {
+                    "Chain": "锁链",
+                    "Crucible": "熔炉",
+                    "Eclipse": "日蚀",
+                    "Pyre": "焚烧"
+                },
+                "Prompt": "选择一个地狱骑士团"
+            },
+            "Ikeshti": {
+                "PersistentTactics": {
+                    "PuffUp": "膨胀",
+                    "ShedSkin": "蜕皮",
+                    "SquirtBlood": "喷射血液"
+                },
+                "ScrappersIngenuity": {
+                    "Prompt": "该装置等级是否高于你？"
+                }
+            },
+            "Kalo": {
+                "ArcticBite": {
+                    "Note": "无视目标数值等同于你等级的寒冷抗力。生物的免疫不受影响。"
+                },
+                "ElectricKalo": {
+                    "Alteration": "如果你只对1个目标施放此法术，你获得等同于你等级一半的电击抗力（最低1点），直到你的下个回合结束。"
+                },
+                "EnhancedEcholocation": {
+                    "FocusSenses": "专注感知"
+                },
+                "GelidBite": {
+                    "Note": "重击时，目标还会陷入@UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]，直到你的下个回合结束。除非它成功通过一次@Check[fortitude|against:class-spell]豁免，对抗你职业DC或法术DC中的较高者。"
+                },
+                "SilentTide": {
+                    "ImprovedSneak": "寂静潮汐 — 游泳时潜行加值"
+                }
+            },
+            "Khizar": {
+                "MultiStemmed": {
+                    "Prompt": "选择一项奇植族传承。"
+                }
+            },
+            "MartialProficiency": {
+                "AdvancedGuns": "进阶枪械",
+                "MartialAndSimpleGuns": "军用 & 简易枪械",
+                "SimpleGuns": "简易枪械"
+            },
+            "Mystic": {
+                "Connection": {
+                    "Akashic": {
+                        "AdvancedEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.z0Spgrf92nmaqjCW]顿悟法术。",
+                        "GreaterEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.CjVOXjuvvTJqC7AD]顿悟法术。",
+                        "Harmony": "当你转移命能时，目标会从阿卡西记录中接收到一份下载好的心灵资料，并可以立即用反应动作尝试@UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]。这不会触发任何会在生物使用回忆知识时触发的特殊能力、反应动作或自由动作。",
+                        "InitialEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.mAu69GVbFKYzQM5a]顿悟法术。",
+                        "PerfectHarmony": "你创建一个超维度记忆宫殿，其效果如同@UUID[Compendium.pf2e.spells-srd.Item.vPWMEyVTreMOoFnm]。创造进入半位面的门需要1分钟。记忆宫殿在你每次进入时都将保持相同布局，可以在每日准备时进行调整。记忆宫殿中的每个魅影仆役功能如同阿卡西助手般运作（如同由阿卡西助手顿悟法术创造出的）。"
+                    },
+                    "Elemental": {
+                        "AdvancedEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.5apI8Yamauo02VYR]顿悟法术。",
+                        "ElementalBarrier": {
+                            "Air": "抵抗电击或音波伤害",
+                            "Earth": "抵抗钝击或穿刺伤害",
+                            "Fire": "抵抗火焰伤害",
+                            "Metal": "抵抗酸蚀或挥砍伤害",
+                            "Water": "抵抗寒冷伤害",
+                            "Wood": "抵抗毒素伤害"
+                        },
+                        "GreaterEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.DZOjyZBZUrzkw5q2]顿悟法术。",
+                        "Harmony": {
+                            "Addendum": "当你转移命能时，选择一种元素特征：气、土、火、金、水或木。如果你有一个或多个元素顿悟法术正在生效，作为施法的一部分，你必须选择一种元素特征。直到其下个回合结束，目标的下一次打击造成基于所选特征（由你选择）的伤害，而非其通常的伤害类型：气为电击或音波，土为钝击或穿刺，金为酸蚀或挥砍，火为火焰，水为钝击或寒冷，木为穿刺或毒素。"
+                        },
+                        "InitialEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.d5dmu4HZ3YyrwcaF]顿悟法术。",
+                        "PerfectHarmony": {
+                            "Addendum": "当你使用转移命能治疗一个纽带中的盟友时，你的盟友获得你每日准备期间所选两种伤害类型的，数值等同于你等级一半的抗力，直到你的下个回合结束。",
+                            "LabelOne": "完美协调抗力",
+                            "PerfectHarmonyLabelTwo": "第二种完美协调抗力"
+                        }
+                    },
+                    "Healing": {
+                        "AdvancedEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.zzi7LUKxKNWr5GsG]顿悟法术。",
+                        "GreaterEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.MTulATAiOZfZNQ9d]顿悟法术。",
+                        "Harmony": {
+                            "Addendum": "当你转移命能时，尝试反制一个正影响目标的苦难，或尝试反制目标身上一个由你选择的导致下列状态的效果：@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]，@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]，@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]，@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]，@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]。"
+                        },
+                        "InitialEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.d7Mj4nUQe8wg1mV7]顿悟法术。",
+                        "PerfectHarmony": {
+                            "AddendumCounteract": "此外，如果你没能反制效果，但如果其反制环级低2环时你就能反制成功，则改为压制该效果，直到你的下个回合开始。效果的持续时间在被压制期间不会减少。",
+                            "AddendumExpanded": "当你转移命能时，尝试反制一个正影响目标的苦难，或尝试反制目标身上一个由你选择的导致下列状态的效果：@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]，@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]，@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]，@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]，@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]，@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]，@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]，@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]和@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]。"
+                        }
+                    },
+                    "Prompt": "选择一种联结。",
+                    "Rhythm": {
+                        "AdvancedEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.AlYzxLKWZujnzsjJ]顿悟法术。",
+                        "GreaterEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.Ii8adgcCejAovsNv]顿悟法术。",
+                        "Harmony": {
+                            "Addendum": "当你转移命能时，你可以使任意生效中的，来自韵律联结的顿悟法术，其持续时间延长1轮。"
+                        },
+                        "InitialEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.smCC1LNhMb7Z1lrU]顿悟法术。",
+                        "PerfectHarmony": {
+                            "Addendum": "你每轮首次转移命能时，恢复生命值的目标可以用一个自由动作行走。该动作具有穿梭特征。"
+                        }
+                    },
+                    "Shadow": {
+                        "AdvancedEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.rluzzX2ml4yFWnYw]顿悟法术。",
+                        "GreaterEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.pgjlPNfXCpEYyLVu]顿悟法术。",
+                        "InitialEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.uh9Br4yrKvJA6zq0]顿悟法术。"
+                    }
+                },
+                "Harmony": {
+                    "Label": "协调",
+                    "PerfectLabel": "完美协调"
+                },
+                "HarmonyLabel": "协调",
+                "PerfectHarmonyLabel": "完美协调",
+                "XenodruidBond": {
+                    "Order": {
+                        "Animal": "动物教派",
+                        "Elemental": "元素教派",
+                        "Plant": "植物教派",
+                        "Viral": "病毒教派"
+                    },
+                    "Prompt": "选择一种纽带"
+                },
+                "WasteNot": {
+                    "Addendum": "你的命能网络获得@Damage[(2*@item.rank)[healing]]点生命值。"
+                },
+                "WildBond": {
+                    "Burrow": "15尺掘地速度",
+                    "Climb": "20尺攀爬速度",
+                    "Fly": "20尺飞行速度",
+                    "Swim": "25尺游泳速度",
+                    "Land": "40尺速度"
+                }
+            },
+            "Operative": {
+                "Proficiency": {
+                    "SimpleGuns": "简易枪械",
+                    "AdvancedGuns": "进阶枪械",
+                    "MartialAndSimpleGuns": "军用和简易枪械",
+                    "OneHandedAgileWeapons": "单手灵巧武器"
+                },
+                "Aim": {
+                    "CoverToggle": "瞄准 — 降低目标掩蔽的加值"
+                },
+                "DangerAwareness": {
+                    "ToggleLabel": "险境感知 — 察觉获得加值"
+                },
+                "DefensiveGunner": {
+                    "ToggleLabel": "防御式射手 — 枪械已具有格挡特征。"
+                },
+                "EnhancedExploit": {
+                    "Label": "进阶秘技"
+                },
+                "Specialization": {
+                    "Prompt": "选择一项特工专精。",
+                    "Sniper": {
+                        "EnhancedExploit": {
+                            "ToggleLabel": "进阶秘技 — 对标靶的首次远程打击"
+                        }
+                    }
+                }
+            },
+            "Soldier": {
+                "IntimidatingTaunt": {
+                    "Label": "威吓嘲讽",
+                    "ToggleLabel": "威吓嘲讽 — 降低豁免DC"
+                },
+                "FightingStyle": {
+                    "Prompt": "选择一种战斗风格。"
+                }
+            },
+            "Prompt": {
+                "BiotechAugmentation": "选择一种生物科技殖装。",
+                "SolarianWeapon": "选择一种恒星武器。"
+            },
+            "SkillFeat": {
+                "FaceInTheCrowd": {
+                    "CrowdSize": {
+                        "Five": "至少5个生物",
+                        "Ten": "至少10个生物",
+                        "Hundred": "至少100个生物"
+                    },
+                    "Prompt": "选择人群规模。"
+                }
+            },
+            "Nuar": {
+                "ThoughtPiercingHorns": {
+                    "Note": "目标还会陷入@UUID[Compendium.sf2e.conditions.Item.Stupefied]{呆滞 Stupefied 2}，直到你的下个回合开始。"
+                }
+            },
+            "Promession": {
+                "Note": "目标的强韧豁免结果降低一级成功度。 @UUID[Compendium.sf2e.spell-effects.Item.Mjzoqg7MpTst3koD]"
+            },
+            "Solarian": {
+                "AttunedWards": {
+                    "GravitonNote": "生物陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]，持续1轮。如果这是本回合第二次命中你，则提升至@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。",
+                    "Label": "调谐结界"
+                },
+                "Attunement": {
+                    "Graviton": "引力子",
+                    "Label": "当前调谐",
+                    "Photon": "光量子",
+                    "Unattuned": "未调谐"
+                },
+                "StellarAttunement": {
+                    "Unattuned": "未调谐",
+                    "Graviton": "引力子调谐",
+                    "Photon": "光量子调谐"
+                },
+                "CosmicInfusion": {
+                    "PhotonToggle": "寰宇注能 — 造成命能伤害"
+                },
+                "HomingMote": {
+                    "Note": "你无视目标的隐蔽。"
+                },
+                "NimbusSurge": {
+                    "GravitonNote": "如果此次打击造成重击，目标必须成功通过一次@Check[fortitude|against:solarian]豁免，对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，直到其回合结束。",
+                    "PhotonNote": "如果此次打击造成重击，目标必须成功通过一次@Check[fortitude|against:solarian]豁免，对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到其回合结束。"
+                },
+                "SolarFlare": {
+                    "Label": "恒星耀斑"
+                },
+                "SolarShield": {
+                    "Label": "恒星护盾"
+                },
+                "SolarWeapon": {
+                    "Label": "恒星武器",
+                    "GravitonAttuned": {
+                        "Label": "引力子调谐"
+                    },
+                    "PhotonAttuned": {
+                        "Label": "光量子调谐"
+                    },
+                    "TwinLabel": "双生恒星武器",
+                    "TwoHandToggle": {
+                        "Label": "恒星武器 — 双手使用",
+                        "TwinLabel": "双生恒星武器 — 双手使用"
+                    }
+                },
+                "StellarParagon": {
+                    "ProficiencyLabel": "恒星耀斑 & 恒星武器"
+                }
+            },
+            "Vlaka": {
+                "MenacingSnarl": {
+                    "Label": "因威胁咆哮陷入惊惧的目标"
+                },
+                "RuinDelver": {
+                    "AgainstHazards": "废墟探索者 — 对抗危害"
+                },
+                "SensoryDiversity": {
+                    "Blind": "目盲",
+                    "Deaf": "耳聋",
+                    "Deafblind": "又瞎又聋",
+                    "HearingSighted": "耳聪/目明"
+                },
+                "TalentedTracker": {
+                    "TrackByScent": "追迹天才 — 通过灵敏嗅觉追踪"
+                }
+            },
+            "Witchwarper": {
+                "QuantumAnalysis": {
+                    "Label": "量子分析",
+                    "FortuneToggleLabel": "量子分析 — 攻击量子场域内的敌人"
+                },
+                "Anchor": {
+                    "Prompt": "选择一个锚点。"
+                },
+                "Paradox": {
+                    "Prompt": "选择一种悖论。"
+                },
+                "AnchoringStrike": {
+                    "Success": "这次打击获得锚定特征。"
+                }
+            },
+            "XenometricAndroid": {
+                "HomebrewedCore": {
+                    "Prompt": "选择以下其中一项"
                 }
             }
         },
