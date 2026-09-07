@@ -921,7 +921,7 @@
                     "tempweave": "保温织服",
                     "thinplate": "薄板甲",
                     "veskarium-imperial-plate": "维斯卡里姆帝国板甲",
-                    "estex-suit": "Estex Suit"
+                    "estex-suit": "埃斯特克斯服装"
                 },
                 "Category": {
                     "light-barding": "轻型坐骑护甲",
@@ -2689,7 +2689,7 @@
                         "InfraredVision": "红外线视觉",
                         "Magicsense": "魔法感知",
                         "Bloodsense": "血液感知",
-                        "ElectromagneticSense": "Electromagnetic Sense"
+                        "ElectromagneticSense": "电磁感知"
                     },
                     "Label": "感官",
                     "RangeLabel": "距离",
@@ -9029,7 +9029,7 @@
         "TraitDescriptionCertainKill": "The Lightkeeper can use a Certain Kill Art as long as they are within the Glass Lighthouse—these abilities, which have the certain kill trait, cause obvious distortions in the Lighthouse's fabric as the user calls upon their technique. However, as each technique requires one of the Lightkeepers to temporarily take command of the demiplane from the rest of their team, only one Certain Kill Art can be used by any of the Lightkeepers in a given round.",
         "TraitAnalog": "非电子",
         "TraitDescriptionAnalog": "此类武器摒弃了先进电子设备、计算机系统和电力能源，完全采用最新尖端技术与现代材料制造校准。此类武器免疫针对科技装备的特殊能力，且除非同时具备古早特征，否则无法蚀刻符文。",
-        "TraitDescriptionAsura": "These lawful fiends are physical manifestations of divine accidents. Asuras typically have darkvision, immunity to curses, and a weakness to good.",
+        "TraitDescriptionAsura": "这些魔族是神明失误的实体具象。阿修罗通常拥有黑暗视觉，免疫诅咒，并且具有圣洁弱点。",
         "TraitDescriptionCharauKa": "查咯猿人是形似山魈的类人生物，皆为凶残的战士。许多查咯猿人栖居于乌萨罗。",
         "TraitDescriptionDiv": "Divs are a family of fiends spawned from the spirits of evil genies within the desolation of Abaddon. Most divs are neutral evil. They typically have greater darkvision and weakness to cold iron and good damage.",
         "TraitDescriptionDream": "这些梦境维度的原住民具有多样的能力，不过那些与名为冷原的噩梦领域有关的生物通常是邪秽的，且他们会免疫此领域的极端低温。",
@@ -9121,7 +9121,7 @@
             },
             "Aborted": "{user}已结束交易：没有物品被交易。"
         },
-        "TraitDescriptionMorlock": "Morlocks are a family of pale, underground-dwelling humanoids who, generations ago, were regular humans.\n摩洛克是苍白的类人生物种族，栖息于地下。数代之前，他们原本是普通的人类。",
+        "TraitDescriptionMorlock": "摩洛克是一类肤色苍白，栖息于地下的类人生物。数代之前，他们本只是普通的人类。",
         "TraitDescriptionMunavri": "Amicable humanoids living in the Darklands, munavris have powerful telekinetic and psychic abilities.",
         "TraitDescriptionSeaDevil": "Evil ocean-dwelling humanoids, sea devils usually have darkvision and wavesense.",
         "TraitDescriptionVelstrac": "A family of fiends from the Shadow Plane that are associated with pain and agony. All velstracs possess some form of disturbing gaze.",
