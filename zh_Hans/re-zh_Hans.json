@@ -10153,17 +10153,18 @@
                     },
                     "Graviton": {
                         "Note": {
-                            "Commercial": "当你在与引力子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:23]豁免，否则陷入 @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续至你下回合结束。",
+                            "Commercial": "当你处于引力子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:23]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，直到你的下个回合结束。",
                             "Tactical": {
-                                "CriticalHit": "当你在引力子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:31]检定，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续2轮。",
-                                "Hit": "当你在与引力子调谐时用恒星武器命中一名@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]或被压制的生物，目标必须成功通过@Check[type:fortitude|dc:31]检定，否则受击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
+                                "CriticalHit": "当你处于引力子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:31]检定，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续2轮。",
+                                "Hit": "当你处于引力子调谐时用恒星武器命中一名@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]或被压制的生物，目标必须成功通过@Check[type:fortitude|dc:31]检定，否则受击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。"
                             }
                         },
                         "Title": "引力子恒星武士水晶"
                     },
                     "Photon": {
                         "Note": {
-                            "Commercial": "当你在与光量子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:23]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，持续1轮。"
+                            "Commercial": "当你处于光量子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:23]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，持续1轮。",
+                            "Tactical": "当你处于光量子调谐时重击，目标必须成功通过@Check[type:fortitude|dc:31]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]，持续2轮。"
                         },
                         "Title": "光量子恒星武士水晶"
                     },
@@ -10239,6 +10240,12 @@
                 },
                 "CoronalFlare": {
                     "Note": "日冕火花"
+                },
+                "UndeadSlayer": {
+                    "Note": "当你对能看见的不死生物的回忆知识检定取得成功或大成功时，你能够识破它防御上的弱点——1分钟内，你对该特定生物的所有攻击均可获得对应武器与无武装攻击的重击专精效果。"
+                },
+                "WillfulDefiance": {
+                    "Label": "傲然抗命所宣言对抗的目标"
                 }
             },
             "Shobhad": {
@@ -10371,7 +10378,13 @@
                     "Shadow": {
                         "AdvancedEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.rluzzX2ml4yFWnYw]顿悟法术。",
                         "GreaterEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.pgjlPNfXCpEYyLVu]顿悟法术。",
-                        "InitialEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.uh9Br4yrKvJA6zq0]顿悟法术。"
+                        "InitialEpiphany": "你习得@UUID[Compendium.sf2e.spells.Item.uh9Br4yrKvJA6zq0]顿悟法术。",
+                        "Harmony": {
+                            "Addendum": "当你转移命能时，目标的阴影会变暗并膨胀，将目标周围@Template[type:emanation|distance:10]范围内的明亮光照减弱为昏暗光照。这是一种魔法黑暗，可以压制非魔法光亮或尝试反制魔法光亮。目标在这种昏暗光照下将变为@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，并可以使用此隐蔽状态进行@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]。这会持续到你的下个回合结束。"
+                        },
+                        "PerfectHarmony": {
+                            "Addendum": "当你转移命能时，目标在其下个回合结束前可以使用一次@UUID[Compendium.sf2e.actions.Item.u9NU2bULHg3S5FaP]动作。"
+                        }
                     }
                 },
                 "Harmony": {
@@ -10423,7 +10436,14 @@
                     "Prompt": "选择一项特工专精。",
                     "Sniper": {
                         "EnhancedExploit": {
-                            "ToggleLabel": "进阶秘技 — 对标靶的首次远程打击"
+                            "ToggleLabel": "进阶秘技 — 对标靶的首次远程打击",
+                            "Note": "若你使用狙击武器对你标靶的首次远程打击失败，你用自由动作装填你的狙击武器。该次打击不计入你的多重攻击减值。"
+                        }
+                    },
+                    "Infiltrator": {
+                        "EnhancedExploit": {
+                            "FreeActionNote": "当你用近战攻击或远程攻击对科技生物造成重击时，能够以自由动作对触发生物使用 @UUID[Compendium.sf2e.actions.Item.qbyer2woEdGXZzoR]。",
+                            "ReactionNote": "你可以在科技生物或使用科技武器的生物对你进行近战攻击大失败时，以反应动作对触发生物或武器使用@UUID[Compendium.sf2e.actions.Item.qbyer2woEdGXZzoR]。"
                         }
                     }
                 }
@@ -10431,15 +10451,31 @@
             "Soldier": {
                 "IntimidatingTaunt": {
                     "Label": "威吓嘲讽",
-                    "ToggleLabel": "威吓嘲讽 — 降低豁免DC"
+                    "ToggleLabel": "威吓嘲讽 — 降低豁免DC",
+                    "SuccessAddendum": "只有该生物采取的第一个敌对动作受到影响。"
                 },
                 "FightingStyle": {
-                    "Prompt": "选择一种战斗风格。"
+                    "Prompt": "选择一种战斗风格。",
+                    "ActionHero": {
+                        "AreaAddendum": "当你使用自动射击时，锥形区域的范围等同于武器的射程增量，而非一半。",
+                        "PrimaryTargetAddendum": "当使用自动射击时，你可以指定在锥形区域内任何位置的目标作为主目标，而不局限于距离你最近的目标。",
+                        "RangedStrikeNote": "当你使用具有全自动特征的武器成功进行一次远程打击时，你会@UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]{压制}目标，直到你的下个回合开始。"
+                    },
+                    "ArmorStorm": {
+                        "Note": "当你成功对一名生物卸武、擒拿、移位、推撞或者摔绊时，其还会陷入@UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]，直到你的下个回合开始。"
+                    },
+                    "Bombard": {
+                        "Note": "当你使用区域武器攻击时，你可以在攻击区域中选择数量等同于你体质调整值一半的盟友。所选盟友免受你的攻击。此外，在你的区域攻击中豁免成功（但没有大成功）的敌人依然会@UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]，直到你的下个回合开始。"
+                    }
+                },
+                "SuppressingFire": {
+                    "Note": "若你进行一次具有区域特征的攻击，受影响区域内的敌人如果没有成功通过对你攻击的豁免，便会陷入@UUID[Compendium.sf2e.conditions.Item.enA7BxAjBb7ns1iF]，直到你的下个回合开始。"
                 }
             },
             "Prompt": {
                 "BiotechAugmentation": "选择一种生物科技殖装。",
-                "SolarianWeapon": "选择一种恒星武器。"
+                "SolarianWeapon": "选择一种恒星武器。",
+                "WeaponOrGrenade": "选择一种武器或手雷。"
             },
             "SkillFeat": {
                 "FaceInTheCrowd": {
@@ -10486,7 +10522,10 @@
                     "PhotonNote": "如果此次打击造成重击，目标必须成功通过一次@Check[fortitude|against:solarian]豁免，对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到其回合结束。"
                 },
                 "SolarFlare": {
-                    "Label": "恒星耀斑"
+                    "Label": "恒星耀斑",
+                    "Graviton": {
+                        "Note": "重击时，你可以尝试一次运动检定@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]目标，即便你没有空手或未与目标相邻。"
+                    }
                 },
                 "SolarShield": {
                     "Label": "恒星护盾"
@@ -10494,7 +10533,8 @@
                 "SolarWeapon": {
                     "Label": "恒星武器",
                     "GravitonAttuned": {
-                        "Label": "引力子调谐"
+                        "Label": "引力子调谐",
+                        "Note": "当你使用恒星武器成功打击一个生物时，该生物所处空间以及所有与它相邻的方格，对该生物变为困难地形，直至其下个回合结束。"
                     },
                     "PhotonAttuned": {
                         "Label": "光量子调谐"
@@ -10503,10 +10543,25 @@
                     "TwoHandToggle": {
                         "Label": "恒星武器 — 双手使用",
                         "TwinLabel": "双生恒星武器 — 双手使用"
+                    },
+                    "Graviton": {
+                        "Note": "当你使用恒星武器成功打击一个生物时，该生物所处空间以及所有与它相邻的方格，对该生物变为困难地形，直至其下个回合结束。"
                     }
                 },
                 "StellarParagon": {
                     "ProficiencyLabel": "恒星耀斑 & 恒星武器"
+                },
+                "HarmonicConvergence": {
+                    "Alteration": "当你使用一个具有失谐特征的动作时，你获得等同于你等级一半的临时生命值。"
+                },
+                "ShatteringImpact": {
+                    "GravitonNote": "命中时，目标在速度上承受-10尺状态减值，直到你的下个回合开始。@UUID[Compendium.sf2e.feat-effects.Item.Ll3uZdiSqaszP3fn]"
+                },
+                "SolarShot": {
+                    "Label": "恒星弹幕发射"
+                },
+                "StellarResilience": {
+                    "Note": "当你在对抗心灵或失能效果的强韧或意志豁免上骰出成功结果时，你可以用自由动作进行@UUID[Compendium.sf2e.actions.Item.3xDhpvORBmK6AtcI]。"
                 }
             },
             "Vlaka": {
@@ -10520,30 +10575,104 @@
                     "Blind": "目盲",
                     "Deaf": "耳聋",
                     "Deafblind": "又瞎又聋",
-                    "HearingSighted": "耳聪/目明"
+                    "HearingSighted": "耳聪/目明",
+                    "Prompt": "选择一组感官。"
                 },
                 "TalentedTracker": {
                     "TrackByScent": "追迹天才 — 通过灵敏嗅觉追踪"
+                },
+                "StarMarked": {
+                    "SheddingLight": "散发光照"
                 }
             },
             "Witchwarper": {
                 "QuantumAnalysis": {
                     "Label": "量子分析",
-                    "FortuneToggleLabel": "量子分析 — 攻击量子场域内的敌人"
+                    "FortuneToggleLabel": "量子分析 — 攻击量子场域内的敌人",
+                    "Note": "你忽略生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]或@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]所导致的纯骰检定。"
                 },
                 "Anchor": {
                     "Prompt": "选择一个锚点。"
                 },
                 "Paradox": {
-                    "Prompt": "选择一种悖论。"
+                    "Prompt": "选择一种悖论。",
+                    "Analyst": {
+                        "QuantumField": "当你@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]或@UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]时，你可以将结果应用在处于你量子场域中的两个相关生物、危害、无主物品或者效果。并且每当你维持量子场域，你就能用自由动作对你量子场域中的一个目标进行搜索或回忆知识。"
+                    },
+                    "Anomaly": {
+                        "QuantumField": "每当一名处于量子场域内的敌人尝试一个具有专注特征的动作，除非成功通过@Check[type:flat|dc:5]，否则动作会被打断。"
+                    },
+                    "GapInfluenced": {
+                        "QuantumField": "超自然的静电场遮蔽你的行踪。你对处于量子场域内的生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]。当一个处于量子场域内的生物用攻击命中你，你就会对其失去这一增益，直到你的下个回合开始。"
+                    },
+                    "Precog": {
+                        "QuantumField": "你能对周遭的时间施加些许控制，让你加快自己和他人速度，或者减缓他人的时间流动。当一个敌人在量子场域内使用移动动作，其速度会在此动作期间承受-5尺状态减值。而当你和你的盟友在量子场域内使用移动动作，你们的速度会在此动作期间获得+5尺状态加值。"
+                    }
                 },
                 "AnchoringStrike": {
-                    "Success": "这次打击获得锚定特征。"
+                    "Success": "这次打击获得锚定特征。",
+                    "CriticalSuccess": "这次打击获得锚定特征。你可以为此次打击重骰伤害骰，但你必须使用新的结果，即便它更差。"
+                },
+                "QuantumField": {
+                    "AdjacentLabel": "在你的量子场域内部或相邻处"
+                },
+                "ZoneOverlap": {
+                    "DebrisZone": "碎片划界变为高等困难地形。",
+                    "RadiantZone": "划界交叠迫使生物尝试另一次豁免检定。",
+                    "TwistedDarkZone": "暗缠划界忽略生物因之前豁免大成功而获得的临时免疫1轮。"
                 }
             },
             "XenometricAndroid": {
                 "HomebrewedCore": {
-                    "Prompt": "选择以下其中一项"
+                    "Prompt": "选择以下其中一项",
+                    "Larger": "体型大一级",
+                    "Smaller": "体型小一级",
+                    "AdditionalLimbs": "一对额外手臂"
+                }
+            },
+            "SharedAncestryFeats": {
+                "DoubleDraw": {
+                    "shobhad": {
+                        "Description": "你可以高效地在四只手臂间移动所持握的装备。你交互两次，每次取出，存放或交换你持有的物品。"
+                    }
+                }
+            },
+            "Spellshape": {
+                "BoomingBootloader": {
+                    "Alteration": "你所召唤生物的@Template[type:emanation|distance:10]范围内，所有生物受到每法术环级1d4点音波伤害（@Damage[((@item.level)d4)[sonic]]）。"
+                },
+                "DebugSpell": {
+                    "Alteration": "你为伤害掷出的任意结果低于2的骰子，其结果都会变为2。"
+                },
+                "DeleteRootAccess": {
+                    "Alteration": "将*删除术*的目标替换为\"一个构装体或科技生物\"。取代删除术的通常效果，目标@UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{被你控制}，只要它的等级不高于你等级-3。它可以尝试一次意志豁免来抵抗被你控制。如果目标已经处于其他人指挥下，进行控制的生物也要骰一次豁免检定，且构装体使用较好的结果。",
+                    "DegreeOfSuccess": {
+                        "CriticalFailure": "**大失败** 同失败，但持续时间为1小时。",
+                        "CriticalSuccess": "**大成功** 目标不受影响，且临时免疫24小时。",
+                        "Failure": "**失败** 构装体或科技生物成为被你控制的仆从。法术获得1分钟持续时间，但如果你或一名盟友攻击构装体或科技仆从，法术便会解消。",
+                        "Success": "**成功** 目标不受影响。"
+                    }
+                },
+                "GrenadeSpell": {
+                    "Alteration": "如果你的下个动作是施放具有需要反射豁免的爆发效果的法术，该法术不会立即生效，而是会被安装到你所持握的手雷中。直到你的下个回合结束，任何被该手雷的区域射击所波及的生物，还会被所安装的法术影响；生物不会对法术进行单独的反射豁免，而是使用在对抗手雷时骰出的相同结果。"
+                },
+                "HardlightIllusion": {
+                    "Alteration": "生物不能仅仅通过触摸或尝试伤害它来尝试识破你的幻术，但他们仍然可以使用@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]动作来检查它，并尝试识破你的幻术。当一个生物在用于识破幻术的察觉检定或意志豁免中成功（但不是大成功），你可以用反应动作通过尝试一次计算机检定对抗目标的察觉DC来重编程它。如果你成功，目标便未能识破幻术。"
+                },
+                "OvervoltResistor": {
+                    "Alteration": "该法术无视目标对酸蚀、寒冷、电击、火焰或音波伤害的抗力，数量等同于你等级。该效果应用于所有由此法术造成的伤害上，包含来自该法术的持续伤害以及后续效果所造成的伤害，例如火墙术所创造出的火墙。生物的免疫不受此影响。"
+                },
+                "ShatterSpell": {
+                    "Alteration": "你成功反制目标，一个由你选择的，与法术效果或魔法物品占据相同空间的生物，受到等同于1d4×目标反制环级的力场伤害，进行基础反射豁免对抗你的法术DC；如果目标具有与伤害类型（例如火焰）相对应的特征，则此效果会造成该伤害而非力场伤害。"
+                },
+                "SignalBoost": {
+                    "Alteration": "该法术的射程增加30尺。根据增加法术射程的标准，若该法术通常情况下的射程为接触， 则你将其射程增加至30尺。"
+                },
+                "SplitTunneling": {
+                    "Alteration": "你可以在法术射程内选择一个第二目标。掷单次攻击骰并将其结果与两个目标的AC进行比较。在计算你的多重攻击减值时这被视为一次攻击。对于你的第二目标，法术仅造成其成功度通常伤害的一半，且除了造成的初始伤害之外没有别的效果（譬如附加状态或减值）。"
+                },
+                "SudoSpell": {
+                    "Alteration": "法术的能量会反射回响。在你的下个回合结束前，你可以第二次施放这一法术而无需消耗法术位。"
                 }
             }
         },
