@@ -42,7 +42,7 @@
         "CombatantStatus": "参战者状态",
         "CombatantUpdate": "更新参战者",
         "End": "结束遭遇",
-        "EndConfirmation": "结束这次遭遇并清空战斗板？",
+        "EndConfirmation": "结束这次遭遇并清空战斗追踪板？",
         "EndTitle": "结束遭遇？",
         "NoneActive": "在当前查看的场景中没有激活的遭遇。",
         "NoneRemaining": "在这次遭遇战中，没有未战败的参战者剩余。",
@@ -67,7 +67,7 @@
         "MigrationStatus": "迁移状态"
     },
     "CONTROLS": {
-        "AdjustSceneDarkness": "调整场景黑暗度",
+        "AdjustSceneDarkness": "调整场景暗度",
         "EffectPanel": "效果面板",
         "WorldClock": "世界时钟"
     },
@@ -121,7 +121,7 @@
                 "Prompt": "休息一晚？",
                 "Message": {
                     "Awakens": "{actor}做了个好梦。",
-                    "ConditionReduced": "{condition} 下降一级。",
+                    "ConditionReduced": "{condition}减少1点。",
                     "ConditionRemoved": "不再{condition}。",
                     "FocusPoints": "聚能点已恢复。",
                     "HitPoints": "{hitPoints}点生命值已恢复。",
@@ -133,7 +133,7 @@
                     "WandsCharges": "魔杖已充能。",
                     "Frequencies": "动作频次已刷新。",
                     "HitPointsSingle": "{hitPoints}点生命值已恢复。",
-                    "Resource": "{name} 已恢复。",
+                    "Resource": "{name}已恢复。",
                     "CraftingSlots": "制作位已恢复。"
                 }
             },
@@ -1755,7 +1755,7 @@
                         }
                     }
                 },
-                "GradeOption": "{grade}（+{tracking}; {dice} 伤害骰）",
+                "GradeOption": "{grade}（+{tracking}；{dice} 伤害骰）",
                 "Tracking": "追踪",
                 "AnyBasicAmmo": "任意基础弹药",
                 "Reloader": {
@@ -1844,7 +1844,7 @@
                     "Label": "维持",
                     "Duration": "维持，至多{maximum}"
                 },
-                "LineSplit": ";",
+                "LineSplit": "；",
                 "Heightening": "升阶",
                 "BaseValue": "基础：{value}"
             },
@@ -2393,10 +2393,10 @@
                 "ShieldAbsorbsAll": "<actor>{actor}</actor>毫发无伤，他的盾牌完全吸收了{absorbedDamage}点伤害。",
                 "DamagedForNShield": "<actor>{actor}</actor>的盾牌抵挡了{absorbedDamage}点伤害，并且自身受到{hpDamage}点穿透伤害。",
                 "HealedForN": "<actor>{actor}</actor>受到了{hpDamage}点治疗。",
-                "ShieldDamagedForN": "他们的盾牌也受到 {shieldDamage}点伤害。",
-                "ShieldDamagedForNBroken": "他们的盾牌也受到 {shieldDamage}点伤害，并破损。",
-                "ShieldDamagedForNDestroyed": "他们的盾牌也受到 {shieldDamage}点伤害，并被摧毁。",
-                "ShieldNotRaised": "{actor} 并未举起他的盾牌。",
+                "ShieldDamagedForN": "他们的盾牌也受到{shieldDamage}点伤害。",
+                "ShieldDamagedForNBroken": "他们的盾牌也受到{shieldDamage}点伤害，并破损。",
+                "ShieldDamagedForNDestroyed": "他们的盾牌也受到{shieldDamage}点伤害，并被摧毁。",
+                "ShieldNotRaised": "{actor}并未举起他的盾牌。",
                 "TakesNoDamage": "<actor>{actor}</actor>没有受到伤害。",
                 "TheTarget": "目标",
                 "InstantDeath": {
@@ -2405,7 +2405,7 @@
                     "DeathEffect": "死亡效果立即杀死了他们。",
                     "Destroyed": "它被摧毁了。"
                 },
-                "TroopThresholdReached": "部队已抵达下一个阈值（剩余 {segments} 个部分）。",
+                "TroopThresholdReached": "部队已抵达下一个阈值（剩余{segments}个部分）。",
                 "PersistentEntry": {
                     "bleed": "{formula}{damageType}",
                     "default": "{formula}持续{damageType}伤害"
@@ -2502,7 +2502,7 @@
                     "Key": "关键属性",
                     "Boosts": "属性提升"
                 },
-                "Blurb": "{level}级{ancestry} {class}",
+                "Blurb": "{level}级{ancestry}{class}",
                 "Biography": {
                     "ToggleVisibility": "切换对其他玩家的可见性",
                     "Anathema": {
@@ -2538,9 +2538,9 @@
                         "AttackDC": "攻击掷骰与DC"
                     },
                     "SavingThrow": {
-                        "Title": "豁免骰"
+                        "Title": "豁免检定"
                     },
-                    "HigherUpgrade": "{ability}已将此熟练等级提升至{rank}。"
+                    "HigherUpgrade": "{ability}已将此熟练度提升至{rank}。"
                 },
                 "HandsOccupied": "手被占用",
                 "Shield": {
@@ -2597,7 +2597,7 @@
                         "ConfirmSelection": "确认选择",
                         "ViewSheet": "查看角色卡"
                     },
-                    "Title": "{type} 选择"
+                    "Title": "{type}选择"
                 },
                 "FeatSlot": {
                     "AncestryHeader": "族裔专长",
@@ -2694,8 +2694,8 @@
                     "Label": "感官",
                     "RangeLabel": "距离",
                     "WithAcuity": "{sense}（{acuity}）",
-                    "WithAcuityAndRange": "{sense}（{acuity}）{range}尺",
-                    "WithRange": "{sense} {range}尺",
+                    "WithAcuityAndRange": "{range}尺{sense}（{acuity}）",
+                    "WithRange": "{range}尺{sense}",
                     "NoVision": "无视觉",
                     "Plural": "感官"
                 },
@@ -2905,7 +2905,7 @@
                     "True": "总是",
                     "Title": "是否发出声音？",
                     "False": "从不",
-                    "Encounter": "在遭遇中"
+                    "Encounter": "在遭遇期间"
                 },
                 "Simple": "简单",
                 "Plural": "危害"
@@ -2925,7 +2925,7 @@
                 },
                 "GenerateAttack": {
                     "Confirm": {
-                        "Content": "该武器已生成攻击。你想换替换它吗？",
+                        "Content": "该武器已生成攻击。你想替换它吗？",
                         "Title": "重新生成攻击"
                     },
                     "Notification": {
@@ -3144,12 +3144,12 @@
         "AddCoinsCombineStacksLabel": "和已有货币叠加",
         "AddCoinsTitle": "增加货币",
         "AddCombatProficiency": {
-            "Title": "增加战斗熟练",
-            "Message": "选择一个武器组或基本武器"
+            "Title": "添加战斗熟练项",
+            "Message": "选择一个武器组或基础武器"
         },
         "AddModifierTitle": "添加调整值",
         "RemoveModifierTitle": "移除调整值",
-        "AddShortLabel": "加",
+        "AddShortLabel": "添加",
         "AddSpellTitle": "添加法术",
         "AddSpellcastingEntryTitle": "从法术列表添加",
         "AdditionalSkills": "额外技能",
@@ -3196,7 +3196,7 @@
         "AreaTypeCone": "锥形",
         "AreaTypeEmanation": "弥漫",
         "AreaTypeLine": "直线",
-        "ArmorArmorLabel": "AC 加值",
+        "ArmorArmorLabel": "AC加值",
         "ArmorArmorTypeLabel": "武器熟练",
         "ArmorBaseLabel": "基础",
         "ArmorCheckLabel": "检定减值",
@@ -3296,7 +3296,7 @@
         "BaseModifier": "基础调整值",
         "BaseWeapons": "基础武器",
         "BestiaryBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
-        "Biography": "笔记",
+        "Biography": "传记",
         "BiographyAllies": "盟友",
         "BiographyAlliesTitle": "你角色的盟友",
         "BiographyAppearance": "外貌",
@@ -3470,14 +3470,14 @@
         "ClickToSetInitiativeContext": "设为先攻值",
         "ClipboardNotification": "已将“{clipText}”复制到剪贴板。",
         "CompendiumBrowser": {
-            "AddedItem": "将 {item} 交给所选角色。",
-            "AddedItemToCharacter": "将 {item} 交给 {character}.",
+            "AddedItem": "将{item}交给所选角色。",
+            "AddedItemToCharacter": "将{item}交给{character}。",
             "BoughtItemWithCharacter": "为{character}购买了{item}。",
             "FailedToBuyItemWithCharacter": "无法为{character}购买{item}。",
             "BoughtItemWithAllCharacters": "已为所有已选角色购买{item}。",
             "FailedToBuyItemWithSomeCharacters": "无法为某些选定角色购买{item}。",
             "BestiaryBrowser": "怪物检索器",
-            "Hint": "使用上面的选项卡选择一个集合包",
+            "Hint": "使用上面的选项卡选择一个合集包",
             "ProgressBar": {
                 "LoadingPack": "加载{pack}",
                 "LoadingComplete": "加载完毕"
@@ -3497,15 +3497,15 @@
                 "PacksLabel": "合集包",
                 "OpenSettings": "打开设置",
                 "Saved": "设置已保存",
-                "Title": "合集浏览器设置"
+                "Title": "合集包浏览器设置"
             },
             "RollTable": {
                 "AddLabel": "添加至随机表",
                 "CreateDialogText": "通过{count}结果创建随机表？",
                 "CreateLabel": "创建随机表",
-                "SelectTableTitle": "选择表",
+                "SelectTableTitle": "选择随机表",
                 "WeightLabel": "权重",
-                "AddDialogText": "是否将 {count} 个结果添加到随机表？",
+                "AddDialogText": "是否将{count}个结果添加到随机表？",
                 "TooManyResults": "结果列表长度 {size}过长。 最大长度为{maxSize}"
             },
             "TabCampaign": "战役",
@@ -3534,7 +3534,7 @@
                 "Sizes": "体型",
                 "Source": "来源",
                 "Traditions": "根源",
-                "WarnPackNotLoaded": "无法载入合集包 \"{pack}\"。"
+                "WarnPackNotLoaded": "无法载入合集包“{pack}”。"
             },
             "TraitsComponent": {
                 "NoMatch": "无符合条件的结果",
@@ -3548,10 +3548,10 @@
             "PerpetualLabel": "永久状态",
             "DurationTextLabel": "持续时间",
             "DurationNumberLabel": "轮",
-            "HasValueLabel": "存在值",
+            "HasValueLabel": "当前状态值",
             "ValueLabel": "状态值",
             "ImmutableLabel": "不变的",
-            "ImmutableTitle": "不可减少的值。"
+            "ImmutableTitle": "无法减少的状态值。"
         },
         "ConditionsLabel": "状态",
         "ConditionTypeBlinded": "目盲",
@@ -9022,7 +9022,7 @@
         "TraitLilu": "Lilu",
         "TraitSporeborn": "孢植",
         "TraitDescriptionWhetstone": "磨刀石是用于提升武器效能的魔法增幅物品",
-        "ActionWithDC": "{label}（DC{dc}）",
+        "ActionWithDC": "{label}（DC {dc}）",
         "TraitArea": "区域",
         "TraitDescriptionPalinthanos": "When a cosmic event like Godsrain disturbs all that exists, the River of Souls sometimes flows backward for a brief moment, literally, from the shockwave. Unwilling and confused souls that are forced back far enough can have the agonizing experience of enduring death in reversed time. Some of these souls manage to re-enter the river once the flow returns to normal, but those who are stranded on the metaphorical shores of the living can become palinthanos: powerful undead born from their reversed demise who struggle futilely until their predestined banishment back to the River.",
         "TraitDescriptionBlight": "荒疫是自然之怒的扭曲先兆。",
@@ -9325,7 +9325,7 @@
         "TraitDescriptionSerum": "这些血清是药用血清；它们是科技性的，或在某些情况下是混合制品，但可以在实验室中制造且不包含显著的魔法成分。你可以在饮用或将血清喂给另一个生物时用一个交互动作激活血清。你只能将血清喂给一个处于你触及范围内的自愿或如此无助以至于无法抵抗的生物。你通常只需要一个肢体来激活血清。",
         "TraitDescriptionSuppressed": "被士兵压制的生物可能会受到额外状态和其他负面效果，这些效果来自具有被压制特征的专长；士兵每次使用赋予被压制特征的动作时，只能应用一个此类专长。",
         "TraitDescriptionTactic": "战术是一种特殊能力，用于示意盟友执行预定的行为。要使用战术能力，你必须事先在每日准备时指派一个或多个自愿盟友，这些盟友称作队友（squadmates）。你的队友也必须能够感知到你的信号，无论你是说出来还是喊出来（这种情况下战术动作获得听觉特征），或则通过身体向它们发出信号，通常是挥舞你的旗帜（这种情况下它获得视觉特征）。虽然你每轮可以使用多个战术动作，但一个角色每轮不会回应超过一个战术，无论来源如何。你不能准备使用战术。战术通常会赋予可作为自由动作使用的动作或能力；这些动作或能力可以像反应动作一样在队友回合之外使用。",
-        "TraitDescriptionThought": "具有此特性的武器使用生物工程技术植入了神经受体，使得它们可以通过心灵感应进行进行控制。当你持用这把武器并具有心灵感应或有限心灵感应时，你可以忽略该武器通常具有的任意特性;这仅适用于武器特征条目中列出的特性，不适用于武器或动作因使用其他能力或效果而获得的特征。如果你可以跟这把武器沟通，你使用这把武器时的的熟练度等于你的简易武器熟练度。",
+        "TraitDescriptionThought": "具有此特性的武器使用生物工程技术植入了神经受体，使得它们可以通过心灵感应进行进行控制。当你持用这把武器并具有心灵感应或有限心灵感应时，你可以忽略该武器通常具有的任意特性；这仅适用于武器特征条目中列出的特性，不适用于武器或动作因使用其他能力或效果而获得的特征。如果你可以跟这把武器沟通，你使用这把武器时的的熟练度等于你的简易武器熟练度。",
         "TraitDescriptionTracking": "该武器具有多个综合瞄准、稳定以及制导系统。使用该武器的攻击骰获得和追踪值相同的物品加值。使用该武器进行区域射击的豁免DC亦获得和追踪值相同的物品加值。",
         "TraitDescriptionTransfer": "These actions reduce Hit Points from your vitality network. You must have Hit Points in your vitality network equal to or greater than the transfer cost to use these actions. If you can't pay the cost, the action is disrupted.",
         "TraitDescriptionUnwieldy": "具有此特征的武器是巨大而笨重的，在未冷却的情况下无法发射，或者很难连续攻击。你每轮不能使用粗笨武器攻击超过一次，也不能作为反应动作的一部分使用它进行打击，例如反应打击。",
@@ -9406,7 +9406,7 @@
         "TraitDescriptionXenometricAndroid": "A creature with this trait is a member of the xenometric android versatile heritage. These artificially constructed beings are made to resemble a particular species. An ability with this trait can be used or selected only by xenometric androids.",
         "ArmorPropertyRuneConvincing": "服众",
         "ArmorPropertyRuneGreaterConvincing": "高等服众",
-        "ArmorPropertyRuneGreaterMoonweave": "上等服众",
+        "ArmorPropertyRuneGreaterMoonweave": "高等月织",
         "ArmorPropertyRuneGreaterSunweave": "高等日织",
         "ArmorPropertyRuneMajorConvincing": "上等服众",
         "ArmorPropertyRuneMajorSunweave": "上等日织",
