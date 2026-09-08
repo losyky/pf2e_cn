@@ -1950,7 +1950,7 @@
                     "True": "你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[fortitude|dc:36|options:damaging-effect,inflicts:sickened|showDC:all]豁免，否则承受@Damage[4d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>灼热铁手套</em>的恶心。"
                 },
                 "GlacierHammer": {
-                    "ToggleLabel": "冰川巨锤 — Grow Icicles"
+                    "ToggleLabel": "冰川巨锤 — 生成冰锥"
                 },
                 "HuntersBow": {
                     "ToggleLabel": "猎人弓—目标无法看到你"
@@ -2240,7 +2240,7 @@
                 },
                 "QiSpells": {
                     "HeavensThunder": {
-                        "RollOptionLabel": "天堂之雷 — 真气波"
+                        "RollOptionLabel": "天雷破 — 真气波"
                     }
                 },
                 "FiveGodsRam": {
@@ -2673,7 +2673,7 @@
             "MountainStance": {
                 "BracersOfArmor": "山岳架势w/盔甲护腕",
                 "ExplorersClothing": "山岳架势w/探险者服装",
-                "MageArmor": "山岳架势w/法术护甲"
+                "MageArmor": "山岳架势 / 法术护甲"
             },
             "PackAttack": {
                 "Label": "目标位于至少两个盟友的射程内"
