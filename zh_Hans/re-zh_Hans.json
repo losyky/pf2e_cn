@@ -1965,6 +1965,12 @@
                     "CatHead": "咆哮猫头",
                     "DragonHead": "智角龙头",
                     "GoatHead": "鼻息山羊头"
+                },
+                "CarverCutter": {
+                    "ChopDown": {
+                        "Label": "木艺斧 — 砍倒树木",
+                        "Note": "命中时，目标会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续1分钟。"
+                    }
                 }
             },
             "FighterWeaponMasteryLegend": {
@@ -6264,6 +6270,28 @@
             },
             "Emotion": {
                 "Note": "如果你在对抗情绪效果的豁免检定中成功，则改为获得大成功。"
+            },
+            "BastionOfBlasphemies": {
+                "Background": {
+                    "ArtCollector": {
+                        "Prompt": "你此前选择过这件艺术品吗？"
+                    },
+                    "BloodedByTheDead": {
+                        "BolsterTheBlood": {
+                            "Label": "强固血脉"
+                        },
+                        "BolsterTheFury": {
+                            "Label": "强固怒火"
+                        },
+                        "BolsterTheMind": {
+                            "Label": "强固心智",
+                            "Note": "在决定具有失能特征的心灵效果会对你会产生何种结果时，将你的等级视为比实际高2级。"
+                        }
+                    },
+                    "CurseMarked": {
+                        "ToggleLabel": "受诅印记 — 受到诅咒"
+                    }
+                }
             }
         },
         "RuleElement": {
