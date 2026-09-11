@@ -6292,6 +6292,44 @@
                         "ToggleLabel": "受诅印记 — 受到诅咒"
                     }
                 }
+            },
+            "ChelaxianScion": {
+                "NobleHouse": {
+                    "Elliendo": {
+                        "Label": "埃连多",
+                        "WeaponFamiliarity": "埃连多家族武器熟稔"
+                    },
+                    "Thrune": {
+                        "WeaponFamiliarity": "斯戎家族武器熟稔",
+                        "Label": "斯戎"
+                    },
+                    "Charthagnion": {
+                        "Label": "查萨尼翁",
+                        "WeaponFamiliarity": "查萨尼翁家族武器熟稔"
+                    },
+                    "Henderthane": {
+                        "Label": "亨德坦",
+                        "WeaponFamiliarity": "亨德坦家族武器熟稔"
+                    },
+                    "Jeggare": {
+                        "Label": "杰加尔",
+                        "WeaponFamiliarity": "杰加尔家族武器熟稔"
+                    },
+                    "Leroung": {
+                        "Label": "勒荣",
+                        "WeaponFamiliarity": "勒荣家族武器熟稔"
+                    },
+                    "Narikopolus": {
+                        "Label": "纳里科波卢斯",
+                        "WeaponFamiliarity": "纳里科波卢斯家族武器熟稔"
+                    },
+                    "Prompt": "选择一家贵族。",
+                    "Sarini": {
+                        "Label": "萨里尼",
+                        "WeaponFamiliarity": "萨里尼家族武器熟稔"
+                    }
+                },
+                "RollOptionLabel": "以一位切利亚斯公民或魔鬼为目标"
             }
         },
         "RuleElement": {
