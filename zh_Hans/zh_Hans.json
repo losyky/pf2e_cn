@@ -131,7 +131,7 @@
                     "StaminaPoints": "耐力点数已恢复。",
                     "TemporaryItems": "临时物品已过期。",
                     "WandsCharges": "魔杖已充能。",
-                    "Frequencies": "动作频次已刷新。",
+                    "Frequencies": "动作频率已刷新。",
                     "HitPointsSingle": "{hitPoints}点生命值已恢复。",
                     "Resource": "{name}已恢复。",
                     "CraftingSlots": "制作位已恢复。"
@@ -1343,7 +1343,7 @@
                     "formula": "公式",
                     "value": "固定值"
                 },
-                "Unidentified": "未鉴定？",
+                "Unidentified": "效果不明？",
                 "AddLabel": "添加标签",
                 "LabelPlaceholder": "阶段标签",
                 "ExtraSelections": {
@@ -1414,7 +1414,7 @@
                     },
                     "Proficiencies": {
                         "NoOptionSelected": "请选择要增加的统计数据。",
-                        "Label": "熟练度"
+                        "Label": "熟练项"
                     },
                     "KeyAbilityOptions": {
                         "Label": "关键属性选项",
@@ -1423,20 +1423,20 @@
                     "Label": "子特性",
                     "Senses": {
                         "Darkvision": {
-                            "LLV": "角色已从其他来源获得昏暗视觉时，授予黑暗视觉。",
-                            "Ancestry": "角色族裔拥有昏暗视觉时，授予黑暗视觉。",
+                            "LLV": "角色已从其他来源获得昏暗视觉时，授予其黑暗视觉。",
+                            "Ancestry": "角色族裔拥有昏暗视觉时，授予其黑暗视觉。",
                             "Second": "若该专长被选取第二次，授予黑暗视觉。"
                         }
                     },
                     "SuppressedFeatures": {
-                        "Hint": "要从数据准备和专长栏中移除一个特性，则将其拖放到此表上。",
+                        "Hint": "要从数据准备和专长栏中移除一个特性，则将其拖放到此卡内。",
                         "Label": "排除职业特性"
                     }
                 },
                 "Category": {
                     "General": "通用专长",
-                    "DeityBoon": "神授恩惠",
-                    "Curse": "神圣诅咒",
+                    "DeityBoon": "神祇恩赐",
+                    "Curse": "神祇诅咒",
                     "ClassFeature": "职业特性",
                     "Class": "职业专长",
                     "Bonus": "额外专长",
@@ -1877,8 +1877,8 @@
                 "Plural": "苦难"
             },
             "GMNotes": {
-                "Add": "添加GM日志",
-                "Title": "GM日志"
+                "Add": "添加GM笔记",
+                "Title": "GM笔记"
             },
             "Action": {
                 "Category": {
@@ -2243,7 +2243,7 @@
                 "Tags": {
                     "RangeN": "射程{n}尺",
                     "RangeIncrementN": "射程增量{n}尺",
-                    "MagN": "Mag {n}"
+                    "MagN": "{n}发弹匣"
                 },
                 "LinkedWeapon": "已链接武器"
             },
@@ -2618,7 +2618,7 @@
                     "MythicFeatPlaceholder": "神话专长",
                     "MythicCallingPlaceholder": "神话感召",
                     "MythicTier": "阶",
-                    "MythicCallingShort": "感召"
+                    "MythicCallingShort": "C"
                 },
                 "EmptyMultipleLabel": "{value}个空位",
                 "EmptyLabel": "空位"
@@ -2979,7 +2979,7 @@
                 "DoubleVs": "双倍于"
             },
             "Party": {
-                "BlankSlate": "这个队伍没有任何成员。从角色边栏中拖入一个生物。",
+                "BlankSlate": "这个队伍没有任何成员。从角色侧边栏中拖入一个生物。",
                 "Coin": "货币",
                 "Languages": "队伍语言",
                 "MembersLabel": "成员： ",
@@ -3033,26 +3033,26 @@
                 "Bulk": "总容积: {bulk}",
                 "TravelHeader": "队伍旅程与六角格探索",
                 "CheckPrompt": {
-                    "ChooseSaves": "豁免骰",
+                    "ChooseSaves": "豁免检定",
                     "ChooseLores": "学识技能",
-                    "AdjustDifficulty": "调整难度",
-                    "TitleShort": "检定提示",
+                    "AdjustDifficulty": "调整困难等级",
+                    "TitleShort": "检定提示框",
                     "Post": "生成提示",
                     "LevelDC": "基于等级的DC",
                     "ChooseSkills": "选择技能/察觉",
-                    "Title": "检定命令生成器",
+                    "Title": "检定提示框生成器",
                     "SkillsPerception": "技能/察觉",
                     "SimpleDC": "简单DC",
                     "SetDC": "设定DC",
                     "SecretCheck": "秘密检定",
-                    "PromptTitle": "提示标题",
+                    "PromptTitle": "提示框标题",
                     "DCTabs": {
                         "level": "基于等级的DC",
                         "simple": "简单DC",
                         "static": "标准DC"
                     },
-                    "PreviewPlaceholder": "Raw Output",
-                    "Submit": "Generate Prompt"
+                    "PreviewPlaceholder": "原始输出代码",
+                    "Submit": "生成提示框"
                 },
                 "NewName": "新队伍"
             },
@@ -3378,7 +3378,7 @@
         "BulkReductionLabel": "减少负载",
         "BulkShortLabel": "重量",
         "BulkTypeLight": "轻量",
-        "CapacityBarLabel": "负重上限",
+        "CapacityBarLabel": "负载上限",
         "CarryType": {
             "held1": "单手持握",
             "held2": "双手持握",
@@ -4210,7 +4210,7 @@
         },
         "Frequency": {
             "per": "per",
-            "Label": "频次",
+            "Label": "频率",
             "AtWill": "随意"
         },
         "GenderPronoun": "性别",
@@ -4266,7 +4266,8 @@
             "DistanceMissing": "Error in @Template: 必须有距离参数",
             "TypeUnsupported": "Error in @Template: 不支持 {type} 类型",
             "DistanceNoNumber": "Error in @Template: 距离 {distance} 不是数字类型",
-            "WidthNoNumber": "Error in @Template: 宽度 {width} 不是数字类型"
+            "WidthNoNumber": "Error in @Template: 宽度 {width} 不是数字类型",
+            "DistanceInvalid": "@Template命令错误：{distance}距离无效"
         },
         "InventoryBackpackHeader": "容器",
         "InventoryConsumablesHeader": "消耗",
@@ -4770,12 +4771,12 @@
         "Roll": {
             "Modifier": "调整值",
             "Type": "类型",
-            "Fortune": "好运",
+            "Fortune": "幸运",
             "KeepHigher": "取高",
             "KeepLower": "取低",
-            "FortuneTitle": "{title} 好运",
+            "FortuneTitle": "{title}幸运",
             "Misfortune": "厄运",
-            "MisfortuneTitle": "{title} 厄运",
+            "MisfortuneTitle": "{title}厄运",
             "None": "无",
             "Roll": "骰",
             "Normal": "正常",
@@ -4792,18 +4793,18 @@
                     "BaseDamage": "基础伤害",
                     "None": "无",
                     "Splash": "{damageType}溅射",
-                    "Override": "超载{value}",
+                    "Override": "覆盖{value}",
                     "Label": "标签",
                     "ExtraDice": "额外",
                     "DieSizeUpgrade": "提升骰子大小",
                     "DiceHeader": "骰",
                     "Title": "伤害骰",
-                    "TitleCritical": "暴击伤害骰",
+                    "TitleCritical": "重击伤害骰",
                     "OverrideLabel": "覆盖"
                 },
                 "ShowDefaultHint": "如果启用，除非你按住Shift键否则始终显示此对话框。如果禁用，你可以通过按住Shift键来打开此对话框。",
                 "ShowDefault": "始终显示对话框",
-                "ModifierDamageCategory": "伤害分类",
+                "ModifierDamageCategory": "伤害类别",
                 "ModifierDamageType": "伤害类型",
                 "ModifierName": "调整值名称",
                 "ModifierType": "调整值类型",
@@ -4811,7 +4812,7 @@
             }
         },
         "RollTable": {
-            "Plural": "随机列表"
+            "Plural": "随机表"
         },
         "RollBonusPlaceholder": "举例： +3 或 +1d4",
         "RollModeLabel": "骰子模式",
@@ -4840,11 +4841,11 @@
             },
             "critFumbleCards": {
                 "hint": "特定骰时自动抽大成功或大失败卡牌。",
-                "name": "大成功和大失败卡"
+                "name": "大成功和大失败卡牌"
             },
             "critFumbleCardButtons": {
-                "hint": "在攻击骰上显示抽大成功和大失败卡按钮。",
-                "name": "大成功和大失败卡按钮"
+                "hint": "在攻击骰上显示抽取大成功和大失败卡牌按钮。",
+                "name": "大成功和大失败卡牌按钮"
             },
             "DeathIcon": {
                 "Name": "死亡图标",
@@ -4945,12 +4946,12 @@
                     "Name": "角色会在HP为0时死亡",
                     "Hint": "角色们会在生命值变为0时被标记为死亡。对于PC来说，这仅适用于可能立即杀死他们的伤害。",
                     "Neither": "否",
-                    "NPCsOnly": "NPC 限定",
+                    "NPCsOnly": "NPC限定",
                     "PCsOnly": "只有PC",
                     "Both": "是"
                 },
                 "LootableNPCs": {
-                    "Name": "可搜刮的NPC们",
+                    "Name": "可搜刮的NPC",
                     "Hint": "NPC死亡后，玩家可以拾取战利品。"
                 },
                 "IWR": {
@@ -5185,7 +5186,7 @@
                 "DeferredToModule": "这一设置由日历/天气模块管理。",
                 "FIELDS": {
                     "dateTheme": {
-                        "label": "日期主题",
+                        "label": "纪年主题",
                         "hint": "设置世界时钟应用的主题。"
                     },
                     "timeConvention": {
@@ -5203,6 +5204,14 @@
                     "playersCanView": {
                         "label": "玩家访问权限",
                         "hint": "设置玩家是否可以查看世界时钟。"
+                    },
+                    "dawnTime": {
+                        "hint": "拂晓之始",
+                        "label": "黎明时分"
+                    },
+                    "duskTime": {
+                        "hint": "黄昏之末",
+                        "label": "黄昏时分"
                     }
                 },
                 "TimeConventions": {
@@ -5215,7 +5224,8 @@
                     "AR": "格拉利昂（艾巴萨罗姆纪元）",
                     "AD": "地球（公历纪年法）",
                     "AG": "协约标准时间（后断层纪元）"
-                }
+                },
+                "TheSun": "太阳"
             },
             "CampaignFeats": {
                 "Name": "战役专长",
@@ -6413,9 +6423,9 @@
         "TraitSalt": "盐",
         "TraitSaltWater": "咸水",
         "TraitSamsaran": "轮回者",
-        "TraitScatter5": "散射 5",
-        "TraitScatter10": "散射 10",
-        "TraitScatter15": "散射 15",
+        "TraitScatter5": "散射5尺",
+        "TraitScatter10": "散射10尺",
+        "TraitScatter15": "散射15尺",
         "TraitScroll": "卷轴",
         "TraitScrying": "探知",
         "TraitSeaDevil": "沙华鱼人",
@@ -7625,8 +7635,8 @@
                 "AddOneHour": "1小时",
                 "AddOneDay": "1日",
                 "AddOneWeek": "1周",
-                "Advance": "经过",
-                "Retract": "撤回",
+                "Advance": "推进",
+                "Retract": "回撤",
                 "TimeOfDay": {
                     "Advance": {
                         "Dawn": "推进到黎明",
@@ -7949,7 +7959,7 @@
             "Misidentify": "未鉴定物品",
             "Mystify": "神秘化物品",
             "MystificationStatus": "神秘化状态",
-            "Identified": "鉴定",
+            "Identified": "已鉴定",
             "Unidentified": "未鉴定",
             "TraitGMNote": "注意：这个特征对于玩家是隐藏的。",
             "UnidentifiedDescription": "{item}的性质暂不清楚。",
@@ -8254,7 +8264,8 @@
                 "Label": "法术攻击 / DC",
                 "Value": "{attack} / DC {dc}"
             },
-            "ProficiencyHint": "绝大多数法术使用施法熟练度。仅在能力有特别说明时，才选择职业DC。"
+            "ProficiencyHint": "绝大多数法术使用施法熟练度。仅在能力有特别说明时，才选择职业DC。",
+            "AttributeSetBy": "设定为{statistic}。"
         },
         "Speed": "速度",
         "TraitAftermath": "奇遇",
@@ -8493,8 +8504,8 @@
         "TraitAffixedToCrossbowOrFirearm": "附着在弩或火器上",
         "TraitAffixedToFirearm": "附着在火器上",
         "TraitAffixedToFirearmWithAReloadOf1": "附着在一把装填1的火器上",
-        "TraitIntegrated1d6B": "集成1d6B",
-        "TraitIntegrated1d6P": "集成1d6P",
+        "TraitIntegrated1d6B": "集成 1d6B",
+        "TraitIntegrated1d6P": "集成 1d6P",
         "TraitDescriptionDeflecting": "该盾牌被设计用来格挡或偏转某种类型的攻击或武器。在针对所列出的攻击类型时，该盾牌硬度+2。",
         "TraitDescriptionHarnessed": "该盾牌有个特殊的支架或缺口，旨在架设长枪或其他骑战武器。",
         "TraitDescriptionHefty": "沉重盾牌的重量非常大，需要花费更大的力气才能举起。举起具有沉重特征的盾牌是一个2动作的行动，除非你的力量等于或大于该特征关联的数值。",
@@ -8504,8 +8515,8 @@
         "TraitFoldaway": "折叠",
         "TraitHarnessed": "挽具",
         "TraitLaunching": "发射",
-        "TraitIntegrated1d6S": "集成1d6S",
-        "TraitIntegrated1d6SVersatileP": "集成1d6S（多用P）",
+        "TraitIntegrated1d6S": "集成 1d6S",
+        "TraitIntegrated1d6SVersatileP": "集成 1d6S（多用P）",
         "TraitShieldThrow20": "掷盾20尺",
         "TraitShieldThrow30": "掷盾30尺",
         "TraitDescriptionFoldaway": "<p>该盾牌能折叠成更小的形态，并附着在铁手套上以方便携带并维持稳定。你可以使用一个交互动作部署或收回盾牌。当盾牌部署时，只要你装备盾牌的那只手是空手，或持握着非武器的轻负载物体，你就可以举起盾牌。盾牌在部署时会妨碍你的手，你不能用那只手持用武器，操作任何需要两只手的东西，或使用盾牌附着的铁手套攻击。</p><p>折叠盾牌必须附着在铁手套上才能保持稳定。可以花费10分钟时间，并成功通过一个DC 10的手艺检定，将其附着到一件物品上；如果需要，这也包括了从上一个铁手套上拆下盾牌的时间。如果铁手套被摧毁，折叠盾牌通常可以被抢救回来。盾牌的折叠性质让其无法安装附着武器。</p>",
@@ -8550,7 +8561,7 @@
             "LoadingComplete": "加载完毕",
             "LoadingPack": "正在加载{pack}"
         },
-        "TraitScatter20": "散射 20",
+        "TraitScatter20": "散射20尺",
         "TraitArmy": "军队",
         "TraitCavalry": "骑兵",
         "TraitCivic": "公民",
