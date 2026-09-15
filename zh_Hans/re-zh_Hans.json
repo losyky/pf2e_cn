@@ -818,7 +818,7 @@
                         "Heightened": "伤害增加2d6而不是1d4。",
                         "Base": "你可以更大规模地影响能量的流动。法术范围改为两个@Template[burst|distance:10]范围。它们仍然必须彼此相邻并且可以重叠。两个区域内的生物仍然只能被你选择的一个范围影响。该法术的伤害增加到6d6。法术造成的效果持续1分钟。"
                     },
-                    "RemovePresence": "选择该法术的一个目标或被影响范围内的一个生物，如果该敌人的豁免失败或被命中，你会对它无踪，从它的感官中消失1分钟或直到你使用一个敌对行动。这类似于@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}，但类似识破隐形的效果不会揭示你——你影响的是目标的思想，而不是它的视觉。如果反制检定成功，真视术仍然可以看穿这个幻象。",
+                    "RemovePresence": "选择该法术的一个目标或被影响范围内的一个生物，如果该敌人的豁免失败或被命中，你会对它无踪，从它的感官中消失1分钟或直到你使用一个敌对动作。这类似于@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]，但类似识破无形的效果不会揭示你——你影响的是目标的思想，而不是它的视觉。如果反制检定成功，真视术仍然可以看穿这个幻象。",
                     "Shield": {
                         "Base": "你创造出三重护盾组成的多层屏障来增强你的防御力。持续时间变为到维持，至多1分钟。护盾在你每个回合开始时仍会撤下，但你可以在维持法术时自动再次举盾。",
                         "BaseTwo": "当你用此法术进行格挡时，三层盾牌中的一层会被打破，你将不再获得AC加成，但法术并没有结束。你可以继续使用该法术，直到最后一层被打破；一旦最后一层破裂，该法术结束，你在10分钟内不能再施放护盾术或增幅护盾术。当你用增幅护盾术进行格挡时，你可以选择破坏多层护盾以提高你的防御力。如果你破坏了两层而不是一层盾，那么盾的格挡硬度会增加到正常值的1.5倍（1级为7，3级为15，5级为22，7级为30，9级为37）。如果你破坏了所有三层，那么硬度将增加到正常值的两倍。",
@@ -4194,7 +4194,7 @@
                     "Note": "当你对精类生物的打击大成功时，目标生物立即受到@UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]法术的影响。对于任何试图反制该效果的尝试而言，将其视为一个内在2环级原能法术。"
                 },
                 "SkillfulTail": {
-                    "Geniekin": "你生来就有一条尾巴，通过练习，你学会了如何用它执行简单的互动动作，比如打开一扇未上锁的门。你无法以尾巴进行需要手指或要求精密操作的动作，包括任何需要进行检定的动作，你也不得以尾巴持握物品。",
+                    "Geniekin": "你生来就有一条尾巴，通过练习，你学会了如何用它执行简单的交互动作，比如打开一扇未上锁的门。你无法以尾巴进行需要手指或要求精密操作的动作，包括任何需要进行检定的动作，你也不得以尾巴持握物品。",
                     "Nephilim": "你生来就有一条尾巴，几经训练后你的尾巴终于具备了暴露心情之外的其它功用。你可以尾巴进行简单的交互动作，例如打开未上锁的门。你无法以尾巴进行需要手指或要求精密操作的动作，包括任何需要进行检定才能完成的动作，你也不得以尾巴持握物品。"
                 },
                 "DisturbingKnowledge": {
@@ -5157,6 +5157,9 @@
             "Centaur": {
                 "MentorOfLegends": {
                     "Description": "在其常规效果之外，此法术还会赋予等同于你等级一半的临时生命值。但你无法对自己施放此法术。"
+                },
+                "StarshotArrow": {
+                    "Note": "命中时，目标的速度在[[/r 2d4 #Starshot Arrow Duration]]{2d4轮}内承受-10尺环境减值，在重击时则会直接禁足目标。目标可以花费一个交互动作来从中挣脱。@UUID[Compendium.pf2e.feat-effects.Item.DlCxZAOFmppft3Lh]"
                 }
             },
             "Minotaur": {
@@ -7371,7 +7374,7 @@
                     "Prompt": "选择一种符文。",
                     "RuneOfPride": {
                         "Label": "傲慢符文",
-                        "Text": "被此武器击中的生物会坚信自己正在对抗一个不可战胜的敌人。该生物必须成功通过一次@Check[fortitude|dc:40|options:inflicts:frightened|traits:emotion,fear,mental]豁免，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。若为大失败，该生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}，且只要仍处于惊惧状态，便无法对Czaresia采取敌对行动。"
+                        "Text": "被此武器击中的生物会坚信自己正在对抗一个不可战胜的敌人。该生物必须成功通过一次@Check[fortitude|dc:40|options:inflicts:frightened|traits:emotion,fear,mental]豁免，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。若为大失败，该生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}，且只要仍处于惊惧状态，便无法对Czaresia采取敌对动作。"
                     },
                     "RuneOfSpace": {
                         "Label": "空间符文"
