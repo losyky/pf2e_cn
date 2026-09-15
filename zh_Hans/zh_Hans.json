@@ -841,7 +841,7 @@
             },
             "ABC": {
                 "InvalidDrop": "{badType} 不能丢弃（必须在 {goodType}）",
-                "Features": "特征",
+                "Features": "特性",
                 "Add": "添加"
             },
             "Ancestry": {
@@ -1371,7 +1371,7 @@
                     },
                     "Range": "范围"
                 },
-                "Plural": "影响",
+                "Plural": "效果",
                 "Disintegrated": {
                     "Description": "可能这是一种可治疗的状态。",
                     "Name": "被解离 Disintegrated"
@@ -1413,7 +1413,7 @@
                         "OpenSlots": "开放槽位"
                     },
                     "Proficiencies": {
-                        "NoOptionSelected": "请选择要增加的统计数据。",
+                        "NoOptionSelected": "请选择一项要应用提升的数据。",
                         "Label": "熟练项"
                     },
                     "KeyAbilityOptions": {
@@ -1614,7 +1614,7 @@
                     "paragon": "完美型"
                 }
             },
-            "SidebarSummary": "{type}目录",
+            "SidebarSummary": "{type}概要",
             "Weapon": {
                 "CriticalSpecialization": {
                     "axe": "选择一个在你的触及内与初始目标相邻的生物。如果它的AC低于你重击的攻击掷骰，那么你对该生物造成等同一颗武器伤害骰（也包括来自<em>强击符文</em>的额外骰，若有）的伤害。其它加值或额外骰不适用于这个伤害。",
@@ -2116,8 +2116,8 @@
                 "Plural": "容器",
                 "Stowing": "要装进容器里吗？",
                 "Bulk": {
-                    "Capacity": "负重容量",
-                    "Ignored": "负重忽视"
+                    "Capacity": "负载容量",
+                    "Ignored": "负载忽视"
                 }
             },
             "Ability": {
@@ -2222,7 +2222,7 @@
             },
             "Equipment": {
                 "Category": {
-                    "upgrade": "升级"
+                    "upgrade": "强化模块"
                 }
             },
             "NPCAttack": {
@@ -2322,7 +2322,7 @@
                     "8-round-magazine": "8发弹匣",
                     "backpack-catapult-stones": "背包投石器弹丸",
                     "backpack-ballista-bolts": "背包重弩矢",
-                    "chem-tank": "Chem Tank",
+                    "chem-tank": "化学储罐",
                     "projectile-ammo": "投射物弹药"
                 },
                 "Groups": {
@@ -2386,7 +2386,7 @@
         },
         "ActionsActionsHeader": "动作",
         "ActionsFreeActionsHeader": "自由动作",
-        "ActionsReactionsHeader": "反应动作列表",
+        "ActionsReactionsHeader": "反应动作",
         "Actor": {
             "ApplyDamage": {
                 "AtFullHealth": "<actor>{actor}</actor>已经恢复至满血。",
@@ -2832,7 +2832,7 @@
                     "Plural": "语言",
                     "tanuki": "化狸语",
                     "surki": "瑟基虫人语",
-                    "wayang": "剪影人",
+                    "wayang": "剪影人语",
                     "yaksha": "夜叉语",
                     "aishmayar": "艾什玛雅语",
                     "mahwek": "马赫韦克语",
@@ -2943,8 +2943,8 @@
                         "Label": "{skills}：DC {dc}（{adjustment}）"
                     },
                     "Lore": {
-                        "Tooltip": "“使用可用学识通常具有一个简单或非常简单的DC（在调整稀有度之前）。”—《主持人核心》54页",
-                        "Label": "可用学识：DC {dc1}（{adjustment1}）或者 DC {dc2}（{adjustment2}）"
+                        "Tooltip": "“使用可用学识通常具有一个简单或非常简单的DC（在调整稀有度之前）。”—《主持人核心》第54页",
+                        "Label": "可用学识：DC {dc1}（{adjustment1}）或者DC {dc2}（{adjustment2}）"
                     }
                 },
                 "SimpleSheet": "简易NPC角色卡",
@@ -2973,9 +2973,9 @@
             },
             "Plural": "角色",
             "IWREditor": {
-                "Title": "{actor}： {category}",
+                "Title": "{actor}：{category}",
                 "Type": "类型",
-                "Exceptions": "例外",
+                "Exceptions": "除了",
                 "DoubleVs": "双倍于"
             },
             "Party": {
@@ -2995,7 +2995,7 @@
                 "Wealth": "财富",
                 "InvalidCampaign": {
                     "Message": {
-                        "mismatch": "此队伍具有类型为 {current}的战役数据，但目前配置的类型是{campaignType}。是否要删除现有的战役数据？",
+                        "mismatch": "此队伍具有类型为{current}的战役数据，但目前配置的类型是{campaignType}。是否要删除现有的战役数据？",
                         "error": "此队伍的战役数据（{current}）已损坏，数据预载失败。是否要删除现有的战役数据？"
                     },
                     "Title": "无效的战役（{party}）",
@@ -3082,14 +3082,14 @@
                     }
                 },
                 "DistributeCoins": "分发货币",
-                "TotalBulk": "总负重： {bulk}",
+                "TotalBulk": "总负载： {bulk}",
                 "Encumbrance": "超载",
                 "Section": {
                     "WeaponsAndShields": "武器 & 盾牌"
                 },
                 "UnitTitle": {
                     "Price": "价格",
-                    "Bulk": "单位负重"
+                    "Bulk": "单位负载"
                 },
                 "CarryType": {
                     "OpenMenu": "更改携带类型"
@@ -3341,8 +3341,8 @@
             "status": "状态加值",
             "untyped": "无名加值"
         },
-        "BonusSPLabel": "加值 SP",
-        "BonusSPperLevel": "每等级SP加值",
+        "BonusSPLabel": "奖励SP",
+        "BonusSPperLevel": "每等级奖励SP",
         "BonusSPperLevelTitle": "每等级应用一次 (此后计算体质调整值)",
         "BrowserClearFilter": "清除过滤项",
         "BrowserClearFilters": "清除所有过滤项",
@@ -4112,7 +4112,7 @@
             "CantImportTooHighVersion": "无法导入 {sourceName}：版本（{sourceSchemaVersion}）高于当前世界版本（{worldSchemaVersion}）.",
             "CantMoveItemDestination": "你无权为该角色添加物品。",
             "CantMoveItemSource": "你无权移除该角色的物品。",
-            "MinimumProfLevelSetByFeatures": "所选熟练程度低于特征设定的熟练程度。",
+            "MinimumProfLevelSetByFeatures": "所选熟练度低于特性设定的熟练度。",
             "NoTokenSelected": "需要选中一个目标。",
             "NoPCTokenSelected": "至少选择一个与PC相关联的指示物。",
             "NoUpdatePermission": "你无权更新此角色信息。",
@@ -4600,7 +4600,7 @@
         "OpenActionBrowserTitle": "开启动作预览",
         "OpenFeatBrowserTitle": "开启专长预览",
         "OpenInventoryBrowser": "开启物品预览",
-        "OpenItemTitle": "切换容器目录",
+        "OpenItemTitle": "容器内容物显示开关",
         "OpenSpellBrowserTitle": "开启法术预览",
         "OrdinalNumber": "{value}{suffix}",
         "OrdinalSuffixes": {
@@ -7950,7 +7950,7 @@
         "identification": {
             "Identify": "鉴定物品",
             "PostSkillsToChat": "将技能检定发布至聊天栏",
-            "PostSkillsToChatText": "鉴定物品:技能检定",
+            "PostSkillsToChatText": "鉴定物品：技能检定",
             "IsIdentified": "确定了吗？",
             "IdentifyMagicDCs": "辨识魔法DC",
             "IdentifyAlchemyDCs": "辨识炼金术DC",
@@ -7974,7 +7974,7 @@
                 "Circlet": "头饰",
                 "Cloak": "披风",
                 "Collar": "项圈",
-                "Book": "书",
+                "Book": "书本",
                 "Bracers": "护腕",
                 "Epaulets": "肩章",
                 "Eyepiece": "目镜",
@@ -9361,9 +9361,9 @@
         "TraitDescriptionVirtual": "Items with the virtual trait are programs that must be installed on other computers, such as comm units. They require the Programmer feat to craft.",
         "TraitEntuColony": "因图菌群",
         "TraitGapTouched": "大断层接触者",
-        "TraitHeldInOneHandHungOnACordOrAttachedToClothing": "Held in 1 hand, hung on a cord, or attached to clothing",
+        "TraitHeldInOneHandHungOnACordOrAttachedToClothing": "单手持握、挂在绳子上，或附着在衣物上",
         "TraitIjtikri": "石面鱿族",
-        "TraitInstalledInADatapad": "Installed in a datapad",
+        "TraitInstalledInADatapad": "安装在数据板内",
         "TraitIzalguun": "Izalguun",
         "TraitKothama": "Kothama",
         "TraitMadrosarai": "Madrosarai",
@@ -9499,7 +9499,7 @@
             "weapon": "武器",
             "treasure": "宝物",
             "spellcastingEntry": "法术列表",
-            "campaignFeature": "战役特征",
+            "campaignFeature": "战役特性",
             "shield": "盾牌",
             "ammo": "弹药"
         },
