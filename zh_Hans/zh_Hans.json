@@ -1343,7 +1343,7 @@
                     "formula": "公式",
                     "value": "固定值"
                 },
-                "Unidentified": "不明？",
+                "Unidentified": "未鉴定？",
                 "AddLabel": "添加标签",
                 "LabelPlaceholder": "阶段标签",
                 "ExtraSelections": {
@@ -1382,17 +1382,17 @@
                 "OnlyLevel1": "必须在1级时选取",
                 "TakeMultiple": {
                     "Label": "可以多次选取",
-                    "Two": "最多2次",
-                    "Three": "最多3次",
-                    "Four": "最多4次",
-                    "Five": "最多5次",
+                    "Two": "至多2次",
+                    "Three": "至多3次",
+                    "Four": "至多4次",
+                    "Five": "至多5次",
                     "NoLimit": "无限制"
                 },
                 "Warning": {
                     "TakenAfterLevel1": "{item}必须在1级时选取，但{actor}在{actorLevel}级上选取。",
-                    "TakenMoreThanOnce": "{item}只能选取一次，但{actor}已经额外选取了一次。",
-                    "TakenMoreThanMax": "{item}只能被选取{maxtake}次，但{actor}已经选取了{timestake}次。",
-                    "InvalidCategory": "无法将专长“{item}”添加到{category}:专长类型无效。"
+                    "TakenMoreThanOnce": "{item}只能被选取一次，但{actor}已额外选取了一次。",
+                    "TakenMoreThanMax": "{item}只能被选取{maxtake}次，但{actor}已选取了{timestake}次。",
+                    "InvalidCategory": "无法将专长“{item}”添加到{category}：专长类型无效。"
                 },
                 "Info": {
                     "Added": "{item}已添加到{category}。"
@@ -1420,7 +1420,7 @@
                         "Label": "关键属性选项",
                         "Hint": "关键属性（除了职业所提供的）"
                     },
-                    "Label": "子特征",
+                    "Label": "子特性",
                     "Senses": {
                         "Darkvision": {
                             "LLV": "角色已从其他来源获得昏暗视觉时，授予黑暗视觉。",
@@ -1429,8 +1429,8 @@
                         }
                     },
                     "SuppressedFeatures": {
-                        "Hint": "要从数据准备和专长栏中移除一个特征，则将其拖放到此表上。",
-                        "Label": "排除特征"
+                        "Hint": "要从数据准备和专长栏中移除一个特性，则将其拖放到此表上。",
+                        "Label": "排除职业特性"
                     }
                 },
                 "Category": {
@@ -1445,7 +1445,8 @@
                     "PfsBoon": "协会福利",
                     "Ancestry": "族裔专长",
                     "Calling": "神话感召"
-                }
+                },
+                "PublicationSource": "来源：{publication}"
             },
             "Heritage": {
                 "AncestryNotFound": "找不到引用的族裔模板。",
@@ -1458,7 +1459,7 @@
             "NameLabel": "名称",
             "Physical": {
                 "LevelLabel": "物品 {level}",
-                "PriceLabel": "价格: {price}",
+                "PriceLabel": "价格：{price}",
                 "Usage": {
                     "WornParenthetical": "穿戴（{where}）",
                     "WornSlot": {
@@ -1498,8 +1499,8 @@
                     "Hint": "这些标签代表了第二版规则中，一些缺乏明确的状态/定义，但仍有较高需求的分类。当存在一些其他属性时，可能会自动添加。",
                     "Label": "其他标签"
                 },
-                "Broken": "损坏",
-                "Destroyed": "损毁",
+                "Broken": "破损",
+                "Destroyed": "被摧毁",
                 "OtherTag": {
                     "Implement": "奇具",
                     "Innovation": "发明",
@@ -1511,10 +1512,10 @@
                     "AlchemicalFood": "炼金食物"
                 },
                 "FromSpell": {
-                    "Scroll": "{name} 卷轴（{level}环级）",
-                    "Wand": "{name} 魔杖（{level}环级）",
+                    "Scroll": "{name}卷轴（{level}环）",
+                    "Wand": "{name}魔杖（{level}环）",
                     "CantripDeck5": "{name}戏法套牌（5卡包）",
-                    "spell-gem": "{name} 法术宝石（{level}环级）"
+                    "spell-gem": "{name}法术宝石（{level}环）"
                 },
                 "Bulk": {
                     "Light": {
@@ -1527,7 +1528,7 @@
                     },
                     "NLight": "{light}L",
                     "WithLight": "{bulk}，{light}L",
-                    "Label": "重量",
+                    "Label": "负载",
                     "HeldOrStowed": "负载（持握/储存）"
                 },
                 "GeneratedName": {
@@ -1599,18 +1600,18 @@
                 },
                 "ChangeEquipmentSystem": {
                     "ToPathfinder": "移除{removedTrait}特征会将此{type}从寻星者更改为开拓者。您的等级将会丢失。你确定吗？",
-                    "Title": "变换系统",
+                    "Title": "更换系统",
                     "ToStarfinder": "添加{newTrait}特征会将此{type}从开拓者更改为寻星者。所有符文将丢失。你确定吗？",
                     "ToPathfinderOrSwap": "移除{removedTrait}特征会将此{type}从寻星者（Starfinder）更改为开拓者（Pathfinder）。您的等级将会丢失。你确定吗？或者，你可以将其替换为{otherTrait}。"
                 },
                 "Grade": {
-                    "advanced": "进阶",
-                    "tactical": "战术",
-                    "commercial": "商业",
-                    "ultimate": "终极",
-                    "elite": "精英",
-                    "superior": "卓越",
-                    "paragon": "典范"
+                    "advanced": "先进型",
+                    "tactical": "战术型",
+                    "commercial": "商用型",
+                    "ultimate": "终极型",
+                    "elite": "精英型",
+                    "superior": "卓越型",
+                    "paragon": "完美型"
                 }
             },
             "SidebarSummary": "{type}目录",
@@ -1618,11 +1619,11 @@
                 "CriticalSpecialization": {
                     "axe": "选择一个在你的触及内与初始目标相邻的生物。如果它的AC低于你重击的攻击掷骰，那么你对该生物造成等同一颗武器伤害骰（也包括来自<em>强击符文</em>的额外骰，若有）的伤害。其它加值或额外骰不适用于这个伤害。",
                     "bomb": "提升炸弹的溅射伤害（若有）半径到10尺。",
-                    "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，它必须使用互动动作尝试进行@Check[athletics|dc:10|name:Pull the Missile Free|showDC:all]检定来拔出弹头，之后才能移动离开其方格。虚体、液态或能以某种方式毫不费力地避开此效果的生物不会被钉住（例如体积足够大到弹头不会成为阻碍。）",
+                    "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]，它必须使用交互动作尝试进行@Check[athletics|dc:10|name:Pull the Missile Free|showDC:all]检定来拔出弹头，之后才能移动离开其方格。虚体、液态或能以某种方式毫不费力地避开此效果的生物不会被钉住（例如体积足够大到弹头不会成为阻碍。）",
                     "brawling": "目标必须成功通过@Check[fortitude|against:class|name:Brawling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续到你的下回合结束。",
                     "club": "你将目标沿你选择的方向直线推开最多10尺，这是被迫移动。",
                     "dart": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
-                    "firearm": "目标必须通过一个@Check[fortitude|against:class|name:Firearm Critical Specialization]豁免对抗你的职业DC，否则会受到@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "firearm": "目标必须通过一个@Check[fortitude|against:class|name:Firearm Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
                     "flail": "除非目标成功通过@Check[reflex|against:class|name:Flail Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                     "hammer": "除非目标成功通过@Check[fortitude|against:class|name:Hammer Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]。",
                     "knife": "目标受到@Damage[1d6[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
@@ -1633,8 +1634,8 @@
                     "spear": "该类型的武器刺穿目标，会使其攻击变得软弱无力。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你的下一回合开始。",
                     "sword": "目标因为你的攻击而失去平衡，变得@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]直到你的下一回合开始。",
                     "crossbow": "目标受到@Damage[1d8[persistent,bleed]]。你在此流血伤害上获得等同该武器给予攻击检定的物品加值。",
-                    "corrosive": "目标受到@Damage[(1d6 + @item.system.runes.potency)[persistent,acid]]。你在此强酸伤害上获得一个物品加值，该加值等于武器对攻击骰的物品加值。",
-                    "cryo": "这把武器冻结了目标的部分身体，使其难以移动。目标在直到你的下一回合开始前陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 1}状态。",
+                    "corrosive": "目标受到@Damage[(1d6 + @item.system.runes.potency)[persistent,acid]]伤害。你在此酸蚀伤害上获得物品加值，该加值等于武器对攻击骰的物品加值。",
+                    "cryo": "这把武器冻结了目标的部分身体，使其难以移动。直到你的下个回合开始，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。",
                     "flame": "目标受到@Damage[(1d6 + @item.system.runes.potency)[persistent,fire]]。你在此火焰伤害上获得一个物品加值，该加值等于武器在攻击骰上的物品加值。",
                     "grenade": "对每个在对抗榴弹效果时掷出大失败的生物，应用榴弹条目中列出的效果。",
                     "laser": "目标必须尝试一次@Check[fortitude|against:class]豁免检定，对抗你的职业 DC，若失败则陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩}状态，持续至你的下回合开始。",
@@ -1774,14 +1775,14 @@
                 "Close": "关闭",
                 "Hint": {
                     "UUID": "此物品的通用唯一标识符",
-                    "SourceId": "原始集合包中的物品UUID",
+                    "SourceId": "源合集包中的物品UUID",
                     "Slug": "一个稳定的、可读的标识符：设置后即使物品被重命名，标识符也将保持不变。",
                     "RollOptions": "物品掷骰选项的前缀取决于它的用法。大多数情况下使用<em>物品:</em>作为前缀，但是包含规则元素的项会使用<em>根源:</em>。"
                 },
                 "New": "新规则元素",
                 "RegenerateSlug": "（重新）生成标识符",
                 "Tab": "规则",
-                "Remove": "去除规则元素",
+                "Remove": "删除规则元素",
                 "Edit": "编辑JSON",
                 "ViewRollOptions": "查看掷骰选项",
                 "CopyToClipboard": "复制到剪贴板"
@@ -1798,7 +1799,7 @@
                 },
                 "Warning": {
                     "InvalidLevel": "尝试添加法术{name}至 {targetLevel}，但法术基础环级为{baseLevel}。",
-                    "WrongSpellType": "无法将 {type} 法术添加到此施法目录。",
+                    "WrongSpellType": "无法将{type}法术添加到该施法列表。",
                     "CantripToRankedSlots": "{spell}为戏法，须添加到戏法列表中。",
                     "InvalidRank": "{spell}是{spellRank}环法术，但所选法术位为{targetRank}环。",
                     "NonCantripToCantrips": "{spell}不是戏法，无法添加到戏法列表中。"
@@ -1806,7 +1807,7 @@
                 "LevelN": "法术{level}",
                 "Counteract": {
                     "criticalSuccess": "如果目标的反制等级为{rank}或更低，则对其进行反制。",
-                    "criticalFailure": "反制失败。",
+                    "criticalFailure": "你未能反制目标法术。",
                     "Label": "反制",
                     "success": "如果目标的反制等级为{rank}或更低，则对其进行反制。",
                     "failure": "如果目标的反制等级小于{rank}，则对其进行反制。",
@@ -1814,7 +1815,7 @@
                 },
                 "MeasuredTemplate": {
                     "Place": "放置{area}",
-                    "Clear": "清除放置的盖板",
+                    "Clear": "清除放置的测量板",
                     "PlacementTooltip": "左键点击锁定画布上的位置并启用旋转。再次点击以放置。右键点击解锁或取消。按住Shift键直接放置而不旋转。按住Ctrl键在旋转时禁用网格对齐。"
                 },
                 "Rank": {
@@ -1920,7 +1921,7 @@
                     "Enabled": "从合集包中取得此物品的最新数据。",
                     "Disabled": "无法从合集包取得最新物品数据：包含添加到角色卡时存储的数据"
                 },
-                "Label": "取得最新",
+                "Label": "刷新",
                 "SourceNotFound": "找不到{item}的集合包来源（源ID：{sourceId}）。",
                 "DifferentItemType": "{item}（{uuid}）的合集包来源与此角色当前呈现的类型不符。",
                 "Success": "物品“{item}”已刷新。",
@@ -2574,7 +2575,8 @@
                     "Search": "搜索配方",
                     "Create": "创建",
                     "IncreaseQuantity": "增加数量",
-                    "DecreaseQuantity": "减少数量"
+                    "DecreaseQuantity": "减少数量",
+                    "SearchResults": "匹配配方：{count}个"
                 },
                 "Language": {
                     "Unallocated": {
@@ -2597,7 +2599,8 @@
                         "ConfirmSelection": "确认选择",
                         "ViewSheet": "查看角色卡"
                     },
-                    "Title": "{type}选择"
+                    "Title": "{type}选择",
+                    "SearchResults": "匹配{items}：{count}个"
                 },
                 "FeatSlot": {
                     "AncestryHeader": "族裔专长",
@@ -2654,7 +2657,7 @@
                         "All": "所有魔法物品",
                         "Scroll": "仅卷轴"
                     },
-                    "TraditionSpellcasting": "{tradition}施法能力",
+                    "TraditionSpellcasting": "{tradition}施法",
                     "Rituals": "仪式",
                     "DC": "法术DC",
                     "Label": "法术攻击调整值与DC",
@@ -3403,7 +3406,9 @@
             "ContextualOptions": {
                 "postRoll": "发布掷骰选项"
             },
-            "DiceRollOptionsHint": "判断“伤害修改”规则元素时的骰子和调整值掷骰选项。"
+            "DiceRollOptionsHint": "判断“伤害修改”规则元素时的骰子和调整值掷骰选项。",
+            "Search": "搜索掷骰选项",
+            "SearchResults": "匹配掷骰选项：{count}个"
         },
         "Check": {
             "DC": {
@@ -4095,7 +4100,7 @@
             "Sustained": "持续的？",
             "UnlimitedDuration": "无限持续",
             "UntilEncounterEnds": "直到遭遇结束",
-            "Unidentified": "不明",
+            "Unidentified": "未鉴定",
             "RollDamageToolTip": "[左键单击] 伤害掷骰"
         },
         "EmptySlot": "空位",
@@ -4859,7 +4864,7 @@
             },
             "statusEffectType": {
                 "blackWhite": "黑白",
-                "default": "彩色",
+                "default": "全彩",
                 "hint": "决定哪个图标用于效果显示。",
                 "legacy": "经典",
                 "name": "状态图标设置"
@@ -4889,7 +4894,7 @@
             },
             "IdentifyMagicNotMatchingTraditionModifier": {
                 "Name": "辨识魔法技能调整值",
-                "Hint": "辨识魔法技能与特定魔法宗派不匹配时，技能检定的DC会增加",
+                "Hint": "当用于辨识魔法的技能不匹配与物品的魔法根源时，技能检定DC便会增加",
                 "Choices": {
                     "0": "0",
                     "2": "+2",
@@ -5184,8 +5189,8 @@
                         "hint": "设置世界时钟应用的主题。"
                     },
                     "timeConvention": {
-                        "label": "时间公约",
-                        "hint": "显示24小时制或 12 小时制时钟。"
+                        "label": "计时制",
+                        "hint": "显示24小时制或12小时制时钟。"
                     },
                     "syncDarkness": {
                         "label": "同步黑暗",
@@ -5364,7 +5369,7 @@
                 "Hint": "在场景中显示受控指示物和鼠标悬停指示物之间的距离。"
             }
         },
-        "SaveDCLabel": "豁免 <dc>DC {dc}</dc> {type}",
+        "SaveDCLabel": "豁免<dc>DC {dc}</dc> {type}",
         "SaveDCLabelBasic": "基础{type}<dc>豁免DC {dc}</dc>",
         "SavesFortitude": "强韧",
         "SavesFortitudeShort": "强韧",
@@ -5422,7 +5427,7 @@
         "SettingsQuickRollsNotes": "如果禁用，D20掷骰编辑窗体将仅在按住shift键点击时出现。",
         "SettingsDataUriHighlightLabel": "高亮显示URI链接的图片",
         "SettingsDataUriHighlightNotes": "使用URI链接的图片作为角色头像会让棋盘显示变得不够清晰。激活后，图片会有红色边框高亮显示，以便更好地识别和移动它们。<br>这一设置仅对本次剧本生效。",
-        "SheetLabel": "{type} 表",
+        "SheetLabel": "{type}卡",
         "SheetLabelDataEntry": "{type}表（数据输入）",
         "SheetLabelNew": "{type} 表 (预览)",
         "SheetLabelOld": "{type}表 (legacy)",
@@ -5447,7 +5452,7 @@
         "SkillArcana": "奥法",
         "SkillAth": "运动",
         "SkillAthletics": "运动",
-        "SkillCheckWithName": "技能检定: {skillName}",
+        "SkillCheckWithName": "技能检定：{skillName}",
         "SkillCra": "手艺",
         "SkillCrafting": "手艺",
         "SkillDec": "欺骗",
@@ -5477,7 +5482,7 @@
         "SkillThi": "贼活",
         "SkillThievery": "贼活",
         "SkillsLabel": "技能",
-        "SkillPotencyHeader": "技能潜力",
+        "SkillPotencyHeader": "技能潜能",
         "SkillFeatLevels": "技能专长等级",
         "SkillIncreaseLevels": "技能提升等级",
         "Source": {
@@ -5502,13 +5507,13 @@
         "SpeedTypesTitle": "转换移动类型",
         "SpellAbilityLabel": "关键属性",
         "SpellAbilityModLabel": "+ Mod",
-        "SpellArea": "范围: {area}",
-        "SpellAttackWithTradition": "{tradition} 法术攻击",
+        "SpellArea": "范围：{area}",
+        "SpellAttackWithTradition": "{tradition}法术攻击",
         "SpellAttackLabel": "法术攻击",
         "SpellBasicSaveOption": "基础",
         "SpellBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级,法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "SpellCantripLabel": "戏法",
-        "SpellCastingFormat": "{traditionSpells} {preparationType} 法术",
+        "SpellCastingFormat": "{traditionSpells}{preparationType}法术",
         "SpellComponentF": "器材",
         "SpellComponentM": "材料",
         "SpellComponentS": "姿势",
@@ -5531,7 +5536,7 @@
         "SpellDurationLabel": "持续时间",
         "SpellFocusLabel": "聚能",
         "SpellFlexibleLabel": "灵活",
-        "SpellFlexibleAvailable": "灵活: {value} / {max}",
+        "SpellFlexibleAvailable": "灵活：{value} / {max}",
         "SpellCollectionAdd": "添加到法术合集",
         "SpellCollectionRemove": "从法术合集中移除",
         "SpellLabel": "法术",
@@ -5548,8 +5553,8 @@
         "SpellLevel8": "8环",
         "SpellLevel9": "9环",
         "SpellLevelLabel": "法术环级",
-        "SpellLevelBase": "基础: {level}",
-        "SpellLevelHeightened": "升阶: +{heightened}",
+        "SpellLevelBase": "基础：{level}",
+        "SpellLevelHeightened": "升阶：+{heightened}",
         "SpellPreparedLabel": "已准备",
         "SpellRangeLabel": "射程",
         "SpellRequirementsLabel": "需求",
@@ -5651,20 +5656,20 @@
         "TabManageTabsLabel": "管理标签",
         "TabPathfinderSociety": "开拓者协会",
         "TabSkillsLabel": "技能",
-        "TabSpellbookLabel": "法术书",
+        "TabSpellbookLabel": "施法",
         "TargetFlatFootedLabel": "目标措手不及",
         "TempHPTitle": "你拥有的临时生命值",
         "TempHitPointsShortLabel": "临时生命值",
         "TemplateLabel": "{size}-{unit} {shape}",
         "TemporaryItemToolTip": "此物品为临时物品，将会在一段时间后或在每日准备期间失效。它不存在价值，也不能出售。",
         "Time": {
-            "Duration": "时效",
+            "Duration": "持续时间",
             "Unit": {
                 "Seconds": "秒",
                 "Rounds": "轮",
                 "Minutes": "分钟",
                 "Hours": "小时",
-                "Days": "天",
+                "Days": "日",
                 "Weeks": "周",
                 "Unlimited": "无限",
                 "UntilEncounterEnds": "直到遭遇结束"
@@ -5675,7 +5680,7 @@
         "ToggleSpellVisibilityTitle": "法术准备",
         "ToggleSlotlessSpellLevelsTitle": "切换空置法术环级的可见性",
         "ToggleUnreadyStrikes": "切换未装备武器",
-        "ToggleWithName": "切换: {property}",
+        "ToggleWithName": "切换：{property}",
         "Token": {
             "Appearance": "外貌",
             "Size": {
@@ -5693,7 +5698,7 @@
                 "Hint": "激活\"秘密\"配置，所有者将会显示一个紫色信息框，而对于其他人则无任何显示变化。具有此特征的标记也无法被非所有者作为目标。",
                 "Label": "秘密配置"
             },
-            "ActorLinkForced": "{type} 类型的角色无法被解除链接。",
+            "ActorLinkForced": "{type}类型的角色无法被解除链接。",
             "OutOfReach": "{token}在触及之外。",
             "Mystified": {
                 "TheObject": "对象",
@@ -5704,7 +5709,7 @@
         "TotalTreasure": "全部宝物",
         "TotalCoinage": "全部硬币",
         "TotalWealth": "全部财产",
-        "TrainedSkillsLabel": "受训技能选项",
+        "TrainedSkillsLabel": "受训技能",
         "Traits": "特征",
         "TraitAasimar": "神裔",
         "TraitAberration": "异怪",
@@ -7980,8 +7985,10 @@
             "DisplayDetails": "显示详情",
             "Breakdown": {
                 "Adjustment": "{adjustment} {value}",
-                "Base": "{level}级DC {dc}"
-            }
+                "Base": "{level}级DC {dc}",
+                "OffTradition": "无特定根源 {value}"
+            },
+            "Difficulty": "困难等级"
         },
         "loot": {
             "EditLootLabel": "设置战利品？",
@@ -8238,7 +8245,16 @@
         "SpellcastingSettings": {
             "Title": "施法设置",
             "AutoHeightenLabel": "自动升环",
-            "AutoHeightenDefault": "默认（使用角色等级）"
+            "AutoHeightenDefault": "默认（使用角色等级）",
+            "Groups": {
+                "Casting": "施法",
+                "Preparation": "准备"
+            },
+            "Preview": {
+                "Label": "法术攻击 / DC",
+                "Value": "{attack} / DC {dc}"
+            },
+            "ProficiencyHint": "绝大多数法术使用施法熟练度。仅在能力有特别说明时，才选择职业DC。"
         },
         "Speed": "速度",
         "TraitAftermath": "奇遇",
@@ -9119,7 +9135,8 @@
                 "Finished": "{self}完成了与{trader}的交易。",
                 "NoItems": "交易已完成，但是没有物品被交易。"
             },
-            "Aborted": "{user}已结束交易：没有物品被交易。"
+            "Aborted": "{user}已结束交易：没有物品被交易。",
+            "SearchResults": "匹配物品：{count}个"
         },
         "TraitDescriptionMorlock": "摩洛克是一类肤色苍白，栖息于地下的类人生物。数代之前，他们本只是普通的人类。",
         "TraitDescriptionMunavri": "Amicable humanoids living in the Darklands, munavris have powerful telekinetic and psychic abilities.",
@@ -9356,7 +9373,7 @@
         "TraitTripkee": "树蛙人",
         "SpellList": {
             "Search": "搜索法术",
-            "SearchResults": "匹配的法术：{count}个",
+            "SearchResults": "匹配法术：{count}个",
             "SortAscending": "升序排列",
             "SortDescending": "降序排列"
         },
