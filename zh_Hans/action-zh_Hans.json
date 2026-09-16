@@ -79,7 +79,7 @@
             "Craft": {
                 "SelectItemDialog": {
                     "CancelButtonLabel": "取消",
-                    "CraftButtonLabel": "制造",
+                    "CraftButtonLabel": "制作",
                     "DropItemZoneLabel": "将物品拖放至此...",
                     "Title": "选择要制作的物品"
                 },
@@ -104,7 +104,7 @@
                     "InsufficientCoins": "硬币不足"
                 },
                 "Details": {
-                    "Discount": "每日折扣:",
+                    "Discount": "每日折扣：",
                     "DaysForNoCost": "可减免额外花销的天数：",
                     "PayMaterials": "支付 {cost} 材料成本和手艺",
                     "PayFull": "支付{cost}全部成本和手艺",
@@ -186,7 +186,16 @@
                 "CritFailure": "大失败",
                 "Recovery": "耐力恢复",
                 "Damage": "伤害",
-                "Cancel": "取消"
+                "Cancel": "取消",
+                "DC": {
+                    "Label": "交涉DC",
+                    "Expert": "专家 DC 20，+5耐力值",
+                    "Legendary": "传奇 DC 40，+25耐力值",
+                    "Master": "大师 DC 30，+15耐力值",
+                    "Mod": "DC调整值",
+                    "Trained": "受训 DC 15"
+                },
+                "Description": "<p><strong>先决条件</strong> 交涉熟练度为受训</p>\n<p><strong>需求</strong> 目标盟友在上一轮损失耐力值</p>\n<hr />\n<p>你向30尺内的一名盟友进行信心喊话，提振其精神。进行交涉检定。此检定的DC一般为15，但GM可依照情境调整之。若你在交涉上具有专家熟练度，你可改为尝试DC 20交涉检定，来使成功时回复的耐力值提升+5。若你在交涉上具有大师熟练度，你可改为尝试DC 30交涉检定，来使成功时回复的耐力值提升+15。若你在交涉上具有传奇熟练度，你可改为尝试DC 40交涉检定，来使成功时回复的耐力值提升+25。不论检定成功与否，直到该盟友下次进行@UUID[Compendium.pf2e.actionspf2e.Item.Take a Breather]行动或完整休息，他临时免疫信心喊话。</p>"
             },
             "Feint": {
                 "Notes": {
@@ -393,24 +402,25 @@
                 "ShieldIsDestroyed": "{actor}的{shield}已被摧毁。",
                 "ShortTitle": "举起",
                 "Title": "举起盾牌",
-                "Description": "<p><strong>需求</strong> 你正持握一面盾牌</p>\n<hr />\n<p>你举起盾牌保护自己。当你举起盾牌时，你获得盾牌所列出的AC环境加值。你的盾牌会一直保持举起直到你的下一回合开始。</p>"
+                "Description": "<p><strong>需求</strong> 你正持握一面盾牌</p>\n<hr />\n<p>你举起盾牌保护自己。当你举起盾牌时，你获得盾牌所列出的AC环境加值。你的盾牌会一直保持举起直到你的下一回合开始。</p>",
+                "LowerTitle": "放下盾牌"
             },
             "Release": {
                 "Title": "放开",
                 "Drop": {
                     "Title": "放下",
-                    "Description": "{actor} 将他们的 {weapon} 放在了地上。"
+                    "Description": "{actor}将他的{weapon}放在了地上。"
                 },
                 "Grip": {
-                    "Title": "改变持握(1H)",
-                    "Description": "{actor} 从他们的 {weapon} 上松开了一只手。"
+                    "Title": "改变持握（1手）",
+                    "Description": "{actor}从他的{weapon}上松开了一只手。"
                 },
                 "Description": "<p>你放开手中握持的物品。这可以是丢下某物品、将一只手从武器上移开但另一只手继续持握武器、松开悬挂吊灯的绳索、以及诸如此类的动作。和大多数操作特征的动作不同，放开不会触发那些会因操作特征而触发的反应动作（例如反应打击）。</p>\n<p>若你想要在回合外使用放开动作，可以使用@UUID[Compendium.pf2e.actionspf2e.Item.dLgAMt3TbkmLkUqE]动作做到这一点。</p>"
             },
             "Repair": {
                 "Chat": {
-                    "ItemRepaired": "{itemName}被修复了 {repairedDamage} 点伤害，目前生命值为{afterRepairHitPoints}/ {maximumHitPoints} 。",
-                    "ItemDamaged": "{itemName}被给予了 {damageDealt} 点伤害，目前生命值为{afterRepairHitPoints}/ {maximumHitPoints} 。"
+                    "ItemRepaired": "{itemName}从伤害中恢复{repairedDamage}点，目前生命值为{afterRepairHitPoints} / {maximumHitPoints} 。",
+                    "ItemDamaged": "{itemName}受到{damageDealt}点伤害，目前生命值为{afterRepairHitPoints} / {maximumHitPoints} 。"
                 },
                 "Error": {
                     "ItemReferenceMismatch": "只允许角色对实体物品进行修复。"
@@ -421,7 +431,7 @@
                     "Hardness": "硬度",
                     "ItemLevelRepairDC": "物品等级{level}修理DC",
                     "RestoreItemHitPoints": "恢复物品{value}点生命值",
-                    "RollItemDamage": "掷骰{value}伤害"
+                    "RollItemDamage": "骰掷{value}伤害"
                 },
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong>你为一件物品恢复了10+（10x你的每个手艺技能的熟练等级）的生命值（如果你是受训等级，总值为20；如果你是专家等级，总值为30；如果你是大师等级，总值为40；如果你是传奇等级，总值为50）。",
@@ -446,7 +456,7 @@
                     "failure": "<strong>失败</strong> 目标拒绝了这个请求，不过他们也许会提出一个不那么极端的方案。",
                     "criticalFailure": "<strong>大失败</strong> 对方不仅会拒绝你的请求，而且他们对你的态度也会因为这个请求的冒失而降低一个等级。"
                 },
-                "Title": "提出请求",
+                "Title": "请求",
                 "Description": "<p>你可以向一个对你态度友善或乐于帮助的生物提出请求。考虑到目标目前对你的态度，你需要以他们能接受的方式进行请求。GM会根据请求的难度设置[[/act request]]{交涉}检定的DC。有些请求会令人生厌或者不可能完成，即便一个对你乐于帮助的NPC也绝不会同意。</p><hr /><p><strong>大成功</strong> 目标无条件同意你的请求。</p>\n<p><strong>成功</strong> 目标同意你的请求，但他们可能会要求附加条件或修改请求内容。</p>\n<p><strong>失败</strong> 目标拒绝请求，但他们有可能会提出一个不那么极端的替代方案。</p>\n<p><strong>大失败</strong> 目标不但拒绝了请求，而且你提出请求时的冒失行为使他们对你的态度降低了一级。</p>"
             },
             "Seek": {
@@ -465,7 +475,7 @@
                     "criticalSuccess": "<strong>大成功</strong> 你清楚无疑地了解自己身处的位置。如果你所处的地理区域拥有东南西北四极，你很清楚东南西北的具体方向。",
                     "success": "<strong>成功</strong> 你还算清楚自己的位置，至少不会迷失方向。如果你所处的地理区域拥有东南西北四极，你大致知道东南西北的方向。"
                 },
-                "Title": "辨别方向 Sense Direction",
+                "Title": "辨别方向",
                 "Description": "<p>你可以利用太阳、星辰的位置，地理特征和植被特征，或者动物种群的习性在野外辨认方向。通常，你每天只需进行一次[[/act sense-direction]]{生存}检定，但根据具环境条件和环境变化也可能需要频繁掷骰。GM会决定DC以及该行动需要多长时间（通常需要一分钟左右）。环境尤为特殊或者你不熟悉的地方可能需要你拥有最低熟练度才能辨别方向。在没有@UUID[Compendium.pf2e.equipment-srd.Item.wob6DB1FFdWs0mbp]的情况下，你辨别方向的检定会受到-2物品减值。</p><hr /><p><strong>大成功</strong> 你非常清楚自己所处的位置。如果你所处的环境有基本方位的概念，你就能准确地辨别方位。</p>\n<p><strong>成功</strong> 你拥有足够的方向感，不会陷入迷失的绝望。如果你所处的环境有基本方位的概念，你会对周遭方位有个大致模糊的了解。</p>",
                 "SampleTasks": {
                     "Expert": "在树篱迷宫中穿行",
@@ -486,7 +496,7 @@
                 "Description": "<p>你尝试辨明目标的行为是否反常。选择一个生物，评估目标的肢体语言、紧张的迹象、其它可能试图欺骗他人的行为等等。GM为你暗骰一次[[/act sense-motive]]{察觉}检定，将结果与目标的欺骗DC、影响该生物心灵的法术DC、或者其它GM认为合适的DC进行比较。在情况发生重大转变之前，你无法对同一个生物多次尝试察言观色。</p><hr /><p><strong>大成功</strong> 你得知目标的真实意图，能断定是否有心灵魔法正影响着目标。</p>\n<p><strong>成功</strong> 你能辨明目标行为是否反常，但你无法得知其真实意图，也无法确定是否有什么魔法正在影响目标。</p>\n<p><strong>失败</strong> 你能发现欺骗你的生物打算让你相信什么事。若目标没有进行欺骗，你会相信目标的行为是正常的。</p>\n<p><strong>大失败</strong> 你完全错判了目标的意图。</p>"
             },
             "ShieldBlock": {
-                "SelectAShield": "选择一个盾牌"
+                "SelectAShield": "选择一面盾牌"
             },
             "Shove": {
                 "Notes": {
@@ -620,17 +630,17 @@
             },
             "TreatWounds": {
                 "Rolls": {
-                    "RiskySurgery": "伤害骰: 激进手术",
-                    "TreatWounds": "治疗骰: 治疗伤势",
-                    "TreatWoundsCriticalFailure": "伤害骰: 治疗伤势"
+                    "RiskySurgery": "伤害骰：激进手术",
+                    "TreatWounds": "治疗骰：治疗伤势",
+                    "TreatWoundsCriticalFailure": "伤害骰：治疗伤势"
                 },
                 "Content": "选择目标DC。注意你不能尝试超过你熟练度等级的治疗行动。若你这样做，DC和治疗量会降级到你的最高熟练度等级。",
                 "DC": {
-                    "Mod": "DC 调整值:",
+                    "Mod": "DC调整值",
                     "Trained": "受训 DC 15",
-                    "Expert": "专家 DC 20, +10 治疗",
-                    "Master": "大师 DC 30, +30 治疗",
-                    "Legendary": "传奇 DC 40, +50 治疗"
+                    "Expert": "专家 DC 20，+10 治疗",
+                    "Master": "大师 DC 30，+30 治疗",
+                    "Legendary": "传奇 DC 40，+50 治疗"
                 },
                 "Error": "{name}在{skill}上未受训。",
                 "Feats": {
@@ -638,7 +648,7 @@
                     "MortalHealing": "致命治疗"
                 },
                 "Label": "治疗伤势",
-                "SkillSelect": "治疗伤势技能:"
+                "SkillSelect": "治疗伤势技能"
             },
             "DisableDevice": {
                 "Notes": {
@@ -767,7 +777,7 @@
                         "success": "<strong>成功</strong> 目标不再处于濒死状态（但仍然失去意识）。",
                         "criticalFailure": "<strong>大失败</strong> 目标的濒死值+1。"
                     },
-                    "Title": "进行急救- 稳定伤势",
+                    "Title": "进行急救—稳定伤势",
                     "DifficultyClass": {
                         "Label": "进行急救DC"
                     },
@@ -778,7 +788,7 @@
                         "criticalFailure": "<strong>大失败</strong> 目标立即承受一次等于他承受的持续流血伤害数值的伤害。",
                         "success": "<strong>成功</strong> 目标受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。"
                     },
-                    "Title": "进行急救-止血",
+                    "Title": "进行急救—止血",
                     "Description": "<p>对受到持续流血伤害的生物进行[[/act administer-first-aid variant=stop-bleeding]]{医疗}检定。DC通常等于导致出血效果的DC。</p><p><strong>成功</strong> 目标会受到协助恢复的增益，由于得到了特别合适且合理的帮助而降低DC。<br><strong>大失败</strong> 目标立刻受到与其持续流血伤害相等的伤害。</p>"
                 },
                 "Warning": {
@@ -879,7 +889,7 @@
             "LowerShield": {
                 "ShortTitle": "放下",
                 "Title": "放下盾牌",
-                "Content": "{actor} 放下了 {shield}。"
+                "Content": "{actor}放下了{shield}。"
             },
             "EndCover": {
                 "TowerShield": {
@@ -890,26 +900,26 @@
                 "Title": "结束掩蔽"
             },
             "ArrestAFall": {
-                "Title": "着陆 Arrest A Fall",
+                "Title": "着陆",
                 "Description": "<p><strong>触发</strong> 你处于坠落中。</p>\n<p><strong>需求</strong>你拥有飞行速度。</p>\n<hr />\n<p>你选择尝试一次特技检定或反射豁免来缓冲坠落。DC通常为15，但空气湍流或因素可能会导致DC提高。</p>\n<hr />\n<p><strong>成功</strong> 你不会受到本次坠落伤害。</p>",
                 "Notes": {
                     "success": "<strong>成功</strong> 你不会受到本次坠落伤害。"
                 }
             },
             "AvertGaze": {
-                "Title": "转移目光 Avert Gaze",
+                "Title": "转移目光",
                 "Description": "<p>你将目光从危险上移开，比如美杜莎的凝视。在对抗如美杜莎的石化凝视这种需要你看着某生物或物体的视觉能力的豁免中，你获得+2环境加值。你的转移目光会持续到你下一回合开始。</p>"
             },
             "Burrow": {
                 "Description": "<p><strong>需求</strong> 你拥有掘地速度</p>\n<hr />\n<p>你在泥地、沙地或类似软性地面中掘地前进，最多移动等于你掘地速度的距离。你无法掘地穿越岩石地面或类似比泥地更密实的地面，除非你有能力允许你在这种地面下掘地前进。</p>",
-                "Title": "掘地 Burrow"
+                "Title": "掘地"
             },
             "CoverTracks": {
-                "Title": "掩盖行踪 Cover Tracks",
+                "Title": "掩盖行踪",
                 "Description": "<p>你可以以一半的@UUID[Compendium.pf2e.journals.JournalEntry.S55aqwWIzpQRFhcq.JournalEntryPage.DUOb8QrlC5t0adkL]{旅行速度 Travel Speed}移动来掩盖自己的行踪。掩盖行踪时你不需要进行生存检定，但如果你的生存DC高于追踪你所需要的标准DC，那么任何试图@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]你的生物都需要进行生存检定对抗你的生存DC。</p>\n<p>一些情况下，你可能需要在遭遇中掩盖行踪。此时你的掩盖行踪是一个单动作，不具有探索特征。</p>"
             },
             "Dismiss": {
-                "Title": "解消 Dismiss",
+                "Title": "解消",
                 "Description": "<p>你使一个你能够解消的效果结束。除非另有说明，否则解消会使整个效果结束。</p>"
             },
             "EarnIncome": {
@@ -919,7 +929,7 @@
                     "criticalFailure": "<strong>大失败</strong> 你在工作中一无所获并且立刻会被解雇。你无法再继续进行该任务。你的声誉受损，可能导致未来很难在这个社区找到回报可观的工作。",
                     "failure": "<strong>失败</strong> 你工作得敷衍潦草，只能在这段时间里得到最低限度的报酬。获得任务等级且对应失败所列出的现金数量。GM可能会降低你继续进行任务的时间。"
                 },
-                "Title": "赚取收入 Earn Income",
+                "Title": "赚取收入",
                 "Description": "<p>你使用一项技能在休整期尝试赚钱。GM会设定一个代表最有利可图的工作的任务等级。你可以寻找较低级别的任务，由GM决定能否找到。有时你可以尝试找到比一开始提供的那份报酬更好的工作，但需要花费时间，并且需要使用交涉技能搜集信息，或者进行一些研究和社交方面的努力。</p>\n<p>如果你接受一份工作，GM就会秘密设置你的技能检定DC。你需要在第一天工作后进行检定来确定收入。根据检定结果、任务等级和熟练度（如所赚收入表所示），你将获得一定的收入。</p>\n<p>你可以在接下来几天继续执行该任务，无需再次检定。第一天之后的每一天收入都与第一天相同，直至任务完成。GM决定你可以在该任务中工作多次时间。大多数任务持续一两周，但有些任务可能需要几个月甚至几年的时间。</p><hr /><p><strong>大成功</strong> 你工作得非常出色。获得任务等级+1且对应你技能熟练度的现金数量。</p>\n<p><strong>成功</strong> 你工作得很称职。获得任务等级且对应你技能熟练度的现金数量。</p>\n<p><strong>失败</strong> 你工作得敷衍潦草，只能在这段时间里得到最低限度的报酬。获得任务等级且对应失败所列出的现金数量。GM可能会降低你继续进行任务的时间。</p>\n<p><strong>大失败</strong> 你在工作中一无所获并且立刻会被解雇。你无法再继续进行该任务。你的声誉受损，可能导致未来很难在这个社区找到回报可观的工作。</p>",
                 "SampleTasks": {
                     "Caption": "以下范例使用酒类学识在酒吧工作，或使用法律学识从事法律工作。",
@@ -944,7 +954,7 @@
             },
             "Fly": {
                 "Description": "<p><strong>需求</strong> 你有飞行速度。</p>\n<hr />\n<p>你在空中飞行至多等于飞行速度的距离。向上飞行（垂直向上或斜向上）使用在困难地形移动的规则。每消耗5尺速度可以垂直向下移动10尺距离。若你飞行到地面上，你不会受到坠落伤害。你可以使用该动作飞行0尺来保持悬停在空中。若你在回合结束时处于空中而本回合没有使用过飞行动作，你会坠落。</p>",
-                "Title": "飞行 Fly"
+                "Title": "飞行"
             },
             "GrabAnEdge": {
                 "Notes": {
@@ -982,23 +992,23 @@
                 }
             },
             "Mount": {
-                "Title": "骑乘 Mount",
+                "Title": "骑乘",
                 "Description": "<p><strong>需求</strong> 你与一个体型至少大于你一级，且自愿成为你坐骑的生物相邻。</p>\n<hr />\n<p>你移动到该生物身上并且骑乘上该生物。若你已处于骑乘中，你可以使用该动作脱离骑乘，离开坐骑移动到与它相邻的空间。</p>"
             },
             "PointOut": {
                 "Description": "<p><strong>需求</strong> 一个生物对你的数个盟友视为无踪状态，但对你不为无踪。</p>\n<hr />\n<p>你向一个或更多盟友指出你能看到的某个生物，向某个方向做手势并用语言描述距离。该生物对你的盟友不再为@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]状态，而变为@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]状态。这只对能看到你且所处位置能侦测到目标的盟友有效。若盟友无法听到或听懂你说的话，他们就需要通过@Check[perception|defense:stealth]{察觉}检定对抗所指出位置生物的隐秘DC，否则会遭到误解，认为目标位于其他位置。</p>",
-                "Title": "指出位置 Point Out"
+                "Title": "指出位置"
             },
             "Strike": {
                 "Notes": {
                     "criticalSuccess": "<strong>大成功</strong> 根据武器或无武装攻击掷伤害骰，并且造成双倍伤害。",
                     "success": "<strong>成功</strong> 根据武器或无武装攻击掷伤害骰，并且造成伤害。"
                 },
-                "Title": "打击 Strike",
+                "Title": "打击",
                 "Description": "<p>你使用自己持用的一件武器或无武装进行一次攻击，目标是你触及内（若为近战攻击）或射程内（若为远程攻击）的一个生物。根据使用的武器或无武装攻击的攻击调整值掷攻击骰，将结果和目标生物的AC进行比较以确定结果。</p>\n<hr />\n<p><strong>大成功</strong> 根据武器或无武装攻击掷伤害骰，并且造成双倍伤害。</p>\n<p><strong>成功</strong> 根据武器或无武装攻击掷伤害骰，并且造成伤害。</p>"
             },
             "Sustain": {
-                "Title": "维持 Sustain",
+                "Title": "维持",
                 "Description": "<p>选择一个持续时间为维持，或者列出了维持时会获得特殊增益的效果。大多数类似效果来自法术或激活魔法物品。如果该效果的持续时间为维持，它的持续时间会延长到你的下一回合结束（在同一回合维持一次以上不会继续延长持续时间）。如果一项能力可以维持，但没有列出持续时间，则最多可以维持10分钟。</p>\n<p>一项效果可能会列出你维持它时才会获得的额外增益，这种情况有可能出现在持续时间不为维持效果上。如果该效果具有特殊增益且持续时间为维持，那么你的维持动作会延长持续时间并获得特殊增益。</p>\n<p>如果你的维持动作被打断，该能力结束。</p>"
             },
             "IdentifyAlchemy": {
@@ -1040,11 +1050,11 @@
                 "Title": "格挡"
             },
             "AreaFire": {
-                "Title": "区域射击 Area Fire",
+                "Title": "区域射击",
                 "Description": "你瞄准指定区域内的每个目标，该区域为武器的射程增量（对于锥形或线形）或指定爆炸的爆发范围（对于爆发）。对于爆发，你能将其中心放置在第一个射程增量内。区域内的所有生物都必须通过基础反射豁免，DC为你的职业DC+你武器的追踪值，你不必进行攻击骰。该伤害为区域伤害。豁免大失败的生物都会承受武器重击的附带效果，包括武器的重击专精效果。区域射击的耗弹量同武器列出的耗弹量相同。"
             },
             "AutoFire": {
-                "Title": "自动射击 Auto-Fire",
+                "Title": "自动射击",
                 "Description": "你尝试攻击锥形区域内的每个目标，锥形的范围等于你武器射程增量的一半，不必进行攻击骰。区域内的所有生物都必须通过基础反射豁免，DC为你的职业DC+你武器的追踪值。该伤害为区域伤害。豁免大失败的生物都会承受武器重击的附带效果，包括武器的重击专精效果。自动射击会耗用目标数量×2的弹药量。"
             },
             "Reload": {
@@ -1181,7 +1191,7 @@
                         "success": "<strong>成功</strong> 转向，然后以全速移动。"
                     }
                 },
-                "Description": "<p>你在驾驶车辆时进行特技驾驶，暂时提高其有效能力，但有失去控制的风险。驱动（Drive）你的车辆并选择一个特技驾驶动作。所有作为特技驾驶一部分尝试的驾驶检定都会受到列出的惩罚，包括进行鲁莽行动的驾驶检定。如果驾驶行动和特技驾驶都是鲁莽的，你必须尝试两次驾驶检定来保持对车辆的控制。</p>\n<table class=\"pf2e\"><caption>特技驾驶</caption><thead><tr><th>特技</th><th>减值</th><th>好处</th></tr></thead><tbody><tr><td>后退 Back Off</td><td>–1</td><td>以半速向后移动。</td></tr><tr><td>闪避 Evade</td><td>–1</td><td>以半速移动，获得 AC+1 状态加值。</td></tr><tr><td>翻滚推进 Flip and Burn</td><td>–1</td><td>以半速移动，然后转向。</td></tr><tr><td>滚筒 Barrel Roll</td><td>–2</td><td>以一半速度移动，获得 AC+2 状态加值。</td></tr><tr><td>飞越 Flyby</td><td>–2</td><td>以一半速度穿过敌人所在的格子。</td></tr><tr><td>漂移 Drift</td><td>–2</td><td>以一半速度侧向移动而不转弯。</td></tr><tr><td>原地转向 Turn in Place</td><td>–2</td><td>转向，然后以全速移动。</td></tr></tbody></table>",
+                "Description": "<p>你在驾驶车辆时进行特技驾驶，暂时提高其有效能力，但有失去控制的风险。驱动你的车辆并选择一个特技驾驶动作。所有作为特技驾驶一部分尝试的驾驶检定都会受到列出的惩罚，包括进行鲁莽行动的驾驶检定。如果驾驶行动和特技驾驶都是鲁莽的，你必须尝试两次驾驶检定来保持对车辆的控制。</p>\n<table class=\"pf2e\"><caption>特技驾驶</caption><thead><tr><th>特技</th><th>减值</th><th>好处</th></tr></thead><tbody><tr><td>后退 Back Off</td><td>–1</td><td>以半速向后移动。</td></tr><tr><td>闪避 Evade</td><td>–1</td><td>以半速移动，获得 AC+1 状态加值。</td></tr><tr><td>翻滚推进 Flip and Burn</td><td>–1</td><td>以半速移动，然后转向。</td></tr><tr><td>滚筒 Barrel Roll</td><td>–2</td><td>以一半速度移动，获得 AC+2 状态加值。</td></tr><tr><td>飞越 Flyby</td><td>–2</td><td>以一半速度穿过敌人所在的格子。</td></tr><tr><td>漂移 Drift</td><td>–2</td><td>以一半速度侧向移动而不转弯。</td></tr><tr><td>原地转向 Turn in Place</td><td>–2</td><td>转向，然后以全速移动。</td></tr></tbody></table>",
                 "Modifiers": {
                     "RecklessPiloting": "鲁莽驾驶"
                 },
@@ -1216,9 +1226,9 @@
             "survival": "生存检定",
             "thievery": "贼活检定",
             "unarmed": "无武装攻击骰",
-            "x-attack-roll": "{type} 攻击骰",
-            "spell": "{type} 法术攻击",
-            "x": "{type} 检定",
+            "x-attack-roll": "{type}攻击骰",
+            "spell": "{type}法术攻击",
+            "x": "{type}检定",
             "fortitude": "强韧豁免",
             "reflex": "反射豁免",
             "will": "意志豁免",
@@ -1227,7 +1237,7 @@
         },
         "ActionsWarning": {
             "NoActor": "掷骰前至少选择一个角色，或指定一个默认角色。",
-            "NoStatistic": "角色{name} ({id})没有{statistic}的数据。",
+            "NoStatistic": "角色{name}（{id}）没有{statistic}的数据。",
             "Variants": {
                 "None": "行动“{action}”没有变体，但需要变体“{variant}”。",
                 "Multiple": "行动“{action}”有多个变体，但未需求任何变体。",
