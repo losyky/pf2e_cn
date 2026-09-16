@@ -957,8 +957,8 @@
                 },
                 "Overdrive": {
                     "DamageTypePrompt": "利用超载造成火焰伤害？",
-                    "CriticalFailure": "哇哦！有什么东西爆炸了！你受到@Damage[(ceil(@actor.level / 2))[@actor.flags.system.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害，并且[[/r 1d4 #Recharge Overdrive]]{1d4轮}内你不能再使用超载，因为你的装置需要冷却和重置。",
-                    "FireDamage": "超载：火焰伤害",
+                    "CriticalFailure": "哇哦！有什么东西爆炸了！你受到@Damage[(ceil(@actor.level / 2))[@actor.flags.system.inventor.explode]|immutable|name:PF2E.SpecificRule.Inventor.Innovation.MalfunctionDamage]伤害，并且[[/r 1d4 #Recharge Overdrive]]{1d4轮}内你不能再使用过载，因为你的装置需要冷却和重置。",
+                    "FireDamage": "过载：火焰伤害",
                     "CriticalSuccess": "你的装置进入了一种叫做@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]的高效状态，给你的攻击提供巨大加成。",
                     "Success": "你的装置进入了@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]状态，给你的攻击提供威力加成。",
                     "Failure": "你的小玩意会发出令人担忧的呜呜声，并开始冒烟。你的打击造成额外1点火焰伤害。@UUID[Compendium.pf2e.feat-effects.Item.1XlJ9xLzL19GHoOL]"
@@ -5082,9 +5082,9 @@
                         "Expert": "你内在的魔力能够更为简单有效地回应你的命令。你在血统所对应的魔法根源的法术攻击调整值和法术DC上的熟练等级提升至专家。"
                     },
                     "oracle": {
-                        "Expert": "你在神术力量上的感悟日益明晰。你在法术攻击调整和法术DC上的熟练度提升至专家。",
-                        "Master": "你理解了自己秘示域中深邃而复杂的神力。你在法术攻击调整和法术DC上的熟练度提高至大师。",
-                        "Legendary": "你能够利用他人无法比拟等级的神力。你在法术攻击调整和法术DC上的熟练度提高至传奇。"
+                        "Expert": "你在神术力量上的感悟日益明晰。你在法术攻击调整值和法术DC上的熟练度提升至专家。",
+                        "Master": "你理解了自身秘示域中深邃而复杂的神力。你在法术攻击调整值和法术DC上的熟练度提升至大师。",
+                        "Legendary": "你能够驾驭常人无可企及的神力。你在法术攻击调整值和法术DC上的熟练度提升至传奇。"
                     },
                     "druid": {
                         "Expert": "你加深了对原能力量的控制，增强了你的法术。你在法术攻击调整和法术DC上的熟练度提升至专家。",
@@ -9842,7 +9842,7 @@
                 "First": "首次打击"
             },
             "Resist": {
-                "ForcedMovement": "对抗受迫移动",
+                "ForcedMovement": "对抗强迫移动",
                 "Mental": "心灵抗力"
             },
             "Check": {
