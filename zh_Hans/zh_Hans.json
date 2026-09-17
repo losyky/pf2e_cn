@@ -4886,8 +4886,8 @@
                 }
             },
             "WorldSchemaVersion": {
-                "Name": "角色表格格式",
-                "Hint": "记录系统中文档的耐力值版本（除非你知道自己在做什么，否则不要修改）。"
+                "Name": "世界架构版本",
+                "Hint": "记录系统中文档的架构版本（除非你清楚自己在做什么，否则不要修改此内容）。"
             },
             "IgnoreCoinBulk": {
                 "Name": "硬币是无重量的",
@@ -5206,12 +5206,12 @@
                         "hint": "设置玩家是否可以查看世界时钟。"
                     },
                     "dawnTime": {
-                        "hint": "拂晓之始",
-                        "label": "黎明时分"
+                        "hint": "晨光初现的时间",
+                        "label": "黎明时刻"
                     },
                     "duskTime": {
-                        "hint": "黄昏之末",
-                        "label": "黄昏时分"
+                        "hint": "日暮消逝的时间",
+                        "label": "黄昏时刻"
                     }
                 },
                 "TimeConventions": {
@@ -5266,13 +5266,13 @@
                     "Choices": {
                         "noABP": "禁用",
                         "ABPFundamentalPotency": "ABP：适用基础符文",
-                        "ABPRulesAsWritten": "ABP: 不适用基础符文"
+                        "ABPRulesAsWritten": "ABP：不适用基础符文"
                     }
                 },
                 "Proficiency": {
                     "Title": "无关等级的熟练",
                     "Name": "启用",
-                    "Hint": "使用GM核心第85页中的无等级熟练变体进行游戏。启用后，可以自定义熟练加值（默认使用GM核心的数值）。",
+                    "Hint": "使用《主持人核心》第85页中的无等级熟练变体进行游戏。启用后，可以自定义熟练加值（默认使用《主持人核心》的数值）。",
                     "Choices": {
                         "ProficiencyWithLevel": "使用默认规则",
                         "ProficiencyWithoutLevel": "使用变体规则"
@@ -5316,13 +5316,13 @@
                     }
                 },
                 "GradualBoosts": {
-                    "Name": "渐进的属性提升",
+                    "Name": "渐进属性提升",
                     "Hint": "将属性提升的能力分散到更多等级。除6级、11级和16级外，玩家每级都会获得一项提升。"
                 },
                 "Mythic": {
                     "Name": "神话规则",
                     "Choices": {
-                        "disabled": "不启用",
+                        "disabled": "禁用",
                         "enabled": "启用",
                         "variant-tiers": "替换神话进程"
                     },
