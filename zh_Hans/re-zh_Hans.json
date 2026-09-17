@@ -1971,6 +1971,18 @@
                         "Label": "木艺斧 — 砍倒树木",
                         "Note": "命中时，目标会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续1分钟。"
                     }
+                },
+                "BonebloomRose": {
+                    "ToggleLabel": "骨绽玫瑰—至少剩余1点临时生命值"
+                },
+                "CommandersSignet": {
+                    "General": {
+                        "EffectLabel": "效果：指挥官印章",
+                        "Label": "指挥官印章"
+                    }
+                },
+                "Fearcutter": {
+                    "Note": "当你使用<em>斩惧者</em>对具有邪秽特征的生物造成重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
                 }
             },
             "FighterWeaponMasteryLegend": {
