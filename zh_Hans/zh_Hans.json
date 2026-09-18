@@ -958,12 +958,12 @@
                     "NameWithDC": "持续伤害（{formula} DC{dc}）",
                     "Chat": {
                         "Recover": "进行复苏检定",
-                        "RecoverLabel": "恢复: {name}"
+                        "RecoverLabel": "恢复：{name}"
                     },
                     "Error": {
                         "DoesNotExist": "该角色上没有正持续的{damageType}伤害"
                     },
-                    "RollDamage": "投骰伤害",
+                    "RollDamage": "骰掷伤害",
                     "AssistedRecovery": "协助复苏掷骰"
                 },
                 "Chat": {
@@ -1188,7 +1188,7 @@
                         "Description": "你可以控制时间的流动。"
                     },
                     "Toil": {
-                        "Label": "劳役",
+                        "Label": "苦劳",
                         "Description": "你不辍劳作，且心无旁骛。"
                     },
                     "Travel": {
@@ -1302,10 +1302,10 @@
                 },
                 "Category": {
                     "Label": "类别",
-                    "Hint": "可以选择追随众神域，誓盟或是无关神祇的信条，而非特定神明。",
-                    "Pantheon": "众神",
-                    "Philosophy": "信条",
-                    "Covenant": "誓盟"
+                    "Hint": "可以选择追随万神殿，圣约或是无关神祇的哲学，而非特定神明。",
+                    "Pantheon": "万神殿",
+                    "Philosophy": "哲学",
+                    "Covenant": "圣约"
                 },
                 "Spellcasting": "施法",
                 "Sanctification": {
@@ -1523,7 +1523,7 @@
                         "ShortLabel": "L"
                     },
                     "Negligible": {
-                        "Label": "微不足道的",
+                        "Label": "忽略不计",
                         "ShortLabel": "—"
                     },
                     "NLight": "{light}L",
@@ -1643,8 +1643,8 @@
                     "plasma": "目标受到@Damage[(1d6 + @item.system.runes.potency)[persistent,electricity]]。你在此电击伤害上获得一个物品加值，该加值等于武器对攻击检定的物品加值。",
                     "poison": "目标必须成功通过一次@Check[fortitude|against:class]检定，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 1}状态，持续至你的下一回合开始。",
                     "projectile": "目标必须成功通过一次@Check[fortitude|against:class]检定，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 1}状态，持续至你的下一回合开始。",
-                    "shock": "目标必须成功通过一次@Check[fortitude|against:class]检定，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 1}状态，持续至你的下一回合开始。",
-                    "sniper": "目标每个武器伤害骰额外受到 2 点伤害。",
+                    "shock": "目标必须成功通过一次@Check[fortitude|against:class]检定，否则将陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}状态，持续至你的下一回合开始。",
+                    "sniper": "目标每个武器伤害骰额外受到2点伤害。",
                     "sonic": "目标必须成功通过一次@Check[fortitude|against:class]豁免，否则将@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋}1分钟。"
                 },
                 "FromMaterialAndRunes": "此物品上的珍贵材料和符文的{property}调整为{value}。",
@@ -1833,7 +1833,7 @@
                 "Defense": {
                     "Label": "防御",
                     "BasicSave": "基础豁免",
-                    "BasicDefense": "基础 {save}"
+                    "BasicDefense": "基础{save}"
                 },
                 "Cost": "消耗",
                 "Cast": {
@@ -1851,7 +1851,7 @@
             },
             "CreationDialog": {
                 "Categories": {
-                    "Character": "车卡",
+                    "Character": "角色构筑",
                     "Physical": "实体物品",
                     "Other": "其他"
                 }
@@ -1922,7 +1922,7 @@
                     "Disabled": "无法从合集包取得最新物品数据：包含添加到角色卡时存储的数据"
                 },
                 "Label": "刷新",
-                "SourceNotFound": "找不到{item}的集合包来源（源ID：{sourceId}）。",
+                "SourceNotFound": "找不到{item}的合集包来源（源ID：{sourceId}）。",
                 "DifferentItemType": "{item}（{uuid}）的合集包来源与此角色当前呈现的类型不符。",
                 "Success": "物品“{item}”已刷新。",
                 "SubitemFailure": "{item}（{uuid}）上的一个或多个子项无法被刷新。"
@@ -1974,7 +1974,7 @@
                 "Plural": "消耗品",
                 "Uses": {
                     "AutoDestroy": "用后销毁",
-                    "None": "无剩余使用次数",
+                    "None": "无使用次数",
                     "Use": "使用",
                     "Label": "使用次数"
                 },
@@ -1982,7 +1982,7 @@
                     "wand": "魔杖",
                     "ammo": "弹药",
                     "catalyst": "触媒",
-                    "drug": "毒品",
+                    "drug": "药物",
                     "elixir": "灵药",
                     "fulu": "符箓",
                     "gadget": "小装置",
@@ -3341,8 +3341,8 @@
             "status": "状态加值",
             "untyped": "无名加值"
         },
-        "BonusSPLabel": "奖励SP",
-        "BonusSPperLevel": "每等级奖励SP",
+        "BonusSPLabel": "SP增加",
+        "BonusSPperLevel": "每等级增加SP",
         "BonusSPperLevelTitle": "每等级应用一次 (此后计算体质调整值)",
         "BrowserClearFilter": "清除过滤项",
         "BrowserClearFilters": "清除所有过滤项",
@@ -4266,7 +4266,7 @@
             "DistanceMissing": "@Template模板错误：必须有距离参数",
             "TypeUnsupported": "@Template模板错误：不支持{type}类型",
             "DistanceNoNumber": "Error in @Template: 距离 {distance} 不是数字类型",
-            "WidthNoNumber": "Error in @Template: 宽度 {width} 不是数字类型",
+            "WidthNoNumber": "@Template模板错误：{width}宽度不是数字类型",
             "DistanceInvalid": "@Template模板错误：{distance}距离无效"
         },
         "InventoryBackpackHeader": "容器",
@@ -4277,10 +4277,10 @@
         "InventroyBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "InvestedLabel": "绑定",
         "ItemBonus0": "0",
-        "ItemBonus1": "+1 武器潜能",
-        "ItemBonus2": "+2 武器潜能",
-        "ItemBonus3": "+3 武器潜能",
-        "ItemBonusLabel": "物品 加值",
+        "ItemBonus1": "+1武器潜能",
+        "ItemBonus2": "+2武器潜能",
+        "ItemBonus3": "+3武器潜能",
+        "ItemBonusLabel": "物品加值",
         "ItemBonusMinus2": "劣质（-2）",
         "ItemBonusShortLabel": "物品",
         "ItemDescription": "描述",
@@ -4465,7 +4465,7 @@
         "LoreSkillsHeader": "学识技能",
         "LoreSkillFormat": "{name}学识",
         "AddLoreSkill": "新增学识技能",
-        "NewLoreSkill": "新技能",
+        "NewLoreSkill": "新建技能",
         "Macro": {
             "Plural": "宏",
             "OptionToggle": {
@@ -4533,7 +4533,7 @@
                 "Complete": "完成",
                 "Download": "下载",
                 "Incomplete": "未完成",
-                "RemigrateFailed": "发生了一个错误导致操作终端，打开控制台（F12）获取更多细节。",
+                "RemigrateFailed": "重新迁移操作中断：打开控制台（F12）了解错误详情。",
                 "ReportDownloaded": "合并报告已下载。",
                 "UnmigratedDocuments": "未合并文档",
                 "UnmigratedDocumentsHint": "点击一个文档以打开。悬停在警告图标上以查看为何合并失败。",
@@ -4552,7 +4552,7 @@
             "proficiency": "熟练",
             "circumstance": "环境",
             "item": "物品",
-            "potency": "潜力",
+            "potency": "潜能",
             "status": "状态",
             "untyped": "无名"
         },
@@ -4712,12 +4712,12 @@
             "Help": "你可以尝试重复对某一生物的回忆知识检定，这次检定的难度增加规则由下表所示。如果检定失败或针对表中未列出的生物，则无法二次尝试回忆知识。",
             "Breakdown": "尝试",
             "BreakdownTitle": "识别生物意图",
-            "FirstAttempt": "1st DC",
-            "SecondAttempt": "2nd DC",
-            "ThirdAttempt": "3rd DC",
-            "FourthAttempt": "4th DC",
-            "FifthAttempt": "5th DC",
-            "SixthAttempt": "6th DC",
+            "FirstAttempt": "第一次DC",
+            "SecondAttempt": "第二次DC",
+            "ThirdAttempt": "第三次DC",
+            "FourthAttempt": "第四次DC",
+            "FifthAttempt": "第五次DC",
+            "SixthAttempt": "第六次DC",
             "SpecificLore": "特定学识",
             "UnspecificLore": "通常学识",
             "Skill": "技能",
@@ -4741,14 +4741,14 @@
         "RepairItemTitle": "尝试修理物品",
         "Repost": "发布提示至聊天栏",
         "RerollMenu": {
-            "ErrorNoActor": "骰子无关联角色",
+            "ErrorNoActor": "本次掷骰无关联角色",
             "ErrorCantDelete": "你不能删除原始骰。",
             "HeroPoint": "消耗英雄点重骰",
             "KeepBest": "重骰并取最好结果",
             "KeepNew": "重骰并接受最后一次的结果",
             "KeepWorst": "重骰并取最差结果",
             "MessageKeep": {
-                "new": "已重骰后保留最新结果",
+                "new": "已重骰，并保留最新结果",
                 "best": "重骰后保留最好结果",
                 "worst": "重骰后保留最差结果",
                 "lower": "已重骰，并取较低结果",
@@ -4904,7 +4904,7 @@
                 }
             },
             "CritRule": {
-                "Name": "致命一击伤害规则",
+                "Name": "重击伤害规则",
                 "Hint": "在计算重击伤害时使用不同的倍乘规则",
                 "Choices": {
                     "Doubledamage": "双倍伤害",
@@ -4913,7 +4913,7 @@
             },
             "CompendiumBrowserPacks": {
                 "Name": "合集包浏览",
-                "Hint": "设置以取消背包加载"
+                "Hint": "设置以取消合集包加载"
             },
             "EnabledRulesUI": {
                 "Name": "玩家规则要素权限",
@@ -5076,7 +5076,7 @@
                 },
                 "ClassTraits": {
                     "Name": "职业特征",
-                    "Hint": "指某一职业的特征"
+                    "Hint": "某一职业的特征"
                 }
             },
             "Metagame": {
@@ -5517,7 +5517,7 @@
         "SpeedTypesTitle": "转换移动类型",
         "SpellAbilityLabel": "关键属性",
         "SpellAbilityModLabel": "+ Mod",
-        "SpellArea": "范围：{area}",
+        "SpellArea": "区域：{area}",
         "SpellAttackWithTradition": "{tradition}法术攻击",
         "SpellAttackLabel": "法术攻击",
         "SpellBasicSaveOption": "基础",
@@ -5535,7 +5535,7 @@
         "SpellComponentsLabel": "成分",
         "SpellSlotEmpty": "空位（拖入法术）",
         "SpellSlotNotEnoughError": "无法施放{rank}环{spell}：没有足够的法术位。",
-        "SpellSlotExpendedError": "无法施放{spell}，法术位已耗尽。",
+        "SpellSlotExpendedError": "无法施放{spell}：法术位已耗尽。",
         "SpellPrimaryCheckLabel": "主要检定",
         "SpellSecondaryChecksLabel": "次要检定",
         "SpellSecondaryCasters": "次要施法者",
@@ -8134,7 +8134,7 @@
                     "Knockdown": "<p><strong>需求</strong>怪物的最后的动作是一次命中的打击，在其伤害条目中列列有“击倒”。</p><hr /><p><strong>效果</strong> 怪物尝试[[/act trip]]生物。该尝试不适用也不累计怪物的多重攻击减值。</p>",
                     "Lifesense": "<p>生命感知使得怪物能够感知所列范围内所有活物与不死生物的生命力。就如同视觉可以分辨不同的颜色那般，这种感觉可以区分驱使活物的命能和驱使不死生物的虚能。</p>",
                     "LightBlindness": "<p>当初次暴露在明亮光照下时，该怪物将会@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{失明 Blinded} 直至其下一回合。在初次暴露后，亮光不再使怪物失明，除非其又在黑暗中呆了1小时。然而，只要怪物还处于明亮光照下，它就会保持@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>",
-                    "LowLightVision": "<p>怪物可以在昏暗的光线下视物，就好像在明亮光线下一样，因此它会忽略因昏暗光线产生的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]状态。</p>",
+                    "LowLightVision": "<p>怪物可以在昏暗光照下视物，如同在明亮光照下一样，因此它会忽略由昏暗光照所造成的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]状态。</p>",
                     "NegativeHealing": "<p>具有虚能治疗效果的生物从虚能而不是命能中获取生命。它被命能伤害所伤，而不是命能治疗所治愈。它不会受到虚能伤害，并且会被治疗不死的虚能效果治愈。</p>",
                     "Poison": "<p>当一名生物暴露在怪物的毒素下时，它需要尝试一次强韧豁免用以避免中毒。毒素的等级为造成疾病的怪物的等级。毒素遵从于苦难规则。</p>",
                     "PowerAttack": "<p><strong>频率</strong>一回合一次</p>\n<hr />\n<p><strong>效果</strong> 怪物进行一次近战攻击。当计算怪物的多次攻击惩罚时，这会算作两次攻击。如果这次攻击命中，怪物造成的武器伤害会额外增加一个武器的伤害骰。</p>",
@@ -8155,7 +8155,7 @@
                     "TroopDefenses": "<p>部队由许多个体组成，在战斗网格地图上以四个“部分”表示。每个部分每条边长10尺，高度与部队的单个成员相同。部分必须保持连续。每个部分必须与另一个部分共享至少一条边的5尺——仅在对角线上相邻是不够的！你可以使用任何部分的中心点来测量夹击、掩蔽等。</p>\n<p>部队的HP条目中有两个生命值阈值，越过阈值就会损失部分。通常，较高的阈值为部队生命值的2/3，较低的阈值为部队生命值的1/3。一旦部队下降到较高阈值以下，就会损失一个段落，剩下三个部分（12个方格），并将第一个阈值设定为部队新的最大生命值。当部队下降到较低阈值以下时，会重复这一过程，剩下两个部分（8个方格）。当生命值为0时，部队会完全散开，剩下的少数成员会投降、@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]或被轻易打散，具体由GM决定。通常情况下，导致部队损失一个部分的生物会决定移除哪个部分，如果不是某个特定生物造成的，则由GM决定。要恢复损失的分段和最大生命值，部队需要利用休整期对伤亡人员进行长期治疗，或招募新成员替换阵亡人员。</p>\n<p>部队通常对针对单个生物的非伤害性效果免疫，例如@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]或@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]动作。能以5个或更多生物为目标的能力能够以一整个部分为目标，如果能够以10个或更多生物为目标，则会增加到两个部分，如果能够以20个或更多生物位目标，则会增加到整个部队。影响一定范围内所有生物的能力会影响范围内的所有部分（对每个部分分别进行检定或豁免）。举例来说，一个8环的<em>魅惑术</em>（有10个目标）可以影响两个部分，而一个对你30尺内的所有生物挫败士气的能力会影响完全在该范围内的所有部分。如果一个非伤害性能力会阻止一个部分行动、导致他们逃跑，或使他们在一轮或更长时间内无法作为部队的一部分发挥作用，那么这个部分就会被完全移除。部队会损失一定数量的HP以达到下一个阈值。如果某个能力同时造成伤害和非伤害效果，则先应用伤害，然后再应用其余效果。</p>",
                     "Wavesense": "<p>这种感知允许怪物感受到那些因为在液体中移动而产生的振波。这是一种在（能力所列出的）有限范围内的模糊感官。只有当怪物位于同一液体中、且仅在对象在此液体中移动时，水波感知才会生效。</p>",
                     "ReactiveStrike": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
-                    "Stench": "<p>任何生物若进入此灵光范围或在灵光范围内开始其回合的话，则必须进行一次强韧豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心1 Sickened 1}（大失败时额外再加上@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢1 Slowed 1}）。豁免成功或从状态中恢复的生物会在一分钟内临时免疫尸臭。</p>",
+                    "Stench": "<p>任何生物若进入此灵光范围或在灵光范围内开始其回合的话，则必须进行一次强韧豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时额外再加上@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}）。豁免成功或从状态中恢复的生物会在一分钟内临时免疫尸臭。</p>",
                     "Pull": "<p><strong>需求</strong> 怪物的最后一个动作是成功的打击并且在伤害条目中列出了拉拽</p><hr /><p><strong>效果</strong> 怪物尝试对生物进行@UUID[Compendium.pf2e.actionspf2e.Item.lOE4yjUnETTdaf2T]{移位 Reposition}，将其拉向怪物。这次尝试既不适用于也不计入怪物的多重攻击减值。如果拉拽列出了距离，在成功时变为生物被拉拽至该距离。</p>",
                     "GolemAntimagic": "<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p><ul><li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li><li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li><li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/gmr 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li><li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li></ul>",
                     "ChangeFormation": "<p>部队重新编队以采用他们所知的以下其中一种阵型。再次使用此动作将结束之前的阵型效果，部队还可以使用此动作恢复到默认阵型，避免任何优势和劣势的影响。</p><ul><li><strong>松散阵型 Loose</strong> 部队成员分散开来覆盖更多地面。<strong>优势</strong> 部队对区域和溅射伤害的弱点被压制。<strong>劣势</strong> 敌对单位对部队伤害效果的豁免掷骰成功度比他们掷出的骰子高一阶。</li><li><strong>行军纵队 Marching Column</strong> 此阵型可以更快地穿越长距离。<strong>优势</strong> 部队获得对所有速度的+10尺环境加值。<strong>劣势</strong> 部队处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]状态，反射豁免获得-2减值。</li><li><strong>龟壳阵型 Turtle Shell</strong> 部队将盾牌相互锁定。只有拥有盾牌的群体才能使用此阵型。<strong>优势</strong> 部队在对远程攻击的AC和对反射豁免上获得+2的环境加值。<strong>劣势</strong> 部队所有速度减10尺。</li><li><strong>楔形阵型 Wedge</strong> 部队将自己排列在一位强大的指挥官身后。<strong>优势</strong> 部队可以选择一个相邻的没有部队特征的盟友生物跟在后面。每次所选生物行进时，部队作为一个免费动作跟随，行进以保持所选生物相邻。<strong>劣势</strong> 部队失去一些自主性。他们受到缓慢1，且不能自愿离开他们的领导者。</li></ul>",
@@ -8181,12 +8181,12 @@
             "AddWeapon": "武器",
             "Adjustment": {
                 "EliteLabel": "精英",
-                "EliteNameFormat": "精英 {name}",
+                "EliteNameFormat": "精英{name}",
                 "NormalLabel": "正常",
-                "WeakLabel": "弱小",
-                "WeakNameFormat": "弱小 {name}"
+                "WeakLabel": "弱化",
+                "WeakNameFormat": "弱化{name}"
             },
-            "ArmorExtraInfoLabelPlaceholder": "AC详细...",
+            "ArmorExtraInfoLabelPlaceholder": "AC详情...",
             "Attacks": "攻击",
             "AttackType": {
                 "Melee": "NPC近战攻击",
@@ -8214,7 +8214,7 @@
             "SendToChat": "发送到聊天栏",
             "SpeedLabel": "速度",
             "SpellsTab": "法术",
-            "HPExtraInfoLabelPlaceholder": "HP详细...",
+            "HPExtraInfoLabelPlaceholder": "HP详情...",
             "Inventory": {
                 "Header": {
                     "NameLabel": "名称",
@@ -8225,14 +8225,14 @@
             "InventoryTab": "物品栏",
             "SavesExtraInfoLabelPlaceholder": "附加在所有豁免...",
             "SensesLabel": "感官",
-            "SpeedExtraInfoLabelPlaceholder": "速度详细...",
+            "SpeedExtraInfoLabelPlaceholder": "速度详情...",
             "Spells": {
                 "AttackLabel": "攻击",
                 "DCLabel": "DC",
                 "PreparedLabel": "已准备",
                 "PreparedShortLabel": "已准备"
             },
-            "SkillRollFlavor": "{skillName} 技能检定（{rank}）",
+            "SkillRollFlavor": "{skillName}技能检定（{rank}）",
             "SkillsEditor": {
                 "BonusLabel": "加成",
                 "NameLabel": "技能名称",
@@ -8315,8 +8315,8 @@
         "TraitThaumaturge": "奇术师",
         "ArmorPropertyRuneGreaterDread": "高等恐惧",
         "ArmorPropertyRuneModerateDread": "上等恐惧",
-        "PreciousMaterialSisterstoneDusk": "姊妹石（黄昏）",
-        "PreciousMaterialSisterstoneScarlet": "姊妹石（猩红）",
+        "PreciousMaterialSisterstoneDusk": "姐妹石（黄昏）",
+        "PreciousMaterialSisterstoneScarlet": "姐妹石（猩红）",
         "TraitDescriptionReflection": "具有此特征的生物拥有镜像多用传承。镜像是通过克隆、镜面复制或用其他机制复制活人的存在。具有此特征的能力只能由镜像使用或选择。",
         "TraitDescriptionSkeleton": "这个不死生物是通过虚能驱动已亡生物骨架而制作的。具有此特征的能力只能由骷髅使用或选择。",
         "TraitSiktempora": "癔时妖",
@@ -8379,7 +8379,7 @@
         "TraitRange110": "射程 110尺",
         "TraitWornOrOneHand": "穿戴或单手持握",
         "TraitFatal": "夺命",
-        "ToggleEffectUnidentified": "是否启用效果未鉴定功能",
+        "ToggleEffectUnidentified": "是否启用效果不明功能",
         "TraitDescriptionWildHunt": "具有狂猎特征的生物绝不会低于14级。它们拥有高等黑暗视觉、苍翠视野、位面适应、狂野凝视、合作本能、对寒铁的弱点、与动物和植物交谈的能力、以及它们各自的狂猎链接。",
         "TraitRange290": "射程 290尺",
         "TraitRange310": "射程 310尺",
@@ -8950,9 +8950,9 @@
         "TraitDescriptionPersonaWarrior": "公众认为你是队伍中的强者，是战斗中的佼佼者，但有时也被认为残忍、粗鲁，甚至是一个恶霸。",
         "TraitDescriptionPersonaWildcard": "公众认为你是队伍中奇思妙想、鬼点子和喜剧的源泉，但这种名声是一把双刃剑，因为有些人也认为你是个累赘或不可靠的人。",
         "TraitDescriptionVenomous": "这些武器在每次击中时注入毒素。当你用这种武器击中一个生物时，它会造成额外的1点持续毒素伤害。如果武器装备了高等强击符文，该伤害增加到2点持续毒素伤害。",
-        "TraitPersonaGuardian": "人格特质: 守护者",
-        "TraitPersonaLeader": "人格特质: 领袖",
-        "ItemBonus4": "+4 武器潜能",
+        "TraitPersonaGuardian": "人格特质：守护者",
+        "TraitPersonaLeader": "人格特质：领袖",
+        "ItemBonus4": "+4武器潜能",
         "TraitCalling": "感召",
         "TraitAnimist": "灵媒",
         "TraitDescriptionAnimist": "这表示该能力来自灵媒职业。",
@@ -8966,12 +8966,12 @@
         "TraitDescriptionDestiny": "命途特征表明神话命途中的第一个专长。你必须是 12 级的神话角色才能选择命途，并且在选择命途专长之前不能选择该神话命途中的后续专长。",
         "TraitDescriptionTranscendence": "解放将你的神性火花力量借由神迹引导而出，超越凡人之境而达成奇迹。每个神迹都有一个带有解放特征的动作，使用这个动作被称为神火解放。要使用这个动作，你的神性火花必须正在授能该神迹且该神迹可以被使用（武具神迹通常需要被握持，装束神迹需要被穿戴）。在使用一种解放后，你的神性火花将脱离该神迹，栖身于另一个你选择的神迹。每轮你只能使用一次神火解放。由于其力量来自你的神性火花，神火解放带有神术特征。",
         "TraitDescriptionPersonaScoundrel": "公众认为你是队伍中的“坏男孩/坏女孩”，能完成令人讨厌但必要的工作，但有时也被认为是犯罪者或潜在的背叛者。",
-        "TraitPersonaFlirt": "人格特质: 调情者",
-        "TraitPersonaScholar": "人格特质: 学者",
-        "TraitPersonaScoundrel": "人格特质: 恶棍",
-        "TraitPersonaUnderdog": "人格特质: 弱者",
-        "TraitPersonaWarrior": "人格特质: 斗士",
-        "TraitPersonaWildcard": "人格特质: 百搭牌",
+        "TraitPersonaFlirt": "人格特质：调情者",
+        "TraitPersonaScholar": "人格特质：学者",
+        "TraitPersonaScoundrel": "人格特质：恶棍",
+        "TraitPersonaUnderdog": "人格特质：弱者",
+        "TraitPersonaWarrior": "人格特质：斗士",
+        "TraitPersonaWildcard": "人格特质：百搭牌",
         "TraitCertainKill": "必杀",
         "TraitDescriptionLineage": "具有此特征的专长表明角色是某个特定类型生物的后裔。你只能拥有一个血脉专长。你只能在1级时选取血脉专长，你不能重训来取得或替换这些专长。",
         "ConditionTypeCursebound": "咒缚",
