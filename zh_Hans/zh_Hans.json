@@ -3904,7 +3904,7 @@
                 "vitality": "命能"
             },
             "PersistentTooltip": "持续{damageType}",
-            "IncreasedFrom": "从 {original} 增加到最少一个",
+            "IncreasedFrom": "从{original}增加到最少一个",
             "Scatter": "散射伤害",
             "Precision": "精准",
             "Dialog": {
@@ -3919,7 +3919,7 @@
                 "BaseDamage": "基础伤害"
             },
             "Hardness": {
-                "Half": "半数硬度",
+                "Half": "一半硬度",
                 "Full": "硬度"
             },
             "Kind": {
@@ -4017,9 +4017,9 @@
                 "PartySize": "队伍规模",
                 "PartyLevel": "队伍等级",
                 "Threat": "威胁",
-                "Reward": "回报",
-                "XPBudget": "XP 预算",
-                "XPNeeded": "XP 需求",
+                "Reward": "奖励",
+                "XPBudget": "XP预算",
+                "XPNeeded": "XP需求",
                 "Threats": {
                     "trivial": "微不足道",
                     "low": "低度威胁",
@@ -4045,14 +4045,14 @@
                 }
             },
             "ExcludingFromInitiative": "将 {type} {actor} 从先攻列表里移除。",
-            "HasNoInitiativeScore": "{actor} 没有先攻值。",
+            "HasNoInitiativeScore": "{actor}没有先攻值。",
             "HideName": "隐藏名称",
             "NoActiveEncounter": "没有正在进行的遭遇。",
-            "NoTokenInScene": "{actor} 在场景中没有指示物。",
+            "NoTokenInScene": "{actor}在场景中没有指示物。",
             "RevealName": "显露名称",
             "InitiativeSet": "{actor}的先攻被设定为{initiative}。",
             "NotParticipating": "{actor}没有参加正在激活的遭遇。",
-            "AlreadyRolled": "{actor} 已投先攻。",
+            "AlreadyRolled": "{actor}已骰先攻。",
             "XP": "XP",
             "Metrics": {
                 "Award": {
@@ -4073,13 +4073,13 @@
         "Edit": "编辑",
         "EditHazardLabel": "编辑危害",
         "EditItemTitle": "编辑物品",
-        "EditLabel": "编辑?",
+        "EditLabel": "编辑？",
         "EditNPCLabel": "编辑NPC?",
         "EffectsLabel": "效果",
         "EffectPanel": {
             "AppliedBy": "应用于：{condition-list}",
             "DecrementToolTip": "[右键单击] 减少状态值",
-            "Expired": "过期",
+            "Expired": "已失效",
             "IncrementToolTip": "[左键单击] 增加状态值",
             "RemainingDuration": {
                 "MultipleYears": "剩余{years}年",
@@ -4093,14 +4093,14 @@
                 "SingleRound": "剩余1轮",
                 "MultipleSeconds": "剩余{seconds}秒",
                 "SingleSecond": "剩余1秒",
-                "ZeroRoundsExpireTurnEnd": "剩余0轮，将在先攻 {Initiative}结束时到期",
-                "ZeroRoundsExpireTurnStart": "剩余0轮，将在先攻{Initiative}开始时到期"
+                "ZeroRoundsExpireTurnEnd": "剩余0轮，将在先攻 {Initiative}结束时失效",
+                "ZeroRoundsExpireTurnStart": "剩余0轮，将在先攻{Initiative}开始时失效"
             },
             "RemoveToolTip": "[右键单击] 移除效果",
             "Sustained": "持续的？",
             "UnlimitedDuration": "无限持续",
             "UntilEncounterEnds": "直到遭遇结束",
-            "Unidentified": "未鉴定",
+            "Unidentified": "不明",
             "RollDamageToolTip": "[左键单击] 伤害掷骰"
         },
         "EmptySlot": "空位",
@@ -4116,7 +4116,7 @@
             "NoTokenSelected": "需要选中一个目标。",
             "NoPCTokenSelected": "至少选择一个与PC相关联的指示物。",
             "NoUpdatePermission": "你无权更新此角色信息。",
-            "NotEnoughAmmo": "弹药不足。",
+            "NotEnoughAmmo": "你的弹药不足，无法进行本次打击。",
             "NotEnoughCoins": "硬币不足",
             "SubV9Module": "{module}处于未维护状态，可能会给游戏带来稳定性问题。",
             "WeaponQuantityZero": "你已经没有更多这种武器装备了。",
@@ -4136,7 +4136,7 @@
         "FeatActionsLabel": "多个动作",
         "FeatAncestryHeader": "族裔专长",
         "FeatArchetypeHeader": "变体专长",
-        "FeatBackgroundShort": "BG",
+        "FeatBackgroundShort": "背景",
         "FeatBonusHeader": "额外专长",
         "FeatBrowserSearchHint": "你可以根据名称或特征来检索，可用的特征如下列出：<br> 法术来源, 法术类型, 环级, 法术材料, 目标, 范围, 施法时间, 持续时间, 伤害, 伤害类型, 豁免, 专注, 仪式, 能力 和职业。 <br> 范例： '火焰, 伤害:d6' 可以显示所有名称中带有‘火焰’且伤害骰为d6的法术",
         "FeatCampaignHeader": "战役专长",
@@ -4209,7 +4209,7 @@
             "NameUnknown": "未知配方"
         },
         "Frequency": {
-            "per": "per",
+            "per": "每",
             "Label": "频率",
             "AtWill": "随意"
         },
@@ -8089,7 +8089,7 @@
         "Familiar": {
             "Master": "主人",
             "MasterActor": "所属角色",
-            "MasterLevel": "所属等级",
+            "MasterLevel": "主人等级",
             "SelectMaster": "选择一个主人...",
             "MasterSpellcastingAbility": "主人施法能力",
             "TotalNumberFamiliarAbilities": "总计 # 魔宠能力",
@@ -8288,13 +8288,13 @@
         "TraitSocial": "社群",
         "TraitThrown80": "投掷80尺",
         "DamageButton": {
-            "Full": "[Click] 对选定目标施加完整伤害。",
+            "Full": "[点击] 对选定目标应用完整伤害。",
             "FullContext": "应用伤害",
             "FullShort": "伤害",
-            "Half": "[Click] 对选定目标施加半数伤害。",
-            "HalfContext": "半数伤害",
-            "HalfShort": "半数",
-            "Double": "[Click] 对选定目标施加双倍伤害。",
+            "Half": "[点击] 对选定目标应用一半伤害。",
+            "HalfContext": "一半伤害",
+            "HalfShort": "一半",
+            "Double": "[点击] 对选定目标应用双倍伤害。",
             "DoubleContext": "双倍伤害",
             "DoubleShort": "双倍",
             "Triple": "[点击] 对目标应用三倍伤害。",
@@ -8635,7 +8635,7 @@
         "ArmorPropertyRuneTrueQuenching": "真实钝化",
         "ArmorPropertyRuneLesserDread": "次等恐惧",
         "Pathfinder": "开拓者",
-        "InitiativeIsNow": "{name}的先攻值现在为{value}!",
+        "InitiativeIsNow": "{name}的先攻值现在为{value}！",
         "ArmorPropertyRuneMalleable": "锻型",
         "TraitVersatileVoid": "多用虚能",
         "TraitVersatileVitality": "多用命能",
