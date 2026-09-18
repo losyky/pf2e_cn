@@ -3705,15 +3705,15 @@
             "NoDamageFormulaLabel": "无伤害",
             "IWR": {
                 "ApplicationBreakdown": {
-                    "immunity": "免疫{type}: {adjustment}",
-                    "resistance": "具有{type}抗力: {adjustment}",
-                    "unaffected": "不受{type}影响:{adjustment}",
-                    "weakness": "具有{type}弱点: {adjustment}",
-                    "ignored": "忽略了对{type}的抗力！",
+                    "immunity": "免疫{type}：{adjustment}",
+                    "resistance": "具有{type}抗力：{adjustment}",
+                    "unaffected": "不受{type}影响：{adjustment}",
+                    "weakness": "具有{type}弱点：{adjustment}",
+                    "ignored": "对{type}的抗力被无视！",
                     "reduction": "对{type}减弱：{adjustment}",
                     "redirect": {
-                        "resistance": "对{type}具有抗力（视为{redirect}）: {adjustment}",
-                        "immunity": "对{type}免疫（视为{redirect}）: {adjustment}"
+                        "resistance": "对{type}具有抗力（视为{redirect}）：{adjustment}",
+                        "immunity": "对{type}免疫（视为{redirect}）：{adjustment}"
                     }
                 },
                 "CompositeLabel": {
@@ -3870,7 +3870,7 @@
                     "prediction": "预测",
                     "aging": "衰老"
                 },
-                "ActorIsImmune": "{actor} 对{effect}免疫。",
+                "ActorIsImmune": "{actor}对{effect}免疫。",
                 "ActorIsUnaffected": "{actor}不受{effect}影响。"
             },
             "RollFlavor": {
@@ -4247,7 +4247,7 @@
         "InitiativeHeader": "先攻加值",
         "InitativeIsNow": "{name}的先攻值现在为{value}!",
         "InitiativeLabel": "先攻",
-        "InitiativeWithSkill": "先攻: {skillName}",
+        "InitiativeWithSkill": "先攻：{skillName}",
         "InlineCheck": {
             "BasicWithSave": "基础{save}",
             "DCWithName": "{name} DC",
@@ -4258,16 +4258,16 @@
                 "DCAndDefense": "不能同时具有dc和防御参数",
                 "InvalidDomains": "{type}数据域必须使用减号或者下划线连接（没有空格和特殊符号），且以-damage结束"
             },
-            "Invalid": "无效的@Check表达式： {message}",
+            "Invalid": "@Check表达式无效： {message}",
             "DCAdjustment": "DC调整"
         },
         "InlineTemplateErrors": {
-            "TypeMissing": "Error in @Template: 必须有类型参数",
-            "DistanceMissing": "Error in @Template: 必须有距离参数",
-            "TypeUnsupported": "Error in @Template: 不支持 {type} 类型",
+            "TypeMissing": "@Template模板错误：必须有类型参数",
+            "DistanceMissing": "@Template模板错误：必须有距离参数",
+            "TypeUnsupported": "@Template模板错误：不支持{type}类型",
             "DistanceNoNumber": "Error in @Template: 距离 {distance} 不是数字类型",
             "WidthNoNumber": "Error in @Template: 宽度 {width} 不是数字类型",
-            "DistanceInvalid": "@Template命令错误：{distance}距离无效"
+            "DistanceInvalid": "@Template模板错误：{distance}距离无效"
         },
         "InventoryBackpackHeader": "容器",
         "InventoryConsumablesHeader": "消耗",
