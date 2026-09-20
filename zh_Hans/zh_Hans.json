@@ -7144,7 +7144,7 @@
             "crushing": {
                 "Name": "粉碎",
                 "Note": {
-                    "criticalSuccess": "当你用此武器造成一次重击时，你的目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，直到你的下回合结束。@UUID[Compendium.pf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]{Effect: Crushing}"
+                    "criticalSuccess": "当你用此武器造成一次重击时，你的目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，直到你的下个回合结束。@UUID[Compendium.pf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]"
                 }
             },
             "cunning": {
@@ -7217,7 +7217,7 @@
             "greaterCrushing": {
                 "Name": "高等粉碎",
                 "Note": {
-                    "criticalSuccess": "你的重击使目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你的下回合结束。@UUID[Compendium.pf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]"
+                    "criticalSuccess": "你的重击使目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你的下个回合结束。@UUID[Compendium.pf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]"
                 }
             },
             "greaterDisrupting": {
