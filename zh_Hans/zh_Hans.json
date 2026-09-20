@@ -4742,7 +4742,7 @@
         "Repost": "发布提示至聊天栏",
         "RerollMenu": {
             "ErrorNoActor": "本次掷骰无关联角色",
-            "ErrorCantDelete": "你不能删除原始骰。",
+            "ErrorCantDelete": "你不能删除原始掷骰。",
             "HeroPoint": "消耗英雄点重骰",
             "KeepBest": "重骰并取最好结果",
             "KeepNew": "重骰并接受最后一次的结果",
@@ -4758,7 +4758,7 @@
             "WarnNoHeroPoint": "{name} 无可用英雄点",
             "KeepHigher": "重骰并使用较高结果",
             "KeepLower": "重骰并使用较低结果",
-            "WarnNoResource": "{name} 没有 {resource}",
+            "WarnNoResource": "{name}没有{resource}",
             "MythicPoint": "使用神话点重骰",
             "MessageMythicPoints": "已使用神话点重骰",
             "MessageHeroPoints": "已使用英雄点重骰"
@@ -4814,7 +4814,7 @@
         "RollTable": {
             "Plural": "随机表"
         },
-        "RollBonusPlaceholder": "举例： +3 或 +1d4",
+        "RollBonusPlaceholder": "举例：+3或+1d4",
         "RollModeLabel": "骰子模式",
         "Scene": {
             "Plural": "场景",
@@ -5100,7 +5100,7 @@
                     "Hint": "只有GM可以看到NPC和其他非玩家拥有的角色的状态更新和提示消息。"
                 },
                 "ShowDC": {
-                    "Name": "显示检定的DC",
+                    "Name": "显示检定DC",
                     "Hint": "玩家可以看到对抗NPC对抗其他非玩家来源检定时的DC。",
                     "None": "无",
                     "Gm": "GM",
@@ -5108,7 +5108,7 @@
                     "All": "所有"
                 },
                 "ShowResults": {
-                    "Name": "显示检定的结果",
+                    "Name": "显示检定结果",
                     "Hint": "玩家可以看到对抗NPC对抗其他非玩家来源检定时的成功度。",
                     "None": "无",
                     "Gm": "GM",
@@ -5379,7 +5379,7 @@
                 "Hint": "在场景中显示受控指示物和鼠标悬停指示物之间的距离。"
             }
         },
-        "SaveDCLabel": "豁免<dc>DC {dc}</dc> {type}",
+        "SaveDCLabel": "{type}豁免<dc>DC {dc}</dc>",
         "SaveDCLabelBasic": "基础{type}<dc>豁免DC {dc}</dc>",
         "SavesFortitude": "强韧",
         "SavesFortitudeShort": "强韧",
@@ -5615,7 +5615,7 @@
         "StackGroupSacks": "麻袋",
         "StackGroupSlingBullets": "投石索弹丸",
         "StackGroupWoodenTaws": "木弹",
-        "StaminaPointsHeader": "耐力点",
+        "StaminaPointsHeader": "耐力值",
         "StaminaPointsShortLabel": "耐力",
         "StatusBonusShortLabel": "状态",
         "StatusBonusTitle": "状态加值",
@@ -9100,7 +9100,7 @@
             "Error": {
                 "Engaged": "{user}正在交易中。",
                 "LoggedOut": "结束交易：{user}已登出。",
-                "Unavailable": "结束交易：{user}变得不可用了。",
+                "Unavailable": "结束交易：{user}已不可用。",
                 "NotTrading": "结束交易：{user}已结束交易。",
                 "OutOfReach": "{self}和{trader}不在彼此的触及范围内。",
                 "Timeout": "结束交易：{user}在{timeout}秒内无回应",
