@@ -3154,7 +3154,7 @@
         "RemoveModifierTitle": "移除调整值",
         "AddShortLabel": "添加",
         "AddSpellTitle": "添加法术",
-        "AddSpellcastingEntryTitle": "从法术列表添加",
+        "AddSpellcastingEntryTitle": "添加施法列表",
         "AdditionalSkills": "额外技能",
         "AdditionalLanguagePlusInt": "（加上智力）",
         "Age": "年龄",
@@ -3974,8 +3974,8 @@
         "DeleteItemQuestion": "你确定要删除：",
         "DeleteItemTitle": "删除物品",
         "DeleteShortLabel": "删除",
-        "DeleteSpellcastEntryQuestion": "你确定要删除这个法术列表吗？",
-        "DeleteSpellcastEntryWarning": "警告：法术列表里的所有法术会一并被删除。",
+        "DeleteSpellcastEntryQuestion": "你确定要删除这个施法列表吗？",
+        "DeleteSpellcastEntryWarning": "警告：施法列表内的全部法术会被一并删除。",
         "DenominationLabel": "教派",
         "DetailsHeading": "详情",
         "DragDropFeats": "拖拽专长以添加",
@@ -4584,7 +4584,7 @@
             "Lore": "新建学识",
             "Melee": "新建攻击",
             "Spell": "新建法术",
-            "SpellcastingEntry": "新建法术列表",
+            "SpellcastingEntry": "新建施法列表",
             "Skill": "新建技能",
             "Treasure": "新建宝物",
             "Weapon": "新建武器",
@@ -4611,7 +4611,7 @@
             "other": "th",
             "many": "th"
         },
-        "OrphanedSpellsHeader": "提取法术（移动到上方的法术列表）",
+        "OrphanedSpellsHeader": "提取法术（移动到上方的施法列表）",
         "OverridesTitle": "覆盖",
         "PenaltyLabel": {
             "ability": "属性减值",
@@ -4737,7 +4737,7 @@
             "Title": "移除战斗熟练",
             "Message": "移除 {proficiency} 熟练？"
         },
-        "RemoveSpellcastingEntryTitle": "去除法术列表",
+        "RemoveSpellcastingEntryTitle": "删除施法列表",
         "RepairItemTitle": "尝试修理物品",
         "Repost": "发布提示至聊天栏",
         "RerollMenu": {
@@ -9498,7 +9498,7 @@
             "heritage": "传承",
             "weapon": "武器",
             "treasure": "宝物",
-            "spellcastingEntry": "法术列表",
+            "spellcastingEntry": "施法列表",
             "campaignFeature": "战役特性",
             "shield": "盾牌",
             "ammo": "弹药"
