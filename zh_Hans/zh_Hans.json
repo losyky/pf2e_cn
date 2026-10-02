@@ -1779,7 +1779,7 @@
                     "Slug": "一个稳定的、可读的标识符：设置后即使物品被重命名，标识符也将保持不变。",
                     "RollOptions": "物品掷骰选项的前缀取决于它的用法。大多数情况下使用<em>物品:</em>作为前缀，但是包含规则元素的项会使用<em>根源:</em>。"
                 },
-                "New": "新规则元素",
+                "New": "新增规则元素",
                 "RegenerateSlug": "（重新）生成标识符",
                 "Tab": "规则",
                 "Remove": "删除规则元素",
@@ -3072,11 +3072,11 @@
                 "ItemQuantity": {
                     "Increase": {
                         "ControlClick": "[Ctrl+点击]增加10个",
-                        "Click": "[点击]增加1个",
+                        "Click": "[点击] 增加1个",
                         "ShiftClick": "[Shift+点击]增加5个"
                     },
                     "Decrease": {
-                        "Click": "[点击]减少1个",
+                        "Click": "[点击] 减少1个",
                         "ShiftClick": "[Shift+点击]减少5个",
                         "ControlClick": "[Crtl+点击]减少10个"
                     }
@@ -8288,22 +8288,22 @@
         "TraitSocial": "社群",
         "TraitThrown80": "投掷80尺",
         "DamageButton": {
-            "Full": "[点击] 对选定目标应用完整伤害。",
+            "Full": "[点击] 对所选指示物应用完整伤害。",
             "FullContext": "应用伤害",
             "FullShort": "伤害",
-            "Half": "[点击] 对选定目标应用一半伤害。",
+            "Half": "[点击] 对所选指示物应用一半伤害。",
             "HalfContext": "一半伤害",
             "HalfShort": "一半",
-            "Double": "[点击] 对选定目标应用双倍伤害。",
+            "Double": "[点击] 对所选指示物应用双倍伤害。",
             "DoubleContext": "双倍伤害",
             "DoubleShort": "双倍",
-            "Triple": "[点击] 对目标应用三倍伤害。",
+            "Triple": "[点击] 对所选指示物应用三倍伤害。",
             "TripleContext": "应用三倍伤害",
             "TripleShort": "三倍",
-            "ShieldBlock": "[点击]在应用伤害前切换所选角色的盾牌格挡状态。",
+            "ShieldBlock": "[点击] 在应用伤害前切换所选指示物的盾牌格挡状态。",
             "ShieldBlockContext": "盾牌格挡",
             "ShieldBlockShort": "格挡",
-            "Healing": "[点击]对选定目标应用完整治疗。",
+            "Healing": "[点击] 对所选指示物应用完整治疗。",
             "HealingContext": "应用治疗",
             "HealingShort": "治疗",
             "Adjust": "[Shift-点击]在应用前调整数值。"
