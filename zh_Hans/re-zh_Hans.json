@@ -6612,7 +6612,7 @@
             "Life": {
                 "ToggleLabel": "治疗的所有目标都是活物",
                 "DescriptionModerate": "当你施放完一个非戏法法术后，你可选择法术目标之一或最靠近你的生物之一，恢复@Damage[@item.level[healing]]HP。你无法用此法治疗自己。该次治疗拥有治疗、死灵系、命能特征，同时拥有触发法术对应的根源特征。",
-                "DescriptionMajor": "每当你使用法术位施放一个至少需要2动作的5环或更高环法术时，溢散出的命能对@Template[burst|distance:30]范围造成一个3动作@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]效果，该治疗术等效环级为你所施放法术的环级-4。这次治疗在你@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]完毕后立刻生效。你不会从这次治疗中获得恢复，相反，你会失去该次治疗术治疗量双倍的HP。"
+                "DescriptionMajor": "每当你使用法术位施放一个至少需要2动作的5环或更高环法术时，溢散出的命能对@Template[burst|distance:30]范围造成一个3动作@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]效果，该治疗术等效环级为你所施放法术的环级-4。这次治疗在你@UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]完毕后立刻生效。你不会从这次治疗中获得恢复，相反，你会失去该次治疗术治疗量双倍的HP。"
             },
             "Time": {
                 "ACLabel": "移动时不会触发反应或自由动作",
@@ -9739,7 +9739,9 @@
                 "PersistentFire": "持续火焰",
                 "SpiritFromFiends": "来自魔族的精魂伤害",
                 "Starvation": "饥饿",
-                "Thirst": "口渴"
+                "Thirst": "口渴",
+                "NonMagicalPhysical": "非魔法物理伤害",
+                "UnholyCreaturesEffects": "邪秽生物或效果造成的伤害"
             }
         },
         "Color": {
@@ -9839,7 +9841,8 @@
             "Herbalism": "草药学识",
             "Architecture": "建筑学识",
             "Demon": "恶魔学识",
-            "Warfare": "战争学识"
+            "Warfare": "战争学识",
+            "Absalom": "艾巴萨罗姆学识"
         },
         "GenericLabel": {
             "PreviousAction": {
