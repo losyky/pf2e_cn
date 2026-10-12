@@ -4735,7 +4735,7 @@
         "RemoveCoinsTitle": "去除钱币",
         "RemoveCombatProficiency": {
             "Title": "移除战斗熟练",
-            "Message": "移除 {proficiency} 熟练？"
+            "Message": "是否删除{proficiency}熟练？"
         },
         "RemoveSpellcastingEntryTitle": "删除施法列表",
         "RepairItemTitle": "尝试修理物品",
@@ -9347,7 +9347,7 @@
         "TraitDescriptionNightmare": "Nightmare hazards are unique to Leng. In many ways, nightmare hazards resemble a haunt, and the dire truth might not reveal itself to potential victims until they discover that attempts to disable it through exorcism are ineffective.",
         "TraitDescriptionPowered": "此类近战武器使用电池供能。你可以通过交互动作，或是在武器拔出或收起时启动或停机动力武器。此类武器装有商用型电池，且每日消耗1点充能（而非每次攻击消耗1点充能）。如果你尝试使用电量耗尽或已停机的动力武器进行攻击，它将视为临时武器。模块化（动力）武器会在切换其模块配置时自行启动或停机。",
         "TraitDescriptionProfessional": "具有此特征的武器可作为所列技能的工具使用。将该武器用于攻击掷骰的物品加值添加到使用所列技能的技能检定中。在决定武器熟练度时，你可以将军用武器视为简易武器，或将进阶武器视为军用武器，最高不超过你在所列技能上的熟练度（如果高于你对该武器的常规熟练度）。",
-        "TraitDescriptionRangedShove": "该武器可以通过运动技能来@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]一个位于武器第一射程增量内的目标。该次技能检定承受-2环境减值。你可以将武器在攻击骰上的物品加值也加入摔绊检定中。",
+        "TraitDescriptionRangedShove": "该武器可以使用运动技能来推撞位于武器第一射程增量内的目标。该次技能检定承受-2环境减值。你可以将武器在攻击骰上的物品加值也加入摔绊检定中。",
         "TraitDescriptionResilient": "该护甲配备了多个集成的校准防御系统。穿戴该护甲时，你在豁免检定上获得所列物品加值。",
         "TraitDescriptionRetractable": "该盾牌可以折叠收纳为更小形态以附着在护臂，铁手套、手套或珠宝上，以方便旅行和解放双手。你可以使用一个交互动作将盾牌展开或折叠。你不能举起一面处于折叠形态的盾牌。盾牌在展开状态下具有袖珍特征。",
         "TraitDescriptionSerum": "这些血清是药用血清；它们是科技性的，或在某些情况下是混合制品，但可以在实验室中制造且不包含显著的魔法成分。你可以在饮用或将血清喂给另一个生物时用交互动作启动血清。你只能将血清喂给一个处于你触及范围内的自愿生物，或是如此无助以至于无法抵抗的生物。你通常只需要一条肢体来启动血清。",
