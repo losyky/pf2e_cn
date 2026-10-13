@@ -2584,7 +2584,7 @@
                         "AncestralBloodMagic": "施放一个先祖法术",
                         "Imperial": "直到你的下一个回合开始，你可以选择在AC或是在豁免骰上获得+1状态加值。",
                         "Demonic": "目标于1轮内在AC上受到-1状态减值，或者你于1轮内在威吓检定上获得+2状态加值。",
-                        "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[will|basic|against:spell]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命，持续到你之后那个回合的回合开始。",
+                        "Hag": "在你下一个回合的回合结束之前第一名对你造成伤害的敌人受到@Damage[(4*@item.level)[mental]]伤害（@Check[will|basic|against:spell]豁免）；如果没有生物在这段时间内对你造成伤害，你将这些恶意吸收并在下一个回合开始时获得等同于法术环级的临时生命值，持续到你之后那个回合的回合开始。",
                         "Harrow": "你被各种可能性包围，你可能的未来有多个版本互相叠加。你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，持续1轮，但不能用隐蔽来@UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]。",
                         "Title": "血统奥秘",
                         "Nymph": "你的动作中尽显宁芙的优雅，甚至能使你的敌人分心。你于1轮内在交涉检定上获得+1状态加值，或者目标于1轮内在意志豁免上承受-1状态减值。",
@@ -5240,7 +5240,7 @@
                     "CriticalSpecializationToggle": "使用尊名重击专精效果",
                     "DancerInTheSeasons": {
                         "CriticalSpecialization": "当你重击时，你可以自由动作快步。",
-                        "Description": "当你神火解放时，季节的轮转使你神光焕发，你获得等于等级一半的临时生命，持续到你下个回合开始。"
+                        "Description": "当你神火解放时，季节的轮转使你神光焕发，你获得等于等级一半的临时生命值，持续到你下个回合开始。"
                     },
                     "Label": "尊名",
                     "OfVerseUnbroken": {
@@ -5282,7 +5282,7 @@
                         "Description": "在你进行神火解放时，你的行动有着辛酸的悲壮色彩，使30尺内的一个敌人由于眼中打转的泪水和闪现回忆而@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]；这一个是心灵和情绪效果，持续到你的下回合开始，该敌人在随后10分钟内免疫这一效果。"
                     },
                     "HealerOfTheWorld": {
-                        "Description": "在你神火解放后，选择@Template[type:emanation|distance:30]范围内任意数量的自愿或@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]的生物。每个濒死的生物失去@UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]状态，仍处在失去意识状态并保持0点生命，每个并非濒死的生物获得10点临时生命，持续到你的下个回合开始。这是一个治疗、命能效果。"
+                        "Description": "在你神火解放后，选择@Template[type:emanation|distance:30]范围内任意数量的自愿或@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]的生物。每个濒死的生物失去@UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]状态，仍处在失去意识状态并保持0点生命，每个并非濒死的生物获得10点临时生命值，持续到你的下个回合开始。这是一个治疗、命能效果。"
                     },
                     "TeacherOfHeroes": {
                         "Description": "在你神火解放后，你可以以自由动作尝试对一个你能看见的生物进行一次回忆知识检定，并立即将你获得的任何知识传递给60尺内的每个盟友。当你以这种方式回忆知识时，你获得的第一项知识总是敌人的免疫（如果有的话）或最高的抗力（如果他没有免疫）。如果目标没有免疫或抗力，那么你会得知他最高的弱点。如果目标没有免疫、抗力或弱点，那么你可以了解他最低的豁免是哪一个。"
