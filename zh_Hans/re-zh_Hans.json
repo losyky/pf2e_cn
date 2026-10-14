@@ -634,7 +634,7 @@
                 "Prompt": "选择粘性手雷的品级。"
             },
             "BioluminescenceBomb": {
-                "success": "<p>炸弹落点@Template[emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[reflex|dc:17] 豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮，然后再目眩1轮。</p>"
+                "success": "<p>炸弹落点@Template[emanation|distance:10]{10尺}内的所有生物都必须尝试@Check[reflex|dc:17]豁免，否则会沾染荧光剂，持续发光24小时。受影响的生物还必须尝试@Check[fortitude|dc:17]豁免来对抗爆发的强光。</p><p><strong>成功</strong> 生物不受影响。</p><p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p><p><strong>大失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]1轮，然后再目眩1轮。</p>"
             },
             "SkunkBomb": {
                 "Greater": {
@@ -3337,7 +3337,7 @@
                 },
                 "RetributiveStrike": "报应打击",
                 "IronRepercussions": {
-                    "Description": "不服从你的残酷纪律会有更持久的后果。如果一位敌人拒绝向你跪拜，你可以转而对他造成@Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,9),3,ternary(gte(@actor.level,5),2,1))))))d6[persistent,mental]] 伤害。你必须在敌人决定是否向你跪拜前，选择要不要造成持续性的心灵伤害。伤害的数值不会改变。"
+                    "Description": "不服从你的残酷纪律会有更持久的后果。如果一位敌人拒绝向你跪拜，你可以转而对他造成@Damage[(ternary(gte(@actor.level,19),6,ternary(gte(@actor.level,16),5,ternary(gte(@actor.level,12),4,ternary(gte(@actor.level,9),3,ternary(gte(@actor.level,5),2,1))))))d6[persistent,mental]]伤害。你必须在敌人决定是否向你跪拜前，选择要不要造成持续性的心灵伤害。伤害的数值不会改变。"
                 },
                 "RangedReprisal": {
                     "Description": "你能够在更远的距离上使用报应打击。你能够在进行报应打击时，取代近战打击，转而使用远程武器进行远程打击。触发反应的敌人需要位于射程而非触及之内，并且其仍然要身处你神卫灵光范围内。你也能够对站位稍远的敌人进行近战打击。如果触发反应的敌人在你的触及之外，且在你触及周围5尺之内，作为反应的一部分，你能够在进行近战报应打击之前使用快步将敌人置于你的触及之内。"
@@ -4326,7 +4326,7 @@
                     "Description": "当你施展吸血鬼之触时，你可以修改其标准效果如下。你可以将临时生命给予30尺范围内的一个盟友，而不是让自己获得临时生命。1分钟后，该盟友将失去任何剩余的临时生命。"
                 },
                 "SummonEnsemble": {
-                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[will] 豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。随后目标在24小时内临时免疫该效果。"
+                    "Description": "当你施放召唤乐器时，你可以将它的持续时间修改为维持，最长1分钟。当你这样做时，你会召唤出与你的施法属性调整值相同数量的乐器，它们在你周围盘旋并自行演奏。每回合一次，当你维持法术时，选择一个在30尺内能听到你表演的对手。目标必须尝试对抗该法术DC的@Check[will]豁免；如果失败，他就会被你的表演扰乱心神，在一个回合内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]。随后目标在24小时内临时免疫该效果。"
                 },
                 "UneasyRest": {
                     "Description": "当你施展睡眠术时，你可以修改该法术，在其标准效果上增加以下内容：你施法的目标会经历可怕的梦境。当一个豁免失败或大失败的目标醒来时，它将获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
@@ -9587,7 +9587,7 @@
             "MeteorShot": {
                 "Normal": {
                     "Title": "流星弹",
-                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[emanation|distance:5]区域内造成@Damage[3d6[fire]]伤害 (@Check[reflex|dc:23|basic|name:Meteor Shot] 豁免)."
+                    "Text": "除了武器的正常伤害外，流星弹还会造成火焰伤害，并使得该区域变为困难地形。它会在目标周围@Template[emanation|distance:5]区域内造成@Damage[3d6[fire]]伤害 (@Check[reflex|dc:23|basic|name:Meteor Shot]豁免)."
                 },
                 "Major": {
                     "Title": "上等流星弹",
