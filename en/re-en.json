@@ -15,6 +15,10 @@
                     "Text": "When activated disruption ammunition hits a target, it attempts to counteract one active spell effect that the target is Sustaining with a +20 counteract check modifier (counteract rank 6).",
                     "Title": "Disruption Ammunition (Greater)"
                 },
+                 "Major": {
+                    "Text": "When activated disruption ammunition hits a target, it attempts to counteract one active spell effect that the target is Sustaining with a +28 counteract check modifier (counteract rank 9).",
+                    "Title": "Disruption Ammunition (Major)"
+                },
                 "Normal": {
                     "Text": "When activated disruption ammunition hits a target, it attempts to counteract one active spell effect that the target is Sustaining with a +11 counteract check modifier (counteract rank 3).",
                     "Title": "Disruption Ammunition"
@@ -7201,6 +7205,21 @@
                 }
             },
             "Hellknight": {
+                "Order": {
+                    "Chain": "Order of the Chain",
+                    "Gate": "Order of the Gate",
+                    "Glyph": "Order of the Glyph",
+                    "Godclaw": "Order of the Godclaw",
+                    "Nail": "Order of the Nail",
+                    "Pike": "Order of the Pike",
+                    "Pyre": "Order of the Pyre",
+                    "Rack": "Order of the Rack",
+                    "Scar": "Order of the Scar",
+                    "Scourge": "Order of the Scourge",
+                    "Torrent": "Order of the Torrent",
+                    "Wall": "Order of the Wall"
+                },
+                "Prompt": "Select a Hellknight Order.",
                 "RevealBeasts": {
                     "Note": "Whenever you critically succeed at a check to Recall Knowledge against an animal, beast, fungus, or plant, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
                 }
