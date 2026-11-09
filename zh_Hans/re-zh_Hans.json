@@ -9641,7 +9641,7 @@
                 }
             },
             "EscalationAmmunition": {
-                "Text": "目标必须尝试@Check[fortitude|dc:30]豁免。若失败，目标在接下来一分钟内下一次对抗法术或魔法效果的豁免检定需投掷两次并取较差结果。",
+                "Text": "目标必须尝试@Check[fortitude|dc:30]豁免。若失败，目标在接下来一分钟内下一次对抗法术或魔法效果的豁免检定需投掷两次并取较差结果。@UUID[Compendium.pf2e.equipment-effects.Item.qMqygrD5lJyd5UYM]",
                 "Title": "恶化弹药"
             },
             "GravebaneAmmunition": {
