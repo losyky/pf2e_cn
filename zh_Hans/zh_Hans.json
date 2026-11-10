@@ -2869,36 +2869,42 @@
                     "gfolian": "火蟹语",
                     "kucharn": "虫族语",
                     "shirren": "希伦语",
-                    "bantridi": "Bantridi",
+                    "bantridi": "班特里德语",
                     "brenneri": "水獭人语",
                     "copaxi": "珊瑚人语",
                     "elindrian": "艾琳卓语",
-                    "embri": "Embri",
+                    "embri": "安布里语",
                     "entu": "因图语",
                     "garaggakal": "幽噬怪语",
-                    "izalguun": "Izalguun",
-                    "madrosarai": "Madrosarai",
-                    "maratan": "Maratan",
+                    "izalguun": "伊扎古恩语",
+                    "madrosarai": "马德罗萨莱语",
+                    "maratan": "马拉塔语",
                     "nchaki": "恩查克语",
-                    "orbian": "Orbian",
-                    "osharu": "Osharu",
-                    "primacy": "Primacy",
-                    "raxi": "Raxi",
-                    "rodnarthian": "Rodnarthian",
+                    "orbian": "奥比安语",
+                    "osharu": "奥沙鲁语",
+                    "primacy": "普莱默西语",
+                    "raxi": "拉西语",
+                    "rodnarthian": "罗德纳斯语",
                     "starsong": "星之歌",
                     "szandite": "桑迪特语",
                     "talphirian": "鼹鼠人语",
                     "triaxian": "特里亚克萨斯语",
                     "trinary": "三元语",
                     "urog": "巫洛格语",
-                    "worlanisi": "Worlanisi",
+                    "worlanisi": "沃兰尼西语",
                     "acsie": "阿克塞语",
-                    "coshyco": "Coshyco",
+                    "coshyco": "科希科语",
                     "tripkee": "树蛙人语",
                     "gnarefuroid": "拾荒蜗族语",
                     "vulkari": "松鼠狐人语",
                     "atraxid": "纺蛛人语",
-                    "binnaquid": "沼栖族语"
+                    "binnaquid": "沼栖族语",
+                    "dorjosh": "多尔乔什语",
+                    "krethiskarian": "克雷西斯卡语",
+                    "kuxoran": "库索尔语",
+                    "lazelan": "拉泽兰语",
+                    "maraquoi": "马拉魁语",
+                    "xofirthian": "索菲斯语"
                 }
             },
             "Dead": "死亡",
@@ -3504,7 +3510,8 @@
                 "PacksLabel": "合集包",
                 "OpenSettings": "打开设置",
                 "Saved": "设置已保存",
-                "Title": "合集包浏览器设置"
+                "Title": "合集包浏览器设置",
+                "ToggleVisibleSources": "切换所有可见来源"
             },
             "RollTable": {
                 "AddLabel": "添加至随机表",
@@ -3541,7 +3548,20 @@
                 "Sizes": "体型",
                 "Source": "来源",
                 "Traditions": "根源",
-                "WarnPackNotLoaded": "无法载入合集包“{pack}”。"
+                "WarnPackNotLoaded": "无法载入合集包“{pack}”。",
+                "Aria": {
+                    "ExcludeTrait": "排除{trait}",
+                    "LevelFrom": "最低等级",
+                    "LevelTo": "最高等级",
+                    "RangeMax": "最大{label}",
+                    "RangeMin": "最小{label}",
+                    "RemoveTrait": "移除{trait}"
+                },
+                "Spells": {
+                    "Defense": {
+                        "BasicOnly": "仅基础豁免"
+                    }
+                }
             },
             "TraitsComponent": {
                 "NoMatch": "无符合条件的结果",
@@ -6094,7 +6114,7 @@
         "TraitDescriptionStaff": "这个魔法物品中保存了一些特定主题的法术，施法者可以准备好这根法杖以施展额外的法术。",
         "TraitDescriptionSteam": "具有这种特征的物品由发动机提供动力，发动机用沸水产生蒸汽并驱动部件。",
         "TraitDescriptionStrix": "有翅膀的人形生物，大多数生活在切利亚斯及其周围。",
-        "TraitDescriptionStructure": "拥有构造物特征的法术、可启动物品或能力可以创造魔法建筑或其它构造物。构造物必须在一片没有其他构造物的地面上被创造。该构造物会自动适应自然地形，并适用当地建筑的建筑需求。构造物细节部分可根据诸如人工池或石尖顶之类自动调整，但它不能在水面或其它非固体表面生成。若在雪地、沙丘或其它有着固体底部的软性地面上生成，该构造物的地基（若有）会深入直达固体底部。若构造物位于固体但不稳定的表面上——比如沼泽或地震区域——每天需要骰1个@Check[flat|dc:3]检定；若失败，构造物会开始下沉或塌陷。构造物在生成时不会伤害区域内的生物，也不能在人群或人员拥挤的区域生成。当构造物生成时，任何无意中被困其中的生物最终都会无伤地留在构造物内，并且总是有一条清晰的离开路径。位于构造物内的生物在效果终止后不会受伤，若人员在构造物的高层，他们会无伤地降落在地面上",
+        "TraitDescriptionStructure": "拥有构造物特征的法术、可启动物品或能力可以创造魔法建筑或其它构造物。构造物必须在一片没有其他构造物的地面上被创造。该构造物会自动适应自然地形，并适用当地建筑的建筑需求。构造物细节部分可根据诸如人工池或石尖顶之类自动调整，但它不能在水面或其它非固体表面生成。若在雪地、沙丘或其它有着固体底部的软性地面上生成，该构造物的地基（若有）会深入直达固体底部。若构造物位于固体但不稳定的表面上——比如沼泽或地震区域——每天需要进行一次DC为3的纯骰检定；若失败，构造物会开始下沉或塌陷。</p><p>构造物在生成时不会伤害区域内的生物，也不能在人群或人员拥挤的区域生成。当构造物生成时，任何无意中被困其中的生物最终都会无伤地留在构造物内，并且总是有一条清晰的离开路径。位于构造物内的生物在效果终止后不会受伤，若人员在构造物的高层，他们会无伤地降落在地面上",
         "TraitDescriptionSummoned": "由法术或效果召来的生物会获得召唤特征。召唤生物无法召唤其他生物，创造有价值的事物，或施展需要代价的法术。它具有仆从特征。如果它尝试施展法术环级等于或大于召唤他自身的法术的法术，它会压制召唤魔法，令它准备施展的法术失败，并令召唤法术立刻终止。除此之外，召唤生物可以使用同类的生物的标准能力。它通常会使用最强的能力攻击你的敌人。如果你可以与其交流，你可以对其下达命令，但由GM判断它是否会听从你的命令。召唤生物产生的卵或其他生物在召唤生物离开时会立刻回到未变动时的状态（在卵的情况下会变成尸骸）。如果不确定会变成什么状态，由GM决定。如果不清楚这种状态会是什么，则由GM做出决定。召唤生物可能会被多种法术和效果驱逐。它们在生命值降低到0点时，或召唤法术终止时会自动被驱逐。",
         "TraitDescriptionSummoner": "这表示该能力来自召唤师职业。",
         "TraitDescriptionSuli": "巨灵裔是小巨灵群体后裔的族裔。",
@@ -7052,7 +7072,7 @@
                 "launcher": "发射器",
                 "phase-cutlass": "相位弯刀",
                 "puzzleblade": "拼装刃",
-                "injection-rifle": "Injection Rifle",
+                "injection-rifle": "注射步枪",
                 "needler-pistol": "针弹手枪"
             }
         },
@@ -7533,10 +7553,16 @@
                 "Name": "偏折"
             },
             "energyVulnerability": {
-                "Name": "能量弱点"
+                "Name": "能量弱点",
+                "Note": {
+                    "criticalSuccess": "重击时，目标获得对所选能量类型的弱点5，持续到你的下个回合结束。该弱点不会与目标已有的同类型弱点叠加，且不影响对此类能量具有免疫或抗力的生物。 @UUID[Compendium.pf2e.equipment-effects.Item.HVPeVb3WOGpKAI6A]"
+                }
             },
             "greaterEnergyVulnerability": {
-                "Name": "高等能量弱点"
+                "Name": "高等能量弱点",
+                "Note": {
+                    "criticalSuccess": "重击时，目标获得对所选能量类型的弱点10，持续到你的下个回合结束。该弱点不会与目标已有的同类型弱点叠加，且不影响对此类能量具有免疫或抗力的生物。 @UUID[Compendium.pf2e.equipment-effects.Item.HVPeVb3WOGpKAI6A]"
+                }
             }
         },
         "WeaponPropertyRuneAnarchic": "混沌",
@@ -7938,15 +7964,19 @@
                 "name": "咒缚"
             },
             "glitching": {
-                "name": "故障"
+                "name": "故障",
+                "rules": "<p>具有科技特征的生物，危害或物体处于故障状态时会同时遭受多种削弱效果和短暂卡顿。故障状态总是包含有一个状态值。如果你拥有陷入故障的装备，并使用任何涉及该装备的动作，你必须尝试一次纯骰检定来查看会发生什么。如果你处于故障状态，你必须在自己每个回合开始时尝试这次 @Check[flat|dc:resolve(5 + @item.badge.value)|showDC:all] 检定。纯骰检定的DC等于5加上你的状态值或该物品的状态值。</p><hr /><p><strong>大成功</strong> 你的故障状态值减1。</p>\n<p><strong>成功</strong> 你可以正常行动或使用装备。</p>\n<p><strong>失败</strong> 你的所有检定和DC都会受到等同于你的故障状态值或你试图使用的物体的故障状态值的物品减值，包括豁免骰，攻击调整值，以及你使用的能力，效果和法术的DC。</p>\n<p><strong>大失败</strong> 你尝试使用的具有故障状态的物品不会起作用，你失去尝试使用该物品的动作。处于故障状态的生物使用与失败相同的效果，且还会陷入 @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。处于故障状态的危害使用与失败相同的效果。</p>",
+                "summary": "你的科技设备发生故障，可能会卡住。"
             },
             "suppressed": {
                 "name": "被压制",
-                "rules": "<p>你受到大量来袭火力或特别危险攻击的影响，为了自身安全不得不降低行动效率。你的攻击掷骰承受-1环境减值，你的所有速度承受-10尺的状态减值。</p>"
+                "rules": "<p>你受到大量来袭火力或特别危险攻击的影响，为了自身安全不得不降低行动效率。你的攻击掷骰承受-1环境减值，你的所有速度承受-10尺的状态减值。</p>",
+                "summary": "来袭火力迫使你为了自身安全降低行动效率。"
             },
             "untethered": {
                 "name": "失重",
-                "rules": "<p>你处于零重力（或类似）环境中，没有移动的手段，在没有支撑的情况下漂浮。除非被动作说明可以在当前环境中使用，否则你不能使用移动动作。在你的回合结束时，你会向上次移动的方向移动5尺。你可以采取推动动作来改变方向和移动距离。一旦你在环境中获得了移动手段，你就会失去这个状态。通常情况下，在零重力状态下陷入失重状态的生物在处于失重时也会获得@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]状态。</p>"
+                "rules": "<p>你处于零重力（或类似）环境中，没有移动的手段，在没有支撑的情况下漂浮。除非被动作说明可以在当前环境中使用，否则你不能使用移动动作。在你的回合结束时，你会向上次移动的方向移动5尺。你可以采取推动动作来改变方向和移动距离。一旦你在环境中获得了移动手段，你就会失去这个状态。通常情况下，在零重力状态下陷入失重状态的生物在处于失重时也会获得@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]状态。</p>",
+                "summary": "你在零重力下漂浮，没有支撑。"
             }
         },
         "ui": {
@@ -8174,7 +8204,8 @@
                     "ChangeFormation": "<p>部队重新编队以采用他们所知的以下其中一种阵型。再次使用此动作将结束之前的阵型效果，部队还可以使用此动作恢复到默认阵型，避免任何优势和劣势的影响。</p><ul><li><strong>松散阵型 Loose</strong> 部队成员分散开来覆盖更多地面。<strong>优势</strong> 部队对区域和溅射伤害的弱点被压制。<strong>劣势</strong> 敌对单位对部队伤害效果的豁免掷骰成功度比他们掷出的骰子高一阶。</li><li><strong>行军纵队 Marching Column</strong> 此阵型可以更快地穿越长距离。<strong>优势</strong> 部队获得对所有速度的+10尺环境加值。<strong>劣势</strong> 部队处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]状态，反射豁免获得-2减值。</li><li><strong>龟壳阵型 Turtle Shell</strong> 部队将盾牌相互锁定。只有拥有盾牌的群体才能使用此阵型。<strong>优势</strong> 部队在对远程攻击的AC和对反射豁免上获得+2的环境加值。<strong>劣势</strong> 部队所有速度减10尺。</li><li><strong>楔形阵型 Wedge</strong> 部队将自己排列在一位强大的指挥官身后。<strong>优势</strong> 部队可以选择一个相邻的没有部队特征的盟友生物跟在后面。每次所选生物行进时，部队作为一个免费动作跟随，行进以保持所选生物相邻。<strong>劣势</strong> 部队失去一些自主性。他们受到缓慢1，且不能自愿离开他们的领导者。</li></ul>",
                     "TroopMovement": "<p>每当一支部队移动时，你都会移动其中一个部分，其他部分则跟随其后。移动结束后，你可以根据自己的喜好，将其他部分聚集到与你移动的部分相邻，前提是这些部分的移动距离都不能超过移动的部分。如果你选择不将部队移动任何距离，你可以改为重新调整所有部分的位置，只要其中一个部分保持不动即可。</p>",
                     "Hover": "当怪物的陆地速度注明其可悬浮时，其陆地速度代表该生物在距离坚实表面 5 英尺内悬浮移动的速度。悬浮生物不被视为飞行状态，但根据 GM 的判断，可能能够避开某些困难或危险地形。",
-                    "NoBreath": "该怪物无需呼吸，且免疫需要呼吸的效果。"
+                    "NoBreath": "该怪物无需呼吸，且免疫需要呼吸的效果。",
+                    "WindUp": "<p>发条生物必须先由另一生物用一把专用钥匙上弦，才能行动。上弦需要1分钟。上弦后，它能运转所列时长，通常为24小时。此后，它无法感知周遭，也无法行动，直到再次上弦。某些发条生物的能力需要消耗一部分剩余运转时间。发条生物消耗的时间不能超过剩余时间，一旦剩余时间为0便立即停机。如果不清楚发条生物上一次是什么时候上弦的，大多数照管者都会在固定时间给自己所有的发条生物上弦，通常是上午8点。</p>\n<p>生物可以尝试用 @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6] 使发条生物松弦（DC列在上弦条目中）。每次成功都使该发条生物的运转时间减少1小时（大成功则减少2小时）。即使发条生物处于待机模式，也可以这样做。</p>\n<p>如果发条生物的上弦条目列有待机，它便拥有下列动作。</p>\n<p><strong>进入待机</strong> <span class='pf2-icon'>3</span> 发条生物进入待机模式。待机期间，它的运转时间不会减少，仍能感知周遭（察觉承受–2环境减值）。它无法行动，但有一个例外：当它察觉到一个生物时，可以用一个反应退出待机（若适用，则掷骰先攻）。</p>"
                 }
             },
             "ActionsList": {
@@ -9345,7 +9376,7 @@
         "TraitDescriptionCritical": "该武器使用所列武器类型的重击专精特性，而非其自身的重击专精特性。",
         "TraitDescriptionCycle": "具有循环特征的动作会将你当前的星辰调谐转变为相反状态。当你执行一个具有此特征的动作时，若该动作同时还具有调谐特征，你将受益于当前调谐状态所对应的额外效果。而一旦你完成该动作，你的调谐就会转变为相反状态（若你在执行动作前处于光量子调谐，那么动作结束后变为引力子调谐，反之亦然）。",
         "TraitAffixedToASlashingWeapon": "附着在一把挥砍武器上",
-        "TraitBantrid": "Bantrid",
+        "TraitBantrid": "班特里德",
         "TraitBrenneri": "水獭人",
         "TraitCopaxi": "珊瑚人",
         "TraitDescriptionCaster": "通过施放花费两个及以上动作的法术（包括戏法），你可以对该武器进行调整。如果你如此做，如常结算法术。当法术被施放时，如果其具有酸蚀，寒冷，火焰，电击，音波，精魂，命能或虚能特征，则该武器造成这一类型的伤害而非其通常伤害类型，直到你的下个回合结束。如果该武器具有万古特征，并安装了法术宝石，此效果将持续1分钟。如果法术造成多种类型的伤害，则你在武器开火时选择其中一种。",
@@ -9357,7 +9388,7 @@
         "TraitDescriptionGrenade": "具有此特征的武器能够以单动作投掷使用区域射击动作，如同其具有区域（爆发）特征。",
         "TraitDescriptionInstalled": "有些盾牌并非用来持握，而是作为护甲或武器的强化模块被安装。你可以如常将作为护甲强化模块的内嵌盾牌举起。此类盾牌只能被安装在具有格挡特征的武器上。当你使用带有该武器强化模块的格挡武器以获得AC加值时，该强化模块会释放出惯性抑制屏障，使你自动举起盾牌。如果你将该武器用于其他用途，盾牌不再保持举起，且你不再获得AC加值。你不能以其他方式举起一面作为强化模块的内嵌盾牌。",
         "TraitDescriptionMaftet": "翼狮人拥有类人的上半身、狮形的下半身，以及鹰状的双翼。",
-        "TraitDescriptionNightmare": "Nightmare hazards are unique to Leng. In many ways, nightmare hazards resemble a haunt, and the dire truth might not reveal itself to potential victims until they discover that attempts to disable it through exorcism are ineffective.",
+        "TraitDescriptionNightmare": "梦魇危害为冷原所独有。梦魇危害在许多方面都类似于作祟危害，潜在的受害者可能要等到发现驱魔无法解除这种危害时，才会察觉这个可怕的真相。",
         "TraitDescriptionPowered": "此类近战武器使用电池供能。你可以通过交互动作，或是在武器拔出或收起时启动或停机动力武器。此类武器装有商用型电池，且每日消耗1点充能（而非每次攻击消耗1点充能）。如果你尝试使用电量耗尽或已停机的动力武器进行攻击，它将视为临时武器。模块化（动力）武器会在切换其模块配置时自行启动或停机。",
         "TraitDescriptionProfessional": "具有此特征的武器可作为所列技能的工具使用。将该武器用于攻击掷骰的物品加值添加到使用所列技能的技能检定中。在决定武器熟练度时，你可以将军用武器视为简易武器，或将进阶武器视为军用武器，最高不超过你在所列技能上的熟练度（如果高于你对该武器的常规熟练度）。",
         "TraitDescriptionRangedShove": "该武器可以使用运动技能来推撞位于武器第一射程增量内的目标。该次技能检定承受-2环境减值。你可以将武器在攻击骰上的物品加值也加入摔绊检定中。",
@@ -9368,26 +9399,26 @@
         "TraitDescriptionTactic": "战术是一种特殊能力，用于示意盟友执行预定的行为。要使用战术能力，你必须事先在每日准备时指派一个或多个自愿盟友，这些盟友称作队友（squadmates）。你的队友也必须能够感知到你的信号，无论你是说出来还是喊出来（这种情况下战术动作获得听觉特征），或则通过身体向它们发出信号，通常是挥舞你的旗帜（这种情况下它获得视觉特征）。虽然你每轮可以使用多个战术动作，但一个角色每轮不会回应超过一个战术，无论来源如何。你不能准备使用战术。战术通常会赋予可作为自由动作使用的动作或能力；这些动作或能力可以像反应动作一样在队友回合之外使用。",
         "TraitDescriptionThought": "具有此特征的武器使用生物工程技术植入了神经受体，使得它们可以通过心灵感应进行控制。当你持用这把武器并具有心灵感应或有限心灵感应时，你可以忽略该武器通常具有的任意特征；这仅适用于武器条目中列出的特征，不适用于该武器或动作因使用其他能力或效果而获得的特征。如果你可以跟这把武器沟通，你使用这把武器的熟练度等于你的简易武器熟练度。",
         "TraitDescriptionTracking": "该武器具有多个综合瞄准、稳定以及制导系统。使用该武器的攻击骰获得和追踪值相同的物品加值。使用该武器进行区域射击的豁免DC亦获得和追踪值相同的物品加值。",
-        "TraitDescriptionTransfer": "These actions reduce Hit Points from your vitality network. You must have Hit Points in your vitality network equal to or greater than the transfer cost to use these actions. If you can't pay the cost, the action is disrupted.",
+        "TraitDescriptionTransfer": "这些动作会消耗你命能网络中的生命值。要使用这些动作，你的命能网络中必须有至少等同于转移消耗的生命值。如果你无法支付这项消耗，该动作被打断。",
         "TraitDescriptionUnwieldy": "具有此特征的武器是巨大而笨重的，在未冷却的情况下无法发射，或者很难连续攻击。你每轮不能使用粗笨武器攻击超过一次，也不能作为反应动作的一部分使用它进行打击，例如反应打击。",
-        "TraitDescriptionUpgrade": "Weapons can be customized with upgrades, which include technological weapon modifications and weapon fusions. This indicates how many upgrades the weapon can utilize.",
-        "TraitDescriptionVirtual": "Items with the virtual trait are programs that must be installed on other computers, such as comm units. They require the Programmer feat to craft.",
+        "TraitDescriptionUpgrade": "武器可以通过强化模块进行定制，包括科技武器改装和魔法武器融合。这表明武器可以强化的次数。",
+        "TraitDescriptionVirtual": "具有虚拟特征的物品是程序，必须安装在通讯单元等其他计算机设备上。你必须拥有程序员专长才能制造这类物品。",
         "TraitEntuColony": "因图菌群",
         "TraitGapTouched": "大断层接触者",
         "TraitHeldInOneHandHungOnACordOrAttachedToClothing": "单手持握、挂在绳子上，或附着在衣物上",
         "TraitIjtikri": "石面鱿族",
         "TraitInstalledInADatapad": "安装在数据板内",
-        "TraitIzalguun": "Izalguun",
+        "TraitIzalguun": "伊扎古恩",
         "TraitKothama": "科萨玛人",
         "TraitMadrosarai": "马德罗萨莱人",
         "TraitMaraquoi": "马拉魁族",
-        "TraitMoyishuu": "Moyishuu",
+        "TraitMoyishuu": "莫伊苏族",
         "TraitOrocoran": "奥罗科兰人",
-        "TraitOsharu": "Osharu",
-        "TraitPolymer": "Polymer",
+        "TraitOsharu": "奥沙鲁",
+        "TraitPolymer": "聚合甲",
         "TraitRaxilite": "拉西利特族",
         "TraitTalphi": "鼹鼠人",
-        "TraitTransfer": "Transfer",
+        "TraitTransfer": "转移",
         "TraitTrox": "卓克斯虫人",
         "TraitUpgrade": "强化模块",
         "TraitUrog": "巫洛格",
@@ -9411,7 +9442,7 @@
         "TraitThrall": "奴仆",
         "TraitImpossible": "奇迹",
         "TraitDescriptionImpossible": "所有奇迹法术都带有奇迹特征，表示一个生物在其整个存在期间只能施放一次这类法术。生物一旦施放过一道具有奇迹特征的法术，便永远无法再施放任何具有奇迹特征的法术。施法一小时后，施法者开始承受该法术\"失术印记\"条目中所述的后果。该条目也会说明如何治愈印记造成的效果。具有此特征的法术同样更难被反制。任何针对该法术进行的反制检定，其成功度下降一级；任何能够自动反制该法术的效果都会失败。塑法效果不能应用于奇迹法术。",
-        "TraitDescriptionBantrid": "A creature with this trait is a member of the bantrid ancestry. These small, anosmatic aberrations have a column-like body mounted on an organic rolling foot-orb and have trouble remaining stationary. An ability with this trait can be used or selected only by bantrids.",
+        "TraitDescriptionBantrid": "具有该特征的生物属于班特里德族裔。这些小型异怪没有嗅觉，柱状的身体立在一颗可滚动的有机球足上，很难保持静止。具有该特征的能力只能由班特里德选取或使用。",
         "TraitDescriptionBorai": "具有该特征的生物拥有活尸裔多用传承。具有该特征的能力只能被活尸裔使用或选取。",
         "TraitDescriptionBrenneri": "具有该特征的生物是水獭人族裔的一份子。他们是友善的水獭类人型生物，能够游泳并长时间屏息。具有该特征的能力只能被水獭人选取或使用",
         "TraitDescriptionCopaxi": "具有该特征的生物是珊瑚人族裔的一份子。他们是由遗传完全相同的珊瑚虫组成的群落，外形为人型，具珊瑚状外骨骼，能够操控重力。具有该特征的能力只能被珊瑚人选取或使用。",
@@ -9419,32 +9450,32 @@
         "TraitDescriptionEntu": "A creature with this trait is a member of the entu colony ancestry. They are telepathic fungal colonies that feed on emotion and imbue intelligence into willing hosts. An ability with this trait can be used or selected only by entu colonies.",
         "TraitDescriptionFonqugon": "具有该特征的生物是方贡族族裔的一份子。他们是重视智力与环境管护的多脑泥怪。具有该特征的能力只能被方贡族选取或使用。",
         "TraitDescriptionFormian": "具有该特征的生物是弗米蚁族族裔的一份子。他们是来自具有巢群意识的群落中的类蚁生物，会经历一种促使其作为独立个体外出冒险的「感召」。具有该特征的能力只能被弗米蚁族选取或使用。",
-        "TraitDescriptionGapTouched": "A creature with this trait is a member of the gap-touched versatile heritage. They are creatures with a strong connection to the Gap. An ability with this trait can be used or selected only by gap-touched.",
+        "TraitDescriptionGapTouched": "具有该特征的生物拥有大断层接触者多用传承。他们与大断层有着紧密的联系。具有该特征的能力只能由大断层接触者选取或使用。",
         "TraitDescriptionGfolian": "具有该特征的生物是火蟹族族裔的一份子。他们是喷吐火焰的高智慧生物，以对哲学的深刻热忱著称。具有该特征的能力只能被火蟹族选取或使用。",
-        "TraitDescriptionGnarefuroid": "A creature with this trait is a member of the gnarefuroid ancestry. Gnarefuroids are aberrant collectors of trash who thrive clinging to the station's exterior. An ability with this trait can be used or selected only by gnarefuroids.",
+        "TraitDescriptionGnarefuroid": "具有该特征的生物属于拾荒蜗族。拾荒蜗族是收集废品的异怪，能在攀附空间站外壁的环境中繁衍生息。具有该特征的能力只能由拾荒蜗族选取或使用。",
         "TraitDescriptionIjtikri": "具有该特征的生物是石面鱿族族裔的一份子。他们是呼吸空气的鱿鱼状异怪，头部呈椭圆形且坚硬，并长有多条腕足。具有该特征的能力只能被石面鱿族选取或使用。",
         "TraitDescriptionInvocation": "激发动作允许符文工匠通过说出符文的真名来激发符文的力量。激发要求你能用有力的声音清晰地念出符文，并需求你在目标符文30尺范围内，除非其他能力改变了这一需求。",
-        "TraitDescriptionIzalguun": "A creature with this trait is a member of the izalguun ancestry. They are large, six-limbed isolationist humanoids capable of adopting a bipedal or quadrupedal stance. An ability with this trait can be used or selected only by izalguuns.",
-        "TraitDescriptionLFAN": "Feats with the LFAN trait represent optional functional improvements to a raxilite's LFAN.",
-        "TraitDescriptionMadrosarai": "A creature with this trait is a member of the madrosarai ancestry. They are humanoids known for calm temperaments, vibrant coloration, and a strong connection with magic. An ability with this trait can be used or selected only by madrosarais.",
-        "TraitDescriptionMaraquoi": "A creature with this trait is a member of the maraquoi ancestry. They are tailed simian humanoids with seven reproductive sexes who cherish family, deeply mourn the dead, and detect sound through their skin. An ability with this trait can be used or selected only by maraquois.",
-        "TraitDescriptionMoyishuu": "A creature with this trait is a member of the moyishuu ancestry. They are insightful fey with colorful skin and crystalline hair who can sense, emulate, and harness emotions. An ability with this trait can be used or selected only by moyishuus.",
+        "TraitDescriptionIzalguun": "具有该特征的生物属于伊扎古恩族裔。他们是有六条肢体的大型类人生物，奉行孤立主义，可以采取双足或四足姿态。具有该特征的能力只能由伊扎古恩选取或使用。",
+        "TraitDescriptionLFAN": "具有LFAN特征的专长代表拉西利特族可为自身LFAN选配的功能改进。",
+        "TraitDescriptionMadrosarai": "具有该特征的生物属于马德罗萨莱人族裔。他们是类人生物，以平和的性情、鲜艳的体色以及与魔法的紧密联系著称。具有该特征的能力只能由马德罗萨莱人选取或使用。",
+        "TraitDescriptionMaraquoi": "具有该特征的生物属于马拉魁族。他们是长尾的猿猴状类人生物，有七种生殖性别，珍视家人，深切哀悼逝者，并能用皮肤感知声音。具有该特征的能力只能由马拉魁族选取或使用。",
+        "TraitDescriptionMoyishuu": "具有该特征的生物属于莫伊苏族。他们是洞察力敏锐的精类，皮肤色彩鲜艳，头发呈晶体状，能够感知、模仿和利用情绪。具有该特征的能力只能由莫伊苏族选取或使用。",
         "TraitDescriptionNecromancer": "这表示该能力来自死灵师职业。",
         "TraitNecromancer": "死灵师",
         "TraitDescriptionNovian": "具有该特征的生物是新星族族裔的一份子。他们是诞生于恒星死亡之中的微型漂浮太阳，能够散发出强大的引力场。具有该特征的能力只能被新星族选取或使用。",
-        "TraitDescriptionNuar": "A creature with this trait is a member of the nuar ancestry. Nuars are bovine humanoids with mysterious origins. An ability with this trait can be used or selected only by nuars.",
+        "TraitDescriptionNuar": "具有该特征的生物属于牛尔人族裔。牛尔人是起源成谜的牛形类人生物。具有该特征的能力只能由牛尔人选取或使用。",
         "TraitDescriptionOrocoran": "具有该特征的生物是奥罗科兰人族裔的一份子。他们是因奥克腾星的异界液体而变异的纤细异怪，渴望获得新的身份。具有该特征的能力只能被奥罗科兰人选取或使用。",
-        "TraitDescriptionOsharu": "A creature with this trait is a member of the osharu ancestry. They are sluglike humanoids that can swim and excrete sticky slime. They spend their lives amassing knowledge. An ability with this trait can be used or selected only by osharus.",
+        "TraitDescriptionOsharu": "具有该特征的生物属于奥沙鲁族裔。他们是蛞蝓状的类人生物，能够游泳并分泌黏稠的液体。他们毕生都在积累知识。具有该特征的能力只能由奥沙鲁选取或使用。",
         "TraitDescriptionPrismeni": "具有该特征的生物拥有棱光裔多用传承。具有该特征的能力只能被棱光裔使用或选取。",
-        "TraitDescriptionRaxilite": "A creature with this trait is a member of the raxilite ancestry. They are tiny, gentle, sapient plants who use biotechnological grafts called LFAN. An ability with this trait can be used or selected only by raxilites.",
+        "TraitDescriptionRaxilite": "具有该特征的生物属于拉西利特族。他们是温和的微型智慧植物，使用名为LFAN的生物科技移植物。具有该特征的能力只能由拉西利特族选取或使用。",
         "TraitDescriptionRunesmith": "这表示该能力来自符文工匠职业。",
-        "TraitDescriptionRyphorian": "A creature with this trait is a member of the ryphorian ancestry. They are trimorphic elf-like humanoids with exceptional hearing whose appearance changes with the seasons. An ability with this trait can be used or selected only by ryphorians.",
+        "TraitDescriptionRyphorian": "具有该特征的生物属于雷弗瑞亚人族裔。他们是具有三种形态的精灵状类人生物，听觉敏锐，外貌会随季节变化。具有该特征的能力只能由雷弗瑞亚人选取或使用。",
         "TraitDescriptionTalphi": "具有该特征的生物是鼹鼠人族裔的一份子。他们是矮小的鼹鼠类人型生物，以出色的挖掘能力以及使用发光颜料与染料而闻名。具有该特征的能力只能被鼹鼠人选取或使用。",
         "TraitDescriptionTrox": "具有该特征的生物是卓克斯虫人族裔的一份子。他们是大型而强健的多足节肢类人型生物，拥有多条退化的附肢，其令人畏惧的外表与其和平的灵性形成对比。具有该特征的能力只能被卓克斯虫人选取或使用。",
         "TraitDescriptionUrog": "具有该特征的生物是巫洛格族裔的一份子。他们是严苛的、以硅为基础的半导电心灵感应生物，通过学习与理解追求完美。具有该特征的能力只能被巫洛格选取或使用。",
-        "TraitDescriptionVulkarisu": "Vulkarisu are intelligent, bipedal humanoids that look like a mix between a fox and a squirrel.",
-        "TraitDescriptionWorlanisi": "A creature with this trait is a member of the worlanisi ancestry. They are small, incredibly lucky, four-armed telepaths with bright blue skin. An ability with this trait can be used or selected only by worlanisis.",
-        "TraitDescriptionXenometricAndroid": "A creature with this trait is a member of the xenometric android versatile heritage. These artificially constructed beings are made to resemble a particular species. An ability with this trait can be used or selected only by xenometric androids.",
+        "TraitDescriptionVulkarisu": "松鼠狐人是聪慧的双足类人生物，外貌兼有狐狸与松鼠的特征。",
+        "TraitDescriptionWorlanisi": "具有该特征的生物属于沃兰尼西族裔。他们是有四条手臂的小型心灵感应者，皮肤呈亮蓝色，运气好得惊人。具有该特征的能力只能由沃兰尼西选取或使用。",
+        "TraitDescriptionXenometricAndroid": "具有该特征的生物拥有异种仿生人多用传承。这些人造生物的外形仿照某一特定物种。具有该特征的能力只能由异种仿生人选取或使用。",
         "ArmorPropertyRuneConvincing": "服众",
         "ArmorPropertyRuneGreaterConvincing": "高等服众",
         "ArmorPropertyRuneGreaterMoonweave": "高等月织",
@@ -9524,7 +9555,38 @@
         "TraitDescriptionDelayed": "当你用该武器进行区域射击时，你立即指定其影响区域，但在你下回合开始时才结算区域射击的全部效果，包括士兵职业的主目标特性以及使用区域射击所触发的反应动作。能侦测到你并辨别出你所持武器的其他生物可以预判这一延迟效果。",
         "TraitDescriptionRangedInjection": "该武器的弹药可以注入液体，通常是伤害毒素、血清或法术增幅剂。武器所标注的伤害即其默认物质。为一枚弹药更换新物质需要6个交互动作并使用双手。用该武器成功攻击后，目标立刻被注入所装填的物质。",
         "TraitHefty3": "沉重 3",
-        "TraitRangedInjection": "远程注射"
+        "TraitRangedInjection": "远程注射",
+        "TraitCoshyco": "科希科",
+        "TraitLFAN": "LFAN",
+        "TraitDescriptionAncestry": "你在获得族裔专长时，你可以选择标准族裔专长来替代族裔专长， 只要你满足其先决条件，且它列在了你族裔的标准族裔专长选项中。这些专长具有罕见特征，以提醒你：只有当某个族裔的条目明确将该标准族裔专长列为该族裔可选的专长时，该族裔才可选取它。族裔特征代表你角色所属族裔。",
+        "TraitDescriptionCyborg": "具有该特征的生物属于改造人族裔。任何族裔的个体都可以成为改造人，他们使用科技对自己的身体进行了大幅改造。具有该特征的能力只能由改造人选取或使用。",
+        "TraitDescriptionSRO": "具有该特征的生物属于自律机器人族裔。自律机器人是拥有灵魂和自由意志的机器。具有该特征的能力只能由自律机器人选取或使用。",
+        "TraitDescriptionVerthani": "具有该特征的生物属于威瑟斯人族裔。他们是类人生物，长期使用科技，尤其是电控机械殖装。具有该特征的能力只能由威瑟斯人选取或使用。",
+        "TraitDescriptionAdaptive": "此护甲可以在你的控制下临时长出新的运动肢体，例如翅膀或鳍。你可以用一个具有操作特征的3动作行动，获得10尺攀爬速度或游泳速度（由你选择），持续1分钟。如果该护甲具有韧性特征，你可以改为获得10尺掘地速度或飞行速度。",
+        "TraitDescriptionImplacable": "此护甲内置惯性阻尼器和其他应急装置，使你更不易畏缩，在失能时保留一丝行动能力。当你因麻痹或震慑而将在你的回合中首次放弃使用动作时，你可以改为快步或寻找掩蔽。",
+        "TraitDescriptionSpellmail": "此护甲镶嵌有神秘金属的磁性微粒，可增强防御魔法。当你施放法术造成伤害时，你获得等于1+护甲韧性特征数值的该伤害类型抗力，直到你的下个回合开始。具有咒甲特征的护甲自动具有魔法特征。",
+        "TraitAppliedToATechItemOf5BulkOrLess": "应用于负载不超过5的科技物品",
+        "TraitDescriptionNaari": "火元素裔是火巨灵的后裔，属于位面裔。",
+        "TraitDescriptionSpellServer": "法术服务器中永久安装了若干枚法术芯片，其所含法术列于各自描述中。这些芯片可以储存戏法，且不能超频。在每日准备期间，你可以准备1台法术服务器，免费为其添加充能，充能数量等于你最高环阶法术位的环阶。若要从法术服务器中施放法术，你必须消耗1个环阶不低于该法术环阶的法术位，或消耗法术服务器中数量等于该法术环阶的充能。以此方式施放戏法时，无须消耗法术位或充能。",
+        "TraitDescriptionStarship": "星舰是巨大的、适合太空的物体，能够跨越遥远距离运输生物和货物。具有星舰特征的生物是适应在太空中生存的巨大生物。具有星舰特征的危害会在星舰遭遇中触发。具有星舰特征的动作、法术或其他能力，旨在战术星舰战斗中用于对抗传感器地图上的威胁。具有星舰特征的生物和物体通常只能被具有星舰特征的动作、生物和物品伤害或以其他方式影响。",
+        "TraitInstalledInACommUnit": "安装在通讯单元中",
+        "TraitInstalledInARangedWeapon": "安装在远程武器中",
+        "TraitInstalledInAWeaponThatDealsAcidOrFireDamage": "安装在可造成酸蚀或火焰伤害的武器中",
+        "TraitInstalledInAWeaponThatDealsColdDamage": "安装在可造成寒冷伤害的武器中",
+        "TraitInstalledInAWeaponThatUsesABattery": "安装在使用电池的武器中",
+        "TraitInstalledInAWeaponThatUsesProjectiles": "安装在使用投射物的武器中",
+        "TraitInstalledInAnAreaWeapon": "安装在区域武器中",
+        "TraitInstalledInAnAreaWeaponThatDealsAcidColdFireOrVoidDamage": "安装在可造成酸蚀、寒冷、火焰或虚空伤害的区域武器中",
+        "TraitInstalledInAtechVehicle": "安装在科技载具中",
+        "TraitInstalledOnAtechLock": "安装在科技锁上",
+        "TraitInstalledInLightOrMediumArmor": "安装在轻甲或中甲中",
+        "TraitProfessionalIntimidation": "专业（威吓）",
+        "TraitSpellServer": "法术服务器",
+        "TraitWornWhileSleeping": "睡眠时穿戴",
+        "ModifierDecrease": "降低调整值",
+        "ModifierIncrease": "提高调整值",
+        "TraitDescriptionFaun": "具有该特征的生物属于法翁羊人族裔。法翁羊人形似山羊，爱好玩乐，追求艺术与奇想。他们通常具有昏暗视觉。具有该特征的能力只能由法翁羊人选取或使用。",
+        "TraitDescriptionShroud": "<p>寿衣饰有与死亡有关的图案，让穿戴者对自己临终时的遭遇有少许决定权。</p><p> 绑定一件寿衣时，你会在心中为死亡做好准备，并指定近亲属。该对象须为一个具有心智的生物，你可以通过姓名，或精确描述其与你的关系来指定，例如父母、最年长的孩子，或配偶的兄弟姐妹。只要你穿着寿衣，你所指定的近亲属就知道你的濒死值，以及你是生是死，即使彼此处于不同位面也一样。每日准备时，你可以更改指定的近亲属。</p>"
     },
     "DOCUMENT": {
         "Combat": "遭遇",
