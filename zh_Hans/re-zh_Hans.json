@@ -1983,6 +1983,15 @@
                 },
                 "Fearcutter": {
                     "Note": "当你使用<em>斩惧者</em>对具有邪秽特征的生物造成重击时，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
+                },
+                "KinburisSandalsOfBounding": {
+                    "LightFootedBoundLabel": "金布里的弹跳木屐 — 轻快跳跃"
+                },
+                "ResoluteMindWrap": {
+                    "ShieldThoughts": {
+                        "Label": "明心头巾 — 护卫思维",
+                        "Text": "如果你成功通过此豁免，由<em>明心头巾</em>给予的心灵伤害抗力提升至10，持续1分钟。 @UUID[Compendium.pf2e.equipment-effects.Item.sbxGrVdEsYZ5KiCj]{Effect: Shield Thoughts}"
+                    }
                 }
             },
             "FighterWeaponMasteryLegend": {
