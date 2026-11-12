@@ -1848,7 +1848,7 @@
                     "EmbodyTheStormLabel": "究级鳞片斗篷 — 风暴显现"
                 },
                 "RootBoots": {
-                    "GripGround": "根靴 — 紧抓地面",
+                    "GripGround": "根靴 — 扎根",
                     "WoodenSurfaceLabel": "根靴 — 木质表面"
                 },
                 "ClandestineCloak": {
@@ -2749,6 +2749,9 @@
                 },
                 "Dijiang": {
                     "Emotion": "当你对情绪效果的豁免失败（但不是大失败）时，你改为获得成功。"
+                },
+                "DarklandsLight": {
+                    "Light": "地底之光"
                 }
             },
             "Suli": {
@@ -3358,7 +3361,7 @@
                     "Description": "在你使用自私卫盾后，直到你使用此反应动作的那回合结束之前，你会对来自触发敌人的所有伤害上获得自私卫盾抗性一半的抗性。@UUID[Compendium.pf2e.feat-effects.Item.seOQfjfjrDyK6rCo]"
                 },
                 "WeightOfGuilt": {
-                    "Description": "负罪感笼罩在那些忽视你救赎瞥视的敌人心中。你可以选择取代给触发反应动作的生物造成力竭2，令其在同样的时间内承受@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}。"
+                    "Description": "负罪感笼罩在那些忽视你救赎瞥视的敌人心中。你可以选择取代给触发反应动作的生物造成力竭2，令其在同样的时间内承受@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}。"
                 },
                 "ExaltedReaction": {
                     "Justice": "若触发反应的敌人处于盟友的触及内，且这些盟友都身处你神卫灵光范围内，他们可以花费一个反应动作以-5的减值对该名敌人进行打击。",
@@ -4362,7 +4365,7 @@
                 "AgileHand": {
                     "CriticalFailureNote": "如果你大失败，法术就会结束，并且你在24小时内不能再使用这种修改。",
                     "PenaltyLabel": "使用远程巧手的贼活",
-                    "Description": "当你施放念动之手时，你可以将其目标修改为一套盗贼工具。当你以这种方式施展法术时，这些工具最多可以向一个装置或锁移动20尺。在你维持法术后，你可以在法术范围内使用这些工具尝试用贼活检定来@UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]{解除装置 Disable a Device}或@UUID[Compendium.pf2e.actionspf2e.2EE4aF4SZpYf0R6H]{撬锁 Pick a Lock}，但你的贼活检定会受到-2的惩罚。如果你大失败，法术就会结束，并且你在24小时内不能再使用这种修改。"
+                    "Description": "当你施放念动之手时，你可以将其目标修改为一套盗贼工具。当你以这种方式施展法术时，这些工具最多可以向一个装置或锁移动20尺。在你维持法术后，你可以在法术范围内使用这些工具尝试用贼活检定来@UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]或@UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]，但你的贼活检定会受到-2的惩罚。如果你大失败，法术就会结束，并且你在24小时内不能再使用这种修改。"
                 },
                 "DirectedPoison": {
                     "Description": "当你施放死云术时，修改其持续时间为维持，最多1分钟，并修改其标准效果以包括以下内容：死云不会每回合远离你。每回合当你维持法术时，你可以将死云向你选择的方向移动10尺。"
@@ -4758,11 +4761,11 @@
             },
             "Geomancer": {
                 "TerrainAttunement": {
-                    "Desert": "敌人必须尝试@Check[fortitude]豁免。失败时，敌人会陷入@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]直至饮水或喝下其他可饮用的液体为止。",
+                    "Desert": "敌人必须尝试@Check[fortitude]豁免。失败时，敌人会陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]直至饮水或喝下其他可饮用的液体为止。",
                     "Label": "地形同调",
                     "Underground": "在1轮内，你获得黑暗视觉以及15尺范围的模糊震颤感知。",
                     "Arctic": "敌人必须尝试@Check[fortitude]豁免。他们的速度会承受-5尺状态减值（大失败为-10尺），持续2轮。",
-                    "Forest": "树枝与藤蔓伸出来阻挡敌人的去路。敌人必须尝试@Check[reflex]豁免。失败时，他们会陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}持续1轮（大失败为@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}）。",
+                    "Forest": "树枝与藤蔓伸出来阻挡敌人的去路。敌人必须尝试@Check[reflex]豁免。失败时，他们会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}持续1轮（大失败为@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}）。",
                     "Mountain": "你获得对抗物理伤害的抗力（精金除外），数值等同于法术环级，持续1轮。",
                     "Plains": "你获得临时生命值，数值等同于法术环级，持续1轮。",
                     "Sky": "你能够飞行至多10尺。若你在回合结束时位于空中，而且你并不具有飞行速度，则会坠落。",
@@ -6104,7 +6107,7 @@
                     "MageslayerClaw": "法师杀手之爪",
                     "Note": {
                         "Title": "法师杀手",
-                        "Text": "被你使用法师杀手之爪打击的生物必须尝试一次@Check[will|against:class-spell]豁免，对抗你职业DC或法术DC中的较高值。失败时，该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟（大失败时则为@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。"
+                        "Text": "被你使用法师杀手之爪打击的生物必须尝试一次@Check[will|against:class-spell|options:inflicts:stupefied]豁免，对抗你职业DC或法术DC中的较高值。失败时，该生物陷入@UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟（大失败时则为@UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。"
                     }
                 }
             },
@@ -6119,6 +6122,20 @@
             "Hellknight": {
                 "RevealBeasts": {
                     "Note": "当你在对动物、魔兽、真菌或植物的回忆知识检定中得到大成功时，该生物会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
+                },
+                "Order": {
+                    "Chain": "锁链骑士团",
+                    "Gate": "界门骑士团",
+                    "Glyph": "秘纹骑士团",
+                    "Godclaw": "神爪骑士团",
+                    "Nail": "尖钉骑士团",
+                    "Pike": "长枪骑士团",
+                    "Pyre": "焚烧骑士团",
+                    "Rack": "刑架骑士团",
+                    "Scar": "创痕骑士团",
+                    "Scourge": "笞鞭骑士团",
+                    "Torrent": "激流骑士团",
+                    "Wall": "城壁骑士团"
                 }
             },
             "Ijtikri": {
@@ -6354,6 +6371,9 @@
                     }
                 },
                 "RollOptionLabel": "以一位切利亚斯公民或魔鬼为目标"
+            },
+            "BloodRedBludgeon": {
+                "TearTeethLabel": "撕裂之齿"
             }
         },
         "RuleElement": {
@@ -7972,7 +7992,7 @@
             },
             "Castrovelian": {
                 "ExtraLarge": {
-                    "Name": "Extra Large"
+                    "Name": "体型增大"
                 },
                 "GaseousAdaptation": {
                     "Name": "Gaseous Adaptation"
@@ -9282,6 +9302,21 @@
             },
             "SereneMutagen": {
                 "PenaltyLabel": "宁静突变药剂— 施放攻击性法术。"
+            },
+            "MegaphoneMutagen": {
+                "RangeNote": {
+                    "Greater": "你具有听觉特征的动作与法术，其射程增加20尺。",
+                    "Lesser": "你具有听觉特征的动作与法术，其射程增加10尺。",
+                    "Major": "你具有听觉特征的动作与法术，其射程增加40尺。",
+                    "Moderate": "你具有听觉特征的动作与法术，其射程增加15尺。"
+                }
+            },
+            "MartialMayhemMutagen": {
+                "Major": {
+                    "CriticalSuccessNote": "当你近战攻击掷骰大成功时，直到你的下个回合开始，目标还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙1}。"
+                },
+                "FailureNote": "当你近战攻击掷骰失败时，你陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙1}，直到你的下个回合结束。",
+                "SuccessNote": "当你近战攻击掷骰成功时，直到你的下个回合开始，目标对你的下一次攻击掷骰陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及}。"
             }
         },
         "ResistanceException": {
@@ -9647,6 +9682,10 @@
                 "Normal": {
                     "Text": "当启动的破法弹药命中目标时，它会尝试反制目标正在维持的一个启动中的法术效果，反制检定调整值为+11（反制环级3）。",
                     "Title": "破法弹药"
+                },
+                "Major": {
+                    "Title": "上等破法弹药",
+                    "Text": "当启动的破法弹药命中目标时，它会尝试反制目标正在维持的一个活跃法术效果，反制检定调整值为+28（反制环级9）。"
                 }
             },
             "EscalationAmmunition": {
@@ -9655,11 +9694,11 @@
             },
             "GravebaneAmmunition": {
                 "Greater": {
-                    "Text": "打击成功命中时，攻击对具有虚能治疗的生物额外造成@Damage[2d10[vitality]]伤害。若目标承受了命能伤害，则必须成功通过@Check[fortitude|dc:27]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败则为@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续至你下回合开始。",
+                    "Text": "若目标受到活力伤害，则必须成功通过@Check[fortitude|dc:27|options:inflicts:enfeebled]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败则为@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续至你下回合开始。",
                     "Title": "高等墓祸弹药"
                 },
                 "Normal": {
-                    "Text": "打击成功命中时，攻击对具有虚能治疗的生物额外造成@Damage[1d10[vitality]]伤害。若目标承受了命能伤害，则必须成功通过@Check[fortitude|dc:19]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败则为@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续至你下回合开始。",
+                    "Text": "若目标受到活力伤害，则必须成功通过@Check[fortitude|dc:19|options:inflicts:enfeebled]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败则为@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续至你下回合开始。",
                     "Title": "墓祸弹药"
                 }
             },
@@ -9851,7 +9890,125 @@
             "Architecture": "建筑学识",
             "Demon": "恶魔学识",
             "Warfare": "战争学识",
-            "Absalom": "艾巴萨罗姆学识"
+            "Absalom": "艾巴萨罗姆学识",
+            "Academia": "学术学识",
+            "Accounting": "财会学识",
+            "Alcohol": "酒类学识",
+            "Art": "艺术学识",
+            "Astronomy": "天文学识",
+            "Banditry": "盗匪学识",
+            "Boneyard": "骨园学识",
+            "Cave": "洞穴学识",
+            "Circus": "马戏学识",
+            "Clown": "小丑学识",
+            "Crowd": "公众学识",
+            "Devil": "魔鬼学识",
+            "Dragon": "龙类学识",
+            "Dreamlands": "幻梦境学识",
+            "Droskar": "卓斯卡学识",
+            "Dwarf": "矮人学识",
+            "DwarvenPantheon": "矮人诸神学识",
+            "Engineering": "工程学识",
+            "Farming": "农业学识",
+            "Fey": "精类学识",
+            "Fireworks": "烟火学识",
+            "Fleshwarp": "畸肉学识",
+            "Forest": "森林学识",
+            "FortuneTelling": "占卜学识",
+            "Games": "赌博学识",
+            "Genealogy": "宗族学识",
+            "Guild": "同业公会学识",
+            "Hag": "鬼婆学识",
+            "Hellknight": "地狱骑士学识",
+            "Heraldry": "纹章学识",
+            "HeroGod": "英雄神学识",
+            "Hunting": "狩猎学识",
+            "Insect": "昆虫学识",
+            "Kobold": "狗头人学识",
+            "Labor": "劳工学识",
+            "Legal": "法律学识",
+            "LegendaryBeast": "传奇魔兽学识",
+            "Library": "司书学识",
+            "Magaambya": "玛甘比学识",
+            "Mercantile": "贸易学识",
+            "Mining": "矿工学识",
+            "Mzali": "玛扎利学识",
+            "Nantambu": "纳塔穆博学识",
+            "Ocean": "海洋学识",
+            "Ooze": "泥怪学识",
+            "Orc": "兽人学识",
+            "OrcPantheon": "兽人万神殿学识",
+            "Otari": "奥塔里学识",
+            "Piloting": "航空学识",
+            "PlaneOfEarth": "土元素学识",
+            "PlaneOfWater": "水元素位面学识",
+            "Politics": "政治学识",
+            "Portal": "传送门学识",
+            "Rope": "绳索学识",
+            "Sailing": "航海学识",
+            "Scam": "骗术学识",
+            "Scouting": "侦查学识",
+            "Scribing": "文书学识",
+            "ShadowPlane": "阴影位面学识",
+            "Spirit": "精魂学识",
+            "Stabling": "牲畜学识",
+            "Star": "群星学识",
+            "Swamp": "沼泽学识",
+            "Tanning": "制皮学识",
+            "Tea": "茶叶学识",
+            "Theater": "戏剧学识",
+            "Undead": "不死学识",
+            "Underworld": "黑街学识",
+            "Wisp": "鬼火学识",
+            "XinEdasseril": "辛-艾达丝瑞尔学识",
+            "Zombie": "丧尸学识",
+            "Loremaster": "博学者学识",
+            "WildMimic": "仿生学识",
+            "Elf": "精灵学识",
+            "Lizardfolk": "蜥蜴人学识",
+            "FirstWorld": "第一世界学识",
+            "Abyssal": "深渊学识",
+            "Anatomy": "解剖学识",
+            "Animal": "动物学识",
+            "Astrology": "占星学识",
+            "Axis": "轴心枢纽学识",
+            "Business": "生意学识",
+            "Cryptography": "密码学识",
+            "Desert": "沙漠学识",
+            "Gladatorial": "角斗学识",
+            "Goka": "过峡学识",
+            "Herding": "放牧学识",
+            "Hillcross": "山交道口学识",
+            "MagicalTerrain": "魔法地形学识",
+            "Music": "音乐学识",
+            "Plant": "植物学识",
+            "SarkorianHistory": "萨克里斯历史学识",
+            "Wilderness": "荒野学识",
+            "Funeral": "葬礼学识",
+            "Curse": "诅咒学识",
+            "Goblin": "地精学识",
+            "Assassin": "暗杀学识",
+            "Badlands": "荒地学识",
+            "Breachill": "布雷克屯学识",
+            "Cooking": "烹饪学识",
+            "Fiend": "魔族学识",
+            "Firearm": "火器学识",
+            "Firebrand": "燎原党学识",
+            "Fleshforged": "畸肉体学识",
+            "Gem": "宝石学识",
+            "Genie": "巨灵学识",
+            "GreenFaith": "苍翠誓约学识",
+            "Harrow": "哈罗牌学识",
+            "Hell": "地狱学识",
+            "Kaiju": "怪兽学识",
+            "Mercenary": "佣兵学识",
+            "PathfinderSociety": "开拓者协会学识",
+            "PlanarRift": "位面裂隙学识",
+            "Poetry": "诗歌学识",
+            "Roseguard": "玫瑰团学识",
+            "Sandpoint": "沙尖镇学识",
+            "Shory": "硕理学识",
+            "Westcrown": "西冠城学识"
         },
         "GenericLabel": {
             "PreviousAction": {
