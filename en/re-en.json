@@ -4760,7 +4760,8 @@
                     "LesserAugmentation": "Lesser Augmentation",
                     "MagicalResistance": "Magical Resistance",
                     "RainOfBolts": "Rain of Bolts",
-                    "ReinforcedChassis": "Reinforced Chassis"
+                    "ReinforcedChassis": "Reinforced Chassis",
+                    "ResilientChassis": "Resilient Chassis"
                 },
                 "Enhancement": {
                     "ArcaneLocomotionClimbSpeed": "Gain a climb speed",
@@ -6422,6 +6423,9 @@
                 "SpellguardShield": {
                     "RollOptionLabel": "Block spell that targets you"
                 },
+                "SpiderGun": {
+                    "CriticalSpecialization": "A <em>spider gun</em> does not add critical specialization effects."
+                },
                 "SplitheadBow": {
                     "HealingLabel": "Splithead Bow — Healing"
                 },
@@ -6666,7 +6670,7 @@
                         "Label": "Heaven Rains an Ending"
                     },
                     "Label": "Infinite Blades Celestial Arrow",
-                    "Note": "Whenever you successfully Strike an enemy with your weapon ikon, up to two enemies adjacent to the target take @Damage[@item.system.damage.dice@item.system.damage.die[spirit]|options:exemplar-spirit-damage] damage as they are struck by duplicated missiles."
+                    "Note": "Whenever you successfully Strike an enemy with your weapon ikon, up to two enemies adjacent to the target take @Damage[@item.system.damage.dice@item.system.damage.die[spirit]|options:damage:tag:exemplar] damage as they are struck by duplicated missiles."
                 },
                 "MatedBirdsInPairedFlight": {
                     "Pair": "Two separate ikons.",
@@ -8189,6 +8193,8 @@
                 "ClassFeat": "Select a class feat.",
                 "Color": "Select a Color.",
                 "ConsciousMind": "Select a conscious mind.",
+                "CountOfCriticalSuccesses": "How many critical successes?",
+                "CountOfSuccesses": "How many successes?",
                 "CreatureSize": "Select a creature size.",
                 "DamageType": "Select a damage type.",
                 "Defense": "Select a defense.",
@@ -9347,6 +9353,11 @@
                 "OverburdeningSpell": "If the next action you use is to Cast a Spell that targets a single creature, unless the target is unaffected by the spell, the target takes a –15-foot status penalty to its Speeds for 1 round (this penalty is doubled for climb, fly, and swim Speeds). @UUID[Compendium.pf2e.feat-effects.Item.RT4mBRa3UlnALH3O]{Effect: Overburdening Spell}",
                 "OverwhelmingBreath": "If you use your next action to Cast a Spell that has the monk trait and no duration, the spell and any Strikes you make as a result of casting it ignore an amount of the target's resistance to physical damage equal to your level.",
                 "OverwhelmingEnergy": "If the next action you use is to Cast a Spell, the spell ignores an amount of the target's resistance to acid, cold, electricity, fire, or sonic damage equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell, such as the wall created by wall of fire. A creature's immunities are unaffected.",
+                "PallidHealing": {
+                    "Option": "Hundred-Moth Caress — Pallid Healing",
+                    "Title": "Pallid Healing",
+                    "Text": "You deal @Damage[1d10] void damage to yourself. This damage ignores all resistances and immunities, and you take it even if you would be healed by void effects. If your next action is to Strike with the scythe or to Cast a Spell with the disease or void trait, that Strike or spell deals additional void damage equal to the damage you took."
+                },
                 "PitchPerfectProjection": "If your next action this round is to Cast a Spell or use an action that creates an auditory effect with a range, increase that range by 30 feet.",
                 "PortentousSpell": "If the next action you use is to Cast a Spell, any creature that attempts to use a reaction triggered by your Cast a Spell activity takes a –2 circumstance penalty to attack rolls and skill checks rolled as part of the reaction. In addition, if the spell includes a spell attack or requires a saving throw, creatures you hit or that fail their saves are @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} with you until the start of your next turn. @UUID[Compendium.pf2e.feat-effects.Item.klZVVIetJlR99cT6]{Effect: Portentous Spell}",
                 "PurifyingSpell": "If the next action you use is to cast _heal_ targeting a single living creature, you can attempt to counteract a disease or poison affecting the target, in addition to the other benefits of _heal_. If you do, _heal_ gains the water trait.",
@@ -9414,14 +9425,19 @@
                 "SpritesSpark": {
                     "Dijiang": "Primordial Pulse",
                     "Draxie": "Euphoric Spark",
+                    "Firefly": "Luminous Spark",
                     "Gandharva": "Celestial Song",
                     "Grig": "Dissonant Note",
                     "Kanchil": "Puzzling Bolt",
+                    "Kaztili": "Cruel Word",
+                    "Kirakor": "Sour Note",
                     "Leungli": "Surging Splash",
                     "LuminousSprite": "Luminous Spark",
                     "Melixie": "Sting Shot",
+                    "Murxie": "Luminous Spark",
                     "Nyktera": "Ultrasonic Pulse",
-                    "Pixie": "Pixie Dust"
+                    "Pixie": "Pixie Dust",
+                    "Veredram": "Thorny Barb"
                 }
             },
             "Staff": {
